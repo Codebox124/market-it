@@ -2,68 +2,69 @@ import BackButton from "@/components/Button";
 import { Eye } from "lucide-react";
 import Image from "next/image";
 
-
 const visualsPortfolio = [
   { 
     title: "Video Editing", 
     image: "/video-editing.jpg",
-    description: "Cinematic storytelling through professional video post-production"
+    description: "Cinematic storytelling through professional video post-production."
   },
   { 
     title: "Photo Editing", 
     image: "/photo-editing.jpg",
-    description: "Precision retouching and creative image enhancement"
+    description: "Precision retouching and creative image enhancement."
   },
   { 
     title: "Graphic Design", 
     image: "/graphic-design.jpg",
-    description: "Innovative visual communication and brand identity design"
+    description: "Innovative visual communication and brand identity design."
   },
   { 
     title: "Website Design", 
     image: "/website-design.jpg",
-    description: "Responsive, user-centric web experiences that convert"
+    description: "Responsive, user-centric web experiences that convert."
   },
 ];
 
 export default function Visuals() {
   return (
-    <div className="min-h-screen bg-gray-50 py-16 px-6">
-      <BackButton />
-      
-      <div className="max-w-6xl mx-auto">
-        <header className="text-center mb-12">
-          <h1 className="text-4xl font-extrabold text-gray-900 mb-4">
-            Our Visuals Portfolio
+    <div className="min-h-screen bg-gray-100 py-20 px-6">
+      <div className="max-w-7xl mx-auto">
+        <div className="mb-8">
+          <BackButton />
+        </div>
+
+        <header className="text-center mb-14">
+          <h1 className="text-5xl font-extrabold text-gray-900 leading-tight">
+            Our <span className="text-blue-500">Visuals Portfolio</span>
           </h1>
-          <p className="text-gray-600 max-w-2xl mx-auto text-lg">
-            Transforming ideas into stunning visual experiences across multiple mediums
+          <p className="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
+            Transforming ideas into stunning visual experiences across multiple mediums.
           </p>
         </header>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
           {visualsPortfolio.map((item, index) => (
             <div 
               key={index} 
-              className="bg-white group rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 ease-in-out transform hover:-translate-y-2"
+              className="group bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition-all duration-300 ease-in-out transform hover:-translate-y-2"
             >
-              <div className="relative h-56 w-full">
+              <div className="relative h-64 w-full">
                 <Image 
                   src={item.image} 
                   alt={item.title} 
                   fill
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  className="object-cover group-hover:scale-110 transition-transform duration-300"
+                  className="object-cover group-hover:scale-105 transition-transform duration-300"
                   placeholder="blur"
-                  blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gIoSUNDX1BST0ZJTEUAAQEAAAIYAAAAAAIQAABtbnRyUkdCIFhZWiAAAAAAAAAAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAAHRyWFlaAAABZAAAABRnWFhaAAABeAAAABRiWFlaAAABjAAAABRyVFJDAAABoAAAAChnVFJDAAABoAAAAChiVFJDAAABoAAAACh3dHB0AAAByAAAABRjcHJ0AAAB3AAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAFgAAAAcAHMAUgBHAEIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFhZWiAAAAAAAABvogAAOPUAAAOQWFlaIAAAAAAAAGKZAAC3hQAAGNpYWVogAAAAAAAAJKAAAA+EAAC2z3BhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABYWVogAAAAAAAA9tYAAQAAAADTLW1sdWMAAAAAAAAAAQAAAAxlblVTAAAAIAAAABwARwBvAG8AZwBsAGUAIABJAG4AYwAuACAAMgAwADEANv/bAEMAFA4PEg8NFBIQEhcVFBgeMiEeHBwZH0MjJSROSUFKSEpKSE1CZGFnXVd4enWCgoiTkpOdhpmmtrq6s3CIhNCw1P/bAEMBFRcXHhoeNyEhNMJCQkLExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExP/AABEIAAYACAMBIgACEQEDEQH/xAAVAAEBAAAAAAAAAAAAAAAAAAAABv/EABQQAQAAAAAAAAAAAAAAAAAAAAD/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8AlgAH/9k="
+                  blurDataURL="data:image/jpeg;base64,/9j/4AAQSk..."
                 />
-                <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300 flex items-center justify-center">
-                  <Eye className="text-white opacity-0 group-hover:opacity-100 transform scale-0 group-hover:scale-100 transition-all duration-300" size={48} />
+                <div className="absolute inset-0 bg-black bg-opacity-10 group-hover:bg-opacity-30 transition-all duration-300 flex items-center justify-center">
+                  <Eye className="text-white opacity-0 group-hover:opacity-100 transform scale-50 group-hover:scale-100 transition-all duration-300" size={48} />
                 </div>
               </div>
-              <div className="p-6">
-                <h2 className="text-xl font-bold text-gray-800 mb-2">{item.title}</h2>
-                <p className="text-gray-600 text-sm">{item.description}</p>
+              <div className="p-6 text-center">
+                <h2 className="text-2xl font-bold text-gray-800">{item.title}</h2>
+                <p className="mt-2 text-gray-600 text-sm">{item.description}</p>
               </div>
             </div>
           ))}
