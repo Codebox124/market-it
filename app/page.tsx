@@ -112,7 +112,7 @@ export default function Home() {
             <motion.h1
               variants={fadeIn}
               custom={0}
-              className="text-5xl md:text-7xl border-4 flex justify-center items-center py-2 font-extrabold space-x-2 leading-tight"
+              className="text-3xl md:text-7xl border-4 flex justify-center items-center py-2 font-extrabold space-x-2 leading-tight"
             >
               MAKE IT
               <motion.span className="text-green-400"> &</motion.span>
