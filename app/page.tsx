@@ -272,68 +272,76 @@
 
 
 import Head from "next/head";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-gray-50 text-gray-900">
+    <div className="min-h-screen bg-gradient-to-b from-gray-900 to-black flex flex-col items-center justify-center bg-gray-100 text-gray-900 px-6">
       <Head>
-        <title>Make It & Market</title>
+        <title className="text-white bg-clip-text bg-gradient-to-r from-green-400 to-green-300">Make It & Market</title>
         <meta name="description" content="Full-service visuals and marketing solutions." />
       </Head>
 
       {/* Header */}
-      <header className="text-center  pb-4 w-full max-w-3xl">
-        <h1 className="text-3xl md:text-4xl border-4 p-4  font-extrabold tracking-wide uppercase">
+      <header className="w-full max-w-5xl text-center py-8">
+        <h1 className="text-white text-5xl md:text-6xl font-extrabold tracking-widest uppercase border-8 border-green-300 px-6 py-4 inline-block">
           MAKE IT & MARKET
         </h1>
-        <nav className="text-sm md:text-base mt-2 flex items-end justify-end font-medium text-gray-700">
-          <span className="mx-3 cursor-pointer hover:text-gray-900">Visuals</span> |
-          <span className="mx-3 cursor-pointer hover:text-gray-900">Marketing</span> |
-          <span className="mx-3 cursor-pointer hover:text-gray-900">Contact</span>
+        <nav className="text-lg md:text-xl  font-medium mt-6 flex justify-center gap-8 text-gray-200">
+          <span className="cursor-pointer hover:text-gray-900 transition duration-300">Visuals</span>
+          <span className="cursor-pointer hover:text-gray-900 transition duration-300">Marketing</span>
+          <span className="cursor-pointer hover:text-gray-900 transition duration-300">Contact</span>
         </nav>
       </header>
 
       {/* Main Content */}
-      <main className="text-center mt-12 px-6 max-w-3xl">
-        <p className="text-xl leading-relaxed font-light text-gray-700">
-          We craft high-quality visuals and marketing solutions to help you achieve success.
+      <main className="text-center mt-16 max-w-3xl">
+        <p className="text-2xl leading-relaxed font-light text-gray-200">
+          Elevate your brand with high-end visuals and strategic marketing solutions.
         </p>
-        <p className="text-xl leading-relaxed mt-6 font-light text-gray-700">
-          From stunning video production to strategic branding... <br />
-          ...we bring your ideas to life with impactful execution.
+        <p className="text-xl leading-relaxed mt-6 font-light text-gray-200">
+          From cinematic video production to iconic branding...
+          <br />...we bring your vision to life with premium execution.
         </p>
-        <p className="text-xl leading-relaxed mt-6 font-light text-gray-700">
-          Whether you're a startup or a large corporation, we tailor our services to fit your needs.
+        <p className="text-xl leading-relaxed mt-6 font-light text-gray-200">
+          Whether you're a startup or a legacy brand, we tailor our services for maximum impact.
         </p>
 
         {/* Visuals & Marketing Sections */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mt-12 text-left max-w-2xl">
-          <div className="bg-white shadow-lg p-6 rounded-lg hover:shadow-xl transition-shadow duration-300">
-            <h2 className="font-bold text-2xl border-b-4 border-gray-900 inline-block pb-2">
-              VISUALS
-            </h2>
-            <ul className="mt-4 text-lg font-medium space-y-3 text-gray-800">
-              <li className="hover:text-gray-900 cursor-pointer transition duration-300">🎥 Video Editing</li>
-              <li className="hover:text-gray-900 cursor-pointer transition duration-300">📸 Photo Editing</li>
-              <li className="hover:text-gray-900 cursor-pointer transition duration-300">🎨 Graphic Design</li>
-              <li className="hover:text-gray-900 cursor-pointer transition duration-300">🌍 Website Design</li>
-            </ul>
-          </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mt-16 text-left max-w-3xl">
+          <Link href='/visuals'>
+            <div className="bg-white shadow-xl p-8 rounded-2xl hover:shadow-2xl transition-shadow duration-300">
+              <h2 className="font-bold text-3xl border-b-4 border-gray-900 inline-block pb-2">
+                VISUALS
+              </h2>
+              <ul className="mt-6 text-xl font-medium space-y-4 text-gray-800">
+                <li className="hover:text-gray-900 cursor-pointer transition duration-300">🎥 Video Editing</li>
+                <li className="hover:text-gray-900 cursor-pointer transition duration-300">📸 Photo Editing</li>
+                <li className="hover:text-gray-900 cursor-pointer transition duration-300">🎨 Graphic Design</li>
+                <li className="hover:text-gray-900 cursor-pointer transition duration-300">🌍 Website Design</li>
+              </ul>
+            </div>
 
-          <div className="bg-white shadow-lg p-6 rounded-lg hover:shadow-xl transition-shadow duration-300">
-            <h2 className="font-bold text-2xl border-b-4 border-gray-900 inline-block pb-2">
-              MARKETING
-            </h2>
-            <ul className="mt-4 text-lg font-medium space-y-3 text-gray-800">
-              <li className="hover:text-gray-900 cursor-pointer transition duration-300">📢 Branding</li>
-              <li className="hover:text-gray-900 cursor-pointer transition duration-300">📈 Advertising</li>
-              <li className="hover:text-gray-900 cursor-pointer transition duration-300">💬 Social Media</li>
-              <li className="hover:text-gray-900 cursor-pointer transition duration-300">📰 Flyer Distribution</li>
-            </ul>
-          </div>
+          </Link>
+
+          <Link href='marketing'>
+            <div className="bg-white shadow-xl p-8 rounded-2xl hover:shadow-2xl transition-shadow duration-300">
+              <h2 className="font-bold text-3xl border-b-4 border-gray-900 inline-block pb-2">
+                MARKETING
+              </h2>
+              <ul className="mt-6 text-xl font-medium space-y-4 text-gray-800">
+                <li className="hover:text-gray-900 cursor-pointer transition duration-300">📢 Branding</li>
+                <li className="hover:text-gray-900 cursor-pointer transition duration-300">📈 Advertising</li>
+                <li className="hover:text-gray-900 cursor-pointer transition duration-300">💬 Social Media</li>
+                <li className="hover:text-gray-900 cursor-pointer transition duration-300">📰 Flyer Distribution</li>
+              </ul>
+            </div>
+          </Link>
         </div>
       </main>
-      <footer className="mt-16 text-center text-gray-600 text-sm pb-6">
+
+      {/* Footer */}
+      <footer className="mt-20 text-center text-gray-600 text-lg pb-8">
         © {new Date().getFullYear()} Make It & Market. All rights reserved.
       </footer>
     </div>
