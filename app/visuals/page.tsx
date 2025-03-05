@@ -1,74 +1,129 @@
+"use client";
+
 import BackButton from "@/components/Button";
-import { Eye } from "lucide-react";
+import { Eye, ArrowRight } from "lucide-react";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 const visualsPortfolio = [
-  { 
-    title: "Video Editing", 
-    image: "/video-editing.jpg",
-    description: "Cinematic storytelling through professional video post-production."
+  {
+    title: "Video Editing",
+    image: "/video-editing.png",
+    description:
+      "Cinematic storytelling through professional video post-production.",
   },
-  { 
-    title: "Photo Editing", 
-    image: "/photo-editing.jpg",
-    description: "Precision retouching and creative image enhancement."
+  {
+    title: "Photo Editing",
+    image: "/photo-editing.png",
+    description: "Precision retouching and creative image enhancement.",
   },
-  { 
-    title: "Graphic Design", 
-    image: "/graphic-design.jpg",
-    description: "Innovative visual communication and brand identity design."
+  {
+    title: "Graphic Design",
+    image: "/graphic-design.png",
+    description: "Innovative visual communication and brand identity design.",
   },
-  { 
-    title: "Website Design", 
-    image: "/website-design.jpg",
-    description: "Responsive, user-centric web experiences that convert."
+  {
+    title: "Website Design",
+    image: "/website-design.png",
+    description: "Responsive, user-centric web experiences that convert.",
   },
 ];
 
+const container = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.1,
+    },
+  },
+};
+
+const item = {
+  hidden: { opacity: 0, y: 20 },
+  show: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+};
+
 export default function Visuals() {
   return (
-    <div className="min-h-screen bg-gray-100 py-20 px-6">
-      <div className="max-w-7xl mx-auto">
-        <div className="mb-8">
-          <BackButton />
-        </div>
+    <div className="min-h-screen bg-gradient-to-b from-gray-900 to-black text-white pt-24">
+      <BackButton />
 
-        <header className="text-center mb-14">
-          <h1 className="text-5xl font-extrabold text-gray-900 leading-tight">
-            Our <span className="text-blue-500">Visuals Portfolio</span>
+      <div className="max-w-7xl mx-auto px-6 py-16">
+        <motion.header
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7 }}
+          className="text-center mb-16"
+        >
+          <h1 className="text-5xl font-extrabold leading-tight mb-6">
+            Our{" "}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-green-300">
+              Visuals Portfolio
+            </span>
           </h1>
-          <p className="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
-            Transforming ideas into stunning visual experiences across multiple mediums.
+          <p className="mt-4 text-xl text-gray-300 max-w-2xl mx-auto">
+            Transforming ideas into stunning visual experiences across multiple
+            mediums.
           </p>
-        </header>
+        </motion.header>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+        <motion.div
+          variants={container}
+          initial="hidden"
+          animate="show"
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8"
+        >
           {visualsPortfolio.map((item, index) => (
-            <div 
-              key={index} 
-              className="group bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition-all duration-300 ease-in-out transform hover:-translate-y-2"
+            <motion.div
+              key={index}
+              whileHover={{ y: -10 }}
+              className="group bg-gray-800/50 backdrop-blur-sm rounded-2xl overflow-hidden shadow-xl hover:shadow-green-500/10 transition-all duration-300 border border-gray-700/50"
             >
-              <div className="relative h-64 w-full">
-                <Image 
-                  src={item.image} 
-                  alt={item.title} 
+              <div className="relative h-64 w-full overflow-hidden">
+                <Image
+                  src={item.image || "/placeholder.svg"}
+                  alt={item.title}
                   fill
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  className="object-cover group-hover:scale-105 transition-transform duration-300"
+                  className="object-cover transition-transform duration-700 group-hover:scale-110"
                   placeholder="blur"
                   blurDataURL="data:image/jpeg;base64,/9j/4AAQSk..."
                 />
-                <div className="absolute inset-0 bg-black bg-opacity-10 group-hover:bg-opacity-30 transition-all duration-300 flex items-center justify-center">
-                  <Eye className="text-white opacity-0 group-hover:opacity-100 transform scale-50 group-hover:scale-100 transition-all duration-300" size={48} />
+                <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent"></div>
+                <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <div className="bg-green-500 rounded-full p-3 transform scale-0 group-hover:scale-100 transition-transform duration-300">
+                    <Eye className="text-white" size={24} />
+                  </div>
                 </div>
               </div>
-              <div className="p-6 text-center">
-                <h2 className="text-2xl font-bold text-gray-800">{item.title}</h2>
-                <p className="mt-2 text-gray-600 text-sm">{item.description}</p>
+              <div className="p-6">
+                <h2 className="text-2xl font-bold mb-2">{item.title}</h2>
+                <p className="text-gray-400 mb-4">{item.description}</p>
+                <a
+                  href="#"
+                  className="inline-flex items-center text-green-400 hover:text-green-300 transition-colors"
+                >
+                  View project <ArrowRight className="ml-2 h-4 w-4" />
+                </a>
               </div>
-            </div>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.6, duration: 0.7 }}
+          className="mt-20 text-center"
+        >
+          <a
+            href="#contact"
+            className="inline-block px-8 py-4 bg-gradient-to-r from-green-500 to-green-400 text-white font-bold rounded-lg shadow-xl hover:shadow-green-500/20 transition-all duration-300"
+          >
+            Start Your Visual Project
+          </a>
+        </motion.div>
       </div>
     </div>
   );
