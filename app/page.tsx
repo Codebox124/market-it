@@ -119,20 +119,20 @@ const fadeIn = {
 // Updated luxury services
 const services = [
   {
-    title: "PREMIUM VISUALS",
+    title: "VISUALS",
     description: "Bespoke visual identities crafted with precision to elevate your exclusive brand presence.",
     color: "from-emerald-300 to-teal-500",
     icon: "✦",
     list: [
-      "🎥 Cinematic Production",
-      "📸 Editorial Photography",
-      "🎨 Signature Design",
-      "🌍 Immersive Experiences",
+      "🎥 Video Editing",
+      "📸 Photo Editing",
+      "🎨 Graphics Design",
+      "🌍 Website Design",
     ],
     link: "/visuals",
   },
   {
-    title: "ELITE MARKETING",
+    title: "MARKETING",
     description: "Strategic campaigns tailored for discerning audiences and exceptional market positioning.",
     color: "from-blue-300 to-indigo-500",
     icon: "✧",
