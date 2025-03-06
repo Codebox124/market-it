@@ -70,7 +70,7 @@ export default function Home() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative min-h-screen w-full flex items-center justify-center bg-black text-white overflow-hidden">
+      <section className="relative min-h-screen pt-20 w-full flex items-center justify-center bg-black text-white overflow-hidden">
         {/* Background Overlay with Parallax Effect */}
         <div
           className="absolute inset-0 bg-cover bg-center"
