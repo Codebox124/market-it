@@ -63,9 +63,14 @@ const generateParticles = (count: number, isMobile: boolean) => {
 export default function Home() {
   const [isLoaded, setIsLoaded] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
-  const [particles, setParticles] = useState([]);
+  const [particles, setParticles] = useState<
+  { x: number; y: number; size: number; speedX: number; speedY: number; color: number }[]
+>([]);
+
   const canvasRef = useRef(null);
-  const animationRef = useRef(null);
+  const animationRef = useRef<number | null>(null);
+
+  
 
   useEffect(() => {
     setIsLoaded(true);
@@ -97,8 +102,9 @@ export default function Home() {
   useEffect(() => {
     if (!isLoaded || !canvasRef.current || particles.length === 0) return;
 
-    const canvas = canvasRef.current;
+    const canvas = canvasRef.current as HTMLCanvasElement; 
     const ctx = canvas.getContext('2d');
+    if (!ctx) return;
 
     // Set canvas size to match window
     const resizeCanvas = () => {
@@ -170,7 +176,9 @@ export default function Home() {
 
     return () => {
       window.removeEventListener('resize', resizeCanvas);
-      cancelAnimationFrame(animationRef.current);
+      if (animationRef.current) {
+        cancelAnimationFrame(animationRef.current);
+      }
     };
   }, [isLoaded, particles, isMobile]);
 
