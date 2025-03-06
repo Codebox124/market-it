@@ -8,7 +8,7 @@ import { useEffect, useState, useRef } from "react";
 // Animation Variants
 const fadeIn = {
   hidden: { opacity: 0, y: 20 },
-  visible: (i) => ({
+  visible: (i: number) => ({
     opacity: 1,
     y: 0,
     transition: {
@@ -49,7 +49,7 @@ const services = [
 ];
 
 // Generate particle properties
-const generateParticles = (count, isMobile) => {
+const generateParticles = (count: number, isMobile: boolean) => {
   return Array.from({ length: count }).map(() => ({
     x: Math.random() * 100,
     y: Math.random() * 100,
