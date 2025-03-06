@@ -301,7 +301,7 @@ export default function Home() {
         <motion.div
           className="absolute inset-0 bg-grid-white bg-grid-8 opacity-5"
           style={{
-            y: scrollY * -0.1,
+           
           }}
         />
 
