@@ -326,7 +326,7 @@ export default function Home() {
                 boxShadow: "0 0 30px rgba(59,130,246,0.3), inset 0 0 20px rgba(59,130,246,0.2)"
               }}
             >
-              MAKEIT
+              MAKE IT
               <motion.span
                 className=" bg-clip-text px-4 bg-gradient-to-r text-white"
                 animate={{
