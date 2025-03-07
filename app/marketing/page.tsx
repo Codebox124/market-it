@@ -33,7 +33,7 @@ const marketingPortfolio = [
         title: "Flyer Distribution",
         image: "/flyer.png",
         description:
-            "Targeted offline marketing to reach local ",
+            "Targeted offline marketing to reach local customers",
         icon: Feather,
         accent: "border-indigo-700/30",
     },

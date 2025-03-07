@@ -23,26 +23,7 @@ export default function Footer() {
               We provide full-service visuals and marketing solutions to help
               you achieve your goals.
             </p>
-            <div className="flex space-x-4 mt-6">
-              <a
-                href="#"
-                className="text-gray-400 hover:text-white transition-colors"
-              >
-                <Instagram size={20} />
-              </a>
-              <a
-                href="#"
-                className="text-gray-400 hover:text-white transition-colors"
-              >
-                <Twitter size={20} />
-              </a>
-              <a
-                href="#"
-                className="text-gray-400 hover:text-white transition-colors"
-              >
-                <Facebook size={20} />
-              </a>
-            </div>
+           
           </div>
 
           <div>
@@ -98,18 +79,16 @@ export default function Footer() {
               <li className="flex items-center">
                 <Phone size={18} className="mr-2 text-green-400" />
                 <a
-                  href="tel:+1234567890"
+                  href="tel:347 659 1708"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
-                  (123) 456-7890
+                  (347) 659 1708
                 </a>
               </li>
               <li className="flex items-start">
                 <MapPin size={18} className="mr-2 mt-1 text-blue-400" />
                 <span className="text-gray-400">
-                  123 Marketing Street
-                  <br />
-                  Design City, DC 12345
+                 Worldwide
                 </span>
               </li>
             </ul>

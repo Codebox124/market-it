@@ -64,13 +64,13 @@ export default function Home() {
   const [isLoaded, setIsLoaded] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
   const [particles, setParticles] = useState<
-  { x: number; y: number; size: number; speedX: number; speedY: number; color: number }[]
->([]);
+    { x: number; y: number; size: number; speedX: number; speedY: number; color: number }[]
+  >([]);
 
   const canvasRef = useRef(null);
   const animationRef = useRef<number | null>(null);
 
-  
+
 
   useEffect(() => {
     setIsLoaded(true);
@@ -102,7 +102,7 @@ export default function Home() {
   useEffect(() => {
     if (!isLoaded || !canvasRef.current || particles.length === 0) return;
 
-    const canvas = canvasRef.current as HTMLCanvasElement; 
+    const canvas = canvasRef.current as HTMLCanvasElement;
     const ctx = canvas.getContext('2d');
     if (!ctx) return;
 
@@ -320,7 +320,7 @@ export default function Home() {
             <motion.h1
               variants={fadeIn}
               custom={0}
-              className="text-3xl md:text-7xl border-4 border-white/30 backdrop-blur-sm flex justify-center items-center py-4 px-6 font-extrabold leading-tight text-transparent bg-clip-text bg-gradient-to-r from-white via-blue-200 to-white"
+              className="text-3xl md:text-7xl border-4 border-white/30 backdrop-blur-sm flex justify-center items-center py-4 px-6 font-extrabold leading-tight text-transparent bg-clip-text  bg-gradient-to-r from-emerald-300 to-emerald-500 "
               style={{
                 textShadow: "0 0 15px rgba(255,255,255,0.5), 0 0 30px rgba(59,130,246,0.5)",
                 boxShadow: "0 0 30px rgba(59,130,246,0.3), inset 0 0 20px rgba(59,130,246,0.2)"
@@ -328,7 +328,7 @@ export default function Home() {
             >
               MAKE IT
               <motion.span
-                className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-300 to-emerald-500 mx-3"
+                className=" bg-clip-text bg-gradient-to-r text-white"
                 animate={{
                   textShadow: ["0 0 10px rgba(16,185,129,0.5)", "0 0 20px rgba(16,185,129,0.8)", "0 0 10px rgba(16,185,129,0.5)"]
                 }}
@@ -344,7 +344,7 @@ export default function Home() {
               > MARKET</motion.span>
             </motion.h1>
 
-            {/* Glassmorphism Navigation - With subtle animation */}
+            {/* Glassmorphism Navigation - With subtle animation
             <motion.nav
               variants={fadeIn}
               custom={0.5}
@@ -358,7 +358,7 @@ export default function Home() {
               <span className="cursor-pointer hover:text-emerald-400 transition duration-300">Visuals</span>
               <span className="cursor-pointer hover:text-blue-400 transition duration-300">Marketing</span>
               <span className="cursor-pointer hover:text-purple-400 transition duration-300">Contact</span>
-            </motion.nav>
+            </motion.nav> */}
 
             <motion.div
               variants={fadeIn}
@@ -377,19 +377,19 @@ export default function Home() {
                 }}
                 transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
               >
-                We provide <span className="font-semibold text-emerald-400">full-service Visuals</span> and
+                We provide <span className="font-semibold text-emerald-400">full-service visuals</span> and
                 <span className="font-semibold text-blue-400"> marketing solutions</span> to help you achieve your goal.
               </motion.p>
               <motion.p
                 className="text-lg md:text-2xl text-gray-200 max-w-3xl font-light mt-6 leading-relaxed"
               >
-                From handing out flyers to editing a film,
-                graphics design to solidifying business strategy.
+                From handing out flyers to editing a film...<br />
+                ...graphics design to solidifying business strategy.
               </motion.p>
               <motion.p
                 className="text-lg md:text-2xl text-gray-200 max-w-3xl font-light mt-6 leading-relaxed"
               >
-                We craft <span className="italic">custom content</span> and <span className="underline decoration-blue-400 decoration-2 underline-offset-4">marketing campaigns</span> that get things done for you. No matter if you are large or small.
+                We craft <span className="">custom content</span> and <span className=" decoration-blue-400 decoration-2 underline-offset-4">marketing campaigns</span> that get things done for you. No matter if you are large or small.
               </motion.p>
             </motion.div>
 
@@ -457,7 +457,7 @@ export default function Home() {
               ))}
             </div>
 
-           
+
 
 
           </motion.div>
