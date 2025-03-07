@@ -19,7 +19,7 @@ export default function Footer() {
               <span className="text-white">It</span>
               <span className="text-blue-400">&Market</span>
             </Link>
-            <p className="mt-4 text-gray-400">
+            <p className="mt-4 text-gray-400 ">
               We provide full-service visuals and marketing solutions to help
               you achieve your goals.
             </p>

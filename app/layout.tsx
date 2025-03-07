@@ -1,11 +1,18 @@
 import type { Metadata } from "next";
-import { Geist, Azeret_Mono as Geist_Mono } from "next/font/google";
+import { Geist, Azeret_Mono as Geist_Mono,IBM_Plex_Mono } from "next/font/google";
+
 import "./globals.css";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
+  subsets: ["latin"],
+});
+
+const ibmPlexMono = IBM_Plex_Mono({
+  weight: ["400", "500", "700"],
+  variable: "--font-ibm-plex-mono",
   subsets: ["latin"],
 });
 
@@ -43,7 +50,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${ibmPlexMono.variable} antialiased`}
       >
         <Navbar />
         <main className="min-h-screen">{children}</main>

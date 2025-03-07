@@ -1,20 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap');
 
-body {
-  font-family: 'Inter', sans-serif;
-}
 
 
 @import "tailwindcss";
 @tailwind utilities;
 
 :root {
+  --font-geist-sans: sans-serif;
+  --font-ibm-plex-mono: monospace;
+  --font-geist-mono: monospace;
   --foreground-rgb: 255, 255, 255;
   --background-start-rgb: 0, 0, 0;
   --background-end-rgb: 0, 0, 0;
 }
 
 
+body {
+  font-family: var(--font-ibm-plex-mono);
+}
 /* Custom animations */
 @keyframes float {
   0% {

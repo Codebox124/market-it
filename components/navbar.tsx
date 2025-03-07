@@ -51,7 +51,7 @@ export default function Navbar() {
             href="#contact"
             className="px-5 py-2 bg-gradient-to-r from-green-400 to-blue-400 text-white rounded-full hover:shadow-lg hover:shadow-blue-500/20 transition-all"
           >
-            Contact Us
+            Contact
           </Link>
         </div>
 
@@ -92,7 +92,7 @@ export default function Navbar() {
               className="px-5 py-2 bg-gradient-to-r from-green-400 to-blue-400 text-white rounded-full hover:shadow-lg hover:shadow-blue-500/20 transition-all text-center"
               onClick={() => setIsOpen(false)}
             >
-              Contact Us
+              Contact
             </Link>
           </div>
         </motion.div>
