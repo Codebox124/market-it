@@ -27,9 +27,9 @@ export default function Navbar() {
     >
       <div className="container mx-auto px-6 flex justify-between items-center">
         <Link href="/" className="text-white  font-bold text-2xl">
-          <span className="text-green-400">Make It</span>
-          <span className="text-white px-4">&</span>
-          <span className="text-blue-400">Market</span>
+          <span className="text-green-400">Make <span className="">It </span></span>
+          <span className="text-white ">&</span>
+          <span className="text-blue-400"> Market</span>
         </Link>
 
         {/* Desktop Menu */}

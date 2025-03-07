@@ -15,9 +15,9 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           <div>
             <Link href="/" className="text-white  font-bold text-2xl">
-              <span className="text-green-400">Make It</span>
-              <span className="text-white px-4">&</span>
-              <span className="text-blue-400">Market</span>
+              <span className="text-green-400">Make <span className="">It </span></span>
+              <span className="text-white ">&</span>
+              <span className="text-blue-400"> Market</span>
             </Link>
 
             <p className="mt-4 text-gray-400 ">

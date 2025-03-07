@@ -326,9 +326,9 @@ export default function Home() {
                 boxShadow: "0 0 30px rgba(59,130,246,0.3), inset 0 0 20px rgba(59,130,246,0.2)"
               }}
             >
-              MAKE IT
+              MAKE <span className="px-5">IT</span>
               <motion.span
-                className=" bg-clip-text px-4 bg-gradient-to-r text-white"
+                className=" bg-clip-text pr-6 bg-gradient-to-r text-white"
                 animate={{
                   textShadow: ["0 0 10px rgba(16,185,129,0.5)", "0 0 20px rgba(16,185,129,0.8)", "0 0 10px rgba(16,185,129,0.5)"]
                 }}
@@ -385,7 +385,7 @@ export default function Home() {
                   className="text-lg md:text-2xl text-start text-gray-200 max-w-3xl font-light mt-6 leading-relaxed"
                 >
                   From handing out flyers to editing a film...<br />
-                  
+
                 </motion.p>
                 <span className="text-lg md:text-2xl text-start text-gray-200 max-w-3xl font-light mt-6 leading-relaxed"> ...graphics design to solidifying business strategy.</span>
               </div>
