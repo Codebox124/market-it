@@ -76,7 +76,7 @@ export default function Marketing() {
                         },
                     },
                 }}
-                className="max-w-6xl mx-auto px-6 py-16 relative z-10"
+                className="max-w-7xl mx-auto px-6 py-16 relative z-10"
             >
                 <motion.div
                     variants={fadeInUp}
@@ -133,7 +133,7 @@ export default function Marketing() {
                                     <div className="mb-6 opacity-90">
                                         <IconComponent className="text-amber-400/80" size={28} />
                                     </div>
-                                    <h2 className="text-xl tracking-wider uppercase font-light mb-3">{item.title}</h2>
+                                    <h2 className="text-lg tracking-wider uppercase font-light mb-3">{item.title}</h2>
                                     <p className="text-gray-400 mb-6 text-sm font-light">{item.description}</p>
                                     <a
                                         href="#"
@@ -153,13 +153,13 @@ export default function Marketing() {
                     className="mt-24 text-center"
                 >
                     <a
-                        href="#contact"
+                        href="/contact"
                         className="relative inline-block px-12 py-5 overflow-hidden group"
                     >
                         <span className="absolute top-0 left-0 w-full h-full bg-transparent border border-amber-700/50 translate-x-0 translate-y-0 group-hover:translate-x-1 group-hover:translate-y-1 transition-transform duration-300"></span>
                         <span className="absolute top-0 left-0 w-full h-full bg-transparent border border-rose-700/50 translate-x-0 translate-y-0 group-hover:-translate-x-1 group-hover:-translate-y-1 transition-transform duration-300"></span>
                         <span className="relative block text-amber-300 uppercase tracking-widest text-sm font-light">
-                           Contact 
+                            Contact
                         </span>
                     </a>
                 </motion.div>

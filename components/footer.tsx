@@ -14,16 +14,17 @@ export default function Footer() {
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           <div>
-            <Link href="/" className="text-white font-bold text-3xl">
-              <span className="text-green-400">Make</span>
-              <span className="text-white">It</span>
-              <span className="text-blue-400">&Market</span>
+            <Link href="/" className="text-white  font-bold text-2xl">
+              <span className="text-green-400">Make It</span>
+              <span className="text-white px-4">&</span>
+              <span className="text-blue-400">Market</span>
             </Link>
+
             <p className="mt-4 text-gray-400 ">
               We provide full-service visuals and marketing solutions to help
               you achieve your goals.
             </p>
-           
+
           </div>
 
           <div>
@@ -88,7 +89,7 @@ export default function Footer() {
               <li className="flex items-start">
                 <MapPin size={18} className="mr-2 mt-1 text-blue-400" />
                 <span className="text-gray-400">
-                 Worldwide
+                  Worldwide
                 </span>
               </li>
             </ul>
