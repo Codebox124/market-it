@@ -48,7 +48,7 @@ export default function Navbar() {
             Marketing
           </Link>
           <Link
-            href="#contact"
+            href="/contact"
             className="px-5 py-2 bg-gradient-to-r from-green-400 to-blue-400 text-white rounded-full hover:shadow-lg hover:shadow-blue-500/20 transition-all"
           >
             Contact
@@ -88,7 +88,7 @@ export default function Navbar() {
               Marketing
             </Link>
             <Link
-              href="#contact"
+              href="/contact"
               className="px-5 py-2 bg-gradient-to-r from-green-400 to-blue-400 text-white rounded-full hover:shadow-lg hover:shadow-blue-500/20 transition-all text-center"
               onClick={() => setIsOpen(false)}
             >
