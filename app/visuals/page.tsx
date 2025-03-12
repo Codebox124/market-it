@@ -27,7 +27,7 @@ const visualsPortfolio = [
     },
     {
         title: "Website Design",
-        image: "/website-design.png",
+        image: "/website-design.jpg",
         description: "User-friendly custom websites and apps for portfolio,awareness, commerce or blogging",
         icon: "star",
     },

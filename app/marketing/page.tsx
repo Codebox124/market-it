@@ -16,7 +16,7 @@ const marketingPortfolio = [
     },
     {
         title: "Advertising",
-        image: "/advertising.png",
+        image: "/advertising.jpg",
         description:
             "Implementing campaigns that locate and attract your prospective customers, clients or supporters",
         icon: Diamond,
@@ -24,12 +24,12 @@ const marketingPortfolio = [
     },
     {
         title: "Social Media",
-        image: "/social-media.png",
+        image: "/social-media.jpg",
         description: "Providing all-encompassing account management, outreach, content creation, and growth"
     },
     {
         title: "Flyer Distribution",
-        image: "/flyer.png",
+        image: "/flyer.jpg",
         description:
             "Focused offline marketing to reach people in the real world both local and distant ",
         icon: Feather,

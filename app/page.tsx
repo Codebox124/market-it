@@ -344,21 +344,7 @@ export default function Home() {
               > MARKET</motion.span>
             </motion.h1>
 
-            {/* Glassmorphism Navigation - With subtle animation
-            <motion.nav
-              variants={fadeIn}
-              custom={0.5}
-              className="text-lg md:text-xl font-medium my-8 md:my-14 flex justify-center md:justify-end gap-6 md:gap-10 backdrop-blur-md bg-white/5 rounded-full px-6 md:px-10 py-3 md:py-4 border border-white/10"
-              style={{ boxShadow: "0 0 20px rgba(255,255,255,0.1)" }}
-              whileHover={{
-                boxShadow: "0 0 30px rgba(255,255,255,0.2)",
-                transition: { duration: 1 }
-              }}
-            >
-              <span className="cursor-pointer hover:text-emerald-400 transition duration-300">Visuals</span>
-              <span className="cursor-pointer hover:text-blue-400 transition duration-300">Marketing</span>
-              <span className="cursor-pointer hover:text-purple-400 transition duration-300">Contact</span>
-            </motion.nav> */}
+
 
             <motion.div
               variants={fadeIn}
@@ -438,7 +424,7 @@ export default function Home() {
                       {service.list.map((item, idx) => (
                         <motion.li
                           key={idx}
-                          className="flex items-center group/item cursor-pointer transition-all duration-300 hover:translate-x-2"
+                          className="flex items-center group/item cursor-pointer transition-all duration-300 "
                           whileHover={{ scale: 1.02 }}
                         >
                           <span className="mr-3 opacity-80 group-hover/item:opacity-100">{item}</span>
