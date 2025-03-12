@@ -10,7 +10,7 @@ const marketingPortfolio = [
         title: "Branding",
         image: "/branding.png",
         description:
-            "Crafting unique brand identities that resonate and differentiate.",
+            "Crafting your brand identity, strategy and public image from scratch or as-is",
         icon: Crown,
         accent: "border-amber-700/30",
     },
@@ -18,22 +18,20 @@ const marketingPortfolio = [
         title: "Advertising",
         image: "/advertising.png",
         description:
-            "Strategic ad campaigns that capture attention and drive conversions.",
+            "Implementing campaigns that locate and attract your prospective customers, clients or supporters",
         icon: Diamond,
         accent: "border-rose-700/30",
     },
     {
         title: "Social Media",
         image: "/social-media.png",
-        description: "Engaging social media management and content strategies.",
-        icon: Award,
-        accent: "border-purple-700/30",
+        description: "Providing all-encompassing account management, outreach, content creation, and growth"
     },
     {
         title: "Flyer Distribution",
         image: "/flyer.png",
         description:
-            "Targeted offline marketing to reach local customers",
+            "Focused offline marketing to reach people in the real world both local and distant ",
         icon: Feather,
         accent: "border-indigo-700/30",
     },
@@ -122,7 +120,7 @@ export default function Marketing() {
                                         alt={item.title}
                                         fill
                                         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                                        className="object-cover transition-transform duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0"
+                                        className="object-cover transition-transform duration-700 "
                                         placeholder="blur"
                                         blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD..."
                                     />
@@ -130,9 +128,9 @@ export default function Marketing() {
                                 </div>
                                 <div className="p-8 relative">
                                     <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-amber-800/40 to-transparent"></div>
-                                    <div className="mb-6 opacity-90">
+                                    {/* <div className="mb-6 opacity-90">
                                         <IconComponent className="text-amber-400/80" size={28} />
-                                    </div>
+                                    </div> */}
                                     <h2 className="text-lg tracking-wider uppercase font-light mb-3">{item.title}</h2>
                                     <p className="text-gray-400 mb-6 text-sm font-light">{item.description}</p>
                                     <a

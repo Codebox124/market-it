@@ -10,25 +10,25 @@ const visualsPortfolio = [
         title: "Video Editing",
         image: "/video-editing.png",
         description:
-            "Cinematic storytelling through professional video post-production.",
+            "Post-production,including motion graphics, animation, VFX,sound and color correction ",
         icon: "diamond",
     },
     {
         title: "Photo Editing",
         image: "/photo-editing.png",
-        description: "Precision retouching and creative image enhancement.",
+        description: "High-end image manipulation,creative effects and quality improvement.",
         icon: "star",
     },
     {
         title: "Graphic Design",
         image: "/graphic-design.png",
-        description: "Innovative visual communication and brand identity design.",
+        description: "Visual production covering an assortment of media,whether personal or business",
         icon: "diamond",
     },
     {
         title: "Website Design",
         image: "/website-design.png",
-        description: "Responsive, user-centric web experiences that convert.",
+        description: "User-friendly custom websites and apps for portfolio,awareness, commerce or blogging",
         icon: "star",
     },
 ];
@@ -82,16 +82,16 @@ export default function Visuals() {
                         <div className="w-24 h-px bg-gradient-to-r from-transparent via-amber-500 to-transparent"></div>
                     </div>
                     <h1 className="text-6xl font-thin tracking-wider leading-tight mb-6">
-                    Our
+                        Our
                         <span className="block text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-rose-300 to-purple-400 font-medium mt-1">
-                        Visuals Portfolio
+                            Visuals Portfolio
                         </span>
                     </h1>
                     <div className="flex justify-center mt-6">
                         <div className="w-24 h-px bg-gradient-to-r from-transparent via-amber-500 to-transparent"></div>
                     </div>
                     <p className="mt-8 text-lg text-gray-300 max-w-2xl mx-auto italic font-light">
-                    Transforming ideas into stunning visual experiences across multiple mediums.
+                        Transforming ideas into stunning visual experiences across multiple mediums.
                     </p>
                 </motion.header>
 
@@ -104,7 +104,7 @@ export default function Visuals() {
                     {visualsPortfolio.map((item, index) => (
                         <motion.div
                             key={index}
-                           
+
                             whileHover={{
                                 rotateY: 5,
                                 rotateX: 5,
@@ -113,16 +113,16 @@ export default function Visuals() {
                             }}
                             className="group backdrop-blur-sm rounded-none overflow-hidden transition-all duration-500 border-t border-l border-amber-800/20 bg-gradient-to-br from-gray-900/80 to-black"
                         >
-                            <div className="absolute top-4 right-4 z-20 bg-black/50 backdrop-blur-sm p-2 rounded-full">
+                            {/* <div className="absolute top-4 right-4 z-20 bg-black/50 backdrop-blur-sm p-2 rounded-full">
                                 {getIcon(item.icon)}
-                            </div>
+                            </div> */}
                             <div className="relative h-64 w-full overflow-hidden">
                                 <Image
                                     src={item.image || "/placeholder.svg"}
                                     alt={item.title}
                                     fill
                                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                                    className="object-cover transition-transform duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0"
+                                    className="object-cover transition-transform duration-700 "
                                     placeholder="blur"
                                     blurDataURL="data:image/jpeg;base64,/9j/4AAQSk..."
                                 />
@@ -141,7 +141,7 @@ export default function Visuals() {
                                     href="#"
                                     className="inline-flex items-center text-amber-400/80 hover:text-amber-300 transition-colors uppercase text-xs tracking-widest"
                                 >
-                                   View project <ArrowRight className="ml-2 h-3 w-3" />
+                                    View project <ArrowRight className="ml-2 h-3 w-3" />
                                 </a>
                             </div>
                         </motion.div>
@@ -161,7 +161,7 @@ export default function Visuals() {
                         <span className="absolute top-0 left-0 w-full h-full bg-transparent border border-amber-700/50 translate-x-0 translate-y-0 group-hover:translate-x-1 group-hover:translate-y-1 transition-transform duration-300"></span>
                         <span className="absolute top-0 left-0 w-full h-full bg-transparent border border-purple-700/50 translate-x-0 translate-y-0 group-hover:-translate-x-1 group-hover:-translate-y-1 transition-transform duration-300"></span>
                         <span className="relative block text-amber-300 uppercase tracking-widest text-sm font-light">
-                           Contact 
+                            Contact
                         </span>
                     </a>
                 </motion.div>
