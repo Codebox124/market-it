@@ -357,7 +357,7 @@ export default function Home() {
               }}
             >
               <motion.p
-                className="text-lg md:text-2xl text-gray-200 max-w-3xl font-light leading-relaxed"
+                className="text-lg heroText md:text-2xl text-gray-200 max-w-3xl font-light leading-relaxed"
                 animate={{
                   color: ["rgba(229,231,235,1)", "rgba(255,255,255,1)", "rgba(229,231,235,1)"]
                 }}
@@ -368,15 +368,15 @@ export default function Home() {
               </motion.p>
               <div >
                 <motion.p
-                  className="text-lg md:text-2xl text-start text-gray-200 max-w-3xl font-light mt-6 leading-relaxed"
+                  className="text-lg heroText md:text-2xl text-start text-gray-200 max-w-3xl font-light mt-6 leading-relaxed"
                 >
                   From handing out flyers to editing a film...<br />
 
                 </motion.p>
-                <span className="text-lg md:text-2xl text-start text-gray-200 max-w-3xl font-light mt-6 leading-relaxed"> ...graphics design to solidifying business strategy.</span>
+                <span className="text-lg heroText md:text-2xl text-start text-gray-200 max-w-3xl font-light mt-6 leading-relaxed"> ...graphics design to solidifying business strategy.</span>
               </div>
               <motion.p
-                className="text-lg md:text-2xl text-gray-200 max-w-3xl font-light mt-6 leading-relaxed"
+                className="text-lg heroText md:text-2xl text-gray-200 max-w-3xl font-light mt-6 leading-relaxed"
               >
                 We craft <span className="">custom content</span> and <span className=" decoration-blue-400 decoration-2 underline-offset-4">marketing campaigns</span> that get things done for you. No matter if you are large or small.
               </motion.p>

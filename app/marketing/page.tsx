@@ -10,7 +10,7 @@ const marketingPortfolio = [
         title: "Branding",
         image: "/branding.png",
         description:
-            "Crafting your brand identity, strategy and public image from scratch or as-is",
+            "Crafting your brand identity strategy and public image from scratch or as-is",
         icon: Crown,
         accent: "border-amber-700/30",
     },
@@ -18,14 +18,14 @@ const marketingPortfolio = [
         title: "Advertising",
         image: "/advertising.jpg",
         description:
-            "Implementing campaigns that locate and attract your prospective customers, clients or supporters",
+            "Implementing campaigns that locate and attract your prospective customers or supporters",
         icon: Diamond,
         accent: "border-rose-700/30",
     },
     {
         title: "Social Media",
         image: "/social-media.jpg",
-        description: "Providing all-encompassing account management, outreach, content creation, and growth"
+        description: "Providing all-encompassing account management outreach content creation and growth"
     },
     {
         title: "Flyer Distribution",
@@ -129,12 +129,12 @@ export default function Marketing() {
                                 </div>
                             </div>
 
-                            {/* Text Section with Proper Alignment */}
-                            <div className="p-8 relative flex flex-col h-[200px] justify-between">
-                                <h2 className="text-xl tracking-wider uppercase font-light">{item.title}</h2>
+
+                            <div className="p-8 relative flex flex-col h-[170px] justify-between">
+                                <h2 className="text-lg tracking-wider uppercase font-light">{item.title}</h2>
                                 <p className="text-gray-400 text-sm font-light">{item.description}</p>
 
-                                {/* "Explore" Button Properly Positioned at the Bottom */}
+
                                 <a
                                     href="#"
                                     className="inline-flex items-center text-amber-400/80 hover:text-amber-300 transition-colors uppercase text-xs tracking-widest absolute bottom-0"
