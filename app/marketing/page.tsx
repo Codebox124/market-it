@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { Diamond, Crown, Award, Feather, ArrowRight } from "lucide-react";
+import { Diamond, Crown, Award, Feather, ArrowRight, Eye } from "lucide-react";
 import BackButton from "@/components/Button";
 import { motion } from "framer-motion";
 
@@ -98,51 +98,54 @@ export default function Marketing() {
                     </p>
                 </motion.div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 perspective-1000">
-                    {marketingPortfolio.map((item, index) => {
-                        const IconComponent = item.icon;
-                        return (
-                            <motion.div
-                                key={index}
-                                variants={fadeInUp}
-                                custom={index + 1}
-                                whileHover={{
-                                    rotateY: 5,
-                                    rotateX: 5,
-                                    scale: 1.02,
-                                    boxShadow: "0 25px 50px -12px rgba(0, 0, 0, 0.5)"
-                                }}
-                                className={`backdrop-blur-sm rounded-none overflow-hidden transition-all duration-500 border-t border-l ${item.accent} bg-gradient-to-br from-gray-900/80 to-black`}
-                            >
-                                <div className="relative h-60 w-full overflow-hidden">
-                                    <Image
-                                        src={item.image || "/placeholder.svg"}
-                                        alt={item.title}
-                                        fill
-                                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                                        className="object-cover transition-transform duration-700 "
-                                        placeholder="blur"
-                                        blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD..."
-                                    />
-                                    <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent opacity-80 group-hover:opacity-60 transition-opacity duration-300"></div>
+                <div className="grid grid-cols-1 relative md:grid-cols-2 lg:grid-cols-4 gap-8 perspective-1000">
+                    {marketingPortfolio.map((item, index) => (
+                        <motion.div
+                            key={index}
+                            whileHover={{
+                                rotateY: 5,
+                                rotateX: 5,
+                                scale: 1.02,
+                                boxShadow: "0 25px 50px -12px rgba(0, 0, 0, 0.5)"
+                            }}
+                            className="group backdrop-blur-sm rounded-none overflow-hidden transition-all duration-500 border-t border-l border-amber-800/20 bg-gradient-to-br from-gray-900/80 to-black"
+                        >
+                            {/* Image Section */}
+                            <div className="relative h-64 w-full overflow-hidden">
+                                <Image
+                                    src={item.image || "/placeholder.svg"}
+                                    alt={item.title}
+                                    fill
+                                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                                    className="object-cover transition-transform duration-700"
+                                    placeholder="blur"
+                                    blurDataURL="data:image/jpeg;base64,/9j/4AAQSk..."
+                                />
+                                <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent opacity-80 group-hover:opacity-60 transition-opacity duration-300"></div>
+                                <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                                    <div className="bg-amber-500 backdrop-blur-md p-3 transform rotate-45 scale-0 group-hover:scale-100 transition-transform duration-500">
+                                        <Eye className="text-black transform -rotate-45" size={24} />
+                                    </div>
                                 </div>
-                                <div className="p-8 relative">
-                                    <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-amber-800/40 to-transparent"></div>
-                                    {/* <div className="mb-6 opacity-90">
-                                        <IconComponent className="text-amber-400/80" size={28} />
-                                    </div> */}
-                                    <h2 className="text-lg tracking-wider uppercase font-light mb-3">{item.title}</h2>
-                                    <p className="text-gray-400 mb-6 text-sm font-light">{item.description}</p>
-                                    <a
-                                        href="#"
-                                        className="inline-flex items-center text-amber-400/80 hover:text-amber-300 transition-colors uppercase text-xs tracking-widest"
-                                    >
-                                        Explore <ArrowRight className="ml-2 h-3 w-3" />
-                                    </a>
-                                </div>
-                            </motion.div>
-                        );
-                    })}
+                            </div>
+
+                            {/* Text Section with Proper Alignment */}
+                            <div className="p-8 relative flex flex-col h-[200px] justify-between">
+                                <h2 className="text-xl tracking-wider uppercase font-light">{item.title}</h2>
+                                <p className="text-gray-400 text-sm font-light">{item.description}</p>
+
+                                {/* "Explore" Button Properly Positioned at the Bottom */}
+                                <a
+                                    href="#"
+                                    className="inline-flex items-center text-amber-400/80 hover:text-amber-300 transition-colors uppercase text-xs tracking-widest absolute bottom-0"
+                                >
+                                    Explore <ArrowRight className="ml-2 h-3 w-3" />
+                                </a>
+                            </div>
+                        </motion.div>
+
+
+                    ))}
                 </div>
 
                 <motion.div
