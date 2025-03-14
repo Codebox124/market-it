@@ -373,7 +373,7 @@ export default function Home() {
                   From handing out flyers to editing a film...<br />
 
                 </motion.p>
-                <span className="text-lg heroText md:text-2xl text-start text-gray-200 max-w-3xl font-light mt-6 leading-relaxed"> ...graphics design to solidifying business strategy.</span>
+                <span className="text-lg heroText md:text-2xl text-start text-gray-200 max-w-3xl font-light mt-6 leading-relaxed"> ...graphic design to solidifying business strategy.</span>
               </div>
               <motion.p
                 className="text-lg heroText md:text-2xl text-gray-200 max-w-3xl font-light mt-6 leading-relaxed"
