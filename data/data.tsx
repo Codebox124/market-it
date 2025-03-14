@@ -7,27 +7,70 @@ export const portfolioProjects: Record<
         {
             title: "E-commerce Website",
             description: "Designed and developed a fully responsive online store.",
-            image: "/images/projects/ecommerce.jpg",
+            image: "/website/blog 3.jpg",
         },
         {
             title: "Portfolio Website",
             description: "Built a personal portfolio website for a creative artist.",
-            image: "/images/projects/portfolio.jpg",
+            image: "/website/caymana.co Landing Page edit.png",
         },
         {
             title: "E-commerce Website",
             description: "Designed and developed a fully responsive online store.",
-            image: "/images/projects/ecommerce.jpg",
+            image: "/website/desktop full page update.png",
         },
         {
             title: "E-commerce Website",
             description: "Designed and developed a fully responsive online store.",
-            image: "/images/projects/ecommerce.jpg",
+            image: "/website/port web Moses Villani.png",
         },
         {
             title: "E-commerce Website",
             description: "Designed and developed a fully responsive online store.",
-            image: "/images/projects/ecommerce.jpg",
+            image: "/website/shifto 4.png",
+        },
+        {
+            title: "E-commerce Website",
+            description: "Designed and developed a fully responsive online store.",
+            image: "/website/shifto 6.png",
+        },
+        {
+            title: "E-commerce Website",
+            description: "Designed and developed a fully responsive online store.",
+            image: "/website/shifto 7.png",
+        },
+        {
+            title: "E-commerce Website",
+            description: "Designed and developed a fully responsive online store.",
+            image: "/website/site port.jpg",
+        }, {
+            title: "E-commerce Website",
+            description: "Designed and developed a fully responsive online store.",
+            image: "/website/web port vibal (2).PNG",
+        }, {
+            title: "E-commerce Website",
+            description: "Designed and developed a fully responsive online store.",
+            image: "/website/website 2.png",
+        }, 
+        {
+            title: "E-commerce Website",
+            description: "Designed and developed a fully responsive online store.",
+            image: "/website/website port 2.png",
+        },
+        {
+            title: "E-commerce Website",
+            description: "Designed and developed a fully responsive online store.",
+            image: "/website/website port 4.png",
+        },
+        {
+            title: "E-commerce Website",
+            description: "Designed and developed a fully responsive online store.",
+            image: "/website/website port.png",
+        },
+        {
+            title: "E-commerce Website",
+            description: "Designed and developed a fully responsive online store.",
+            image: "/website/website.png",
         },
     ],
     "mobile-apps": [
@@ -87,7 +130,48 @@ export const portfolioProjects: Record<
             "title": "Certificate Design",
             "description": "Designed an elegant and professional certificate for official recognition.",
             "image": "/graphic/cert SAMPLE 2.png"
-        }
+        },
+        {
+            "title": "Certificate Design",
+            "description": "Designed an elegant and professional certificate for official recognition.",
+            "image": "/graphic/cover art ROBERT FORD edit 1.5"
+        },
+        {
+            "title": "Certificate Design",
+            "description": "Designed an elegant and professional certificate for official recognition.",
+            "image": "/graphic/flyer - Michael_Rebecca EDIT 1.png"
+        },
+        {
+            "title": "Certificate Design",
+            "description": "Designed an elegant and professional certificate for official recognition.",
+            "image": "/graphic/flyer 2.png"
+        },
+        {
+            "title": "Certificate Design",
+            "description": "Designed an elegant and professional certificate for official recognition.",
+            "image": "/graphic/flyer 3 SAL.jpg"
+        },
+        {
+            "title": "Certificate Design",
+            "description": "Designed an elegant and professional certificate for official recognition.",
+            "image": "/graphic/flyer 3 SAL.jpg"
+        },
+        {
+            "title": "Certificate Design",
+            "description": "Designed an elegant and professional certificate for official recognition.",
+            "image": "/graphic/flyer OLA CD 2.png"
+        },
+        {
+            "title": "Certificate Design",
+            "description": "Designed an elegant and professional certificate for official recognition.",
+            "image": "/graphic/flyer PHIL edit.png"
+        },
+        {
+            "title": "Certificate Design",
+            "description": "Designed an elegant and professional certificate for official recognition.",
+            "image": "/graphic/Flyer Who Let The Dogs Out Fashion Show.png"
+        },
+        
     ]
 
 };
