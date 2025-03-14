@@ -5,7 +5,7 @@ import { ArrowRight, Check, ChevronDown, Star } from "lucide-react";
 import { motion } from "framer-motion";
 import { useEffect, useState, useRef } from "react";
 
-// Animation Variants
+
 const fadeIn = {
   hidden: { opacity: 0, y: 20 },
   visible: (i: number) => ({
@@ -40,7 +40,7 @@ const services = [
     icon: "🚀",
     list: [
       "🚀 Branding",
-      "📢 Advertising",
+      "📸 Advertising",
       "📱 Social Media",
       "📄 Flyer Distribution",
     ],
@@ -56,7 +56,7 @@ const generateParticles = (count: number, isMobile: boolean) => {
     size: Math.random() * (isMobile ? 3 : 4) + 1,
     speedX: (Math.random() - 0.5) * 0.2,
     speedY: (Math.random() - 0.5) * 0.2,
-    color: Math.floor(Math.random() * 5), // More color variations
+    color: Math.floor(Math.random() * 5), 
   }));
 };
 
@@ -98,7 +98,7 @@ export default function Home() {
     };
   }, []);
 
-  // Canvas-based particle animation
+
   useEffect(() => {
     if (!isLoaded || !canvasRef.current || particles.length === 0) return;
 
@@ -186,7 +186,7 @@ export default function Home() {
     <>
       {/* Hero Section */}
       <section className="relative min-h-screen w-full flex py-20 items-center justify-center bg-black text-white overflow-hidden">
-        {/* Canvas Background Animation */}
+
         <canvas
           ref={canvasRef}
           className="absolute inset-0 z-0 h-full"
@@ -386,28 +386,14 @@ export default function Home() {
               {services.map((service, index) => (
                 <motion.div
                   key={index}
-                  initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5, delay: index * 0.2 }}
-                  viewport={{ once: true }}
-                  whileHover={{ y: -5, scale: 1.01 }}
+
                   className="relative group"
                 >
                   <div className="absolute inset-0 bg-gradient-to-br from-gray-800/80 to-gray-900/90 rounded-2xl transform group-hover:scale-102 transition-all duration-300 -z-10"></div>
                   <div className="absolute inset-0 rounded-2xl border border-white/10 backdrop-blur-sm overflow-hidden">
                     <motion.div
                       className={`absolute -inset-[150%] bg-gradient-to-r ${service.color} opacity-30 blur-3xl`}
-                      animate={{
-                        x: ['-20%', '10%', '-20%'],
-                        y: ['-10%', '20%', '-10%'],
-                        opacity: [0.2, 0.3, 0.2]
-                      }}
-                      transition={{
-                        duration: 15 + index * 5,
-                        ease: "easeInOut",
-                        repeat: Infinity,
-                        repeatType: "mirror"
-                      }}
+
                     />
                   </div>
 
@@ -453,7 +439,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Add custom styles for triangle shapes */}
+  
       <style jsx global>{`
         .shape-triangle {
           width: 0;

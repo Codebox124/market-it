@@ -1,0 +1,93 @@
+// data/portfolioProjects.ts
+export const portfolioProjects: Record<
+    string,
+    { title: string; description: string; image: string }[]
+> = {
+    "website-design": [
+        {
+            title: "E-commerce Website",
+            description: "Designed and developed a fully responsive online store.",
+            image: "/images/projects/ecommerce.jpg",
+        },
+        {
+            title: "Portfolio Website",
+            description: "Built a personal portfolio website for a creative artist.",
+            image: "/images/projects/portfolio.jpg",
+        },
+        {
+            title: "E-commerce Website",
+            description: "Designed and developed a fully responsive online store.",
+            image: "/images/projects/ecommerce.jpg",
+        },
+        {
+            title: "E-commerce Website",
+            description: "Designed and developed a fully responsive online store.",
+            image: "/images/projects/ecommerce.jpg",
+        },
+        {
+            title: "E-commerce Website",
+            description: "Designed and developed a fully responsive online store.",
+            image: "/images/projects/ecommerce.jpg",
+        },
+    ],
+    "mobile-apps": [
+        {
+            title: "Food Delivery App",
+            description: "Developed a cross-platform food delivery application.",
+            image: "/images/projects/food-app.jpg",
+        },
+        {
+            title: "Health & Fitness Tracker",
+            description: "Designed an app to track fitness and health routines.",
+            image: "/images/projects/fitness-app.jpg",
+        },
+    ],
+    "graphic-design": [
+        {
+            "title": "Tech Startup Brand Identity",
+            "description": "Designed a full branding package including logo, color palette, and typography for a tech startup.",
+            "image": "/graphic/3.png"
+        },
+        {
+            "title": "Modern Logo & Branding",
+            "description": "Created a sleek and modern logo with a cohesive branding theme for a startup.",
+            "image": "/graphic/4.png"
+        },
+        {
+            "title": "Visual Identity System",
+            "description": "Developed a consistent brand identity system for a growing company, including logo variations.",
+            "image": "/graphic/5.png"
+        },
+        {
+            "title": "Bold & Edgy Logo Design",
+            "description": "Designed a striking logo with a rebellious theme for a unique brand.",
+            "image": "/graphic/bandit.png"
+        },
+        {
+            "title": "Professional Business Card Design",
+            "description": "Created an eye-catching and professional business card for enhanced networking impact.",
+            "image": "/graphic/biz card.png"
+        },
+        {
+            "title": "Event Flyer for Bonefish",
+            "description": "Designed a visually engaging promotional flyer for an exclusive event.",
+            "image": "/graphic/bonefish flyer 4 MIKE.png"
+        },
+        {
+            "title": "Custom Book Cover Design",
+            "description": "Designed a bold and captivating book cover to enhance market appeal.",
+            "image": "/graphic/book cover 3 KING.png"
+        },
+        {
+            "title": "Corporate Brochure Design",
+            "description": "Developed an informative and well-structured brochure for a corporate brand.",
+            "image": "/graphic/brochure edit pg2.jpeg"
+        },
+        {
+            "title": "Certificate Design",
+            "description": "Designed an elegant and professional certificate for official recognition.",
+            "image": "/graphic/cert SAMPLE 2.png"
+        }
+    ]
+
+};

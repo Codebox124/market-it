@@ -81,7 +81,7 @@ export default function Visuals() {
                     <div className="flex justify-center mb-4">
                         <div className="w-24 h-px bg-gradient-to-r from-transparent via-amber-500 to-transparent"></div>
                     </div>
-                    <h1 className="text-6xl text-4xl font-thin tracking-wider leading-tight mb-6">
+                    <h1 className="md:text-6xl text-4xl font-thin tracking-wider leading-tight mb-6">
                         Our
                         <span className="block text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-rose-300 to-purple-400 font-medium mt-1">
                             Visuals Portfolio
@@ -136,9 +136,9 @@ export default function Visuals() {
                                 <h2 className="text-lg tracking-wider uppercase font-light">{item.title}</h2>
                                 <p className="text-gray-400 text-sm font-light">{item.description}</p>
 
-                                {/* "Explore" Button Properly Positioned at the Bottom */}
+                               
                                 <a
-                                    href="#"
+                                    href={`/visuals/${item.title.toLowerCase().replace(/\s+/g, "-")}`}
                                     className="inline-flex items-center text-amber-400/80 hover:text-amber-300 transition-colors uppercase text-xs tracking-widest absolute bottom-0"
                                 >
                                     Explore <ArrowRight className="ml-2 h-3 w-3" />
