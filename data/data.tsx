@@ -73,16 +73,151 @@ export const portfolioProjects: Record<
             image: "/website/website.png",
         },
     ],
-    "mobile-apps": [
+    "photo-editing": [
         {
             title: "Food Delivery App",
             description: "Developed a cross-platform food delivery application.",
-            image: "/images/projects/food-app.jpg",
+            image: "/photo/_1260573 edit.png",
         },
         {
             title: "Health & Fitness Tracker",
             description: "Designed an app to track fitness and health routines.",
-            image: "/images/projects/fitness-app.jpg",
+            image: "/photo/_1260944 edit.png",
+        },
+        {
+            title: "Health & Fitness Tracker",
+            description: "Designed an app to track fitness and health routines.",
+            image: "/photo/DSC00327 edit.png",
+        },
+        {
+            title: "Health & Fitness Tracker",
+            description: "Designed an app to track fitness and health routines.",
+            image: "/photo/DSC00342 edit.png",
+        },
+        {
+            title: "Health & Fitness Tracker",
+            description: "Designed an app to track fitness and health routines.",
+            image: "/photo/IMG-5831.jpg",
+        },
+        {
+            title: "Health & Fitness Tracker",
+            description: "Designed an app to track fitness and health routines.",
+            image: "/photo/music pics 2.png",
+        },
+        {
+            title: "Health & Fitness Tracker",
+            description: "Designed an app to track fitness and health routines.",
+            image: "/photo/photo [Lisa Kinzer] AFTER.png",
+        },
+        {
+            title: "Health & Fitness Tracker",
+            description: "Designed an app to track fitness and health routines.",
+            image: "/photo/pic.png",
+        },
+        {
+            title: "Health & Fitness Tracker",
+            description: "Designed an app to track fitness and health routines.",
+            image: "/photo/pic2.png",
+        },
+        {
+            title: "Health & Fitness Tracker",
+            description: "Designed an app to track fitness and health routines.",
+            image: "/photo/pic3.png",
+        },
+        {
+            title: "Health & Fitness Tracker",
+            description: "Designed an app to track fitness and health routines.",
+            image: "/photo/pic4.png",
+        },
+        {
+            title: "Health & Fitness Tracker",
+            description: "Designed an app to track fitness and health routines.",
+            image: "/photo/pic5.png",
+        },
+        {
+            title: "Health & Fitness Tracker",
+            description: "Designed an app to track fitness and health routines.",
+            image: "/photo/pic6.png",
+        },
+        {
+            title: "Health & Fitness Tracker",
+            description: "Designed an app to track fitness and health routines.",
+            image: "/photo/pic7.png",
+        },
+        {
+            title: "Health & Fitness Tracker",
+            description: "Designed an app to track fitness and health routines.",
+            image: "/photo/pic8.png",
+        },
+        {
+            title: "Health & Fitness Tracker",
+            description: "Designed an app to track fitness and health routines.",
+            image: "/photo/pic9.png",
+        },
+        {
+            title: "Health & Fitness Tracker",
+            description: "Designed an app to track fitness and health routines.",
+            image: "/photo/pic10.png",
+        },
+        {
+            title: "Health & Fitness Tracker",
+            description: "Designed an app to track fitness and health routines.",
+            image: "/photo/portfolio - photo colorGRADE00.jpg",
+        },
+        {
+            title: "Health & Fitness Tracker",
+            description: "Designed an app to track fitness and health routines.",
+            image: "/photo/portfolio - photo colorGRADE01.jpg",
+        },
+        {
+            title: "Health & Fitness Tracker",
+            description: "Designed an app to track fitness and health routines.",
+            image: "/photo/portfolio - photo colorGRADE02.jpg",
+        },
+        {
+            title: "Health & Fitness Tracker",
+            description: "Designed an app to track fitness and health routines.",
+            image: "/photo/portfolio - photo colorGRADE04.jpg",
+        },
+        {
+            title: "Health & Fitness Tracker",
+            description: "Designed an app to track fitness and health routines.",
+            image: "/photo/portfolio - photo colorGRADE07.jpg",
+        },
+        {
+            title: "Health & Fitness Tracker",
+            description: "Designed an app to track fitness and health routines.",
+            image: "/photo/portfolio - photo colorGRADE10.jpg",
+        },
+        {
+            title: "Health & Fitness Tracker",
+            description: "Designed an app to track fitness and health routines.",
+            image: "/photo/portfolio - photo colorGRADE13.jpg",
+        },
+        {
+            title: "Health & Fitness Tracker",
+            description: "Designed an app to track fitness and health routines.",
+            image: "/photo/portfolio - photo colorGRADE15.jpg",
+        },
+        {
+            title: "Health & Fitness Tracker",
+            description: "Designed an app to track fitness and health routines.",
+            image: "/photo/portfolio - photo colorGRADE17.jpg",
+        },
+        {
+            title: "Health & Fitness Tracker",
+            description: "Designed an app to track fitness and health routines.",
+            image: "/photo/portfolio - photo colorGRADE19.jpg",
+        },
+        {
+            title: "Health & Fitness Tracker",
+            description: "Designed an app to track fitness and health routines.",
+            image: "/photo/portfolio - photo colorGRADE24.jpg",
+        },
+        {
+            title: "Health & Fitness Tracker",
+            description: "Designed an app to track fitness and health routines.",
+            image: "/photo/portfolio - photo colorGRADE25.jpg",
         },
     ],
     "graphic-design": [
@@ -171,6 +306,10 @@ export const portfolioProjects: Record<
             "description": "Designed an elegant and professional certificate for official recognition.",
             "image": "/graphic/Flyer Who Let The Dogs Out Fashion Show.png"
         },
+        
+    ],
+
+    "video-editing": [
         
     ]
 
