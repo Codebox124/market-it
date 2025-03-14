@@ -84,7 +84,7 @@ export default function Marketing() {
                     <div className="flex justify-center mb-4">
                         <div className="w-24 h-px bg-gradient-to-r from-transparent via-amber-500 to-transparent"></div>
                     </div>
-                    <h1 className="text-6xl font-thin tracking-wider leading-tight mb-6">
+                    <h1 className="md:text-6xl text-4xl font-thin tracking-wider leading-tight mb-6">
                         Elevate
                         <span className="block text-transparent bg-clip-text bg-gradient-to-r from-amber-300 via-rose-300 to-purple-400 font-medium mt-1">
                             Your Brand with Our Marketing Solutions
