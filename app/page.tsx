@@ -29,7 +29,7 @@ const services = [
       "🎥 Video Editing",
       "📸 Photo Editing",
       "🎨 Graphic Design",
-      "🌍 Website Design",
+      "🌍 Animations",
     ],
     link: "/visuals",
   },
@@ -39,7 +39,7 @@ const services = [
     color: "from-blue-400 to-indigo-600",
     icon: "🚀",
     list: [
-      "🚀 Branding",
+      "🚀 Websites",
       "📸 Advertising",
       "📱 Social Media",
       "📄 Flyer Distribution",

@@ -7,12 +7,10 @@ import { motion } from "framer-motion";
 
 const marketingPortfolio = [
     {
-        title: "Branding",
-        image: "/branding.png",
-        description:
-            "Crafting your brand identity strategy and public image from scratch or as-is",
-        icon: Crown,
-        accent: "border-amber-700/30",
+        title: "Websites",
+        image: "/website-design.jpg",
+        description: "User-friendly custom websites and apps for portfolio awareness commerce or blogging",
+        icon: "star",
     },
     {
         title: "Advertising",

@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -26,10 +27,20 @@ export default function Navbar() {
         }`}
     >
       <div className="container mx-auto px-6 flex justify-between items-center">
-        <Link href="/" className="text-white  font-bold text-2xl">
-          <span className="text-green-400">Make <span className="">It </span></span>
-          <span className="text-white ">&</span>
-          <span className="text-blue-400"> Market</span>
+        {/* Logo and Brand Name */}
+        <Link href="/" className="flex items-center space-x-3 text-white font-bold text-2xl">
+          <Image
+            src="/logo.png" 
+            alt="Make It & Market Logo"
+            width={100} 
+            height={100}
+            className="h-16" 
+          />
+          <span>
+            <span className="text-green-400">Make <span className="">It </span></span>
+            <span className="text-white ">&</span>
+            <span className="text-blue-400"> Market</span>
+          </span>
         </Link>
 
         {/* Desktop Menu */}

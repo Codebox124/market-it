@@ -8,6 +8,12 @@ import Link from "next/link";
 
 const visualsPortfolio = [
     {
+        title: "Graphic Design",
+        image: "/graphic-design.png",
+        description: "Visual production covering an assortment of media whether personal or business",
+        icon: "diamond",
+    },
+    {
         title: "Video Editing",
         image: "/video-editing.png",
         description:
@@ -21,29 +27,15 @@ const visualsPortfolio = [
         icon: "star",
     },
     {
-        title: "Graphic Design",
-        image: "/graphic-design.png",
-        description: "Visual production covering an assortment of media whether personal or business",
-        icon: "diamond",
-    },
-    {
-        title: "Website Design",
+        title: "Animation",
         image: "/website-design.jpg",
-        description: "User-friendly custom websites and apps for portfolio awareness commerce or blogging",
+        description: "Illustrating unique customized art characters environments and motion for your project needs",
         icon: "star",
     },
+   
+   
 ];
 
-const getIcon = (iconName: string) => {
-    switch (iconName) {
-        case "diamond":
-            return <Diamond className="h-6 w-6" />;
-        case "star":
-            return <Star className="h-6 w-6" />;
-        default:
-            return <Diamond className="h-6 w-6" />;
-    }
-};
 
 const container = {
     hidden: { opacity: 0 },
