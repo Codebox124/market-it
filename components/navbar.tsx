@@ -27,20 +27,20 @@ export default function Navbar() {
         }`}
     >
       <div className="container mx-auto px-6 flex justify-between items-center">
-        {/* Logo and Brand Name */}
-        <Link href="/" className="flex items-center space-x-3 text-white font-bold text-2xl">
+
+        <Link href="/" className="text-white flex items-center  font-bold text-2xl">
           <Image
-            src="/logo.png" 
+            src="/logo.png"
             alt="Make It & Market Logo"
-            width={100} 
+            width={100}
             height={100}
-            className="md:h-16" 
+            className="h-16"
           />
-          <span className="text-xl md:text-2xl">
+          <div>
             <span className="text-green-400">Make <span className="">It </span></span>
             <span className="text-white ">&</span>
             <span className="text-blue-400"> Market</span>
-          </span>
+          </div>
         </Link>
 
         {/* Desktop Menu */}
