@@ -17,9 +17,7 @@ export default function PortfolioPage() {
                 <h1 className="text-4xl md:text-5xl font-bold text-amber-400 uppercase animate-fade-in">
                     {formattedService}
                 </h1>
-                <p className="text-gray-300 mt-4 text-center max-w-lg">
-                    Explore my past projects in {formattedService}.
-                </p>
+               
 
                 {projects ? (
                     <div className="mt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

@@ -4,6 +4,7 @@ import BackButton from "@/components/Button";
 import { Eye, ArrowRight, Diamond, Star } from "lucide-react";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const visualsPortfolio = [
     {
@@ -102,49 +103,45 @@ export default function Visuals() {
                     className="grid grid-cols-1 sm:grid-cols-2 relative lg:grid-cols-4 gap-8 perspective-1000"
                 >
                     {visualsPortfolio.map((item, index) => (
-                        <motion.div
-                            key={index}
-                            whileHover={{
-                                rotateY: 5,
-                                rotateX: 5,
-                                scale: 1.02,
-                                boxShadow: "0 25px 50px -12px rgba(0, 0, 0, 0.5)"
-                            }}
-                            className="group backdrop-blur-sm rounded-none overflow-hidden transition-all duration-500 border-t border-l border-amber-800/20 bg-gradient-to-br from-gray-900/80 to-black"
-                        >
-                            {/* Image Section */}
-                            <div className="relative h-64 w-full overflow-hidden">
-                                <Image
-                                    src={item.image || "/placeholder.svg"}
-                                    alt={item.title}
-                                    fill
-                                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                                    className="object-cover transition-transform duration-700"
-                                    placeholder="blur"
-                                    blurDataURL="data:image/jpeg;base64,/9j/4AAQSk..."
-                                />
-                                <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent opacity-80 group-hover:opacity-60 transition-opacity duration-300"></div>
-                                <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                                    <div className="bg-amber-500 backdrop-blur-md p-3 transform rotate-45 scale-0 group-hover:scale-100 transition-transform duration-500">
-                                        <Eye className="text-black transform -rotate-45" size={24} />
+                        <Link href={`/visuals/${item.title.toLowerCase().replace(/\s+/g, "-")}`} passHref>
+                            <motion.div
+                                key={index}
+                                whileHover={{
+                                    rotateY: 5,
+                                    rotateX: 5,
+                                    scale: 1.02,
+                                    boxShadow: "0 25px 50px -12px rgba(0, 0, 0, 0.5)"
+                                }}
+                                className="group backdrop-blur-sm rounded-none overflow-hidden transition-all duration-500 border-t border-l border-amber-800/20 bg-gradient-to-br from-gray-900/80 to-black cursor-pointer"
+                            >
+                                {/* Image Section */}
+                                <div className="relative h-64 w-full overflow-hidden">
+                                    <div className="relative w-full h-full">
+                                        <Image
+                                            src={item.image || "/placeholder.svg"}
+                                            alt={item.title}
+                                            fill
+                                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                                            className="object-cover transition-transform duration-700"
+                                            placeholder="blur"
+                                            blurDataURL="data:image/jpeg;base64,/9j/4AAQSk..."
+                                        />
+                                        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent opacity-80 group-hover:opacity-60 transition-opacity duration-300"></div>
                                     </div>
                                 </div>
-                            </div>
 
-                            {/* Text Section with Proper Alignment */}
-                            <div className="p-8 relative flex flex-col h-[170px] justify-between">
-                                <h2 className="text-lg tracking-wider uppercase font-light">{item.title}</h2>
-                                <p className="text-gray-400 text-sm font-light">{item.description}</p>
+                                {/* Text Section with Proper Alignment */}
+                                <div className="p-8 relative flex flex-col h-[170px] justify-between">
+                                    <h2 className="text-lg tracking-wider uppercase font-light">{item.title}</h2>
+                                    <p className="text-gray-400 text-sm font-light">{item.description}</p>
 
-                               
-                                <a
-                                    href={`/visuals/${item.title.toLowerCase().replace(/\s+/g, "-")}`}
-                                    className="inline-flex items-center text-amber-400/80 hover:text-amber-300 transition-colors uppercase text-xs tracking-widest absolute bottom-0"
-                                >
-                                    Explore <ArrowRight className="ml-2 h-3 w-3" />
-                                </a>
-                            </div>
-                        </motion.div>
+                                    <div className="inline-flex items-center text-amber-400/80 hover:text-amber-300 transition-colors uppercase text-xs tracking-widest absolute bottom-0">
+                                        Explore <ArrowRight className="ml-2 h-3 w-3" />
+                                    </div>
+                                </div>
+                            </motion.div>
+                        </Link>
+
                     ))}
                 </motion.div>
 
