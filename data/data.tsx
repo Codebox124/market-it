@@ -1,7 +1,7 @@
 // data/portfolioProjects.ts
 export const portfolioProjects: Record<
     string,
-    { title: string; description: string; image: string  }[]
+    { title: string; description: string; image: string }[]
 > = {
     "website-design": [
         {
@@ -234,7 +234,7 @@ export const portfolioProjects: Record<
         {
             "title": "Visual Identity System",
             "description": "Developed a consistent brand identity system for a growing company, including logo variations.",
-            "image": "/graphic/Moses.jpg"
+            "image": "/graphic/5.png"
         },
         {
             "title": "Bold & Edgy Logo Design",
@@ -310,11 +310,7 @@ export const portfolioProjects: Record<
     ],
 
     "video-editing": [
-        {
-            title: "Dynamic Promo Video",
-            description: "A high-energy promotional video for a new product launch.",
-            image: "/photo/video portfolio.mp4",
-          },
+        
     ]
 
 };
