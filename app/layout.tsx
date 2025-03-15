@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Azeret_Mono as Geist_Mono,IBM_Plex_Mono } from "next/font/google";
+import { Geist, Azeret_Mono as Geist_Mono, IBM_Plex_Mono } from "next/font/google";
 
 import "./globals.css";
 import Navbar from "@/components/navbar";
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     title: "Make It & Market - Visuals & Marketing",
     description:
       "We craft custom content and marketing campaigns to help brands grow.",
-    url: "https://yourwebsite.com",
+    url: "https://www.makeitandmarket.com",
     siteName: "Make It & Market",
     type: "website",
   },
@@ -53,7 +53,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} ${ibmPlexMono.variable} antialiased`}
       >
         <Navbar />
-        <main className="min-h-screen">{children}</main>
+        <main className="">{children}</main>
         <Footer />
       </body>
     </html>

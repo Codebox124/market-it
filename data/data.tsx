@@ -1,7 +1,7 @@
 // data/portfolioProjects.ts
 export const portfolioProjects: Record<
     string,
-    { title: string; description: string; image: string }[]
+    { title: string; description: string; image?: string; video?: string }[]
 > = {
     "website-design": [
         {
@@ -412,7 +412,12 @@ export const portfolioProjects: Record<
     ],
 
     "video-editing": [
-
-    ]
+        {
+            title: "Cinematic Montage",
+            description: "A high-quality cinematic edit.",
+            video: "https://www.youtube.com/embed/dQw4w9WgXcQ", 
+        },
+        
+    ],
 
 };
