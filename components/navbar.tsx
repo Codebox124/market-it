@@ -34,9 +34,9 @@ export default function Navbar() {
             alt="Make It & Market Logo"
             width={100} 
             height={100}
-            className="h-16" 
+            className="md:h-16" 
           />
-          <span>
+          <span className="text-xl md:text-2xl">
             <span className="text-green-400">Make <span className="">It </span></span>
             <span className="text-white ">&</span>
             <span className="text-blue-400"> Market</span>
