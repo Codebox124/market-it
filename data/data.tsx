@@ -240,7 +240,7 @@ export const portfolioProjects: Record<
         {
             "title": "Visual Identity System",
             "description": "Developed a consistent brand identity system for a growing company, including logo variations.",
-            "image": "/graphic/5.PNG"
+            "image": "/graphic/5.png"
         },
         {
             "title": "Bold & Edgy Logo Design",
