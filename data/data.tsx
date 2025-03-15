@@ -273,7 +273,7 @@ export const portfolioProjects: Record<
         {
             "title": "Certificate Design",
             "description": "Designed an elegant and professional certificate for official recognition.",
-            "image": "/graphic/cover art ROBERT FORD edit 1.5"
+            "image": "/graphic/Popcorn Tv logo (3).png"
         },
         {
             "title": "Certificate Design",
@@ -288,7 +288,7 @@ export const portfolioProjects: Record<
         {
             "title": "Certificate Design",
             "description": "Designed an elegant and professional certificate for official recognition.",
-            "image": "/graphic/flyer 3 SAL.jpg"
+            "image": "/graphic/sheet 5.jpg"
         },
         {
             "title": "Certificate Design",
@@ -310,6 +310,102 @@ export const portfolioProjects: Record<
             "description": "Designed an elegant and professional certificate for official recognition.",
             "image": "/graphic/Flyer Who Let The Dogs Out Fashion Show.png"
         },
+        {
+            "title": "Certificate Design",
+            "description": "Designed an elegant and professional certificate for official recognition.",
+            "image": "/graphic/SMNJ3539.jpg"
+        },
+        {
+            "title": "Certificate Design",
+            "description": "Designed an elegant and professional certificate for official recognition.",
+            "image": "/graphic/shirt (Go ahead) 3 DENISE option 2.png"
+        },
+        {
+            "title": "Certificate Design",
+            "description": "Designed an elegant and professional certificate for official recognition.",
+            "image": "/graphic/shirt (Go ahead) 3 DENISE option 4.png"
+        },
+        {
+            "title": "Certificate Design",
+            "description": "Designed an elegant and professional certificate for official recognition.",
+            "image": "/graphic/logo UNITED FOR THE PEOPLE_S PLAN 18.png"
+        },
+        {
+            "title": "Certificate Design",
+            "description": "Designed an elegant and professional certificate for official recognition.",
+            "image": "/graphic/logo KIDS DYNASTY DAYCARE (Arlene).png"
+        },
+        {
+            "title": "Certificate Design",
+            "description": "Designed an elegant and professional certificate for official recognition.",
+            "image": "/graphic/logo MARTY (1).png"
+        },
+        {
+            "title": "Certificate Design",
+            "description": "Designed an elegant and professional certificate for official recognition.",
+            "image": "/graphic/LOGO MOJO logo.png"
+        },
+        {
+            "title": "Certificate Design",
+            "description": "Designed an elegant and professional certificate for official recognition.",
+            "image": "/graphic/logo Olivers  edit.jpg"
+        },
+        {
+            "title": "Certificate Design",
+            "description": "Designed an elegant and professional certificate for official recognition.",
+            "image": "/graphic/logo ox movers EDIT.png"
+        },
+        {
+            "title": "Certificate Design",
+            "description": "Designed an elegant and professional certificate for official recognition.",
+            "image": "/graphic/logo reefnreem.jpg"
+        },
+        {
+            "title": "Certificate Design",
+            "description": "Designed an elegant and professional certificate for official recognition.",
+            "image": "/graphic/logo YBDA.png"
+        },
+        {
+            "title": "Certificate Design",
+            "description": "Designed an elegant and professional certificate for official recognition.",
+            "image": "/graphic/logo-02.jpg"
+        },
+        {
+            "title": "Certificate Design",
+            "description": "Designed an elegant and professional certificate for official recognition.",
+            "image": "/graphic/packaging_label JOEL 10-green.png"
+        },
+        {
+            "title": "Certificate Design",
+            "description": "Designed an elegant and professional certificate for official recognition.",
+            "image": "/graphic/poster joker life option 2 edit 3.png"
+        },
+        {
+            "title": "Certificate Design",
+            "description": "Designed an elegant and professional certificate for official recognition.",
+            "image": "/graphic/Somer in touch writing sample.png"
+        },
+        {
+            "title": "Certificate Design",
+            "description": "Designed an elegant and professional certificate for official recognition.",
+            "image": "/graphic/ss.tiger.png"
+        },
+        {
+            "title": "Certificate Design",
+            "description": "Designed an elegant and professional certificate for official recognition.",
+            "image": "/graphic/Tanzania itinerary RACHEL WASIRA-11.png"
+        },
+        {
+            "title": "Certificate Design",
+            "description": "Designed an elegant and professional certificate for official recognition.",
+            "image": "/graphic/ticket SAMPLE.png"
+        },
+        {
+            "title": "Certificate Design",
+            "description": "Designed an elegant and professional certificate for official recognition.",
+            "image": "/graphic/front.png"
+        },
+
 
     ],
 
