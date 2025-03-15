@@ -24,7 +24,7 @@ export default function PortfolioPage() {
                                 {project.video ? (
 
                                     <iframe
-                                        className="rounded-lg w-full h-64"
+                                        className="rounded-lg w-[500px] h-80 "
                                         src={project.video}
                                         title={project.title}
                                         frameBorder="0"
