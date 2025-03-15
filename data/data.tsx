@@ -4,16 +4,7 @@ export const portfolioProjects: Record<
     { title: string; description: string; image?: string; video?: string }[]
 > = {
     "website-design": [
-        {
-            title: "E-commerce Website",
-            description: "Designed and developed a fully responsive online store.",
-            image: "/website/blog 3.jpg",
-        },
-        {
-            title: "Portfolio Website",
-            description: "Built a personal portfolio website for a creative artist.",
-            image: "/website/caymana.co Landing Page edit.png",
-        },
+       
 
         {
             title: "E-commerce Website",
@@ -50,6 +41,16 @@ export const portfolioProjects: Record<
             title: "E-commerce Website",
             description: "Designed and developed a fully responsive online store.",
             image: "/website/website.png",
+        },
+        {
+            title: "E-commerce Website",
+            description: "Designed and developed a fully responsive online store.",
+            image: "/website/blog 3.jpg",
+        },
+        {
+            title: "Portfolio Website",
+            description: "Built a personal portfolio website for a creative artist.",
+            image: "/website/caymana.co Landing Page edit.png",
         },
         {
             title: "E-commerce Website",
@@ -322,11 +323,7 @@ export const portfolioProjects: Record<
             "description": "Designed an elegant and professional certificate for official recognition.",
             "image": "/graphic/shirt (Go ahead) 3 DENISE option 2.png"
         },
-        {
-            "title": "Certificate Design",
-            "description": "Designed an elegant and professional certificate for official recognition.",
-            "image": "/graphic/shirt (Go ahead) 3 DENISE option 4.png"
-        },
+       
         {
             "title": "Certificate Design",
             "description": "Designed an elegant and professional certificate for official recognition.",
