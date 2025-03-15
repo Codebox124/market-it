@@ -231,10 +231,11 @@ export const portfolioProjects: Record<
             "image": "/graphic/3.png"
         },
         {
-            "title": "Modern Logo & Branding",
-            "description": "Created a sleek and modern logo with a cohesive branding theme for a startup.",
-            "image": "/graphic/4.png"
+            "title": "Event Flyer for Bonefish",
+            "description": "Designed a visually engaging promotional flyer for an exclusive event.",
+            "image": "/graphic/bonefish flyer 4 MIKE.png"
         },
+
         {
             "title": "Visual Identity System",
             "description": "Developed a consistent brand identity system for a growing company, including logo variations.",
@@ -251,10 +252,11 @@ export const portfolioProjects: Record<
             "image": "/graphic/biz card.png"
         },
         {
-            "title": "Event Flyer for Bonefish",
-            "description": "Designed a visually engaging promotional flyer for an exclusive event.",
-            "image": "/graphic/bonefish flyer 4 MIKE.png"
+            "title": "Modern Logo & Branding",
+            "description": "Created a sleek and modern logo with a cohesive branding theme for a startup.",
+            "image": "/graphic/4.png"
         },
+
         {
             "title": "Custom Book Cover Design",
             "description": "Designed a bold and captivating book cover to enhance market appeal.",
