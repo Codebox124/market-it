@@ -29,7 +29,7 @@ const visualsPortfolio = [
     {
         title: "Animation",
         image: "/website-design.jpg",
-        description: "Illustrating unique customized art characters environments and motion for your project needs",
+        description: "Illustrating unique customized art, characters, environments and motion for your project needs",
         icon: "star",
     },
    
@@ -123,7 +123,7 @@ export default function Visuals() {
                                 </div>
 
                                 {/* Text Section with Proper Alignment */}
-                                <div className="p-8 relative flex flex-col h-[170px] justify-between">
+                                <div className="p-8 relative flex flex-col h-[180px] justify-between">
                                     <h2 className="text-lg tracking-wider uppercase font-light">{item.title}</h2>
                                     <p className="text-gray-400 text-sm font-light">{item.description}</p>
 
