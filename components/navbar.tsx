@@ -28,14 +28,16 @@ export default function Navbar() {
     >
       <div className="container mx-auto px-6 flex justify-between items-center">
 
-        <Link href="/" className="text-white flex items-center  font-bold text-2xl">
+        <Link href="/" className="text-white flex gap-2 items-center  font-bold text-2xl">
           <Image
             src="/logo.png"
             alt="Make It & Market Logo"
-            width={100}
-            height={100}
-            className="h-16"
+            width={70} 
+            height={150} 
+            className="h-16 w-auto"
+            priority
           />
+
           <div className="text-xl md:text-2xl">
             <span className="text-green-400">Make <span className="">It </span></span>
             <span className="text-white ">&</span>

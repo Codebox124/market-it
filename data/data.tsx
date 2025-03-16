@@ -240,7 +240,7 @@ export const portfolioProjects: Record<
         {
             "title": "Visual Identity System",
             "description": "Developed a consistent brand identity system for a growing company, including logo variations.",
-            "image": "/graphic/img.jpg"
+            "image": "/graphic/image No Views (2).jpg"
         },
         {
             "title": "Bold & Edgy Logo Design",
@@ -404,8 +404,58 @@ export const portfolioProjects: Record<
             "description": "Designed an elegant and professional certificate for official recognition.",
             "image": "/graphic/front.png"
         },
+        {
+            "title": "Certificate Design",
+            "description": "Designed an elegant and professional certificate for official recognition.",
+            "image": "/graphic/4 color sheet joel edit 2.PNG"
+        },
+        {
+            "title": "Certificate Design",
+            "description": "Designed an elegant and professional certificate for official recognition.",
+            "image": "/graphic/album cover JOSHUA DAVIS edit.png"
+        },
+        {
+            "title": "Certificate Design",
+            "description": "Designed an elegant and professional certificate for official recognition.",
+            "image": "/graphic/bag edit.jpg"
+        },
+        {
+            "title": "Certificate Design",
+            "description": "Designed an elegant and professional certificate for official recognition.",
+            "image": "/graphic/Highball-RON_2.png"
+        },
+        {
+            "title": "Certificate Design",
+            "description": "Designed an elegant and professional certificate for official recognition.",
+            "image": "/graphic/logo ARC 4.png"
+        },
+        {
+            "title": "Certificate Design",
+            "description": "Designed an elegant and professional certificate for official recognition.",
+            "image": "/graphic/Moses.jpg"
+        },
+        {
+            "title": "Certificate Design",
+            "description": "Designed an elegant and professional certificate for official recognition.",
+            "image": "/graphic/joker life shoe 1.png"
+        },
+        {
+            "title": "Certificate Design",
+            "description": "Designed an elegant and professional certificate for official recognition.",
+            "image": "/graphic/cover art ROBERT FORD edit 1.5.png"
+        },
+        {
+            "title": "Certificate Design",
+            "description": "Designed an elegant and professional certificate for official recognition.",
+            "image": "/graphic/WhatsApp.jpeg"
+        },
+        {
+            "title": "Certificate Design",
+            "description": "Designed an elegant and professional certificate for official recognition.",
+            "image": "/graphic/flyer.png"
+        },
 
-
+//
     ],
 
     "video-editing": [
