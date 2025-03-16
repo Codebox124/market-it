@@ -18,13 +18,15 @@ export default function PortfolioPage() {
                 </h1>
 
                 {projects ? (
-                    <div className="mt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div className={`mt-6 ${projects.length === 1 ? "flex justify-center" : "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"}`}>
                         {projects.map((project, index) => (
-                            <div key={index} className="p-4 rounded-lg shadow-lg">
+                            <div 
+                                key={index} 
+                                className={`p-4 rounded-lg shadow-lg ${projects.length === 1 ? "w-[500px] text-center" : ""}`}
+                            >
                                 {project.video ? (
-
                                     <iframe
-                                        className="rounded-lg w-[500px] h-80 "
+                                        className="rounded-lg w-full h-80"
                                         src={project.video}
                                         title={project.title}
                                         frameBorder="0"
@@ -32,7 +34,6 @@ export default function PortfolioPage() {
                                         allowFullScreen
                                     ></iframe>
                                 ) : (
-                                    // Show Image
                                     <img
                                         src={project.image}
                                         alt={project.title}
