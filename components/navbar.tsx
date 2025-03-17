@@ -38,11 +38,7 @@ export default function Navbar() {
             priority
           />
 
-          <div className="text-xl md:text-2xl">
-            <span className="text-green-400">Make <span className="">It </span></span>
-            <span className="text-white ">&</span>
-            <span className="text-blue-400"> Market</span>
-          </div>
+          
         </Link>
 
         {/* Desktop Menu */}

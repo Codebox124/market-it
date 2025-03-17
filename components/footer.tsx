@@ -32,18 +32,19 @@ export default function Footer() {
             <ul className="space-y-2">
               <li>
                 <Link
-                  href="/visuals"
-                  className="text-gray-400 hover:text-green-400 transition-colors"
+                  href="#"
+                  className="text-gray-400 hover:text-white transition-colors"
                 >
-                  Visual Solutions
+                  Graphic Design
                 </Link>
+
               </li>
               <li>
                 <Link
-                  href="/marketing"
-                  className="text-gray-400 hover:text-blue-400 transition-colors"
+                  href="#"
+                  className="text-gray-400 hover:text-white transition-colors"
                 >
-                  Marketing Strategies
+                  Video Editing
                 </Link>
               </li>
               <li>
@@ -51,7 +52,7 @@ export default function Footer() {
                   href="#"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
-                  Branding
+                  Photo Editing
                 </Link>
               </li>
               <li>
@@ -59,11 +60,46 @@ export default function Footer() {
                   href="#"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
-                  Web Design
+                  Animation
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="#"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
+                  Websites
+                </Link>
+
+              </li>
+              <li>
+                <Link
+                  href="#"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
+                  Advertising
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="#"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
+                  Social Media
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="#"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
+                  Flyer Disrribution
                 </Link>
               </li>
             </ul>
           </div>
+
+          
 
           <div id="contact">
             <h3 className="text-xl font-semibold mb-4">Contact Us</h3>
@@ -74,7 +110,7 @@ export default function Footer() {
                   href="mailto:info@makeitmarket.com"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
-                  info@makeitmarket.com
+                  info@makeitandmarket.com
                 </a>
               </li>
               <li className="flex items-center">

@@ -185,7 +185,7 @@ export default function Home() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative min-h-screen w-full flex py-20 items-center justify-center bg-black text-white overflow-hidden">
+      <section className="relative min-h-screen w-full flex py-32 items-center justify-center bg-black text-white overflow-hidden">
 
         <canvas
           ref={canvasRef}
@@ -349,7 +349,7 @@ export default function Home() {
             <motion.div
               variants={fadeIn}
               custom={1}
-              className="bg-black/30 backdrop-blur-md p-8 md:p-10 rounded-2xl border text-center items-center flex flex-col border-white/10"
+              className="bg-black/30 backdrop-blur-md p-8 md:p-10 rounded-2xl border text-center items-center  flex flex-col border-white/10"
               style={{ boxShadow: "0 0 30px rgba(0,0,0,0.3)" }}
               whileHover={{
                 boxShadow: "0 0 40px rgba(0,0,0,0.4), 0 0 15px rgba(59,130,246,0.2)",
@@ -366,14 +366,14 @@ export default function Home() {
                 We provide <span className="font-semibold text-emerald-400">full-service visuals</span> and
                 <span className="font-semibold text-blue-400"> marketing solutions</span> to help you achieve your goal.
               </motion.p>
-              <div >
+              <div className="text-start" >
                 <motion.p
                   className="text-lg heroText md:text-2xl text-start text-gray-200 max-w-3xl font-light mt-6 leading-relaxed"
                 >
                   From handing out flyers to editing a film...<br />
 
                 </motion.p>
-                <span className="text-lg heroText md:text-2xl text-start text-gray-200 max-w-3xl font-light mt-6 leading-relaxed"> ...graphic design to solidifying business strategy.</span>
+                <span className="text-lg heroText md:text-2xl  text-start text-gray-200 max-w-3xl font-light mt-6 leading-relaxed"> ...graphic design to solidifying business strategy.</span>
               </div>
               <motion.p
                 className="text-lg heroText md:text-2xl text-gray-200 max-w-3xl font-light mt-6 leading-relaxed"
