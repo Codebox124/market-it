@@ -10,30 +10,27 @@ const visualsPortfolio = [
     {
         title: "Graphic Design",
         image: "/graphic-design.png",
-        description: "Visual production covering an assortment of media whether personal or business",
+        description: "Visual production covering an assortment of media, whether personal or business.",
         icon: "diamond",
     },
     {
         title: "Video Editing",
         image: "/video-editing.png",
-        description:
-            "Post-production including motion graphics animation VFX sound and color correction ",
+        description: "Post-production, including motion graphics, animation, VFX, sound, and color correction.",
         icon: "diamond",
     },
     {
         title: "Photo Editing",
         image: "/photo-editing.png",
-        description: "High-end image manipulation creative effects and quality improvement.",
+        description: "High-end image manipulation, creative effects, and quality improvement.",
         icon: "star",
     },
     {
         title: "Animation",
         image: "/website-design.jpg",
-        description: "Illustrating unique customized art, characters, environments and motion for your project needs",
+        description: "Illustrating unique, customized art, characters, environments, and motion for your project needs.",
         icon: "star",
     },
-   
-   
 ];
 
 

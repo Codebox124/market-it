@@ -9,31 +9,31 @@ const marketingPortfolio = [
     {
         title: "Websites",
         image: "/website-design.jpg",
-        description: "User-friendly custom websites and apps for portfolio, awareness, commerce or blogging",
+        description: "User-friendly, custom websites and apps for portfolios, awareness, commerce, or blogging.",
         icon: "star",
     },
     {
         title: "Advertising",
         image: "/advertising.jpg",
-        description:
-            "Implementing campaigns that locate and attract your prospective customers or supporters",
-        icon: Diamond,
+        description: "Implementing campaigns that locate and attract your prospective customers or supporters.",
+        icon: "diamond",
         accent: "border-rose-700/30",
     },
     {
         title: "Social Media",
         image: "/social-media.jpg",
-        description: "Providing all-encompassing account management outreach content creation and growth"
+        description: "Providing all-encompassing account management, outreach, content creation, and growth.",
+        icon: "star",
     },
     {
         title: "Flyer Distribution",
         image: "/flyer.jpg",
-        description:
-            "Focused offline marketing to reach people in the real world both local and distant ",
-        icon: Feather,
+        description: "Focused offline marketing to reach people in the real world, both locally and globally.",
+        icon: "feather",
         accent: "border-indigo-700/30",
     },
 ];
+
 
 const fadeInUp = {
     hidden: { opacity: 0, y: 20 },
