@@ -56,7 +56,7 @@ const generateParticles = (count: number, isMobile: boolean) => {
     size: Math.random() * (isMobile ? 3 : 4) + 1,
     speedX: (Math.random() - 0.5) * 0.2,
     speedY: (Math.random() - 0.5) * 0.2,
-    color: Math.floor(Math.random() * 5), 
+    color: Math.floor(Math.random() * 5),
   }));
 };
 
@@ -366,15 +366,14 @@ export default function Home() {
                 We provide <span className="font-semibold text-emerald-400">full-service visuals</span> and
                 <span className="font-semibold text-blue-400"> marketing solutions</span> to help you achieve your goal.
               </motion.p>
-              <div className="text-start" >
+              <div className="flex items-center justify-center mt-6 md:justify-start w-full">
                 <motion.p
-                  className="text-lg heroText md:text-2xl text-start text-gray-200 max-w-3xl font-light mt-6 leading-relaxed"
+                  className="text-lg heroText md:text-2xl text-gray-200 font-light leading-relaxed max-w-full  "
                 >
-                  From handing out flyers to editing a film...<br />
-
+                  From handing out flyers to editing a film... <span className="font-normal">graphic design to solidifying business strategy.</span>
                 </motion.p>
-                <span className="text-lg heroText md:text-2xl  text-start text-gray-200 max-w-3xl font-light mt-6 leading-relaxed"> ...graphic design to solidifying business strategy.</span>
               </div>
+
               <motion.p
                 className="text-lg heroText md:text-2xl text-gray-200 max-w-3xl font-light mt-6 leading-relaxed"
               >
@@ -439,7 +438,7 @@ export default function Home() {
         </div>
       </section>
 
-  
+
       <style jsx global>{`
         .shape-triangle {
           width: 0;
