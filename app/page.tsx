@@ -117,11 +117,11 @@ export default function Home() {
 
     // Color palette
     const colors = [
-      'rgba(59, 130, 246, 0.7)',  // Blue
-      'rgba(236, 72, 153, 0.7)',  // Pink
-      'rgba(16, 185, 129, 0.7)',  // Emerald
-      'rgba(139, 92, 246, 0.7)',  // Purple
-      'rgba(245, 158, 11, 0.7)',  // Amber
+      'rgba(255, 215, 0, 0.7)',  // Gold
+      'rgba(212, 175, 55, 0.7)',  // Pink
+      'rgba(255, 223, 99, 0.7)',  // Emerald
+      'rgba(255, 215, 0, 0.7)',  // Gold
+      'rgba(212, 175, 55, 0.7)',  // Amber
     ];
 
     // Animation loop
