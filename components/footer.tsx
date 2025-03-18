@@ -93,7 +93,7 @@ export default function Footer() {
                   href="#"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
-                  Flyer Disrribution
+                  Flyer Distribution
                 </Link>
               </li>
             </ul>

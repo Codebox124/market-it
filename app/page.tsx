@@ -370,7 +370,7 @@ export default function Home() {
                 <motion.p
                   className="text-lg heroText md:text-2xl text-gray-200 font-light leading-relaxed max-w-full  "
                 >
-                  From handing out flyers to editing a film... <span className="font-normal">graphic design to solidifying business strategy.</span>
+                  From handing out flyers to editing a film... <span className="font-normal">Graphic design to solidifying business strategy.</span>
                 </motion.p>
               </div>
 
