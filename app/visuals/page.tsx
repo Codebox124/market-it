@@ -28,7 +28,7 @@ const visualsPortfolio = [
     {
         title: "Animation",
         image: "/website-design.jpg",
-        description: "Illustrating unique, customized art, characters, environments, and motion for your project needs.",
+        description: "Illustrating custom art, characters, environments, and motion for your project.",
         icon: "star",
     },
 ];
@@ -51,7 +51,7 @@ const item = {
 
 export default function Visuals() {
     return (
-        <div className="min-h-screen bg-black text-white pt-24 overflow-hidden">
+        <div className="min-h-screen bg-[#090e19] text-white pt-24 overflow-hidden">
             <div className="absolute inset-0 bg-[url('/noise.png')] opacity-5 pointer-events-none"></div>
             <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
                 <div className="absolute -top-40 -left-40 w-96 h-96 bg-purple-900/20 rounded-full blur-3xl"></div>
@@ -72,8 +72,10 @@ export default function Visuals() {
                         <div className="w-24 h-px bg-gradient-to-r from-transparent via-amber-500 to-transparent"></div>
                     </div>
                     <h1 className="md:text-6xl text-4xl font-thin tracking-wider leading-tight mb-6">
-                        <span className="text-cyan-400">VISUALS</span> <span className="text-white">Portfolio</span>
+                        <span className="bg-gradient-to-r text-transparent bg-clip-text from-emerald-300 to-emerald-500">VISUALS</span> <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-blue-600">Portfolio</span>
                     </h1>
+                  
+                   
 
                     <div className="flex justify-center mt-6">
                         <div className="w-24 h-px bg-gradient-to-r from-transparent via-amber-500 to-transparent"></div>
@@ -102,32 +104,39 @@ export default function Visuals() {
                                     scale: 1.02,
                                     boxShadow: "0 25px 50px -12px rgba(0, 0, 0, 0.5)"
                                 }}
-                                className="group backdrop-blur-sm rounded-none overflow-hidden transition-all duration-500 border-t border-l border-amber-800/20 bg-gradient-to-br from-gray-900/80 to-black cursor-pointer"
+                                className="group backdrop-blur-sm rounded-none overflow-hidden transition-all duration-500  bg-[#090e19]"
                             >
                                 {/* Image Section */}
                                 <div className="relative h-64 w-full overflow-hidden">
-                                    <div className="relative w-full h-full">
-                                        <Image
-                                            src={item.image || "/placeholder.svg"}
-                                            alt={item.title}
-                                            fill
-                                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                                            className="object-cover transition-transform duration-700"
-                                            placeholder="blur"
-                                            blurDataURL="data:image/jpeg;base64,/9j/4AAQSk..."
-                                        />
-                                        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent opacity-80 group-hover:opacity-60 transition-opacity duration-300"></div>
+                                    <Image
+                                        src={item.image || "/placeholder.svg"}
+                                        alt={item.title}
+                                        fill
+                                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                                        className="object-cover transition-transform duration-700"
+                                        placeholder="blur"
+                                        blurDataURL="data:image/jpeg;base64,/9j/4AAQSk..."
+                                    />
+                                    <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent opacity-80 group-hover:opacity-60 transition-opacity duration-300"></div>
+                                    <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                                        <div className="bg-amber-500 backdrop-blur-md p-3 transform rotate-45 scale-0 group-hover:scale-100 transition-transform duration-500">
+                                            <Eye className="text-black transform -rotate-45" size={24} />
+                                        </div>
                                     </div>
                                 </div>
 
-                                {/* Text Section with Proper Alignment */}
-                                <div className="p-8 relative flex flex-col h-[180px] justify-between">
+
+                                <div className="p-8 relative flex flex-col h-[170px] justify-between">
                                     <h2 className="text-lg tracking-wider uppercase font-light">{item.title}</h2>
                                     <p className="text-gray-400 text-sm font-light">{item.description}</p>
 
-                                    <div className="inline-flex items-center text-amber-400/80 hover:text-amber-300 transition-colors uppercase text-xs tracking-widest absolute bottom-0">
+
+                                    <a
+                                        href="#"
+                                        className="inline-flex items-center text-blue-400 hover:text-blue-300 transition-colors uppercase text-xs tracking-widest absolute bottom-0"
+                                    >
                                         Explore <ArrowRight className="ml-2 h-3 w-3" />
-                                    </div>
+                                    </a>
                                 </div>
                             </motion.div>
                         </Link>

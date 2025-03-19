@@ -13,7 +13,7 @@ export default function PortfolioPage() {
     return (
         <div className="bg-black h-full text-white px-6 py-24">
             <div className="flex flex-col items-center max-w-7xl mx-auto justify-center">
-                <h1 className="text-4xl md:text-5xl font-bold text-amber-400 uppercase animate-fade-in">
+                <h1 className="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-blue-600 uppercase animate-fade-in">
                     {formattedService}
                 </h1>
 

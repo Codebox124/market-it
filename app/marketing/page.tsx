@@ -50,7 +50,7 @@ const fadeInUp = {
 
 export default function Marketing() {
     return (
-        <div className="min-h-screen bg-black text-white pt-24 overflow-hidden">
+        <div className="min-h-screen bg-[#090e19] text-white pt-24 overflow-hidden">
             <div className="absolute inset-0 bg-[url('/noise.png')] opacity-5 pointer-events-none"></div>
             <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
                 <div className="absolute -top-40 -right-40 w-96 h-96 bg-amber-900/10 rounded-full blur-3xl"></div>
@@ -83,14 +83,9 @@ export default function Marketing() {
                         <div className="w-24 h-px bg-gradient-to-r from-transparent via-amber-500 to-transparent"></div>
                     </div>
                     <h1 className="md:text-6xl text-4xl font-thin tracking-wider leading-tight mb-6">
-                        <span className="text-cyan-400">MARKETING</span> <span className="text-white">Portfolio</span>
+                        <span className="bg-gradient-to-r text-transparent bg-clip-text from-emerald-300 to-emerald-500">MARKETING</span> <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-blue-600">Portfolio</span>
                     </h1>
-                    {/* <h1 className="md:text-6xl text-4xl font-thin tracking-wider leading-tight mb-6">
-                        Elevate
-                        <span className="block text-transparent bg-clip-text bg-gradient-to-r from-amber-300 via-rose-300 to-purple-400 font-medium mt-1">
-                            Your Brand with Our Marketing Solutions
-                        </span>
-                    </h1> */}
+                  
                     <div className="flex justify-center mt-6">
                         <div className="w-24 h-px bg-gradient-to-r from-transparent via-amber-500 to-transparent"></div>
                     </div>
@@ -110,7 +105,7 @@ export default function Marketing() {
                                 scale: 1.02,
                                 boxShadow: "0 25px 50px -12px rgba(0, 0, 0, 0.5)"
                             }}
-                            className="group backdrop-blur-sm rounded-none overflow-hidden transition-all duration-500 border-t border-l border-amber-800/20 bg-gradient-to-br from-gray-900/80 to-black"
+                            className="group backdrop-blur-sm rounded-none overflow-hidden transition-all duration-500   bg-[#090e19]"
                         >
                             {/* Image Section */}
                             <div className="relative h-64 w-full overflow-hidden">
@@ -139,7 +134,7 @@ export default function Marketing() {
 
                                 <a
                                     href="#"
-                                    className="inline-flex items-center text-amber-400/80 hover:text-amber-300 transition-colors uppercase text-xs tracking-widest absolute bottom-0"
+                                    className="inline-flex items-center text-blue-400 hover:text-blue-300 transition-colors uppercase text-xs tracking-widest absolute bottom-0"
                                 >
                                     Explore <ArrowRight className="ml-2 h-3 w-3" />
                                 </a>
