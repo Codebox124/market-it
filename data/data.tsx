@@ -25,6 +25,21 @@ export const portfolioProjects: Record<
         {
             title: "E-commerce Website",
             description: "Designed and developed a fully responsive online store.",
+            image: "/website/port web RUN.png",
+        },
+        {
+            title: "E-commerce Website",
+            description: "Designed and developed a fully responsive online store.",
+            image: "/website/port web RUN 2.png",
+        },
+        {
+            title: "E-commerce Website",
+            description: "Designed and developed a fully responsive online store.",
+            image: "/website/port web RUN 3.png",
+        },
+        {
+            title: "E-commerce Website",
+            description: "Designed and developed a fully responsive online store.",
             image: "/website/website port 2.png",
         },
         {
@@ -77,6 +92,7 @@ export const portfolioProjects: Record<
             description: "Designed and developed a fully responsive online store.",
             image: "/website/web port vibal (2).PNG",
         },
+       
     ],
     "photo-editing": [
         {

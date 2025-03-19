@@ -4,10 +4,11 @@ import Image from "next/image";
 import { Diamond, Crown, Award, Feather, ArrowRight, Eye } from "lucide-react";
 import BackButton from "@/components/Button";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const marketingPortfolio = [
     {
-        title: "Websites",
+        title: "Website Design",
         image: "/website-design.jpg",
         description: "User-friendly, custom websites and apps for portfolios, awareness, commerce, or blogging.",
         icon: "star",
@@ -85,61 +86,65 @@ export default function Marketing() {
                     <h1 className="md:text-6xl text-4xl font-thin tracking-wider leading-tight mb-6">
                         <span className="bg-gradient-to-r text-transparent bg-clip-text from-emerald-300 to-emerald-500">MARKETING</span> <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-blue-600">Portfolio</span>
                     </h1>
-                  
+
                     <div className="flex justify-center mt-6">
                         <div className="w-24 h-px bg-gradient-to-r from-transparent via-amber-500 to-transparent"></div>
                     </div>
                     <p className="mt-8 text-lg text-gray-300 max-w-3xl mx-auto italic font-light">
-                    Our custom marketing services help businesses, brands and people
-                    to build credibility, attention or engagement.
+                        Our custom marketing services help businesses, brands and people
+                        to build credibility, attention or engagement.
                     </p>
                 </motion.div>
 
                 <div className="grid grid-cols-1 relative md:grid-cols-2 lg:grid-cols-4 gap-8 perspective-1000">
                     {marketingPortfolio.map((item, index) => (
-                        <motion.div
-                            key={index}
-                            whileHover={{
-                                rotateY: 5,
-                                rotateX: 5,
-                                scale: 1.02,
-                                boxShadow: "0 25px 50px -12px rgba(0, 0, 0, 0.5)"
-                            }}
-                            className="group backdrop-blur-sm rounded-none overflow-hidden transition-all duration-500   bg-[#090e19]"
-                        >
-                            {/* Image Section */}
-                            <div className="relative h-64 w-full overflow-hidden">
-                                <Image
-                                    src={item.image || "/placeholder.svg"}
-                                    alt={item.title}
-                                    fill
-                                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                                    className="object-cover transition-transform duration-700"
-                                    placeholder="blur"
-                                    blurDataURL="data:image/jpeg;base64,/9j/4AAQSk..."
-                                />
-                                <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent opacity-80 group-hover:opacity-60 transition-opacity duration-300"></div>
-                                <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                                    <div className="bg-amber-500 backdrop-blur-md p-3 transform rotate-45 scale-0 group-hover:scale-100 transition-transform duration-500">
-                                        <Eye className="text-black transform -rotate-45" size={24} />
+                        <Link href={`/marketing/${item.title.toLowerCase().replace(/\s+/g, "-")}`} passHref>
+                            <motion.div
+                                key={index}
+                                whileHover={{
+                                    rotateY: 5,
+                                    rotateX: 5,
+                                    scale: 1.02,
+                                    boxShadow: "0 25px 50px -12px rgba(0, 0, 0, 0.5)"
+                                }}
+                                className="group backdrop-blur-sm rounded-none overflow-hidden transition-all duration-500   bg-[#090e19]"
+                            >
+                                {/* Image Section */}
+                                <div className="relative h-64 w-full overflow-hidden">
+                                    <Image
+                                        src={item.image || "/placeholder.svg"}
+                                        alt={item.title}
+                                        fill
+                                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                                        className="object-cover transition-transform duration-700"
+                                        placeholder="blur"
+                                        blurDataURL="data:image/jpeg;base64,/9j/4AAQSk..."
+                                    />
+                                    <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent opacity-80 group-hover:opacity-60 transition-opacity duration-300"></div>
+                                    <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                                        <div className="bg-amber-500 backdrop-blur-md p-3 transform rotate-45 scale-0 group-hover:scale-100 transition-transform duration-500">
+                                            <Eye className="text-black transform -rotate-45" size={24} />
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
 
 
-                            <div className="p-8 relative flex flex-col h-[170px] justify-between">
-                                <h2 className="text-lg tracking-wider uppercase font-light">{item.title}</h2>
-                                <p className="text-gray-400 text-sm font-light">{item.description}</p>
+                                <div className="p-8 relative flex flex-col h-[170px] justify-between">
+                                    <h2 className="text-lg tracking-wider uppercase font-light">{item.title}</h2>
+                                    <p className="text-gray-400 text-sm font-light">{item.description}</p>
 
 
-                                <a
-                                    href="#"
-                                    className="inline-flex items-center text-blue-400 hover:text-blue-300 transition-colors uppercase text-xs tracking-widest absolute bottom-0"
-                                >
-                                    Explore <ArrowRight className="ml-2 h-3 w-3" />
-                                </a>
-                            </div>
-                        </motion.div>
+                                    <a
+                                        href="#"
+                                        className="inline-flex items-center text-blue-400 hover:text-blue-300 transition-colors uppercase text-xs tracking-widest absolute bottom-0"
+                                    >
+                                        Explore <ArrowRight className="ml-2 h-3 w-3" />
+                                    </a>
+                                </div>
+                            </motion.div>
+
+                        </Link>
+
 
 
                     ))}
