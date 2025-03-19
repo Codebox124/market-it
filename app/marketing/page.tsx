@@ -160,8 +160,8 @@ export default function Marketing() {
                         className="relative inline-block px-12 py-5 overflow-hidden group"
                     >
                         <span className="absolute top-0 left-0 w-full h-full bg-transparent border border-amber-700/50 translate-x-0 translate-y-0 group-hover:translate-x-1 group-hover:translate-y-1 transition-transform duration-300"></span>
-                        <span className="absolute top-0 left-0 w-full h-full bg-transparent border border-rose-700/50 translate-x-0 translate-y-0 group-hover:-translate-x-1 group-hover:-translate-y-1 transition-transform duration-300"></span>
-                        <span className="relative block text-amber-300 uppercase tracking-widest text-sm font-light">
+                        <span className="absolute top-0 left-0 w-full h-full bg-transparent border border-blue-700/50 translate-x-0 translate-y-0 group-hover:-translate-x-1 group-hover:-translate-y-1 transition-transform duration-300"></span>
+                        <span className="relative block text-green-500 uppercase tracking-widest text-sm font-light">
                             Contact
                         </span>
                     </a>

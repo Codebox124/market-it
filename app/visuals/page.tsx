@@ -119,7 +119,7 @@ export default function Visuals() {
                                     />
                                     <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent opacity-80 group-hover:opacity-60 transition-opacity duration-300"></div>
                                     <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                                        <div className="bg-amber-500 backdrop-blur-md p-3 transform rotate-45 scale-0 group-hover:scale-100 transition-transform duration-500">
+                                        <div className="bg-blue-600 backdrop-blur-md p-3 transform rotate-45 scale-0 group-hover:scale-100 transition-transform duration-500">
                                             <Eye className="text-black transform -rotate-45" size={24} />
                                         </div>
                                     </div>
@@ -151,12 +151,12 @@ export default function Visuals() {
                     className="mt-24 text-center"
                 >
                     <a
-                        href="#contact"
+                        href="/contact"
                         className="relative inline-block px-12 py-5 overflow-hidden group"
                     >
                         <span className="absolute top-0 left-0 w-full h-full bg-transparent border border-amber-700/50 translate-x-0 translate-y-0 group-hover:translate-x-1 group-hover:translate-y-1 transition-transform duration-300"></span>
-                        <span className="absolute top-0 left-0 w-full h-full bg-transparent border border-purple-700/50 translate-x-0 translate-y-0 group-hover:-translate-x-1 group-hover:-translate-y-1 transition-transform duration-300"></span>
-                        <span className="relative block text-amber-300 uppercase tracking-widest text-sm font-light">
+                        <span className="absolute top-0 left-0 w-full h-full bg-transparent border border-blue-700/50 translate-x-0 translate-y-0 group-hover:-translate-x-1 group-hover:-translate-y-1 transition-transform duration-300"></span>
+                        <span className="relative block text-green-500 uppercase tracking-widest text-sm font-light">
                             Contact
                         </span>
                     </a>
