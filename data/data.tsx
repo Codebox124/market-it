@@ -92,6 +92,26 @@ export const portfolioProjects: Record<
             description: "Designed and developed a fully responsive online store.",
             image: "/website/web port vibal (2).PNG",
         },
+        {
+            title: "E-commerce Website",
+            description: "Designed and developed a fully responsive online store.",
+            image: "/website/port website 2.png",
+        },
+        {
+            title: "E-commerce Website",
+            description: "Designed and developed a fully responsive online store.",
+            image: "/website/port website 3.png",
+        },
+        {
+            title: "E-commerce Website",
+            description: "Designed and developed a fully responsive online store.",
+            image: "/website/port website.png",
+        },
+        {
+            title: "E-commerce Website",
+            description: "Designed and developed a fully responsive online store.",
+            image: "/website/Google tracker.png",
+        },
 
     ],
     "photo-editing": [
@@ -483,229 +503,228 @@ export const portfolioProjects: Record<
         //
     ],
 
- "animation": [
-    {
-        "title": "Cinematic Montage",
-        "description": "A high-quality cinematic edit.",
-        "image": "/animation/1.png"
-    },
-    {
-        "title": "Cinematic Montage",
-        "description": "A high-quality cinematic edit.",
-        "image": "/animation/2.png"
-    },
-    {
-        "title": "Cinematic Montage",
-        "description": "A high-quality cinematic edit.",
-        "image": "/animation/3.png"
-    },
-    {
-        "title": "Cinematic Montage",
-        "description": "A high-quality cinematic edit.",
-        "image": "/animation/4.png"
-    },
-    {
-        "title": "Cinematic Montage",
-        "description": "A high-quality cinematic edit.",
-        "image": "/animation/5.png"
-    },
-    {
-        "title": "Cinematic Montage",
-        "description": "A high-quality cinematic edit.",
-        "image": "/animation/6.png"
-    },
-    {
-        "title": "Cinematic Montage",
-        "description": "A high-quality cinematic edit.",
-        "image": "/animation/7.png"
-    },
-    {
-        "title": "Cinematic Montage",
-        "description": "A high-quality cinematic edit.",
-        "image": "/animation/8.png"
-    },
-    {
-        "title": "Cinematic Montage",
-        "description": "A high-quality cinematic edit.",
-        "image": "/animation/9.png"
-    },
-    {
-        "title": "Cinematic Montage",
-        "description": "A high-quality cinematic edit.",
-        "image": "/animation/10.png"
-    },
-    {
-        "title": "Cinematic Montage",
-        "description": "A high-quality cinematic edit.",
-        "image": "/animation/11.png"
-    },
-    {
-        "title": "Cinematic Montage",
-        "description": "A high-quality cinematic edit.",
-        "image": "/animation/12.png"
-    },
-    {
-        "title": "Cinematic Montage",
-        "description": "A high-quality cinematic edit.",
-        "image": "/animation/13.png"
-    },
-    {
-        "title": "Cinematic Montage",
-        "description": "A high-quality cinematic edit.",
-        "image": "/animation/14.png"
-    },
-    {
-        "title": "Cinematic Montage",
-        "description": "A high-quality cinematic edit.",
-        "image": "/animation/15.png"
-    },
-    {
-        "title": "Cinematic Montage",
-        "description": "A high-quality cinematic edit.",
-        "image": "/animation/16.png"
-    },
-    {
-        "title": "Cinematic Montage",
-        "description": "A high-quality cinematic edit.",
-        "image": "/animation/17.png"
-    },
-    {
-        "title": "Cinematic Montage",
-        "description": "A high-quality cinematic edit.",
-        "image": "/animation/18.png"
-    },
-    {
-        "title": "Cinematic Montage",
-        "description": "A high-quality cinematic edit.",
-        "image": "/animation/19.png"
-    },
-    {
-        "title": "Cinematic Montage",
-        "description": "A high-quality cinematic edit.",
-        "image": "/animation/20.png"
-    },
-    {
-        "title": "Cinematic Montage",
-        "description": "A high-quality cinematic edit.",
-        "image": "/animation/21.png"
-    },
-    {
-        "title": "Cinematic Montage",
-        "description": "A high-quality cinematic edit.",
-        "image": "/animation/22.png"
-    },
-    {
-        "title": "Cinematic Montage",
-        "description": "A high-quality cinematic edit.",
-        "image": "/animation/23.png"
-    },
-    {
-        "title": "Cinematic Montage",
-        "description": "A high-quality cinematic edit.",
-        "image": "/animation/24.png"
-    },
-    {
-        "title": "Cinematic Montage",
-        "description": "A high-quality cinematic edit.",
-        "image": "/animation/25.png"
-    },
-    {
-        "title": "Cinematic Montage",
-        "description": "A high-quality cinematic edit.",
-        "image": "/animation/26.png"
-    },
-    {
-        "title": "Cinematic Montage",
-        "description": "A high-quality cinematic edit.",
-        "image": "/animation/27.png"
-    },
-    {
-        "title": "Cinematic Montage",
-        "description": "A high-quality cinematic edit.",
-        "image": "/animation/28.png"
-    },
-    {
-        "title": "Cinematic Montage",
-        "description": "A high-quality cinematic edit.",
-        "image": "/animation/29.png"
-    },
-    {
-        "title": "Cinematic Montage",
-        "description": "A high-quality cinematic edit.",
-        "image": "/animation/30.png"
-    },
-    {
-        "title": "Cinematic Montage",
-        "description": "A high-quality cinematic edit.",
-        "image": "/animation/31.png"
-    },
-    {
-        "title": "Cinematic Montage",
-        "description": "A high-quality cinematic edit.",
-        "image": "/animation/32.png"
-    },
-    {
-        "title": "Cinematic Montage",
-        "description": "A high-quality cinematic edit.",
-        "image": "/animation/33.png"
-    },
-    {
-        "title": "Cinematic Montage",
-        "description": "A high-quality cinematic edit.",
-        "image": "/animation/34.png"
-    },
-    {
-        "title": "Cinematic Montage",
-        "description": "A high-quality cinematic edit.",
-        "image": "/animation/35.png"
-    },
-    {
-        "title": "Cinematic Montage",
-        "description": "A high-quality cinematic edit.",
-        "image": "/animation/36.png"
-    },
-    {
-        "title": "Cinematic Montage",
-        "description": "A high-quality cinematic edit.",
-        "image": "/animation/37.png"
-    },
-    {
-        "title": "Cinematic Montage",
-        "description": "A high-quality cinematic edit.",
-        "image": "/animation/38.png"
-    },
-    {
-        "title": "Cinematic Montage",
-        "description": "A high-quality cinematic edit.",
-        "image": "/animation/39.png"
-    },
-    {
-        "title": "Cinematic Montage",
-        "description": "A high-quality cinematic edit.",
-        "image": "/animation/40.png"
-    },
-    {
-        "title": "Cinematic Montage",
-        "description": "A high-quality cinematic edit.",
-        "image": "/animation/41.png"
-    },
-    {
-        "title": "Cinematic Montage",
-        "description": "A high-quality cinematic edit.",
-        "image": "/animation/42.png"
-    },
-    {
-        "title": "Cinematic Montage",
-        "description": "A high-quality cinematic edit.",
-        "image": "/animation/43.png"
-    },
-    {
-        "title": "Cinematic Montage",
-        "description": "A high-quality cinematic edit.",
-        "image": "/animation/44.png"
-    }
-],
-
+    "animation": [
+        {
+            "title": "Cinematic Montage",
+            "description": "A high-quality cinematic edit.",
+            "image": "/animation/1.png"
+        },
+        {
+            "title": "Cinematic Montage",
+            "description": "A high-quality cinematic edit.",
+            "image": "/animation/2.png"
+        },
+        {
+            "title": "Cinematic Montage",
+            "description": "A high-quality cinematic edit.",
+            "image": "/animation/3.png"
+        },
+        {
+            "title": "Cinematic Montage",
+            "description": "A high-quality cinematic edit.",
+            "image": "/animation/4.png"
+        },
+        {
+            "title": "Cinematic Montage",
+            "description": "A high-quality cinematic edit.",
+            "image": "/animation/5.png"
+        },
+        {
+            "title": "Cinematic Montage",
+            "description": "A high-quality cinematic edit.",
+            "image": "/animation/6.png"
+        },
+        {
+            "title": "Cinematic Montage",
+            "description": "A high-quality cinematic edit.",
+            "image": "/animation/7.png"
+        },
+        {
+            "title": "Cinematic Montage",
+            "description": "A high-quality cinematic edit.",
+            "image": "/animation/8.png"
+        },
+        {
+            "title": "Cinematic Montage",
+            "description": "A high-quality cinematic edit.",
+            "image": "/animation/9.png"
+        },
+        {
+            "title": "Cinematic Montage",
+            "description": "A high-quality cinematic edit.",
+            "image": "/animation/10.png"
+        },
+        {
+            "title": "Cinematic Montage",
+            "description": "A high-quality cinematic edit.",
+            "image": "/animation/11.png"
+        },
+        {
+            "title": "Cinematic Montage",
+            "description": "A high-quality cinematic edit.",
+            "image": "/animation/12.png"
+        },
+        {
+            "title": "Cinematic Montage",
+            "description": "A high-quality cinematic edit.",
+            "image": "/animation/13.png"
+        },
+        {
+            "title": "Cinematic Montage",
+            "description": "A high-quality cinematic edit.",
+            "image": "/animation/14.png"
+        },
+        {
+            "title": "Cinematic Montage",
+            "description": "A high-quality cinematic edit.",
+            "image": "/animation/15.png"
+        },
+        {
+            "title": "Cinematic Montage",
+            "description": "A high-quality cinematic edit.",
+            "image": "/animation/16.png"
+        },
+        {
+            "title": "Cinematic Montage",
+            "description": "A high-quality cinematic edit.",
+            "image": "/animation/17.png"
+        },
+        {
+            "title": "Cinematic Montage",
+            "description": "A high-quality cinematic edit.",
+            "image": "/animation/18.png"
+        },
+        {
+            "title": "Cinematic Montage",
+            "description": "A high-quality cinematic edit.",
+            "image": "/animation/19.png"
+        },
+        {
+            "title": "Cinematic Montage",
+            "description": "A high-quality cinematic edit.",
+            "image": "/animation/20.png"
+        },
+        {
+            "title": "Cinematic Montage",
+            "description": "A high-quality cinematic edit.",
+            "image": "/animation/21.png"
+        },
+        {
+            "title": "Cinematic Montage",
+            "description": "A high-quality cinematic edit.",
+            "image": "/animation/22.png"
+        },
+        {
+            "title": "Cinematic Montage",
+            "description": "A high-quality cinematic edit.",
+            "image": "/animation/23.png"
+        },
+        {
+            "title": "Cinematic Montage",
+            "description": "A high-quality cinematic edit.",
+            "image": "/animation/24.png"
+        },
+        {
+            "title": "Cinematic Montage",
+            "description": "A high-quality cinematic edit.",
+            "image": "/animation/25.png"
+        },
+        {
+            "title": "Cinematic Montage",
+            "description": "A high-quality cinematic edit.",
+            "image": "/animation/26.png"
+        },
+        {
+            "title": "Cinematic Montage",
+            "description": "A high-quality cinematic edit.",
+            "image": "/animation/27.png"
+        },
+        {
+            "title": "Cinematic Montage",
+            "description": "A high-quality cinematic edit.",
+            "image": "/animation/28.png"
+        },
+        {
+            "title": "Cinematic Montage",
+            "description": "A high-quality cinematic edit.",
+            "image": "/animation/29.png"
+        },
+        {
+            "title": "Cinematic Montage",
+            "description": "A high-quality cinematic edit.",
+            "image": "/animation/30.png"
+        },
+        {
+            "title": "Cinematic Montage",
+            "description": "A high-quality cinematic edit.",
+            "image": "/animation/31.png"
+        },
+        {
+            "title": "Cinematic Montage",
+            "description": "A high-quality cinematic edit.",
+            "image": "/animation/32.png"
+        },
+        {
+            "title": "Cinematic Montage",
+            "description": "A high-quality cinematic edit.",
+            "image": "/animation/33.png"
+        },
+        {
+            "title": "Cinematic Montage",
+            "description": "A high-quality cinematic edit.",
+            "image": "/animation/34.png"
+        },
+        {
+            "title": "Cinematic Montage",
+            "description": "A high-quality cinematic edit.",
+            "image": "/animation/35.png"
+        },
+        {
+            "title": "Cinematic Montage",
+            "description": "A high-quality cinematic edit.",
+            "image": "/animation/36.png"
+        },
+        {
+            "title": "Cinematic Montage",
+            "description": "A high-quality cinematic edit.",
+            "image": "/animation/37.png"
+        },
+        {
+            "title": "Cinematic Montage",
+            "description": "A high-quality cinematic edit.",
+            "image": "/animation/38.png"
+        },
+        {
+            "title": "Cinematic Montage",
+            "description": "A high-quality cinematic edit.",
+            "image": "/animation/39.png"
+        },
+        {
+            "title": "Cinematic Montage",
+            "description": "A high-quality cinematic edit.",
+            "image": "/animation/40.png"
+        },
+        {
+            "title": "Cinematic Montage",
+            "description": "A high-quality cinematic edit.",
+            "image": "/animation/41.png"
+        },
+        {
+            "title": "Cinematic Montage",
+            "description": "A high-quality cinematic edit.",
+            "image": "/animation/42.png"
+        },
+        {
+            "title": "Cinematic Montage",
+            "description": "A high-quality cinematic edit.",
+            "image": "/animation/43.png"
+        },
+        {
+            "title": "Cinematic Montage",
+            "description": "A high-quality cinematic edit.",
+            "image": "/animation/44.png"
+        }
+    ],
 
 
     "advertising": [
