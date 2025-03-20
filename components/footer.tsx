@@ -99,7 +99,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          
+
 
           <div id="contact">
             <h3 className="text-xl font-semibold mb-4">Contact Us</h3>
@@ -110,7 +110,7 @@ export default function Footer() {
                   href="mailto:info@makeitmarket.com"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
-                 makeitandmarket@gmail.com
+                  makeitandmarket@gmail.com
                 </a>
               </li>
               <li className="flex items-center">
