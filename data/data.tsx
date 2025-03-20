@@ -500,6 +500,11 @@ export const portfolioProjects: Record<
             description: "A high-quality cinematic edit.",
             video: "https://www.youtube.com/embed/OmK2CvqtP5w",
         },
+        {
+            title: "Cinematic Montage",
+            description: "A high-quality cinematic edit.",
+            video: "https://www.youtube.com/embed/WaEnkV6gY0o",
+        },
         //
     ],
 
@@ -689,7 +694,7 @@ export const portfolioProjects: Record<
             "description": "A high-quality cinematic edit.",
             "image": "/animation/42.png"
         },
-        
+
         {
             "title": "Cinematic Montage",
             "description": "A high-quality cinematic edit.",
@@ -808,9 +813,9 @@ export const portfolioProjects: Record<
             description: "A high-quality cinematic edit.",
             image: "/advertising/google ads (1).jpg",
         },
-      
+
     ],
-//port google ads kids matter.png
+
 
     "social-media": [
 
@@ -819,7 +824,7 @@ export const portfolioProjects: Record<
             description: "A high-quality cinematic edit.",
             image: "/social/1.1.png",
         },
-      
+
         {
             title: "Cinematic Montage",
             description: "A high-quality cinematic edit.",
