@@ -125,39 +125,49 @@ export default function Home() {
     ];
 
     // Animation loop
+    const drawStar = (ctx: CanvasRenderingContext2D, x: number, y: number, radius: number, points: number = 5) => {
+      ctx.beginPath();
+      for (let i = 0; i < points * 2; i++) {
+        const angle = (i * Math.PI) / points;
+        const r = i % 2 === 0 ? radius : radius / 2;
+        const xPos = x + r * Math.cos(angle);
+        const yPos = y + r * Math.sin(angle);
+        ctx.lineTo(xPos, yPos);
+      }
+      ctx.closePath();
+      ctx.fill();
+    };
+    
     const animate = () => {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
-
-      // Update and draw particles
+    
       particles.forEach((particle, i) => {
         // Update position
         particle.x += particle.speedX;
         particle.y += particle.speedY;
-
+    
         // Wrap around edges
         if (particle.x > 100) particle.x = 0;
         if (particle.x < 0) particle.x = 100;
         if (particle.y > 100) particle.y = 0;
         if (particle.y < 0) particle.y = 100;
-
-        // Draw particle
+    
+        // Draw star particle
         const x = (particle.x / 100) * canvas.width;
         const y = (particle.y / 100) * canvas.height;
-
-        ctx.beginPath();
-        ctx.arc(x, y, particle.size, 0, Math.PI * 2);
+    
         ctx.fillStyle = colors[particle.color];
-        ctx.fill();
-
+        drawStar(ctx, x, y, particle.size, 5);
+    
         // Draw connections between nearby particles
         for (let j = i + 1; j < particles.length; j++) {
           const particle2 = particles[j];
           const x2 = (particle2.x / 100) * canvas.width;
           const y2 = (particle2.y / 100) * canvas.height;
-
+    
           const distance = Math.sqrt(Math.pow(x - x2, 2) + Math.pow(y - y2, 2));
           const maxDistance = isMobile ? 100 : 150;
-
+    
           if (distance < maxDistance) {
             ctx.beginPath();
             ctx.moveTo(x, y);
@@ -168,9 +178,10 @@ export default function Home() {
           }
         }
       });
-
+    
       animationRef.current = requestAnimationFrame(animate);
     };
+    
 
     animate();
 
