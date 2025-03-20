@@ -29,7 +29,7 @@ const services = [
       "🎥 Video Editing",
       "📸 Photo Editing",
       "🎨 Graphic Design",
-      "🎥 Animations",
+      "🚀 Animations",
     ],
     link: "/visuals",
   },
