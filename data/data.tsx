@@ -723,6 +723,11 @@ export const portfolioProjects: Record<
         {
             title: "Cinematic Montage",
             description: "A high-quality cinematic edit.",
+            image: "/advertising/port google ads kids matter.png",
+        },
+        {
+            title: "Cinematic Montage",
+            description: "A high-quality cinematic edit.",
             image: "/advertising/brad campaign 2.png",
         },
 
@@ -803,8 +808,9 @@ export const portfolioProjects: Record<
             description: "A high-quality cinematic edit.",
             image: "/advertising/google ads (1).jpg",
         },
+      
     ],
-
+//port google ads kids matter.png
 
     "social-media": [
 
@@ -813,11 +819,7 @@ export const portfolioProjects: Record<
             description: "A high-quality cinematic edit.",
             image: "/social/1.1.png",
         },
-        {
-            title: "Cinematic Montage",
-            description: "A high-quality cinematic edit.",
-            image: "/social/1.png",
-        },
+      
         {
             title: "Cinematic Montage",
             description: "A high-quality cinematic edit.",
@@ -833,6 +835,11 @@ export const portfolioProjects: Record<
             title: "Cinematic Montage",
             description: "A high-quality cinematic edit.",
             image: "/social/3.2.png",
+        },
+        {
+            title: "Cinematic Montage",
+            description: "A high-quality cinematic edit.",
+            image: "/social/1.png",
         },
         {
             title: "Cinematic Montage",
