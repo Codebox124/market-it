@@ -591,7 +591,295 @@ export const portfolioProjects: Record<
             description: "A high-quality cinematic edit.",
             image: "/advertising/google ads (1).jpg", 
         },
-    ]
+    ],
+
+
+    "social-media": [
+       
+        {
+            title: "Cinematic Montage",
+            description: "A high-quality cinematic edit.",
+            image: "/social/1.1.png", 
+        },
+        {
+            title: "Cinematic Montage",
+            description: "A high-quality cinematic edit.",
+            image: "/social/1.png", 
+        },
+        {
+            title: "Cinematic Montage",
+            description: "A high-quality cinematic edit.",
+            image: "/social/2.png", 
+        },
+        {
+            title: "Cinematic Montage",
+            description: "A high-quality cinematic edit.",
+            image: "/social/3.1.png", 
+        },
+       
+        {
+            title: "Cinematic Montage",
+            description: "A high-quality cinematic edit.",
+            image: "/social/3.2.png", 
+        },
+        {
+            title: "Cinematic Montage",
+            description: "A high-quality cinematic edit.",
+            image: "/social/3.png", 
+        },
+        {
+            title: "Cinematic Montage",
+            description: "A high-quality cinematic edit.",
+            image: "/social/4.png", 
+        },
+        {
+            title: "Cinematic Montage",
+            description: "A high-quality cinematic edit.",
+            image: "/social/5.png", 
+        },
+      
+        {
+            title: "Cinematic Montage",
+            description: "A high-quality cinematic edit.",
+            image: "/social/6.png", 
+        },
+        {
+            title: "Cinematic Montage",
+            description: "A high-quality cinematic edit.",
+            image: "/social/7.png", 
+        },
+       
+        {
+            title: "Cinematic Montage",
+            description: "A high-quality cinematic edit.",
+            image: "/social/8.png", 
+        },
+        {
+            title: "Cinematic Montage",
+            description: "A high-quality cinematic edit.",
+            image: "/social/florida gators v georgia bulldogs MIKE S edit.png", 
+        },
+       
+    ],
+
+"flyer-distribution": [
+    {
+        "title": "Cinematic Montage",
+        "description": "A high-quality cinematic edit.",
+        "image": "/flyer/2.png"
+    },
+    {
+        "title": "Cinematic Montage",
+        "description": "A high-quality cinematic edit.",
+        "image": "/flyer/3.png"
+    },
+    {
+        "title": "Cinematic Montage",
+        "description": "A high-quality cinematic edit.",
+        "image": "/flyer/5.png"
+    },
+    {
+        "title": "Cinematic Montage",
+        "description": "A high-quality cinematic edit.",
+        "image": "/flyer/7.png"
+    },
+    {
+        "title": "Cinematic Montage",
+        "description": "A high-quality cinematic edit.",
+        "image": "/flyer/10.png"
+    },
+    {
+        "title": "Cinematic Montage",
+        "description": "A high-quality cinematic edit.",
+        "image": "/flyer/13.png"
+    },
+    {
+        "title": "Cinematic Montage",
+        "description": "A high-quality cinematic edit.",
+        "image": "/flyer/14.png"
+    },
+    {
+        "title": "Cinematic Montage",
+        "description": "A high-quality cinematic edit.",
+        "image": "/flyer/15.png"
+    },
+    {
+        "title": "Cinematic Montage",
+        "description": "A high-quality cinematic edit.",
+        "image": "/flyer/17.png"
+    },
+    {
+        "title": "Cinematic Montage",
+        "description": "A high-quality cinematic edit.",
+        "image": "/flyer/18.png"
+    },
+    {
+        "title": "Cinematic Montage",
+        "description": "A high-quality cinematic edit.",
+        "image": "/flyer/19.png"
+    },
+    {
+        "title": "Cinematic Montage",
+        "description": "A high-quality cinematic edit.",
+        "image": "/flyer/20.png"
+    },
+    {
+        "title": "Cinematic Montage",
+        "description": "A high-quality cinematic edit.",
+        "image": "/flyer/21.png"
+    },
+    {
+        "title": "Cinematic Montage",
+        "description": "A high-quality cinematic edit.",
+        "image": "/flyer/23.png"
+    },
+    {
+        "title": "Cinematic Montage",
+        "description": "A high-quality cinematic edit.",
+        "image": "/flyer/24.png"
+    },
+    {
+        "title": "Cinematic Montage",
+        "description": "A high-quality cinematic edit.",
+        "image": "/flyer/25.png"
+    },
+    {
+        "title": "Cinematic Montage",
+        "description": "A high-quality cinematic edit.",
+        "image": "/flyer/26.png"
+    },
+    {
+        "title": "Cinematic Montage",
+        "description": "A high-quality cinematic edit.",
+        "image": "/flyer/28.png"
+    },
+    {
+        "title": "Cinematic Montage",
+        "description": "A high-quality cinematic edit.",
+        "image": "/flyer/29.png"
+    },
+    {
+        "title": "Cinematic Montage",
+        "description": "A high-quality cinematic edit.",
+        "image": "/flyer/30.png"
+    },
+    {
+        "title": "Cinematic Montage",
+        "description": "A high-quality cinematic edit.",
+        "image": "/flyer/31.png"
+    },
+    {
+        "title": "Cinematic Montage",
+        "description": "A high-quality cinematic edit.",
+        "image": "/flyer/32.png"
+    },
+    {
+        "title": "Cinematic Montage",
+        "description": "A high-quality cinematic edit.",
+        "image": "/flyer/33.png"
+    },
+    {
+        "title": "Cinematic Montage",
+        "description": "A high-quality cinematic edit.",
+        "image": "/flyer/34.png"
+    },
+    {
+        "title": "Cinematic Montage",
+        "description": "A high-quality cinematic edit.",
+        "image": "/flyer/35.png"
+    },
+    {
+        "title": "Cinematic Montage",
+        "description": "A high-quality cinematic edit.",
+        "image": "/flyer/36.png"
+    },
+    {
+        "title": "Cinematic Montage",
+        "description": "A high-quality cinematic edit.",
+        "image": "/flyer/37.png"
+    },
+    {
+        "title": "Cinematic Montage",
+        "description": "A high-quality cinematic edit.",
+        "image": "/flyer/38.png"
+    },
+    {
+        "title": "Cinematic Montage",
+        "description": "A high-quality cinematic edit.",
+        "image": "/flyer/39.png"
+    },
+    {
+        "title": "Cinematic Montage",
+        "description": "A high-quality cinematic edit.",
+        "image": "/flyer/40.png"
+    },
+    {
+        "title": "Cinematic Montage",
+        "description": "A high-quality cinematic edit.",
+        "image": "/flyer/41.png"
+    },
+    {
+        "title": "Cinematic Montage",
+        "description": "A high-quality cinematic edit.",
+        "image": "/flyer/bonefish flyer 4 MIKE.png"
+    },
+    {
+        "title": "Cinematic Montage",
+        "description": "A high-quality cinematic edit.",
+        "image": "/flyer/child enrichment services VERTICAL CARD.png"
+    },
+    {
+        "title": "Cinematic Montage",
+        "description": "A high-quality cinematic edit.",
+        "image": "/flyer/flyer 2 KARA.png"
+    },
+    {
+        "title": "Cinematic Montage",
+        "description": "A high-quality cinematic edit.",
+        "image": "/flyer/flyer 2.png"
+    },
+    {
+        "title": "Cinematic Montage",
+        "description": "A high-quality cinematic edit.",
+        "image": "/flyer/flyer Alan edit 2 (bolder).png"
+    },
+    {
+        "title": "Cinematic Montage",
+        "description": "A high-quality cinematic edit.",
+        "image": "/flyer/flyer OLA 2.png"
+    },
+    {
+        "title": "Cinematic Montage",
+        "description": "A high-quality cinematic edit.",
+        "image": "/flyer/flyer OLA CD 2.png"
+    },
+    {
+        "title": "Cinematic Montage",
+        "description": "A high-quality cinematic edit.",
+        "image": "/flyer/flyer PHIL bw.png"
+    },
+    {
+        "title": "Cinematic Montage",
+        "description": "A high-quality cinematic edit.",
+        "image": "/flyer/flyer Robert Palmerton edit 2.png"
+    },
+    {
+        "title": "Cinematic Montage",
+        "description": "A high-quality cinematic edit.",
+        "image": "/flyer/Flyer Who Let The Dogs Out Fashion Show.png"
+    },
+    {
+        "title": "Cinematic Montage",
+        "description": "A high-quality cinematic edit.",
+        "image": "/flyer/MUSLIM event flyer 2 [G SIMONE].png"
+    },
+    {
+        "title": "Cinematic Montage",
+        "description": "A high-quality cinematic edit.",
+        "image": "/flyer/underdog front.png"
+    }
+]
+
 
 
 };
