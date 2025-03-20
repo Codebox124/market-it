@@ -29,7 +29,7 @@ const services = [
       "🎥 Video Editing",
       "📸 Photo Editing",
       "🎨 Graphic Design",
-      "🌍 Animations",
+      "🎥 Animations",
     ],
     link: "/visuals",
   },
@@ -39,8 +39,8 @@ const services = [
     color: "from-blue-400 to-indigo-600",
     icon: "🚀",
     list: [
-      "🚀 Websites",
-      "📸 Advertising",
+      "🌍 Websites",
+      "📣 Advertising",
       "📱 Social Media",
       "📄 Flyer Distribution",
     ],
@@ -408,9 +408,7 @@ export default function Home() {
                   </div>
 
                   <div className="relative items-center flex flex-col p-8 md:p-10 z-10">
-                    <div className="absolute top-6 right-6 md:top-8 md:right-8 text-3xl md:text-4xl">
-                      {service.icon}
-                    </div>
+                  
 
                     <h3 className={`text-2xl md:text-3xl font-bold mb-5 bg-clip-text text-transparent bg-gradient-to-r ${service.color}`}>
                       {service.title}
