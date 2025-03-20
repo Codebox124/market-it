@@ -110,7 +110,7 @@ export default function Footer() {
                   href="mailto:info@makeitmarket.com"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
-                  info@makeitandmarket.com
+                 makeitandmarket@gmail.com
                 </a>
               </li>
               <li className="flex items-center">

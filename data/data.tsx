@@ -491,5 +491,107 @@ export const portfolioProjects: Record<
         },
         
     ],
+    "advertising": [
+       
+        {
+            title: "Cinematic Montage",
+            description: "A high-quality cinematic edit.",
+            image: "/advertising/ads preview port.png", 
+        },
+        {
+            title: "Cinematic Montage",
+            description: "A high-quality cinematic edit.",
+            image: "/advertising/audie campaign.png", 
+        },
+        {
+            title: "Cinematic Montage",
+            description: "A high-quality cinematic edit.",
+            image: "/advertising/bonefish flyer 5 MIKE edit.png", 
+        },
+        {
+            title: "Cinematic Montage",
+            description: "A high-quality cinematic edit.",
+            image: "/advertising/brad campaign 2.png", 
+        },
+       
+        {
+            title: "Cinematic Montage",
+            description: "A high-quality cinematic edit.",
+            image: "/advertising/Dennis screenshot.png", 
+        },
+        {
+            title: "Cinematic Montage",
+            description: "A high-quality cinematic edit.",
+            image: "/advertising/flyer - ginger's place 2 MIKE edit 2.5.png", 
+        },
+        {
+            title: "Cinematic Montage",
+            description: "A high-quality cinematic edit.",
+            image: "/advertising/flyer - MAS advertising MIKE edit 4.png", 
+        },
+        {
+            title: "Cinematic Montage",
+            description: "A high-quality cinematic edit.",
+            image: "/advertising/flyer - MAS advertising MIKE edit 9.5.png", 
+        },
+      
+        {
+            title: "Cinematic Montage",
+            description: "A high-quality cinematic edit.",
+            image: "/advertising/flyer - Mobile advertising solutions 2 MIKE edit 3.png", 
+        },
+        {
+            title: "Cinematic Montage",
+            description: "A high-quality cinematic edit.",
+            image: "/advertising/flyer - wepa cuts MIKE 3.png", 
+        },
+       
+        {
+            title: "Cinematic Montage",
+            description: "A high-quality cinematic edit.",
+            image: "/advertising/Google Ads stats.jpeg", 
+        },
+        {
+            title: "Cinematic Montage",
+            description: "A high-quality cinematic edit.",
+            image: "/advertising/Screen Shot 2025-03-17 at 5.39.49 PM.png", 
+        },
+        {
+            title: "Cinematic Montage",
+            description: "A high-quality cinematic edit.",
+            image: "/advertising/Screen Shot 2025-03-18 at 11.05.35 PM.png", 
+        },
+        {
+            title: "Cinematic Montage",
+            description: "A high-quality cinematic edit.",
+            image: "/advertising/ad 1.png", 
+        },
+        {
+            title: "Cinematic Montage",
+            description: "A high-quality cinematic edit.",
+            image: "/advertising/ad 4.png", 
+        },
+        {
+            title: "Cinematic Montage",
+            description: "A high-quality cinematic edit.",
+            image: "/advertising/Ad mobile preview.jpeg", 
+        },
+        {
+            title: "Cinematic Montage",
+            description: "A high-quality cinematic edit.",
+            image: "/advertising/flyer - MAS advertising MIKE.png", 
+        },
+        {
+            title: "Cinematic Montage",
+            description: "A high-quality cinematic edit.",
+            image: "/advertising/Captura de Pantalla 2025-03-17 a la(s) 5.07.42 p.m..png", 
+        },
+        {
+            title: "Cinematic Montage",
+            description: "A high-quality cinematic edit.",
+            image: "/advertising/google ads (1).jpg", 
+        },
+    ]
+
 
 };
