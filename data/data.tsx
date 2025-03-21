@@ -510,22 +510,24 @@ export const portfolioProjects: Record<
 
         //
     ],
-//add to GRAPHIC DESIGN.jpg
+    //add to GRAPHIC DESIGN.jpg
     "video-editing": [
         {
             title: "Cinematic Montage",
             description: "A high-quality cinematic edit.",
             video: "https://www.youtube.com/embed/OmK2CvqtP5w",
         },
+      
+        //
+    ],
+
+    "animation": [
         {
             title: "Cinematic Montage",
             description: "A high-quality cinematic edit.",
             video: "https://www.youtube.com/embed/WaEnkV6gY0o",
         },
-        //
-    ],
 
-    "animation": [
         {
             "title": "Cinematic Montage",
             "description": "A high-quality cinematic edit.",
@@ -836,7 +838,12 @@ export const portfolioProjects: Record<
             image: "/advertising/add to ADVERTISING.png",
         },
 
-        //
+        {
+            title: "Cinematic Montage",
+            description: "A high-quality cinematic edit.",
+            image: "/advertising/google profile.png",
+        },
+        //google profile.png
 
     ],
 
@@ -1130,4 +1137,14 @@ export const portfolioProjects: Record<
 
 
 
+};
+export const serviceDescriptions: Record<string, string> = {
+    "advertising": "Find your next customer, client or supporter. Advertising online through Google, social media and email.",
+    "social-media": "Social media management for your Instagram, X, TikTok, YouTube and/or Facebook accounts, including creating and posting content, outreach and organic engagement.",
+    "flyer-distribution": "Flyer distribution, printing and design to physically approach your audience locally and nationwide. Make your brand visible at public spaces, homes, cars or anywhere else your brand can legally be presented.",
+    "website-design": "Creating and improving websites to showcase your brand, company, portfolio, event, product or status.",
+    "graphic-design": "Graphic design services including logos, flyers, album art, book covers, pitch decks, business cards, product design, clothing, merch, banners, thumbnails, manuals, posters, packaging, stationery, programs, PowerPoint presentations, sketches, documents and creative artwork.",
+    "animation": "Creating 2D and 3D animation, characters, cartoons, art, environments, rigging, modeling and motion to give life to your vision.",
+    "video-editing": "Video editing including film editing, wedding footage, reels, music videos, songs, YouTube uploads and social media posts. Services such as cutting, add text, captions, subtitles, grading, color correction, music, audio engineering VFX, and sound mixing.",
+    "photo-editing": "Photo editing including image restoration, photo albums, slideshows, portfolios, headshots. Services such as remove background, replace people, retouching, color balance, effects and change fonts.",
 };
