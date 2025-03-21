@@ -517,7 +517,7 @@ export const portfolioProjects: Record<
             description: "A high-quality cinematic edit.",
             video: "https://www.youtube.com/embed/OmK2CvqtP5w",
         },
-      
+
         //
     ],
 
@@ -847,75 +847,69 @@ export const portfolioProjects: Record<
 
     ],
 
-
     "social-media": [
-
         {
-            title: "Cinematic Montage",
-            description: "A high-quality cinematic edit.",
-            image: "/social/1.1.png",
-        },
-
-        {
-            title: "Cinematic Montage",
-            description: "A high-quality cinematic edit.",
-            image: "/social/2.png",
+            "title": "Cinematic Montage",
+            "description": "A high-quality cinematic edit.",
+            "image": "/social/1.png"
         },
         {
-            title: "Cinematic Montage",
-            description: "A high-quality cinematic edit.",
-            image: "/social/3.1.png",
-        },
-
-        {
-            title: "Cinematic Montage",
-            description: "A high-quality cinematic edit.",
-            image: "/social/3.2.png",
+            "title": "Cinematic Montage",
+            "description": "A high-quality cinematic edit.",
+            "image": "/social/2.png"
         },
         {
-            title: "Cinematic Montage",
-            description: "A high-quality cinematic edit.",
-            image: "/social/1.png",
+            "title": "Cinematic Montage",
+            "description": "A high-quality cinematic edit.",
+            "image": "/social/3.png"
         },
         {
-            title: "Cinematic Montage",
-            description: "A high-quality cinematic edit.",
-            image: "/social/3.png",
+            "title": "Cinematic Montage",
+            "description": "A high-quality cinematic edit.",
+            "image": "/social/3.1.png"
         },
         {
-            title: "Cinematic Montage",
-            description: "A high-quality cinematic edit.",
-            image: "/social/4.png",
+            "title": "Cinematic Montage",
+            "description": "A high-quality cinematic edit.",
+            "image": "/social/3.2.png"
         },
         {
-            title: "Cinematic Montage",
-            description: "A high-quality cinematic edit.",
-            image: "/social/5.png",
-        },
-
-        {
-            title: "Cinematic Montage",
-            description: "A high-quality cinematic edit.",
-            image: "/social/6.png",
+            "title": "Cinematic Montage",
+            "description": "A high-quality cinematic edit.",
+            "image": "/social/4.png"
         },
         {
-            title: "Cinematic Montage",
-            description: "A high-quality cinematic edit.",
-            image: "/social/7.png",
-        },
-
-        {
-            title: "Cinematic Montage",
-            description: "A high-quality cinematic edit.",
-            image: "/social/8.png",
+            "title": "Cinematic Montage",
+            "description": "A high-quality cinematic edit.",
+            "image": "/social/5.png"
         },
         {
-            title: "Cinematic Montage",
-            description: "A high-quality cinematic edit.",
-            image: "/social/florida gators v georgia bulldogs MIKE S edit.png",
+            "title": "Cinematic Montage",
+            "description": "A high-quality cinematic edit.",
+            "image": "/social/6.png"
         },
-
+        {
+            "title": "Cinematic Montage",
+            "description": "A high-quality cinematic edit.",
+            "image": "/social/7.png"
+        },
+        {
+            "title": "Cinematic Montage",
+            "description": "A high-quality cinematic edit.",
+            "image": "/social/8.png"
+        },
+        {
+            "title": "Cinematic Montage",
+            "description": "A high-quality cinematic edit.",
+            "image": "/social/1.1.png"
+        },
+        {
+            "title": "Cinematic Montage",
+            "description": "A high-quality cinematic edit.",
+            "image": "/social/florida gators v georgia bulldogs MIKE S edit.png"
+        }
     ],
+
 
     "flyer-distribution": [
         {
