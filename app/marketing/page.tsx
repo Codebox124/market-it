@@ -84,7 +84,7 @@ export default function Marketing() {
                         <div className="w-24 h-px bg-gradient-to-r from-transparent via-amber-500 to-transparent"></div>
                     </div>
                     <h1 className="md:text-6xl text-4xl font-thin tracking-wider leading-tight mb-6">
-                        <span className="bg-gradient-to-r text-transparent bg-clip-text from-emerald-300 to-emerald-500">MARKETING</span> <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-blue-600">Portfolio</span>
+                        <span className="bg-gradient-to-r text-transparent bg-clip-text from-blue-300 to-blue-600">MARKETING</span> <span className="text-transparent bg-clip-text bg-gradient-to-r  from-emerald-300 to-emerald-500">Portfolio</span>
                     </h1>
 
                     <div className="flex justify-center mt-6">

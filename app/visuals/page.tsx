@@ -27,7 +27,7 @@ const visualsPortfolio = [
     },
     {
         title: "Animation",
-        image: "/website-design.jpg",
+        image: "/animationss.jpg",
         description: "Illustrating custom art, characters, environments, and motion for your project.",
         icon: "star",
     },

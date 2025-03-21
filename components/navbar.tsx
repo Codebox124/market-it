@@ -32,8 +32,8 @@ export default function Navbar() {
           <Image
             src="/logo.png"
             alt="Make It & Market Logo"
-            width={70} 
-            height={150} 
+            width={100} 
+            height={250} 
             className="h-16 w-auto"
             priority
           />

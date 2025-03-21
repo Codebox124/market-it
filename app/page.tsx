@@ -374,8 +374,8 @@ export default function Home() {
                 }}
                 transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
               >
-                We provide <span className="font-semibold text-emerald-400">full-service visuals</span> and
-                <span className="font-semibold text-blue-400"> marketing solutions</span> to help you achieve your goal.
+                We provide full-service  <span className="font-semibold text-emerald-400">visuals</span> and
+                <span className="font-semibold text-blue-400"> marketing </span>solutions to help you achieve your goal.
               </motion.p>
               <div className="flex items-center justify-center mt-6 md:justify-start w-full">
                 <motion.p

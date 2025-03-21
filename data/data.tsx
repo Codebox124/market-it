@@ -112,6 +112,13 @@ export const portfolioProjects: Record<
             description: "Designed and developed a fully responsive online store.",
             image: "/website/Google tracker.png",
         },
+        {
+            title: "E-commerce Website",
+            description: "Designed and developed a fully responsive online store.",
+            image: "/website/add to WEBSITES.png",
+        },
+
+        //c:\Users\owner\Downloads\add to WEBSITES.png
 
     ],
     "photo-editing": [
@@ -490,10 +497,20 @@ export const portfolioProjects: Record<
             "description": "Designed an elegant and professional certificate for official recognition.",
             "image": "/graphic/flyer.png"
         },
+        {
+            "title": "Certificate Design",
+            "description": "Designed an elegant and professional certificate for official recognition.",
+            "image": "/graphic/add to GRAPHIC DESIGN.jpg"
+        },
+        {
+            "title": "Certificate Design",
+            "description": "Designed an elegant and professional certificate for official recognition.",
+            "image": "/graphic/add to GRAPHIC DESIGN 2.jpg"
+        },
 
         //
     ],
-
+//add to GRAPHIC DESIGN.jpg
     "video-editing": [
         {
             title: "Cinematic Montage",
@@ -813,6 +830,13 @@ export const portfolioProjects: Record<
             description: "A high-quality cinematic edit.",
             image: "/advertising/google ads (1).jpg",
         },
+        {
+            title: "Cinematic Montage",
+            description: "A high-quality cinematic edit.",
+            image: "/advertising/add to ADVERTISING.png",
+        },
+
+        //
 
     ],
 
