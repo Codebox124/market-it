@@ -269,6 +269,37 @@ export const portfolioProjects: Record<
         },
     ],
     "graphic-design": [
+        
+        {
+            "title": "Bold & Edgy Logo Design",
+            "description": "Designed a striking logo with a rebellious theme for a unique brand.",
+            "image": "/graphic/bandit.png"
+        },
+        {
+            "title": "Professional Business Card Design",
+            "description": "Created an eye-catching and professional business card for enhanced networking impact.",
+            "image": "/graphic/biz card.png"
+        },
+        {
+            "title": "Modern Logo & Branding",
+            "description": "Created a sleek and modern logo with a cohesive branding theme for a startup.",
+            "image": "/graphic/4.png"
+        },
+        {
+            "title": "Certificate Design",
+            "description": "Designed an elegant and professional certificate for official recognition.",
+            "image": "/graphic/logo UNITED FOR THE PEOPLE_S PLAN 18.png"
+        },
+        {
+            "title": "Certificate Design",
+            "description": "Designed an elegant and professional certificate for official recognition.",
+            "image": "/graphic/logo KIDS DYNASTY DAYCARE (Arlene).png"
+        },
+        {
+            "title": "Certificate Design",
+            "description": "Designed an elegant and professional certificate for official recognition.",
+            "image": "/graphic/logo MARTY (1).png"
+        },
         {
             "title": "Tech Startup Brand Identity",
             "description": "Designed a full branding package including logo, color palette, and typography for a tech startup.",
@@ -284,21 +315,6 @@ export const portfolioProjects: Record<
             "title": "Visual Identity System",
             "description": "Developed a consistent brand identity system for a growing company, including logo variations.",
             "image": "/graphic/image No Views (2).jpg"
-        },
-        {
-            "title": "Bold & Edgy Logo Design",
-            "description": "Designed a striking logo with a rebellious theme for a unique brand.",
-            "image": "/graphic/bandit.png"
-        },
-        {
-            "title": "Professional Business Card Design",
-            "description": "Created an eye-catching and professional business card for enhanced networking impact.",
-            "image": "/graphic/biz card.png"
-        },
-        {
-            "title": "Modern Logo & Branding",
-            "description": "Created a sleek and modern logo with a cohesive branding theme for a startup.",
-            "image": "/graphic/4.png"
         },
 
         {
@@ -367,21 +383,7 @@ export const portfolioProjects: Record<
             "image": "/graphic/shirt (Go ahead) 3 DENISE option 2.png"
         },
 
-        {
-            "title": "Certificate Design",
-            "description": "Designed an elegant and professional certificate for official recognition.",
-            "image": "/graphic/logo UNITED FOR THE PEOPLE_S PLAN 18.png"
-        },
-        {
-            "title": "Certificate Design",
-            "description": "Designed an elegant and professional certificate for official recognition.",
-            "image": "/graphic/logo KIDS DYNASTY DAYCARE (Arlene).png"
-        },
-        {
-            "title": "Certificate Design",
-            "description": "Designed an elegant and professional certificate for official recognition.",
-            "image": "/graphic/logo MARTY (1).png"
-        },
+       
         {
             "title": "Certificate Design",
             "description": "Designed an elegant and professional certificate for official recognition.",
