@@ -269,7 +269,7 @@ export const portfolioProjects: Record<
         },
     ],
     "graphic-design": [
-        
+
         {
             "title": "Bold & Edgy Logo Design",
             "description": "Designed a striking logo with a rebellious theme for a unique brand.",
@@ -383,7 +383,7 @@ export const portfolioProjects: Record<
             "image": "/graphic/shirt (Go ahead) 3 DENISE option 2.png"
         },
 
-       
+
         {
             "title": "Certificate Design",
             "description": "Designed an elegant and professional certificate for official recognition.",
@@ -524,23 +524,23 @@ export const portfolioProjects: Record<
     ],
 
     "animation": [
-      
+        {
+            "title": "Cinematic Montage",
+            "description": "A high-quality cinematic edit.",
+            "image": "/animation/59.png"
+        },
+        {
+            "title": "Cinematic Montage",
+            "description": "A high-quality cinematic edit.",
+            "image": "/animation/60.png"
+        },
+        {
+            "title": "Cinematic Montage",
+            "description": "A high-quality cinematic edit.",
+            "image": "/animation/50.png"
+        },
 
-        {
-            "title": "Cinematic Montage",
-            "description": "A high-quality cinematic edit.",
-            "image": "/animation/1.png"
-        },
-        {
-            "title": "Cinematic Montage",
-            "description": "A high-quality cinematic edit.",
-            "image": "/animation/2.png"
-        },
-        {
-            "title": "Cinematic Montage",
-            "description": "A high-quality cinematic edit.",
-            "image": "/animation/3.png"
-        },
+
         {
             "title": "Cinematic Montage",
             "description": "A high-quality cinematic edit.",
@@ -561,15 +561,21 @@ export const portfolioProjects: Record<
             "description": "A high-quality cinematic edit.",
             "image": "/animation/7.png"
         },
+
         {
             "title": "Cinematic Montage",
             "description": "A high-quality cinematic edit.",
-            "image": "/animation/8.png"
+            "image": "/animation/1.png"
         },
         {
             "title": "Cinematic Montage",
             "description": "A high-quality cinematic edit.",
-            "image": "/animation/9.png"
+            "image": "/animation/2.png"
+        },
+        {
+            "title": "Cinematic Montage",
+            "description": "A high-quality cinematic edit.",
+            "image": "/animation/3.png"
         },
         {
             "title": "Cinematic Montage",
@@ -594,6 +600,16 @@ export const portfolioProjects: Record<
         {
             "title": "Cinematic Montage",
             "description": "A high-quality cinematic edit.",
+            "image": "/animation/8.png"
+        },
+        {
+            "title": "Cinematic Montage",
+            "description": "A high-quality cinematic edit.",
+            "image": "/animation/9.png"
+        },
+        {
+            "title": "Cinematic Montage",
+            "description": "A high-quality cinematic edit.",
             "image": "/animation/14.png"
         },
         {
@@ -611,16 +627,7 @@ export const portfolioProjects: Record<
             "description": "A high-quality cinematic edit.",
             "image": "/animation/17.png"
         },
-        {
-            "title": "Cinematic Montage",
-            "description": "A high-quality cinematic edit.",
-            "image": "/animation/18.png"
-        },
-        {
-            "title": "Cinematic Montage",
-            "description": "A high-quality cinematic edit.",
-            "image": "/animation/19.png"
-        },
+
         {
             "title": "Cinematic Montage",
             "description": "A high-quality cinematic edit.",
@@ -639,12 +646,7 @@ export const portfolioProjects: Record<
         {
             "title": "Cinematic Montage",
             "description": "A high-quality cinematic edit.",
-            "image": "/animation/23.png"
-        },
-        {
-            "title": "Cinematic Montage",
-            "description": "A high-quality cinematic edit.",
-            "image": "/animation/24.png"
+            "image": "/animation/18.png"
         },
         {
             "title": "Cinematic Montage",
@@ -664,13 +666,25 @@ export const portfolioProjects: Record<
         {
             "title": "Cinematic Montage",
             "description": "A high-quality cinematic edit.",
-            "image": "/animation/28.png"
+            "image": "/animation/19.png"
         },
+        {
+            "title": "Cinematic Montage",
+            "description": "A high-quality cinematic edit.",
+            "image": "/animation/23.png"
+        },
+        {
+            "title": "Cinematic Montage",
+            "description": "A high-quality cinematic edit.",
+            "image": "/animation/24.png"
+        },
+
         {
             "title": "Cinematic Montage",
             "description": "A high-quality cinematic edit.",
             "image": "/animation/29.png"
         },
+
         {
             "title": "Cinematic Montage",
             "description": "A high-quality cinematic edit.",
@@ -701,6 +715,19 @@ export const portfolioProjects: Record<
             "description": "A high-quality cinematic edit.",
             "image": "/animation/39.png"
         },
+
+        {
+            "title": "Cinematic Montage",
+            "description": "A high-quality cinematic edit.",
+            "image": "/animation/44.png"
+        },
+
+
+        {
+            "title": "Cinematic Montage",
+            "description": "A high-quality cinematic edit.",
+            "image": "/animation/46.png"
+        },
         {
             "title": "Cinematic Montage",
             "description": "A high-quality cinematic edit.",
@@ -720,7 +747,60 @@ export const portfolioProjects: Record<
         {
             "title": "Cinematic Montage",
             "description": "A high-quality cinematic edit.",
-            "image": "/animation/44.png"
+            "image": "/animation/47.png"
+        },
+        {
+            "title": "Cinematic Montage",
+            "description": "A high-quality cinematic edit.",
+            "image": "/animation/48.png"
+        },
+        {
+            "title": "Cinematic Montage",
+            "description": "A high-quality cinematic edit.",
+            "image": "/animation/49.png"
+        },
+
+        {
+            "title": "Cinematic Montage",
+            "description": "A high-quality cinematic edit.",
+            "image": "/animation/52.png"
+        },
+        {
+            "title": "Cinematic Montage",
+            "description": "A high-quality cinematic edit.",
+            "image": "/animation/53.png"
+        },
+        {
+            "title": "Cinematic Montage",
+            "description": "A high-quality cinematic edit.",
+            "image": "/animation/54.png"
+        },
+        {
+            "title": "Cinematic Montage",
+            "description": "A high-quality cinematic edit.",
+            "image": "/animation/55.png"
+        },
+        {
+            "title": "Cinematic Montage",
+            "description": "A high-quality cinematic edit.",
+            "image": "/animation/56.png"
+        },
+
+        {
+            "title": "Cinematic Montage",
+            "description": "A high-quality cinematic edit.",
+            "image": "/animation/58.png"
+        },
+
+        {
+            "title": "Cinematic Montage",
+            "description": "A high-quality cinematic edit.",
+            "image": "/animation/51.png"
+        },
+        {
+            "title": "Cinematic Montage",
+            "description": "A high-quality cinematic edit.",
+            "image": "/animation/61.png"
         },
         {
             title: "Cinematic Montage",
