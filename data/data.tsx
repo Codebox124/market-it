@@ -524,11 +524,7 @@ export const portfolioProjects: Record<
     ],
 
     "animation": [
-        {
-            title: "Cinematic Montage",
-            description: "A high-quality cinematic edit.",
-            video: "https://www.youtube.com/embed/WaEnkV6gY0o",
-        },
+      
 
         {
             "title": "Cinematic Montage",
@@ -725,7 +721,12 @@ export const portfolioProjects: Record<
             "title": "Cinematic Montage",
             "description": "A high-quality cinematic edit.",
             "image": "/animation/44.png"
-        }
+        },
+        {
+            title: "Cinematic Montage",
+            description: "A high-quality cinematic edit.",
+            video: "https://www.youtube.com/embed/WaEnkV6gY0o",
+        },
     ],
 
 
