@@ -1,20 +1,38 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import { ArrowRight } from 'lucide-react';
-
+import emailjs from '@emailjs/browser';
 export default function ContactPage() {
-    const [formData, setFormData] = useState({ name: '', email: '', message: '' });
-
+    const [formData, setFormData] = useState({ name: "", email: "", message: "" })
+    /*const [formData, setFormData] = useState({ name: '', email: '', message: '' });
+   
     const handleChange = (e: { target: { name: any; value: any; }; }) => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
-    };
-
+    };*/
+    const form = useRef<any>(null);
     const handleSubmit = (e: { preventDefault: () => void; }) => {
         e.preventDefault();
-        alert('Form submitted!'); // Replace with API call
+
+        emailjs
+            .sendForm('service_7cevh3y', 'template_y9qp8oc', form.current, {
+                publicKey: 'HemS8Yf--_i_cJRW8',
+            })
+            .then(
+                () => {
+                    console.log('SUCCESS!');
+                    setFormData({ name: "", email: "", message: "" })
+                    alert('Form submitted!'); // Replace with API call
+                },
+                (error) => {
+                    console.log('FAILED...', error.text);
+                },
+            );
     };
+
+
+
 
     return (
         <div className="min-h-screen flex flex-col items-center justify-center bg-gray-900 text-white px-6">
@@ -41,15 +59,16 @@ export default function ContactPage() {
                 initial={{ opacity: 0, y: 50 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.2 }}
+                ref={form}
             >
                 <div className="space-y-6">
                     <div>
                         <label className="block text-gray-300">Name</label>
                         <input
                             type="text"
-                            name="name"
+                            name="user_name"
                             value={formData.name}
-                            onChange={handleChange}
+                            onChange={(e) => { setFormData({ ...formData, name: e.target.value }) }}
                             required
                             className="mt-2 w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-md text-white focus:ring-2 focus:ring-blue-400 focus:outline-none"
                         />
@@ -59,20 +78,19 @@ export default function ContactPage() {
                         <label className="block text-gray-300">Email</label>
                         <input
                             type="email"
-                            name="email"
+                            name="user_email"
                             value={formData.email}
-                            onChange={handleChange}
+                            onChange={(e) => { setFormData({ ...formData, email: e.target.value }) }}
                             required
                             className="mt-2 w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-md text-white focus:ring-2 focus:ring-blue-400 focus:outline-none"
                         />
                     </div>
-
                     <div>
                         <label className="block text-gray-300">Message</label>
                         <textarea
                             name="message"
                             value={formData.message}
-                            onChange={handleChange}
+                            onChange={(e) => { setFormData({ ...formData, message: e.target.value }) }}
                             required
                             className="mt-2 w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-md text-white focus:ring-2 focus:ring-blue-400 focus:outline-none h-32"
                         />
