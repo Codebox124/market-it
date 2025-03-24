@@ -137,37 +137,37 @@ export default function Home() {
       ctx.closePath();
       ctx.fill();
     };
-    
+
     const animate = () => {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
-    
+
       particles.forEach((particle, i) => {
         // Update position
         particle.x += particle.speedX;
         particle.y += particle.speedY;
-    
+
         // Wrap around edges
         if (particle.x > 100) particle.x = 0;
         if (particle.x < 0) particle.x = 100;
         if (particle.y > 100) particle.y = 0;
         if (particle.y < 0) particle.y = 100;
-    
+
         // Draw star particle
         const x = (particle.x / 100) * canvas.width;
         const y = (particle.y / 100) * canvas.height;
-    
+
         ctx.fillStyle = colors[particle.color];
         drawStar(ctx, x, y, particle.size, 5);
-    
+
         // Draw connections between nearby particles
         for (let j = i + 1; j < particles.length; j++) {
           const particle2 = particles[j];
           const x2 = (particle2.x / 100) * canvas.width;
           const y2 = (particle2.y / 100) * canvas.height;
-    
+
           const distance = Math.sqrt(Math.pow(x - x2, 2) + Math.pow(y - y2, 2));
           const maxDistance = isMobile ? 100 : 150;
-    
+
           if (distance < maxDistance) {
             ctx.beginPath();
             ctx.moveTo(x, y);
@@ -178,10 +178,10 @@ export default function Home() {
           }
         }
       });
-    
+
       animationRef.current = requestAnimationFrame(animate);
     };
-    
+
 
     animate();
 
@@ -367,16 +367,19 @@ export default function Home() {
                 transition: { duration: 1 }
               }}
             >
-              <motion.p
-                className="text-lg heroText md:text-2xl text-gray-200 max-w-3xl font-light leading-relaxed"
-                animate={{
-                  color: ["rgba(229,231,235,1)", "rgba(255,255,255,1)", "rgba(229,231,235,1)"]
-                }}
-                transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
-              >
-                We provide full-service  <span className="font-semibold text-emerald-400">visuals</span> and
-                <span className="font-semibold text-blue-400"> marketing </span>solutions to help you achieve your goal.
-              </motion.p>
+              <div  className="flex items-center justify-center mt-6 md:justify-start w-full">
+                <motion.p
+                  className="text-lg heroText md:text-2xl text-gray-200 font-light leading-relaxed max-w-full"
+                  animate={{
+                    color: ["rgba(229,231,235,1)", "rgba(255,255,255,1)", "rgba(229,231,235,1)"]
+                  }}
+                  transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
+                >
+                  We provide full-service  <span className="font-semibold text-emerald-400">visuals</span> and
+                  <span className="font-semibold text-blue-400"> marketing </span>solutions to help you achieve your goal.
+                </motion.p>
+              </div>
+
               <div className="flex items-center justify-center mt-6 md:justify-start w-full">
                 <motion.p
                   className="text-lg heroText md:text-2xl text-gray-200 font-light leading-relaxed max-w-full  "
@@ -384,12 +387,15 @@ export default function Home() {
                   From handing out flyers to editing a film... <span className="font-normal">Graphic design to solidifying business strategy.</span>
                 </motion.p>
               </div>
+              <div className="flex items-center justify-center mt-6 md:justify-start w-full">
+                <motion.p
+                  className="text-lg heroText md:text-2xl text-gray-200 font-light leading-relaxed max-w-full  "
+                >
+                  We craft custom content and marketing campaigns, no matter if you are large or small.
+                </motion.p>
+              </div>
 
-              <motion.p
-                className="text-lg heroText md:text-2xl text-gray-200 max-w-3xl font-light mt-6 leading-relaxed"
-              >
-                We craft <span className="">custom content</span> and <span className=" decoration-blue-400 decoration-2 underline-offset-4">marketing campaigns</span> that get things done for you. No matter if you are large or small.
-              </motion.p>
+
             </motion.div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
@@ -408,7 +414,7 @@ export default function Home() {
                   </div>
 
                   <div className="relative items-center flex flex-col p-8 md:p-10 z-10">
-                  
+
 
                     <h3 className={`text-2xl md:text-3xl font-bold mb-5 bg-clip-text text-transparent bg-gradient-to-r ${service.color}`}>
                       {service.title}
