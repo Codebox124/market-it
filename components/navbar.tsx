@@ -43,18 +43,7 @@ export default function Navbar() {
 
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center space-x-8">
-          <Link
-            href="/visuals"
-            className="text-white hover:text-green-400 transition-colors"
-          >
-            Visuals
-          </Link>
-          <Link
-            href="/marketing"
-            className="text-white hover:text-blue-400 transition-colors"
-          >
-            Marketing
-          </Link>
+         
           <Link
             href="/contact"
             className="px-5 py-2 bg-gradient-to-r from-green-400 to-blue-400 text-white rounded-full hover:shadow-lg hover:shadow-blue-500/20 transition-all"
@@ -81,20 +70,7 @@ export default function Navbar() {
           className="md:hidden bg-black/95 backdrop-blur-lg"
         >
           <div className="container mx-auto px-6 py-4 flex flex-col space-y-4">
-            <Link
-              href="/visuals"
-              className="text-white hover:text-green-400 transition-colors py-2"
-              onClick={() => setIsOpen(false)}
-            >
-              Visuals
-            </Link>
-            <Link
-              href="/marketing"
-              className="text-white hover:text-blue-400 transition-colors py-2"
-              onClick={() => setIsOpen(false)}
-            >
-              Marketing
-            </Link>
+           
             <Link
               href="/contact"
               className="px-5 py-2 bg-gradient-to-r from-green-400 to-blue-400 text-white rounded-full hover:shadow-lg hover:shadow-blue-500/20 transition-all text-center"
