@@ -1,112 +1,47 @@
-"use client";
+<div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
+{services.map((service, index) => (
+  <motion.div
+    key={index}
 
-import Link from "next/link";
-import { useState, useEffect } from "react";
-import { Menu, X } from "lucide-react";
-import { motion } from "framer-motion";
-import Image from "next/image";
+    className="relative group"
+  >
+    <div className="absolute inset-0 bg-gradient-to-br from-gray-800/80 to-gray-900/90 rounded-2xl transform group-hover:scale-102 transition-all duration-300 -z-10"></div>
+    <div className="absolute inset-0 rounded-2xl border border-white/10 backdrop-blur-sm overflow-hidden">
+      <motion.div
+        className={`absolute -inset-[150%] bg-gradient-to-r ${service.color} opacity-30 blur-3xl`}
 
-export default function Navbar() {
-  const [isOpen, setIsOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
+      />
+    </div>
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 10);
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+    <div className="relative items-center flex flex-col p-8 md:p-10 z-10">
 
-  return (
-    <motion.nav
-      initial={{ y: -100, opacity: 0 }}
-      animate={{ y: 0, opacity: 1 }}
-      transition={{ duration: 0.5 }}
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? "bg-black/80 backdrop-blur-md py-3" : "bg-transparent py-5"
-        }`}
-    >
-      <div className="container mx-auto px-6 flex justify-between items-center">
-        
-        <Link href="/" className="flex items-center space-x-3 text-white font-bold text-2xl">
-          <Image
-            src="/logo.png" 
-            alt="Make It & Market Logo"
-            width={100} 
-            height={100}
-            className="h-16" 
-          />
-          <span className="text-xl md:flex gap-2 hidden md:text-2xl">
-            <span className="text-green-400">Make <span className="">It </span></span>
-            <span className="text-white">&</span>
-            <span className="text-blue-400 "> Market</span>
-          </span>
-        </Link>
 
-        {/* Desktop Menu */}
-        <div className="hidden md:flex items-center space-x-8">
-          <Link
-            href="/visuals"
-            className="text-white hover:text-green-400 transition-colors"
+      <h3 className={`text-2xl md:text-3xl font-bold mb-5 bg-clip-text text-transparent bg-gradient-to-r ${service.color}`}>
+        {service.title}
+      </h3>
+
+      <ul className="mt-8 md:mt-10 text-lg md:text-xl font-medium space-y-5 md:space-y-6 text-gray-200">
+        {service.list.map((item, idx) => (
+          <motion.li
+            key={idx}
+            className="flex items-center group/item cursor-pointer transition-all duration-300 "
+            whileHover={{ scale: 1.02 }}
           >
-            Visuals
-          </Link>
-          <Link
-            href="/marketing"
-            className="text-white hover:text-blue-400 transition-colors"
-          >
-            Marketing
-          </Link>
-          <Link
-            href="/contact"
-            className="px-5 py-2 bg-gradient-to-r from-green-400 to-blue-400 text-white rounded-full hover:shadow-lg hover:shadow-blue-500/20 transition-all"
-          >
-            Contact
-          </Link>
-        </div>
+            <span className="mr-3 opacity-80 group-hover/item:opacity-100">{item}</span>
+          </motion.li>
+        ))}
+      </ul>
 
-        {/* Mobile Menu Button */}
-        <button
-          className="md:hidden text-white"
-          onClick={() => setIsOpen(!isOpen)}
-        >
-          {isOpen ? <X size={24} /> : <Menu size={24} />}
-        </button>
-      </div>
-
-      {/* Mobile Menu */}
-      {isOpen && (
+      {/* Updated "Learn More" to use Link */}
+      <Link href={service.link} passHref>
         <motion.div
-          initial={{ opacity: 0, height: 0 }}
-          animate={{ opacity: 1, height: "auto" }}
-          exit={{ opacity: 0, height: 0 }}
-          className="md:hidden bg-black/95 backdrop-blur-lg"
+          className="mt-10 md:mt-12 inline-flex items-center text-blue-400 hover:text-blue-300 font-medium cursor-pointer"
+          whileHover={{ x: 5 }}
         >
-          <div className="container mx-auto px-6 py-4 flex flex-col space-y-4">
-            <Link
-              href="/visuals"
-              className="text-white hover:text-green-400 transition-colors py-2"
-              onClick={() => setIsOpen(false)}
-            >
-              Visuals
-            </Link>
-            <Link
-              href="/marketing"
-              className="text-white hover:text-blue-400 transition-colors py-2"
-              onClick={() => setIsOpen(false)}
-            >
-              Marketing
-            </Link>
-            <Link
-              href="/contact"
-              className="px-5 py-2 bg-gradient-to-r from-green-400 to-blue-400 text-white rounded-full hover:shadow-lg hover:shadow-blue-500/20 transition-all text-center"
-              onClick={() => setIsOpen(false)}
-            >
-              Contact
-            </Link>
-          </div>
+          Learn more <ArrowRight className="ml-2 w-4 h-4" />
         </motion.div>
-      )}
-    </motion.nav>
-  );
-}
+      </Link>
+    </div>
+  </motion.div>
+))}
+</div>

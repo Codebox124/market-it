@@ -1,9 +1,11 @@
 "use client";
 
 import Link from "next/link";
-import { ArrowRight, Check, ChevronDown, Star } from "lucide-react";
+import { ArrowRight, Check, ChevronDown, Eye, Star } from "lucide-react";
 import { motion } from "framer-motion";
 import { useEffect, useState, useRef } from "react";
+import Image from "next/image";
+
 
 
 const fadeIn = {
@@ -19,34 +21,69 @@ const fadeIn = {
   }),
 };
 
-const services = [
+const visualsPortfolio = [
   {
-    title: "VISUALS",
-    description: "Crafting a compelling identity that aligns with your audience and business goals.",
-    color: "from-emerald-400 to-teal-600",
-    icon: "✨",
-    list: [
-      "🎥 Video Editing",
-      "📸 Photo Editing",
-      "🎨 Graphic Design",
-      "🚀 Animations",
-    ],
-    link: "/visuals",
+    title: "Graphic Design",
+    image: "/graphic-design.png",
+    description: "Visual production covering an assortment of media, whether personal or business.",
+    icon: "diamond",
   },
   {
-    title: "MARKETING",
-    description: "We produce high-quality visual and written content tailored for engagement.",
-    color: "from-blue-400 to-indigo-600",
-    icon: "🚀",
-    list: [
-      "🌍 Websites",
-      "📣 Advertising",
-      "📱 Social Media",
-      "📄 Flyer Distribution",
-    ],
-    link: "/marketing",
+    title: "Video Editing",
+    image: "/video-editing.png",
+    description: "Post-production, including motion graphics, animation, VFX, sound, and color correction.",
+    icon: "diamond",
   },
+  {
+    title: "Photo Editing",
+    image: "/photo-editing.png",
+    description: "High-end image manipulation, creative effects, and quality improvement.",
+    icon: "star",
+  },
+  {
+    title: "Animation",
+    image: "/1.png",
+    description: "Illustrating custom art, characters, environments, and motion for your project.",
+    icon: "star",
+  },
+  {
+    title: "Website Design",
+    image: "/website-design.jpg",
+    description: "User-friendly, custom websites and apps for portfolios, awareness, commerce, or blogging.",
+    icon: "star",
+},
+{
+    title: "Advertising",
+    image: "/advertising.jpg",
+    description: "Implementing campaigns that locate and attract your prospective customers or supporters.",
+    icon: "diamond",
+    accent: "border-rose-700/30",
+},
+{
+    title: "Social Media",
+    image: "/social-media.jpg",
+    description: "Providing all-encompassing account management, outreach, content creation, and growth.",
+    icon: "star",
+},
+{
+    title: "Flyer Distribution",
+    image: "/flyer.jpg",
+    description: "Focused offline marketing to reach people in the real world, both locally and globally.",
+    icon: "feather",
+    accent: "border-indigo-700/30",
+},
 ];
+const container = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.15,
+    },
+  },
+};
+
+
 
 // Generate particle properties
 const generateParticles = (count: number, isMobile: boolean) => {
@@ -312,7 +349,7 @@ export default function Home() {
         </div>
 
         {/* Content */}
-        <div className="relative z-10 max-w-6xl w-full px-6 md:px-12">
+        <div className="relative z-10 max-w-7xl w-full px-6 md:px-12">
           <motion.div
             initial="hidden"
             animate="visible"
@@ -367,7 +404,7 @@ export default function Home() {
                 transition: { duration: 1 }
               }}
             >
-              <div  className="flex items-center justify-center mt-6 md:justify-start w-full">
+              <div className="flex items-center justify-center mt-6 md:justify-start w-full">
                 <motion.p
                   className="text-lg heroText md:text-2xl text-gray-200 font-light leading-relaxed max-w-full"
                   animate={{
@@ -398,54 +435,64 @@ export default function Home() {
 
             </motion.div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
-              {services.map((service, index) => (
-                <motion.div
-                  key={index}
+            <div>
+              <motion.div
+                variants={container}
+                initial="hidden"
+                animate="show"
+                className="grid grid-cols-1 sm:grid-cols-2 relative lg:grid-cols-4 gap-8 perspective-1000"
+              >
+                {visualsPortfolio.map((item, index) => (
+                 <Link href={`/visuals/${item.title.toLowerCase().replace(/\s+/g, "-")}`} passHref>
+                 <motion.div
+                   key={index}
+                   whileHover={{
+                     rotateY: 5,
+                     rotateX: 5,
+                     scale: 1.02,
+                     boxShadow: "0 25px 50px -12px rgba(0, 0, 0, 0.5)",
+                   }}
+                   className="group rounded-xl overflow-hidden transition-all duration-500 bg-[#0d111f] backdrop-blur-sm shadow-lg"
+                 >
+                   {/* Image Section */}
+                   <div className="relative h-64 w-full overflow-hidden">
+                     <Image
+                       src={item.image || "/placeholder.svg"}
+                       alt={item.title}
+                       fill
+                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                       className="object-cover transition-transform duration-700"
+                       placeholder="blur"
+                       blurDataURL="data:image/jpeg;base64,/9j/4AAQSk..."
+                     />
+               
+                     <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent opacity-80 group-hover:opacity-60 transition-opacity duration-300" />
+                     <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                       <div className="bg-blue-600 backdrop-blur-md p-3 transform rotate-45 scale-0 group-hover:scale-100 transition-transform duration-500 rounded-md">
+                         <Eye className="text-black transform -rotate-45" size={24} />
+                       </div>
+                     </div>
+                   </div>
+               
+                   {/* Content Section */}
+                   <div className="p-6 relative flex flex-col min-h-[180px] justify-between space-y-4">
+                     <h2 className="text-xl font-semibold text-white uppercase tracking-wide">{item.title}</h2>
+                     <p className="text-gray-400 text-sm leading-relaxed">{item.description}</p>
+               
+                     <a
+                       href="#"
+                       className="inline-flex items-center text-blue-400 hover:text-blue-300 transition-colors text-sm font-medium uppercase tracking-widest absolute bottom-6"
+                     >
+                       Explore <ArrowRight className="ml-2 h-4 w-4" />
+                     </a>
+                   </div>
+                 </motion.div>
+               </Link>
+               
 
-                  className="relative group"
-                >
-                  <div className="absolute inset-0 bg-gradient-to-br from-gray-800/80 to-gray-900/90 rounded-2xl transform group-hover:scale-102 transition-all duration-300 -z-10"></div>
-                  <div className="absolute inset-0 rounded-2xl border border-white/10 backdrop-blur-sm overflow-hidden">
-                    <motion.div
-                      className={`absolute -inset-[150%] bg-gradient-to-r ${service.color} opacity-30 blur-3xl`}
-
-                    />
-                  </div>
-
-                  <div className="relative items-center flex flex-col p-8 md:p-10 z-10">
-
-
-                    <h3 className={`text-2xl md:text-3xl font-bold mb-5 bg-clip-text text-transparent bg-gradient-to-r ${service.color}`}>
-                      {service.title}
-                    </h3>
-
-                    <ul className="mt-8 md:mt-10 text-lg md:text-xl font-medium space-y-5 md:space-y-6 text-gray-200">
-                      {service.list.map((item, idx) => (
-                        <motion.li
-                          key={idx}
-                          className="flex items-center group/item cursor-pointer transition-all duration-300 "
-                          whileHover={{ scale: 1.02 }}
-                        >
-                          <span className="mr-3 opacity-80 group-hover/item:opacity-100">{item}</span>
-                        </motion.li>
-                      ))}
-                    </ul>
-
-                    {/* Updated "Learn More" to use Link */}
-                    <Link href={service.link} passHref>
-                      <motion.div
-                        className="mt-10 md:mt-12 inline-flex items-center text-blue-400 hover:text-blue-300 font-medium cursor-pointer"
-                        whileHover={{ x: 5 }}
-                      >
-                        Learn more <ArrowRight className="ml-2 w-4 h-4" />
-                      </motion.div>
-                    </Link>
-                  </div>
-                </motion.div>
-              ))}
+                ))}
+              </motion.div>
             </div>
-
 
 
 
