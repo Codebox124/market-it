@@ -397,42 +397,29 @@ export default function Home() {
             <motion.div
               variants={fadeIn}
               custom={1}
-              className="bg-black/30 backdrop-blur-md p-8 md:p-10 rounded-2xl border text-center items-center flex flex-col border-white/10"
+              className="bg-black/30 backdrop-blur-md p-6 md:p-10 rounded-2xl border text-center md:text-left flex flex-col border-white/10"
               style={{ boxShadow: "0 0 30px rgba(0,0,0,0.3)" }}
               whileHover={{
                 boxShadow: "0 0 40px rgba(0,0,0,0.4), 0 0 15px rgba(59,130,246,0.2)",
                 transition: { duration: 1 }
               }}
             >
-              <div className="flex items-center justify-center mt-6 md:justify-start w-full">
-                <motion.p
-                  className="text-lg heroText md:text-2xl text-gray-200 font-light leading-relaxed max-w-full"
-                  animate={{
-                    color: ["rgba(229,231,235,1)", "rgba(255,255,255,1)", "rgba(229,231,235,1)"]
-                  }}
-                  transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
-                >
-                  We provide <span className="font-semibold text-emerald-400">creative content</span> and
-                  <span className="font-semibold text-blue-400"> marketing</span> for businesses, artists and everyday people.
-                </motion.p>
-              </div>
-
-              <div className="flex items-center justify-center mt-6 md:justify-start w-full">
-                <motion.p
-                  className="text-lg heroText md:text-2xl text-gray-200 font-light leading-relaxed max-w-full"
-                >
-                  Services include <span className="font-normal">graphic design, photos, videos, films, websites, flyers, advertising,</span>
-                </motion.p>
-              </div>
-
-              <div className="flex items-center justify-center mt-6 md:justify-start w-full">
-                <motion.p
-                  className="text-lg heroText md:text-2xl text-gray-200 font-light leading-relaxed max-w-full"
-                >
-                  animation and social media.
-                </motion.p>
-              </div>
+              <motion.p
+                className="text-lg heroText md:text-2xl text-gray-200 font-light leading-relaxed w-full"
+                animate={{
+                  color: ["rgba(229,231,235,1)", "rgba(255,255,255,1)", "rgba(229,231,235,1)"]
+                }}
+                transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
+              >
+                We <span className="font-semibold text-emerald-400">make</span> creative content and
+                <span className="font-semibold text-blue-400"> market</span> for businesses, artists and everyday people.
+                Services include graphic design, photos, videos, films, websites, flyers, advertising, animation and social media.
+                Ask about things like logos, commercials, digital marketing, brochures, 2D or 3D visuals, Youtube videos, lead generation,
+                flyer distribution, Instagram management, Google Ads, photo albums, book covers, Facebook promotion, posters, image retouching,
+                motion graphic, VFX, cartoon drawings, or web design.
+              </motion.p>
             </motion.div>
+
 
 
             <div>
