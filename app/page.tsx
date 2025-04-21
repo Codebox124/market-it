@@ -51,27 +51,27 @@ const visualsPortfolio = [
     image: "/website-design.jpg",
     description: "User-friendly, custom websites and apps for portfolios, awareness, commerce, or blogging.",
     icon: "star",
-},
-{
+  },
+  {
     title: "Advertising",
     image: "/advertising.jpg",
     description: "Implementing campaigns that locate and attract your prospective customers or supporters.",
     icon: "diamond",
     accent: "border-rose-700/30",
-},
-{
+  },
+  {
     title: "Social Media",
     image: "/social-media.jpg",
     description: "Providing all-encompassing account management, outreach, content creation, and growth.",
     icon: "star",
-},
-{
+  },
+  {
     title: "Flyer Distribution",
     image: "/flyer.jpg",
     description: "Focused offline marketing to reach people in the real world, both locally and globally.",
     icon: "feather",
     accent: "border-indigo-700/30",
-},
+  },
 ];
 const container = {
   hidden: { opacity: 0 },
@@ -397,7 +397,7 @@ export default function Home() {
             <motion.div
               variants={fadeIn}
               custom={1}
-              className="bg-black/30 backdrop-blur-md p-8 md:p-10 rounded-2xl border text-center items-center  flex flex-col border-white/10"
+              className="bg-black/30 backdrop-blur-md p-8 md:p-10 rounded-2xl border text-center items-center flex flex-col border-white/10"
               style={{ boxShadow: "0 0 30px rgba(0,0,0,0.3)" }}
               whileHover={{
                 boxShadow: "0 0 40px rgba(0,0,0,0.4), 0 0 15px rgba(59,130,246,0.2)",
@@ -412,86 +412,86 @@ export default function Home() {
                   }}
                   transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
                 >
-                  We provide full-service  <span className="font-semibold text-emerald-400">visuals</span> and
-                  <span className="font-semibold text-blue-400"> marketing </span>solutions to help you achieve your goal.
+                  We provide <span className="font-semibold text-emerald-400">creative content</span> and
+                  <span className="font-semibold text-blue-400"> marketing</span> for businesses, artists and everyday people.
                 </motion.p>
               </div>
 
               <div className="flex items-center justify-center mt-6 md:justify-start w-full">
                 <motion.p
-                  className="text-lg heroText md:text-2xl text-gray-200 font-light leading-relaxed max-w-full  "
+                  className="text-lg heroText md:text-2xl text-gray-200 font-light leading-relaxed max-w-full"
                 >
-                  From handing out flyers to editing a film... <span className="font-normal">Graphic design to solidifying business strategy.</span>
+                  Services include <span className="font-normal">graphic design, photos, videos, films, websites, flyers, advertising,</span>
                 </motion.p>
               </div>
+
               <div className="flex items-center justify-center mt-6 md:justify-start w-full">
                 <motion.p
-                  className="text-lg heroText md:text-2xl text-gray-200 font-light leading-relaxed max-w-full  "
+                  className="text-lg heroText md:text-2xl text-gray-200 font-light leading-relaxed max-w-full"
                 >
-                  We craft custom content and marketing campaigns, no matter if you are large or small.
+                  animation and social media.
                 </motion.p>
               </div>
-
-
             </motion.div>
+
 
             <div>
               <motion.div
                 variants={container}
                 initial="hidden"
                 animate="show"
-                className="grid grid-cols-1 sm:grid-cols-2 relative lg:grid-cols-4 gap-8 perspective-1000"
+                className="grid grid-cols-1 sm:grid-cols-2 relative lg:grid-cols-4 gap-8 gap-y-14 perspective-1000"
               >
                 {visualsPortfolio.map((item, index) => (
-               <Link href={`/visuals/${item.title.toLowerCase().replace(/\s+/g, "-")}`} passHref>
-               <motion.div
-                 key={index}
-                 whileHover={{
-                   rotateY: 5,
-                   rotateX: 5,
-                   scale: 1.02,
-                   boxShadow: "0 25px 50px -12px rgba(0, 0, 0, 0.5)",
-                 }}
-                 className="group rounded-xl overflow-hidden transition-all duration-500 bg-[#0d111f] backdrop-blur-sm shadow-lg flex flex-col h-[450px]"
-               >
-                 {/* Image Section - Fixed height */}
-                 <div className="relative h-64 w-full overflow-hidden flex-shrink-0">
-                   <Image
-                     src={item.image || "/placeholder.svg"}
-                     alt={item.title}
-                     fill
-                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                     className="object-cover transition-transform duration-700"
-                     placeholder="blur"
-                     blurDataURL="data:image/jpeg;base64,/9j/4AAQSk..."
-                   />
-                   
-                   <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent opacity-80 group-hover:opacity-60 transition-opacity duration-300" />
-                   <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                     <div className="bg-blue-600 backdrop-blur-md p-3 transform rotate-45 scale-0 group-hover:scale-100 transition-transform duration-500 rounded-md">
-                       <Eye className="text-black transform -rotate-45" size={24} />
-                     </div>
-                   </div>
-                 </div>
-                 
-                 {/* Content Section - Using flex-grow to fill remaining space */}
-                 <div className="p-6 flex flex-col flex-grow relative">
-                   <h2 className="text-lg font-semibold text-white uppercase tracking-wide">{item.title}</h2>
-                   <p className="text-gray-400 text-sm leading-relaxed mt-4">{item.description}</p>
-                   
-                   {/* Explore button - Always at bottom */}
-                   <div className="mt-auto pt-4 bottom-2">
-                     <a
-                       href="#"
-                       className="inline-flex items-center text-blue-400 hover:text-blue-300 transition-colors text-xs font-medium uppercase tracking-widest"
-                     >
-                       Explore <ArrowRight className="ml-2 h-4 w-4" />
-                     </a>
-                   </div>
-                 </div>
-               </motion.div>
-             </Link>
-               
+                  <Link href={`/visuals/${item.title.toLowerCase().replace(/\s+/g, "-")}`} passHref>
+                    <motion.div
+                      key={index}
+                      whileHover={{
+                        rotateY: 5,
+                        rotateX: 5,
+                        scale: 1.02,
+                        boxShadow: "0 25px 50px -12px rgba(0, 0, 0, 0.5)",
+                      }}
+                      className="group rounded-xl overflow-hidden transition-all duration-500 bg-[#0d111f62] backdrop-blur-sm shadow-lg flex flex-col h-[450px]"
+                    >
+                      {/* Image Section - Fixed height */}
+                      <div className="relative h-64 w-full overflow-hidden flex-shrink-0">
+                        <Image
+                          src={item.image || "/placeholder.svg"}
+                          alt={item.title}
+                          fill
+                          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                          className="object-cover transition-transform duration-700"
+                          placeholder="blur"
+                          blurDataURL="data:image/jpeg;base64,/9j/4AAQSk..."
+                        />
+
+                        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent opacity-80 group-hover:opacity-60 transition-opacity duration-300" />
+                        <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                          <div className="bg-blue-600 backdrop-blur-md p-3 transform rotate-45 scale-0 group-hover:scale-100 transition-transform duration-500 rounded-md">
+                            <Eye className="text-black transform -rotate-45" size={24} />
+                          </div>
+                        </div>
+                      </div>
+
+                      {/* Content Section - Using flex-grow to fill remaining space */}
+                      <div className="p-6 flex flex-col flex-grow relative">
+                        <h2 className="text-lg font-semibold text-white uppercase tracking-wide">{item.title}</h2>
+                        <p className="text-gray-400 text-sm leading-relaxed mt-4">{item.description}</p>
+
+                        {/* Explore button - Always at bottom */}
+                        <div className="mt-auto pt-4 bottom-2">
+                          <a
+                            href="#"
+                            className="inline-flex items-center text-blue-400 hover:text-blue-300 transition-colors text-xs font-medium uppercase tracking-widest"
+                          >
+                            Explore <ArrowRight className="ml-2 h-4 w-4" />
+                          </a>
+                        </div>
+                      </div>
+                    </motion.div>
+                  </Link>
+
 
                 ))}
               </motion.div>
