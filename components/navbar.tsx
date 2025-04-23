@@ -26,61 +26,22 @@ export default function Navbar() {
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? "bg-black/80 backdrop-blur-md py-3" : "bg-transparent py-5"
         }`}
     >
-      <div className="container mx-auto px-6 flex justify-between items-center">
+      <div className="flex justify-between items-center w-full text-white font-bold text-2xl">
+      
 
-        <Link href="/" className="text-white flex gap-2 items-center  font-bold text-2xl">
-          <Image
-            src="/logo.png"
-            alt="Make It & Market Logo"
-            width={100} 
-            height={250} 
-            className="h-16 w-auto"
-            priority
-          />
-
-          
-        </Link>
-
-        {/* Desktop Menu */}
-        <div className="hidden md:flex items-center space-x-8">
-         
+        <div className="ml-auto px-6">
           <Link
             href="/contact"
-            className="px-5 py-2 bg-gradient-to-r from-green-400 to-blue-400 text-white rounded-full hover:shadow-lg hover:shadow-blue-500/20 transition-all"
+            className="px-5 flex justify-center items-center py-2 bg-gradient-to-r from-green-400 to-blue-400 text-white rounded-full hover:shadow-lg hover:shadow-blue-500/20 transition-all text-center"
+            onClick={() => setIsOpen(false)}
           >
             Contact
           </Link>
         </div>
-
-        {/* Mobile Menu Button */}
-        <button
-          className="md:hidden text-white"
-          onClick={() => setIsOpen(!isOpen)}
-        >
-          {isOpen ? <X size={24} /> : <Menu size={24} />}
-        </button>
       </div>
 
       {/* Mobile Menu */}
-      {isOpen && (
-        <motion.div
-          initial={{ opacity: 0, height: 0 }}
-          animate={{ opacity: 1, height: "auto" }}
-          exit={{ opacity: 0, height: 0 }}
-          className="md:hidden bg-black/95 backdrop-blur-lg"
-        >
-          <div className="container mx-auto px-6 py-4 flex flex-col space-y-4">
-           
-            <Link
-              href="/contact"
-              className="px-5 py-2 bg-gradient-to-r from-green-400 to-blue-400 text-white rounded-full hover:shadow-lg hover:shadow-blue-500/20 transition-all text-center"
-              onClick={() => setIsOpen(false)}
-            >
-              Contact
-            </Link>
-          </div>
-        </motion.div>
-      )}
+
     </motion.nav>
   );
 }
