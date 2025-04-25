@@ -51,6 +51,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <head>
+      <meta name="msvalidate.01" content="009C8AEC151B258FD1F908FA76572D41" />
         {/* Google Tag Manager */}
         <Script id="gtm-script" strategy="afterInteractive">
           {`
