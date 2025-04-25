@@ -27,7 +27,6 @@ export default function Navbar() {
         }`}
     >
       <div className="flex justify-between items-center w-full text-white font-bold text-2xl">
-      
 
         <div className="ml-auto px-6">
           <Link
@@ -40,7 +39,6 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Mobile Menu */}
 
     </motion.nav>
   );
