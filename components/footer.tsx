@@ -32,7 +32,7 @@ export default function Footer() {
             <ul className="space-y-2">
               <li>
                 <Link
-                  href="#"
+                  href="/visuals/graphic-design"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
                   Graphic Design
@@ -41,7 +41,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="#"
+                  href="/visuals/video-editing"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
                   Video Editing
@@ -49,7 +49,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="#"
+                  href="/visuals/photo-editing"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
                   Photo Editing
@@ -57,7 +57,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="#"
+                  href="/visuals/animation"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
                   Animation
@@ -65,7 +65,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="#"
+                  href="/visuals/website-design"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
                   Websites
@@ -74,7 +74,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="#"
+                  href="/visuals/advertising"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
                   Advertising
@@ -82,7 +82,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="#"
+                  href="/visuals/social-media"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
                   Social Media
@@ -90,7 +90,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="#"
+                  href="/visuals/flyer-distribution"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
                   Flyer Distribution
