@@ -9,23 +9,63 @@ export const portfolioProjects: Record<
         {
             title: "E-commerce Website",
             description: "Designed and developed a fully responsive online store.",
-            image: "/website/port web Moses Villani.png",
+            image: "/website/add to WEBSITES.png",
         },
 
         {
             title: "E-commerce Website",
             description: "Designed and developed a fully responsive online store.",
-            image: "/website/site port.jpg",
+            image: "/website/blog 3.jpg",
         },
         {
             title: "E-commerce Website",
             description: "Designed and developed a fully responsive online store.",
-            image: "/website/website 2.png",
+            image: "/website/caymana.co Landing Page edit.png",
         },
         {
             title: "E-commerce Website",
             description: "Designed and developed a fully responsive online store.",
-            image: "/website/port web RUN.png",
+            image: "/website/desktop full page update.png",
+        },
+        {
+            title: "E-commerce Website",
+            description: "Designed and developed a fully responsive online store.",
+            image: "/website/For port.png",
+        },
+        {
+            title: "E-commerce Website",
+            description: "Designed and developed a fully responsive online store.",
+            image: "/website/Google tracker.png",
+        },
+        {
+            title: "E-commerce Website",
+            description: "Designed and developed a fully responsive online store.",
+            image: "/website/image (2).png",
+        },
+        {
+            title: "E-commerce Website",
+            description: "Designed and developed a fully responsive online store.",
+            image: "/website/image (5).png",
+        },
+        {
+            title: "E-commerce Website",
+            description: "Designed and developed a fully responsive online store.",
+            image: "/website/image (6).png",
+        },
+        {
+            title: "E-commerce Website",
+            description: "Designed and developed a fully responsive online store.",
+            image: "/website/image (7).png",
+        },
+        {
+            title: "E-commerce Website",
+            description: "Designed and developed a fully responsive online store.",
+            image: "/website/port site movie database.png",
+        },
+        {
+            title: "Portfolio Website",
+            description: "Built a personal portfolio website for a creative artist.",
+            image: "/website/port web Moses Villani.png",
         },
         {
             title: "E-commerce Website",
@@ -36,6 +76,86 @@ export const portfolioProjects: Record<
             title: "E-commerce Website",
             description: "Designed and developed a fully responsive online store.",
             image: "/website/port web RUN 3.png",
+        },
+        {
+            title: "E-commerce Website",
+            description: "Designed and developed a fully responsive online store.",
+            image: "/website/port web RUN.png",
+        },
+        {
+            title: "E-commerce Website",
+            description: "Designed and developed a fully responsive online store.",
+            image: "/website/port website 2.png",
+        },
+        {
+            title: "E-commerce Website",
+            description: "Designed and developed a fully responsive online store.",
+            image: "/website/port website 3.png",
+        },
+        {
+            title: "E-commerce Website",
+            description: "Designed and developed a fully responsive online store.",
+            image: "/website/port website fence 3.png",
+        },
+        {
+            title: "E-commerce Website",
+            description: "Designed and developed a fully responsive online store.",
+            image: "/website/port website fence.png",
+        },
+        {
+            title: "E-commerce Website",
+            description: "Designed and developed a fully responsive online store.",
+            image: "/website/port website hair.png",
+        },
+        {
+            title: "E-commerce Website",
+            description: "Designed and developed a fully responsive online store.",
+            image: "/website/port website movies 2.png",
+        },
+        {
+            title: "E-commerce Website",
+            description: "Designed and developed a fully responsive online store.",
+            image: "/website/port website movies 3.png",
+        },
+        {
+            title: "E-commerce Website",
+            description: "Designed and developed a fully responsive online store.",
+            image: "/website/port website movies.png",
+        },
+        {
+            title: "E-commerce Website",
+            description: "Designed and developed a fully responsive online store.",
+            image: "/website/shifto 4.png",
+        },
+        {
+            title: "E-commerce Website",
+            description: "Designed and developed a fully responsive online store.",
+            image: "/website/shifto 6.png",
+        },
+        {
+            title: "E-commerce Website",
+            description: "Designed and developed a fully responsive online store.",
+            image: "/website/shifto 7.png",
+        },
+        {
+            title: "E-commerce Website",
+            description: "Designed and developed a fully responsive online store.",
+            image: "/website/site port.jpg",
+        },
+        {
+            title: "E-commerce Website",
+            description: "Designed and developed a fully responsive online store.",
+            image: "/website/web port vibal (2).PNG",
+        },
+        {
+            title: "E-commerce Website",
+            description: "Designed and developed a fully responsive online store.",
+            image: "/website/website 2.png",
+        },
+        {
+            title: "E-commerce Website",
+            description: "Designed and developed a fully responsive online store.",
+            image: "/website/website 3.png",
         },
         {
             title: "E-commerce Website",
@@ -57,68 +177,8 @@ export const portfolioProjects: Record<
             description: "Designed and developed a fully responsive online store.",
             image: "/website/website.png",
         },
-        {
-            title: "E-commerce Website",
-            description: "Designed and developed a fully responsive online store.",
-            image: "/website/blog 3.jpg",
-        },
-        {
-            title: "Portfolio Website",
-            description: "Built a personal portfolio website for a creative artist.",
-            image: "/website/caymana.co Landing Page edit.png",
-        },
-        {
-            title: "E-commerce Website",
-            description: "Designed and developed a fully responsive online store.",
-            image: "/website/desktop full page update.png",
-        },
-        {
-            title: "E-commerce Website",
-            description: "Designed and developed a fully responsive online store.",
-            image: "/website/shifto 4.png",
-        },
-        {
-            title: "E-commerce Website",
-            description: "Designed and developed a fully responsive online store.",
-            image: "/website/shifto 6.png",
-        },
-        {
-            title: "E-commerce Website",
-            description: "Designed and developed a fully responsive online store.",
-            image: "/website/shifto 7.png",
-        },
-        {
-            title: "E-commerce Website",
-            description: "Designed and developed a fully responsive online store.",
-            image: "/website/web port vibal (2).PNG",
-        },
-        {
-            title: "E-commerce Website",
-            description: "Designed and developed a fully responsive online store.",
-            image: "/website/port website 2.png",
-        },
-        {
-            title: "E-commerce Website",
-            description: "Designed and developed a fully responsive online store.",
-            image: "/website/port website 3.png",
-        },
-        {
-            title: "E-commerce Website",
-            description: "Designed and developed a fully responsive online store.",
-            image: "/website/port website.png",
-        },
-        {
-            title: "E-commerce Website",
-            description: "Designed and developed a fully responsive online store.",
-            image: "/website/Google tracker.png",
-        },
-        {
-            title: "E-commerce Website",
-            description: "Designed and developed a fully responsive online store.",
-            image: "/website/add to WEBSITES.png",
-        },
 
-        //c:\Users\owner\Downloads\add to WEBSITES.png
+
 
     ],
     "photo-editing": [
