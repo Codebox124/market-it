@@ -188,7 +188,7 @@ export default function PortfolioPage() {
                                     {projects.map((project, index) => (
                                         <div
                                             key={index}
-                                            className={`group relative cursor-pointer ${projects.length === 1 ? "max-w-md" : ""}`}
+                                            className={`group relative cursor-pointer bg-blue-200 ${projects.length === 1 ? "max-w-md" : ""}`}
                                             onClick={() => openModal(project)}
                                         >
                                             <div className="absolute -inset-0.5 bg-gradient-to-r from-blue-600/20 via-purple-600/20 to-cyan-600/20 rounded-2xl blur opacity-0 group-hover:opacity-100 transition duration-500"></div>

@@ -548,7 +548,7 @@ export const portfolioProjects: Record<
         {
             "title": "SS Tiger Logo",
             "description": "Created a fierce tiger-themed logo with dynamic visual elements.",
-            "image": "/graphic/ss.tiger.png"
+            "image": "/graphic/sstiger.png"
         },
         {
             "title": "Tanzania Travel Itinerary",
