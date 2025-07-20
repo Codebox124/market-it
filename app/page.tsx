@@ -21,53 +21,56 @@ const fadeIn = {
 const visualsPortfolio = [
   {
     title: "Graphic Design",
-    image: "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=400&h=300&fit=crop&crop=center",
+    image: "/graphic-design.png",
     description: "Premium visual identity and brand design crafted with precision and creativity.",
-    gradient: "from-violet-500/20 to-purple-500/20",
+     gradient: "from-violet-500/20 to-purple-500/20",
   },
   {
     title: "Video Editing",
-    image: "https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=400&h=300&fit=crop&crop=center",
+    image: "/video-editing.png",
     description: "Cinematic post-production with advanced motion graphics and seamless storytelling.",
-    gradient: "from-blue-500/20 to-cyan-500/20",
+   gradient: "from-blue-500/20 to-cyan-500/20",
   },
   {
     title: "Photo Editing",
-    image: "https://images.unsplash.com/photo-1606983340126-99ab4feaa64a?w=400&h=300&fit=crop&crop=center",
+    image: "/photo-editing.png",
     description: "Professional image enhancement and artistic manipulation with meticulous attention to detail.",
-    gradient: "from-emerald-500/20 to-teal-500/20",
+  gradient: "from-emerald-500/20 to-teal-500/20",
   },
   {
     title: "Animation",
-    image: "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=400&h=300&fit=crop&crop=center",
+    image: "/1.png",
     description: "Custom character design and fluid motion graphics that bring stories to life.",
-    gradient: "from-orange-500/20 to-red-500/20",
+  gradient: "from-orange-500/20 to-red-500/20",
   },
   {
     title: "Website Design",
-    image: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=400&h=300&fit=crop&crop=center",
+    image: "/website-design.jpg",
     description: "Cutting-edge web experiences with intuitive design and flawless functionality.",
-    gradient: "from-indigo-500/20 to-blue-500/20",
+     gradient: "from-indigo-500/20 to-blue-500/20",
   },
   {
     title: "Advertising",
-    image: "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=400&h=300&fit=crop&crop=center",
+    image: "/advertising.jpg",
     description: "Strategic campaigns that captivate audiences and drive meaningful engagement.",
-    gradient: "from-pink-500/20 to-rose-500/20",
+   gradient: "from-pink-500/20 to-rose-500/20",
   },
   {
     title: "Social Media",
-    image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=400&h=300&fit=crop&crop=center",
+    image: "/social-media.jpg",
     description: "Comprehensive social presence management with engaging content and growth strategies.",
     gradient: "from-purple-500/20 to-pink-500/20",
   },
   {
     title: "Flyer Distribution",
-    image: "https://images.unsplash.com/photo-1586953208448-b95a79798f07?w=400&h=300&fit=crop&crop=center",
+    image: "/flyer.jpg",
     description: "Targeted offline marketing campaigns that create real-world connections and impact.",
-    gradient: "from-yellow-500/20 to-orange-500/20",
+    icon: "feather",
+   gradient: "from-yellow-500/20 to-orange-500/20",
   },
 ];
+
+
 
 const generateParticles = (count: number) => {
   return Array.from({ length: count }).map(() => ({

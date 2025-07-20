@@ -291,12 +291,7 @@ export default function PortfolioPage() {
                                         className="rounded-xl w-full max-h-[70vh] object-contain shadow-2xl mx-auto"
                                     />
                                 )}
-                                {selectedProject.title && (
-                                    <h3 className="text-2xl font-bold text-white mt-4 text-center">{selectedProject.title}</h3>
-                                )}
-                                {selectedProject.description && (
-                                    <p className="text-gray-300 mt-2 text-center">{selectedProject.description}</p>
-                                )}
+                               
                             </div>
                         </div>
                     </div>
