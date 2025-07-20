@@ -19,6 +19,33 @@ export default function PortfolioPage() {
         mobile: { breakpoint: { max: 464, min: 0 }, items: 1 },
     };
 
+    // Function to modify video URLs to disable autoplay
+    const getVideoUrl = (url: string | undefined) => {
+        if (!url) return url;
+        
+        // Handle Cloudinary URLs
+        if (url.includes('cloudinary.com')) {
+            // For Cloudinary, we need to add autoplay=false parameter
+            const separator = url.includes('?') ? '&' : '?';
+            return `${url}${separator}autoplay=false&controls=true`;
+        }
+        
+        // Handle YouTube URLs
+        if (url.includes('youtube.com/embed/') || url.includes('youtu.be/')) {
+            // Remove existing autoplay parameter if present
+            const cleanUrl = url.split('?')[0];
+            // Add autoplay=0 to ensure no autoplay
+            return `${cleanUrl}?autoplay=0&rel=0`;
+        }
+        
+        // For other video platforms, add autoplay=0 if supported
+        if (url.includes('vimeo.com')) {
+            const separator = url.includes('?') ? '&' : '?';
+            return `${url}${separator}autoplay=0`;
+        }
+        
+        return url;
+    };
 
     return (
         <div className="bg-black h-full text-white px-6 py-24">
@@ -33,8 +60,12 @@ export default function PortfolioPage() {
                         <>
                             {/* Carousel (Animation Projects) */}
                             <Carousel
-                                responsive={responsive} showDots={false} autoPlay={true} autoPlaySpeed={3000} infinite={true}
-                                className="/*max-w-3xl*/ w-[100%] mx-auto mt-6"
+                                responsive={responsive} 
+                                showDots={false} 
+                                autoPlay={true} 
+                                autoPlaySpeed={3000} 
+                                infinite={true}
+                                className="w-[100%] mx-auto mt-6"
                             >
                                 {projects.map((project, index) => (
                                     <div key={index} className="flex items-center justify-center">
@@ -42,10 +73,10 @@ export default function PortfolioPage() {
                                             {project.video ? (
                                                 <iframe
                                                     className="rounded-lg w-full h-[500px]"
-                                                    src={project.video}
+                                                    src={getVideoUrl(project.video)}
                                                     title={project.title}
                                                     frameBorder="0"
-                                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                                     allowFullScreen
                                                 ></iframe>
                                             ) : (
@@ -65,10 +96,10 @@ export default function PortfolioPage() {
                                 <div className="mt-10 w-full max-w-4xl">
                                     <iframe
                                         className="rounded-lg w-full h-[500px]"
-                                        src={projects.find((p) => p.video)?.video}
+                                        src={getVideoUrl(projects.find((p) => p.video)?.video)}
                                         title="Featured Animation"
                                         frameBorder="0"
-                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                         allowFullScreen
                                     ></iframe>
                                 </div>
@@ -91,10 +122,10 @@ export default function PortfolioPage() {
                                     {project.video ? (
                                         <iframe
                                             className="rounded-lg w-full h-80"
-                                            src={project.video}
+                                            src={getVideoUrl(project.video)}
                                             title={project.title}
                                             frameBorder="0"
-                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                             allowFullScreen
                                         ></iframe>
                                     ) : (

@@ -813,8 +813,105 @@ export const portfolioProjects: Record<
             description: "A high-quality cinematic edit.",
             video: "https://www.youtube.com/embed/OmK2CvqtP5w",
         },
+        {
+            title: "Cinematic Montage",
+            description: "A high-quality cinematic edit.",
+            video: "https://res.cloudinary.com/dfjm3z7es/video/upload/v1753010701/wedding_video_reel_music_video_reel_SEPARATE_Sub_03.00_ifftkp.mp4"
+        },
+        {
+            title: "Cinematic Montage",
+            description: "A high-quality cinematic edit.",
+            video: "https://res.cloudinary.com/dfjm3z7es/video/upload/v1753010700/wedding_video_reel_music_video_reel_SEPARATE_Sub_04.00_gqhmmr.mp4"
+        },
+        {
+            title: "Cinematic Montage",
+            description: "A high-quality cinematic edit.",
+            video: "https://res.cloudinary.com/dfjm3z7es/video/upload/v1753010700/wedding_video_reel_music_video_reel_SEPARATE_Sub_02.00_lxvmew.mp4"
+        },
+        {
+            title: "Cinematic Montage",
+            description: "A high-quality cinematic edit.",
+            video: "https://res.cloudinary.com/dfjm3z7es/video/upload/v1753010699/wedding_video_reel_music_video_reel_SEPARATE_Sub_01.00_tzysbh.mp4"
+        },
+        {
+            title: "Cinematic Montage",
+            description: "A high-quality cinematic edit.",
+            video: "https://res.cloudinary.com/dfjm3z7es/video/upload/v1753010699/wedding_pic_portfolio_720p_f19d1h.mp4"
+        },
+        {
+            title: "Cinematic Montage",
+            description: "A high-quality cinematic edit.",
+            video: "https://res.cloudinary.com/dfjm3z7es/video/upload/v1753010662/video_port_extra_2_ln0gfi.mp4"
+        },
+        {
+            title: "Cinematic Montage",
+            description: "A high-quality cinematic edit.",
+            video: "https://res.cloudinary.com/dfjm3z7es/video/upload/v1753010661/video_port_extra_x4pum3.mp4"
+        },
+        {
+            title: "Cinematic Montage",
+            description: "A high-quality cinematic edit.",
+            video: "https://res.cloudinary.com/dfjm3z7es/video/upload/v1753010660/Statue_of_Liberty_exchange_trip_behind_the_scenes_gjsxwo.mp4"
+        },
+        {
+            title: "Cinematic Montage",
+            description: "A high-quality cinematic edit.",
+            video: "https://res.cloudinary.com/dfjm3z7es/video/upload/v1753010660/Thousand_Dollar_Listing_Pilot_Episode_Noah_Kaplan_1_ovn0h7.mp4"
+        },
+        {
+            title: "Cinematic Montage",
+            description: "A high-quality cinematic edit.",
+            video: "https://res.cloudinary.com/dfjm3z7es/video/upload/v1753010660/Video_IG_COLM_option_2_rtgnhs.mp4"
+        },
+        {
+            title: "Cinematic Montage",
+            description: "A high-quality cinematic edit.",
+            video: "https://res.cloudinary.com/dfjm3z7es/video/upload/v1753010658/New_York_Fashion_Week_fufzbg.mp4"
+        },
+        {
+            title: "Cinematic Montage",
+            description: "A high-quality cinematic edit.",
+            video: "https://res.cloudinary.com/dfjm3z7es/video/upload/v1753010657/phil_promo_vid_Vertical_video_PHIL_m6k7a8.mp4"
+        },
+        {
+            title: "Cinematic Montage",
+            description: "A high-quality cinematic edit.",
+            video: "https://res.cloudinary.com/dfjm3z7es/video/upload/v1753010656/music_video_reel_SEPARATE_Sub_02.00_Sub_01.00_kmbibg.mp4"
+        },
+        {
+            title: "Cinematic Montage",
+            description: "A high-quality cinematic edit.",
+            video: "https://res.cloudinary.com/dfjm3z7es/video/upload/v1753010655/music_video_reel_SEPARATE_Sub_02.00_Sub_05.00_rwqxme.mp4"
+        },
 
-        //
+        {
+            title: "Cinematic Montage",
+            description: "A high-quality cinematic edit.",
+            video: "https://res.cloudinary.com/dfjm3z7es/video/upload/v1753010654/music_video_reel_SEPARATE_Sub_02.00_Sub_03.00_et1hdn.mp4"
+        },
+        {
+            title: "Cinematic Montage",
+            description: "A high-quality cinematic edit.",
+            video: "https://res.cloudinary.com/dfjm3z7es/video/upload/v1753010654/music_video_reel_SEPARATE_Sub_02.00_trwgvk.mp4"
+        },
+        {
+            title: "Cinematic Montage",
+            description: "A high-quality cinematic edit.",
+            video: "https://res.cloudinary.com/dfjm3z7es/video/upload/v1753010652/music_video_reel_SEPARATE_Sub_02.00_Sub_04.00_kzvgkk.mp4"
+        },
+        {
+            title: "Cinematic Montage",
+            description: "A high-quality cinematic edit.",
+            video: "https://res.cloudinary.com/dfjm3z7es/video/upload/v1753010652/music_video_reel_SEPARATE_Sub_01.00_lvauvf.mp4"
+        },
+          {
+            title: "Cinematic Montage",
+            description: "A high-quality cinematic edit.",
+            video: "https://res.cloudinary.com/dfjm3z7es/video/upload/v1753010651/music_video_reel_SEPARATE_nnrjx2.mp4"
+        },
+
+
+
     ],
 
     "animation": [
@@ -1226,260 +1323,260 @@ export const portfolioProjects: Record<
     ],
 
 
-   "advertising": [
-    {
-        title: "Cinematic Montage",
-        description: "A high-quality cinematic edit.",
-        image: "/advertising/ads preview port.png",
-    },
-    {
-        title: "Cinematic Montage",
-        description: "A high-quality cinematic edit.",
-        image: "/advertising/audie campaign.png",
-    },
-    {
-        title: "Cinematic Montage",
-        description: "A high-quality cinematic edit.",
-        image: "/advertising/bonefish flyer 5 MIKE edit.png",
-    },
-    {
-        title: "Cinematic Montage",
-        description: "A high-quality cinematic edit.",
-        image: "/advertising/port google ads kids matter.png",
-    },
-    {
-        title: "Cinematic Montage",
-        description: "A high-quality cinematic edit.",
-        image: "/advertising/brad campaign 2.png",
-    },
-    {
-        title: "Cinematic Montage",
-        description: "A high-quality cinematic edit.",
-        image: "/advertising/Dennis screenshot.png",
-    },
-    {
-        title: "Cinematic Montage",
-        description: "A high-quality cinematic edit.",
-        image: "/advertising/flyer - ginger's place 2 MIKE edit 2.5.png",
-    },
-    {
-        title: "Cinematic Montage",
-        description: "A high-quality cinematic edit.",
-        image: "/advertising/flyer - MAS advertising MIKE edit 4.png",
-    },
-    {
-        title: "Cinematic Montage",
-        description: "A high-quality cinematic edit.",
-        image: "/advertising/flyer - MAS advertising MIKE edit 9.5.png",
-    },
-    {
-        title: "Cinematic Montage",
-        description: "A high-quality cinematic edit.",
-        image: "/advertising/flyer - Mobile advertising solutions 2 MIKE edit 3.png",
-    },
-    {
-        title: "Cinematic Montage",
-        description: "A high-quality cinematic edit.",
-        image: "/advertising/flyer - wepa cuts MIKE 3.png",
-    },
-    {
-        title: "Cinematic Montage",
-        description: "A high-quality cinematic edit.",
-        image: "/advertising/Google Ads stats.jpeg",
-    },
-    {
-        title: "Cinematic Montage",
-        description: "A high-quality cinematic edit.",
-        image: "/advertising/Screen Shot 2025-03-17 at 5.39.49 PM.png",
-    },
-    {
-        title: "Cinematic Montage",
-        description: "A high-quality cinematic edit.",
-        image: "/advertising/Screen Shot 2025-03-18 at 11.05.35 PM.png",
-    },
-    {
-        title: "Cinematic Montage",
-        description: "A high-quality cinematic edit.",
-        image: "/advertising/ad 1.png",
-    },
-    {
-        title: "Cinematic Montage",
-        description: "A high-quality cinematic edit.",
-        image: "/advertising/ad 4.png",
-    },
-    {
-        title: "Cinematic Montage",
-        description: "A high-quality cinematic edit.",
-        image: "/advertising/Ad mobile preview.jpeg",
-    },
-    {
-        title: "Cinematic Montage",
-        description: "A high-quality cinematic edit.",
-        image: "/advertising/flyer - MAS advertising MIKE.png",
-    },
-    {
-        title: "Cinematic Montage",
-        description: "A high-quality cinematic edit.",
-        image: "/advertising/Captura de Pantalla 2025-03-17 a la(s) 5.07.42 p.m..png",
-    },
-    {
-        title: "Cinematic Montage",
-        description: "A high-quality cinematic edit.",
-        image: "/advertising/google ads (1).jpg",
-    },
-    {
-        title: "Cinematic Montage",
-        description: "A high-quality cinematic edit.",
-        image: "/advertising/add to ADVERTISING.png",
-    },
-    {
-        title: "Cinematic Montage",
-        description: "A high-quality cinematic edit.",
-        image: "/advertising/google profile.png",
-    },
-    // Additional files found in your directory:
-    {
-        title: "Cinematic Montage",
-        description: "A high-quality cinematic edit.",
-        image: "/advertising/12 edit 3.png",
-    },
-    {
-        title: "Cinematic Montage",
-        description: "A high-quality cinematic edit.",
-        image: "/advertising/14 edit 2.png",
-    },
-    {
-        title: "Cinematic Montage",
-        description: "A high-quality cinematic edit.",
-        image: "/advertising/27 edit 3.png",
-    },
-    {
-        title: "Cinematic Montage",
-        description: "A high-quality cinematic edit.",
-        image: "/advertising/29 edit 5.png",
-    },
-    {
-        title: "Cinematic Montage",
-        description: "A high-quality cinematic edit.",
-        image: "/advertising/ad preview.png",
-    },
-    {
-        title: "Cinematic Montage",
-        description: "A high-quality cinematic edit.",
-        image: "/advertising/Ads initial stats JEFF W 2.png",
-    },
-    {
-        title: "Cinematic Montage",
-        description: "A high-quality cinematic edit.",
-        image: "/advertising/Ads initial stats JEFF W.png",
-    },
-    {
-        title: "Cinematic Montage",
-        description: "A high-quality cinematic edit.",
-        image: "/advertising/ads snapshots (1).PNG",
-    },
-    {
-        title: "Cinematic Montage",
-        description: "A high-quality cinematic edit.",
-        image: "/advertising/ads snapshots (2).PNG",
-    },
-    {
-        title: "Cinematic Montage",
-        description: "A high-quality cinematic edit.",
-        image: "/advertising/ads snapshots (3).PNG",
-    },
-    {
-        title: "Cinematic Montage",
-        description: "A high-quality cinematic edit.",
-        image: "/advertising/age.png",
-    },
-    {
-        title: "Cinematic Montage",
-        description: "A high-quality cinematic edit.",
-        image: "/advertising/campaign excel report.png",
-    },
-    {
-        title: "Cinematic Montage",
-        description: "A high-quality cinematic edit.",
-        image: "/advertising/campaign M&M flyer report.png",
-    },
-    {
-        title: "Cinematic Montage",
-        description: "A high-quality cinematic edit.",
-        image: "/advertising/Campaign performance 19-21.png",
-    },
-    {
-        title: "Cinematic Montage",
-        description: "A high-quality cinematic edit.",
-        image: "/advertising/campaign performance 19-22.png",
-    },
-    {
-        title: "Cinematic Montage",
-        description: "A high-quality cinematic edit.",
-        image: "/advertising/cost.png",
-    },
-    {
-        title: "Cinematic Montage",
-        description: "A high-quality cinematic edit.",
-        image: "/advertising/flyer BEN.png",
-    },
-    {
-        title: "Cinematic Montage",
-        description: "A high-quality cinematic edit.",
-        image: "/advertising/gender.png",
-    },
-    {
-        title: "Cinematic Montage",
-        description: "A high-quality cinematic edit.",
-        image: "/advertising/income.png",
-    },
-    {
-        title: "Cinematic Montage",
-        description: "A high-quality cinematic edit.",
-        image: "/advertising/keywords.png",
-    },
-    {
-        title: "Cinematic Montage",
-        description: "A high-quality cinematic edit.",
-        image: "/advertising/location.png",
-    },
-    {
-        title: "Cinematic Montage",
-        description: "A high-quality cinematic edit.",
-        image: "/advertising/parental status.png",
-    },
-    {
-        title: "Cinematic Montage",
-        description: "A high-quality cinematic edit.",
-        image: "/advertising/report.png",
-    },
-    {
-        title: "Cinematic Montage",
-        description: "A high-quality cinematic edit.",
-        image: "/advertising/report jim.png",
-    },
-    {
-        title: "Cinematic Montage",
-        description: "A high-quality cinematic edit.",
-        image: "/advertising/report Laara2.png"
-    },
-    {
-        title: "Cinematic Montage",
-        description: "A high-quality cinematic edit.",
-        image: "/advertising/report Laara1.png",
-    },
-   
-    {
-        title: "Cinematic Montage",
-        description: "A high-quality cinematic edit.",
-        image: "/advertising/snapshotroofing.png"
-    },
-    {
-        title: "Cinematic Montage",
-        description: "A high-quality cinematic edit.",
-        image: "/advertising/Time_series.png"
-    },
-],
+    "advertising": [
+        {
+            title: "Cinematic Montage",
+            description: "A high-quality cinematic edit.",
+            image: "/advertising/ads preview port.png",
+        },
+        {
+            title: "Cinematic Montage",
+            description: "A high-quality cinematic edit.",
+            image: "/advertising/audie campaign.png",
+        },
+        {
+            title: "Cinematic Montage",
+            description: "A high-quality cinematic edit.",
+            image: "/advertising/bonefish flyer 5 MIKE edit.png",
+        },
+        {
+            title: "Cinematic Montage",
+            description: "A high-quality cinematic edit.",
+            image: "/advertising/port google ads kids matter.png",
+        },
+        {
+            title: "Cinematic Montage",
+            description: "A high-quality cinematic edit.",
+            image: "/advertising/brad campaign 2.png",
+        },
+        {
+            title: "Cinematic Montage",
+            description: "A high-quality cinematic edit.",
+            image: "/advertising/Dennis screenshot.png",
+        },
+        {
+            title: "Cinematic Montage",
+            description: "A high-quality cinematic edit.",
+            image: "/advertising/flyer - ginger's place 2 MIKE edit 2.5.png",
+        },
+        {
+            title: "Cinematic Montage",
+            description: "A high-quality cinematic edit.",
+            image: "/advertising/flyer - MAS advertising MIKE edit 4.png",
+        },
+        {
+            title: "Cinematic Montage",
+            description: "A high-quality cinematic edit.",
+            image: "/advertising/flyer - MAS advertising MIKE edit 9.5.png",
+        },
+        {
+            title: "Cinematic Montage",
+            description: "A high-quality cinematic edit.",
+            image: "/advertising/flyer - Mobile advertising solutions 2 MIKE edit 3.png",
+        },
+        {
+            title: "Cinematic Montage",
+            description: "A high-quality cinematic edit.",
+            image: "/advertising/flyer - wepa cuts MIKE 3.png",
+        },
+        {
+            title: "Cinematic Montage",
+            description: "A high-quality cinematic edit.",
+            image: "/advertising/Google Ads stats.jpeg",
+        },
+        {
+            title: "Cinematic Montage",
+            description: "A high-quality cinematic edit.",
+            image: "/advertising/Screen Shot 2025-03-17 at 5.39.49 PM.png",
+        },
+        {
+            title: "Cinematic Montage",
+            description: "A high-quality cinematic edit.",
+            image: "/advertising/Screen Shot 2025-03-18 at 11.05.35 PM.png",
+        },
+        {
+            title: "Cinematic Montage",
+            description: "A high-quality cinematic edit.",
+            image: "/advertising/ad 1.png",
+        },
+        {
+            title: "Cinematic Montage",
+            description: "A high-quality cinematic edit.",
+            image: "/advertising/ad 4.png",
+        },
+        {
+            title: "Cinematic Montage",
+            description: "A high-quality cinematic edit.",
+            image: "/advertising/Ad mobile preview.jpeg",
+        },
+        {
+            title: "Cinematic Montage",
+            description: "A high-quality cinematic edit.",
+            image: "/advertising/flyer - MAS advertising MIKE.png",
+        },
+        {
+            title: "Cinematic Montage",
+            description: "A high-quality cinematic edit.",
+            image: "/advertising/Captura de Pantalla 2025-03-17 a la(s) 5.07.42 p.m..png",
+        },
+        {
+            title: "Cinematic Montage",
+            description: "A high-quality cinematic edit.",
+            image: "/advertising/google ads (1).jpg",
+        },
+        {
+            title: "Cinematic Montage",
+            description: "A high-quality cinematic edit.",
+            image: "/advertising/add to ADVERTISING.png",
+        },
+        {
+            title: "Cinematic Montage",
+            description: "A high-quality cinematic edit.",
+            image: "/advertising/google profile.png",
+        },
+        // Additional files found in your directory:
+        {
+            title: "Cinematic Montage",
+            description: "A high-quality cinematic edit.",
+            image: "/advertising/12 edit 3.png",
+        },
+        {
+            title: "Cinematic Montage",
+            description: "A high-quality cinematic edit.",
+            image: "/advertising/14 edit 2.png",
+        },
+        {
+            title: "Cinematic Montage",
+            description: "A high-quality cinematic edit.",
+            image: "/advertising/27 edit 3.png",
+        },
+        {
+            title: "Cinematic Montage",
+            description: "A high-quality cinematic edit.",
+            image: "/advertising/29 edit 5.png",
+        },
+        {
+            title: "Cinematic Montage",
+            description: "A high-quality cinematic edit.",
+            image: "/advertising/ad preview.png",
+        },
+        {
+            title: "Cinematic Montage",
+            description: "A high-quality cinematic edit.",
+            image: "/advertising/Ads initial stats JEFF W 2.png",
+        },
+        {
+            title: "Cinematic Montage",
+            description: "A high-quality cinematic edit.",
+            image: "/advertising/Ads initial stats JEFF W.png",
+        },
+        {
+            title: "Cinematic Montage",
+            description: "A high-quality cinematic edit.",
+            image: "/advertising/ads snapshots (1).PNG",
+        },
+        {
+            title: "Cinematic Montage",
+            description: "A high-quality cinematic edit.",
+            image: "/advertising/ads snapshots (2).PNG",
+        },
+        {
+            title: "Cinematic Montage",
+            description: "A high-quality cinematic edit.",
+            image: "/advertising/ads snapshots (3).PNG",
+        },
+        {
+            title: "Cinematic Montage",
+            description: "A high-quality cinematic edit.",
+            image: "/advertising/age.png",
+        },
+        {
+            title: "Cinematic Montage",
+            description: "A high-quality cinematic edit.",
+            image: "/advertising/campaign excel report.png",
+        },
+        {
+            title: "Cinematic Montage",
+            description: "A high-quality cinematic edit.",
+            image: "/advertising/campaign M&M flyer report.png",
+        },
+        {
+            title: "Cinematic Montage",
+            description: "A high-quality cinematic edit.",
+            image: "/advertising/Campaign performance 19-21.png",
+        },
+        {
+            title: "Cinematic Montage",
+            description: "A high-quality cinematic edit.",
+            image: "/advertising/campaign performance 19-22.png",
+        },
+        {
+            title: "Cinematic Montage",
+            description: "A high-quality cinematic edit.",
+            image: "/advertising/cost.png",
+        },
+        {
+            title: "Cinematic Montage",
+            description: "A high-quality cinematic edit.",
+            image: "/advertising/flyer BEN.png",
+        },
+        {
+            title: "Cinematic Montage",
+            description: "A high-quality cinematic edit.",
+            image: "/advertising/gender.png",
+        },
+        {
+            title: "Cinematic Montage",
+            description: "A high-quality cinematic edit.",
+            image: "/advertising/income.png",
+        },
+        {
+            title: "Cinematic Montage",
+            description: "A high-quality cinematic edit.",
+            image: "/advertising/keywords.png",
+        },
+        {
+            title: "Cinematic Montage",
+            description: "A high-quality cinematic edit.",
+            image: "/advertising/location.png",
+        },
+        {
+            title: "Cinematic Montage",
+            description: "A high-quality cinematic edit.",
+            image: "/advertising/parental status.png",
+        },
+        {
+            title: "Cinematic Montage",
+            description: "A high-quality cinematic edit.",
+            image: "/advertising/report.png",
+        },
+        {
+            title: "Cinematic Montage",
+            description: "A high-quality cinematic edit.",
+            image: "/advertising/report jim.png",
+        },
+        {
+            title: "Cinematic Montage",
+            description: "A high-quality cinematic edit.",
+            image: "/advertising/report Laara2.png"
+        },
+        {
+            title: "Cinematic Montage",
+            description: "A high-quality cinematic edit.",
+            image: "/advertising/report Laara1.png",
+        },
+
+        {
+            title: "Cinematic Montage",
+            description: "A high-quality cinematic edit.",
+            image: "/advertising/snapshotroofing.png"
+        },
+        {
+            title: "Cinematic Montage",
+            description: "A high-quality cinematic edit.",
+            image: "/advertising/Time_series.png"
+        },
+    ],
 
     "social-media": [
         {
