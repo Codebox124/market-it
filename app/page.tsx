@@ -151,7 +151,7 @@ export default function Home() {
 
   return (
     <>
-      <section className="relative min-h-screen w-full flex items-center justify-center overflow-hidden bg-gradient-to-br from-slate-950 via-gray-900 to-slate-950">
+      <section className="relative min-h-screen w-full pt-12 flex items-center justify-center overflow-hidden bg-gradient-to-br from-slate-950 via-gray-900 to-slate-950">
         {/* Animated background canvas */}
         <canvas
           ref={canvasRef}

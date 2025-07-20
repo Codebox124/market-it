@@ -17,7 +17,7 @@ export default function PortfolioPage() {
     const projects = portfolioProjects[service];
 
     return (
-        <div className="min-h-screen bg-gradient-to-br from-slate-900 via-black to-slate-900 text-white relative overflow-hidden">
+        <div className="min-h-screen bg-gradient-to-br from-slate-900 pt-12 via-black to-slate-900 text-white relative overflow-hidden">
             {/* Animated background elements */}
             <div className="absolute inset-0 opacity-20">
                 <div className="absolute top-20 left-20 w-72 h-72 bg-blue-600/20 rounded-full blur-3xl animate-pulse"></div>
