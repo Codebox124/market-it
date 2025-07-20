@@ -327,9 +327,69 @@ export const portfolioProjects: Record<
             description: "Designed an app to track fitness and health routines.",
             image: "/photo/portfolio - photo colorGRADE25.jpg",
         },
+        {
+            "title": "Photo Edit FX",
+            "description": "Creative photo manipulation with special effects.",
+            "image": "/photo/portfolio - photo FX03.jpg"
+        },
+        {
+            "title": "Photo Edit FX",
+            "description": "Creative photo manipulation with special effects.",
+            "image": "/photo/portfolio - photo FX04.jpg"
+        },
+        {
+            "title": "Photo Edit FX",
+            "description": "Creative photo manipulation with special effects.",
+            "image": "/photo/portfolio - photo FX12.jpg"
+        },
+        {
+            "title": "Photo Edit FX",
+            "description": "Creative photo manipulation with special effects.",
+            "image": "/photo/portfolio - photo FX13.jpg"
+        },
+        {
+            "title": "Photo Edit FX",
+            "description": "Creative photo manipulation with special effects.",
+            "image": "/photo/portfolio - photo FX14.jpg"
+        },
+        {
+            "title": "Photo Edit FX",
+            "description": "Creative photo manipulation with special effects.",
+            "image": "/photo/portfolio - photo FX17.jpg"
+        },
+        {
+            "title": "Photo Edit FX",
+            "description": "Creative photo manipulation with special effects.",
+            "image": "/photo/portfolio - photo FX20.jpg"
+        },
+        {
+            "title": "Photo Edit FX",
+            "description": "Creative photo manipulation with special effects.",
+            "image": "/photo/portfolio - photo FX22.jpg"
+        },
+        {
+            "title": "Photo Edit FX",
+            "description": "Creative photo manipulation with special effects.",
+            "image": "/photo/portfolio - photo FX23.jpg"
+        },
+        {
+            "title": "Photo Edit FX",
+            "description": "Creative photo manipulation with special effects.",
+            "image": "/photo/portfolio - photo FX26.jpg"
+        },
+        {
+            "title": "Photo Edit FX",
+            "description": "Creative photo manipulation with special effects.",
+            "image": "/photo/portfolio - photo FX30.jpg"
+        },
+        {
+            "title": "Real Estate Portfolio",
+            "description": "Image for real estate design showcase.",
+            "image": "/photo/real estate port.png"
+        }
+
     ],
     "graphic-design": [
-
         {
             "title": "Bold & Edgy Logo Design",
             "description": "Designed a striking logo with a rebellious theme for a unique brand.",
@@ -346,18 +406,18 @@ export const portfolioProjects: Record<
             "image": "/graphic/4.png"
         },
         {
-            "title": "Certificate Design",
+            "title": "United for the People's Plan Certificate",
             "description": "Designed an elegant and professional certificate for official recognition.",
             "image": "/graphic/logo UNITED FOR THE PEOPLE_S PLAN 18.png"
         },
         {
-            "title": "Certificate Design",
-            "description": "Designed an elegant and professional certificate for official recognition.",
+            "title": "Kids Dynasty Daycare Logo",
+            "description": "Created a playful and professional logo for a daycare center.",
             "image": "/graphic/logo KIDS DYNASTY DAYCARE (Arlene).png"
         },
         {
-            "title": "Certificate Design",
-            "description": "Designed an elegant and professional certificate for official recognition.",
+            "title": "Marty Logo Design",
+            "description": "Designed a personal branding logo with modern typography.",
             "image": "/graphic/logo MARTY (1).png"
         },
         {
@@ -370,13 +430,11 @@ export const portfolioProjects: Record<
             "description": "Designed a visually engaging promotional flyer for an exclusive event.",
             "image": "/graphic/bonefish flyer 4 MIKE.png"
         },
-
         {
             "title": "Visual Identity System",
             "description": "Developed a consistent brand identity system for a growing company, including logo variations.",
             "image": "/graphic/image No Views (2).jpg"
         },
-
         {
             "title": "Custom Book Cover Design",
             "description": "Designed a bold and captivating book cover to enhance market appeal.",
@@ -388,189 +446,365 @@ export const portfolioProjects: Record<
             "image": "/graphic/brochure edit pg2.jpeg"
         },
         {
-            "title": "Certificate Design",
+            "title": "Professional Certificate Design",
             "description": "Designed an elegant and professional certificate for official recognition.",
             "image": "/graphic/cert SAMPLE 2.png"
         },
         {
-            "title": "Certificate Design",
-            "description": "Designed an elegant and professional certificate for official recognition.",
+            "title": "Popcorn TV Logo",
+            "description": "Created a fun and memorable logo for an entertainment brand.",
             "image": "/graphic/Popcorn Tv logo (3).png"
         },
         {
-            "title": "Certificate Design",
-            "description": "Designed an elegant and professional certificate for official recognition.",
+            "title": "Event Flyer - Michael & Rebecca",
+            "description": "Designed a personalized event flyer with elegant typography and layout.",
             "image": "/graphic/flyer - Michael_Rebecca EDIT 1.png"
         },
         {
-            "title": "Certificate Design",
-            "description": "Designed an elegant and professional certificate for official recognition.",
+            "title": "Promotional Flyer Design",
+            "description": "Created an eye-catching promotional flyer with vibrant graphics.",
             "image": "/graphic/flyer 2.png"
         },
         {
-            "title": "Certificate Design",
-            "description": "Designed an elegant and professional certificate for official recognition.",
+            "title": "Design Sheet Layout",
+            "description": "Developed a comprehensive design sheet showcasing multiple design elements.",
             "image": "/graphic/sheet 5.jpg"
         },
         {
-            "title": "Certificate Design",
-            "description": "Designed an elegant and professional certificate for official recognition.",
+            "title": "SAL Event Flyer",
+            "description": "Designed a professional event flyer with bold graphics and clear messaging.",
             "image": "/graphic/flyer 3 SAL.jpg"
         },
         {
-            "title": "Certificate Design",
-            "description": "Designed an elegant and professional certificate for official recognition.",
+            "title": "OLA CD Flyer Design",
+            "description": "Created a music-themed promotional flyer with dynamic visual elements.",
             "image": "/graphic/flyer OLA CD 2.png"
         },
         {
-            "title": "Certificate Design",
-            "description": "Designed an elegant and professional certificate for official recognition.",
+            "title": "Phil Event Flyer",
+            "description": "Designed a personalized event flyer with modern design aesthetics.",
             "image": "/graphic/flyer PHIL edit.png"
         },
         {
-            "title": "Certificate Design",
-            "description": "Designed an elegant and professional certificate for official recognition.",
+            "title": "Fashion Show Flyer",
+            "description": "Created an engaging flyer for 'Who Let The Dogs Out' fashion show event.",
             "image": "/graphic/Flyer Who Let The Dogs Out Fashion Show.png"
         },
         {
-            "title": "Certificate Design",
-            "description": "Designed an elegant and professional certificate for official recognition.",
+            "title": "Professional Photography",
+            "description": "Showcased professional photography work with artistic composition.",
             "image": "/graphic/SMNJ3539.jpg"
         },
         {
-            "title": "Certificate Design",
-            "description": "Designed an elegant and professional certificate for official recognition.",
+            "title": "Custom T-Shirt Design",
+            "description": "Designed a motivational t-shirt with bold typography and graphics.",
             "image": "/graphic/shirt (Go ahead) 3 DENISE option 2.png"
         },
-
-
         {
-            "title": "Certificate Design",
-            "description": "Designed an elegant and professional certificate for official recognition.",
+            "title": "MOJO Logo Design",
+            "description": "Created a dynamic logo for MOJO brand with strong visual impact.",
             "image": "/graphic/LOGO MOJO logo.png"
         },
         {
-            "title": "Certificate Design",
-            "description": "Designed an elegant and professional certificate for official recognition.",
+            "title": "Oliver's Brand Logo",
+            "description": "Designed a sophisticated logo for Oliver's business with elegant styling.",
             "image": "/graphic/logo Olivers  edit.jpg"
         },
         {
-            "title": "Certificate Design",
-            "description": "Designed an elegant and professional certificate for official recognition.",
+            "title": "OX Movers Logo",
+            "description": "Created a strong, professional logo for a moving company.",
             "image": "/graphic/logo ox movers EDIT.png"
         },
         {
-            "title": "Certificate Design",
-            "description": "Designed an elegant and professional certificate for official recognition.",
+            "title": "Reef 'n Reem Logo",
+            "description": "Designed a tropical-themed logo with vibrant colors and natural elements.",
             "image": "/graphic/logo reefnreem.jpg"
         },
         {
-            "title": "Certificate Design",
-            "description": "Designed an elegant and professional certificate for official recognition.",
+            "title": "YBDA Logo Design",
+            "description": "Created a professional logo for YBDA organization with clean typography.",
             "image": "/graphic/logo YBDA.png"
         },
         {
-            "title": "Certificate Design",
-            "description": "Designed an elegant and professional certificate for official recognition.",
+            "title": "Classic Logo Design",
+            "description": "Developed a timeless logo design with balanced composition.",
             "image": "/graphic/logo-02.jpg"
         },
         {
-            "title": "Certificate Design",
-            "description": "Designed an elegant and professional certificate for official recognition.",
+            "title": "Product Packaging Label",
+            "description": "Designed an eco-friendly packaging label with green color scheme.",
             "image": "/graphic/packaging_label JOEL 10-green.png"
         },
         {
-            "title": "Certificate Design",
-            "description": "Designed an elegant and professional certificate for official recognition.",
+            "title": "Joker Life Poster",
+            "description": "Created a dramatic poster design with bold graphics and typography.",
             "image": "/graphic/poster joker life option 2 edit 3.png"
         },
         {
-            "title": "Certificate Design",
-            "description": "Designed an elegant and professional certificate for official recognition.",
+            "title": "Somer Writing Sample Design",
+            "description": "Designed a professional layout for writing portfolio showcase.",
             "image": "/graphic/Somer in touch writing sample.png"
         },
         {
-            "title": "Certificate Design",
-            "description": "Designed an elegant and professional certificate for official recognition.",
+            "title": "SS Tiger Logo",
+            "description": "Created a fierce tiger-themed logo with dynamic visual elements.",
             "image": "/graphic/ss.tiger.png"
         },
         {
-            "title": "Certificate Design",
-            "description": "Designed an elegant and professional certificate for official recognition.",
+            "title": "Tanzania Travel Itinerary",
+            "description": "Designed a comprehensive travel itinerary layout for Rachel Wasira.",
             "image": "/graphic/Tanzania itinerary RACHEL WASIRA-11.png"
         },
         {
-            "title": "Certificate Design",
-            "description": "Designed an elegant and professional certificate for official recognition.",
+            "title": "Event Ticket Design",
+            "description": "Created a professional ticket design with security features and branding.",
             "image": "/graphic/ticket SAMPLE.png"
         },
         {
-            "title": "Certificate Design",
-            "description": "Designed an elegant and professional certificate for official recognition.",
+            "title": "Front Design Layout",
+            "description": "Developed a striking front-facing design with modern aesthetics.",
             "image": "/graphic/front.png"
         },
         {
-            "title": "Certificate Design",
-            "description": "Designed an elegant and professional certificate for official recognition.",
+            "title": "4-Color Design Sheet",
+            "description": "Created a comprehensive color palette design sheet for Joel's project.",
             "image": "/graphic/4 color sheet joel edit 2.PNG"
         },
         {
-            "title": "Certificate Design",
-            "description": "Designed an elegant and professional certificate for official recognition.",
+            "title": "Joshua Davis Album Cover",
+            "description": "Designed a professional music album cover with artistic elements.",
             "image": "/graphic/album cover JOSHUA DAVIS edit.png"
         },
         {
-            "title": "Certificate Design",
-            "description": "Designed an elegant and professional certificate for official recognition.",
+            "title": "Custom Bag Design",
+            "description": "Created a stylish bag design with branded graphics and typography.",
             "image": "/graphic/bag edit.jpg"
         },
         {
-            "title": "Certificate Design",
-            "description": "Designed an elegant and professional certificate for official recognition.",
+            "title": "Highball Ron Design",
+            "description": "Designed a sophisticated cocktail-themed graphic for Ron's brand.",
             "image": "/graphic/Highball-RON_2.png"
         },
         {
-            "title": "Certificate Design",
-            "description": "Designed an elegant and professional certificate for official recognition.",
+            "title": "ARC Logo Design",
+            "description": "Created a professional logo for ARC organization with clean lines.",
             "image": "/graphic/logo ARC 4.png"
         },
         {
-            "title": "Certificate Design",
-            "description": "Designed an elegant and professional certificate for official recognition.",
+            "title": "Moses Portrait Design",
+            "description": "Developed an artistic portrait design with professional finishing.",
             "image": "/graphic/Moses.jpg"
         },
         {
-            "title": "Certificate Design",
-            "description": "Designed an elegant and professional certificate for official recognition.",
+            "title": "Joker Life Shoe Design",
+            "description": "Created a custom shoe design with branded graphics and styling.",
             "image": "/graphic/joker life shoe 1.png"
         },
         {
-            "title": "Certificate Design",
-            "description": "Designed an elegant and professional certificate for official recognition.",
+            "title": "Robert Ford Cover Art",
+            "description": "Designed professional cover art with dramatic visual elements.",
             "image": "/graphic/cover art ROBERT FORD edit 1.5.png"
         },
         {
-            "title": "Certificate Design",
-            "description": "Designed an elegant and professional certificate for official recognition.",
+            "title": "WhatsApp Design Element",
+            "description": "Created custom graphics for WhatsApp branding and communication.",
             "image": "/graphic/WhatsApp.jpeg"
         },
         {
-            "title": "Certificate Design",
-            "description": "Designed an elegant and professional certificate for official recognition.",
+            "title": "General Promotional Flyer",
+            "description": "Designed a versatile promotional flyer with engaging visual elements.",
             "image": "/graphic/flyer.png"
         },
         {
-            "title": "Certificate Design",
-            "description": "Designed an elegant and professional certificate for official recognition.",
+            "title": "Portfolio Addition - Design 1",
+            "description": "Additional graphic design work showcasing creative versatility.",
             "image": "/graphic/add to GRAPHIC DESIGN.jpg"
         },
         {
-            "title": "Certificate Design",
-            "description": "Designed an elegant and professional certificate for official recognition.",
+            "title": "Portfolio Addition - Design 2",
+            "description": "Another creative design piece demonstrating professional capabilities.",
             "image": "/graphic/add to GRAPHIC DESIGN 2.jpg"
         },
 
-        //
+        // Additional items found in your file list but missing from original data:
+
+        {
+            "title": "5th Element Design",
+            "description": "Creative design piece with modern aesthetic and clean composition.",
+            "image": "/graphic/5.PNG"
+        },
+        {
+            "title": "20th Anniversary Design",
+            "description": "Special anniversary design with commemorative elements.",
+            "image": "/graphic/20.png"
+        },
+        {
+            "title": "Business Card Design - AMIR Style 1",
+            "description": "Professional business card with elegant typography and layout.",
+            "image": "/graphic/biz card AMIR (1).jpg"
+        },
+        {
+            "title": "Business Card Design - AMIR Style 2",
+            "description": "Alternative business card design with different styling approach.",
+            "image": "/graphic/biz card AMIR (2).jpg"
+        },
+
+        {
+            "title": "Elon Poster Design",
+            "description": "Creative poster design featuring modern graphics and typography.",
+            "image": "/graphic/elon poster.png"
+        },
+        {
+            "title": "Promotional Flyer - Sump",
+            "description": "Engaging promotional flyer with eye-catching design elements.",
+            "image": "/graphic/flyer sump.png"
+        },
+        {
+            "title": "Interior Design Showcase",
+            "description": "Interior design presentation with professional layout.",
+            "image": "/graphic/interior 3.png"
+        },
+        {
+            "title": "Interior Design Layout",
+            "description": "Creative interior design mockup with modern aesthetic.",
+            "image": "/graphic/interior.png"
+        },
+        {
+            "title": "Keys Design Element",
+            "description": "Creative key-themed design with symbolic elements.",
+            "image": "/graphic/keys.png"
+        },
+        {
+            "title": "Logo Design Version 2",
+            "description": "Alternative logo design with different styling approach.",
+            "image": "/graphic/logo 2.png"
+        },
+        {
+            "title": "Barry Logo Design",
+            "description": "Personalized logo design for Barry with professional finish.",
+            "image": "/graphic/logo Barry option 4 edit.png"
+        },
+        {
+            "title": "BJ Split Pink Logo",
+            "description": "Creative split design logo with pink color scheme.",
+            "image": "/graphic/logo BJ split pink l blue R.png"
+        },
+        {
+            "title": "Convergence MYKE Logo",
+            "description": "Dynamic convergence-themed logo with modern elements.",
+            "image": "/graphic/logo Convergence MYKE (4).jpeg"
+        },
+        {
+            "title": "CS Paris Logo",
+            "description": "Elegant Paris-themed logo with sophisticated styling.",
+            "image": "/graphic/logo CS Paris 7.jpg"
+        },
+        {
+            "title": "DLE Desmond Logo",
+            "description": "Professional logo design for DLE Desmond brand.",
+            "image": "/graphic/logo DLE 1 desmond.jpg"
+        },
+        {
+            "title": "Dolo BJ Stroke Logo",
+            "description": "Bold stroke-style logo design with strong visual impact.",
+            "image": "/graphic/logo Dolo BJ stroke 1.png"
+        },
+        {
+            "title": "Hose Wiz Logo",
+            "description": "Industrial-themed logo for Hose Wiz company.",
+            "image": "/graphic/logo hose wiz 1.png"
+        },
+        {
+            "title": "JULIUS Logo Design",
+            "description": "Classical-inspired logo design with elegant typography.",
+            "image": "/graphic/logo JULIUS (5).jpg"
+        },
+        {
+            "title": "Moses Villani Logo",
+            "description": "Professional logo with red and black cursive styling.",
+            "image": "/graphic/logo moses villani red black 2 cursive.png"
+        },
+        {
+            "title": "My Own Nation Logo - Jerry",
+            "description": "Patriotic-themed logo design for Jerry's brand.",
+            "image": "/graphic/logo my own nation Jerry.png"
+        },
+        {
+            "title": "ReefnReem Brand Logo",
+            "description": "Alternative version of the reef-themed logo design.",
+            "image": "/graphic/logo reefnreem.jpg"
+        },
+        {
+            "title": "Salvador Logo Design",
+            "description": "Creative logo design for Salvador brand with unique styling.",
+            "image": "/graphic/logo SALVADOR 2.png"
+        },
+        {
+            "title": "Logo Card - Matthew",
+            "description": "Business card design featuring logo integration.",
+            "image": "/graphic/logo_card MATTHEW W g .jpg"
+        },
+        {
+            "title": "Logo Mockup Design",
+            "description": "Professional logo mockup presentation.",
+            "image": "/graphic/logo-1-mockup.jpg"
+        },
+        {
+            "title": "Windbreaker Design",
+            "description": "Custom windbreaker jacket design with branding elements.",
+            "image": "/graphic/luv windbreaker front back.png"
+        },
+        {
+            "title": "Blue Moon Menu - Joe A Style 1",
+            "description": "Restaurant menu design with elegant blue moon theme.",
+            "image": "/graphic/menu Blue Moon 3folds F JOE A.jpg"
+        },
+        {
+            "title": "Blue Moon Menu - Joe A Style 2",
+            "description": "Alternative menu design layout with different fold structure.",
+            "image": "/graphic/menu Blue Moon 3folds F2 JOE A.jpg"
+        },
+        {
+            "title": "Blue Moon Menu - F JOE A",
+            "description": "Tri-fold menu design with comprehensive layout.",
+            "image": "/graphic/menu Blue Moon F JOE A.jpg"
+        },
+        {
+            "title": "Blue Moon Menu - F2 JOE A",
+            "description": "Second version of the Blue Moon menu design.",
+            "image": "/graphic/menu Blue Moon F2 JOE A.jpg"
+        },
+        {
+            "title": "Packaging Label - Joel Green",
+            "description": "Eco-friendly packaging label design in green theme.",
+            "image": "/graphic/packaging_label JOEL 10-green.png"
+        },
+        {
+            "title": "Poster Edit - TOM",
+            "description": "Custom poster design with professional editing and layout.",
+            "image": "/graphic/poster edit TOM.jpg"
+        },
+        {
+            "title": "PPT Presentation Design",
+            "description": "Professional PowerPoint presentation template design.",
+            "image": "/graphic/ppt.png"
+        },
+        {
+            "title": "COLM Design Sheet",
+            "description": "Comprehensive design sheet with multiple elements.",
+            "image": "/graphic/sheet COLM.png"
+        },
+        {
+            "title": "Go Ahead Shirt - Denise Style 4",
+            "description": "Motivational t-shirt design with empowering message.",
+            "image": "/graphic/shirt (Go ahead) 3 DENISE option 4.png"
+        },
+
+        {
+            "title": "Woman Sketch Artwork",
+            "description": "Artistic sketch design with professional finishing.",
+            "image": "/graphic/woman sketch.jpg"
+        }
     ],
     //add to GRAPHIC DESIGN.jpg
     "video-editing": [
@@ -599,8 +833,6 @@ export const portfolioProjects: Record<
             "description": "A high-quality cinematic edit.",
             "image": "/animation/50.png"
         },
-
-
         {
             "title": "Cinematic Montage",
             "description": "A high-quality cinematic edit.",
@@ -621,7 +853,6 @@ export const portfolioProjects: Record<
             "description": "A high-quality cinematic edit.",
             "image": "/animation/7.png"
         },
-
         {
             "title": "Cinematic Montage",
             "description": "A high-quality cinematic edit.",
@@ -687,7 +918,6 @@ export const portfolioProjects: Record<
             "description": "A high-quality cinematic edit.",
             "image": "/animation/17.png"
         },
-
         {
             "title": "Cinematic Montage",
             "description": "A high-quality cinematic edit.",
@@ -738,13 +968,11 @@ export const portfolioProjects: Record<
             "description": "A high-quality cinematic edit.",
             "image": "/animation/24.png"
         },
-
         {
             "title": "Cinematic Montage",
             "description": "A high-quality cinematic edit.",
             "image": "/animation/29.png"
         },
-
         {
             "title": "Cinematic Montage",
             "description": "A high-quality cinematic edit.",
@@ -775,14 +1003,11 @@ export const portfolioProjects: Record<
             "description": "A high-quality cinematic edit.",
             "image": "/animation/39.png"
         },
-
         {
             "title": "Cinematic Montage",
             "description": "A high-quality cinematic edit.",
             "image": "/animation/44.png"
         },
-
-
         {
             "title": "Cinematic Montage",
             "description": "A high-quality cinematic edit.",
@@ -798,7 +1023,6 @@ export const portfolioProjects: Record<
             "description": "A high-quality cinematic edit.",
             "image": "/animation/42.png"
         },
-
         {
             "title": "Cinematic Montage",
             "description": "A high-quality cinematic edit.",
@@ -819,7 +1043,6 @@ export const portfolioProjects: Record<
             "description": "A high-quality cinematic edit.",
             "image": "/animation/49.png"
         },
-
         {
             "title": "Cinematic Montage",
             "description": "A high-quality cinematic edit.",
@@ -845,13 +1068,11 @@ export const portfolioProjects: Record<
             "description": "A high-quality cinematic edit.",
             "image": "/animation/56.png"
         },
-
         {
             "title": "Cinematic Montage",
             "description": "A high-quality cinematic edit.",
             "image": "/animation/58.png"
         },
-
         {
             "title": "Cinematic Montage",
             "description": "A high-quality cinematic edit.",
@@ -863,10 +1084,145 @@ export const portfolioProjects: Record<
             "image": "/animation/61.png"
         },
         {
-            title: "Cinematic Montage",
-            description: "A high-quality cinematic edit.",
-            video: "https://www.youtube.com/embed/WaEnkV6gY0o",
+            "title": "Cinematic Montage",
+            "description": "A high-quality cinematic edit.",
+            "video": "https://www.youtube.com/embed/WaEnkV6gY0o"
         },
+        {
+            "title": "Holeshot Storyboard Scene 1",
+            "description": "First scene of the holeshot storyboard sequence.",
+            "image": "/animation/holeshot storyboard (1).jpg"
+        },
+        {
+            "title": "Holeshot Storyboard Scene 2",
+            "description": "Second scene of the holeshot storyboard sequence.",
+            "image": "/animation/holeshot storyboard (2).png"
+        },
+        {
+            "title": "Holeshot Storyboard Scene 3",
+            "description": "Third scene of the holeshot storyboard sequence.",
+            "image": "/animation/holeshot storyboard (3).png"
+        },
+        {
+            "title": "Holeshot Storyboard Scene 4",
+            "description": "Fourth scene of the holeshot storyboard sequence.",
+            "image": "/animation/holeshot storyboard (4).png"
+        },
+        {
+            "title": "Holeshot Storyboard Scene 5",
+            "description": "Fifth scene of the holeshot storyboard sequence.",
+            "image": "/animation/holeshot storyboard (5).png"
+        },
+        {
+            "title": "Holeshot Storyboard Scene 6",
+            "description": "Sixth scene of the holeshot storyboard sequence.",
+            "image": "/animation/holeshot storyboard (6).png"
+        },
+        {
+            "title": "Holeshot Storyboard Scene 7",
+            "description": "Seventh scene of the holeshot storyboard sequence.",
+            "image": "/animation/holeshot storyboard (7).png"
+        },
+        {
+            "title": "Holeshot Storyboard Scene 8",
+            "description": "Eighth scene of the holeshot storyboard sequence.",
+            "image": "/animation/holeshot storyboard (8).png"
+        },
+        {
+            "title": "Holeshot Storyboard Scene 9",
+            "description": "Ninth scene of the holeshot storyboard sequence.",
+            "image": "/animation/holeshot storyboard (9).png"
+        },
+        {
+            "title": "Holeshot Storyboard Scene 10",
+            "description": "Tenth scene of the holeshot storyboard sequence.",
+            "image": "/animation/holeshot storyboard (10).png"
+        },
+        {
+            "title": "Holeshot Storyboard Scene 11",
+            "description": "Eleventh scene of the holeshot storyboard sequence.",
+            "image": "/animation/holeshot storyboard (11).png"
+        },
+        {
+            "title": "Holeshot Storyboard Scene 12",
+            "description": "Twelfth scene of the holeshot storyboard sequence.",
+            "image": "/animation/holeshot storyboard (12).png"
+        },
+        {
+            "title": "Holeshot Storyboard Scene 13",
+            "description": "Thirteenth scene of the holeshot storyboard sequence.",
+            "image": "/animation/holeshot storyboard (13).png"
+        },
+        {
+            "title": "Holeshot Storyboard Scene 14",
+            "description": "Fourteenth scene of the holeshot storyboard sequence.",
+            "image": "/animation/holeshot storyboard (14).png"
+        },
+        {
+            "title": "Holeshot Storyboard Scene 15",
+            "description": "Fifteenth scene of the holeshot storyboard sequence.",
+            "image": "/animation/holeshot storyboard (15).png"
+        },
+        {
+            "title": "Holeshot Storyboard Scene 16",
+            "description": "Sixteenth scene of the holeshot storyboard sequence.",
+            "image": "/animation/holeshot storyboard (16).png"
+        },
+        {
+            "title": "Holeshot Storyboard Scene 17",
+            "description": "Seventeenth scene of the holeshot storyboard sequence.",
+            "image": "/animation/holeshot storyboard (17).png"
+        },
+        {
+            "title": "Holeshot Storyboard Scene 18",
+            "description": "Eighteenth scene of the holeshot storyboard sequence.",
+            "image": "/animation/holeshot storyboard (18).png"
+        },
+        {
+            "title": "Holeshot Storyboard Scene 19",
+            "description": "Nineteenth scene of the holeshot storyboard sequence.",
+            "image": "/animation/holeshot storyboard (19).png"
+        },
+        {
+            "title": "Pea King Scene 1",
+            "description": "First scene from the Pea King animation project.",
+            "image": "/animation/pea king (1).jpg"
+        },
+        {
+            "title": "Pea King Scene 2",
+            "description": "Second scene from the Pea King animation project.",
+            "image": "/animation/pea king (2).jpg"
+        },
+        {
+            "title": "Pea King Scene 3",
+            "description": "Third scene from the Pea King animation project.",
+            "image": "/animation/pea king (3).jpg"
+        },
+        {
+            "title": "Pea King House",
+            "description": "House scene from the Pea King animation project.",
+            "image": "/animation/pea king house.png"
+        },
+        {
+            "title": "Pea King Scenes Collection 1",
+            "description": "First collection of scenes from the Pea King project.",
+            "image": "/animation/Pea_King scenes-1.png"
+        },
+        {
+            "title": "Pea King Scenes Collection 4",
+            "description": "Fourth collection of scenes from the Pea King project.",
+            "image": "/animation/Pea_King scenes-4.png"
+        },
+        {
+            "title": "Pea King Scenes Collection 5",
+            "description": "Fifth collection of scenes from the Pea King project.",
+            "image": "/animation/Pea_King scenes-5.png"
+        },
+        {
+            "title": "Pea King Scenes Collection 7",
+            "description": "Seventh collection of scenes from the Pea King project.",
+            "image": "/animation/Pea_King scenes-7.png"
+        }
     ],
 
 
