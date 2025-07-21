@@ -222,7 +222,7 @@ export default function Home() {
           <div className="space-y-16">
             {/* Hero title */}
             <div className="text-center space-y-8">
-              <h1 className="text-5xl md:text-8xl font-light tracking-tight">
+              <h1 className="text-3xl md:text-8xl font-light tracking-tight">
                 <span className="text-gray-900 font-light">MAKE</span>
                 <span className="text-gray-500 mx-4 md:mx-8 font-thin">IT</span>
                 <span className="text-gray-600 mx-2 font-thin">&</span>
