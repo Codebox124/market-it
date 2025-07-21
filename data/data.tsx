@@ -816,98 +816,108 @@ export const portfolioProjects: Record<
         {
             title: "Cinematic Montage",
             description: "A high-quality cinematic edit.",
-            video: "https://res.cloudinary.com/dfjm3z7es/video/upload/v1753010701/wedding_video_reel_music_video_reel_SEPARATE_Sub_03.00_ifftkp.mp4"
+            video: "https://www.youtube.com/embed/kV1iXC5GY3E"
         },
         {
             title: "Cinematic Montage",
             description: "A high-quality cinematic edit.",
-            video: "https://res.cloudinary.com/dfjm3z7es/video/upload/v1753010700/wedding_video_reel_music_video_reel_SEPARATE_Sub_04.00_gqhmmr.mp4"
+            video: "https://www.youtube.com/embed/ASm_21eMuI8"
         },
         {
             title: "Cinematic Montage",
             description: "A high-quality cinematic edit.",
-            video: "https://res.cloudinary.com/dfjm3z7es/video/upload/v1753010700/wedding_video_reel_music_video_reel_SEPARATE_Sub_02.00_lxvmew.mp4"
+            video: "https://www.youtube.com/embed/ipO5fKoNRSQ"
         },
         {
             title: "Cinematic Montage",
             description: "A high-quality cinematic edit.",
-            video: "https://res.cloudinary.com/dfjm3z7es/video/upload/v1753010699/wedding_video_reel_music_video_reel_SEPARATE_Sub_01.00_tzysbh.mp4"
+            video: "https://www.youtube.com/embed/BHBnJ95yRFw"
         },
         {
             title: "Cinematic Montage",
             description: "A high-quality cinematic edit.",
-            video: "https://res.cloudinary.com/dfjm3z7es/video/upload/v1753010699/wedding_pic_portfolio_720p_f19d1h.mp4"
+            video: "https://www.youtube.com/embed/BUTvSsO-PWA"
         },
         {
             title: "Cinematic Montage",
             description: "A high-quality cinematic edit.",
-            video: "https://res.cloudinary.com/dfjm3z7es/video/upload/v1753010662/video_port_extra_2_ln0gfi.mp4"
+            video: "https://www.youtube.com/embed/TwtnR8tckLg"
         },
         {
             title: "Cinematic Montage",
             description: "A high-quality cinematic edit.",
-            video: "https://res.cloudinary.com/dfjm3z7es/video/upload/v1753010661/video_port_extra_x4pum3.mp4"
+            video: "https://www.youtube.com/embed/K1CpfZQoEVE"
         },
         {
             title: "Cinematic Montage",
             description: "A high-quality cinematic edit.",
-            video: "https://res.cloudinary.com/dfjm3z7es/video/upload/v1753010660/Statue_of_Liberty_exchange_trip_behind_the_scenes_gjsxwo.mp4"
+            video: "https://www.youtube.com/embed/cavnK9N2luw"
         },
         {
             title: "Cinematic Montage",
             description: "A high-quality cinematic edit.",
-            video: "https://res.cloudinary.com/dfjm3z7es/video/upload/v1753010660/Thousand_Dollar_Listing_Pilot_Episode_Noah_Kaplan_1_ovn0h7.mp4"
+            video: "https://www.youtube.com/embed/pcD3PZ5B1oE"
         },
         {
             title: "Cinematic Montage",
             description: "A high-quality cinematic edit.",
-            video: "https://res.cloudinary.com/dfjm3z7es/video/upload/v1753010660/Video_IG_COLM_option_2_rtgnhs.mp4"
+            video: "https://www.youtube.com/embed/vPJ5AA0shqU"
         },
         {
             title: "Cinematic Montage",
             description: "A high-quality cinematic edit.",
-            video: "https://res.cloudinary.com/dfjm3z7es/video/upload/v1753010658/New_York_Fashion_Week_fufzbg.mp4"
+            video: "https://www.youtube.com/embed/BFePljYax3Y"
         },
         {
             title: "Cinematic Montage",
             description: "A high-quality cinematic edit.",
-            video: "https://res.cloudinary.com/dfjm3z7es/video/upload/v1753010657/phil_promo_vid_Vertical_video_PHIL_m6k7a8.mp4"
+            video: "https://www.youtube.com/embed/OGygH0sUUZI"
         },
         {
             title: "Cinematic Montage",
             description: "A high-quality cinematic edit.",
-            video: "https://res.cloudinary.com/dfjm3z7es/video/upload/v1753010656/music_video_reel_SEPARATE_Sub_02.00_Sub_01.00_kmbibg.mp4"
+            video: "https://www.youtube.com/embed/yPV6MPeAJJo"
         },
         {
             title: "Cinematic Montage",
             description: "A high-quality cinematic edit.",
-            video: "https://res.cloudinary.com/dfjm3z7es/video/upload/v1753010655/music_video_reel_SEPARATE_Sub_02.00_Sub_05.00_rwqxme.mp4"
+            video: "https://www.youtube.com/embed/jiWHduK2ai4"
         },
 
         {
             title: "Cinematic Montage",
             description: "A high-quality cinematic edit.",
-            video: "https://res.cloudinary.com/dfjm3z7es/video/upload/v1753010654/music_video_reel_SEPARATE_Sub_02.00_Sub_03.00_et1hdn.mp4"
+            video: "https://www.youtube.com/embed/EECoy7k6N1U"
         },
         {
             title: "Cinematic Montage",
             description: "A high-quality cinematic edit.",
-            video: "https://res.cloudinary.com/dfjm3z7es/video/upload/v1753010654/music_video_reel_SEPARATE_Sub_02.00_trwgvk.mp4"
+            video: "https://www.youtube.com/embed/Bk1WDgyJTFY"
         },
         {
             title: "Cinematic Montage",
             description: "A high-quality cinematic edit.",
-            video: "https://res.cloudinary.com/dfjm3z7es/video/upload/v1753010652/music_video_reel_SEPARATE_Sub_02.00_Sub_04.00_kzvgkk.mp4"
+            video: "https://www.youtube.com/embed/y-Nr_kvI-U8"
         },
         {
             title: "Cinematic Montage",
             description: "A high-quality cinematic edit.",
-            video: "https://res.cloudinary.com/dfjm3z7es/video/upload/v1753010652/music_video_reel_SEPARATE_Sub_01.00_lvauvf.mp4"
+            video: "https://www.youtube.com/embed/fejnbDUfh3c"
+        },
+        {
+            title: "Cinematic Montage",
+            description: "A high-quality cinematic edit.",
+            video: "https://www.youtube.com/embed/_5m8c24lBQE"
         },
           {
             title: "Cinematic Montage",
             description: "A high-quality cinematic edit.",
-            video: "https://res.cloudinary.com/dfjm3z7es/video/upload/v1753010651/music_video_reel_SEPARATE_nnrjx2.mp4"
+            video: "https://www.youtube.com/embed/XmHo8pk1skY"
+        },
+          {
+            title: "Cinematic Montage",
+            description: "A high-quality cinematic edit.",
+            video: "https://www.youtube.com/embed/ZIMs48vbc7Q"
         },
 
 

@@ -12,8 +12,6 @@ export default function Navbar() {
 
   const navItems = [
     { name: "Home", href: "/", icon: Home },
-    
-  
     { name: "Contact", href: "/contact", icon: Mail },
   ];
 
@@ -76,7 +74,7 @@ export default function Navbar() {
       variants={navVariants}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         scrolled 
-          ? "bg-slate-900/95 backdrop-blur-xl border-b border-slate-700/50 py-3 shadow-2xl shadow-slate-900/20" 
+          ? "bg-white/95 backdrop-blur-xl border-b border-gray-200/50 py-3 shadow-2xl shadow-gray-900/5" 
           : "bg-transparent py-6"
       }`}
     >
@@ -97,10 +95,10 @@ export default function Navbar() {
                 <div className="absolute inset-0 bg-gradient-to-br from-emerald-400 via-blue-500 to-purple-600 rounded-xl opacity-0 group-hover:opacity-20 blur-xl transition-opacity duration-300"></div>
               </div>
               <div className="hidden sm:block">
-                <h1 className="text-xl font-semibold text-white group-hover:text-emerald-400 transition-colors duration-300">
+                <h1 className="text-xl font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors duration-300">
                   Make It & Market
                 </h1>
-                <p className="text-xs text-slate-400 group-hover:text-slate-300 transition-colors duration-300">
+                <p className="text-xs text-gray-600 group-hover:text-gray-700 transition-colors duration-300">
                   Creative Solutions
                 </p>
               </div>
@@ -123,13 +121,13 @@ export default function Navbar() {
                     href={item.href}
                     className={`flex items-center space-x-2 px-4 py-2.5 rounded-xl text-sm font-medium transition-all duration-300 group relative overflow-hidden ${
                       activeSection === item.name.toLowerCase()
-                        ? "text-emerald-400 bg-emerald-400/10"
-                        : "text-slate-300 hover:text-white hover:bg-white/5"
+                        ? "text-emerald-600 bg-emerald-50"
+                        : "text-gray-700 hover:text-gray-900 hover:bg-gray-50"
                     }`}
                   >
                     <Icon size={16} className="transition-transform duration-300 group-hover:scale-110" />
                     <span>{item.name}</span>
-                    <div className="absolute inset-0 bg-gradient-to-r from-emerald-400/0 via-emerald-400/5 to-emerald-400/0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    
                   </Link>
                 </motion.div>
               );
@@ -147,15 +145,15 @@ export default function Navbar() {
             >
               <Link
                 href="/contact"
-                className="relative px-6 py-3 bg-gradient-to-r from-emerald-500 via-blue-500 to-purple-600 text-white rounded-full font-medium text-sm overflow-hidden group shadow-lg hover:shadow-xl hover:shadow-blue-500/25 transition-all duration-300"
+               
                 onClick={() => setIsOpen(false)}
               >
                 <span className="relative z-10 flex items-center space-x-2">
                   <Mail size={16} />
                   <span>Get Started</span>
                 </span>
-                <div className="absolute inset-0 bg-gradient-to-r from-emerald-600 via-blue-600 to-purple-700 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                <div className="absolute inset-0 bg-white/20 opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
+                
+                
               </Link>
             </motion.div>
 
@@ -164,7 +162,7 @@ export default function Navbar() {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               onClick={() => setIsOpen(!isOpen)}
-              className="lg:hidden p-2.5 rounded-xl bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 text-slate-300 hover:text-white hover:bg-slate-700/50 transition-all duration-300"
+              className="lg:hidden p-2.5 rounded-xl bg-white/80 backdrop-blur-sm border border-gray-200/50 text-gray-700 hover:text-gray-900 hover:bg-gray-50 transition-all duration-300 shadow-sm"
             >
               <AnimatePresence mode="wait">
                 {isOpen ? (
@@ -203,7 +201,7 @@ export default function Navbar() {
               variants={mobileMenuVariants}
               className="lg:hidden mt-4 overflow-hidden"
             >
-              <div className="bg-slate-800/95 backdrop-blur-xl rounded-2xl border border-slate-700/50 shadow-2xl p-6">
+              <div className="bg-white/95 backdrop-blur-xl rounded-2xl border border-gray-200/50 shadow-2xl p-6">
                 <div className="space-y-3">
                   {navItems.map((item, index) => {
                     const Icon = item.icon;
@@ -220,8 +218,8 @@ export default function Navbar() {
                           onClick={() => setIsOpen(false)}
                           className={`flex items-center space-x-3 px-4 py-3.5 rounded-xl text-sm font-medium transition-all duration-300 group ${
                             activeSection === item.name.toLowerCase()
-                              ? "text-emerald-400 bg-emerald-400/10 border border-emerald-400/20"
-                              : "text-slate-300 hover:text-white hover:bg-white/5 border border-transparent"
+                              ? "text-emerald-600 bg-emerald-50 border border-emerald-200/50"
+                              : "text-gray-700 hover:text-gray-900 hover:bg-gray-50 border border-transparent"
                           }`}
                         >
                           <Icon size={18} className="transition-transform duration-300 group-hover:scale-110" />
@@ -242,7 +240,7 @@ export default function Navbar() {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.3, duration: 0.4 }}
-                  className="mt-6 pt-6 border-t border-slate-700/50"
+                  className="mt-6 pt-6 border-t border-gray-200/50"
                 >
                   <Link
                     href="/contact"
@@ -271,4 +269,3 @@ export default function Navbar() {
     </motion.nav>
   );
 }
-
