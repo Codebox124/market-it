@@ -299,15 +299,8 @@ export default function Home() {
               ))}
             </div>
 
-            {/* Call to action */}
-            <div className="text-center pt-12">
-              <div className="inline-flex items-center space-x-4 bg-white/80 backdrop-blur-sm px-8 py-4 rounded-full shadow-lg shadow-gray-200/50 border border-gray-100">
-                <span className="text-gray-700 font-medium">Ready to elevate your brand?</span>
-                <button className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-2 rounded-full font-semibold hover:shadow-lg hover:shadow-blue-200 transition-all duration-300 transform hover:scale-105">
-                  Get Started
-                </button>
-              </div>
-            </div>
+           
+           
           </div>
         </div>
       </section>
