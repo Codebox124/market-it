@@ -4,38 +4,91 @@ export const portfolioProjects: Record<
     { title: string; description: string; image?: string; video?: string }[]
 > = {
     "website-design": [
-
-
         {
-            title: "E-commerce Website",
-            description: "Designed and developed a fully responsive online store.",
-            image: "/website/add to WEBSITES.png",
-        },
-
-        {
-            title: "E-commerce Website",
-            description: "Designed and developed a fully responsive online store.",
-            image: "/website/blog 3.jpg",
+            title: "Portfolio Website",
+            description: "Built a personal portfolio website for a creative artist.",
+            image: "/website/port web Moses Villani.png",
         },
         {
-            title: "E-commerce Website",
-            description: "Designed and developed a fully responsive online store.",
+            title: "Movie Database Platform",
+            description: "Designed and developed a comprehensive movie database website.",
+            image: "/website/port site movie database.png",
+        },
+        {
+            title: "Google Analytics Tracker",
+            description: "Built a web analytics tracking dashboard interface.",
+            image: "/website/Google tracker.png",
+        },
+        {
+            title: "Caymana Landing Page",
+            description: "Created a modern landing page with clean design aesthetics.",
             image: "/website/caymana.co Landing Page edit.png",
         },
         {
-            title: "E-commerce Website",
-            description: "Designed and developed a fully responsive online store.",
+            title: "Shifto Platform",
+            description: "Developed a comprehensive platform with multiple user interfaces.",
+            image: "/website/shifto 4.png",
+        },
+        {
+            title: "RUN Fitness Website",
+            description: "Designed and developed a fitness-focused responsive website.",
+            image: "/website/port web RUN.png",
+        },
+        {
+            title: "Hair Salon Website",
+            description: "Built a stylish website for hair and beauty services.",
+            image: "/website/port website hair.png",
+        },
+        {
+            title: "Desktop Application Interface",
+            description: "Created a full-page desktop application interface design.",
             image: "/website/desktop full page update.png",
         },
         {
-            title: "E-commerce Website",
-            description: "Designed and developed a fully responsive online store.",
-            image: "/website/For port.png",
+            title: "Fence Services Website",
+            description: "Developed a professional service-based business website.",
+            image: "/website/port website fence.png",
         },
         {
-            title: "E-commerce Website",
-            description: "Designed and developed a fully responsive online store.",
-            image: "/website/Google tracker.png",
+            title: "Movie Streaming Platform",
+            description: "Built an entertainment platform with modern UI/UX design.",
+            image: "/website/port website movies.png",
+        },
+        {
+            title: "Shifto Dashboard",
+            description: "Created an advanced dashboard interface for the Shifto platform.",
+            image: "/website/shifto 6.png",
+        },
+
+        {
+            title: "Blog Platform",
+            description: "Built a content management and blogging platform.",
+            image: "/website/blog 3.jpg",
+        },
+        {
+            title: "Vibal Web Application",
+            description: "Developed a comprehensive web application interface.",
+            image: "/website/web port vibal (2).PNG",
+        },
+        {
+            title: "RUN Fitness Extended",
+            description: "Advanced version of the fitness platform with enhanced features.",
+            image: "/website/port web RUN 2.png",
+        },
+        {
+            title: "Movie Database Extended",
+            description: "Enhanced movie database with additional functionality.",
+            image: "/website/port website movies 2.png",
+        },
+        {
+            title: "Shifto Pro",
+            description: "Premium version of the Shifto platform with advanced features.",
+            image: "/website/shifto 7.png",
+        },
+        {
+            title: "Portfolio Website Showcase",
+            description: "Modern portfolio design with interactive elements.",
+            image: "/website/site port.jpg",
         },
         {
             title: "E-commerce Website",
@@ -43,9 +96,34 @@ export const portfolioProjects: Record<
             image: "/website/image (2).png",
         },
         {
+            title: "Fence Services Pro",
+            description: "Advanced fence services website with enhanced features.",
+            image: "/website/port website fence 3.png",
+        },
+        {
+            title: "Corporate Website",
+            description: "Professional corporate website with modern design.",
+            image: "/website/website.png",
+        },
+        {
             title: "E-commerce Website",
             description: "Designed and developed a fully responsive online store.",
             image: "/website/image (5).png",
+        },
+        {
+            title: "RUN Ultimate",
+            description: "Ultimate version of the fitness platform with all features.",
+            image: "/website/port web RUN 3.png",
+        },
+        {
+            title: "Movie Platform Premium",
+            description: "Premium movie platform with enhanced streaming capabilities.",
+            image: "/website/port website movies 3.png",
+        },
+        {
+            title: "Portfolio Website Professional",
+            description: "Professional portfolio design for corporate clients.",
+            image: "/website/port website 2.png",
         },
         {
             title: "E-commerce Website",
@@ -53,133 +131,45 @@ export const portfolioProjects: Record<
             image: "/website/image (6).png",
         },
         {
-            title: "E-commerce Website",
-            description: "Designed and developed a fully responsive online store.",
-            image: "/website/image (7).png",
+            title: "Corporate Website Advanced",
+            description: "Advanced corporate website with comprehensive features.",
+            image: "/website/website 2.png",
         },
         {
-            title: "E-commerce Website",
-            description: "Designed and developed a fully responsive online store.",
-            image: "/website/port site movie database.png",
-        },
-        {
-            title: "Portfolio Website",
-            description: "Built a personal portfolio website for a creative artist.",
-            image: "/website/port web Moses Villani.png",
-        },
-        {
-            title: "E-commerce Website",
-            description: "Designed and developed a fully responsive online store.",
-            image: "/website/port web RUN 2.png",
-        },
-        {
-            title: "E-commerce Website",
-            description: "Designed and developed a fully responsive online store.",
-            image: "/website/port web RUN 3.png",
-        },
-        {
-            title: "E-commerce Website",
-            description: "Designed and developed a fully responsive online store.",
-            image: "/website/port web RUN.png",
-        },
-        {
-            title: "E-commerce Website",
-            description: "Designed and developed a fully responsive online store.",
-            image: "/website/port website 2.png",
-        },
-        {
-            title: "E-commerce Website",
-            description: "Designed and developed a fully responsive online store.",
+            title: "Portfolio Platform",
+            description: "Comprehensive portfolio platform for creative professionals.",
             image: "/website/port website 3.png",
         },
         {
             title: "E-commerce Website",
             description: "Designed and developed a fully responsive online store.",
-            image: "/website/port website fence 3.png",
+            image: "/website/image (7).png",
         },
         {
-            title: "E-commerce Website",
-            description: "Designed and developed a fully responsive online store.",
-            image: "/website/port website fence.png",
-        },
-        {
-            title: "E-commerce Website",
-            description: "Designed and developed a fully responsive online store.",
-            image: "/website/port website hair.png",
-        },
-        {
-            title: "E-commerce Website",
-            description: "Designed and developed a fully responsive online store.",
-            image: "/website/port website movies 2.png",
-        },
-        {
-            title: "E-commerce Website",
-            description: "Designed and developed a fully responsive online store.",
-            image: "/website/port website movies 3.png",
-        },
-        {
-            title: "E-commerce Website",
-            description: "Designed and developed a fully responsive online store.",
-            image: "/website/port website movies.png",
-        },
-        {
-            title: "E-commerce Website",
-            description: "Designed and developed a fully responsive online store.",
-            image: "/website/shifto 4.png",
-        },
-        {
-            title: "E-commerce Website",
-            description: "Designed and developed a fully responsive online store.",
-            image: "/website/shifto 6.png",
-        },
-        {
-            title: "E-commerce Website",
-            description: "Designed and developed a fully responsive online store.",
-            image: "/website/shifto 7.png",
-        },
-        {
-            title: "E-commerce Website",
-            description: "Designed and developed a fully responsive online store.",
-            image: "/website/site port.jpg",
-        },
-        {
-            title: "E-commerce Website",
-            description: "Designed and developed a fully responsive online store.",
-            image: "/website/web port vibal (2).PNG",
-        },
-        {
-            title: "E-commerce Website",
-            description: "Designed and developed a fully responsive online store.",
-            image: "/website/website 2.png",
-        },
-        {
-            title: "E-commerce Website",
-            description: "Designed and developed a fully responsive online store.",
+            title: "Business Website",
+            description: "Professional business website with modern aesthetics.",
             image: "/website/website 3.png",
         },
         {
-            title: "E-commerce Website",
-            description: "Designed and developed a fully responsive online store.",
-            image: "/website/website port 2.png",
-        },
-        {
-            title: "E-commerce Website",
-            description: "Designed and developed a fully responsive online store.",
-            image: "/website/website port 4.png",
-        },
-        {
-            title: "E-commerce Website",
-            description: "Designed and developed a fully responsive online store.",
+            title: "Portfolio Showcase Pro",
+            description: "Professional portfolio showcase with interactive elements.",
             image: "/website/website port.png",
         },
         {
             title: "E-commerce Website",
             description: "Designed and developed a fully responsive online store.",
-            image: "/website/website.png",
+            image: "/website/add to WEBSITES.png",
         },
-
-
-
+        {
+            title: "Corporate Portfolio",
+            description: "Corporate-focused portfolio design with professional layout.",
+            image: "/website/website port 2.png",
+        },
+        {
+            title: "Business Portfolio Advanced",
+            description: "Advanced business portfolio with comprehensive showcase.",
+            image: "/website/website port 4.png",
+        },
     ],
     "photo-editing": [
         {
@@ -188,207 +178,203 @@ export const portfolioProjects: Record<
             image: "/photo/_1260573 edit.png",
         },
         {
-            title: "Health & Fitness Tracker",
-            description: "Designed an app to track fitness and health routines.",
-            image: "/photo/_1260944 edit.png",
+            title: "Photo Edit FX - Creative Manipulation",
+            description: "Creative photo manipulation with special effects.",
+            image: "/photo/portfolio - photo FX03.jpg"
         },
         {
-            title: "Health & Fitness Tracker",
-            description: "Designed an app to track fitness and health routines.",
-            image: "/photo/DSC00327 edit.png",
+            title: "Real Estate Portfolio",
+            description: "Professional real estate photography and design showcase.",
+            image: "/photo/real estate port.png"
         },
         {
-            title: "Health & Fitness Tracker",
-            description: "Designed an app to track fitness and health routines.",
-            image: "/photo/DSC00342 edit.png",
-        },
-        {
-            title: "Health & Fitness Tracker",
-            description: "Designed an app to track fitness and health routines.",
-            image: "/photo/IMG-5831.jpg",
-        },
-        {
-            title: "Health & Fitness Tracker",
-            description: "Designed an app to track fitness and health routines.",
-            image: "/photo/music pics 2.png",
-        },
-        {
-            title: "Health & Fitness Tracker",
-            description: "Designed an app to track fitness and health routines.",
+            title: "Professional Portrait Editing",
+            description: "High-end portrait retouching and enhancement.",
             image: "/photo/photo [Lisa Kinzer] AFTER.png",
         },
         {
-            title: "Health & Fitness Tracker",
-            description: "Designed an app to track fitness and health routines.",
-            image: "/photo/pic.png",
-        },
-        {
-            title: "Health & Fitness Tracker",
-            description: "Designed an app to track fitness and health routines.",
-            image: "/photo/pic2.png",
-        },
-        {
-            title: "Health & Fitness Tracker",
-            description: "Designed an app to track fitness and health routines.",
-            image: "/photo/pic3.png",
-        },
-        {
-            title: "Health & Fitness Tracker",
-            description: "Designed an app to track fitness and health routines.",
-            image: "/photo/pic4.png",
-        },
-        {
-            title: "Health & Fitness Tracker",
-            description: "Designed an app to track fitness and health routines.",
-            image: "/photo/pic5.png",
-        },
-        {
-            title: "Health & Fitness Tracker",
-            description: "Designed an app to track fitness and health routines.",
-            image: "/photo/pic6.png",
-        },
-        {
-            title: "Health & Fitness Tracker",
-            description: "Designed an app to track fitness and health routines.",
-            image: "/photo/pic7.png",
-        },
-        {
-            title: "Health & Fitness Tracker",
-            description: "Designed an app to track fitness and health routines.",
-            image: "/photo/pic8.png",
-        },
-        {
-            title: "Health & Fitness Tracker",
-            description: "Designed an app to track fitness and health routines.",
-            image: "/photo/pic9.png",
-        },
-        {
-            title: "Health & Fitness Tracker",
-            description: "Designed an app to track fitness and health routines.",
-            image: "/photo/pic10.png",
-        },
-        {
-            title: "Health & Fitness Tracker",
-            description: "Designed an app to track fitness and health routines.",
+            title: "Color Grading Studio Work",
+            description: "Professional color correction and grading for commercial photography.",
             image: "/photo/portfolio - photo colorGRADE00.jpg",
         },
         {
-            title: "Health & Fitness Tracker",
-            description: "Designed an app to track fitness and health routines.",
+            title: "Music Industry Photography",
+            description: "Creative photo editing for music artists and albums.",
+            image: "/photo/music pics 2.png",
+        },
+        {
+            title: "Digital Art Photography",
+            description: "Artistic photo manipulation with creative effects.",
+            image: "/photo/portfolio - photo FX04.jpg"
+        },
+        {
+            title: "Commercial Photo Retouching",
+            description: "Professional commercial photography editing and enhancement.",
+            image: "/photo/pic.png",
+        },
+        {
+            title: "Lifestyle Photography Editing",
+            description: "Natural lifestyle photo enhancement and color correction.",
             image: "/photo/portfolio - photo colorGRADE01.jpg",
         },
         {
-            title: "Health & Fitness Tracker",
-            description: "Designed an app to track fitness and health routines.",
+            title: "Creative Photo Effects",
+            description: "Artistic photo manipulation with unique visual effects.",
+            image: "/photo/portfolio - photo FX12.jpg"
+        },
+        {
+            title: "Portrait Photography Enhancement",
+            description: "Professional portrait editing with natural skin retouching.",
+            image: "/photo/pic2.png",
+        },
+        {
+            title: "Professional Color Correction",
+            description: "Advanced color grading for commercial and artistic photography.",
             image: "/photo/portfolio - photo colorGRADE02.jpg",
         },
         {
-            title: "Health & Fitness Tracker",
-            description: "Designed an app to track fitness and health routines.",
+            title: "Health & Fitness Photography",
+            description: "Fitness and lifestyle photography editing for health brands.",
+            image: "/photo/_1260944 edit.png",
+        },
+        {
+            title: "Fantasy Photo Manipulation",
+            description: "Creative fantasy and surreal photo effects.",
+            image: "/photo/portfolio - photo FX13.jpg"
+        },
+      
+        {
+            title: "Studio Photography Color Grade",
+            description: "Professional studio photography color grading and enhancement.",
             image: "/photo/portfolio - photo colorGRADE04.jpg",
         },
         {
-            title: "Health & Fitness Tracker",
-            description: "Designed an app to track fitness and health routines.",
+            title: "Conceptual Photo Art",
+            description: "Artistic conceptual photography with creative manipulation.",
+            image: "/photo/portfolio - photo FX14.jpg"
+        },
+        {
+            title: "Fashion Photography Editing",
+            description: "High-end fashion photography retouching and styling.",
+            image: "/photo/pic4.png",
+        },
+        {
+            title: "Outdoor Photography Enhancement",
+            description: "Natural outdoor photography color correction and enhancement.",
+            image: "/photo/DSC00327 edit.png",
+        },
+        {
+            title: "Dramatic Photo Effects",
+            description: "Dramatic lighting and mood enhancement for artistic photography.",
+            image: "/photo/portfolio - photo FX17.jpg"
+        },
+        {
+            title: "Professional Headshot Editing",
+            description: "Corporate and professional headshot retouching.",
+            image: "/photo/pic5.png",
+        },
+        {
+            title: "Fine Art Photography",
+            description: "Fine art photography color grading and artistic enhancement.",
             image: "/photo/portfolio - photo colorGRADE07.jpg",
         },
         {
-            title: "Health & Fitness Tracker",
-            description: "Designed an app to track fitness and health routines.",
+            title: "Creative Visual Storytelling",
+            description: "Narrative-driven photo manipulation and storytelling.",
+            image: "/photo/portfolio - photo FX20.jpg"
+        },
+        {
+            title: "Product Photography Enhancement",
+            description: "E-commerce and product photography editing and enhancement.",
+            image: "/photo/pic6.png",
+        },
+        {
+            title: "Artistic Color Grading",
+            description: "Creative color grading for artistic and commercial projects.",
             image: "/photo/portfolio - photo colorGRADE10.jpg",
         },
         {
-            title: "Health & Fitness Tracker",
-            description: "Designed an app to track fitness and health routines.",
+            title: "Surreal Photo Manipulation",
+            description: "Surreal and abstract photo manipulation techniques.",
+            image: "/photo/portfolio - photo FX22.jpg"
+        },
+        {
+            title: "Wedding Photography Editing",
+            description: "Romantic wedding photography enhancement and color correction.",
+            image: "/photo/pic7.png",
+        },
+        {
+            title: "Lifestyle Brand Photography",
+            description: "Brand-focused lifestyle photography color grading.",
             image: "/photo/portfolio - photo colorGRADE13.jpg",
         },
         {
-            title: "Health & Fitness Tracker",
-            description: "Designed an app to track fitness and health routines.",
+            title: "Abstract Photo Art",
+            description: "Abstract and experimental photo manipulation art.",
+            image: "/photo/portfolio - photo FX23.jpg"
+        },
+        {
+            title: "Travel Photography Enhancement",
+            description: "Travel and landscape photography color correction.",
+            image: "/photo/pic8.png",
+        },
+        {
+            title: "Cinematic Color Grading",
+            description: "Film-inspired cinematic color grading for photography.",
             image: "/photo/portfolio - photo colorGRADE15.jpg",
         },
         {
-            title: "Health & Fitness Tracker",
-            description: "Designed an app to track fitness and health routines.",
+            title: "Digital Photo Artistry",
+            description: "Advanced digital artistry and photo manipulation.",
+            image: "/photo/portfolio - photo FX26.jpg"
+        },
+        {
+            title: "Sports Photography Editing",
+            description: "Dynamic sports photography enhancement and color correction.",
+            image: "/photo/pic9.png",
+        },
+        {
+            title: "Portrait Color Grading",
+            description: "Professional portrait color grading and skin tone correction.",
             image: "/photo/portfolio - photo colorGRADE17.jpg",
         },
         {
-            title: "Health & Fitness Tracker",
-            description: "Designed an app to track fitness and health routines.",
+            title: "Experimental Photo Effects",
+            description: "Experimental and avant-garde photo manipulation techniques.",
+            image: "/photo/portfolio - photo FX30.jpg"
+        },
+        {
+            title: "Corporate Photography Enhancement",
+            description: "Business and corporate photography professional editing.",
+            image: "/photo/pic10.png",
+        },
+        {
+            title: "Dramatic Lighting Enhancement",
+            description: "Dramatic lighting and mood enhancement for portraits.",
             image: "/photo/portfolio - photo colorGRADE19.jpg",
         },
         {
-            title: "Health & Fitness Tracker",
-            description: "Designed an app to track fitness and health routines.",
+            title: "Nature Photography Editing",
+            description: "Natural landscape and wildlife photography enhancement.",
+            image: "/photo/DSC00342 edit.png",
+        },
+        {
+            title: "Vintage Color Grading",
+            description: "Vintage-inspired color grading and film emulation.",
             image: "/photo/portfolio - photo colorGRADE24.jpg",
         },
         {
-            title: "Health & Fitness Tracker",
-            description: "Designed an app to track fitness and health routines.",
+            title: "Street Photography Enhancement",
+            description: "Urban street photography color correction and enhancement.",
+            image: "/photo/IMG-5831.jpg",
+        },
+        {
+            title: "Modern Color Grading",
+            description: "Contemporary color grading techniques for modern photography.",
             image: "/photo/portfolio - photo colorGRADE25.jpg",
         },
-        {
-            "title": "Photo Edit FX",
-            "description": "Creative photo manipulation with special effects.",
-            "image": "/photo/portfolio - photo FX03.jpg"
-        },
-        {
-            "title": "Photo Edit FX",
-            "description": "Creative photo manipulation with special effects.",
-            "image": "/photo/portfolio - photo FX04.jpg"
-        },
-        {
-            "title": "Photo Edit FX",
-            "description": "Creative photo manipulation with special effects.",
-            "image": "/photo/portfolio - photo FX12.jpg"
-        },
-        {
-            "title": "Photo Edit FX",
-            "description": "Creative photo manipulation with special effects.",
-            "image": "/photo/portfolio - photo FX13.jpg"
-        },
-        {
-            "title": "Photo Edit FX",
-            "description": "Creative photo manipulation with special effects.",
-            "image": "/photo/portfolio - photo FX14.jpg"
-        },
-        {
-            "title": "Photo Edit FX",
-            "description": "Creative photo manipulation with special effects.",
-            "image": "/photo/portfolio - photo FX17.jpg"
-        },
-        {
-            "title": "Photo Edit FX",
-            "description": "Creative photo manipulation with special effects.",
-            "image": "/photo/portfolio - photo FX20.jpg"
-        },
-        {
-            "title": "Photo Edit FX",
-            "description": "Creative photo manipulation with special effects.",
-            "image": "/photo/portfolio - photo FX22.jpg"
-        },
-        {
-            "title": "Photo Edit FX",
-            "description": "Creative photo manipulation with special effects.",
-            "image": "/photo/portfolio - photo FX23.jpg"
-        },
-        {
-            "title": "Photo Edit FX",
-            "description": "Creative photo manipulation with special effects.",
-            "image": "/photo/portfolio - photo FX26.jpg"
-        },
-        {
-            "title": "Photo Edit FX",
-            "description": "Creative photo manipulation with special effects.",
-            "image": "/photo/portfolio - photo FX30.jpg"
-        },
-        {
-            "title": "Real Estate Portfolio",
-            "description": "Image for real estate design showcase.",
-            "image": "/photo/real estate port.png"
-        }
-
     ],
+
     "graphic-design": [
         {
             "title": "Bold & Edgy Logo Design",
@@ -396,159 +382,9 @@ export const portfolioProjects: Record<
             "image": "/graphic/bandit.png"
         },
         {
-            "title": "Professional Business Card Design",
-            "description": "Created an eye-catching and professional business card for enhanced networking impact.",
-            "image": "/graphic/biz card.png"
-        },
-        {
-            "title": "Modern Logo & Branding",
-            "description": "Created a sleek and modern logo with a cohesive branding theme for a startup.",
-            "image": "/graphic/4.png"
-        },
-        {
-            "title": "United for the People's Plan Certificate",
-            "description": "Designed an elegant and professional certificate for official recognition.",
-            "image": "/graphic/logo UNITED FOR THE PEOPLE_S PLAN 18.png"
-        },
-        {
-            "title": "Kids Dynasty Daycare Logo",
-            "description": "Created a playful and professional logo for a daycare center.",
-            "image": "/graphic/logo KIDS DYNASTY DAYCARE (Arlene).png"
-        },
-        {
-            "title": "Marty Logo Design",
-            "description": "Designed a personal branding logo with modern typography.",
-            "image": "/graphic/logo MARTY (1).png"
-        },
-        {
-            "title": "Tech Startup Brand Identity",
-            "description": "Designed a full branding package including logo, color palette, and typography for a tech startup.",
-            "image": "/graphic/3.png"
-        },
-        {
-            "title": "Event Flyer for Bonefish",
-            "description": "Designed a visually engaging promotional flyer for an exclusive event.",
-            "image": "/graphic/bonefish flyer 4 MIKE.png"
-        },
-        {
-            "title": "Visual Identity System",
-            "description": "Developed a consistent brand identity system for a growing company, including logo variations.",
-            "image": "/graphic/image No Views (2).jpg"
-        },
-        {
             "title": "Custom Book Cover Design",
             "description": "Designed a bold and captivating book cover to enhance market appeal.",
             "image": "/graphic/book cover 3 KING.png"
-        },
-        {
-            "title": "Corporate Brochure Design",
-            "description": "Developed an informative and well-structured brochure for a corporate brand.",
-            "image": "/graphic/brochure edit pg2.jpeg"
-        },
-        {
-            "title": "Professional Certificate Design",
-            "description": "Designed an elegant and professional certificate for official recognition.",
-            "image": "/graphic/cert SAMPLE 2.png"
-        },
-        {
-            "title": "Popcorn TV Logo",
-            "description": "Created a fun and memorable logo for an entertainment brand.",
-            "image": "/graphic/Popcorn Tv logo (3).png"
-        },
-        {
-            "title": "Event Flyer - Michael & Rebecca",
-            "description": "Designed a personalized event flyer with elegant typography and layout.",
-            "image": "/graphic/flyer - Michael_Rebecca EDIT 1.png"
-        },
-        {
-            "title": "Promotional Flyer Design",
-            "description": "Created an eye-catching promotional flyer with vibrant graphics.",
-            "image": "/graphic/flyer 2.png"
-        },
-        {
-            "title": "Design Sheet Layout",
-            "description": "Developed a comprehensive design sheet showcasing multiple design elements.",
-            "image": "/graphic/sheet 5.jpg"
-        },
-        {
-            "title": "SAL Event Flyer",
-            "description": "Designed a professional event flyer with bold graphics and clear messaging.",
-            "image": "/graphic/flyer 3 SAL.jpg"
-        },
-        {
-            "title": "OLA CD Flyer Design",
-            "description": "Created a music-themed promotional flyer with dynamic visual elements.",
-            "image": "/graphic/flyer OLA CD 2.png"
-        },
-        {
-            "title": "Phil Event Flyer",
-            "description": "Designed a personalized event flyer with modern design aesthetics.",
-            "image": "/graphic/flyer PHIL edit.png"
-        },
-        {
-            "title": "Fashion Show Flyer",
-            "description": "Created an engaging flyer for 'Who Let The Dogs Out' fashion show event.",
-            "image": "/graphic/Flyer Who Let The Dogs Out Fashion Show.png"
-        },
-        {
-            "title": "Professional Photography",
-            "description": "Showcased professional photography work with artistic composition.",
-            "image": "/graphic/SMNJ3539.jpg"
-        },
-        {
-            "title": "Custom T-Shirt Design",
-            "description": "Designed a motivational t-shirt with bold typography and graphics.",
-            "image": "/graphic/shirt (Go ahead) 3 DENISE option 2.png"
-        },
-        {
-            "title": "MOJO Logo Design",
-            "description": "Created a dynamic logo for MOJO brand with strong visual impact.",
-            "image": "/graphic/LOGO MOJO logo.png"
-        },
-        {
-            "title": "Oliver's Brand Logo",
-            "description": "Designed a sophisticated logo for Oliver's business with elegant styling.",
-            "image": "/graphic/logo Olivers  edit.jpg"
-        },
-        {
-            "title": "OX Movers Logo",
-            "description": "Created a strong, professional logo for a moving company.",
-            "image": "/graphic/logo ox movers EDIT.png"
-        },
-        {
-            "title": "Reef 'n Reem Logo",
-            "description": "Designed a tropical-themed logo with vibrant colors and natural elements.",
-            "image": "/graphic/logo reefnreem.jpg"
-        },
-        {
-            "title": "YBDA Logo Design",
-            "description": "Created a professional logo for YBDA organization with clean typography.",
-            "image": "/graphic/logo YBDA.png"
-        },
-        {
-            "title": "Classic Logo Design",
-            "description": "Developed a timeless logo design with balanced composition.",
-            "image": "/graphic/logo-02.jpg"
-        },
-        {
-            "title": "Product Packaging Label",
-            "description": "Designed an eco-friendly packaging label with green color scheme.",
-            "image": "/graphic/packaging_label JOEL 10-green.png"
-        },
-        {
-            "title": "Joker Life Poster",
-            "description": "Created a dramatic poster design with bold graphics and typography.",
-            "image": "/graphic/poster joker life option 2 edit 3.png"
-        },
-        {
-            "title": "Somer Writing Sample Design",
-            "description": "Designed a professional layout for writing portfolio showcase.",
-            "image": "/graphic/Somer in touch writing sample.png"
-        },
-        {
-            "title": "SS Tiger Logo",
-            "description": "Created a fierce tiger-themed logo with dynamic visual elements.",
-            "image": "/graphic/sstiger.png"
         },
         {
             "title": "Tanzania Travel Itinerary",
@@ -556,24 +392,119 @@ export const portfolioProjects: Record<
             "image": "/graphic/Tanzania itinerary RACHEL WASIRA-11.png"
         },
         {
+            "title": "Joshua Davis Album Cover",
+            "description": "Designed a professional music album cover with artistic elements.",
+            "image": "/graphic/album cover JOSHUA DAVIS edit.png"
+        },
+        {
+            "title": "Fashion Show Flyer",
+            "description": "Created an engaging flyer for 'Who Let The Dogs Out' fashion show event.",
+            "image": "/graphic/Flyer Who Let The Dogs Out Fashion Show.png"
+        },
+        {
+            "title": "Professional Business Card Design",
+            "description": "Created an eye-catching and professional business card for enhanced networking impact.",
+            "image": "/graphic/biz card.png"
+        },
+        {
+            "title": "SS Tiger Logo",
+            "description": "Created a fierce tiger-themed logo with dynamic visual elements.",
+            "image": "/graphic/sstiger.png"
+        },
+        {
+            "title": "Interior Design Showcase",
+            "description": "Interior design presentation with professional layout and modern aesthetic.",
+            "image": "/graphic/interior 3.png"
+        },
+        {
+            "title": "Event Flyer for Bonefish",
+            "description": "Designed a visually engaging promotional flyer for an exclusive event.",
+            "image": "/graphic/bonefish flyer 4 MIKE.png"
+        },
+        {
+            "title": "Joker Life Poster",
+            "description": "Created a dramatic poster design with bold graphics and typography.",
+            "image": "/graphic/poster joker life option 2 edit 3.png"
+        },
+        {
+            "title": "Modern Logo & Branding",
+            "description": "Created a sleek and modern logo with a cohesive branding theme for a startup.",
+            "image": "/graphic/4.png"
+        },
+        {
+            "title": "Blue Moon Restaurant Menu",
+            "description": "Restaurant menu design with elegant blue moon theme and tri-fold layout.",
+            "image": "/graphic/menu Blue Moon 3folds F JOE A.jpg"
+        },
+        {
+            "title": "Custom Windbreaker Design",
+            "description": "Custom windbreaker jacket design with front and back branding elements.",
+            "image": "/graphic/luv windbreaker front back.png"
+        },
+        {
+            "title": "Kids Dynasty Daycare Logo",
+            "description": "Created a playful and professional logo for a daycare center.",
+            "image": "/graphic/logo KIDS DYNASTY DAYCARE (Arlene).png"
+        },
+        {
+            "title": "Professional Photography",
+            "description": "Showcased professional photography work with artistic composition.",
+            "image": "/graphic/SMNJ3539.jpg"
+        },
+        {
+            "title": "Elon Poster Design",
+            "description": "Creative poster design featuring modern graphics and typography.",
+            "image": "/graphic/elon poster.png"
+        },
+        {
+            "title": "Custom T-Shirt Design",
+            "description": "Designed a motivational t-shirt with bold typography and graphics.",
+            "image": "/graphic/shirt (Go ahead) 3 DENISE option 2.png"
+        },
+        {
+            "title": "United for the People's Plan Certificate",
+            "description": "Designed an elegant and professional certificate for official recognition.",
+            "image": "/graphic/logo UNITED FOR THE PEOPLE_S PLAN 18.png"
+        },
+        {
+            "title": "Reef 'n Reem Tropical Logo",
+            "description": "Designed a tropical-themed logo with vibrant colors and natural elements.",
+            "image": "/graphic/logo reefnreem.jpg"
+        },
+        {
+            "title": "Joker Life Custom Shoes",
+            "description": "Created a custom shoe design with branded graphics and styling.",
+            "image": "/graphic/joker life shoe 1.png"
+        },
+        {
+            "title": "Tech Startup Brand Identity",
+            "description": "Designed a full branding package including logo, color palette, and typography for a tech startup.",
+            "image": "/graphic/3.png"
+        },
+        {
+            "title": "Woman Artistic Sketch",
+            "description": "Artistic sketch design with professional finishing and creative composition.",
+            "image": "/graphic/woman sketch.jpg"
+        },
+        {
             "title": "Event Ticket Design",
             "description": "Created a professional ticket design with security features and branding.",
             "image": "/graphic/ticket SAMPLE.png"
         },
         {
-            "title": "Front Design Layout",
-            "description": "Developed a striking front-facing design with modern aesthetics.",
-            "image": "/graphic/front.png"
+            "title": "Moses Villani Personal Logo",
+            "description": "Professional logo with red and black cursive styling for personal branding.",
+            "image": "/graphic/logo moses villani red black 2 cursive.png"
         },
         {
-            "title": "4-Color Design Sheet",
-            "description": "Created a comprehensive color palette design sheet for Joel's project.",
-            "image": "/graphic/4 color sheet joel edit 2.PNG"
+            "title": "Corporate Brochure Design",
+            "description": "Developed an informative and well-structured brochure for a corporate brand.",
+            "image": "/graphic/brochure edit pg2.jpeg"
         },
         {
-            "title": "Joshua Davis Album Cover",
-            "description": "Designed a professional music album cover with artistic elements.",
-            "image": "/graphic/album cover JOSHUA DAVIS edit.png"
+            "title": "Convergence MYKE Logo",
+            "description": "Dynamic convergence-themed logo with modern elements and professional finish.",
+            "image": "/graphic/logo Convergence MYKE (4).jpeg"
         },
         {
             "title": "Custom Bag Design",
@@ -581,34 +512,204 @@ export const portfolioProjects: Record<
             "image": "/graphic/bag edit.jpg"
         },
         {
-            "title": "Highball Ron Design",
+            "title": "Business Card Design - AMIR",
+            "description": "Professional business card with elegant typography and layout.",
+            "image": "/graphic/biz card AMIR (1).jpg"
+        },
+        {
+            "title": "Popcorn TV Entertainment Logo",
+            "description": "Created a fun and memorable logo for an entertainment brand.",
+            "image": "/graphic/Popcorn Tv logo (3).png"
+        },
+        {
+            "title": "Product Packaging Label",
+            "description": "Designed an eco-friendly packaging label with green color scheme.",
+            "image": "/graphic/packaging_label JOEL 10-green.png"
+        },
+        {
+            "title": "Event Flyer - Michael & Rebecca",
+            "description": "Designed a personalized event flyer with elegant typography and layout.",
+            "image": "/graphic/flyer - Michael_Rebecca EDIT 1.png"
+        },
+        {
+            "title": "CS Paris Elegant Logo",
+            "description": "Elegant Paris-themed logo with sophisticated styling and typography.",
+            "image": "/graphic/logo CS Paris 7.jpg"
+        },
+        {
+            "title": "Visual Identity System",
+            "description": "Developed a consistent brand identity system for a growing company, including logo variations.",
+            "image": "/graphic/image No Views (2).jpg"
+        },
+        {
+            "title": "Highball Ron Cocktail Design",
             "description": "Designed a sophisticated cocktail-themed graphic for Ron's brand.",
             "image": "/graphic/Highball-RON_2.png"
         },
         {
-            "title": "ARC Logo Design",
-            "description": "Created a professional logo for ARC organization with clean lines.",
-            "image": "/graphic/logo ARC 4.png"
+            "title": "MOJO Dynamic Logo",
+            "description": "Created a dynamic logo for MOJO brand with strong visual impact.",
+            "image": "/graphic/LOGO MOJO logo.png"
         },
         {
-            "title": "Moses Portrait Design",
-            "description": "Developed an artistic portrait design with professional finishing.",
-            "image": "/graphic/Moses.jpg"
+            "title": "Professional Certificate Design",
+            "description": "Designed an elegant and professional certificate for official recognition.",
+            "image": "/graphic/cert SAMPLE 2.png"
         },
         {
-            "title": "Joker Life Shoe Design",
-            "description": "Created a custom shoe design with branded graphics and styling.",
-            "image": "/graphic/joker life shoe 1.png"
+            "title": "Barry Personal Logo",
+            "description": "Personalized logo design for Barry with professional finish and unique styling.",
+            "image": "/graphic/logo Barry option 4 edit.png"
+        },
+        {
+            "title": "OLA CD Music Flyer",
+            "description": "Created a music-themed promotional flyer with dynamic visual elements.",
+            "image": "/graphic/flyer OLA CD 2.png"
+        },
+        {
+            "title": "20th Anniversary Design",
+            "description": "Special anniversary design with commemorative elements and elegant styling.",
+            "image": "/graphic/20.png"
+        },
+        {
+            "title": "Design Sheet Layout",
+            "description": "Developed a comprehensive design sheet showcasing multiple design elements.",
+            "image": "/graphic/sheet 5.jpg"
+        },
+        {
+            "title": "JULIUS Classical Logo",
+            "description": "Classical-inspired logo design with elegant typography and timeless appeal.",
+            "image": "/graphic/logo JULIUS (5).jpg"
+        },
+        {
+            "title": "SAL Event Flyer",
+            "description": "Designed a professional event flyer with bold graphics and clear messaging.",
+            "image": "/graphic/flyer 3 SAL.jpg"
+        },
+        {
+            "title": "Hose Wiz Industrial Logo",
+            "description": "Industrial-themed logo for Hose Wiz company with strong brand presence.",
+            "image": "/graphic/logo hose wiz 1.png"
+        },
+        {
+            "title": "Phil Event Flyer",
+            "description": "Designed a personalized event flyer with modern design aesthetics.",
+            "image": "/graphic/flyer PHIL edit.png"
+        },
+        {
+            "title": "My Own Nation Logo - Jerry",
+            "description": "Patriotic-themed logo design for Jerry's brand with national elements.",
+            "image": "/graphic/logo my own nation Jerry.png"
+        },
+        {
+            "title": "Marty Typography Logo",
+            "description": "Designed a personal branding logo with modern typography and clean lines.",
+            "image": "/graphic/logo MARTY (1).png"
+        },
+        {
+            "title": "Blue Moon Alternative Menu",
+            "description": "Alternative menu design layout with different fold structure and styling.",
+            "image": "/graphic/menu Blue Moon F2 JOE A.jpg"
+        },
+        {
+            "title": "Promotional Flyer Design",
+            "description": "Created an eye-catching promotional flyer with vibrant graphics.",
+            "image": "/graphic/flyer 2.png"
+        },
+        {
+            "title": "DLE Desmond Professional Logo",
+            "description": "Professional logo design for DLE Desmond brand with corporate styling.",
+            "image": "/graphic/logo DLE 1 desmond.jpg"
+        },
+        {
+            "title": "Oliver's Sophisticated Logo",
+            "description": "Designed a sophisticated logo for Oliver's business with elegant styling.",
+            "image": "/graphic/logo Olivers  edit.jpg"
+        },
+        {
+            "title": "Dolo BJ Stroke Logo",
+            "description": "Bold stroke-style logo design with strong visual impact and modern appeal.",
+            "image": "/graphic/logo Dolo BJ stroke 1.png"
+        },
+        {
+            "title": "OX Movers Company Logo",
+            "description": "Created a strong, professional logo for a moving company with industry appeal.",
+            "image": "/graphic/logo ox movers EDIT.png"
+        },
+        {
+            "title": "Interior Design Layout",
+            "description": "Creative interior design mockup with modern aesthetic and professional presentation.",
+            "image": "/graphic/interior.png"
+        },
+        {
+            "title": "YBDA Organization Logo",
+            "description": "Created a professional logo for YBDA organization with clean typography.",
+            "image": "/graphic/logo YBDA.png"
+        },
+        {
+            "title": "Keys Symbolic Design",
+            "description": "Creative key-themed design with symbolic elements and artistic composition.",
+            "image": "/graphic/keys.png"
+        },
+        {
+            "title": "Classic Timeless Logo",
+            "description": "Developed a timeless logo design with balanced composition and enduring appeal.",
+            "image": "/graphic/logo-02.jpg"
+        },
+        {
+            "title": "BJ Split Logo Design",
+            "description": "Creative split design logo with pink and blue color scheme and modern styling.",
+            "image": "/graphic/logo BJ split pink l blue R.png"
+        },
+        {
+            "title": "Somer Writing Portfolio",
+            "description": "Designed a professional layout for writing portfolio showcase and presentation.",
+            "image": "/graphic/Somer in touch writing sample.png"
+        },
+        {
+            "title": "Salvador Creative Logo",
+            "description": "Creative logo design for Salvador brand with unique styling and brand personality.",
+            "image": "/graphic/logo SALVADOR 2.png"
+        },
+        {
+            "title": "Front Design Layout",
+            "description": "Developed a striking front-facing design with modern aesthetics and visual appeal.",
+            "image": "/graphic/front.png"
+        },
+        {
+            "title": "Matthew Logo Card",
+            "description": "Business card design featuring logo integration and professional branding.",
+            "image": "/graphic/logo_card MATTHEW W g .jpg"
+        },
+        {
+            "title": "4-Color Design Palette",
+            "description": "Created a comprehensive color palette design sheet for Joel's branding project.",
+            "image": "/graphic/4 color sheet joel edit 2.PNG"
+        },
+        {
+            "title": "Logo Mockup Presentation",
+            "description": "Professional logo mockup presentation showcasing brand application.",
+            "image": "/graphic/logo-1-mockup.jpg"
         },
         {
             "title": "Robert Ford Cover Art",
-            "description": "Designed professional cover art with dramatic visual elements.",
+            "description": "Designed professional cover art with dramatic visual elements and artistic composition.",
             "image": "/graphic/cover art ROBERT FORD edit 1.5.png"
         },
         {
+            "title": "COLM Design Sheet",
+            "description": "Comprehensive design sheet with multiple elements and cohesive branding.",
+            "image": "/graphic/sheet COLM.png"
+        },
+        {
             "title": "WhatsApp Design Element",
-            "description": "Created custom graphics for WhatsApp branding and communication.",
+            "description": "Created custom graphics for WhatsApp branding and communication design.",
             "image": "/graphic/WhatsApp.jpeg"
+        },
+        {
+            "title": "PowerPoint Presentation Template",
+            "description": "Professional PowerPoint presentation template design with modern layout.",
+            "image": "/graphic/ppt.png"
         },
         {
             "title": "General Promotional Flyer",
@@ -616,197 +717,57 @@ export const portfolioProjects: Record<
             "image": "/graphic/flyer.png"
         },
         {
-            "title": "Portfolio Addition - Design 1",
-            "description": "Additional graphic design work showcasing creative versatility.",
-            "image": "/graphic/add to GRAPHIC DESIGN.jpg"
-        },
-        {
-            "title": "Portfolio Addition - Design 2",
-            "description": "Another creative design piece demonstrating professional capabilities.",
-            "image": "/graphic/add to GRAPHIC DESIGN 2.jpg"
-        },
-
-        // Additional items found in your file list but missing from original data:
-
-        {
-            "title": "5th Element Design",
-            "description": "Creative design piece with modern aesthetic and clean composition.",
-            "image": "/graphic/5.PNG"
-        },
-        {
-            "title": "20th Anniversary Design",
-            "description": "Special anniversary design with commemorative elements.",
-            "image": "/graphic/20.png"
-        },
-        {
-            "title": "Business Card Design - AMIR Style 1",
-            "description": "Professional business card with elegant typography and layout.",
-            "image": "/graphic/biz card AMIR (1).jpg"
-        },
-        {
-            "title": "Business Card Design - AMIR Style 2",
-            "description": "Alternative business card design with different styling approach.",
-            "image": "/graphic/biz card AMIR (2).jpg"
-        },
-
-        {
-            "title": "Elon Poster Design",
-            "description": "Creative poster design featuring modern graphics and typography.",
-            "image": "/graphic/elon poster.png"
-        },
-        {
             "title": "Promotional Flyer - Sump",
-            "description": "Engaging promotional flyer with eye-catching design elements.",
+            "description": "Engaging promotional flyer with eye-catching design elements and clear messaging.",
             "image": "/graphic/flyer sump.png"
         },
         {
-            "title": "Interior Design Showcase",
-            "description": "Interior design presentation with professional layout.",
-            "image": "/graphic/interior 3.png"
+            "title": "Portfolio Addition - Design 1",
+            "description": "Additional graphic design work showcasing creative versatility and skill range.",
+            "image": "/graphic/add to GRAPHIC DESIGN.jpg"
         },
         {
-            "title": "Interior Design Layout",
-            "description": "Creative interior design mockup with modern aesthetic.",
-            "image": "/graphic/interior.png"
+            "title": "Moses Portrait Design",
+            "description": "Developed an artistic portrait design with professional finishing and creative styling.",
+            "image": "/graphic/Moses.jpg"
         },
         {
-            "title": "Keys Design Element",
-            "description": "Creative key-themed design with symbolic elements.",
-            "image": "/graphic/keys.png"
-        },
-        {
-            "title": "Logo Design Version 2",
-            "description": "Alternative logo design with different styling approach.",
-            "image": "/graphic/logo 2.png"
-        },
-        {
-            "title": "Barry Logo Design",
-            "description": "Personalized logo design for Barry with professional finish.",
-            "image": "/graphic/logo Barry option 4 edit.png"
-        },
-        {
-            "title": "BJ Split Pink Logo",
-            "description": "Creative split design logo with pink color scheme.",
-            "image": "/graphic/logo BJ split pink l blue R.png"
-        },
-        {
-            "title": "Convergence MYKE Logo",
-            "description": "Dynamic convergence-themed logo with modern elements.",
-            "image": "/graphic/logo Convergence MYKE (4).jpeg"
-        },
-        {
-            "title": "CS Paris Logo",
-            "description": "Elegant Paris-themed logo with sophisticated styling.",
-            "image": "/graphic/logo CS Paris 7.jpg"
-        },
-        {
-            "title": "DLE Desmond Logo",
-            "description": "Professional logo design for DLE Desmond brand.",
-            "image": "/graphic/logo DLE 1 desmond.jpg"
-        },
-        {
-            "title": "Dolo BJ Stroke Logo",
-            "description": "Bold stroke-style logo design with strong visual impact.",
-            "image": "/graphic/logo Dolo BJ stroke 1.png"
-        },
-        {
-            "title": "Hose Wiz Logo",
-            "description": "Industrial-themed logo for Hose Wiz company.",
-            "image": "/graphic/logo hose wiz 1.png"
-        },
-        {
-            "title": "JULIUS Logo Design",
-            "description": "Classical-inspired logo design with elegant typography.",
-            "image": "/graphic/logo JULIUS (5).jpg"
-        },
-        {
-            "title": "Moses Villani Logo",
-            "description": "Professional logo with red and black cursive styling.",
-            "image": "/graphic/logo moses villani red black 2 cursive.png"
-        },
-        {
-            "title": "My Own Nation Logo - Jerry",
-            "description": "Patriotic-themed logo design for Jerry's brand.",
-            "image": "/graphic/logo my own nation Jerry.png"
-        },
-        {
-            "title": "ReefnReem Brand Logo",
-            "description": "Alternative version of the reef-themed logo design.",
-            "image": "/graphic/logo reefnreem.jpg"
-        },
-        {
-            "title": "Salvador Logo Design",
-            "description": "Creative logo design for Salvador brand with unique styling.",
-            "image": "/graphic/logo SALVADOR 2.png"
-        },
-        {
-            "title": "Logo Card - Matthew",
-            "description": "Business card design featuring logo integration.",
-            "image": "/graphic/logo_card MATTHEW W g .jpg"
-        },
-        {
-            "title": "Logo Mockup Design",
-            "description": "Professional logo mockup presentation.",
-            "image": "/graphic/logo-1-mockup.jpg"
-        },
-        {
-            "title": "Windbreaker Design",
-            "description": "Custom windbreaker jacket design with branding elements.",
-            "image": "/graphic/luv windbreaker front back.png"
-        },
-        {
-            "title": "Blue Moon Menu - Joe A Style 1",
-            "description": "Restaurant menu design with elegant blue moon theme.",
-            "image": "/graphic/menu Blue Moon 3folds F JOE A.jpg"
-        },
-        {
-            "title": "Blue Moon Menu - Joe A Style 2",
-            "description": "Alternative menu design layout with different fold structure.",
-            "image": "/graphic/menu Blue Moon 3folds F2 JOE A.jpg"
-        },
-        {
-            "title": "Blue Moon Menu - F JOE A",
-            "description": "Tri-fold menu design with comprehensive layout.",
-            "image": "/graphic/menu Blue Moon F JOE A.jpg"
-        },
-        {
-            "title": "Blue Moon Menu - F2 JOE A",
-            "description": "Second version of the Blue Moon menu design.",
-            "image": "/graphic/menu Blue Moon F2 JOE A.jpg"
-        },
-        {
-            "title": "Packaging Label - Joel Green",
-            "description": "Eco-friendly packaging label design in green theme.",
-            "image": "/graphic/packaging_label JOEL 10-green.png"
+            "title": "Portfolio Addition - Design 2",
+            "description": "Another creative design piece demonstrating professional capabilities and artistic vision.",
+            "image": "/graphic/add to GRAPHIC DESIGN 2.jpg"
         },
         {
             "title": "Poster Edit - TOM",
-            "description": "Custom poster design with professional editing and layout.",
+            "description": "Custom poster design with professional editing, layout, and visual impact.",
             "image": "/graphic/poster edit TOM.jpg"
         },
         {
-            "title": "PPT Presentation Design",
-            "description": "Professional PowerPoint presentation template design.",
-            "image": "/graphic/ppt.png"
+            "title": "5th Element Modern Design",
+            "description": "Creative design piece with modern aesthetic, clean composition, and contemporary appeal.",
+            "image": "/graphic/5.PNG"
         },
         {
-            "title": "COLM Design Sheet",
-            "description": "Comprehensive design sheet with multiple elements.",
-            "image": "/graphic/sheet COLM.png"
-        },
-        {
-            "title": "Go Ahead Shirt - Denise Style 4",
-            "description": "Motivational t-shirt design with empowering message.",
+            "title": "Go Ahead Motivational Shirt",
+            "description": "Alternative motivational t-shirt design with empowering message and bold typography.",
             "image": "/graphic/shirt (Go ahead) 3 DENISE option 4.png"
         },
-
         {
-            "title": "Woman Sketch Artwork",
-            "description": "Artistic sketch design with professional finishing.",
-            "image": "/graphic/woman sketch.jpg"
+            "title": "ARC Organization Logo",
+            "description": "Created a professional logo for ARC organization with clean lines and corporate appeal.",
+            "image": "/graphic/logo ARC 4.png"
+        },
+        {
+            "title": "Alternative Logo Design",
+            "description": "Alternative logo design approach with different styling and creative direction.",
+            "image": "/graphic/logo 2.png"
+        },
+        {
+            "title": "Business Card Alternative - AMIR",
+            "description": "Alternative business card design with different styling approach and layout.",
+            "image": "/graphic/biz card AMIR (2).jpg"
         }
     ],
-    //add to GRAPHIC DESIGN.jpg
+
     "video-editing": [
         {
             title: "Cinematic Montage",
@@ -909,12 +870,12 @@ export const portfolioProjects: Record<
             description: "A high-quality cinematic edit.",
             video: "https://www.youtube.com/embed/_5m8c24lBQE"
         },
-          {
+        {
             title: "Cinematic Montage",
             description: "A high-quality cinematic edit.",
             video: "https://www.youtube.com/embed/XmHo8pk1skY"
         },
-          {
+        {
             title: "Cinematic Montage",
             description: "A high-quality cinematic edit.",
             video: "https://www.youtube.com/embed/ZIMs48vbc7Q"
@@ -923,72 +884,21 @@ export const portfolioProjects: Record<
 
 
     ],
-
     "animation": [
         {
-            "title": "Cinematic Montage",
-            "description": "A high-quality cinematic edit.",
-            "image": "/animation/59.png"
+            "title": "Pea King Scene 2",
+            "description": "Second scene from the Pea King animation project.",
+            "image": "/animation/pea king (2).jpg"
         },
         {
             "title": "Cinematic Montage",
             "description": "A high-quality cinematic edit.",
-            "image": "/animation/60.png"
+            "image": "/animation/27.png"
         },
         {
-            "title": "Cinematic Montage",
-            "description": "A high-quality cinematic edit.",
-            "image": "/animation/50.png"
-        },
-        {
-            "title": "Cinematic Montage",
-            "description": "A high-quality cinematic edit.",
-            "image": "/animation/4.png"
-        },
-        {
-            "title": "Cinematic Montage",
-            "description": "A high-quality cinematic edit.",
-            "image": "/animation/5.png"
-        },
-        {
-            "title": "Cinematic Montage",
-            "description": "A high-quality cinematic edit.",
-            "image": "/animation/6.png"
-        },
-        {
-            "title": "Cinematic Montage",
-            "description": "A high-quality cinematic edit.",
-            "image": "/animation/7.png"
-        },
-        {
-            "title": "Cinematic Montage",
-            "description": "A high-quality cinematic edit.",
-            "image": "/animation/1.png"
-        },
-        {
-            "title": "Cinematic Montage",
-            "description": "A high-quality cinematic edit.",
-            "image": "/animation/2.png"
-        },
-        {
-            "title": "Cinematic Montage",
-            "description": "A high-quality cinematic edit.",
-            "image": "/animation/3.png"
-        },
-        {
-            "title": "Cinematic Montage",
-            "description": "A high-quality cinematic edit.",
-            "image": "/animation/10.png"
-        },
-        {
-            "title": "Cinematic Montage",
-            "description": "A high-quality cinematic edit.",
-            "image": "/animation/11.png"
-        },
-        {
-            "title": "Cinematic Montage",
-            "description": "A high-quality cinematic edit.",
-            "image": "/animation/12.png"
+            "title": "Holeshot Storyboard Scene 8",
+            "description": "Eighth scene of the holeshot storyboard sequence.",
+            "image": "/animation/holeshot storyboard (8).png"
         },
         {
             "title": "Cinematic Montage",
@@ -998,87 +908,12 @@ export const portfolioProjects: Record<
         {
             "title": "Cinematic Montage",
             "description": "A high-quality cinematic edit.",
-            "image": "/animation/8.png"
+            "image": "/animation/46.png"
         },
         {
-            "title": "Cinematic Montage",
-            "description": "A high-quality cinematic edit.",
-            "image": "/animation/9.png"
-        },
-        {
-            "title": "Cinematic Montage",
-            "description": "A high-quality cinematic edit.",
-            "image": "/animation/14.png"
-        },
-        {
-            "title": "Cinematic Montage",
-            "description": "A high-quality cinematic edit.",
-            "image": "/animation/15.png"
-        },
-        {
-            "title": "Cinematic Montage",
-            "description": "A high-quality cinematic edit.",
-            "image": "/animation/16.png"
-        },
-        {
-            "title": "Cinematic Montage",
-            "description": "A high-quality cinematic edit.",
-            "image": "/animation/17.png"
-        },
-        {
-            "title": "Cinematic Montage",
-            "description": "A high-quality cinematic edit.",
-            "image": "/animation/20.png"
-        },
-        {
-            "title": "Cinematic Montage",
-            "description": "A high-quality cinematic edit.",
-            "image": "/animation/21.png"
-        },
-        {
-            "title": "Cinematic Montage",
-            "description": "A high-quality cinematic edit.",
-            "image": "/animation/22.png"
-        },
-        {
-            "title": "Cinematic Montage",
-            "description": "A high-quality cinematic edit.",
-            "image": "/animation/18.png"
-        },
-        {
-            "title": "Cinematic Montage",
-            "description": "A high-quality cinematic edit.",
-            "image": "/animation/25.png"
-        },
-        {
-            "title": "Cinematic Montage",
-            "description": "A high-quality cinematic edit.",
-            "image": "/animation/26.png"
-        },
-        {
-            "title": "Cinematic Montage",
-            "description": "A high-quality cinematic edit.",
-            "image": "/animation/27.png"
-        },
-        {
-            "title": "Cinematic Montage",
-            "description": "A high-quality cinematic edit.",
-            "image": "/animation/19.png"
-        },
-        {
-            "title": "Cinematic Montage",
-            "description": "A high-quality cinematic edit.",
-            "image": "/animation/23.png"
-        },
-        {
-            "title": "Cinematic Montage",
-            "description": "A high-quality cinematic edit.",
-            "image": "/animation/24.png"
-        },
-        {
-            "title": "Cinematic Montage",
-            "description": "A high-quality cinematic edit.",
-            "image": "/animation/29.png"
+            "title": "Holeshot Storyboard Scene 5",
+            "description": "Fifth scene of the holeshot storyboard sequence.",
+            "image": "/animation/holeshot storyboard (5).png"
         },
         {
             "title": "Cinematic Montage",
@@ -1088,42 +923,12 @@ export const portfolioProjects: Record<
         {
             "title": "Cinematic Montage",
             "description": "A high-quality cinematic edit.",
-            "image": "/animation/34.png"
+            "image": "/animation/7.png"
         },
         {
-            "title": "Cinematic Montage",
-            "description": "A high-quality cinematic edit.",
-            "image": "/animation/35.png"
-        },
-        {
-            "title": "Cinematic Montage",
-            "description": "A high-quality cinematic edit.",
-            "image": "/animation/37.png"
-        },
-        {
-            "title": "Cinematic Montage",
-            "description": "A high-quality cinematic edit.",
-            "image": "/animation/38.png"
-        },
-        {
-            "title": "Cinematic Montage",
-            "description": "A high-quality cinematic edit.",
-            "image": "/animation/39.png"
-        },
-        {
-            "title": "Cinematic Montage",
-            "description": "A high-quality cinematic edit.",
-            "image": "/animation/44.png"
-        },
-        {
-            "title": "Cinematic Montage",
-            "description": "A high-quality cinematic edit.",
-            "image": "/animation/46.png"
-        },
-        {
-            "title": "Cinematic Montage",
-            "description": "A high-quality cinematic edit.",
-            "image": "/animation/40.png"
+            "title": "Pea King Scenes Collection 1",
+            "description": "First collection of scenes from the Pea King project.",
+            "image": "/animation/Pea_King scenes-1.png"
         },
         {
             "title": "Cinematic Montage",
@@ -1131,44 +936,24 @@ export const portfolioProjects: Record<
             "image": "/animation/42.png"
         },
         {
-            "title": "Cinematic Montage",
-            "description": "A high-quality cinematic edit.",
-            "image": "/animation/43.png"
+            "title": "Holeshot Storyboard Scene 16",
+            "description": "Sixteenth scene of the holeshot storyboard sequence.",
+            "image": "/animation/holeshot storyboard (16).png"
         },
         {
             "title": "Cinematic Montage",
             "description": "A high-quality cinematic edit.",
-            "image": "/animation/47.png"
+            "image": "/animation/15.png"
         },
         {
             "title": "Cinematic Montage",
             "description": "A high-quality cinematic edit.",
-            "image": "/animation/48.png"
+            "image": "/animation/34.png"
         },
         {
-            "title": "Cinematic Montage",
-            "description": "A high-quality cinematic edit.",
-            "image": "/animation/49.png"
-        },
-        {
-            "title": "Cinematic Montage",
-            "description": "A high-quality cinematic edit.",
-            "image": "/animation/52.png"
-        },
-        {
-            "title": "Cinematic Montage",
-            "description": "A high-quality cinematic edit.",
-            "image": "/animation/53.png"
-        },
-        {
-            "title": "Cinematic Montage",
-            "description": "A high-quality cinematic edit.",
-            "image": "/animation/54.png"
-        },
-        {
-            "title": "Cinematic Montage",
-            "description": "A high-quality cinematic edit.",
-            "image": "/animation/55.png"
+            "title": "Holeshot Storyboard Scene 3",
+            "description": "Third scene of the holeshot storyboard sequence.",
+            "image": "/animation/holeshot storyboard (3).png"
         },
         {
             "title": "Cinematic Montage",
@@ -1178,12 +963,147 @@ export const portfolioProjects: Record<
         {
             "title": "Cinematic Montage",
             "description": "A high-quality cinematic edit.",
-            "image": "/animation/58.png"
+            "image": "/animation/21.png"
+        },
+        {
+            "title": "Pea King Scene 1",
+            "description": "First scene from the Pea King animation project.",
+            "image": "/animation/pea king (1).jpg"
         },
         {
             "title": "Cinematic Montage",
             "description": "A high-quality cinematic edit.",
-            "image": "/animation/51.png"
+            "image": "/animation/11.png"
+        },
+        {
+            "title": "Holeshot Storyboard Scene 14",
+            "description": "Fourteenth scene of the holeshot storyboard sequence.",
+            "image": "/animation/holeshot storyboard (14).png"
+        },
+        {
+            "title": "Cinematic Montage",
+            "description": "A high-quality cinematic edit.",
+            "image": "/animation/39.png"
+        },
+        {
+            "title": "Cinematic Montage",
+            "description": "A high-quality cinematic edit.",
+            "image": "/animation/2.png"
+        },
+        {
+            "title": "Holeshot Storyboard Scene 12",
+            "description": "Twelfth scene of the holeshot storyboard sequence.",
+            "image": "/animation/holeshot storyboard (12).png"
+        },
+        {
+            "title": "Cinematic Montage",
+            "description": "A high-quality cinematic edit.",
+            "image": "/animation/49.png"
+        },
+        {
+            "title": "Cinematic Montage",
+            "description": "A high-quality cinematic edit.",
+            "image": "/animation/8.png"
+        },
+        {
+            "title": "Holeshot Storyboard Scene 1",
+            "description": "First scene of the holeshot storyboard sequence.",
+            "image": "/animation/holeshot storyboard (1).jpg"
+        },
+        {
+            "title": "Cinematic Montage",
+            "description": "A high-quality cinematic edit.",
+            "image": "/animation/23.png"
+        },
+        {
+            "title": "Pea King Scenes Collection 7",
+            "description": "Seventh collection of scenes from the Pea King project.",
+            "image": "/animation/Pea_King scenes-7.png"
+        },
+        {
+            "title": "Cinematic Montage",
+            "description": "A high-quality cinematic edit.",
+            "image": "/animation/44.png"
+        },
+        {
+            "title": "Cinematic Montage",
+            "description": "A high-quality cinematic edit.",
+            "image": "/animation/53.png"
+        },
+        {
+            "title": "Holeshot Storyboard Scene 11",
+            "description": "Eleventh scene of the holeshot storyboard sequence.",
+            "image": "/animation/holeshot storyboard (11).png"
+        },
+        {
+            "title": "Cinematic Montage",
+            "description": "A high-quality cinematic edit.",
+            "image": "/animation/26.png"
+        },
+        {
+            "title": "Cinematic Montage",
+            "description": "A high-quality cinematic edit.",
+            "image": "/animation/5.png"
+        },
+        {
+            "title": "Holeshot Storyboard Scene 19",
+            "description": "Nineteenth scene of the holeshot storyboard sequence.",
+            "image": "/animation/holeshot storyboard (19).png"
+        },
+        {
+            "title": "Cinematic Montage",
+            "description": "A high-quality cinematic edit.",
+            "image": "/animation/60.png"
+        },
+        {
+            "title": "Cinematic Montage",
+            "description": "A high-quality cinematic edit.",
+            "image": "/animation/19.png"
+        },
+        {
+            "title": "Cinematic Montage",
+            "description": "A high-quality cinematic edit.",
+            "image": "/animation/37.png"
+        },
+        {
+            "title": "Pea King House",
+            "description": "House scene from the Pea King animation project.",
+            "image": "/animation/pea king house.png"
+        },
+        {
+            "title": "Cinematic Montage",
+            "description": "A high-quality cinematic edit.",
+            "image": "/animation/17.png"
+        },
+        {
+            "title": "Cinematic Montage",
+            "description": "A high-quality cinematic edit.",
+            "image": "/animation/58.png"
+        },
+        {
+            "title": "Holeshot Storyboard Scene 6",
+            "description": "Sixth scene of the holeshot storyboard sequence.",
+            "image": "/animation/holeshot storyboard (6).png"
+        },
+        {
+            "title": "Cinematic Montage",
+            "description": "A high-quality cinematic edit.",
+            "image": "/animation/22.png"
+        },
+        {
+            "title": "Cinematic Montage",
+            "description": "A high-quality cinematic edit.",
+            "image": "/animation/48.png"
+        },
+        {
+            "title": "Cinematic Montage",
+            "description": "A high-quality cinematic edit.",
+            "image": "/animation/14.png"
+        },
+        {
+            "title": "Holeshot Storyboard Scene 9",
+            "description": "Ninth scene of the holeshot storyboard sequence.",
+            "image": "/animation/holeshot storyboard (9).png"
         },
         {
             "title": "Cinematic Montage",
@@ -1193,112 +1113,12 @@ export const portfolioProjects: Record<
         {
             "title": "Cinematic Montage",
             "description": "A high-quality cinematic edit.",
-            "video": "https://www.youtube.com/embed/WaEnkV6gY0o"
+            "image": "/animation/50.png"
         },
         {
-            "title": "Holeshot Storyboard Scene 1",
-            "description": "First scene of the holeshot storyboard sequence.",
-            "image": "/animation/holeshot storyboard (1).jpg"
-        },
-        {
-            "title": "Holeshot Storyboard Scene 2",
-            "description": "Second scene of the holeshot storyboard sequence.",
-            "image": "/animation/holeshot storyboard (2).png"
-        },
-        {
-            "title": "Holeshot Storyboard Scene 3",
-            "description": "Third scene of the holeshot storyboard sequence.",
-            "image": "/animation/holeshot storyboard (3).png"
-        },
-        {
-            "title": "Holeshot Storyboard Scene 4",
-            "description": "Fourth scene of the holeshot storyboard sequence.",
-            "image": "/animation/holeshot storyboard (4).png"
-        },
-        {
-            "title": "Holeshot Storyboard Scene 5",
-            "description": "Fifth scene of the holeshot storyboard sequence.",
-            "image": "/animation/holeshot storyboard (5).png"
-        },
-        {
-            "title": "Holeshot Storyboard Scene 6",
-            "description": "Sixth scene of the holeshot storyboard sequence.",
-            "image": "/animation/holeshot storyboard (6).png"
-        },
-        {
-            "title": "Holeshot Storyboard Scene 7",
-            "description": "Seventh scene of the holeshot storyboard sequence.",
-            "image": "/animation/holeshot storyboard (7).png"
-        },
-        {
-            "title": "Holeshot Storyboard Scene 8",
-            "description": "Eighth scene of the holeshot storyboard sequence.",
-            "image": "/animation/holeshot storyboard (8).png"
-        },
-        {
-            "title": "Holeshot Storyboard Scene 9",
-            "description": "Ninth scene of the holeshot storyboard sequence.",
-            "image": "/animation/holeshot storyboard (9).png"
-        },
-        {
-            "title": "Holeshot Storyboard Scene 10",
-            "description": "Tenth scene of the holeshot storyboard sequence.",
-            "image": "/animation/holeshot storyboard (10).png"
-        },
-        {
-            "title": "Holeshot Storyboard Scene 11",
-            "description": "Eleventh scene of the holeshot storyboard sequence.",
-            "image": "/animation/holeshot storyboard (11).png"
-        },
-        {
-            "title": "Holeshot Storyboard Scene 12",
-            "description": "Twelfth scene of the holeshot storyboard sequence.",
-            "image": "/animation/holeshot storyboard (12).png"
-        },
-        {
-            "title": "Holeshot Storyboard Scene 13",
-            "description": "Thirteenth scene of the holeshot storyboard sequence.",
-            "image": "/animation/holeshot storyboard (13).png"
-        },
-        {
-            "title": "Holeshot Storyboard Scene 14",
-            "description": "Fourteenth scene of the holeshot storyboard sequence.",
-            "image": "/animation/holeshot storyboard (14).png"
-        },
-        {
-            "title": "Holeshot Storyboard Scene 15",
-            "description": "Fifteenth scene of the holeshot storyboard sequence.",
-            "image": "/animation/holeshot storyboard (15).png"
-        },
-        {
-            "title": "Holeshot Storyboard Scene 16",
-            "description": "Sixteenth scene of the holeshot storyboard sequence.",
-            "image": "/animation/holeshot storyboard (16).png"
-        },
-        {
-            "title": "Holeshot Storyboard Scene 17",
-            "description": "Seventeenth scene of the holeshot storyboard sequence.",
-            "image": "/animation/holeshot storyboard (17).png"
-        },
-        {
-            "title": "Holeshot Storyboard Scene 18",
-            "description": "Eighteenth scene of the holeshot storyboard sequence.",
-            "image": "/animation/holeshot storyboard (18).png"
-        },
-        {
-            "title": "Holeshot Storyboard Scene 19",
-            "description": "Nineteenth scene of the holeshot storyboard sequence.",
-            "image": "/animation/holeshot storyboard (19).png"
-        },
-        {
-            "title": "Pea King Scene 1",
-            "description": "First scene from the Pea King animation project.",
-            "image": "/animation/pea king (1).jpg"
-        },
-        {
-            "title": "Pea King Scene 2",
-            "description": "Second scene from the Pea King animation project.",
-            "image": "/animation/pea king (2).jpg"
+            "title": "Cinematic Montage",
+            "description": "A high-quality cinematic edit.",
+            "image": "/animation/25.png"
         },
         {
             "title": "Pea King Scene 3",
@@ -1306,14 +1126,89 @@ export const portfolioProjects: Record<
             "image": "/animation/pea king (3).jpg"
         },
         {
-            "title": "Pea King House",
-            "description": "House scene from the Pea King animation project.",
-            "image": "/animation/pea king house.png"
+            "title": "Cinematic Montage",
+            "description": "A high-quality cinematic edit.",
+            "image": "/animation/3.png"
         },
         {
-            "title": "Pea King Scenes Collection 1",
-            "description": "First collection of scenes from the Pea King project.",
-            "image": "/animation/Pea_King scenes-1.png"
+            "title": "Cinematic Montage",
+            "description": "A high-quality cinematic edit.",
+            "image": "/animation/54.png"
+        },
+        {
+            "title": "Holeshot Storyboard Scene 2",
+            "description": "Second scene of the holeshot storyboard sequence.",
+            "image": "/animation/holeshot storyboard (2).png"
+        },
+        {
+            "title": "Cinematic Montage",
+            "description": "A high-quality cinematic edit.",
+            "image": "/animation/29.png"
+        },
+        {
+            "title": "Cinematic Montage",
+            "description": "A high-quality cinematic edit.",
+            "image": "/animation/38.png"
+        },
+        {
+            "title": "Cinematic Montage",
+            "description": "A high-quality cinematic edit.",
+            "video": "https://www.youtube.com/embed/WaEnkV6gY0o"
+        },
+        {
+            "title": "Cinematic Montage",
+            "description": "A high-quality cinematic edit.",
+            "image": "/animation/40.png"
+        },
+        {
+            "title": "Holeshot Storyboard Scene 15",
+            "description": "Fifteenth scene of the holeshot storyboard sequence.",
+            "image": "/animation/holeshot storyboard (15).png"
+        },
+        {
+            "title": "Cinematic Montage",
+            "description": "A high-quality cinematic edit.",
+            "image": "/animation/1.png"
+        },
+        {
+            "title": "Cinematic Montage",
+            "description": "A high-quality cinematic edit.",
+            "image": "/animation/16.png"
+        },
+        {
+            "title": "Cinematic Montage",
+            "description": "A high-quality cinematic edit.",
+            "image": "/animation/12.png"
+        },
+        {
+            "title": "Cinematic Montage",
+            "description": "A high-quality cinematic edit.",
+            "image": "/animation/55.png"
+        },
+        {
+            "title": "Holeshot Storyboard Scene 18",
+            "description": "Eighteenth scene of the holeshot storyboard sequence.",
+            "image": "/animation/holeshot storyboard (18).png"
+        },
+        {
+            "title": "Cinematic Montage",
+            "description": "A high-quality cinematic edit.",
+            "image": "/animation/20.png"
+        },
+        {
+            "title": "Holeshot Storyboard Scene 7",
+            "description": "Seventh scene of the holeshot storyboard sequence.",
+            "image": "/animation/holeshot storyboard (7).png"
+        },
+        {
+            "title": "Cinematic Montage",
+            "description": "A high-quality cinematic edit.",
+            "image": "/animation/52.png"
+        },
+        {
+            "title": "Cinematic Montage",
+            "description": "A high-quality cinematic edit.",
+            "image": "/animation/24.png"
         },
         {
             "title": "Pea King Scenes Collection 4",
@@ -1321,14 +1216,79 @@ export const portfolioProjects: Record<
             "image": "/animation/Pea_King scenes-4.png"
         },
         {
+            "title": "Cinematic Montage",
+            "description": "A high-quality cinematic edit.",
+            "image": "/animation/6.png"
+        },
+        {
+            "title": "Cinematic Montage",
+            "description": "A high-quality cinematic edit.",
+            "image": "/animation/10.png"
+        },
+        {
+            "title": "Holeshot Storyboard Scene 13",
+            "description": "Thirteenth scene of the holeshot storyboard sequence.",
+            "image": "/animation/holeshot storyboard (13).png"
+        },
+        {
+            "title": "Cinematic Montage",
+            "description": "A high-quality cinematic edit.",
+            "image": "/animation/47.png"
+        },
+        {
+            "title": "Cinematic Montage",
+            "description": "A high-quality cinematic edit.",
+            "image": "/animation/35.png"
+        },
+        {
+            "title": "Cinematic Montage",
+            "description": "A high-quality cinematic edit.",
+            "image": "/animation/4.png"
+        },
+        {
+            "title": "Holeshot Storyboard Scene 10",
+            "description": "Tenth scene of the holeshot storyboard sequence.",
+            "image": "/animation/holeshot storyboard (10).png"
+        },
+        {
+            "title": "Cinematic Montage",
+            "description": "A high-quality cinematic edit.",
+            "image": "/animation/59.png"
+        },
+        {
+            "title": "Cinematic Montage",
+            "description": "A high-quality cinematic edit.",
+            "image": "/animation/43.png"
+        },
+        {
+            "title": "Holeshot Storyboard Scene 4",
+            "description": "Fourth scene of the holeshot storyboard sequence.",
+            "image": "/animation/holeshot storyboard (4).png"
+        },
+        {
             "title": "Pea King Scenes Collection 5",
             "description": "Fifth collection of scenes from the Pea King project.",
             "image": "/animation/Pea_King scenes-5.png"
         },
         {
-            "title": "Pea King Scenes Collection 7",
-            "description": "Seventh collection of scenes from the Pea King project.",
-            "image": "/animation/Pea_King scenes-7.png"
+            "title": "Cinematic Montage",
+            "description": "A high-quality cinematic edit.",
+            "image": "/animation/9.png"
+        },
+        {
+            "title": "Cinematic Montage",
+            "description": "A high-quality cinematic edit.",
+            "image": "/animation/51.png"
+        },
+        {
+            "title": "Holeshot Storyboard Scene 17",
+            "description": "Seventeenth scene of the holeshot storyboard sequence.",
+            "image": "/animation/holeshot storyboard (17).png"
+        },
+        {
+            "title": "Cinematic Montage",
+            "description": "A high-quality cinematic edit.",
+            "image": "/animation/18.png"
         }
     ],
 
@@ -1598,6 +1558,11 @@ export const portfolioProjects: Record<
             "title": "Cinematic Montage",
             "description": "A high-quality cinematic edit.",
             "image": "/social/2.png"
+        },
+        {
+            title: "E-commerce Website",
+            description: "Designed and developed a fully responsive online store.",
+            image: "/website/For port.png",
         },
         {
             "title": "Cinematic Montage",
@@ -1880,6 +1845,6 @@ export const serviceDescriptions: Record<string, string> = {
     "website-design": "Creating and improving websites to showcase your brand, company, portfolio, event, product or status.",
     "graphic-design": "Graphic design services including logos, flyers, album art, book covers, pitch decks, business cards, product design, clothing, merch, banners, thumbnails, manuals, posters, packaging, stationery, programs, PowerPoint presentations, sketches, documents and creative artwork.",
     "animation": "Creating 2D and 3D animation, characters, cartoons, art, environments, rigging, modeling and motion to give life to your vision.",
-    "video-editing": "Video editing including film editing, wedding footage, reels, music videos, songs, YouTube uploads and social media posts. Services such as cutting, add text, captions, subtitles, grading, color correction, music, audio engineering VFX, and sound mixing.",
+    "video-editing": "Video editing including film editing, wedding footage, reels, music videos, songs, YouTube uploads and social media posts. Services such as cutting, add text, captions, subtitles, grading, color correction, music, audio engineering, VFX, and sound mixing.",
     "photo-editing": "Photo editing including image restoration, photo albums, slideshows, portfolios, headshots. Services such as remove background, replace people, retouching, color balance, effects and change fonts.",
 };

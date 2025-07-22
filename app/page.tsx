@@ -222,9 +222,9 @@ export default function Home() {
           <div className="space-y-16">
             {/* Hero title */}
             <div className="text-center space-y-8">
-              <h1 className="text-3xl md:text-8xl font-light tracking-tight">
+              <h1 className="text-3xl md:text-5xl font-light tracking-tight">
                 <span className="text-gray-900 font-light">MAKE</span>
-                <span className="text-gray-500 mx-4 md:mx-8 font-thin">IT</span>
+                <span className="text-gray-500  font-thin">IT</span>
                 <span className="text-gray-600 mx-2 font-thin">&</span>
                 <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent font-medium">
                   MARKET
@@ -277,7 +277,7 @@ export default function Home() {
 
                       {/* Content */}
                       <div className="p-6 space-y-4">
-                        <h3 className="text-xl font-semibold text-gray-900 tracking-wide">
+                        <h3 className="text-lg font-semibold text-gray-900 tracking-wide">
                           {item.title}
                         </h3>
                         <p className="text-sm text-gray-600 leading-relaxed line-clamp-3">
