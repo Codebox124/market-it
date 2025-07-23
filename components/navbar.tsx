@@ -98,7 +98,7 @@ export default function Navbar() {
                   Make It & Market
                 </h1>
                 <p className="text-xs text-gray-600 group-hover:text-gray-700 transition-colors duration-300">
-                  Creative Solutions
+                Content & Marketing 
                 </p>
               </div>
             </Link>
