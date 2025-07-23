@@ -222,14 +222,32 @@ export default function Home() {
           <div className="space-y-16">
             {/* Hero title */}
             <div className="text-center space-y-8">
-              <h1 className="text-3xl md:text-5xl font-light tracking-tight">
-                <span className="text-gray-900 font-light">MAKE</span>
-                <span className="text-gray-500  font-thin">IT</span>
-                <span className="text-gray-600 mx-2 font-thin">&</span>
-                <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent font-medium">
-                  MARKET
-                </span>
-              </h1>
+              <motion.h1
+                variants={fadeIn}
+                custom={0}
+                className="text-3xl md:text-7xl border-4 border-white/30 backdrop-blur-sm flex justify-center items-center py-4 px-6 font-extrabold leading-tight text-transparent bg-clip-text  bg-gradient-to-r from-emerald-300 to-emerald-500 "
+                style={{
+                  textShadow: "0 0 15px rgba(255,255,255,0.5), 0 0 30px rgba(59,130,246,0.5)",
+                  boxShadow: "0 0 30px rgba(59,130,246,0.3), inset 0 0 20px rgba(59,130,246,0.2)"
+                }}
+              >
+                MAKE <span className="px-5">IT</span>
+                <motion.span
+                  className=" bg-clip-text pr-6 bg-gradient-to-r text-white"
+                  animate={{
+                    textShadow: ["0 0 10px rgba(16,185,129,0.5)", "0 0 20px rgba(16,185,129,0.8)", "0 0 10px rgba(16,185,129,0.5)"]
+                  }}
+                  transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+                > & </motion.span>
+
+                <motion.span
+                  className="text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-blue-600"
+                  animate={{
+                    textShadow: ["0 0 10px rgba(59,130,246,0.5)", "0 0 20px rgba(59,130,246,0.8)", "0 0 10px rgba(59,130,246,0.5)"]
+                  }}
+                  transition={{ duration: 4, repeat: Infinity, ease: "easeInOut", delay: 2 }}
+                > MARKET</motion.span>
+              </motion.h1>
 
               <div className="max-w-4xl mx-auto">
                 <p className="text-lg md:text-xl text-gray-600 leading-relaxed font-light">
@@ -299,8 +317,8 @@ export default function Home() {
               ))}
             </div>
 
-           
-           
+
+
           </div>
         </div>
       </section>
