@@ -90,17 +90,10 @@ export default function Navbar() {
           >
             <Link href="/" className="flex items-center space-x-3 group">
               <div className="relative">
-               <img width={35} height={35} alt="logo" src="/logo.png" />
-                <div className="absolute inset-0 bg-gradient-to-br from-emerald-400 via-blue-500 to-purple-600 rounded-xl opacity-0 group-hover:opacity-20 blur-xl transition-opacity duration-300"></div>
+               <img width={150} height={50} alt="logo" src="/logo.png" />
+               
               </div>
-              <div className="hidden sm:block">
-                <h1 className="text-xl font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors duration-300">
-                  Make It & Market
-                </h1>
-                <p className="text-xs text-gray-600 group-hover:text-gray-700 transition-colors duration-300">
-                Content & Marketing 
-                </p>
-              </div>
+              
             </Link>
           </motion.div>
 
