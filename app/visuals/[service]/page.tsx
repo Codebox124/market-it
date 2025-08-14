@@ -215,7 +215,7 @@ export default function PortfolioPage() {
                                         >
                                             <div className="absolute -inset-0.5 bg-gradient-to-r from-blue-200/20 via-purple-200/20 to-cyan-200/20 rounded-2xl blur opacity-0 group-hover:opacity-100 transition duration-500"></div>
                                             <div className="relative overflow-hidden rounded-2xl bg-white/90 backdrop-blur-sm border border-gray-200/60 hover:border-blue-300/60 transition-all duration-500 hover:transform hover:scale-105 shadow-lg shadow-gray-200/50 hover:shadow-xl hover:shadow-gray-300/50">
-                                                <div className="relative p-3">
+                                                <div className="relative">
                                                     {project.video ? (
                                                         <div className="relative">
                                                             <iframe
