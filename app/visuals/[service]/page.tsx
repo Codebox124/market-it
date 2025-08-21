@@ -12,7 +12,7 @@ interface Project {
 }
 
 export default function PortfolioPage() {
-      const params = useParams();
+    const params = useParams();
     const service = Array.isArray(params?.service) ? params.service.join("-") : params?.service ?? "";
     const formattedService = service.replace(/-/g, " ");
     const description = serviceDescriptions[service] || "Discover our work in this category.";
@@ -33,7 +33,7 @@ export default function PortfolioPage() {
 
         return () => clearTimeout(timer);
     }, [projects]);
-    
+
     // Function to modify video URLs to disable autoplay
     const getVideoUrl = (url: string | undefined): string | undefined => {
         if (!url) return url;
@@ -105,8 +105,8 @@ export default function PortfolioPage() {
                                 {/* Featured large video */}
                                 {projects.some((p) => p.video) && (
                                     <div className="w-full max-w-4xl mx-auto mb-16">
-                                        <div 
-                                            className="relative group cursor-pointer" 
+                                        <div
+                                            className="relative group cursor-pointer"
                                             onClick={() => openModal(projects.find((p) => p.video)!)}
                                             style={{
                                                 opacity: visibleProjects.includes(0) ? 1 : 0,
@@ -134,7 +134,7 @@ export default function PortfolioPage() {
                                                             </div>
                                                         </div>
                                                     </div>
-                                                   
+
                                                 </div>
                                             </div>
                                         </div>
@@ -191,7 +191,7 @@ export default function PortfolioPage() {
                                                             </div>
                                                         </div>
                                                     )}
-                                                   
+
                                                 </div>
                                             </div>
                                         </div>
@@ -250,7 +250,7 @@ export default function PortfolioPage() {
                                                             </div>
                                                         </div>
                                                     )}
-                                                   
+
                                                 </div>
                                             </div>
                                         </div>
@@ -314,7 +314,7 @@ export default function PortfolioPage() {
                                         className="rounded-2xl w-full max-h-[70vh] object-contain shadow-2xl mx-auto"
                                     />
                                 )}
-                               
+
                             </div>
                         </div>
                     </div>

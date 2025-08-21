@@ -171,313 +171,313 @@ export const portfolioProjects: Record<
             image: "/website/website port 4.png",
         },
     ],
-"photo-editing": [
-    {
-        title: "Food Delivery App",
-        description: "Developed a cross-platform food delivery application.",
-        image: "/photo/_1260573 edit.png",
-    },
-    {
-        title: "Surreal Photo Manipulation",
-        description: "Surreal and abstract photo manipulation techniques.",
-        image: "/photo/portfolio - photo FX22.jpg"
-    },
-    {
-        title: "Character & Lifestyle Photography",
-        description: "Creative character photography with professional editing and enhancement.",
-        image: "/photo/joker_life_hero (13).jpg",
-    },
-    {
-        title: "Digital Photo Enhancement",
-        description: "Digital photo enhancement with professional results.",
-        image: "/photo/retouch_cleanup0015.jpg",
-    },
-    {
-        title: "Studio Photography Color Grade",
-        description: "Professional studio photography color grading and enhancement.",
-        image: "/photo/portfolio - photo colorGRADE04.jpg",
-    },
-    {
-        title: "Before & After Transformations",
-        description: "Professional photo editing showcasing dramatic before and after results.",
-        image: "/photo/13 before_after.png",
-    },
-    {
-        title: "Creative Photo Effects",
-        description: "Artistic photo manipulation with unique visual effects.",
-        image: "/photo/portfolio - photo FX12.jpg"
-    },
-    {
-        title: "Professional Headshot Editing",
-        description: "Corporate and professional headshot retouching.",
-        image: "/photo/pic5.png",
-    },
-    {
-        title: "Travel Photography Enhancement",
-        description: "Travel and landscape photography color correction.",
-        image: "/photo/pic8.png",
-    },
-    {
-        title: "Celebrity & Entertainment Photography",
-        description: "High-end celebrity photo editing and enhancement for entertainment industry.",
-        image: "/photo/photo 3 WAYNE before after.png",
-    },
-    {
-        title: "Architectural Photography",
-        description: "Professional architectural and real estate photography enhancement.",
-        image: "/photo/shed before_after.png",
-    },
-    {
-        title: "Fashion Photography Editing",
-        description: "High-end fashion photography retouching and styling.",
-        image: "/photo/pic4.png",
-    },
-    {
-        title: "Modern Color Grading",
-        description: "Contemporary color grading techniques for modern photography.",
-        image: "/photo/portfolio - photo colorGRADE25.jpg",
-    },
-    {
-        title: "Creative Photo Processing",
-        description: "Creative photo processing with artistic enhancement techniques.",
-        image: "/photo/retouch_cleanup0008.jpg",
-    },
-    {
-        title: "Street Photography Enhancement",
-        description: "Urban street photography color correction and enhancement.",
-        image: "/photo/IMG-5831.jpg",
-    },
-    {
-        title: "Professional Portrait Enhancement",
-        description: "High-end portrait retouching and enhancement techniques.",
-        image: "/photo/DSC04234 before_after.png",
-    },
-    {
-        title: "Music Industry Photography",
-        description: "Creative photo editing for music artists and albums.",
-        image: "/photo/music pics 2.png",
-    },
-    {
-        title: "Experimental Photo Effects",
-        description: "Experimental and avant-garde photo manipulation techniques.",
-        image: "/photo/portfolio - photo FX30.jpg"
-    },
-    {
-        title: "Commercial Photo Enhancement",
-        description: "Commercial photography editing and professional enhancement services.",
-        image: "/photo/retouch_cleanup0001.jpg",
-    },
-    {
-        title: "Vintage Color Grading",
-        description: "Vintage-inspired color grading and film emulation.",
-        image: "/photo/portfolio - photo colorGRADE24.jpg",
-    },
-    {
-        title: "Portrait Photography Enhancement",
-        description: "Professional portrait editing with natural skin retouching.",
-        image: "/photo/pic2.png",
-    },
-    {
-        title: "Digital Art Photography",
-        description: "Artistic photo manipulation with creative effects.",
-        image: "/photo/portfolio - photo FX04.jpg"
-    },
-    {
-        title: "Professional Color Grading",
-        description: "Advanced color grading and correction for commercial photography.",
-        image: "/photo/portfolio - photo colorGRADE09.jpg",
-    },
-    {
-        title: "Wedding Photography Editing",
-        description: "Romantic wedding photography enhancement and color correction.",
-        image: "/photo/pic7.png",
-    },
-    {
-        title: "Nature Photography Editing",
-        description: "Natural landscape and wildlife photography enhancement.",
-        image: "/photo/DSC00342 edit.png",
-    },
-    {
-        title: "Dramatic Photo Effects",
-        description: "Dramatic lighting and mood enhancement for artistic photography.",
-        image: "/photo/portfolio - photo FX17.jpg"
-    },
-    {
-        title: "Advanced Photo Cleanup",
-        description: "Advanced photo cleanup and restoration services.",
-        image: "/photo/retouch_cleanup0014.jpg",
-    },
-    {
-        title: "Real Estate Portfolio",
-        description: "Professional real estate photography and design showcase.",
-        image: "/photo/real estate port.png"
-    },
-    {
-        title: "Sports Photography Editing",
-        description: "Dynamic sports photography enhancement and color correction.",
-        image: "/photo/pic9.png",
-    },
-    {
-        title: "Creative Photo Manipulation",
-        description: "Artistic photo manipulation with unique visual effects and creativity.",
-        image: "/photo/IMG_2563.JPG",
-    },
-    {
-        title: "Corporate Photography Enhancement",
-        description: "Business and corporate photography professional editing.",
-        image: "/photo/pic10.png",
-    },
-    {
-        title: "Lifestyle Photography Enhancement",
-        description: "Natural lifestyle photo enhancement and color correction.",
-        image: "/photo/photo WAYNE before after.png",
-    },
-    {
-        title: "Abstract Photo Art",
-        description: "Abstract and experimental photo manipulation art.",
-        image: "/photo/portfolio - photo FX23.jpg"
-    },
-    {
-        title: "Professional Photo Editing",
-        description: "High-quality professional photo editing and enhancement.",
-        image: "/photo/retouch_cleanup0007.jpg",
-    },
-    {
-        title: "Artistic Color Enhancement",
-        description: "Creative color grading for artistic and commercial projects.",
-        image: "/photo/portfolio - photo colorGRADE20.jpg",
-    },
-    {
-        title: "Digital Photo Artistry",
-        description: "Advanced digital artistry and photo manipulation.",
-        image: "/photo/portfolio - photo FX26.jpg"
-    },
-    {
-        title: "Beauty & Fashion Retouching",
-        description: "Professional beauty and fashion photography editing with natural enhancement.",
-        image: "/photo/minela 1-17 before_after.png",
-    },
-    {
-        title: "Color Grading Studio Work",
-        description: "Professional color correction and grading for commercial photography.",
-        image: "/photo/portfolio - photo colorGRADE00.jpg",
-    },
-    {
-        title: "Outdoor Photography Enhancement",
-        description: "Natural outdoor photography color correction and enhancement.",
-        image: "/photo/DSC00327 edit.png",
-    },
-    {
-        title: "Professional Headshot Editing",
-        description: "Corporate and professional headshot retouching with natural results.",
-        image: "/photo/photo Vee before after.png",
-    },
-    {
-        title: "Commercial Photo Retouching",
-        description: "Professional commercial photography editing and enhancement.",
-        image: "/photo/pic.png",
-    },
-    {
-        title: "Dramatic Lighting Enhancement",
-        description: "Dramatic lighting and mood enhancement for portraits.",
-        image: "/photo/portfolio - photo colorGRADE19.jpg",
-    },
-    {
-        title: "Health & Fitness Photography",
-        description: "Fitness and lifestyle photography editing for health brands.",
-        image: "/photo/_1260944 edit.png",
-    },
-    {
-        title: "Creative Visual Storytelling",
-        description: "Narrative-driven photo manipulation and storytelling.",
-        image: "/photo/portfolio - photo FX20.jpg"
-    },
-    {
-        title: "Product Photography Enhancement",
-        description: "E-commerce and product photography editing and enhancement.",
-        image: "/photo/pic6.png",
-    },
-    {
-        title: "Artistic Portrait Enhancement",
-        description: "Artistic portrait photography with creative enhancement and effects.",
-        image: "/photo/star photo before_after.png",
-    },
-    {
-        title: "Lifestyle Brand Photography",
-        description: "Brand-focused lifestyle photography color grading.",
-        image: "/photo/portfolio - photo colorGRADE13.jpg",
-    },
-    {
-        title: "Professional Color Correction",
-        description: "Advanced color grading for commercial and artistic photography.",
-        image: "/photo/portfolio - photo colorGRADE02.jpg",
-    },
-    {
-        title: "Cinematic Color Grading",
-        description: "Film-inspired cinematic color grading for photography.",
-        image: "/photo/portfolio - photo colorGRADE15.jpg",
-    },
-    {
-        title: "Advanced Photo Retouching",
-        description: "Professional photo retouching with attention to detail and natural results.",
-        image: "/photo/retouch_cleanup0000.jpg",
-    },
-    {
-        title: "Commercial Photography",
-        description: "Commercial and product photography professional editing services.",
-        image: "/photo/trucking.png",
-    },
-    {
-        title: "Portrait Color Grading",
-        description: "Professional portrait color grading and skin tone correction.",
-        image: "/photo/portfolio - photo colorGRADE17.jpg",
-    },
-    {
-        title: "Digital Photo Restoration",
-        description: "Professional photo restoration and cleanup services.",
-        image: "/photo/retouch_cleanup0003.jpg",
-    },
-    {
-        title: "Conceptual Photo Art",
-        description: "Artistic conceptual photography with creative manipulation.",
-        image: "/photo/portfolio - photo FX14.jpg"
-    },
-    {
-        title: "Fantasy Photo Manipulation",
-        description: "Creative fantasy and surreal photo effects.",
-        image: "/photo/portfolio - photo FX13.jpg"
-    },
-    {
-        title: "Fine Art Photography",
-        description: "Fine art photography color grading and artistic enhancement.",
-        image: "/photo/portfolio - photo colorGRADE07.jpg",
-    },
-    {
-        title: "Professional Portrait Editing",
-        description: "High-end portrait retouching and enhancement.",
-        image: "/photo/photo [Lisa Kinzer] AFTER.png",
-    },
-    {
-        title: "Lifestyle Photography Editing",
-        description: "Natural lifestyle photo enhancement and color correction.",
-        image: "/photo/portfolio - photo colorGRADE01.jpg",
-    },
-    {
-        title: "Photo Edit FX - Creative Manipulation",
-        description: "Creative photo manipulation with special effects.",
-        image: "/photo/portfolio - photo FX03.jpg"
-    },
-    {
-        title: "Professional Photo Restoration",
-        description: "Professional photo restoration and enhancement services.",
-        image: "/photo/retouch_cleanup0021.jpg",
-    },
-    {
-        title: "Artistic Color Grading",
-        description: "Creative color grading for artistic and commercial projects.",
-        image: "/photo/portfolio - photo colorGRADE10.jpg",
-    }
-],
+    "photo-editing": [
+        {
+            title: "Food Delivery App",
+            description: "Developed a cross-platform food delivery application.",
+            image: "/photo/_1260573 edit.png",
+        },
+        {
+            title: "Surreal Photo Manipulation",
+            description: "Surreal and abstract photo manipulation techniques.",
+            image: "/photo/portfolio - photo FX22.jpg"
+        },
+        {
+            title: "Character & Lifestyle Photography",
+            description: "Creative character photography with professional editing and enhancement.",
+            image: "/photo/joker_life_hero (13).jpg",
+        },
+        {
+            title: "Digital Photo Enhancement",
+            description: "Digital photo enhancement with professional results.",
+            image: "/photo/retouch_cleanup0015.jpg",
+        },
+        {
+            title: "Studio Photography Color Grade",
+            description: "Professional studio photography color grading and enhancement.",
+            image: "/photo/portfolio - photo colorGRADE04.jpg",
+        },
+        {
+            title: "Before & After Transformations",
+            description: "Professional photo editing showcasing dramatic before and after results.",
+            image: "/photo/13 before_after.png",
+        },
+        {
+            title: "Creative Photo Effects",
+            description: "Artistic photo manipulation with unique visual effects.",
+            image: "/photo/portfolio - photo FX12.jpg"
+        },
+        {
+            title: "Professional Headshot Editing",
+            description: "Corporate and professional headshot retouching.",
+            image: "/photo/pic5.png",
+        },
+        {
+            title: "Travel Photography Enhancement",
+            description: "Travel and landscape photography color correction.",
+            image: "/photo/pic8.png",
+        },
+        {
+            title: "Celebrity & Entertainment Photography",
+            description: "High-end celebrity photo editing and enhancement for entertainment industry.",
+            image: "/photo/photo 3 WAYNE before after.png",
+        },
+        {
+            title: "Architectural Photography",
+            description: "Professional architectural and real estate photography enhancement.",
+            image: "/photo/shed before_after.png",
+        },
+        {
+            title: "Fashion Photography Editing",
+            description: "High-end fashion photography retouching and styling.",
+            image: "/photo/pic4.png",
+        },
+        {
+            title: "Modern Color Grading",
+            description: "Contemporary color grading techniques for modern photography.",
+            image: "/photo/portfolio - photo colorGRADE25.jpg",
+        },
+        {
+            title: "Creative Photo Processing",
+            description: "Creative photo processing with artistic enhancement techniques.",
+            image: "/photo/retouch_cleanup0008.jpg",
+        },
+        {
+            title: "Street Photography Enhancement",
+            description: "Urban street photography color correction and enhancement.",
+            image: "/photo/IMG-5831.jpg",
+        },
+        {
+            title: "Professional Portrait Enhancement",
+            description: "High-end portrait retouching and enhancement techniques.",
+            image: "/photo/DSC04234 before_after.png",
+        },
+        {
+            title: "Music Industry Photography",
+            description: "Creative photo editing for music artists and albums.",
+            image: "/photo/music pics 2.png",
+        },
+        {
+            title: "Experimental Photo Effects",
+            description: "Experimental and avant-garde photo manipulation techniques.",
+            image: "/photo/portfolio - photo FX30.jpg"
+        },
+        {
+            title: "Commercial Photo Enhancement",
+            description: "Commercial photography editing and professional enhancement services.",
+            image: "/photo/retouch_cleanup0001.jpg",
+        },
+        {
+            title: "Vintage Color Grading",
+            description: "Vintage-inspired color grading and film emulation.",
+            image: "/photo/portfolio - photo colorGRADE24.jpg",
+        },
+        {
+            title: "Portrait Photography Enhancement",
+            description: "Professional portrait editing with natural skin retouching.",
+            image: "/photo/pic2.png",
+        },
+        {
+            title: "Digital Art Photography",
+            description: "Artistic photo manipulation with creative effects.",
+            image: "/photo/portfolio - photo FX04.jpg"
+        },
+        {
+            title: "Professional Color Grading",
+            description: "Advanced color grading and correction for commercial photography.",
+            image: "/photo/portfolio - photo colorGRADE09.jpg",
+        },
+        {
+            title: "Wedding Photography Editing",
+            description: "Romantic wedding photography enhancement and color correction.",
+            image: "/photo/pic7.png",
+        },
+        {
+            title: "Nature Photography Editing",
+            description: "Natural landscape and wildlife photography enhancement.",
+            image: "/photo/DSC00342 edit.png",
+        },
+        {
+            title: "Dramatic Photo Effects",
+            description: "Dramatic lighting and mood enhancement for artistic photography.",
+            image: "/photo/portfolio - photo FX17.jpg"
+        },
+        {
+            title: "Advanced Photo Cleanup",
+            description: "Advanced photo cleanup and restoration services.",
+            image: "/photo/retouch_cleanup0014.jpg",
+        },
+        {
+            title: "Real Estate Portfolio",
+            description: "Professional real estate photography and design showcase.",
+            image: "/photo/real estate port.png"
+        },
+        {
+            title: "Sports Photography Editing",
+            description: "Dynamic sports photography enhancement and color correction.",
+            image: "/photo/pic9.png",
+        },
+        {
+            title: "Creative Photo Manipulation",
+            description: "Artistic photo manipulation with unique visual effects and creativity.",
+            image: "/photo/IMG_2563.JPG",
+        },
+        {
+            title: "Corporate Photography Enhancement",
+            description: "Business and corporate photography professional editing.",
+            image: "/photo/pic10.png",
+        },
+        {
+            title: "Lifestyle Photography Enhancement",
+            description: "Natural lifestyle photo enhancement and color correction.",
+            image: "/photo/photo WAYNE before after.png",
+        },
+        {
+            title: "Abstract Photo Art",
+            description: "Abstract and experimental photo manipulation art.",
+            image: "/photo/portfolio - photo FX23.jpg"
+        },
+        {
+            title: "Professional Photo Editing",
+            description: "High-quality professional photo editing and enhancement.",
+            image: "/photo/retouch_cleanup0007.jpg",
+        },
+        {
+            title: "Artistic Color Enhancement",
+            description: "Creative color grading for artistic and commercial projects.",
+            image: "/photo/portfolio - photo colorGRADE20.jpg",
+        },
+        {
+            title: "Digital Photo Artistry",
+            description: "Advanced digital artistry and photo manipulation.",
+            image: "/photo/portfolio - photo FX26.jpg"
+        },
+        {
+            title: "Beauty & Fashion Retouching",
+            description: "Professional beauty and fashion photography editing with natural enhancement.",
+            image: "/photo/minela 1-17 before_after.png",
+        },
+        {
+            title: "Color Grading Studio Work",
+            description: "Professional color correction and grading for commercial photography.",
+            image: "/photo/portfolio - photo colorGRADE00.jpg",
+        },
+        {
+            title: "Outdoor Photography Enhancement",
+            description: "Natural outdoor photography color correction and enhancement.",
+            image: "/photo/DSC00327 edit.png",
+        },
+        {
+            title: "Professional Headshot Editing",
+            description: "Corporate and professional headshot retouching with natural results.",
+            image: "/photo/photo Vee before after.png",
+        },
+        {
+            title: "Commercial Photo Retouching",
+            description: "Professional commercial photography editing and enhancement.",
+            image: "/photo/pic.png",
+        },
+        {
+            title: "Dramatic Lighting Enhancement",
+            description: "Dramatic lighting and mood enhancement for portraits.",
+            image: "/photo/portfolio - photo colorGRADE19.jpg",
+        },
+        {
+            title: "Health & Fitness Photography",
+            description: "Fitness and lifestyle photography editing for health brands.",
+            image: "/photo/_1260944 edit.png",
+        },
+        {
+            title: "Creative Visual Storytelling",
+            description: "Narrative-driven photo manipulation and storytelling.",
+            image: "/photo/portfolio - photo FX20.jpg"
+        },
+        {
+            title: "Product Photography Enhancement",
+            description: "E-commerce and product photography editing and enhancement.",
+            image: "/photo/pic6.png",
+        },
+        {
+            title: "Artistic Portrait Enhancement",
+            description: "Artistic portrait photography with creative enhancement and effects.",
+            image: "/photo/star photo before_after.png",
+        },
+        {
+            title: "Lifestyle Brand Photography",
+            description: "Brand-focused lifestyle photography color grading.",
+            image: "/photo/portfolio - photo colorGRADE13.jpg",
+        },
+        {
+            title: "Professional Color Correction",
+            description: "Advanced color grading for commercial and artistic photography.",
+            image: "/photo/portfolio - photo colorGRADE02.jpg",
+        },
+        {
+            title: "Cinematic Color Grading",
+            description: "Film-inspired cinematic color grading for photography.",
+            image: "/photo/portfolio - photo colorGRADE15.jpg",
+        },
+        {
+            title: "Advanced Photo Retouching",
+            description: "Professional photo retouching with attention to detail and natural results.",
+            image: "/photo/retouch_cleanup0000.jpg",
+        },
+        {
+            title: "Commercial Photography",
+            description: "Commercial and product photography professional editing services.",
+            image: "/photo/trucking.png",
+        },
+        {
+            title: "Portrait Color Grading",
+            description: "Professional portrait color grading and skin tone correction.",
+            image: "/photo/portfolio - photo colorGRADE17.jpg",
+        },
+        {
+            title: "Digital Photo Restoration",
+            description: "Professional photo restoration and cleanup services.",
+            image: "/photo/retouch_cleanup0003.jpg",
+        },
+        {
+            title: "Conceptual Photo Art",
+            description: "Artistic conceptual photography with creative manipulation.",
+            image: "/photo/portfolio - photo FX14.jpg"
+        },
+        {
+            title: "Fantasy Photo Manipulation",
+            description: "Creative fantasy and surreal photo effects.",
+            image: "/photo/portfolio - photo FX13.jpg"
+        },
+        {
+            title: "Fine Art Photography",
+            description: "Fine art photography color grading and artistic enhancement.",
+            image: "/photo/portfolio - photo colorGRADE07.jpg",
+        },
+        {
+            title: "Professional Portrait Editing",
+            description: "High-end portrait retouching and enhancement.",
+            image: "/photo/photo [Lisa Kinzer] AFTER.png",
+        },
+        {
+            title: "Lifestyle Photography Editing",
+            description: "Natural lifestyle photo enhancement and color correction.",
+            image: "/photo/portfolio - photo colorGRADE01.jpg",
+        },
+        {
+            title: "Photo Edit FX - Creative Manipulation",
+            description: "Creative photo manipulation with special effects.",
+            image: "/photo/portfolio - photo FX03.jpg"
+        },
+        {
+            title: "Professional Photo Restoration",
+            description: "Professional photo restoration and enhancement services.",
+            image: "/photo/retouch_cleanup0021.jpg",
+        },
+        {
+            title: "Artistic Color Grading",
+            description: "Creative color grading for artistic and commercial projects.",
+            image: "/photo/portfolio - photo colorGRADE10.jpg",
+        }
+    ],
 
     "graphic-design": [
         {
@@ -763,7 +763,7 @@ export const portfolioProjects: Record<
         {
             "title": "BJ Split Logo Design",
             "description": "Creative split design logo with pink and blue color scheme and modern styling.",
-            "image": "/graphic/logo BJ split pink l blue R.png"
+            "image": "/graphic/logoBg.png"
         },
         {
             "title": "Somer Writing Portfolio",
