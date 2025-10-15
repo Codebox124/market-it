@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useState, useEffect } from "react";
-import { Menu, X, Home, User, Briefcase, Mail, ChevronDown } from "lucide-react";
+import { Menu, X, Home, User, Briefcase, Mail, ChevronDown, Book } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 
@@ -14,6 +14,7 @@ export default function Navbar() {
   const navItems = [
     { name: "Home", href: "/", icon: Home },
     { name: "Contact", href: "/contact", icon: Mail },
+    { name: "Booking", href: "/booking", icon: Book },
   ];
 
   useEffect(() => {
@@ -26,8 +27,8 @@ export default function Navbar() {
 
   const navVariants = {
     hidden: { y: -100, opacity: 0 },
-    visible: { 
-      y: 0, 
+    visible: {
+      y: 0,
       opacity: 1,
       transition: {
         duration: 0.6,
@@ -37,7 +38,7 @@ export default function Navbar() {
   };
 
   const mobileMenuVariants = {
-    hidden: { 
+    hidden: {
       opacity: 0,
       height: 0,
       transition: {
@@ -45,7 +46,7 @@ export default function Navbar() {
         ease: "easeInOut"
       }
     },
-    visible: { 
+    visible: {
       opacity: 1,
       height: "auto",
       transition: {
@@ -73,15 +74,14 @@ export default function Navbar() {
       initial="hidden"
       animate="visible"
       variants={navVariants}
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        scrolled 
-          ? "bg-white/95 backdrop-blur-xl border-b border-gray-200/50 py-3 shadow-2xl shadow-gray-900/5" 
-          : "bg-transparent py-6"
-      }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrolled
+        ? "bg-white/95 backdrop-blur-xl border-b border-gray-200/50 py-3 shadow-2xl shadow-gray-900/5"
+        : "bg-transparent py-6"
+        }`}
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex justify-between items-center">
-          
+
           {/* Logo */}
           <motion.div
             whileHover={{ scale: 1.05 }}
@@ -90,16 +90,16 @@ export default function Navbar() {
           >
             <Link href="/" className="flex items-center space-x-3 group">
               <div className="relative">
-               <img width={150} height={50} alt="logo" src="/logo.png" />
-               
+                <img width={150} height={50} alt="logo" src="/logo.png" />
+
               </div>
-              
+
             </Link>
           </motion.div>
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center space-x-1">
-            {navItems.slice(0, -1).map((item, index) => {
+            {navItems.slice(0, 3).map((item, index) => {
               const Icon = item.icon;
               return (
                 <motion.div
@@ -111,15 +111,14 @@ export default function Navbar() {
                 >
                   <Link
                     href={item.href}
-                    className={`flex items-center space-x-2 px-4 py-2.5 rounded-xl text-sm font-medium transition-all duration-300 group relative overflow-hidden ${
-                      activeSection === item.name.toLowerCase()
-                        ? "text-emerald-600 bg-emerald-50"
-                        : "text-gray-700 hover:text-gray-900 hover:bg-gray-50"
-                    }`}
+                    className={`flex items-center space-x-2 px-4 py-2.5 rounded-xl text-sm font-medium transition-all duration-300 group relative overflow-hidden ${activeSection === item.name.toLowerCase()
+                      ? "text-emerald-600 bg-emerald-50"
+                      : "text-gray-700 hover:text-gray-900 hover:bg-gray-50"
+                      }`}
                   >
                     <Icon size={16} className="transition-transform duration-300 group-hover:scale-110" />
                     <span>{item.name}</span>
-                    
+
                   </Link>
                 </motion.div>
               );
@@ -128,7 +127,7 @@ export default function Navbar() {
 
           {/* Contact Button & Mobile Menu */}
           <div className="flex items-center space-x-4">
-            
+
             {/* Enhanced Contact Button */}
             <motion.div
               whileHover={{ scale: 1.05 }}
@@ -137,15 +136,15 @@ export default function Navbar() {
             >
               <Link
                 href="/contact"
-               
+
                 onClick={() => setIsOpen(false)}
               >
                 <span className="relative z-10 flex items-center space-x-2">
                   <Mail size={16} />
                   <span>Get Started</span>
                 </span>
-                
-                
+
+
               </Link>
             </motion.div>
 
@@ -208,11 +207,10 @@ export default function Navbar() {
                         <Link
                           href={item.href}
                           onClick={() => setIsOpen(false)}
-                          className={`flex items-center space-x-3 px-4 py-3.5 rounded-xl text-sm font-medium transition-all duration-300 group ${
-                            activeSection === item.name.toLowerCase()
-                              ? "text-emerald-600 bg-emerald-50 border border-emerald-200/50"
-                              : "text-gray-700 hover:text-gray-900 hover:bg-gray-50 border border-transparent"
-                          }`}
+                          className={`flex items-center space-x-3 px-4 py-3.5 rounded-xl text-sm font-medium transition-all duration-300 group ${activeSection === item.name.toLowerCase()
+                            ? "text-emerald-600 bg-emerald-50 border border-emerald-200/50"
+                            : "text-gray-700 hover:text-gray-900 hover:bg-gray-50 border border-transparent"
+                            }`}
                         >
                           <Icon size={18} className="transition-transform duration-300 group-hover:scale-110" />
                           <span>{item.name}</span>
