@@ -5,11 +5,14 @@ import { useState, useEffect } from "react";
 import { Menu, X, Home, User, Briefcase, Mail, ChevronDown, Book } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
+
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState("home");
+  const pathname = usePathname();
 
   const navItems = [
     { name: "Home", href: "/", icon: Home },
@@ -111,7 +114,7 @@ export default function Navbar() {
                 >
                   <Link
                     href={item.href}
-                    className={`flex items-center space-x-2 px-4 py-2.5 rounded-xl text-sm font-medium transition-all duration-300 group relative overflow-hidden ${activeSection === item.name.toLowerCase()
+                    className={`flex items-center space-x-2 px-4 py-2.5 rounded-xl text-sm font-medium transition-all duration-300 group relative overflow-hidden ${pathname === item.href
                       ? "text-emerald-600 bg-emerald-50"
                       : "text-gray-700 hover:text-gray-900 hover:bg-gray-50"
                       }`}
@@ -207,7 +210,7 @@ export default function Navbar() {
                         <Link
                           href={item.href}
                           onClick={() => setIsOpen(false)}
-                          className={`flex items-center space-x-3 px-4 py-3.5 rounded-xl text-sm font-medium transition-all duration-300 group ${activeSection === item.name.toLowerCase()
+                          className={`flex items-center space-x-3 px-4 py-3.5 rounded-xl text-sm font-medium transition-all duration-300 group ${pathname === item.href
                             ? "text-emerald-600 bg-emerald-50 border border-emerald-200/50"
                             : "text-gray-700 hover:text-gray-900 hover:bg-gray-50 border border-transparent"
                             }`}
