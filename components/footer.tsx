@@ -28,7 +28,13 @@ export default function Footer() {
 
           <div>
             <h3 className="text-xl font-semibold mb-4 text-gray-900">Our Services</h3>
-            <ul className="space-y-2">
+            <Link
+                  href="/visuals"
+                  className="text-gray-600 hover:text-gray-900 hover:text-emerald-600 transition-colors duration-200 font-bold mb-0.5"
+                >
+                  Visual :
+                </Link>
+            <ul className="space-y-0 grid grid-cols-2 gap-2 pb-1">
               <li>
                 <Link
                   href="/visuals/graphic-design"
@@ -61,6 +67,15 @@ export default function Footer() {
                   Animation
                 </Link>
               </li>
+              </ul>
+              <Link
+                  href="/marketing"
+                  className="text-gray-600 hover:text-gray-900 hover:text-emerald-600 transition-colors duration-200 font-bold mb-0.5"
+                >
+                  Marketing :
+                </Link>
+              <ul className="space-y-0 grid grid-cols-2 gap-2">
+                
               <li>
                 <Link
                   href="/marketing/website-design"
