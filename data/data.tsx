@@ -1,176 +1,8 @@
 // data/portfolioProjects.ts
-export const portfolioProjects: Record<
+export const portfolioVisualProjects: Record<
     string,
     { title: string; description: string; image?: string; video?: string }[]
 > = {
-    "website-design": [
-        {
-            title: "Portfolio Website",
-            description: "Built a personal portfolio website for a creative artist.",
-            image: "/website/port web Moses Villani.png",
-        },
-        {
-            title: "Movie Database Platform",
-            description: "Designed and developed a comprehensive movie database website.",
-            image: "/website/port site movie database.png",
-        },
-        {
-            title: "Google Analytics Tracker",
-            description: "Built a web analytics tracking dashboard interface.",
-            image: "/website/Google tracker.png",
-        },
-        {
-            title: "Caymana Landing Page",
-            description: "Created a modern landing page with clean design aesthetics.",
-            image: "/website/caymana.co Landing Page edit.png",
-        },
-        {
-            title: "Shifto Platform",
-            description: "Developed a comprehensive platform with multiple user interfaces.",
-            image: "/website/shifto 4.png",
-        },
-        {
-            title: "RUN Fitness Website",
-            description: "Designed and developed a fitness-focused responsive website.",
-            image: "/website/port web RUN.png",
-        },
-        {
-            title: "Hair Salon Website",
-            description: "Built a stylish website for hair and beauty services.",
-            image: "/website/port website hair.png",
-        },
-        {
-            title: "Desktop Application Interface",
-            description: "Created a full-page desktop application interface design.",
-            image: "/website/desktop full page update.png",
-        },
-        {
-            title: "Fence Services Website",
-            description: "Developed a professional service-based business website.",
-            image: "/website/port website fence.png",
-        },
-        {
-            title: "Movie Streaming Platform",
-            description: "Built an entertainment platform with modern UI/UX design.",
-            image: "/website/port website movies.png",
-        },
-        {
-            title: "Shifto Dashboard",
-            description: "Created an advanced dashboard interface for the Shifto platform.",
-            image: "/website/shifto 6.png",
-        },
-
-        {
-            title: "Blog Platform",
-            description: "Built a content management and blogging platform.",
-            image: "/website/blog 3.jpg",
-        },
-        {
-            title: "Vibal Web Application",
-            description: "Developed a comprehensive web application interface.",
-            image: "/website/web port vibal (2).PNG",
-        },
-        {
-            title: "RUN Fitness Extended",
-            description: "Advanced version of the fitness platform with enhanced features.",
-            image: "/website/port web RUN 2.png",
-        },
-        {
-            title: "Movie Database Extended",
-            description: "Enhanced movie database with additional functionality.",
-            image: "/website/port website movies 2.png",
-        },
-        {
-            title: "Shifto Pro",
-            description: "Premium version of the Shifto platform with advanced features.",
-            image: "/website/shifto 7.png",
-        },
-        {
-            title: "Portfolio Website Showcase",
-            description: "Modern portfolio design with interactive elements.",
-            image: "/website/site port.jpg",
-        },
-        {
-            title: "E-commerce Website",
-            description: "Designed and developed a fully responsive online store.",
-            image: "/website/image (2).png",
-        },
-        {
-            title: "Fence Services Pro",
-            description: "Advanced fence services website with enhanced features.",
-            image: "/website/port website fence 3.png",
-        },
-        {
-            title: "Corporate Website",
-            description: "Professional corporate website with modern design.",
-            image: "/website/website.png",
-        },
-        {
-            title: "E-commerce Website",
-            description: "Designed and developed a fully responsive online store.",
-            image: "/website/image (5).png",
-        },
-        {
-            title: "RUN Ultimate",
-            description: "Ultimate version of the fitness platform with all features.",
-            image: "/website/port web RUN 3.png",
-        },
-        {
-            title: "Movie Platform Premium",
-            description: "Premium movie platform with enhanced streaming capabilities.",
-            image: "/website/port website movies 3.png",
-        },
-        {
-            title: "Portfolio Website Professional",
-            description: "Professional portfolio design for corporate clients.",
-            image: "/website/port website 2.png",
-        },
-        {
-            title: "E-commerce Website",
-            description: "Designed and developed a fully responsive online store.",
-            image: "/website/image (6).png",
-        },
-        {
-            title: "Corporate Website Advanced",
-            description: "Advanced corporate website with comprehensive features.",
-            image: "/website/website 2.png",
-        },
-        {
-            title: "Portfolio Platform",
-            description: "Comprehensive portfolio platform for creative professionals.",
-            image: "/website/port website 3.png",
-        },
-        {
-            title: "E-commerce Website",
-            description: "Designed and developed a fully responsive online store.",
-            image: "/website/image (7).png",
-        },
-        {
-            title: "Business Website",
-            description: "Professional business website with modern aesthetics.",
-            image: "/website/website 3.png",
-        },
-        {
-            title: "Portfolio Showcase Pro",
-            description: "Professional portfolio showcase with interactive elements.",
-            image: "/website/website port.png",
-        },
-        {
-            title: "E-commerce Website",
-            description: "Designed and developed a fully responsive online store.",
-            image: "/website/add to WEBSITES.png",
-        },
-        {
-            title: "Corporate Portfolio",
-            description: "Corporate-focused portfolio design with professional layout.",
-            image: "/website/website port 2.png",
-        },
-        {
-            title: "Business Portfolio Advanced",
-            description: "Advanced business portfolio with comprehensive showcase.",
-            image: "/website/website port 4.png",
-        },
-    ],
     "photo-editing": [
         {
             title: "Food Delivery App",
@@ -1395,8 +1227,180 @@ export const portfolioProjects: Record<
             "image": "/animation/18.png"
         }
     ],
+}
 
+export const portfolioMarketingProjects: Record<
+    string,
+    { title: string; description: string; image?: string; video?: string }[]
+> = {
+    "website-and-apps-design": [
+        {
+            title: "Portfolio Website",
+            description: "Built a personal portfolio website for a creative artist.",
+            image: "/website/port web Moses Villani.png",
+        },
+        {
+            title: "Movie Database Platform",
+            description: "Designed and developed a comprehensive movie database website.",
+            image: "/website/port site movie database.png",
+        },
+        {
+            title: "Google Analytics Tracker",
+            description: "Built a web analytics tracking dashboard interface.",
+            image: "/website/Google tracker.png",
+        },
+        {
+            title: "Caymana Landing Page",
+            description: "Created a modern landing page with clean design aesthetics.",
+            image: "/website/caymana.co Landing Page edit.png",
+        },
+        {
+            title: "Shifto Platform",
+            description: "Developed a comprehensive platform with multiple user interfaces.",
+            image: "/website/shifto 4.png",
+        },
+        {
+            title: "RUN Fitness Website",
+            description: "Designed and developed a fitness-focused responsive website.",
+            image: "/website/port web RUN.png",
+        },
+        {
+            title: "Hair Salon Website",
+            description: "Built a stylish website for hair and beauty services.",
+            image: "/website/port website hair.png",
+        },
+        {
+            title: "Desktop Application Interface",
+            description: "Created a full-page desktop application interface design.",
+            image: "/website/desktop full page update.png",
+        },
+        {
+            title: "Fence Services Website",
+            description: "Developed a professional service-based business website.",
+            image: "/website/port website fence.png",
+        },
+        {
+            title: "Movie Streaming Platform",
+            description: "Built an entertainment platform with modern UI/UX design.",
+            image: "/website/port website movies.png",
+        },
+        {
+            title: "Shifto Dashboard",
+            description: "Created an advanced dashboard interface for the Shifto platform.",
+            image: "/website/shifto 6.png",
+        },
 
+        {
+            title: "Blog Platform",
+            description: "Built a content management and blogging platform.",
+            image: "/website/blog 3.jpg",
+        },
+        {
+            title: "Vibal Web Application",
+            description: "Developed a comprehensive web application interface.",
+            image: "/website/web port vibal (2).PNG",
+        },
+        {
+            title: "RUN Fitness Extended",
+            description: "Advanced version of the fitness platform with enhanced features.",
+            image: "/website/port web RUN 2.png",
+        },
+        {
+            title: "Movie Database Extended",
+            description: "Enhanced movie database with additional functionality.",
+            image: "/website/port website movies 2.png",
+        },
+        {
+            title: "Shifto Pro",
+            description: "Premium version of the Shifto platform with advanced features.",
+            image: "/website/shifto 7.png",
+        },
+        {
+            title: "Portfolio Website Showcase",
+            description: "Modern portfolio design with interactive elements.",
+            image: "/website/site port.jpg",
+        },
+        {
+            title: "E-commerce Website",
+            description: "Designed and developed a fully responsive online store.",
+            image: "/website/image (2).png",
+        },
+        {
+            title: "Fence Services Pro",
+            description: "Advanced fence services website with enhanced features.",
+            image: "/website/port website fence 3.png",
+        },
+        {
+            title: "Corporate Website",
+            description: "Professional corporate website with modern design.",
+            image: "/website/website.png",
+        },
+        {
+            title: "E-commerce Website",
+            description: "Designed and developed a fully responsive online store.",
+            image: "/website/image (5).png",
+        },
+        {
+            title: "RUN Ultimate",
+            description: "Ultimate version of the fitness platform with all features.",
+            image: "/website/port web RUN 3.png",
+        },
+        {
+            title: "Movie Platform Premium",
+            description: "Premium movie platform with enhanced streaming capabilities.",
+            image: "/website/port website movies 3.png",
+        },
+        {
+            title: "Portfolio Website Professional",
+            description: "Professional portfolio design for corporate clients.",
+            image: "/website/port website 2.png",
+        },
+        {
+            title: "E-commerce Website",
+            description: "Designed and developed a fully responsive online store.",
+            image: "/website/image (6).png",
+        },
+        {
+            title: "Corporate Website Advanced",
+            description: "Advanced corporate website with comprehensive features.",
+            image: "/website/website 2.png",
+        },
+        {
+            title: "Portfolio Platform",
+            description: "Comprehensive portfolio platform for creative professionals.",
+            image: "/website/port website 3.png",
+        },
+        {
+            title: "E-commerce Website",
+            description: "Designed and developed a fully responsive online store.",
+            image: "/website/image (7).png",
+        },
+        {
+            title: "Business Website",
+            description: "Professional business website with modern aesthetics.",
+            image: "/website/website 3.png",
+        },
+        {
+            title: "Portfolio Showcase Pro",
+            description: "Professional portfolio showcase with interactive elements.",
+            image: "/website/website port.png",
+        },
+        {
+            title: "E-commerce Website",
+            description: "Designed and developed a fully responsive online store.",
+            image: "/website/add to WEBSITES.png",
+        },
+        {
+            title: "Corporate Portfolio",
+            description: "Corporate-focused portfolio design with professional layout.",
+            image: "/website/website port 2.png",
+        },
+        {
+            title: "Business Portfolio Advanced",
+            description: "Advanced business portfolio with comprehensive showcase.",
+            image: "/website/website port 4.png",
+        },
+    ],
     "advertising": [
         {
             title: "Cinematic Montage",
@@ -1664,9 +1668,9 @@ export const portfolioProjects: Record<
             "image": "/social/2.png"
         },
         {
-            title: "E-commerce Website",
-            description: "Designed and developed a fully responsive online store.",
-            image: "/website/For port.png",
+            "title": "E-commerce Website",
+            "description": "Designed and developed a fully responsive online store.",
+            "image": "/website/For port.png",
         },
         {
             "title": "Cinematic Montage",
@@ -1946,9 +1950,12 @@ export const serviceDescriptions: Record<string, string> = {
     "advertising": "Find your next customer, client or supporter. Advertising online through Google, social media and email.",
     "social-media": "Social media management for your Instagram, X, TikTok, YouTube and/or Facebook accounts, including creating and posting content, outreach and organic engagement.",
     "flyer-distribution": "Flyer distribution, printing and design to physically approach your audience locally and nationwide. Make your brand visible at public spaces, homes, cars or anywhere else your brand can legally be presented.",
-    "website-design": "Creating and improving websites to showcase your brand, company, portfolio, event, product or status.",
+    "website-and-apps-design": "Creating and improving websites and apps to showcase your brand, company, portfolio, event, product or status.",
     "graphic-design": "Graphic design services including logos, flyers, album art, book covers, pitch decks, business cards, product design, clothing, merch, banners, thumbnails, manuals, posters, packaging, stationery, programs, PowerPoint presentations, sketches, documents and creative artwork.",
     "animation": "Creating 2D and 3D animation, characters, cartoons, art, environments, rigging, modeling and motion to give life to your vision.",
     "video-editing": "Video editing including film editing, wedding footage, reels, music videos, songs, YouTube uploads and social media posts. Services such as cutting, add text, captions, subtitles, grading, color correction, music, audio engineering, VFX, and sound mixing.",
     "photo-editing": "Photo editing including image restoration, photo albums, slideshows, portfolios, headshots. Services such as remove background, replace people, retouching, color balance, effects and change fonts.",
 };
+
+
+

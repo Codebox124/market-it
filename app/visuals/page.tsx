@@ -10,25 +10,25 @@ const visualsPortfolio = [
     {
         title: "Graphic Design",
         image: "/graphic-design.png",
-        description: "Visual production covering an assortment of media, whether personal or business.",
+        descriptionservice: "Visual production covering an assortment of media, whether personal or business.",
         icon: "diamond",
     },
     {
         title: "Video Editing",
         image: "/video-editing.png",
-        description: "Post-production, including motion graphics, animation, VFX, sound, and color correction.",
+        descriptionservice: "Post-production, including motion graphics, animation, VFX, sound, and color correction.",
         icon: "diamond",
     },
     {
         title: "Photo Editing",
         image: "/photo-editing.png",
-        description: "High-end image manipulation, creative effects, and quality improvement.",
+        descriptionservice: "High-end image manipulation, creative effects, and quality improvement.",
         icon: "star",
     },
     {
         title: "Animation",
         image: "/1.png",
-        description: "Illustrating custom art, characters, environments, and motion for your project.",
+        descriptionservice: "Illustrating custom art, characters, environments, and motion for your project.",
         icon: "star",
     },
 ];
@@ -52,7 +52,7 @@ const item = {
 export default function Visuals() {
     return (
         <div className="min-h-screen bg-[#090e19] text-white pt-24 overflow-hidden">
-            <div className="absolute inset-0 bg-[url('/noise.png')] opacity-5 pointer-events-none"></div>
+            {/* <div className="absolute inset-0 bg-[url('/noise.png')] opacity-5 pointer-events-none"></div> */}
             <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
                 <div className="absolute -top-40 -left-40 w-96 h-96 bg-purple-900/20 rounded-full blur-3xl"></div>
                 <div className="absolute top-1/3 -right-40 w-80 h-80 bg-amber-700/20 rounded-full blur-3xl"></div>
@@ -89,60 +89,58 @@ export default function Visuals() {
                 </motion.header>
 
                 <motion.div
-                    variants={container}
-                    initial="hidden"
-                    animate="show"
-                    className="grid grid-cols-1 sm:grid-cols-2 relative lg:grid-cols-4 gap-8 perspective-1000"
-                >
-                    {visualsPortfolio.map((item, index) => (
-                        <Link href={`/visuals/${item.title.toLowerCase().replace(/\s+/g, "-")}`} passHref>
-                            <motion.div
-                                key={index}
-                                whileHover={{
-                                    rotateY: 5,
-                                    rotateX: 5,
-                                    scale: 1.02,
-                                    boxShadow: "0 25px 50px -12px rgba(0, 0, 0, 0.5)"
-                                }}
-                                className="group backdrop-blur-sm rounded-none overflow-hidden transition-all duration-500  bg-[#090e19]"
-                            >
-                                {/* Image Section */}
-                                <div className="relative h-64 w-full overflow-hidden">
-                                    <Image
-                                        src={item.image || "/placeholder.svg"}
-                                        alt={item.title}
-                                        fill
-                                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                                        className="object-cover transition-transform duration-700"
-                                        placeholder="blur"
-                                        blurDataURL="data:image/jpeg;base64,/9j/4AAQSk..."
-                                    />
-                                    <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent opacity-80 group-hover:opacity-60 transition-opacity duration-300"></div>
-                                    <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                                        <div className="bg-blue-600 backdrop-blur-md p-3 transform rotate-45 scale-0 group-hover:scale-100 transition-transform duration-500">
-                                            <Eye className="text-black transform -rotate-45" size={24} />
-                                        </div>
-                                    </div>
-                                </div>
+  variants={container}
+  initial="hidden"
+  animate="show"
+  className="grid grid-cols-1 sm:grid-cols-2 relative lg:grid-cols-4 gap-8 perspective-1000"
+>
+  {visualsPortfolio.map((item, index) => (
+    <motion.div
+      key={index}
+      whileHover={{
+        rotateY: 5,
+        rotateX: 5,
+        scale: 1.02,
+        boxShadow: "0 25px 50px -12px rgba(0, 0, 0, 0.5)"
+      }}
+      className="group backdrop-blur-sm rounded-none overflow-hidden transition-all duration-500 bg-[#090e19]"
+    >
+      <Link
+        href={`/visuals/${item.title.toLowerCase().replace(/\s+/g, "-")}`}
+        className="block h-full"
+      >
+        {/* Image Section */}
+        <div className="relative h-64 w-full overflow-hidden">
+          <Image
+            src={item.image || "/placeholder.svg"}
+            alt={item.title}
+            fill
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            className="object-cover transition-transform duration-700"
+            priority
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent opacity-80 group-hover:opacity-60 transition-opacity duration-300"></div>
+          <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+            <div className="bg-blue-600 backdrop-blur-md p-3 transform rotate-45 scale-0 group-hover:scale-100 transition-transform duration-500">
+              <Eye className="text-black transform -rotate-45" size={24} />
+            </div>
+          </div>
+        </div>
 
+        {/* Text Section */}
+        <div className="p-8 relative flex flex-col h-[170px] justify-between">
+          <h2 className="text-lg tracking-wider uppercase font-light">{item.title}</h2>
+          <p className="text-gray-400 text-sm font-light">{item.descriptionservice}</p>
 
-                                <div className="p-8 relative flex flex-col h-[170px] justify-between">
-                                    <h2 className="text-lg tracking-wider uppercase font-light">{item.title}</h2>
-                                    <p className="text-gray-400 text-sm font-light">{item.description}</p>
+          <div className="inline-flex items-center text-blue-400 hover:text-blue-300 transition-colors uppercase text-xs tracking-widest absolute bottom-0">
+            Explore <ArrowRight className="ml-2 h-3 w-3" />
+          </div>
+        </div>
+      </Link>
+    </motion.div>
+  ))}
+</motion.div>
 
-
-                                    <a
-                                        href="#"
-                                        className="inline-flex items-center text-blue-400 hover:text-blue-300 transition-colors uppercase text-xs tracking-widest absolute bottom-0"
-                                    >
-                                        Explore <ArrowRight className="ml-2 h-3 w-3" />
-                                    </a>
-                                </div>
-                            </motion.div>
-                        </Link>
-
-                    ))}
-                </motion.div>
 
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://makeitandmarket.com/sitemap.xml

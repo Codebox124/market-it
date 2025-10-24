@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useState, useEffect } from "react";
-import { Menu, X, Home, User, Briefcase, Mail, ChevronDown, Book } from "lucide-react";
+import { Menu, X, Home, User, Briefcase, Mail, ChevronDown, Calendar } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
@@ -16,8 +16,8 @@ export default function Navbar() {
 
   const navItems = [
     { name: "Home", href: "/", icon: Home },
+    { name: "Booking", href: "/booking", icon: Calendar },
     { name: "Contact", href: "/contact", icon: Mail },
-    { name: "Booking", href: "/booking", icon: Book },
   ];
 
   useEffect(() => {

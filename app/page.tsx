@@ -20,51 +20,69 @@ const fadeIn = {
 
 const visualsPortfolio = [
   {
+    metitle: "Website Design",
+    medescription: "Apapun itu Website Design",
     title: "Graphic Design",
     image: "/graphic-design.png",
-    description: "Premium visual identity and brand design crafted with precision and creativity.",
+    descriptionservice: "Premium visual identity and brand design crafted with precision and creativity.",
     gradient: "from-violet-500/20 to-purple-500/20",
   },
   {
+    metitle: "Website Design",
+    medescription: "Apapun itu Website Design",
     title: "Video Editing",
     image: "/video-editing.png",
-    description: "Cinematic post-production with advanced motion graphics and seamless storytelling.",
+    descriptionservice: "Cinematic post-production with advanced motion graphics and seamless storytelling.",
     gradient: "from-blue-500/20 to-cyan-500/20",
   },
   {
+    metitle: "Website Design",
+    medescription: "Apapun itu Website Design",
     title: "Photo Editing",
     image: "/photo-editing.png",
-    description: "Professional image enhancement and artistic manipulation with meticulous attention to detail.",
+    descriptionservice: "Professional image enhancement and artistic manipulation with meticulous attention to detail.",
     gradient: "from-emerald-500/20 to-teal-500/20",
   },
   {
+    metitle: "Website Design",
+    medescription: "Apapun itu Website Design",
     title: "Animation",
     image: "/1.png",
-    description: "Custom character design and fluid motion graphics that bring stories to life.",
+    descriptionservice: "Custom character design and fluid motion graphics that bring stories to life.",
     gradient: "from-orange-500/20 to-red-500/20",
-  },
+  }
+]
+  const marketingPortfolio = [
   {
-    title: "Website Design",
+    metitle: "Website Design",
+    medescription: "Apapun itu Website Design",
+    title: "Website and Apps Design",
     image: "/website-design.jpg",
-    description: "Cutting-edge web experiences with intuitive design and flawless functionality.",
+    descriptionservice: "Cutting-edge web experiences with intuitive design and flawless functionality.",
     gradient: "from-indigo-500/20 to-blue-500/20",
   },
   {
+    metitle: "Website Design",
+    medescription: "Apapun itu Website Design",
     title: "Advertising",
     image: "/advertising.jpg",
-    description: "Strategic campaigns that captivate audiences and drive meaningful engagement.",
+    descriptionservice: "Strategic campaigns that captivate audiences and drive meaningful engagement.",
     gradient: "from-pink-500/20 to-rose-500/20",
   },
   {
+    metitle: "Website Design",
+    medescription: "Apapun itu Website Design",
     title: "Social Media",
     image: "/social-media.jpg",
-    description: "Comprehensive social presence management with engaging content and growth strategies.",
+    descriptionservice: "Comprehensive social presence management with engaging content and growth strategies.",
     gradient: "from-purple-500/20 to-pink-500/20",
   },
   {
+    metitle: "Website Design",
+    medescription: "Apapun itu Website Design",
     title: "Flyer Distribution",
     image: "/flyer.jpg",
-    description: "Targeted offline marketing campaigns that create real-world connections and impact.",
+    descriptionservice: "Targeted offline marketing campaigns that create real-world connections and impact.",
     icon: "feather",
     gradient: "from-yellow-500/20 to-orange-500/20",
   },
@@ -251,7 +269,7 @@ export default function Home() {
 
               <div className="max-w-4xl mx-auto">
                 <p className="text-lg md:text-xl text-gray-600 leading-relaxed font-light">
-                  Premium creative services and strategic marketing solutions for
+                  Effective marketing solutions and versatile creative services for
                   <span className="text-gray-900 font-medium"> businesses</span>,
                   <span className="text-gray-900 font-medium"> artists</span>, and
                   <span className="text-gray-900 font-medium"> visionaries</span>
@@ -280,6 +298,7 @@ export default function Home() {
                           src={item.image}
                           alt={item.title}
                           className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                          loading="lazy"
                         />
                         <div className={`absolute inset-0 bg-gradient-to-t ${item.gradient} opacity-40 group-hover:opacity-60 transition-opacity duration-300`} />
 
@@ -298,8 +317,63 @@ export default function Home() {
                         <h3 className="text-lg font-semibold text-gray-900 tracking-wide">
                           {item.title}
                         </h3>
-                        <p className="text-sm text-gray-600 leading-relaxed line-clamp-3">
-                          {item.description}
+                        <p className="text-sm text-gray-600 leading-relaxed line-clamp-4">
+                          {item.descriptionservice}
+                        </p>
+
+                        <div className={`flex items-center text-sm font-semibold pt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300`}>
+                          <span>Explore Services</span>
+                          <ArrowRight className="ml-2 h-4 w-4 transform group-hover:translate-x-1 transition-transform" />
+                        </div>
+                      </div>
+
+                      {/* Gradient accent border on hover */}
+                      <div className={`absolute inset-0 rounded-3xl bg-gradient-to-r  to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none`} />
+                    </div>
+                  </div>
+                </Link>
+
+              ))}
+              {marketingPortfolio.map((item, index) => (
+                <Link href={`/marketing/${item.title.toLowerCase().replace(/\s+/g, "-")}`} key={index}>
+                  <div
+                    key={index}
+                    className="group cursor-pointer"
+
+                    onMouseLeave={() => setHoveredIndex(null)}
+                    style={{
+                      transform: hoveredIndex === index ? 'translateY(-12px)' : 'translateY(0px)',
+                      transition: 'transform 0.3s ease-out'
+                    }}
+                  >
+                    <div className="relative rounded-3xl overflow-hidden bg-white shadow-lg shadow-gray-200/50 border border-gray-100/80 hover:shadow-2xl hover:shadow-gray-300/30 transition-all duration-500">
+                      {/* Image */}
+                      <div className="relative h-48 overflow-hidden">
+                        <img
+                          src={item.image}
+                          alt={item.title}
+                          className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                          loading="lazy"
+                        />
+                        <div className={`absolute inset-0 bg-gradient-to-t ${item.gradient} opacity-40 group-hover:opacity-60 transition-opacity duration-300`} />
+
+                        {/* Hover overlay */}
+                        <div
+                          className="absolute inset-0 bg-white/40 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center"
+                        >
+                          <div className={`bg-white/90 backdrop-blur-md p-4 rounded-2xl transform scale-0 group-hover:scale-100 transition-transform duration-300 shadow-lg border border-white/20`}>
+
+                          </div>
+                        </div>
+                      </div>
+
+                      {/* Content */}
+                      <div className="p-6 space-y-4">
+                        <h3 className="text-lg font-semibold text-gray-900 tracking-wide">
+                          {item.title}
+                        </h3>
+                        <p className="text-sm text-gray-600 leading-relaxed line-clamp-4">
+                          {item.descriptionservice}
                         </p>
 
                         <div className={`flex items-center text-sm font-semibold pt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300`}>
