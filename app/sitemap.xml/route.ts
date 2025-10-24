@@ -3,7 +3,7 @@ import { NextResponse } from "next/server";
 import { portfolioVisualProjects } from "@/data/data";
 import { portfolioMarketingProjects } from "@/data/data";
 
-const BASE_URL = "https://makeitandmarket.com";
+const BASE_URL = "https://www.makeitandmarket.com";
 
 // Dynamic pages dari portfolioProjects
 const visualPages = Object.keys(portfolioVisualProjects).map(

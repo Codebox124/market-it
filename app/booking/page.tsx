@@ -18,7 +18,7 @@ export default function BookingPage() {
     <div className="min-h-screen text-white">
       <main className="mt-10 pt-24 pb-16 px-6">
         <div className="max-w-2xl mx-auto">
-          {/* Title Section */}
+          <{/* Title Section */}>
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-bold mb-4 tracking-tight text-blue-600">
               Complete Your Payment
