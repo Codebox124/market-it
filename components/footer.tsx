@@ -63,7 +63,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="/visuals/website-design"
+                  href="/marketing/website-design"
                   className="text-gray-600 hover:text-gray-900 hover:text-emerald-600 transition-colors duration-200"
                 >
                   Websites
@@ -71,7 +71,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="/visuals/advertising"
+                  href="/marketing/advertising"
                   className="text-gray-600 hover:text-gray-900 hover:text-emerald-600 transition-colors duration-200"
                 >
                   Advertising
@@ -79,7 +79,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="/visuals/social-media"
+                  href="/marketing/social-media"
                   className="text-gray-600 hover:text-gray-900 hover:text-emerald-600 transition-colors duration-200"
                 >
                   Social Media
@@ -87,7 +87,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="/visuals/flyer-distribution"
+                  href="/marketing/flyer-distribution"
                   className="text-gray-600 hover:text-gray-900 hover:text-emerald-600 transition-colors duration-200"
                 >
                   Flyer Distribution
