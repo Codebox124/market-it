@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Azeret_Mono as Geist_Mono, IBM_Plex_Mono } from "next/font/google";
 import Script from "next/script";
-
 import "./globals.css";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
@@ -41,6 +40,9 @@ export const metadata: Metadata = {
       "Visuals & Marketing solutions to help brands scale effectively.",
     creator: "@yourtwitterhandle",
   },
+  other: {
+    "google-site-verification": "hepa8iNMg0RjaI7FiuzVLWwwwWCQ26z5ofrZFxldzNA",
+  },
 };
 
 export default function RootLayout({
@@ -51,9 +53,10 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <head>
-      <meta name="msvalidate.01" content="009C8AEC151B258FD1F908FA76572D41" />
+        <meta name="msvalidate.01" content="009C8AEC151B258FD1F908FA76572D41" />
+
         {/* Google Tag Manager */}
-        <Script id="gtm-script" strategy="afterInteractive">
+        <Script id="gtm-init" strategy="afterInteractive">
           {`
             (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
             new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -63,20 +66,25 @@ export default function RootLayout({
           `}
         </Script>
 
-        {/* Google Ads (gtag.js) */}
+        {/* Google Ads (optional) */}
         <Script
           strategy="afterInteractive"
           src="https://www.googletagmanager.com/gtag/js?id=AW-16842141479"
         />
-        <Script id="google-ads-script" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'AW-16842141479');
-          `}
-        </Script>
+        <Script
+          id="google-ads"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'AW-16842141479');
+            `,
+          }}
+        />
       </head>
+
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${ibmPlexMono.variable} antialiased`}
       >

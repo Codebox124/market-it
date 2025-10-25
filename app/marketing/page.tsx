@@ -8,7 +8,7 @@ import Link from "next/link";
 
 const marketingPortfolio = [
     {
-        title: "Website Design",
+        title: "Website and Apps Design",
         image: "/website-design.jpg",
         description: "User-friendly, custom websites and apps for portfolios, awareness, commerce, or blogging.",
         icon: "star",
@@ -129,7 +129,7 @@ export default function Marketing() {
                                 </div>
 
 
-                                <div className="p-8 relative flex flex-col h-[170px] justify-between">
+                                <div className="p-8 relative flex flex-col h-[200px] justify-between">
                                     <h2 className="text-lg tracking-wider uppercase font-light">{item.title}</h2>
                                     <p className="text-gray-400 text-sm font-light">{item.description}</p>
 
