@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   description:
     "A creative marketing agency offering advertising, web design, and visual content to help brands grow visibility, engagement, and impact.",
   openGraph: {
-    title: "MMake It & Market | Creative Marketing & Visual Design",
+    title: "Make It & Market | Creative Marketing & Visual Design",
     description:
       "We craft custom content and marketing campaigns to help brands grow.",
     url: "https://www.makeitandmarket.com",
@@ -56,7 +56,9 @@ export default function RootLayout({
     <html lang="en" className="scroll-smooth">
       <head>
         <meta name="msvalidate.01" content="009C8AEC151B258FD1F908FA76572D41" />
-
+        <head>
+        <meta name="ahrefs-site-verification" content="123456789abcdef" />
+      </head>
         {/* Google Tag Manager */}
         <Script id="gtm-init" strategy="afterInteractive">
           {`
