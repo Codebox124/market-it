@@ -68,12 +68,12 @@ export default function BookingPage() {
 
                 {/* PayPal Button */}
                 <a
-                  href="http://www.paypal.com/ncp/payment/VUN5CLMUKR8GE"
+                  href="https://www.paypal.com/ncp/payment/VUN5CLMUKR8GE"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-4 px-6 rounded-xl transition-all duration-200 text-center text-lg shadow-lg hover:shadow-blue-600/50"
                 >
-                  Pay with PayPal or Venmo
+                  Payment options: Venmo or PayPal
                 </a>
 
                 <div className="mt-6 flex items-center justify-center gap-2 text-sm text-gray-500">

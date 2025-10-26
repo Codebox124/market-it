@@ -23,7 +23,7 @@ export async function GET() {
       <url>
         <loc>${BASE_URL}/${page}</loc>
         <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
+        <priority>1.0</priority>
       </url>
     `).join("")}
   </urlset>`;
