@@ -180,6 +180,7 @@ export default function PortfolioClient({
                                                             <img
                                                                 src={project.image}
                                                                 alt={project.title}
+                                                                loading="lazy"
                                                                 className="rounded-xl w-full h-48 object-cover shadow-lg group-hover:scale-105 transition-transform duration-500"
                                                             />
                                                             <div className="absolute inset-0 bg-white/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl flex items-center justify-center">
@@ -239,6 +240,7 @@ export default function PortfolioClient({
                                                             <img
                                                                 src={project.image}
                                                                 alt={project.title}
+                                                                loading="lazy"
                                                                 className="rounded-xl w-full h-36 object-cover shadow-lg group-hover:scale-105 transition-transform duration-500"
                                                             />
                                                             <div className="absolute inset-0 bg-white/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl flex items-center justify-center">
@@ -311,6 +313,7 @@ export default function PortfolioClient({
                                     <img
                                         src={selectedProject.image}
                                         alt={selectedProject.title}
+                                        loading="lazy"
                                         className="rounded-2xl w-full max-h-[70vh] object-contain shadow-2xl mx-auto"
                                     />
                                 )}
