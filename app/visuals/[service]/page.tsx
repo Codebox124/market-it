@@ -4,7 +4,7 @@ import PortfolioClient from "./PortfolioClient";
 export async function generateMetadata({ params }: { params: Promise<{ service: string }> }) {
   const resolvedParams = await params;
   const service = resolvedParams.service?.replace(/-/g, " ") ?? "";
-  const title = `${serviceTitles[resolvedParams.service]}| Portfolio`;
+  const title =`${serviceTitles[resolvedParams.service]}`
   const description = serviceDescriptions[resolvedParams.service] || "Discover our work in this category.";
 
   return {
