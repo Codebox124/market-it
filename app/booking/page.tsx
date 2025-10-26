@@ -22,6 +22,13 @@ export default function BookingPage() {
   return (
     <div className="min-h-screen text-white">
       <main className="mt-10 pt-24 pb-16 px-6">
+        <iframe
+          title="PayPal"
+          src="https://www.paypal.com/ncp/payment/VUN5CLMUKR8GE"
+          width="100%"
+          height="400"
+          className="border-0 rounded-xl shadow-lg"
+          ></iframe>
         <div className="max-w-2xl mx-auto">
           {/* Title Section */}
           <div className="text-center mb-12">
