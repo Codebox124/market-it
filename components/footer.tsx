@@ -26,15 +26,17 @@ export default function Footer() {
             </p>
           </div>
 
-          <div>
+          <div className="">
             <h3 className="text-xl font-semibold mb-4 text-gray-900">Our Services</h3>
-            <Link
+            <div className="grid grid-cols-2 lg:grid-cols-1">
+              <div>
+                <Link
                   href="/visuals"
                   className="text-gray-600 hover:text-gray-900 hover:text-emerald-600 transition-colors duration-200 font-bold mb-0.5"
                 >
                   Visual :
                 </Link>
-            <ul className="space-y-0 grid grid-cols-2 gap-2 pb-1">
+            <ul className="space-y-0 grid grid-cols-1 lg:grid-cols-2 gap-2 py-2">
               <li>
                 <Link
                   href="/visuals/graphic-design"
@@ -68,22 +70,17 @@ export default function Footer() {
                 </Link>
               </li>
               </ul>
-              <Link
+              </div>
+              <div>
+                <Link
                   href="/marketing"
-                  className="text-gray-600 hover:text-gray-900 hover:text-emerald-600 transition-colors duration-200 font-bold mb-0.5"
+                  className="text-gray-600 hover:text-gray-900 hover:text-emerald-600 transition-colors duration-200 font-bold mb-0.5 pt-2"
                 >
                   Marketing :
                 </Link>
-              <ul className="space-y-0 grid grid-cols-2 gap-2">
+              <ul className="space-y-0 grid grid-cols-1 lg:grid-cols-2 gap-2 py-2">
                 
-              <li>
-                <Link
-                  href="/marketing/website-design"
-                  className="text-gray-600 hover:text-gray-900 hover:text-emerald-600 transition-colors duration-200"
-                >
-                  Websites
-                </Link>
-              </li>
+              
               <li>
                 <Link
                   href="/marketing/advertising"
@@ -108,7 +105,19 @@ export default function Footer() {
                   Flyer Distribution
                 </Link>
               </li>
+              <li>
+                <Link
+                  href="/marketing/website-and-apps-design"
+                  className="text-gray-600 hover:text-gray-900 hover:text-emerald-600 transition-colors duration-200"
+                >
+                  Websites and Apps Design
+                </Link>
+              </li>
             </ul>
+              </div>
+            </div>
+            
+              
           </div>
 
           <div id="contact">

@@ -1947,15 +1947,24 @@ export const portfolioMarketingProjects: Record<
 
 };
 export const serviceDescriptions: Record<string, string> = {
-    "advertising": "Find your next customer, client or supporter. Advertising online through Google, social media and email.",
-    "social-media": "Social media management for your Instagram, X, TikTok, YouTube and/or Facebook accounts, including creating and posting content, outreach and organic engagement.",
-    "flyer-distribution": "Flyer distribution, printing and design to physically approach your audience locally and nationwide. Make your brand visible at public spaces, homes, cars or anywhere else your brand can legally be presented.",
-    "website-and-apps-design": "Creating and improving websites and apps to showcase your brand, company, portfolio, event, product or status.",
-    "graphic-design": "Graphic design services including logos, flyers, album art, book covers, pitch decks, business cards, product design, clothing, merch, banners, thumbnails, manuals, posters, packaging, stationery, programs, PowerPoint presentations, sketches, documents and creative artwork.",
-    "animation": "Creating 2D and 3D animation, characters, cartoons, art, environments, rigging, modeling and motion to give life to your vision.",
-    "video-editing": "Video editing including film editing, wedding footage, reels, music videos, songs, YouTube uploads and social media posts. Services such as cutting, add text, captions, subtitles, grading, color correction, music, audio engineering, VFX, and sound mixing.",
-    "photo-editing": "Photo editing including image restoration, photo albums, slideshows, portfolios, headshots. Services such as remove background, replace people, retouching, color balance, effects and change fonts.",
+    "advertising": "Creative and data-driven advertising campaigns that attract the right audience and increase brand awareness.",
+    "social-media": "Comprehensive social media marketing and content creation that grows audience engagement across all platforms.",
+    "flyer-distribution": "Targeted flyer distribution campaigns to reach local and global audiences with high-impact printed marketing materials.",
+    "website-and-apps-design": "Responsive website and app design that blends creativity with performance, helping brands engage audiences effectively.",
+    "graphic-design": "Creative graphic design services that deliver stunning visuals for branding, marketing, and digital content.",
+    "animation": "Custom animations and motion graphics that bring your ideas, stories, and brands to life through movement and creativity.",
+    "video-editing": "High-quality video editing with motion graphics, color grading, and storytelling that captivate audiences.",
+    "photo-editing": "Professional photo editing and retouching services that enhance quality, color, and creativity for brands and individuals.",
 };
 
-
+export const serviceTitles: Record<string, string> = {
+    "advertising": "Advertising Campaigns | Marketing Portfolio | Make It & Market",
+    "social-media": "Social Media Marketing | Portfolio | Make It & Market",
+    "flyer-distribution": "Flyer Distribution | Marketing Portfolio | Make It & Market",
+    "website-and-apps-design": "Website & App Design | Marketing Portfolio | Make It & Market",
+    "graphic-design": "Graphic Design | Visual Portfolio | Make It & Market",
+    "animation": "Animation | Visual Portfolio | Make It & Market",
+    "video-editing": "Video Editing | Visual Portfolio | Make It & Market",
+    "photo-editing": "Photo Editing | Visual Portfolio | Make It & Market",
+};
 

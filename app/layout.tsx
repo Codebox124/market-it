@@ -22,11 +22,11 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Make It & Market - Visuals & Marketing",
+  title: "Make It & Market | Creative Marketing & Visual Design",
   description:
-    "We provide full-service visuals production and marketing solutions to help businesses grow.",
+    "A creative marketing agency offering advertising, web design, and visual content to help brands grow visibility, engagement, and impact.",
   openGraph: {
-    title: "Make It & Market - Visuals & Marketing",
+    title: "MMake It & Market | Creative Marketing & Visual Design",
     description:
       "We craft custom content and marketing campaigns to help brands grow.",
     url: "https://www.makeitandmarket.com",
@@ -38,7 +38,8 @@ export const metadata: Metadata = {
     title: "Make It & Market",
     description:
       "Visuals & Marketing solutions to help brands scale effectively.",
-    creator: "@yourtwitterhandle",
+    creator: "@yourtwitterhandle", 
+    images: ["https://www.makeitandmarket.com/logo.png"],
   },
   other: {
     "google-site-verification": "hepa8iNMg0RjaI7FiuzVLWwwwWCQ26z5ofrZFxldzNA",

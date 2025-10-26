@@ -1,10 +1,10 @@
-import { portfolioVisualProjects, serviceDescriptions } from "@/data/data";
+import { portfolioVisualProjects, serviceDescriptions, serviceTitles } from "@/data/data";
 import PortfolioClient from "./PortfolioClient";
 
 export async function generateMetadata({ params }: { params: Promise<{ service: string }> }) {
   const resolvedParams = await params;
   const service = resolvedParams.service?.replace(/-/g, " ") ?? "";
-  const title = `${service.charAt(0).toUpperCase() + service.slice(1)} | Portfolio`;
+  const title = `${serviceTitles[resolvedParams.service]}| Portfolio`;
   const description = serviceDescriptions[resolvedParams.service] || "Discover our work in this category.";
 
   return {

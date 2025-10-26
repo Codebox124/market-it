@@ -39,9 +39,9 @@ export default function ContactClient() {
         <h1 className="text-4xl md:text-5xl font-bold leading-tight bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
           Contact
         </h1>
-        <p className="mt-4 text-gray-600 md:px-36">
+        <h2 className="mt-4 text-gray-600 md:px-48">
           Have a project in mind? Fill out the form and let's create something amazing.
-        </p>
+        </h2>
       </motion.div>
 
       {/* Contact Form */}

@@ -1,15 +1,20 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Booking - Make It & Market",
-  description: "Complete your payment and secure our marketing services easily.",
+  title: "Book a Service | Make It & Market",
+  description: "Schedule your marketing or visual design consultation with Make It & Market. Choose your preferred time and let’s bring your ideas to life.",
   openGraph: {
-    title: "Booking - Make It & Market",
-    description: "Secure and easy payment page for our services.",
+    title: "Book a Service | Make It & Market",
+    description: "Book your consultation for marketing, SEO, or visual design with Make It & Market.",
+    url: "https://www.makeitandmarket.com/booking",
+    type: "website",
+    siteName: "Make It & Market",
   },
   twitter: {
-    title: "Booking - Make It & Market",
-    description: "Complete your payment safely and quickly.",
+    title: "Book a Service | Make It & Market",
+    description: "Book your consultation for marketing, SEO, or visual design with Make It & Market.",
+    card: "summary_large_image",
+    images: ["https://www.makeitandmarket.com/logo.png"],
   },
 };
 
@@ -23,9 +28,9 @@ export default function BookingPage() {
             <h1 className="text-4xl md:text-5xl font-bold mb-4 tracking-tight text-blue-600">
               Complete Your Payment
             </h1>
-            <p className="text-gray-400 text-lg">
+            <h2 className="text-xl md:text-2xl text-gray-600 leading-relaxed font-light">
               Effective marketing solutions and versatile creative services
-            </p>
+            </h2>
           </div>
 
           {/* Payment Card */}
@@ -68,7 +73,7 @@ export default function BookingPage() {
                   rel="noopener noreferrer"
                   className="block w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-4 px-6 rounded-xl transition-all duration-200 text-center text-lg shadow-lg hover:shadow-blue-600/50"
                 >
-                  Pay with PayPal
+                  Pay with PayPal or Venmo
                 </a>
 
                 <div className="mt-6 flex items-center justify-center gap-2 text-sm text-gray-500">

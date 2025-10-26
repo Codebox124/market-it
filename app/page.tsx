@@ -20,32 +20,24 @@ const fadeIn = {
 
 const visualsPortfolio = [
   {
-    metitle: "Website Design",
-    medescription: "Apapun itu Website Design",
     title: "Graphic Design",
     image: "/graphic-design.png",
     descriptionservice: "Premium visual identity and brand design crafted with precision and creativity.",
     gradient: "from-violet-500/20 to-purple-500/20",
   },
   {
-    metitle: "Website Design",
-    medescription: "Apapun itu Website Design",
     title: "Video Editing",
-    image: "/video-editing.png",
+    image: "/video-editing.webp",
     descriptionservice: "Cinematic post-production with advanced motion graphics and seamless storytelling.",
     gradient: "from-blue-500/20 to-cyan-500/20",
   },
   {
-    metitle: "Website Design",
-    medescription: "Apapun itu Website Design",
     title: "Photo Editing",
     image: "/photo-editing.png",
     descriptionservice: "Professional image enhancement and artistic manipulation with meticulous attention to detail.",
     gradient: "from-emerald-500/20 to-teal-500/20",
   },
   {
-    metitle: "Website Design",
-    medescription: "Apapun itu Website Design",
     title: "Animation",
     image: "/1.png",
     descriptionservice: "Custom character design and fluid motion graphics that bring stories to life.",
@@ -54,32 +46,24 @@ const visualsPortfolio = [
 ]
   const marketingPortfolio = [
   {
-    metitle: "Website Design",
-    medescription: "Apapun itu Website Design",
     title: "Website and Apps Design",
     image: "/website-design.jpg",
     descriptionservice: "Cutting-edge web experiences with intuitive design and flawless functionality.",
     gradient: "from-indigo-500/20 to-blue-500/20",
   },
   {
-    metitle: "Website Design",
-    medescription: "Apapun itu Website Design",
     title: "Advertising",
-    image: "/advertising.jpg",
+    image: "/advertising.webp",
     descriptionservice: "Strategic campaigns that captivate audiences and drive meaningful engagement.",
     gradient: "from-pink-500/20 to-rose-500/20",
   },
   {
-    metitle: "Website Design",
-    medescription: "Apapun itu Website Design",
     title: "Social Media",
     image: "/social-media.jpg",
     descriptionservice: "Comprehensive social presence management with engaging content and growth strategies.",
     gradient: "from-purple-500/20 to-pink-500/20",
   },
   {
-    metitle: "Website Design",
-    medescription: "Apapun itu Website Design",
     title: "Flyer Distribution",
     image: "/flyer.jpg",
     descriptionservice: "Targeted offline marketing campaigns that create real-world connections and impact.",
@@ -268,12 +252,12 @@ export default function Home() {
               </motion.h1>
 
               <div className="max-w-4xl mx-auto">
-                <p className="text-lg md:text-xl text-gray-600 leading-relaxed font-light">
+                <h2 className="text-xl md:text-2xl text-gray-600 leading-relaxed font-light">
                   Effective marketing solutions and versatile creative services for
                   <span className="text-gray-900 font-medium"> businesses</span>,
                   <span className="text-gray-900 font-medium"> artists</span>, and
                   <span className="text-gray-900 font-medium"> visionaries</span>
-                </p>
+                </h2>
               </div>
             </div>
 
@@ -396,6 +380,46 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Client Showcase Section */}
+{/* <section className="bg-[#090e19] py-20 text-white border-t border-white/10">
+  <div className="max-w-7xl mx-auto px-6 text-center">
+    <h2 className="text-4xl font-light mb-6 tracking-wide">
+      Our <span className="text-emerald-400">Clients</span> & Works
+    </h2>
+    <p className="text-gray-400 max-w-2xl mx-auto mb-12">
+      We’ve worked with diverse brands and businesses, bringing their ideas to life through design, strategy, and creativity.
+    </p>
+
+    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8 items-center justify-center">
+      <div className="relative group">
+        <img src="/clients/client1.png" alt="Client 1" className="w-28 mx-auto opacity-80 group-hover:opacity-100 transition-opacity duration-300" />
+      </div>
+      <div className="relative group">
+        <img src="/clients/client2.png" alt="Client 2" className="w-28 mx-auto opacity-80 group-hover:opacity-100 transition-opacity duration-300" />
+      </div>
+      <div className="relative group">
+        <img src="/clients/client3.png" alt="Client 3" className="w-28 mx-auto opacity-80 group-hover:opacity-100 transition-opacity duration-300" />
+      </div>
+      <div className="relative group">
+        <img src="/clients/client4.png" alt="Client 4" className="w-28 mx-auto opacity-80 group-hover:opacity-100 transition-opacity duration-300" />
+      </div>
+    </div>
+
+    <div className="mt-16">
+      <a
+        href="/visuals"
+        className="inline-flex items-center text-emerald-400 hover:text-emerald-300 transition-colors uppercase text-xs tracking-widest"
+      >
+        View Portfolio
+        <svg className="ml-2 w-3 h-3" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+        </svg>
+      </a>
+    </div>
+  </div>
+</section> */}
+
 
       <style jsx global>{`
         .line-clamp-3 {

@@ -7,8 +7,6 @@ import { portfolioMarketingProjects, serviceDescriptions } from "@/data/data";
 
 
 interface Project {
-  metitle?: string;
-  medescription?: string;
   title?: string;
   descriptionservice?: string;
   image?: string;
@@ -93,9 +91,9 @@ export default function PortfolioClient({
                             <div className="absolute -inset-2 bg-gradient-to-r from-blue-100/30 to-purple-100/30 blur-2xl -z-10 rounded-2xl"></div>
                         </h1>
                         <div className="max-w-4xl mx-auto">
-                            <p className="text-gray-600 text-lg md:text-xl leading-relaxed font-light tracking-wide">
+                            <h2 className="text-gray-600 text-lg md:text-xl leading-relaxed font-light tracking-wide">
                                 {descriptionservice}
-                            </p>
+                            </h2>
                             <div className="mt-6 w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto rounded-full"></div>
                         </div>
                     </div>
