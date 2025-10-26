@@ -73,7 +73,7 @@ export default function BookingPage() {
                   rel="noopener noreferrer"
                   className="block w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-4 px-6 rounded-xl transition-all duration-200 text-center text-lg shadow-lg hover:shadow-blue-600/50"
                 >
-                  Payment options: Venmo or PayPal
+                  Payment options
                 </a>
 
                 <div className="mt-6 flex items-center justify-center gap-2 text-sm text-gray-500">
