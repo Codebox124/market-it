@@ -99,6 +99,7 @@ export default function VisualsClient() {
                     alt={item.title}
                     fill
                     className="object-cover transition-transform duration-700"
+                    quality={80}
                     priority
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent opacity-80 group-hover:opacity-60 transition-opacity duration-300"></div>
