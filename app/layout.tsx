@@ -56,9 +56,7 @@ export default function RootLayout({
     <html lang="en" className="scroll-smooth">
       <head>
         <meta name="msvalidate.01" content="009C8AEC151B258FD1F908FA76572D41" />
-        <head>
         <script src="https://analytics.ahrefs.com/analytics.js" data-key="eU2DaMSVvJ6i1oMhXpI7jQ" async></script>
-      </head>
         {/* Google Tag Manager */}
         <Script id="gtm-init" strategy="afterInteractive">
           {`
@@ -86,7 +84,7 @@ export default function RootLayout({
               gtag('config', 'AW-16842141479');
             `,
           }}
-        />
+          />
       </head>
 
       <body
