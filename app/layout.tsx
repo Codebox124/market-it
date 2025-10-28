@@ -42,7 +42,8 @@ export const metadata: Metadata = {
     images: ["https://www.makeitandmarket.com/logo.png"],
   },
   other: {
-    "google-site-verification": "hepa8iNMg0RjaI7FiuzVLWwwwWCQ26z5ofrZFxldzNA",
+    // "google-site-verification": "hepa8iNMg0RjaI7FiuzVLWwwwWCQ26z5ofrZFxldzNA",
+    "google-site-verification": "XG86AIpvITfGs4ETfyPyfFXlzifaOKEMhY38WjJTpb4",
     "ahrefs-site-verification": "eU2DaMSVvJ6i1oMhXpI7jQ",
   },
 };
@@ -56,6 +57,25 @@ export default function RootLayout({
     <html lang="en" className="scroll-smooth">
       <head>
         <meta name="msvalidate.01" content="009C8AEC151B258FD1F908FA76572D41" />
+        {/* Google Analytics */}
+        <Script
+          strategy="afterInteractive"
+          src="https://www.googletagmanager.com/gtag/js?id=G-C4EPTMEWQJ"
+        />
+        <Script
+          id="google-analytics"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-C4EPTMEWQJ', {
+                page_path: window.location.pathname,
+              });
+            `,
+          }}
+        />
         <script src="https://analytics.ahrefs.com/analytics.js" data-key="eU2DaMSVvJ6i1oMhXpI7jQ" async></script>
         {/* Google Tag Manager */}
         <Script id="gtm-init" strategy="afterInteractive">
