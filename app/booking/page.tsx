@@ -61,9 +61,10 @@ export default function BookingPage() {
 
               <div className="border-t border-gray-800 pt-6">
                 <p className="text-gray-300 mb-6 leading-relaxed">
-                  Click the button below to proceed with your secure payment
-                  through PayPal. You'll be redirected to complete your
-                  transaction safely.
+                  Click below to pay securely for your agreed upon service.
+                  Payment options include Paypal, Apple Pay, Venmo, credit or debit card.<br/> 
+                  <span className="font-bold"> For other methods such as Zelle or Cashapp,
+                  please use phone (+1) 347 659 1708 to pay directly.</span>
                 </p>
 
                 {/* PayPal Button */}
