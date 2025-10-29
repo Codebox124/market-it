@@ -28,15 +28,15 @@ export default function Footer() {
 
           <div className="">
             <h3 className="text-xl font-semibold mb-4 text-gray-900">Our Services</h3>
-            <div className="grid grid-cols-2 lg:grid-cols-1">
+            <div className="grid grid-cols-2">
               <div>
                 <Link
                   href="/visuals"
                   className="text-gray-600 hover:text-gray-900 hover:text-emerald-600 transition-colors duration-200 font-bold mb-0.5"
                 >
-                  Visual :
+                  Visual:
                 </Link>
-            <ul className="space-y-0 grid grid-cols-1 lg:grid-cols-2 gap-2 py-2">
+            <ul className="space-y-0 grid grid-cols-1 gap-2 py-2">
               <li>
                 <Link
                   href="/visuals/graphic-design"
@@ -76,9 +76,9 @@ export default function Footer() {
                   href="/marketing"
                   className="text-gray-600 hover:text-gray-900 hover:text-emerald-600 transition-colors duration-200 font-bold mb-0.5 pt-2"
                 >
-                  Marketing :
+                  Marketing:
                 </Link>
-              <ul className="space-y-0 grid grid-cols-1 lg:grid-cols-2 gap-2 py-2">
+              <ul className="space-y-0 grid grid-cols-1 gap-2 py-2">
                 
               
               <li>
@@ -110,7 +110,7 @@ export default function Footer() {
                   href="/marketing/website-and-apps-design"
                   className="text-gray-600 hover:text-gray-900 hover:text-emerald-600 transition-colors duration-200"
                 >
-                  Websites and Apps Design
+                  Websites/Apps
                 </Link>
               </li>
             </ul>
