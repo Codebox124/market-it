@@ -92,7 +92,7 @@ export default function VisualsClient() {
               }}
               className="group backdrop-blur-sm overflow-hidden transition-all duration-500 bg-[#090e19]"
             >
-              <Link href={`/visuals/${item.title.toLowerCase().replace(/\s+/g, "-")}`} className="block h-full">
+              <Link href={`/visuals/${item.title.toLowerCase().replace(/\s+/g, "-").replace(/\//g, "-").replace(/[^a-z0-9-]/g, "")}`} className="block h-full">
                 <div className="relative h-64 w-full overflow-hidden">
                   <Image
                     src={item.image}

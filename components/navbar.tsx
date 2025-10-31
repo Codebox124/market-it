@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useState, useEffect } from "react";
-import { Menu, X, Home, User, Briefcase, Mail, ChevronDown, Calendar } from "lucide-react";
+import { Menu, X, Home, User, Briefcase, Mail, ChevronDown, Calendar} from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
@@ -13,12 +13,37 @@ export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState("home");
   const pathname = usePathname();
+  const [isServiceOpen, setIsServiceOpen] = useState(false);
+  let timeout: ReturnType<typeof setTimeout>;
+
+  const handleMouseEnter = () => {
+    clearTimeout(timeout);
+    setIsOpen(true);
+  };
+
+  const handleMouseLeave = () => {
+    timeout = setTimeout(() => {
+      setIsOpen(false);
+    }, 200); // kasih delay 200ms biar user sempat geser ke dropdown
+  };
 
   const navItems = [
     { name: "Home", href: "/", icon: Home },
     { name: "Booking", href: "/booking", icon: Calendar },
+    { name: "Services", href: "#", icon: "/icons/checklist.png" },
     { name: "Contact", href: "/contact", icon: Mail },
   ];
+
+  const serviceItems = [
+    { name: "Graphic Design", href: "/visuals/graphic-design", icon: Briefcase },
+    { name: "Video Editing", href: "/visuals/video-editing", icon: Briefcase},
+    { name: "Photo Editing", href: "/visuals/photo-editing", icon: Briefcase},
+    { name: "Animation", href: "/visuals/animation", icon: Briefcase},
+    { name: "Websites/Apps", href: "/marketing/website-apps", icon: Briefcase},
+    { name: "Advertising", href: "/marketing/advertising", icon: Briefcase},
+    { name: "Social Media", href: "/marketing/social-media", icon: Briefcase},
+    { name: "Flyer Distribution", href: "/marketing/flyer-distribution", icon: Briefcase},
+  ]
 
   useEffect(() => {
     const handleScroll = () => {
@@ -102,8 +127,58 @@ export default function Navbar() {
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center space-x-1">
-            {navItems.slice(0, 3).map((item, index) => {
+            {navItems.slice(0, 4).map((item, index) => {
               const Icon = item.icon;
+              if (item.name === "Services") {
+                return (
+                  <motion.div
+                    key={item.name}
+                    className="relative"
+                    onMouseEnter={handleMouseEnter}
+                    onMouseLeave={handleMouseLeave}
+                  >
+                    <button
+                      className={`flex items-center space-x-2 px-4 py-2.5 rounded-xl text-sm font-medium transition-all duration-300 group ${
+                        isOpen
+                          ? "text-emerald-600 bg-emerald-50"
+                          : "text-gray-700 hover:text-gray-900 hover:bg-gray-50"
+                      }`}
+                    >{typeof item.icon === "string" ? (
+  <Image
+    src={item.icon}
+    alt={item.name}
+    width={16}
+    height={16}
+    className="opacity-80 group-hover:opacity-100 transition"
+  />
+) : (
+                      <item.icon size={16} />)}
+                      <span>{item.name}</span>
+                      <ChevronDown size={14} className={`transition-transform ${isOpen ? "rotate-180" : ""}`} />
+                    </button>
+
+                    {isOpen && (
+                      <motion.div
+                        initial={{ opacity: 0, y: -10 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: -10 }}
+                        className="absolute left-0 mt-2 w-56 bg-white shadow-lg rounded-xl py-2 border border-gray-100 z-50"
+                      >
+                        {serviceItems.map((sub) => (
+                          <Link
+                            key={sub.name}
+                            href={sub.href}
+                            className="block px-4 py-2 text-sm text-gray-700 hover:bg-emerald-50 hover:text-emerald-600 transition"
+                          >
+                            {sub.name}
+                          </Link>
+                        ))}
+                      </motion.div>
+                    )}
+                  </motion.div>
+                );
+              }
+
               return (
                 <motion.div
                   key={item.name}
@@ -152,6 +227,7 @@ export default function Navbar() {
             </motion.div>
 
             {/* Mobile Menu Button */}
+            
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
@@ -199,7 +275,56 @@ export default function Navbar() {
                 <div className="space-y-3">
                   {navItems.map((item, index) => {
                     const Icon = item.icon;
-                    return (
+                    if (item.name === "Services") {
+                return (
+                  <motion.div
+                    key={item.name}
+                    className="relative"
+                    onMouseEnter={handleMouseEnter}
+                    onMouseLeave={handleMouseLeave}
+                  >
+                    <button onClick={() => setIsServiceOpen(!isServiceOpen)}
+                      className={`flex items-center space-x-2 px-4 py-2.5 rounded-xl text-sm font-medium transition-all duration-300 group ${
+            pathname === item.href
+                          ? "text-emerald-600 bg-emerald-50"
+                          : "text-gray-700 hover:text-gray-900 hover:bg-gray-50"
+                      }`}
+                    >{typeof item.icon === "string" ? (
+  <Image
+    src={item.icon}
+    alt={item.name}
+    width={16}
+    height={16}
+    className="opacity-80 group-hover:opacity-100 transition"
+  />
+) : (
+                      <item.icon size={16} />)}
+                      <span>{item.name}</span>
+                      <ChevronDown size={14} className={`transition-transform ${isServiceOpen ? "rotate-180" : ""}`} />
+                    </button>
+
+                    {isServiceOpen && (
+                      <motion.div
+                        initial={{ opacity: 0, y: -10 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: -10 }}
+                        className="absolute left-0 mt-2 w-56 bg-white shadow-lg rounded-xl py-2 border border-gray-100 z-50"
+                      >
+                        {serviceItems.map((sub) => (
+                          <Link
+                            key={sub.name}
+                            href={sub.href}
+                            className="block px-4 py-2 text-sm text-gray-700 hover:bg-emerald-50 hover:text-emerald-600 transition"
+                          >
+                            {sub.name}
+                          </Link>
+                        ))}
+                      </motion.div>
+                    )}
+                  </motion.div>
+                );
+              }
+              return (
                       <motion.div
                         key={item.name}
                         variants={itemVariants}

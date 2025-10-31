@@ -98,7 +98,7 @@ export default function MarketingClient() {
           {marketingPortfolio.map((item, index) => (
             <Link
               key={index}
-              href={`/marketing/${item.title.toLowerCase().replace(/\s+/g, "-")}`}
+              href={`/marketing/${item.title.toLowerCase().replace(/\s+/g, "-").replace(/\//g, "-").replace(/[^a-z0-9-]/g, "")}`}
             >
               <motion.div
                 whileHover={{

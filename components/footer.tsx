@@ -107,10 +107,10 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="/marketing/website-and-apps-design"
+                  href="/marketing/website-apps"
                   className="text-gray-600 hover:text-gray-900 hover:text-emerald-600 transition-colors duration-200"
                 >
-                  Websites/Apps
+                  Website/Apps
                 </Link>
               </li>
             </ul>

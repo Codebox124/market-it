@@ -1233,7 +1233,7 @@ export const portfolioMarketingProjects: Record<
     string,
     { title: string; description: string; image?: string; video?: string }[]
 > = {
-    "website-and-apps-design": [
+    "website-apps": [
         {
             title: "Portfolio Website",
             description: "Built a personal portfolio website for a creative artist.",
@@ -1950,7 +1950,7 @@ export const serviceDescriptions: Record<string, string> = {
     "advertising": "Creative and data-driven advertising campaigns that attract the right audience and increase brand awareness.",
     "social-media": "Comprehensive social media marketing and content creation that grows audience engagement across all platforms.",
     "flyer-distribution": "Targeted flyer distribution campaigns to reach local and global audiences with high-impact printed marketing materials.",
-    "website-and-apps-design": "Responsive website and app design that blends creativity with performance, helping brands engage audiences effectively.",
+    "website-apps": "Responsive website and app design that blends creativity with performance, helping brands engage audiences effectively.",
     "graphic-design": "Creative graphic design services that deliver stunning visuals for branding, marketing, and digital content.",
     "animation": "Custom animations and motion graphics that bring your ideas, stories, and brands to life through movement and creativity.",
     "video-editing": "High-quality video editing with motion graphics, color grading, and storytelling that captivate audiences.",
@@ -1961,7 +1961,7 @@ export const serviceTitles: Record<string, string> = {
     "advertising": "Advertising Campaigns | Marketing Portfolio | Make It & Market",
     "social-media": "Social Media Marketing | Portfolio | Make It & Market",
     "flyer-distribution": "Flyer Distribution | Marketing Portfolio | Make It & Market",
-    "website-and-apps-design": "Website & App Design | Marketing Portfolio | Make It & Market",
+    "website-apps": "Website & App Design | Marketing Portfolio | Make It & Market",
     "graphic-design": "Graphic Design | Visual Portfolio | Make It & Market",
     "animation": "Animation | Visual Portfolio | Make It & Market",
     "video-editing": "Video Editing | Visual Portfolio | Make It & Market",

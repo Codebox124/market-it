@@ -46,7 +46,7 @@ const visualsPortfolio = [
 ]
   const marketingPortfolio = [
   {
-    title: "Website and Apps Design",
+    title: "Website/Apps",
     image: "/website-design.jpg",
     descriptionservice: "Cutting-edge web experiences with intuitive design and flawless functionality.",
     gradient: "from-indigo-500/20 to-blue-500/20",
@@ -264,7 +264,7 @@ export default function Home() {
             {/* Services grid */}
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
               {visualsPortfolio.map((item, index) => (
-                <Link href={`/visuals/${item.title.toLowerCase().replace(/\s+/g, "-")}`} key={index}>
+                <Link href={`/visuals/${item.title.toLowerCase().replace(/\s+/g, "-").replace(/\//g, "-").replace(/[^a-z0-9-]/g, "")}`} key={index}>
                   <div
                     key={index}
                     className="group cursor-pointer"
@@ -319,7 +319,7 @@ export default function Home() {
 
               ))}
               {marketingPortfolio.map((item, index) => (
-                <Link href={`/marketing/${item.title.toLowerCase().replace(/\s+/g, "-")}`} key={index}>
+                <Link href={`/marketing/${item.title.toLowerCase().replace(/\s+/g, "-").replace(/\//g, "-").replace(/[^a-z0-9-]/g, "")}`} key={index}>
                   <div
                     key={index}
                     className="group cursor-pointer"

@@ -25,7 +25,7 @@ export async function generateMetadata({ params }: { params: Promise<{ service: 
 }
 
 const validServices = [
-  "website-and-apps-design",
+  "website-apps",
   "advertising",
   "social-media",
   "flyer-distribution",
@@ -35,7 +35,7 @@ export default async function Page({ params }: { params: Promise<{ service: stri
   const resolvedParams = await params;
   const service = Array.isArray(resolvedParams.service)? resolvedParams.service.join("-"): resolvedParams.service ?? "";
 
-  const formattedService = service.replace(/-/g, " ");
+  const formattedService = service.replace(/-/g, " ").replace(/\//g, "-").replace(/[^a-z0-9-]/g, "-");
   const descriptionservice = serviceDescriptions[service] || "Discover our work in this category.";
   const projects = portfolioMarketingProjects[service] || [];
   if (!validServices.includes(resolvedParams.service)) {
