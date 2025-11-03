@@ -29,8 +29,8 @@ export default function Navbar() {
 
   const navItems = [
     { name: "Home", href: "/", icon: Home },
-    { name: "Booking", href: "/booking", icon: Calendar },
     { name: "Services", href: "#", icon: "/icons/checklist.png" },
+    { name: "Pay", href: "/booking", icon: Calendar },
     { name: "Contact", href: "/contact", icon: Mail },
   ];
 
@@ -212,7 +212,8 @@ export default function Navbar() {
               whileTap={{ scale: 0.95 }}
               className="hidden sm:block"
             >
-              <Link
+              <div className="w-32"></div>
+              {/* <Link
                 href="/contact"
 
                 onClick={() => setIsOpen(false)}
@@ -223,7 +224,7 @@ export default function Navbar() {
                 </span>
 
 
-              </Link>
+              </Link> */}
             </motion.div>
 
             {/* Mobile Menu Button */}

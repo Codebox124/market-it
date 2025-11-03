@@ -1942,18 +1942,15 @@ export const portfolioMarketingProjects: Record<
             "image": "/flyer/underdog front.png"
         }
     ]
-
-
-
 };
 export const serviceDescriptions: Record<string, string> = {
-    "advertising": "Creative and data-driven advertising campaigns that attract the right audience and increase brand awareness.",
-    "social-media": "Comprehensive social media marketing and content creation that grows audience engagement across all platforms.",
+    "advertising": "Promotional work to target your audience through methods such as Google Ads, social media outreach, email blasts and mass text messaging.",
+    "social-media": "All-around social media consulting, management and content creation to assist with growing your audience engagement across all popular platforms.",
     "flyer-distribution": "Targeted flyer distribution campaigns to reach local and global audiences with high-impact printed marketing materials.",
-    "website-apps": "Responsive website and app design that blends creativity with performance, helping brands engage audiences effectively.",
-    "graphic-design": "Creative graphic design services that deliver stunning visuals for branding, marketing, and digital content.",
-    "animation": "Custom animations and motion graphics that bring your ideas, stories, and brands to life through movement and creativity.",
-    "video-editing": "High-quality video editing with motion graphics, color grading, and storytelling that captivate audiences.",
+    "website-apps": "Responsive web and app development to claim your place within the digital space, whether for business, pleasure, or a cause.",
+    "graphic-design": "Creative graphic design services spanning logos, flyers, cover art, posters, books, presentations, business cards, products, menus and artwork.",
+    "animation": "Creating 2D and 3D animation revolved around characters, environments, modeling, motion and conceptualizing in order to give life to your vision.",
+    "video-editing": "Video editing for commercials, films, music videos, personal footage and social media. Services like clean up, replacing clips, text, captions, color grading, music, sound mixing and effects.",
     "photo-editing": "Professional photo editing and retouching services that enhance quality, color, and creativity for brands and individuals.",
 };
 

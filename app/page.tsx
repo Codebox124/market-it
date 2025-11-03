@@ -4,6 +4,7 @@ import { ArrowRight, Eye } from "lucide-react";
 import { motion } from "framer-motion";
 import { useEffect, useState, useRef } from "react";
 import Link from "next/link";
+import { title } from "process";
 
 const fadeIn = {
   hidden: { opacity: 0, y: 30 },
@@ -17,6 +18,13 @@ const fadeIn = {
     },
   }),
 };
+
+interface Project {
+  title?: string;
+  descriptionservice?: string;
+  image?: string;
+  video?: string;
+}
 
 const visualsPortfolio = [
   {
@@ -72,6 +80,104 @@ const visualsPortfolio = [
   },
 ];
 
+const ClientPortfolio = [
+  {
+    image:"/clientShowcase/client (1).png", 
+    title:"client1",
+  },
+  {
+    image:"/clientShowcase/client (2).png", 
+    title:"client2",
+  },
+  {
+    image:"/clientShowcase/client (3).png", 
+    title:"client3",
+  },
+  {
+    image:"/clientShowcase/client (4).png",
+    title:"client4", 
+  },
+  {
+    image:"/clientShowcase/client (5).png", 
+    title:"client5",
+  },
+  {
+    image:"/clientShowcase/client (6).png", 
+    title:"client6",
+  },
+  {
+    image:"/clientShowcase/client (7).png", 
+    title:"client7",
+  },
+  {
+    image:"/clientShowcase/client (8).png", 
+    title:"client8",
+  },
+  {
+    image:"/clientShowcase/client (9).png", 
+    title:"client9",
+  },
+  {
+    image:"/clientShowcase/client (10).png", 
+    title:"client10",
+  },
+  {
+    image:"/clientShowcase/client (11).png", 
+    title:"client11",
+  },
+  {
+    image:"/clientShowcase/client (12).png", 
+    title:"client12",
+  },
+  {
+    image:"/clientShowcase/client (13).png", 
+    title:"client13",
+  },
+  {
+    image:"/clientShowcase/client (14).png", 
+    title:"client14",
+  },
+  {
+    image:"/clientShowcase/client (15).png", 
+    title:"client15",
+  },
+  {
+    image:"/clientShowcase/client (16).png", 
+    title:"client16",
+  },
+  {
+    image:"/clientShowcase/client (17).png", 
+    title:"client17",
+  },
+  {
+    image:"/clientShowcase/client (18).png", 
+    title:"client18",
+  },
+  {
+    image:"/clientShowcase/client (19).png", 
+    title:"client19",
+  },
+  {
+    image:"/clientShowcase/client (20).png", 
+    title:"client20",  
+  },
+  {
+    image:"/clientShowcase/client (21).png", 
+    title:"client21",
+  },
+  {
+    image:"/clientShowcase/client (22).png", 
+    title:"client22",
+  },
+  {
+    image:"/clientShowcase/client (23).png", 
+    title:"client23",
+  },
+  {
+    image:"/clientShowcase/client (24).png", 
+    title:"client24",
+  },
+];
 
 const generateParticles = (count: number, isMobile: boolean) => {
   return Array.from({ length: count }).map(() => ({
@@ -89,6 +195,9 @@ const generateParticles = (count: number, isMobile: boolean) => {
 export default function Home() {
   const [isLoaded, setIsLoaded] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
+  const [visibleProjects, setVisibleProjects] = useState<number[]>([]);
+  const [selectedProject, setSelectedProject] = useState<Project | null>(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const [hoveredIndex, setHoveredIndex] = useState(null);
   const canvasRef = useRef(null);
@@ -117,6 +226,14 @@ export default function Home() {
     };
   }, []);
 
+  const openModal = (project: Project) => {
+    setSelectedProject(project);
+    setIsModalOpen(true);
+  };
+  const closeModal = () => {
+  setIsModalOpen(false);
+  setSelectedProject(null);
+};
 
 
   useEffect(() => {
@@ -382,43 +499,111 @@ export default function Home() {
       </section>
 
       {/* Client Showcase Section */}
-{/* <section className="bg-[#090e19] py-20 text-white border-t border-white/10">
-  <div className="max-w-7xl mx-auto px-6 text-center">
-    <h2 className="text-4xl font-light mb-6 tracking-wide">
-      Our <span className="text-emerald-400">Clients</span> & Works
-    </h2>
-    <p className="text-gray-400 max-w-2xl mx-auto mb-12">
-      We’ve worked with diverse brands and businesses, bringing their ideas to life through design, strategy, and creativity.
-    </p>
+      <section className="relative py-24 bg-gradient-to-b from-white via-blue-50/10 to-white">
+        <div className="max-w-7xl mx-auto px-6 lg:px-12">
+          <motion.h2
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+            viewport={{ once: true }}
+            className="text-4xl md:text-5xl font-extrabold text-center mb-16 bg-gradient-to-r from-blue-500 to-purple-500 text-transparent bg-clip-text"
+          >
+            CLIENTS
+          </motion.h2>
 
-    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8 items-center justify-center">
-      <div className="relative group">
-        <img src="/clients/client1.png" alt="Client 1" className="w-28 mx-auto opacity-80 group-hover:opacity-100 transition-opacity duration-300" />
-      </div>
-      <div className="relative group">
-        <img src="/clients/client2.png" alt="Client 2" className="w-28 mx-auto opacity-80 group-hover:opacity-100 transition-opacity duration-300" />
-      </div>
-      <div className="relative group">
-        <img src="/clients/client3.png" alt="Client 3" className="w-28 mx-auto opacity-80 group-hover:opacity-100 transition-opacity duration-300" />
-      </div>
-      <div className="relative group">
-        <img src="/clients/client4.png" alt="Client 4" className="w-28 mx-auto opacity-80 group-hover:opacity-100 transition-opacity duration-300" />
-      </div>
-    </div>
+          <div
+            className={`${
+              ClientPortfolio.length === 1
+                ? "flex justify-center"
+                : "grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-8"
+            }`}
+          >
+            {ClientPortfolio.map((project, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 30, scale: 0.95 }}
+                whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                transition={{ duration: 0.6, delay: index * 0.1 }}
+                viewport={{ once: true }}
+                onClick={() => openModal(project)}
+                className={`group relative cursor-pointer ${
+                  ClientPortfolio.length === 1 ? "max-w-md" : ""
+                }`}
+              >
+                {/* Glow effect */}
+                <div className="absolute -inset-0.5 bg-gradient-to-r from-blue-200/30 via-purple-200/30 to-cyan-200/30 rounded-2xl blur opacity-0 group-hover:opacity-100 transition duration-500"></div>
 
-    <div className="mt-16">
-      <a
-        href="/visuals"
-        className="inline-flex items-center text-emerald-400 hover:text-emerald-300 transition-colors uppercase text-xs tracking-widest"
+                {/* Card */}
+                <div onClick={() => openModal(project)} className="relative overflow-hidden rounded-2xl bg-white/90 backdrop-blur-sm border border-gray-200/60 hover:border-blue-300/60 transition-all duration-500 hover:scale-[1.03] shadow-lg shadow-gray-200/50 hover:shadow-xl hover:shadow-gray-300/50">
+                  <div className="relative">
+                    <img
+                      src={project.image}
+                      alt={project.title}
+                      loading="lazy"
+                      className="rounded-xl w-full h-40 object-cover shadow-lg group-hover:scale-105 transition-transform duration-500"
+                    />
+                    <div className="absolute inset-0 bg-white/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl flex items-center justify-center">
+                      <div className="w-12 h-12 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center shadow-lg">
+                        <Eye className="w-5 h-5 text-blue-600" />
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* <div className="p-4">
+                    <h3 className="text-base font-semibold text-gray-800 mb-2">
+                      {project.title}
+                    </h3>
+                    <p className="text-sm text-gray-600 line-clamp-3">
+                      {project.descriptionservice ||
+                        project.descriptionservice ||
+                        ""}
+                    </p>
+                  </div> */}
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+        {isModalOpen && selectedProject && (
+  <div
+    className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm p-4"
+    onClick={closeModal}
+  >
+    <div
+      className="relative overflow-hidden rounded-3xl bg-white/95 backdrop-blur-sm border border-gray-200/80 shadow-2xl"
+      onClick={(e) => e.stopPropagation()} // biar klik di dalam modal gak nutup
+    >
+      {/* Tombol close */}
+      <button
+        onClick={closeModal}
+        className="absolute top-4 right-4 z-60 w-12 h-12 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center text-gray-700 hover:bg-white hover:text-gray-900 transition-colors shadow-lg"
       >
-        View Portfolio
-        <svg className="ml-2 w-3 h-3" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-        </svg>
-      </a>
+        ✕
+      </button>
+
+      {/* Gambar project */}
+      <img
+        src={selectedProject.image}
+        alt={selectedProject.title}
+        loading="lazy"
+        className="rounded-2xl w-full max-h-[70vh] object-contain shadow-2xl mx-auto"
+      />
+
+      {/* Deskripsi */}
+      {/* <div className="p-6">
+        <h3 className="text-xl font-semibold text-gray-800">
+          {selectedProject.title}
+        </h3>
+        <p className="text-gray-600 mt-2">
+          {selectedProject.descriptionservice}
+        </p>
+      </div> */}
     </div>
   </div>
-</section> */}
+)}
+
+      </section>
+
 
 
       <style jsx global>{`

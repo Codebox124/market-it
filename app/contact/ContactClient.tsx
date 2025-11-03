@@ -34,13 +34,14 @@ export default function ContactClient() {
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        className="max-w-2xl mx-auto text-center"
+        className="max-w-2xl mx-auto text-center max-w-5xl"
       >
         <h1 className="text-4xl md:text-5xl font-bold leading-tight bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
           Contact
         </h1>
         <h2 className="mt-4 text-gray-600 md:px-48">
-          Have a project in mind? Fill out the form and let's create something amazing.
+          Have a project in mind?<br/> 
+          Fill out the form and let's create something amazing.
         </h2>
       </motion.div>
 
