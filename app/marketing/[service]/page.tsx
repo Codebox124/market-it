@@ -5,7 +5,7 @@ import { notFound } from "next/navigation";
 
 export async function generateMetadata({ params }: { params: Promise<{ service: string }> }) {
   const resolvedParams = await params;
-  const service = resolvedParams.service?.replace(/-/g, " ") ?? "";
+  const service = resolvedParams.service?.replace(/-/g, " ").replace(/\//g, "-").replace(/[^a-z0-9-]/g, "") ?? "";
   const title =`${serviceTitles[resolvedParams.service]}`;
   const description = serviceDescriptions[resolvedParams.service] || "Discover our work in this category.";
   const canonicals = `https://yourdomain.com/marketing/${resolvedParams.service}`;
@@ -25,7 +25,7 @@ export async function generateMetadata({ params }: { params: Promise<{ service: 
 }
 
 const validServices = [
-  "website-apps",
+  "websites-apps",
   "advertising",
   "social-media",
   "flyer-distribution",
@@ -38,7 +38,7 @@ export default async function Page({ params }: { params: Promise<{ service: stri
   let formattedService = service.replace(/-/g, " ").replace(/\//g, " ").replace(/[^a-z0-9-]/g, " ");
   const descriptionservice = serviceDescriptions[service] || "Discover our work in this category.";
   const projects = portfolioMarketingProjects[service] || [];
-  if (formattedService === "website apps"){
+  if (formattedService === "websites apps"){
     formattedService = formattedService.replace(/ /g, "/");
   }
   if (!validServices.includes(resolvedParams.service)) {

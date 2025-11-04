@@ -1233,7 +1233,7 @@ export const portfolioMarketingProjects: Record<
     string,
     { title: string; description: string; image?: string; video?: string }[]
 > = {
-    "website-apps": [
+    "websites-apps": [
         {
             title: "Portfolio Website",
             description: "Built a personal portfolio website for a creative artist.",

@@ -8,7 +8,7 @@ import Link from "next/link";
 
 const marketingPortfolio = [
   {
-    title: "Websites and Apps Design",
+    title: "Websites/Apps",
     image: "/website-design.jpg",
     description:
       "User-friendly, custom websites and apps for portfolios, awareness, commerce, or blogging.",
