@@ -144,14 +144,14 @@ export default function Navbar() {
                           : "text-gray-700 hover:text-gray-900 hover:bg-gray-50"
                       }`}
                     >{typeof item.icon === "string" ? (
-  <Image
-    src={item.icon}
-    alt={item.name}
-    width={16}
-    height={16}
-    className="opacity-80 group-hover:opacity-100 transition"
-  />
-) : (
+                      <Image
+                        src={item.icon}
+                        alt={item.name}
+                        width={16}
+                        height={16}
+                        className="opacity-80 group-hover:opacity-100 transition"
+                      />
+                    ) : (
                       <item.icon size={16} />)}
                       <span>{item.name}</span>
                       <ChevronDown size={14} className={`transition-transform ${isOpen ? "rotate-180" : ""}`} />

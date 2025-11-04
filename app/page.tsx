@@ -54,7 +54,7 @@ const visualsPortfolio = [
 ]
   const marketingPortfolio = [
   {
-    title: "Website/Apps",
+    title: "Websites/Apps",
     image: "/website-design.jpg",
     descriptionservice: "Cutting-edge web experiences with intuitive design and flawless functionality.",
     gradient: "from-indigo-500/20 to-blue-500/20",
@@ -535,12 +535,12 @@ export default function Home() {
 
                 {/* Card */}
                 <div onClick={() => openModal(project)} className="relative overflow-hidden rounded-2xl bg-white/90 backdrop-blur-sm border border-gray-200/60 hover:border-blue-300/60 transition-all duration-500 hover:scale-[1.03] shadow-lg shadow-gray-200/50 hover:shadow-xl hover:shadow-gray-300/50">
-                  <div className="relative">
+                  <div className="aspect-square w-full overflow-hidden rounded-xl bg-white flex items-center justify-center">
                     <img
                       src={project.image}
                       alt={project.title}
                       loading="lazy"
-                      className="rounded-xl w-full h-40 object-cover shadow-lg group-hover:scale-105 transition-transform duration-500"
+                      className="w-full h-full object-contain shadow-lg group-hover:scale-105 transition-transform duration-500"
                     />
                     <div className="absolute inset-0 bg-white/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl flex items-center justify-center">
                       <div className="w-12 h-12 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center shadow-lg">
@@ -570,7 +570,7 @@ export default function Home() {
     onClick={closeModal}
   >
     <div
-      className="relative overflow-hidden rounded-3xl bg-white/95 backdrop-blur-sm border border-gray-200/80 shadow-2xl"
+      className="relative overflow-hidden rounded-3xl bg-white/95 backdrop-blur-sm border border-gray-200/80 shadow-2xl p-6 md:p-16"
       onClick={(e) => e.stopPropagation()} // biar klik di dalam modal gak nutup
     >
       {/* Tombol close */}

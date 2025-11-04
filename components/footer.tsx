@@ -28,7 +28,7 @@ export default function Footer() {
 
           <div className="">
             <h3 className="text-xl font-semibold mb-4 text-gray-900">Our Services</h3>
-            <div className="grid grid-cols-2">
+            <div className="grid grid-cols-1 md:grid-cols-2">
               <div>
                 <Link
                   href="/visuals"
@@ -71,7 +71,7 @@ export default function Footer() {
               </li>
               </ul>
               </div>
-              <div>
+              <div className="mt-5 md:mt-0">
                 <Link
                   href="/marketing"
                   className="text-gray-600 hover:text-gray-900 hover:text-emerald-600 transition-colors duration-200 font-bold mb-0.5 pt-2"
@@ -110,7 +110,7 @@ export default function Footer() {
                   href="/marketing/website-apps"
                   className="text-gray-600 hover:text-gray-900 hover:text-emerald-600 transition-colors duration-200"
                 >
-                  Website/Apps
+                  Websites/Apps
                 </Link>
               </li>
             </ul>
@@ -138,7 +138,7 @@ export default function Footer() {
                   href="tel:347 659 1708"
                   className="text-gray-600 hover:text-gray-900 hover:text-green-600 transition-colors duration-200"
                 >
-                  (347) 659 1708
+                  (347)<span className="[word-spacing:-0.35em]"> 659</span><span className="[word-spacing:-0.2em]"> 1708</span>
                 </a>
               </li>
               <li className="flex items-start">

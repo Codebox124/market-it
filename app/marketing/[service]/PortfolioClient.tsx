@@ -4,7 +4,10 @@ import { useState, useEffect } from "react";
 import { useParams } from "next/navigation";
 import { portfolioMarketingProjects, serviceDescriptions } from "@/data/data";
 
-
+interface marketing {
+  title?: string;
+  image?: string;
+}
 
 interface Project {
   title?: string;
@@ -67,6 +70,17 @@ export default function PortfolioClient({
     setIsModalOpen(false);
     setSelectedProject(null);
   };
+
+  const marketingport = [
+  {
+    title: "port marketing",
+    image: "/port-marketing.png",
+  },
+  {
+    title: "port marketing ark",
+    image: "/port-marketing-ark.png",
+  },
+]
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-blue-50/30 text-gray-900 relative overflow-hidden mt-10">
@@ -258,7 +272,7 @@ export default function PortfolioClient({
                                         </div>
                                     ))}
                                 </div>
-                            </div>
+                            </div>                            
                         )
                     ) : (
                         /* Enhanced Empty State */
@@ -284,6 +298,26 @@ export default function PortfolioClient({
                     )}
                 </div>
             </div>
+            {service === "advertising" && (
+                /* Marketing Portfolio */
+                <div className="grid grid-cols-1 relative md:grid-cols-2 lg:grid-cols-2 gap-8 mt-24">
+                {marketingport.map((item, index) => (
+                    <div
+                        key={index}
+                        className="group backdrop-blur-sm overflow-hidden transition-all duration-500 bg-[#090e19]"
+                        >
+                        <div className="aspect-video w-full overflow-hidden bg-white flex items-center justify-center">
+                            <img
+                                src={item.image}
+                                alt={item.title}
+                                className="object-contain transition-transform duration-700"
+                            />
+                                    </div>
+                                    </div>
+                            ))}
+                            </div>
+                        )}  
+            
 
             {/* Modal for Full View */}
             {isModalOpen && selectedProject && (

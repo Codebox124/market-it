@@ -49,7 +49,7 @@ const fadeInUp = {
 export default function MarketingClient() {
   return (
     <div className="min-h-screen bg-[#090e19] text-white pt-24 overflow-hidden">
-      <div className="absolute inset-0 bg-[url('/noise.png')] opacity-5 pointer-events-none"></div>
+      <div className="absolute inset-0 opacity-5 pointer-events-none"></div>
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
         <div className="absolute -top-40 -right-40 w-96 h-96 bg-amber-900/10 rounded-full blur-3xl"></div>
         <div className="absolute bottom-1/3 -left-40 w-80 h-80 bg-rose-900/10 rounded-full blur-3xl"></div>
@@ -112,7 +112,7 @@ export default function MarketingClient() {
                 {/* Image Section */}
                 <div className="relative h-64 w-full overflow-hidden">
                   <Image
-                    src={item.image || "/placeholder.svg"}
+                    src={item.image}
                     alt={item.title}
                     fill
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
