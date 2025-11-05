@@ -414,7 +414,7 @@ export default function Home() {
                       </div>
 
                       {/* Content */}
-                      <div className="p-6 space-y-4 min-h-[320px] flex flex-col flex-grow">
+                      <div className="p-6 space-y-4 min-h-[280px] md:min-h-[320px] flex flex-col flex-grow">
                         <h3 className="text-lg font-semibold text-gray-900 tracking-wide">
                           {item.title}
                         </h3>
