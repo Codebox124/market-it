@@ -30,25 +30,25 @@ const visualsPortfolio = [
   {
     title: "Graphic Design",
     image: "/graphic-design.png",
-    descriptionservice: "Premium visual identity and brand design crafted with precision and creativity.",
+    descriptionservice: "Creative graphic design services spanning logos, flyers, cover art, posters, books, presentations, business cards, products, menus and artwork.",
     gradient: "from-violet-500/20 to-purple-500/20",
   },
   {
     title: "Video Editing",
     image: "/video-editing.webp",
-    descriptionservice: "Cinematic post-production with advanced motion graphics and seamless storytelling.",
+    descriptionservice: "Video editing for commercials, films, music videos, personal footage and social media. Services like clean up, replacing clips, text, captions, color grading, music, sound mixing and effects.",
     gradient: "from-blue-500/20 to-cyan-500/20",
   },
   {
     title: "Photo Editing",
     image: "/photo-editing.png",
-    descriptionservice: "Professional image enhancement and artistic manipulation with meticulous attention to detail.",
+    descriptionservice: "Professional photo editing and retouching services that enhance quality, color, and creativity for brands and individuals.",
     gradient: "from-emerald-500/20 to-teal-500/20",
   },
   {
     title: "Animation",
     image: "/1.png",
-    descriptionservice: "Custom character design and fluid motion graphics that bring stories to life.",
+    descriptionservice: "Creating 2D and 3D animation revolved around characters, environments, modeling, motion and conceptualizing in order to give life to your vision.",
     gradient: "from-orange-500/20 to-red-500/20",
   }
 ]
@@ -56,25 +56,25 @@ const visualsPortfolio = [
   {
     title: "Websites/Apps",
     image: "/website-design.jpg",
-    descriptionservice: "Cutting-edge web experiences with intuitive design and flawless functionality.",
+    descriptionservice: "Responsive web and app development to claim your place within the digital space, whether for business, pleasure, or a cause.",
     gradient: "from-indigo-500/20 to-blue-500/20",
   },
   {
     title: "Advertising",
     image: "/advertising.webp",
-    descriptionservice: "Strategic campaigns that captivate audiences and drive meaningful engagement.",
+    descriptionservice: "Promotional work to target your audience through methods such as Google Ads, social media outreach, email blasts and mass text messaging.",
     gradient: "from-pink-500/20 to-rose-500/20",
   },
   {
     title: "Social Media",
     image: "/social-media.jpg",
-    descriptionservice: "Comprehensive social presence management with engaging content and growth strategies.",
+    descriptionservice: "All-around social media consulting, management and content creation to assist with growing your audience engagement across all popular platforms.",
     gradient: "from-purple-500/20 to-pink-500/20",
   },
   {
     title: "Flyer Distribution",
     image: "/flyer.jpg",
-    descriptionservice: "Targeted offline marketing campaigns that create real-world connections and impact.",
+    descriptionservice: "Targeted flyer distribution campaigns to reach local and global audiences with high-impact printed marketing materials.",
     icon: "feather",
     gradient: "from-yellow-500/20 to-orange-500/20",
   },
@@ -379,7 +379,7 @@ export default function Home() {
             </div>
 
             {/* Services grid */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 h-full">
               {visualsPortfolio.map((item, index) => (
                 <Link href={`/visuals/${item.title.toLowerCase().replace(/\s+/g, "-").replace(/\//g, "-").replace(/[^a-z0-9-]/g, "")}`} key={index}>
                   <div
@@ -414,15 +414,15 @@ export default function Home() {
                       </div>
 
                       {/* Content */}
-                      <div className="p-6 space-y-4">
+                      <div className="p-6 space-y-4 min-h-[320px] flex flex-col flex-grow">
                         <h3 className="text-lg font-semibold text-gray-900 tracking-wide">
                           {item.title}
                         </h3>
-                        <p className="text-sm text-gray-600 leading-relaxed line-clamp-4">
+                        <p className="text-sm text-gray-600 leading-relaxed">
                           {item.descriptionservice}
                         </p>
 
-                        <div className={`flex items-center text-sm font-semibold pt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300`}>
+                        <div className={`flex mt-auto items-center text-sm font-semibold pt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300`}>
                           <span>Explore Services</span>
                           <ArrowRight className="ml-2 h-4 w-4 transform group-hover:translate-x-1 transition-transform" />
                         </div>
@@ -473,7 +473,7 @@ export default function Home() {
                         <h3 className="text-lg font-semibold text-gray-900 tracking-wide">
                           {item.title}
                         </h3>
-                        <p className="text-sm text-gray-600 leading-relaxed line-clamp-4">
+                        <p className="text-sm text-gray-600 leading-relaxed line-clamp-6">
                           {item.descriptionservice}
                         </p>
 
