@@ -30,25 +30,25 @@ const visualsPortfolio = [
   {
     title: "Graphic Design",
     image: "/graphic-design.png",
-    descriptionservice: "Creative graphic design services spanning logos, flyers, cover art, posters, books, presentations, business cards, products, menus and artwork.",
+    descriptionservice: "Creative graphic design services spanning logos, flyers, books, film, PowerPoint, business cards, products, menus and artwork",
     gradient: "from-violet-500/20 to-purple-500/20",
   },
   {
     title: "Video Editing",
     image: "/video-editing.webp",
-    descriptionservice: "Video editing for commercials, films, music videos, personal footage and social media. Services like clean up, replacing clips, text, captions, color grading, music, sound mixing and effects.",
+    descriptionservice: "Video editing for commercials, films, music videos and social media. Services include cleanup, captions, color grading, music, sound and effects.",
     gradient: "from-blue-500/20 to-cyan-500/20",
   },
   {
     title: "Photo Editing",
     image: "/photo-editing.png",
-    descriptionservice: "Professional photo editing and retouching services that enhance quality, color, and creativity for brands and individuals.",
+    descriptionservice: "Profesional photo editing and retouching services to enhance quality, adjust color, add text, replace unwanted items or combine multiple images.",
     gradient: "from-emerald-500/20 to-teal-500/20",
   },
   {
     title: "Animation",
     image: "/1.png",
-    descriptionservice: "Creating 2D and 3D animation revolved around characters, environments, modeling, motion and conceptualizing in order to give life to your vision.",
+    descriptionservice: "Creating 2D and 3D animation revolved around characters, environments, modeling, motion and conceptualizing to give life to your vision.",
     gradient: "from-orange-500/20 to-red-500/20",
   }
 ]
@@ -56,7 +56,7 @@ const visualsPortfolio = [
   {
     title: "Websites/Apps",
     image: "/website-design.jpg",
-    descriptionservice: "Responsive web and app development to claim your place within the digital space, whether for business, pleasure, or a cause.",
+    descriptionservice: "Responsive web and app development to claim your place within the digital space, whether it's for business, pleasure or a cause.",
     gradient: "from-indigo-500/20 to-blue-500/20",
   },
   {
@@ -337,7 +337,7 @@ export default function Home() {
         <div className="absolute bottom-20 right-20 w-48 h-48 bg-gradient-to-br from-pink-200/30 to-orange-200/30 rounded-full blur-2xl" />
 
         {/* Main content */}
-        <div className="relative z-10 max-w-7xl w-full px-6 lg:px-12 py-24">
+        <div className="relative z-10 max-w-7xl w-full px-6 lg:px-12 py-10">
           <div className="space-y-16">
             {/* Hero title */}
             <div className="text-center space-y-8">
@@ -414,11 +414,11 @@ export default function Home() {
                       </div>
 
                       {/* Content */}
-                      <div className="p-6 space-y-4 min-h-[280px] md:min-h-[320px] flex flex-col flex-grow">
+                      <div className="p-6 space-y-4 flex flex-col flex-grow">
                         <h3 className="text-lg font-semibold text-gray-900 tracking-wide">
                           {item.title}
                         </h3>
-                        <p className="text-sm text-gray-600 leading-relaxed">
+                        <p className="text-sm text-gray-600 leading-relaxed line-clamp-6">
                           {item.descriptionservice}
                         </p>
 
@@ -499,7 +499,7 @@ export default function Home() {
       </section>
 
       {/* Client Showcase Section */}
-      <section className="relative py-24 bg-gradient-to-b from-white via-blue-50/10 to-white">
+      <section className="relative py-10 bg-gradient-to-b from-white via-blue-50/10 to-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <motion.h2
             initial={{ opacity: 0, y: 30 }}

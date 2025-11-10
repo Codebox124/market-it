@@ -1947,11 +1947,11 @@ export const serviceDescriptions: Record<string, string> = {
     "advertising": "Promotional work to target your audience through methods such as Google Ads, social media outreach, email blasts and mass text messaging.",
     "social-media": "All-around social media consulting, management and content creation to assist with growing your audience engagement across all popular platforms.",
     "flyer-distribution": "Targeted flyer distribution campaigns to reach local and global audiences with high-impact printed marketing materials.",
-    "websites-apps": "Responsive web and app development to claim your place within the digital space, whether for business, pleasure, or a cause.",
-    "graphic-design": "Creative graphic design services spanning logos, flyers, cover art, posters, books, presentations, business cards, products, menus and artwork.",
+    "websites-apps": "Responsive web and app development to claim your place within the digital space, whether it's for business, pleasure or a cause.",
+    "graphic-design": "Creative graphic design services spanning logos, flyers, cover art, posters, books, film, PowerPoint, business cards, products, menus and artwork.",
     "animation": "Creating 2D and 3D animation revolved around characters, environments, modeling, motion and conceptualizing in order to give life to your vision.",
-    "video-editing": "Video editing for commercials, films, music videos, personal footage and social media. Services like clean up, replacing clips, text, captions, color grading, music, sound mixing and effects.",
-    "photo-editing": "Professional photo editing and retouching services that enhance quality, color, and creativity for brands and individuals.",
+    "video-editing": "Video editing for commercials, films, music videos and social media. Services include cleanup, captions, color grading, music, sound and effects.",
+    "photo-editing": "Professional photo editing and retouching services that enhance quality, color and creativity for brands and individuals.",
 };
 
 export const serviceTitles: Record<string, string> = {
