@@ -8,7 +8,7 @@ export async function generateMetadata({ params }: { params: Promise<{ service: 
   const service = resolvedParams.service?.replace(/-/g, " ").replace(/\//g, "-").replace(/[^a-z0-9-]/g, "") ?? "";
   const title =`${serviceTitles[resolvedParams.service]}`;
   const description = serviceDescriptions[resolvedParams.service] || "Discover our work in this category.";
-  const canonicals = `https://yourdomain.com/marketing/${resolvedParams.service}`;
+  const canonicals = `https://www.makeitandmarket.com/marketing/${resolvedParams.service}`;
 
   return {
     title,

@@ -9,7 +9,7 @@ export default function Head({ params }: { params: { service: string } }) {
     serviceDescriptions[serviceKey] ||
     "Explore our creative visual portfolio including design, video, photo, and animation projects.";
 
-  const url = `https://www.makeitandmarket.com/visual/${serviceKey}`;
+  const url = `https://www.makeitandmarket.com/visuals/${serviceKey}`;
 
   return (
     <>
