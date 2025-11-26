@@ -309,7 +309,7 @@ export default function Navbar() {
                         initial={{ opacity: 0, y: -10 }}
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: -10 }}
-                        className="absolute left-0 mt-2 w-56 bg-white shadow-lg rounded-xl py-2 border border-gray-100 z-50"
+                        className="absolute left-0 mt-2 w-56 bg-white shadow-lg rounded-xl py-2 border border-gray-100 z-50 max-h-60 overflow-y-auto overflow-x-hidden"
                       >
                         {serviceItems.map((sub) => (
                           <Link
