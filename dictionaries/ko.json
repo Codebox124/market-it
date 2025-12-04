@@ -1,0 +1,67 @@
+{
+  "seo": {
+    "title": "디지털 마케팅 & 크리에이티브 에이전시 |Make it & Market",
+    "description": "웹사이트 개발, 그래픽 디자인, 영상 편집, 신뢰할수 있는 디지털 마테팅 전략을 제공하는 전문 서비스",
+    "keywords": "SEO 서비스,디지털 마케팅, 그래픽 디자인, 영상 편집, 웹사이트 개발",
+    "social_title": "Make it & Market-비지니스를 위한 크리에이티브 솔루션",
+    "social_description": "창의적인 서비스와 디지털 마케팅 전략으로 비즈니스를 성장시키세요"
+  },
+  "hero": {
+    "subtitle": "기업,아티스트, 크리에이터를 위한 효과적인 마케팅 솔류션과 다채로운 크리에이티브 서비스"
+  },
+  "services_section": {
+    "title": "종합서비스",
+    "explore_button": "서비스 살펴보기",
+    "items": {
+      "advertising": {
+        "title": "광고",
+        "description": "Google Ads, 소셜 미디어 홍보, 이메일 캠페인,대량 문자 발송 등 다양한 방법으로 타깃 고객에게 도달하는 프로모션 서비스 .",
+        "category_label": "광고"
+      },
+      "social_media": {
+        "title": "소셜 미디어",
+        "description": "모든 주요 플랫폼에서 참여도를 높일수 있도록 소셜 미디어 컨설팅, 운영 관리 , 콘텐츠 제작을 지원합니다 .",
+        "category_label": "소셜미디어"
+      },
+      "web_app": {
+        "title": "웹사이트 & 앱",
+        "description": "비지니스, 개인, 혹은 프로젝트 목적에 맞는 반응형 웹 및 앱 개발을 통해 디지털 공간에서 경쟁력을 확보하세요.",
+        "category_label": "웹/앱"
+      },
+      "graphic_design": {
+        "title": "그래픽 디자인",
+        "description": "로고, 전단지, 도서, 영상, 파워포인트, 명함, 패키지, 메뉴판,아트워크 등 다양한 분야의 창의적인 그래픽 디자인 서비스.",
+        "category_label": "그래픽 디자인"
+      },
+      "video_editing": {
+        "title": "영상 편집",
+        "description": "광고,영화,뮤직비디오,소셜 미디어용 영상 편집 서비스,클린업, 자막,색보정,음악,사운드,효과 편집을 포함합니다 .",
+        "category_label": "영상 편집"
+      },
+      "animation": {
+        "title": "애니메이션",
+        "description": "캐릭터.배경.모델링.모션.컨셉 제작을 포함한 2D & 3D 애니메이션으로 아이디어에 생동감을 불어넣습니다",
+        "category_label": "애니메이션"
+      }
+    }
+  },
+  "contact": {
+    "label": "문의하기",
+    "title": "프로젝트 시작하기",
+    "subtitle": "오늘 바로 여러분의 비전을 함께 이야기해보세요",
+    "form": {
+      "name_label": "이름",
+      "name_placeholder": "이름을 입력하세요",
+      "email_label": "이메일",
+      "email_placeholder": "email@example.com",
+      "message_label": "메세지",
+      "message_placeholder": "프로젝트에 대해 알려주세요",
+      "submit_button": "메시지 보내기",
+      "loading_text": "전송 중..."
+    },
+    "alerts": {
+      "success": "메시지가 성공적으로 전송되엿습니다 ! 곧 연락드리겟습니다 .",
+      "error": "메시지 전송에 실패햇습니다. 잠시 후 다시 시도해주세요."
+    }
+  }
+}

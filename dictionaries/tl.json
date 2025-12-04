@@ -1,0 +1,67 @@
+{
+  "seo": {
+    "title": "Ahensiya ng Digital Marketing at Malikhaing Serbisyo | Likhain at I-market",
+    "description": "Propesyonal na mga serbisyo para sa pagbuo ng website, disenyo ng grapiko, pag-edit ng video, at maaasahang mga estratehiya sa digital marketing.",
+    "keywords": "Serbisyo sa SEO, Digital Marketing, Disenyo ng Grapiko, Pag-edit ng Video, Pagbuo ng Website",
+    "social_title": "Gawin at I-market - Mga Malikhaing Solusyon para sa Iyong Negosyo",
+    "social_description": "Paunlarin ang iyong negosyo sa pamamagitan ng aming malikhaing serbisyo at mga estratehiya sa digital marketing."
+  },
+  "hero": {
+    "subtitle": "Epektibong mga solusyon sa marketing at maraming gamit na mga malikhaing serbisyo para sa mga negosyo, artista, at mga tagapagtaguyod ng bisyon."
+  },
+  "services_section": {
+    "title": "Komprehensibong Serbisyo",
+    "explore_button": "Tuklasin ang mga Serbisyo",
+    "items": {
+      "advertising": {
+        "title": "Pag-aanunsiyo",
+        "description": "Promosyunal na gawain upang maabot ang iyong target na madla sa pamamagitan ng mga pamamaraan tulad ng Google Ads, social media, email blasts, at mass text messaging.",
+        "category_label": "Pag-aanunsiyo"
+      },
+      "social_media": {
+        "title": "Pamamahayag panlipunan",
+        "description": "Pangkalahatang konsultasyon sa social media, pamamahala, at paggawa ng nilalaman upang makatulong sa pagpapalago ng pakikilahok ng iyong audience sa lahat ng sikat na platform.",
+        "category_label": "Pamamahayag panlipunan"
+      },
+      "web_app": {
+        "title": "Mga website at aplikasyon",
+        "description": "Tumutugon na pagbuo ng website at aplikasyon upang makamit ang iyong lugar sa digital na espasyo, maging ito man ay para sa negosyo, kasiyahan, o isang layunin.",
+        "category_label": "Website/Aplikasyon"
+      },
+      "graphic_design": {
+        "title": "Disenyong Grapiko",
+        "description": "Mga malikhaing serbisyo sa graphic design na sumasaklaw sa mga logo, flyer, libro, pelikula, PowerPoint, business card, produkto, menu, at likhang sining.",
+        "category_label": "Disenyong Grapiko"
+      },
+      "video_editing": {
+        "title": "Pag-edit ng Video",
+        "description": "Pag-eedit ng video para sa mga patalastas, pelikula, music video, at social media. Kabilang sa mga serbisyo ang paglilinis, mga pamagat, pag-aayos ng kulay, musika, tunog, at mga epekto.",
+        "category_label": "Pag-edit ng Video"
+      },
+      "animation": {
+        "title": "Animasyon",
+        "description": "Ang paggawa ng 2D at 3D na animasyon ay nakasentro sa mga karakter, kapaligiran, pagmomodelo, galaw, at pag-iisip ng konsepto upang bigyang-buhay ang iyong pananaw",
+        "category_label": "Animasyon"
+      }
+    }
+  },
+  "contact": {
+    "label": "Makipag-ugnayan sa Amin",
+    "title": "Simulan ang Iyong Proyekto",
+    "subtitle": "Talakayin mo ang iyong pangitain sa amin ngayon.",
+    "form": {
+      "name_label": "Pangalan",
+      "name_placeholder": "Ang Iyong Pangalan",
+      "email_label": "Email",
+      "email_placeholder": "email@halimbawa.com",
+      "message_label": "Mensahe",
+      "message_placeholder": "Ibahagi sa amin ang tungkol sa iyong proyekto.",
+      "submit_button": "Magpadala ng Mensahe",
+      "loading_text": "Ipinapadala..."
+    },
+    "alerts": {
+      "success": "Matagumpay na naipadala ang mensahe! Makikipag-ugnayan kami sa iyo sa lalong madaling panahon.",
+      "error": "Nabigong maipadala ang mensahe. Pakiusap subukan muli mamaya."
+    }
+  }
+}

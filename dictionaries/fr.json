@@ -1,0 +1,67 @@
+{
+  "seo": {
+    "title": "Agence de marketing digital et de création | Make It & Market",
+    "description": "Services professionnels de développement web, conception graphique, montage vidéo et stratégies de marketing digital fiables.",
+    "keywords": "SEO, marketing digital, conception graphique, montage vidéo, développement web",
+    "social_title": "Make It & Market - Des solutions créatives pour votre entreprise",
+    "social_description": "Développez votre activité grâce à nos services créatifs et nos stratégies de marketing digital."
+  },
+  "hero": {
+    "subtitle": "Solutions marketing efficaces et services créatifs polyvalents pour les entreprises, les artistes et les visionnaires."
+  },
+  "services_section": {
+    "title": "Services complets",
+    "explore_button": "Découvrir nos services",
+    "items": {
+      "advertising": {
+        "title": "Publicité",
+        "description": "Cibler votre audience grâce à des outils comme Google Ads, les réseaux sociaux, l'emailing et le SMS marketing.",
+        "category_label": "Publicité"
+      },
+      "social_media": {
+        "title": "Réseaux sociaux",
+        "description": "Conseil, gestion et création de contenu pour vos réseaux sociaux afin d'accroître l'engagement de votre audience sur toutes les plateformes populaires.",
+        "category_label": "Réseaux sociaux"
+      },
+      "web_app": {
+        "title": "Sites web et applications",
+        "description": "Développement web et mobile responsive pour une présence digitale optimale, que ce soit pour le travail, les loisirs ou une cause.",
+        "category_label": "Web/Application"
+      },
+      "graphic_design": {
+        "title": "Conception graphique",
+        "description": "Création graphique complète : logos, flyers, livres, films, PowerPoint, cartes de visite, produits, menus et illustrations.",
+        "category_label": "Conception graphique"
+      },
+      "video_editing": {
+        "title": "Montage vidéo",
+        "description": "Montage vidéo pour publicités, films, clips musicaux et réseaux sociaux. Nos services incluent le nettoyage, le sous-titrage, l'étalonnage des couleurs, la musique, le son et les effets spéciaux.",
+        "category_label": "Montage vidéo"
+      },
+      "animation": {
+        "title": "Animation",
+        "description": "Création d'animations 2D et 3D autour de personnages, d'environnements, de modélisation, de mouvement et de conceptualisation pour donner vie à votre vision.",
+        "category_label": "Animation"
+      }
+    }
+  },
+  "contact": {
+    "label": "Nous contacter",
+    "title": "Lancer votre projet",
+    "subtitle": "Discutez de votre projet avec nous dès aujourd'hui.",
+    "form": {
+      "name_label": "Nom",
+      "name_placeholder": "Votre nom",
+      "email_label": "Adresse e-mail",
+      "email_placeholder": "email@example.com",
+      "message_label": "Message",
+      "message_placeholder": "Parlez-nous de votre projet…",
+      "submit_button": "Envoyer le message",
+      "loading_text": "Envoi en cours…"
+    },
+    "alerts": {
+      "success": "Message envoyé avec succès ! Nous vous contacterons prochainement.",
+      "error": "Échec de l'envoi du message. Veuillez réessayer plus tard."
+    }
+  }
+}

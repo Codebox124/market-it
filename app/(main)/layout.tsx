@@ -1,7 +1,11 @@
 import type { Metadata } from "next";
-import { Geist, Azeret_Mono as Geist_Mono, IBM_Plex_Mono } from "next/font/google";
+import {
+  Geist,
+  Azeret_Mono as Geist_Mono,
+  IBM_Plex_Mono,
+} from "next/font/google";
 import Script from "next/script";
-import "./globals.css";
+import "../globals.css";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 
@@ -38,7 +42,7 @@ export const metadata: Metadata = {
     title: "Make It & Market",
     description:
       "Visuals & Marketing solutions to help brands scale effectively.",
-    creator: "@yourtwitterhandle", 
+    creator: "@yourtwitterhandle",
     images: ["https://www.makeitandmarket.com/logo.png"],
   },
   other: {
@@ -76,7 +80,11 @@ export default function RootLayout({
             `,
           }}
         />
-        <script src="https://analytics.ahrefs.com/analytics.js" data-key="eU2DaMSVvJ6i1oMhXpI7jQ" async></script>
+        <script
+          src="https://analytics.ahrefs.com/analytics.js"
+          data-key="eU2DaMSVvJ6i1oMhXpI7jQ"
+          async
+        ></script>
         {/* Google Tag Manager */}
         <Script id="gtm-init" strategy="afterInteractive">
           {`
@@ -104,7 +112,7 @@ export default function RootLayout({
               gtag('config', 'AW-16842141479');
             `,
           }}
-          />
+        />
       </head>
 
       <body

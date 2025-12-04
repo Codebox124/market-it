@@ -1,0 +1,67 @@
+{
+  "seo": {
+    "title": "Agência de Marketing Digital e Criatividade | Make It & Market",
+    "description": "Serviços profissionais de desenvolvimento de sites, design gráfico, edição de vídeo e estratégias confiáveis de marketing digital.",
+    "keywords": "Serviços de SEO, Marketing Digital, Design Gráfico, Edição de Vídeo, Desenvolvimento de Sites",
+    "social_title": "Crie & Promova – Soluções Criativas para o Seu Negócio",
+    "social_description": "Eleve o seu negócio com nossos serviços criativos e estratégias de marketing digital."
+  },
+  "hero": {
+    "subtitle": "Soluções de marketing eficazes e serviços criativos versáteis para empresas, artistas e visionários."
+  },
+  "services_section": {
+    "title": "Diversos serviços",
+    "explore_button": "Explorar Serviços",
+    "items": {
+      "advertising": {
+        "title": "Publicidade",
+        "description": "Trabalho promocional para alcançar seu público por meio de Google Ads, divulgação em redes sociais, e-mails em massa e mensagens de texto.",
+        "category_label": "Publicidade"
+      },
+      "social_media": {
+        "title": "Redes Sociais",
+        "description": "Consultoria completa de redes sociais, gerenciamento e criação de conteúdo para ajudar no crescimento do engajamento do seu público em todas as plataformas populares.",
+        "category_label": "Social mídia"
+      },
+      "web_app": {
+        "title": "Sites e Aplicativos",
+        "description": "Desenvolvimento de sites e aplicativos responsivos para estabelecer sua presença no espaço digital, seja para negócios, entretenimento ou uma causa maior.",
+        "category_label": "Web/App"
+      },
+      "graphic_design": {
+        "title": "Design Gráfico",
+        "description": "Serviços de design gráfico criativo, incluindo logotipos, flyers, livros, cinema, apresentações, cartões de visita, produtos, menus e peças artísticas.",
+        "category_label": "Design Gráfico"
+      },
+      "video_editing": {
+        "title": "Edição de Vídeo",
+        "description": "Edição de vídeo para comerciais, filmes, videoclipes e redes sociais. Os serviços incluem limpeza, legendas, correção de cor, música, som e efeitos.",
+        "category_label": "Editor de vídeo"
+      },
+      "animation": {
+        "title": "Animação",
+        "description": "Criação de animação 2D e 3D com foco em personagens, ambientes, modelagem, movimentos e conceituação para dar vida à sua visão.",
+        "category_label": "Animações"
+      }
+    }
+  },
+  "contact": {
+    "label": "Entre em contato",
+    "title": "Comece seu projeto",
+    "subtitle": "Discuta sua visão conosco hoje.",
+    "form": {
+      "name_label": "Nome",
+      "name_placeholder": "Seu nome",
+      "email_label": "e-mail",
+      "email_placeholder": "email@exemplo.com",
+      "message_label": "Mensagem",
+      "message_placeholder": "Nos conte sobre seu projeto",
+      "submit_button": "Enviar mensagem",
+      "loading_text": "Enviando..."
+    },
+    "alerts": {
+      "success": "Mensagem enviada com sucesso! Entraremos em contato em breve.",
+      "error": "Falha ao enviar a mensagem. Por favor, tente novamente mais tarde."
+    }
+  }
+}

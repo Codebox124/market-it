@@ -1,0 +1,67 @@
+{
+  "seo": {
+    "title": "Jasa Digital Marketing & Agensi Kreatif | Make It & Market",
+    "description": "Layanan profesional untuk pengembangan website, desain grafis, editing video, dan strategi digital marketing terpercaya.",
+    "keywords": "Jasa SEO, Digital Marketing, Desain Grafis, Video Editing, Pembuatan Website",
+    "social_title": "Make It & Market - Solusi Kreatif untuk Bisnis Anda",
+    "social_description": "Tingkatkan bisnis Anda dengan layanan kreatif dan strategi digital marketing kami."
+  },
+  "hero": {
+    "subtitle": "Solusi pemasaran efektif dan layanan kreatif serbaguna untuk bisnis, seniman, dan para visioner."
+  },
+  "services_section": {
+    "title": "Layanan Lengkap",
+    "explore_button": "Jelajahi Layanan",
+    "items": {
+      "advertising": {
+        "title": "Periklanan (Advertising)",
+        "description": "Pekerjaan promosi untuk menargetkan audiens melalui metode seperti Google Ads, jangkauan media sosial, email blast, dan pesan massal.",
+        "category_label": "Periklanan"
+      },
+      "social_media": {
+        "title": "Media Sosial",
+        "description": "Konsultasi, manajemen, dan pembuatan konten media sosial menyeluruh untuk membantu meningkatkan interaksi audiens di semua platform populer.",
+        "category_label": "Media Sosial"
+      },
+      "web_app": {
+        "title": "Website & Aplikasi",
+        "description": "Pengembangan web dan aplikasi responsif untuk mengklaim tempat Anda di ruang digital, baik untuk bisnis, hobi, atau tujuan sosial.",
+        "category_label": "Web/App"
+      },
+      "graphic_design": {
+        "title": "Desain Grafis",
+        "description": "Layanan desain grafis kreatif mencakup logo, selebaran, buku, film, PowerPoint, kartu nama, produk, menu, dan karya seni.",
+        "category_label": "Desain Grafis"
+      },
+      "video_editing": {
+        "title": "Video Editing",
+        "description": "Editing video untuk iklan, film, video musik, dan media sosial. Layanan meliputi cleanup, caption, color grading, musik, suara, dan efek.",
+        "category_label": "Video Editing"
+      },
+      "animation": {
+        "title": "Animasi",
+        "description": "Pembuatan animasi 2D dan 3D seputar karakter, lingkungan, pemodelan, gerak, dan konseptualisasi untuk menghidupkan visi Anda.",
+        "category_label": "Animasi"
+      }
+    }
+  },
+  "contact": {
+    "label": "Hubungi Kami",
+    "title": "Mulai Proyek Anda",
+    "subtitle": "Diskusikan visi Anda bersama kami hari ini.",
+    "form": {
+      "name_label": "Nama",
+      "name_placeholder": "Nama Anda",
+      "email_label": "Email",
+      "email_placeholder": "email@contoh.com",
+      "message_label": "Pesan",
+      "message_placeholder": "Ceritakan tentang proyek Anda...",
+      "submit_button": "Kirim Pesan",
+      "loading_text": "Mengirim..."
+    },
+    "alerts": {
+      "success": "Pesan berhasil terkirim! Kami akan segera menghubungi Anda.",
+      "error": "Gagal mengirim pesan. Silakan coba lagi nanti."
+    }
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "seo": {
+    "title": "Agencia de Marketing Digital y Creativa | Make It & Market",
+    "description": "Servicios profesionales de desarrollo de sitios web, diseño gráfico, edición de videos y estrategias confiables de marketing digital.",
+    "keywords": "Servicios de SEO, Marketing Digital, Diseño Gráfico, Edición de Video, Desarrollo de Sitios Web.",
+    "social_title": "Make It & Market - Soluciones creativas para su negocio.",
+    "social_description": "Impulsa tu negocio con nuestros servicios creativos y estrategias de marketing digital."
+  },
+  "hero": {
+    "subtitle": "Soluciones de marketing efectivas y servicios creativos versátiles para empresas, artistas y visionarios."
+  },
+  "services_section": {
+    "title": "Servicios Integrales",
+    "explore_button": "Explorar Servicios",
+    "items": {
+      "advertising": {
+        "title": "Publicidad",
+        "description": "Trabajo de promoción para llegar a su audiencia mediante métodos como Google Ads, difusión en redes sociales, envíos masivos de correos electrónicos y mensajes de texto.",
+        "category_label": "Publicidad"
+      },
+      "social_media": {
+        "title": "Redes Sociales",
+        "description": "Consultoría integral de redes sociales, gestión y creación de contenido para ayudar a aumentar la interacción de tu audiencia en todas las plataformas populares.",
+        "category_label": "Redes Sociales"
+      },
+      "web_app": {
+        "title": "Sitios web y aplicaciones",
+        "description": "Desarrollo de sitios web y aplicaciones responsivas para consolidar tu presencia en el espacio digital, ya sea para negocios, entretenimiento o una causa.",
+        "category_label": "Web/Aplicación"
+      },
+      "graphic_design": {
+        "title": "Diseño Gráfico",
+        "description": "Servicios creativos de diseño gráfico que abarcan logotipos, volantes, libros, cine, presentaciones en PowerPoint, tarjetas de presentación, productos, menús y obras de arte.",
+        "category_label": "Diseño Gráfico"
+      },
+      "video_editing": {
+        "title": "Edición de Video",
+        "description": "Edición de video para comerciales, películas, videoclips y redes sociales. Los servicios incluyen limpieza, subtítulos, corrección de color, música, sonido y efectos.",
+        "category_label": "Edición de Video"
+      },
+      "animation": {
+        "title": "Animación",
+        "description": "Creación de animaciones 2D y 3D centradas en personajes, entornos, modelado, movimiento y conceptualización para dar vida a tu visión.",
+        "category_label": "Animación"
+      }
+    }
+  },
+  "contact": {
+    "label": "Contáctanos",
+    "title": "Inicia tu proyecto",
+    "subtitle": "Comparte tu visión con nosotros hoy.",
+    "form": {
+      "name_label": "Nombre",
+      "name_placeholder": "Tu nombre",
+      "email_label": "Correo electrónico",
+      "email_placeholder": "correo@ejemplo.com",
+      "message_label": "Mensaje",
+      "message_placeholder": "Cuéntanos sobre tu proyecto…",
+      "submit_button": "Enviar mensaje",
+      "loading_text": "Enviando..."
+    },
+    "alerts": {
+      "success": "¡Mensaje enviado con éxito! Nos pondremos en contacto contigo pronto.",
+      "error": "No se pudo enviar el mensaje. Por favor, inténtalo de nuevo más tarde."
+    }
+  }
+}

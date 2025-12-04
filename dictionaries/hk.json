@@ -1,0 +1,67 @@
+{
+  "seo": {
+    "title": "數位行銷與創意代理商 | 製作與推廣",
+    "description": "提供網站開發、平面設計、影片剪輯和可靠的數位行銷策略的專業服務。",
+    "keywords": "搜尋引擎優化服務、數位行銷、平面設計、影片剪輯、網站開發",
+    "social_title": "製作與推廣－為您的企業提供創意解決方案",
+    "social_description": "透過我們的創意服務和數位行銷策略，提升您的業務水平。"
+  },
+  "hero": {
+    "subtitle": "為企業、藝術家和夢想家提供高效的行銷解決方案和多樣化的創意服務。"
+  },
+  "services_section": {
+    "title": "綜合服務",
+    "explore_button": "探索服務",
+    "items": {
+      "advertising": {
+        "title": "廣告",
+        "description": "透過Google廣告、社群媒體推廣、電子郵件群發和群發簡訊等方式進行針對目標受眾的推廣活動。",
+        "category_label": "廣告"
+      },
+      "social_media": {
+        "title": "社群媒體",
+        "description": "提供全方位的社群媒體諮詢、管理和內容創作服務，幫助您在所有熱門平台上提升受眾參與度。",
+        "category_label": "社群媒體"
+      },
+      "web_app": {
+        "title": "網站和應用程式",
+        "description": "響應式網頁和應用程式開發，助您在數位空間中佔有一席之地，無論是為了商業、娛樂或某種事業。",
+        "category_label": "網頁/應用程式"
+      },
+      "graphic_design": {
+        "title": "平面設計",
+        "description": "創意平面設計服務涵蓋標誌、傳單、書籍、電影、PowerPoint、名片、產品、菜單和藝術作品。",
+        "category_label": "平面設計"
+      },
+      "video_editing": {
+        "title": "影片剪輯",
+        "description": "提供廣告、電影、音樂影片和社群媒體影片剪輯服務。服務內容包括畫面清理、添加字幕、調色、配樂、音效和特效。",
+        "category_label": "影片剪輯"
+      },
+      "animation": {
+        "title": "卡通",
+        "description": "創作 2D 和 3D 動畫的核心在於角色、環境、建模、運動和概念構思，從而將您的願景變為現實。",
+        "category_label": "卡通"
+      }
+    }
+  },
+  "contact": {
+    "label": "聯絡我們",
+    "title": "開始你的專案",
+    "subtitle": "今天就和我們探討您的願景吧。",
+    "form": {
+      "name_label": "姓名",
+      "name_placeholder": "你的名字",
+      "email_label": "電子郵件",
+      "email_placeholder": "email@example.com",
+      "message_label": "訊息",
+      "message_placeholder": "請介紹一下您的專案…",
+      "submit_button": "發送訊息",
+      "loading_text": "正在發送..."
+    },
+    "alerts": {
+      "success": "訊息已成功發送！我們將盡快與您聯繫。",
+      "error": "訊息發送失敗，請稍後再試。"
+    }
+  }
+}

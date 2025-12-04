@@ -1,0 +1,67 @@
+{
+  "seo": {
+    "title": "数字营销与创意机构 | 制作与推广",
+    "description": "提供网站开发、平面设计、视频剪辑和可靠的数字营销策略方面的专业服务。",
+    "keywords": "搜索引擎优化服务、数字营销、平面设计、视频剪辑、网站开发",
+    "social_title": "制作与推广——为您的企业提供创意解决方案",
+    "social_description": "借助我们的创意服务和数字营销策略，提升您的业务水平。"
+  },
+  "hero": {
+    "subtitle": "为企业、艺术家和梦想家提供高效的营销解决方案和多样化的创意服务。"
+  },
+  "services_section": {
+    "title": "综合服务",
+    "explore_button": "探索服务",
+    "items": {
+      "advertising": {
+        "title": "广告",
+        "description": "通过谷歌广告、社交媒体推广、电子邮件群发和群发短信等方式进行针对目标受众的推广活动。",
+        "category_label": "广告"
+      },
+      "social_media": {
+        "title": "社交媒体",
+        "description": "提供全方位的社交媒体咨询、管理和内容创作服务，帮助您在所有热门平台上提升受众参与度。",
+        "category_label": "社交媒体"
+      },
+      "web_app": {
+        "title": "网站和应用程序",
+        "description": "响应式网页和应用程序开发，助您在数字空间中占据一席之地，无论是为了商业、娱乐还是某种事业。",
+        "category_label": "网页/应用程序"
+      },
+      "graphic_design": {
+        "title": "平面设计",
+        "description": "创意平面设计服务涵盖标志、传单、书籍、电影、PowerPoint、名片、产品、菜单和艺术作品。",
+        "category_label": "平面设计"
+      },
+      "video_editing": {
+        "title": "视频剪辑",
+        "description": "提供广告、电影、音乐视频和社交媒体视频剪辑服务。服务内容包括画面清理、添加字幕、调色、配乐、音效和特效。",
+        "category_label": "视频剪辑"
+      },
+      "animation": {
+        "title": "动画片",
+        "description": "创作 2D 和 3D 动画的核心在于角色、环境、建模、运动和概念构思，从而将您的愿景变为现实。",
+        "category_label": "动画片"
+      }
+    }
+  },
+  "contact": {
+    "label": "联系我们",
+    "title": "开始你的项目",
+    "subtitle": "今天就和我们探讨您的愿景吧。",
+    "form": {
+      "name_label": "姓名",
+      "name_placeholder": "你的名字",
+      "email_label": "电子邮件",
+      "email_placeholder": "email@example.com",
+      "message_label": "信息",
+      "message_placeholder": "请介绍一下您的项目……",
+      "submit_button": "发送消息",
+      "loading_text": "正在发送..."
+    },
+    "alerts": {
+      "success": "信息已成功发送！我们将尽快与您联系。",
+      "error": "消息发送失败，请稍后再试。"
+    }
+  }
+}

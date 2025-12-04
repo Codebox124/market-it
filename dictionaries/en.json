@@ -1,0 +1,67 @@
+{
+  "seo": {
+    "title": "Digital Marketing & Creative Agency | Make It & Market",
+    "description": "Professional services for website development, graphic design, video editing, and trusted digital marketing strategies.",
+    "keywords": "SEO Services, Digital Marketing, Graphic Design, Video Editing, Website Development",
+    "social_title": "Make It & Market - Creative Solutions for Your Business",
+    "social_description": "Elevate your business with our creative services and digital marketing strategies."
+  },
+  "hero": {
+    "subtitle": "Effective marketing solutions and versatile creative services for businesses, artists, and visionaries."
+  },
+  "services_section": {
+    "title": "Comprehensive Services",
+    "explore_button": "Explore Services",
+    "items": {
+      "advertising": {
+        "title": "Advertising",
+        "description": "Promotional work to target your audience through methods such as Google Ads, social media outreach, email blasts, and mass text messaging.",
+        "category_label": "Advertising"
+      },
+      "social_media": {
+        "title": "Social Media",
+        "description": "All-around social media consulting, management, and content creation to assist with growing your audience engagement across all popular platforms.",
+        "category_label": "Social Media"
+      },
+      "web_app": {
+        "title": "Websites & Apps",
+        "description": "Responsive web and app development to claim your place within the digital space, whether it's for business, pleasure, or a cause.",
+        "category_label": "Web/App"
+      },
+      "graphic_design": {
+        "title": "Graphic Design",
+        "description": "Creative graphic design services spanning logos, flyers, books, film, PowerPoint, business cards, products, menus, and artwork.",
+        "category_label": "Graphic Design"
+      },
+      "video_editing": {
+        "title": "Video Editing",
+        "description": "Video editing for commercials, films, music videos, and social media. Services include cleanup, captions, color grading, music, sound, and effects.",
+        "category_label": "Video Editing"
+      },
+      "animation": {
+        "title": "Animation",
+        "description": "Creating 2D and 3D animation revolved around characters, environments, modeling, motion, and conceptualizing to give life to your vision.",
+        "category_label": "Animation"
+      }
+    }
+  },
+  "contact": {
+    "label": "Contact Us",
+    "title": "Start Your Project",
+    "subtitle": "Discuss your vision with us today.",
+    "form": {
+      "name_label": "Name",
+      "name_placeholder": "Your Name",
+      "email_label": "Email",
+      "email_placeholder": "email@example.com",
+      "message_label": "Message",
+      "message_placeholder": "Tell us about your project...",
+      "submit_button": "Send Message",
+      "loading_text": "Sending..."
+    },
+    "alerts": {
+      "success": "Message sent successfully! We will contact you soon.",
+      "error": "Failed to send message. Please try again later."
+    }
+  }
+}

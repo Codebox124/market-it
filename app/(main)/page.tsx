@@ -30,51 +30,59 @@ const visualsPortfolio = [
   {
     title: "Graphic Design",
     image: "/graphic-design.png",
-    descriptionservice: "Creative graphic design services spanning logos, flyers, books, film, PowerPoint, business cards, products, menus and artwork",
+    descriptionservice:
+      "Creative graphic design services spanning logos, flyers, books, film, PowerPoint, business cards, products, menus and artwork",
     gradient: "from-violet-500/20 to-purple-500/20",
   },
   {
     title: "Video Editing",
     image: "/video-editing.webp",
-    descriptionservice: "Video editing for commercials, films, music videos and social media. Services include cleanup, captions, color grading, music, sound and effects.",
+    descriptionservice:
+      "Video editing for commercials, films, music videos and social media. Services include cleanup, captions, color grading, music, sound and effects.",
     gradient: "from-blue-500/20 to-cyan-500/20",
   },
   {
     title: "Photo Editing",
     image: "/photo-editing.png",
-    descriptionservice: "Profesional photo editing and retouching services to enhance quality, adjust color, add text, replace unwanted items or combine multiple images.",
+    descriptionservice:
+      "Profesional photo editing and retouching services to enhance quality, adjust color, add text, replace unwanted items or combine multiple images.",
     gradient: "from-emerald-500/20 to-teal-500/20",
   },
   {
     title: "Animation",
     image: "/1.png",
-    descriptionservice: "Creating 2D and 3D animation revolved around characters, environments, modeling, motion and conceptualizing to give life to your vision.",
+    descriptionservice:
+      "Creating 2D and 3D animation revolved around characters, environments, modeling, motion and conceptualizing to give life to your vision.",
     gradient: "from-orange-500/20 to-red-500/20",
-  }
-]
-  const marketingPortfolio = [
+  },
+];
+const marketingPortfolio = [
   {
     title: "Websites/Apps",
     image: "/website-design.jpg",
-    descriptionservice: "Responsive web and app development to claim your place within the digital space, whether it's for business, pleasure or a cause.",
+    descriptionservice:
+      "Responsive web and app development to claim your place within the digital space, whether it's for business, pleasure or a cause.",
     gradient: "from-indigo-500/20 to-blue-500/20",
   },
   {
     title: "Advertising",
     image: "/advertising.webp",
-    descriptionservice: "Promotional work to target your audience through methods such as Google Ads, social media outreach, email blasts and mass text messaging.",
+    descriptionservice:
+      "Promotional work to target your audience through methods such as Google Ads, social media outreach, email blasts and mass text messaging.",
     gradient: "from-pink-500/20 to-rose-500/20",
   },
   {
     title: "Social Media",
     image: "/social-media.jpg",
-    descriptionservice: "All-around social media consulting, management and content creation to assist with growing your audience engagement across all popular platforms.",
+    descriptionservice:
+      "All-around social media consulting, management and content creation to assist with growing your audience engagement across all popular platforms.",
     gradient: "from-purple-500/20 to-pink-500/20",
   },
   {
     title: "Flyer Distribution",
     image: "/flyer.jpg",
-    descriptionservice: "Targeted flyer distribution campaigns to reach local and global audiences with high-impact printed marketing materials.",
+    descriptionservice:
+      "Targeted flyer distribution campaigns to reach local and global audiences with high-impact printed marketing materials.",
     icon: "feather",
     gradient: "from-yellow-500/20 to-orange-500/20",
   },
@@ -82,100 +90,100 @@ const visualsPortfolio = [
 
 const ClientPortfolio = [
   {
-    image:"/clientShowcase/client (1).png", 
-    title:"client1",
+    image: "/clientShowcase/client (1).png",
+    title: "client1",
   },
   {
-    image:"/clientShowcase/client (2).png", 
-    title:"client2",
+    image: "/clientShowcase/client (2).png",
+    title: "client2",
   },
   {
-    image:"/clientShowcase/client (3).png", 
-    title:"client3",
+    image: "/clientShowcase/client (3).png",
+    title: "client3",
   },
   {
-    image:"/clientShowcase/client (4).png",
-    title:"client4", 
+    image: "/clientShowcase/client (4).png",
+    title: "client4",
   },
   {
-    image:"/clientShowcase/client (5).png", 
-    title:"client5",
+    image: "/clientShowcase/client (5).png",
+    title: "client5",
   },
   {
-    image:"/clientShowcase/client (6).png", 
-    title:"client6",
+    image: "/clientShowcase/client (6).png",
+    title: "client6",
   },
   {
-    image:"/clientShowcase/client (7).png", 
-    title:"client7",
+    image: "/clientShowcase/client (7).png",
+    title: "client7",
   },
   {
-    image:"/clientShowcase/client (8).png", 
-    title:"client8",
+    image: "/clientShowcase/client (8).png",
+    title: "client8",
   },
   {
-    image:"/clientShowcase/client (9).png", 
-    title:"client9",
+    image: "/clientShowcase/client (9).png",
+    title: "client9",
   },
   {
-    image:"/clientShowcase/client (10).png", 
-    title:"client10",
+    image: "/clientShowcase/client (10).png",
+    title: "client10",
   },
   {
-    image:"/clientShowcase/client (11).png", 
-    title:"client11",
+    image: "/clientShowcase/client (11).png",
+    title: "client11",
   },
   {
-    image:"/clientShowcase/client (12).png", 
-    title:"client12",
+    image: "/clientShowcase/client (12).png",
+    title: "client12",
   },
   {
-    image:"/clientShowcase/client (13).png", 
-    title:"client13",
+    image: "/clientShowcase/client (13).png",
+    title: "client13",
   },
   {
-    image:"/clientShowcase/client (14).png", 
-    title:"client14",
+    image: "/clientShowcase/client (14).png",
+    title: "client14",
   },
   {
-    image:"/clientShowcase/client (15).png", 
-    title:"client15",
+    image: "/clientShowcase/client (15).png",
+    title: "client15",
   },
   {
-    image:"/clientShowcase/client (16).png", 
-    title:"client16",
+    image: "/clientShowcase/client (16).png",
+    title: "client16",
   },
   {
-    image:"/clientShowcase/client (17).png", 
-    title:"client17",
+    image: "/clientShowcase/client (17).png",
+    title: "client17",
   },
   {
-    image:"/clientShowcase/client (18).png", 
-    title:"client18",
+    image: "/clientShowcase/client (18).png",
+    title: "client18",
   },
   {
-    image:"/clientShowcase/client (19).png", 
-    title:"client19",
+    image: "/clientShowcase/client (19).png",
+    title: "client19",
   },
   {
-    image:"/clientShowcase/client (20).png", 
-    title:"client20",  
+    image: "/clientShowcase/client (20).png",
+    title: "client20",
   },
   {
-    image:"/clientShowcase/client (21).png", 
-    title:"client21",
+    image: "/clientShowcase/client (21).png",
+    title: "client21",
   },
   {
-    image:"/clientShowcase/client (22).png", 
-    title:"client22",
+    image: "/clientShowcase/client (22).png",
+    title: "client22",
   },
   {
-    image:"/clientShowcase/client (23).png", 
-    title:"client23",
+    image: "/clientShowcase/client (23).png",
+    title: "client23",
   },
   {
-    image:"/clientShowcase/client (24).png", 
-    title:"client24",
+    image: "/clientShowcase/client (24).png",
+    title: "client24",
   },
 ];
 
@@ -191,7 +199,6 @@ const generateParticles = (count: number, isMobile: boolean) => {
   }));
 };
 
-
 export default function Home() {
   const [isLoaded, setIsLoaded] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -203,7 +210,15 @@ export default function Home() {
   const canvasRef = useRef(null);
   const animationRef = useRef<number | null>(null);
   const [particles, setParticles] = useState<
-    { x: number; y: number; size: number; speedX: number; speedY: number; color: number; opacity: number }[]
+    {
+      x: number;
+      y: number;
+      size: number;
+      speedX: number;
+      speedY: number;
+      color: number;
+      opacity: number;
+    }[]
   >([]);
 
   useEffect(() => {
@@ -231,16 +246,15 @@ export default function Home() {
     setIsModalOpen(true);
   };
   const closeModal = () => {
-  setIsModalOpen(false);
-  setSelectedProject(null);
-};
-
+    setIsModalOpen(false);
+    setSelectedProject(null);
+  };
 
   useEffect(() => {
     if (!isLoaded || !canvasRef.current || particles.length === 0) return;
 
     const canvas = canvasRef.current as HTMLCanvasElement;
-    const ctx = canvas.getContext('2d');
+    const ctx = canvas.getContext("2d");
     if (!ctx) return;
 
     const resizeCanvas = () => {
@@ -248,18 +262,24 @@ export default function Home() {
       canvas.height = window.innerHeight;
     };
 
-    window.addEventListener('resize', resizeCanvas);
+    window.addEventListener("resize", resizeCanvas);
     resizeCanvas();
 
     // Refined color palette - more sophisticated
     const colors = [
-      'rgba(148, 163, 184, 0.4)',  // Slate
-      'rgba(156, 163, 175, 0.4)',  // Gray
-      'rgba(209, 213, 219, 0.3)',  // Light gray
-      'rgba(229, 231, 235, 0.2)',  // Very light gray
+      "rgba(148, 163, 184, 0.4)", // Slate
+      "rgba(156, 163, 175, 0.4)", // Gray
+      "rgba(209, 213, 219, 0.3)", // Light gray
+      "rgba(229, 231, 235, 0.2)", // Very light gray
     ];
 
-    const drawCircle = (ctx: CanvasRenderingContext2D, x: number, y: number, radius: number, opacity: number) => {
+    const drawCircle = (
+      ctx: CanvasRenderingContext2D,
+      x: number,
+      y: number,
+      radius: number,
+      opacity: number
+    ) => {
       ctx.beginPath();
       ctx.arc(x, y, radius, 0, Math.PI * 2);
       ctx.globalAlpha = opacity;
@@ -298,7 +318,9 @@ export default function Home() {
             ctx.beginPath();
             ctx.moveTo(x, y);
             ctx.lineTo(x2, y2);
-            ctx.strokeStyle = `rgba(148, 163, 184, ${0.1 * (1 - distance / maxDistance)})`;
+            ctx.strokeStyle = `rgba(148, 163, 184, ${
+              0.1 * (1 - distance / maxDistance)
+            })`;
             ctx.lineWidth = 0.5;
             ctx.stroke();
           }
@@ -311,7 +333,7 @@ export default function Home() {
     animate();
 
     return () => {
-      window.removeEventListener('resize', resizeCanvas);
+      window.removeEventListener("resize", resizeCanvas);
       if (animationRef.current) {
         cancelAnimationFrame(animationRef.current);
       }
@@ -322,10 +344,7 @@ export default function Home() {
     <>
       <section className="relative min-h-screen w-full pt-12 flex items-center justify-center overflow-hidden bg-gradient-to-br from-gray-50 via-white to-blue-50/30">
         {/* Animated background canvas */}
-        <canvas
-          ref={canvasRef}
-          className="absolute inset-0 z-0 opacity-60"
-        />
+        <canvas ref={canvasRef} className="absolute inset-0 z-0 opacity-60" />
 
         {/* Subtle gradient overlays */}
         <div className="absolute inset-0 bg-gradient-to-br from-blue-100/20 via-transparent to-purple-100/20" />
@@ -346,34 +365,63 @@ export default function Home() {
                 custom={0}
                 className="text-3xl md:text-7xl border-4 border-white/30 backdrop-blur-sm flex justify-center items-center py-4 px-6 font-extrabold leading-tight text-transparent bg-clip-text  bg-gradient-to-r from-emerald-300 to-emerald-500 "
                 style={{
-                  textShadow: "0 0 15px rgba(255,255,255,0.5), 0 0 30px rgba(59,130,246,0.5)",
-                  boxShadow: "0 0 30px rgba(59,130,246,0.3), inset 0 0 20px rgba(59,130,246,0.2)"
+                  textShadow:
+                    "0 0 15px rgba(255,255,255,0.5), 0 0 30px rgba(59,130,246,0.5)",
+                  boxShadow:
+                    "0 0 30px rgba(59,130,246,0.3), inset 0 0 20px rgba(59,130,246,0.2)",
                 }}
               >
                 MAKE <span className="px-5">IT</span>
                 <motion.span
                   className=" bg-clip-text pr-6 bg-gradient-to-r text-white"
                   animate={{
-                    textShadow: ["0 0 10px rgba(16,185,129,0.5)", "0 0 20px rgba(16,185,129,0.8)", "0 0 10px rgba(16,185,129,0.5)"]
+                    textShadow: [
+                      "0 0 10px rgba(16,185,129,0.5)",
+                      "0 0 20px rgba(16,185,129,0.8)",
+                      "0 0 10px rgba(16,185,129,0.5)",
+                    ],
                   }}
-                  transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-                > & </motion.span>
-
+                  transition={{
+                    duration: 4,
+                    repeat: Infinity,
+                    ease: "easeInOut",
+                  }}
+                >
+                  {" "}
+                  &{" "}
+                </motion.span>
                 <motion.span
                   className="text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-blue-600"
                   animate={{
-                    textShadow: ["0 0 10px rgba(59,130,246,0.5)", "0 0 20px rgba(59,130,246,0.8)", "0 0 10px rgba(59,130,246,0.5)"]
+                    textShadow: [
+                      "0 0 10px rgba(59,130,246,0.5)",
+                      "0 0 20px rgba(59,130,246,0.8)",
+                      "0 0 10px rgba(59,130,246,0.5)",
+                    ],
                   }}
-                  transition={{ duration: 4, repeat: Infinity, ease: "easeInOut", delay: 2 }}
-                > MARKET</motion.span>
+                  transition={{
+                    duration: 4,
+                    repeat: Infinity,
+                    ease: "easeInOut",
+                    delay: 2,
+                  }}
+                >
+                  {" "}
+                  MARKET
+                </motion.span>
               </motion.h1>
 
               <div className="max-w-4xl mx-auto">
                 <h2 className="text-xl md:text-2xl text-gray-600 leading-relaxed font-light">
-                  Effective marketing solutions and versatile creative services for
-                  <span className="text-gray-900 font-medium"> businesses</span>,
-                  <span className="text-gray-900 font-medium"> artists</span>, and
-                  <span className="text-gray-900 font-medium"> visionaries</span>
+                  Effective marketing solutions and versatile creative services
+                  for
+                  <span className="text-gray-900 font-medium"> businesses</span>
+                  ,<span className="text-gray-900 font-medium"> artists</span>,
+                  and
+                  <span className="text-gray-900 font-medium">
+                    {" "}
+                    visionaries
+                  </span>
                 </h2>
               </div>
             </div>
@@ -381,15 +429,24 @@ export default function Home() {
             {/* Services grid */}
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 h-full">
               {visualsPortfolio.map((item, index) => (
-                <Link href={`/visuals/${item.title.toLowerCase().replace(/\s+/g, "-").replace(/\//g, "-").replace(/[^a-z0-9-]/g, "")}`} key={index}>
+                <Link
+                  href={`/visuals/${item.title
+                    .toLowerCase()
+                    .replace(/\s+/g, "-")
+                    .replace(/\//g, "-")
+                    .replace(/[^a-z0-9-]/g, "")}`}
+                  key={index}
+                >
                   <div
                     key={index}
                     className="group cursor-pointer"
-
                     onMouseLeave={() => setHoveredIndex(null)}
                     style={{
-                      transform: hoveredIndex === index ? 'translateY(-12px)' : 'translateY(0px)',
-                      transition: 'transform 0.3s ease-out'
+                      transform:
+                        hoveredIndex === index
+                          ? "translateY(-12px)"
+                          : "translateY(0px)",
+                      transition: "transform 0.3s ease-out",
                     }}
                   >
                     <div className="relative rounded-3xl overflow-hidden bg-white shadow-lg shadow-gray-200/50 border border-gray-100/80 hover:shadow-2xl hover:shadow-gray-300/30 transition-all duration-500">
@@ -401,15 +458,15 @@ export default function Home() {
                           className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                           loading="lazy"
                         />
-                        <div className={`absolute inset-0 bg-gradient-to-t ${item.gradient} opacity-40 group-hover:opacity-60 transition-opacity duration-300`} />
+                        <div
+                          className={`absolute inset-0 bg-gradient-to-t ${item.gradient} opacity-40 group-hover:opacity-60 transition-opacity duration-300`}
+                        />
 
                         {/* Hover overlay */}
-                        <div
-                          className="absolute inset-0 bg-white/40 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center"
-                        >
-                          <div className={`bg-white/90 backdrop-blur-md p-4 rounded-2xl transform scale-0 group-hover:scale-100 transition-transform duration-300 shadow-lg border border-white/20`}>
-
-                          </div>
+                        <div className="absolute inset-0 bg-white/40 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                          <div
+                            className={`bg-white/90 backdrop-blur-md p-4 rounded-2xl transform scale-0 group-hover:scale-100 transition-transform duration-300 shadow-lg border border-white/20`}
+                          ></div>
                         </div>
                       </div>
 
@@ -422,29 +479,41 @@ export default function Home() {
                           {item.descriptionservice}
                         </p>
 
-                        <div className={`flex mt-auto items-center text-sm font-semibold pt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300`}>
+                        <div
+                          className={`flex mt-auto items-center text-sm font-semibold pt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300`}
+                        >
                           <span>Explore Services</span>
                           <ArrowRight className="ml-2 h-4 w-4 transform group-hover:translate-x-1 transition-transform" />
                         </div>
                       </div>
 
                       {/* Gradient accent border on hover */}
-                      <div className={`absolute inset-0 rounded-3xl bg-gradient-to-r  to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none`} />
+                      <div
+                        className={`absolute inset-0 rounded-3xl bg-gradient-to-r  to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none`}
+                      />
                     </div>
                   </div>
                 </Link>
-
               ))}
               {marketingPortfolio.map((item, index) => (
-                <Link href={`/marketing/${item.title.toLowerCase().replace(/\s+/g, "-").replace(/\//g, "-").replace(/[^a-z0-9-]/g, "")}`} key={index}>
+                <Link
+                  href={`/marketing/${item.title
+                    .toLowerCase()
+                    .replace(/\s+/g, "-")
+                    .replace(/\//g, "-")
+                    .replace(/[^a-z0-9-]/g, "")}`}
+                  key={index}
+                >
                   <div
                     key={index}
                     className="group cursor-pointer"
-
                     onMouseLeave={() => setHoveredIndex(null)}
                     style={{
-                      transform: hoveredIndex === index ? 'translateY(-12px)' : 'translateY(0px)',
-                      transition: 'transform 0.3s ease-out'
+                      transform:
+                        hoveredIndex === index
+                          ? "translateY(-12px)"
+                          : "translateY(0px)",
+                      transition: "transform 0.3s ease-out",
                     }}
                   >
                     <div className="relative rounded-3xl overflow-hidden bg-white shadow-lg shadow-gray-200/50 border border-gray-100/80 hover:shadow-2xl hover:shadow-gray-300/30 transition-all duration-500">
@@ -456,15 +525,15 @@ export default function Home() {
                           className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                           loading="lazy"
                         />
-                        <div className={`absolute inset-0 bg-gradient-to-t ${item.gradient} opacity-40 group-hover:opacity-60 transition-opacity duration-300`} />
+                        <div
+                          className={`absolute inset-0 bg-gradient-to-t ${item.gradient} opacity-40 group-hover:opacity-60 transition-opacity duration-300`}
+                        />
 
                         {/* Hover overlay */}
-                        <div
-                          className="absolute inset-0 bg-white/40 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center"
-                        >
-                          <div className={`bg-white/90 backdrop-blur-md p-4 rounded-2xl transform scale-0 group-hover:scale-100 transition-transform duration-300 shadow-lg border border-white/20`}>
-
-                          </div>
+                        <div className="absolute inset-0 bg-white/40 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                          <div
+                            className={`bg-white/90 backdrop-blur-md p-4 rounded-2xl transform scale-0 group-hover:scale-100 transition-transform duration-300 shadow-lg border border-white/20`}
+                          ></div>
                         </div>
                       </div>
 
@@ -477,23 +546,23 @@ export default function Home() {
                           {item.descriptionservice}
                         </p>
 
-                        <div className={`flex items-center text-sm font-semibold pt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300`}>
+                        <div
+                          className={`flex items-center text-sm font-semibold pt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300`}
+                        >
                           <span>Explore Services</span>
                           <ArrowRight className="ml-2 h-4 w-4 transform group-hover:translate-x-1 transition-transform" />
                         </div>
                       </div>
 
                       {/* Gradient accent border on hover */}
-                      <div className={`absolute inset-0 rounded-3xl bg-gradient-to-r  to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none`} />
+                      <div
+                        className={`absolute inset-0 rounded-3xl bg-gradient-to-r  to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none`}
+                      />
                     </div>
                   </div>
                 </Link>
-
               ))}
             </div>
-
-
-
           </div>
         </div>
       </section>
@@ -534,7 +603,10 @@ export default function Home() {
                 <div className="absolute -inset-0.5 bg-gradient-to-r from-blue-200/30 via-purple-200/30 to-cyan-200/30 rounded-2xl blur opacity-0 group-hover:opacity-100 transition duration-500"></div>
 
                 {/* Card */}
-                <div onClick={() => openModal(project)} className="relative overflow-hidden rounded-2xl bg-white/90 backdrop-blur-sm border border-gray-200/60 hover:border-blue-300/60 transition-all duration-500 hover:scale-[1.03] shadow-lg shadow-gray-200/50 hover:shadow-xl hover:shadow-gray-300/50">
+                <div
+                  onClick={() => openModal(project)}
+                  className="relative overflow-hidden rounded-2xl bg-white/90 backdrop-blur-sm border border-gray-200/60 hover:border-blue-300/60 transition-all duration-500 hover:scale-[1.03] shadow-lg shadow-gray-200/50 hover:shadow-xl hover:shadow-gray-300/50"
+                >
                   <div className="aspect-square w-full overflow-hidden rounded-xl bg-white flex items-center justify-center">
                     <img
                       src={project.image}
@@ -565,32 +637,32 @@ export default function Home() {
           </div>
         </div>
         {isModalOpen && selectedProject && (
-  <div
-    className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm p-4"
-    onClick={closeModal}
-  >
-    <div
-      className="relative overflow-hidden rounded-3xl bg-white/95 backdrop-blur-sm border border-gray-200/80 shadow-2xl p-6 md:p-16"
-      onClick={(e) => e.stopPropagation()} // biar klik di dalam modal gak nutup
-    >
-      {/* Tombol close */}
-      <button
-        onClick={closeModal}
-        className="absolute top-4 right-4 z-60 w-12 h-12 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center text-gray-700 hover:bg-white hover:text-gray-900 transition-colors shadow-lg"
-      >
-        ✕
-      </button>
+          <div
+            className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm p-4"
+            onClick={closeModal}
+          >
+            <div
+              className="relative overflow-hidden rounded-3xl bg-white/95 backdrop-blur-sm border border-gray-200/80 shadow-2xl p-6 md:p-16"
+              onClick={(e) => e.stopPropagation()} // biar klik di dalam modal gak nutup
+            >
+              {/* Tombol close */}
+              <button
+                onClick={closeModal}
+                className="absolute top-4 right-4 z-60 w-12 h-12 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center text-gray-700 hover:bg-white hover:text-gray-900 transition-colors shadow-lg"
+              >
+                ✕
+              </button>
 
-      {/* Gambar project */}
-      <img
-        src={selectedProject.image}
-        alt={selectedProject.title}
-        loading="lazy"
-        className="rounded-2xl w-full max-h-[70vh] object-contain shadow-2xl mx-auto"
-      />
+              {/* Gambar project */}
+              <img
+                src={selectedProject.image}
+                alt={selectedProject.title}
+                loading="lazy"
+                className="rounded-2xl w-full max-h-[70vh] object-contain shadow-2xl mx-auto"
+              />
 
-      {/* Deskripsi */}
-      {/* <div className="p-6">
+              {/* Deskripsi */}
+              {/* <div className="p-6">
         <h3 className="text-xl font-semibold text-gray-800">
           {selectedProject.title}
         </h3>
@@ -598,13 +670,10 @@ export default function Home() {
           {selectedProject.descriptionservice}
         </p>
       </div> */}
-    </div>
-  </div>
-)}
-
+            </div>
+          </div>
+        )}
       </section>
-
-
 
       <style jsx global>{`
         .line-clamp-3 {

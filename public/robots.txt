@@ -8,6 +8,7 @@ Disallow: /visuals/website-and-apps-design/
 Disallow: /visuals/advertising/
 Disallow: /visuals/social-media/
 Disallow: /visuals/flyer-distribution/
+Disallow: /studio
 
 
 Sitemap: https://makeitandmarket.com/sitemap.xml
