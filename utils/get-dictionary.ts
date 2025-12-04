@@ -20,8 +20,8 @@ const dictionaries = {
 }
 
 export const getDictionary = async (locale: string) => {
-  if (dictionaries[locale]) {
-    return dictionaries[locale]();
+  if (dictionaries[locale as keyof typeof dictionaries]) {
+    return dictionaries[locale as keyof typeof dictionaries]();
   }
   return null;
 }

@@ -36,7 +36,7 @@ async function getPost(slug: string, lang: string) {
 export default async function SingleBlogPage({
   params,
 }: {
-  params: { lang: string; slug: string };
+  params: Promise<{ lang: string; slug: string }>;
 }) {
   // Await params (Wajib di Next.js 15)
   const { lang, slug } = await params;

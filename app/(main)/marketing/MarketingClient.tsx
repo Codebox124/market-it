@@ -41,7 +41,7 @@ const fadeInUp = {
     transition: {
       delay: i * 0.15,
       duration: 0.6,
-      ease: "easeOut",
+      ease: "easeOut" as const,
     },
   }),
 };
@@ -70,7 +70,11 @@ export default function MarketingClient() {
         }}
         className="max-w-7xl mx-auto px-6 py-16 relative z-10"
       >
-        <motion.div variants={fadeInUp} custom={0} className="text-center mb-20">
+        <motion.div
+          variants={fadeInUp}
+          custom={0}
+          className="text-center mb-20"
+        >
           <div className="flex justify-center mb-4">
             <div className="w-24 h-px bg-gradient-to-r from-transparent via-amber-500 to-transparent"></div>
           </div>
@@ -98,7 +102,11 @@ export default function MarketingClient() {
           {marketingPortfolio.map((item, index) => (
             <Link
               key={index}
-              href={`/marketing/${item.title.toLowerCase().replace(/\s+/g, "-").replace(/\//g, "-").replace(/[^a-z0-9-]/g, "")}`}
+              href={`/marketing/${item.title
+                .toLowerCase()
+                .replace(/\s+/g, "-")
+                .replace(/\//g, "-")
+                .replace(/[^a-z0-9-]/g, "")}`}
             >
               <motion.div
                 whileHover={{
@@ -123,7 +131,10 @@ export default function MarketingClient() {
                   <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent opacity-80 group-hover:opacity-60 transition-opacity duration-300"></div>
                   <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                     <div className="bg-amber-500 backdrop-blur-md p-3 transform rotate-45 scale-0 group-hover:scale-100 transition-transform duration-500">
-                      <Eye className="text-black transform -rotate-45" size={24} />
+                      <Eye
+                        className="text-black transform -rotate-45"
+                        size={24}
+                      />
                     </div>
                   </div>
                 </div>
@@ -133,7 +144,9 @@ export default function MarketingClient() {
                   <h2 className="text-lg tracking-wider uppercase font-light">
                     {item.title}
                   </h2>
-                  <p className="text-gray-400 text-sm font-light">{item.description}</p>
+                  <p className="text-gray-400 text-sm font-light">
+                    {item.description}
+                  </p>
 
                   <span className="inline-flex items-center text-blue-400 hover:text-blue-300 transition-colors uppercase text-xs tracking-widest absolute bottom-0">
                     Explore <ArrowRight className="ml-2 h-3 w-3" />
@@ -144,7 +157,11 @@ export default function MarketingClient() {
           ))}
         </div>
 
-        <motion.div variants={fadeInUp} custom={6} className="mt-24 text-center">
+        <motion.div
+          variants={fadeInUp}
+          custom={6}
+          className="mt-24 text-center"
+        >
           <a
             href="/contact"
             className="relative inline-block px-12 py-5 overflow-hidden group"

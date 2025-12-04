@@ -2,11 +2,19 @@
 
 import Link from "next/link";
 import { useState, useEffect } from "react";
-import { Menu, X, Home, User, Briefcase, Mail, ChevronDown, Calendar} from "lucide-react";
+import {
+  Menu,
+  X,
+  Home,
+  User,
+  Briefcase,
+  Mail,
+  ChevronDown,
+  Calendar,
+} from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -35,15 +43,23 @@ export default function Navbar() {
   ];
 
   const serviceItems = [
-    { name: "Graphic Design", href: "/visuals/graphic-design", icon: Briefcase },
-    { name: "Video Editing", href: "/visuals/video-editing", icon: Briefcase},
-    { name: "Photo Editing", href: "/visuals/photo-editing", icon: Briefcase},
-    { name: "Animation", href: "/visuals/animation", icon: Briefcase},
-    { name: "Websites/Apps", href: "/marketing/website-apps", icon: Briefcase},
-    { name: "Advertising", href: "/marketing/advertising", icon: Briefcase},
-    { name: "Social Media", href: "/marketing/social-media", icon: Briefcase},
-    { name: "Flyer Distribution", href: "/marketing/flyer-distribution", icon: Briefcase},
-  ]
+    {
+      name: "Graphic Design",
+      href: "/visuals/graphic-design",
+      icon: Briefcase,
+    },
+    { name: "Video Editing", href: "/visuals/video-editing", icon: Briefcase },
+    { name: "Photo Editing", href: "/visuals/photo-editing", icon: Briefcase },
+    { name: "Animation", href: "/visuals/animation", icon: Briefcase },
+    { name: "Websites/Apps", href: "/marketing/website-apps", icon: Briefcase },
+    { name: "Advertising", href: "/marketing/advertising", icon: Briefcase },
+    { name: "Social Media", href: "/marketing/social-media", icon: Briefcase },
+    {
+      name: "Flyer Distribution",
+      href: "/marketing/flyer-distribution",
+      icon: Briefcase,
+    },
+  ];
 
   useEffect(() => {
     const handleScroll = () => {
@@ -60,9 +76,9 @@ export default function Navbar() {
       opacity: 1,
       transition: {
         duration: 0.6,
-        ease: [0.25, 0.46, 0.45, 0.94]
-      }
-    }
+        ease: [0.25, 0.46, 0.45, 0.94] as [number, number, number, number],
+      },
+    },
   };
 
   const mobileMenuVariants = {
@@ -71,17 +87,17 @@ export default function Navbar() {
       height: 0,
       transition: {
         duration: 0.3,
-        ease: "easeInOut"
-      }
+        ease: "easeOut" as const,
+      },
     },
     visible: {
       opacity: 1,
       height: "auto",
       transition: {
         duration: 0.4,
-        ease: "easeOut"
-      }
-    }
+        ease: "easeOut" as const,
+      },
+    },
   };
 
   const itemVariants = {
@@ -92,9 +108,9 @@ export default function Navbar() {
       transition: {
         delay: i * 0.1,
         duration: 0.4,
-        ease: "easeOut"
-      }
-    })
+        ease: "easeOut" as const,
+      },
+    }),
   };
 
   return (
@@ -102,14 +118,14 @@ export default function Navbar() {
       initial="hidden"
       animate="visible"
       variants={navVariants}
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrolled
-        ? "bg-white/95 backdrop-blur-xl border-b border-gray-200/50 py-3 shadow-2xl shadow-gray-900/5"
-        : "bg-transparent py-6"
-        }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
+        scrolled
+          ? "bg-white/95 backdrop-blur-xl border-b border-gray-200/50 py-3 shadow-2xl shadow-gray-900/5"
+          : "bg-transparent py-6"
+      }`}
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex justify-between items-center">
-
           {/* Logo */}
           <motion.div
             whileHover={{ scale: 1.05 }}
@@ -119,9 +135,7 @@ export default function Navbar() {
             <Link href="/" className="flex items-center space-x-3 group">
               <div className="relative">
                 <img width={150} height={50} alt="logo" src="/logo.png" />
-
               </div>
-
             </Link>
           </motion.div>
 
@@ -143,18 +157,23 @@ export default function Navbar() {
                           ? "text-emerald-600 bg-emerald-50"
                           : "text-gray-700 hover:text-gray-900 hover:bg-gray-50"
                       }`}
-                    >{typeof item.icon === "string" ? (
-                      <Image
-                        src={item.icon}
-                        alt={item.name}
-                        width={16}
-                        height={16}
-                        className="opacity-80 group-hover:opacity-100 transition"
-                      />
-                    ) : (
-                      <item.icon size={16} />)}
+                    >
+                      {typeof item.icon === "string" ? (
+                        <Image
+                          src={item.icon}
+                          alt={item.name}
+                          width={16}
+                          height={16}
+                          className="opacity-80 group-hover:opacity-100 transition"
+                        />
+                      ) : (
+                        <item.icon size={16} />
+                      )}
                       <span>{item.name}</span>
-                      <ChevronDown size={14} className={`transition-transform ${isOpen ? "rotate-180" : ""}`} />
+                      <ChevronDown
+                        size={14}
+                        className={`transition-transform ${isOpen ? "rotate-180" : ""}`}
+                      />
                     </button>
 
                     {isOpen && (
@@ -189,14 +208,17 @@ export default function Navbar() {
                 >
                   <Link
                     href={item.href}
-                    className={`flex items-center space-x-2 px-4 py-2.5 rounded-xl text-sm font-medium transition-all duration-300 group relative overflow-hidden ${pathname === item.href
-                      ? "text-emerald-600 bg-emerald-50"
-                      : "text-gray-700 hover:text-gray-900 hover:bg-gray-50"
-                      }`}
+                    className={`flex items-center space-x-2 px-4 py-2.5 rounded-xl text-sm font-medium transition-all duration-300 group relative overflow-hidden ${
+                      pathname === item.href
+                        ? "text-emerald-600 bg-emerald-50"
+                        : "text-gray-700 hover:text-gray-900 hover:bg-gray-50"
+                    }`}
                   >
-                    <Icon size={16} className="transition-transform duration-300 group-hover:scale-110" />
+                    <Icon
+                      size={16}
+                      className="transition-transform duration-300 group-hover:scale-110"
+                    />
                     <span>{item.name}</span>
-
                   </Link>
                 </motion.div>
               );
@@ -205,7 +227,6 @@ export default function Navbar() {
 
           {/* Contact Button & Mobile Menu */}
           <div className="flex items-center space-x-4">
-
             {/* Enhanced Contact Button */}
             <motion.div
               whileHover={{ scale: 1.05 }}
@@ -228,7 +249,7 @@ export default function Navbar() {
             </motion.div>
 
             {/* Mobile Menu Button */}
-            
+
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
@@ -277,55 +298,61 @@ export default function Navbar() {
                   {navItems.map((item, index) => {
                     const Icon = item.icon;
                     if (item.name === "Services") {
-                return (
-                  <motion.div
-                    key={item.name}
-                    className="relative"
-                    onMouseEnter={handleMouseEnter}
-                    onMouseLeave={handleMouseLeave}
-                  >
-                    <button onClick={() => setIsServiceOpen(!isServiceOpen)}
-                      className={`flex items-center space-x-2 px-4 py-2.5 rounded-xl text-sm font-medium transition-all duration-300 group ${
-            pathname === item.href
-                          ? "text-emerald-600 bg-emerald-50"
-                          : "text-gray-700 hover:text-gray-900 hover:bg-gray-50"
-                      }`}
-                    >{typeof item.icon === "string" ? (
-  <Image
-    src={item.icon}
-    alt={item.name}
-    width={16}
-    height={16}
-    className="opacity-80 group-hover:opacity-100 transition"
-  />
-) : (
-                      <item.icon size={16} />)}
-                      <span>{item.name}</span>
-                      <ChevronDown size={14} className={`transition-transform ${isServiceOpen ? "rotate-180" : ""}`} />
-                    </button>
-
-                    {isServiceOpen && (
-                      <motion.div
-                        initial={{ opacity: 0, y: -10 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        exit={{ opacity: 0, y: -10 }}
-                        className="absolute left-0 mt-2 w-56 bg-white shadow-lg rounded-xl py-2 border border-gray-100 z-50 max-h-60 overflow-y-auto overflow-x-hidden"
-                      >
-                        {serviceItems.map((sub) => (
-                          <Link
-                            key={sub.name}
-                            href={sub.href}
-                            className="block px-4 py-2 text-sm text-gray-700 hover:bg-emerald-50 hover:text-emerald-600 transition"
+                      return (
+                        <motion.div
+                          key={item.name}
+                          className="relative"
+                          onMouseEnter={handleMouseEnter}
+                          onMouseLeave={handleMouseLeave}
+                        >
+                          <button
+                            onClick={() => setIsServiceOpen(!isServiceOpen)}
+                            className={`flex items-center space-x-2 px-4 py-2.5 rounded-xl text-sm font-medium transition-all duration-300 group ${
+                              pathname === item.href
+                                ? "text-emerald-600 bg-emerald-50"
+                                : "text-gray-700 hover:text-gray-900 hover:bg-gray-50"
+                            }`}
                           >
-                            {sub.name}
-                          </Link>
-                        ))}
-                      </motion.div>
-                    )}
-                  </motion.div>
-                );
-              }
-              return (
+                            {typeof item.icon === "string" ? (
+                              <Image
+                                src={item.icon}
+                                alt={item.name}
+                                width={16}
+                                height={16}
+                                className="opacity-80 group-hover:opacity-100 transition"
+                              />
+                            ) : (
+                              <item.icon size={16} />
+                            )}
+                            <span>{item.name}</span>
+                            <ChevronDown
+                              size={14}
+                              className={`transition-transform ${isServiceOpen ? "rotate-180" : ""}`}
+                            />
+                          </button>
+
+                          {isServiceOpen && (
+                            <motion.div
+                              initial={{ opacity: 0, y: -10 }}
+                              animate={{ opacity: 1, y: 0 }}
+                              exit={{ opacity: 0, y: -10 }}
+                              className="absolute left-0 mt-2 w-56 bg-white shadow-lg rounded-xl py-2 border border-gray-100 z-50 max-h-60 overflow-y-auto overflow-x-hidden"
+                            >
+                              {serviceItems.map((sub) => (
+                                <Link
+                                  key={sub.name}
+                                  href={sub.href}
+                                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-emerald-50 hover:text-emerald-600 transition"
+                                >
+                                  {sub.name}
+                                </Link>
+                              ))}
+                            </motion.div>
+                          )}
+                        </motion.div>
+                      );
+                    }
+                    return (
                       <motion.div
                         key={item.name}
                         variants={itemVariants}
@@ -336,12 +363,16 @@ export default function Navbar() {
                         <Link
                           href={item.href}
                           onClick={() => setIsOpen(false)}
-                          className={`flex items-center space-x-3 px-4 py-3.5 rounded-xl text-sm font-medium transition-all duration-300 group ${pathname === item.href
-                            ? "text-emerald-600 bg-emerald-50 border border-emerald-200/50"
-                            : "text-gray-700 hover:text-gray-900 hover:bg-gray-50 border border-transparent"
-                            }`}
+                          className={`flex items-center space-x-3 px-4 py-3.5 rounded-xl text-sm font-medium transition-all duration-300 group ${
+                            pathname === item.href
+                              ? "text-emerald-600 bg-emerald-50 border border-emerald-200/50"
+                              : "text-gray-700 hover:text-gray-900 hover:bg-gray-50 border border-transparent"
+                          }`}
                         >
-                          <Icon size={18} className="transition-transform duration-300 group-hover:scale-110" />
+                          <Icon
+                            size={18}
+                            className="transition-transform duration-300 group-hover:scale-110"
+                          />
                           <span>{item.name}</span>
                           {item.name === "Contact" && (
                             <div className="ml-auto">
