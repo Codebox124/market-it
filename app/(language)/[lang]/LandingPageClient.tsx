@@ -27,31 +27,41 @@ const fadeIn = {
   }),
 };
 
-// Mapping Aset Visual (Gambar & Gradient) berdasarkan Key di JSON
-const visualAssets: Record<string, { image: string; gradient: string }> = {
+// --- CONFIGURATION (MANUAL LINKS DISINI) ---
+// Mapping Aset Visual & Link Static
+const visualAssets: Record<
+  string,
+  { image: string; gradient: string; href: string }
+> = {
   advertising: {
     image: "/advertising.webp",
     gradient: "from-pink-500/20 to-rose-500/20",
+    href: "/marketing/advertising", // Link Manual
   },
   social_media: {
     image: "/social-media.jpg",
     gradient: "from-purple-500/20 to-pink-500/20",
+    href: "/marketing/social-media", // Link Manual
   },
   web_app: {
     image: "/website-design.jpg",
     gradient: "from-indigo-500/20 to-blue-500/20",
+    href: "/marketing/websites-apps", // Link Manual
   },
   graphic_design: {
     image: "/graphic-design.png",
     gradient: "from-violet-500/20 to-purple-500/20",
+    href: "/visuals/graphic-design", // Link Manual
   },
   video_editing: {
     image: "/video-editing.webp",
     gradient: "from-blue-500/20 to-cyan-500/20",
+    href: "/visuals/video-editing", // Link Manual
   },
   animation: {
     image: "/1.png",
     gradient: "from-orange-500/20 to-red-500/20",
+    href: "/visuals/animation", // Link Manual
   },
 };
 
@@ -69,7 +79,7 @@ const generateParticles = (count: number, isMobile: boolean) => {
 };
 
 interface LandingPageProps {
-  dict: any; // Data JSON dari server
+  dict: any;
   lang: string;
 }
 
@@ -99,12 +109,12 @@ export default function LandingPageClient({ dict, lang }: LandingPageProps) {
         () => {
           setIsSubmitting(false);
           setFormData({ user_name: "", user_email: "", message: "" });
-          alert(dict.contact.alerts.success); // Menggunakan text dari JSON
+          alert(dict.contact.alerts.success);
         },
         (error) => {
           setIsSubmitting(false);
           console.error("FAILED...", error.text);
-          alert(dict.contact.alerts.error); // Menggunakan text dari JSON
+          alert(dict.contact.alerts.error);
         }
       );
   };
@@ -115,7 +125,7 @@ export default function LandingPageClient({ dict, lang }: LandingPageProps) {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  // --- CANVAS LOGIC (Sama seperti sebelumnya) ---
+  // --- CANVAS LOGIC ---
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const animationRef = useRef<number | null>(null);
   const [particles, setParticles] = useState<any[]>([]);
@@ -203,20 +213,25 @@ export default function LandingPageClient({ dict, lang }: LandingPageProps) {
   }, [isLoaded, particles, isMobile]);
 
   // --- DATA PREPARATION ---
-  // Menggabungkan data dari JSON dengan Aset Visual lokal
   const servicesKeys = Object.keys(dict.services_section.items);
-  const allServices = servicesKeys.map((key) => ({
-    ...dict.services_section.items[key], // Title, description dari JSON
-    ...visualAssets[key], // Image, gradient dari local constant
-    key: key, // untuk routing url
-  }));
+  const allServices = servicesKeys.map((key) => {
+    // Ambil konfigurasi manual (image, gradient, href)
+    const asset = visualAssets[key] || {
+      image: "",
+      gradient: "",
+      href: "#",
+    };
 
-  const draftCategories = allServices.map((service) => service.category_label);
+    return {
+      ...dict.services_section.items[key], // Title & Desc dari JSON
+      ...asset, // Image, Gradient & Href dari Config Manual
+      key: key,
+    };
+  });
 
   return (
     <>
       <div className="relative min-h-screen w-full overflow-x-hidden bg-gray-50 pt-12">
-        {/* Canvas Background Code tetap sama */}
         <div className="fixed inset-0 z-0 pointer-events-none">
           <canvas ref={canvasRef} className="absolute inset-0 opacity-60" />
           <div className="absolute inset-0 bg-gradient-to-br from-blue-100/20 via-transparent to-purple-100/20" />
@@ -260,7 +275,7 @@ export default function LandingPageClient({ dict, lang }: LandingPageProps) {
             </motion.h2>
           </div>
 
-          {/* --- CATEGORY PILLS --- */}
+          {/* --- CATEGORY PILLS (Sekarang Bisa Diklik & Link Manual) --- */}
           <div className="w-full flex justify-center">
             <motion.div
               variants={fadeIn}
@@ -270,13 +285,12 @@ export default function LandingPageClient({ dict, lang }: LandingPageProps) {
               className="w-full max-w-4xl mb-20"
             >
               <div className="grid grid-cols-2 md:grid-cols-3 text-center gap-4 md:gap-6 text-sm md:text-xl">
-                {draftCategories.map((category: string, idx: number) => (
-                  <div
-                    key={idx}
-                    className="px-2 md:px-6 py-3 rounded-full border-2 border-gray-200 bg-white/50 backdrop-blur-sm text-gray-700 font-medium hover:border-blue-400 hover:text-blue-600 hover:shadow-md transition-all duration-300 cursor-default select-none text-center"
-                  >
-                    {category}
-                  </div>
+                {allServices.map((service, idx) => (
+                  <Link href={service.href} key={idx} className="block">
+                    <div className="px-2 md:px-6 py-3 rounded-full border-2 border-gray-200 bg-white/50 backdrop-blur-sm text-gray-700 font-medium hover:border-blue-400 hover:text-blue-600 hover:shadow-md transition-all duration-300 cursor-pointer select-none text-center">
+                      {service.category_label}
+                    </div>
+                  </Link>
                 ))}
               </div>
             </motion.div>
@@ -307,12 +321,7 @@ export default function LandingPageClient({ dict, lang }: LandingPageProps) {
                   viewport={{ once: true }}
                   transition={{ delay: index * 0.1 }}
                 >
-                  <Link
-                    href={`/services/${item.title
-                      .toLowerCase()
-                      .replace(/\s+/g, "-")
-                      .replace(/\//g, "-")}`}
-                  >
+                  <Link href={item.href}>
                     <div
                       className="group cursor-pointer h-full"
                       onMouseEnter={() => setHoveredIndex(index)}
