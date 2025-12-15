@@ -1,6 +1,5 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
-@tailwind utilities;
 
 :root {
   --font-geist-sans: sans-serif;
