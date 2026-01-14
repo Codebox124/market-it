@@ -12,6 +12,7 @@ import { motion } from "framer-motion";
 import { useEffect, useState, useRef } from "react";
 import Link from "next/link";
 import emailjs from "@emailjs/browser";
+import LatestBlogs from "@/components/home/LatestBlogs";
 
 // --- ANIMATION VARIANTS ---
 const fadeIn = {
@@ -457,6 +458,11 @@ export default function LandingPageClient({ dict, lang }: LandingPageProps) {
               </form>
             </motion.div>
           </div>
+          
+          <div className="w-full max-w-7xl mx-auto px-6 lg:px-12 mt-20">
+             <LatestBlogs lang={lang} />
+          </div>
+
         </div>
       </div>
     </>

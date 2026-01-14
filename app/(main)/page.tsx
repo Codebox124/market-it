@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { useEffect, useState, useRef } from "react";
 import Link from "next/link";
 import { title } from "process";
+import LatestBlogs from "@/components/home/LatestBlogs";
 
 const fadeIn = {
   hidden: { opacity: 0, y: 30 },
@@ -674,6 +675,9 @@ export default function Home() {
           </div>
         )}
       </section>
+
+      {/* Latest Blogs Section */}
+      <LatestBlogs lang="en" />
 
       <style jsx global>{`
         .line-clamp-3 {
