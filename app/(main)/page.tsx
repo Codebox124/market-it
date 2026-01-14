@@ -342,7 +342,7 @@ export default function Home() {
 
   return (
     <>
-      <section className="relative min-h-screen w-full pt-12 flex items-center justify-center overflow-hidden bg-gradient-to-br from-gray-50 via-white to-blue-50/30">
+      <section className="relative min-h-screen w-full pt-20 lg:pt-32 flex items-center justify-center overflow-hidden bg-gradient-to-br from-gray-50 via-white to-blue-50/30">
         {/* Animated background canvas */}
         <canvas ref={canvasRef} className="absolute inset-0 z-0 opacity-60" />
 
