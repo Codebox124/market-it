@@ -394,7 +394,7 @@ export default function Home() {
                         transition={{
                           duration: 0.3,
                           repeat: Infinity,
-                          repeatDelay: 0.4,
+                          repeatDelay: 0.5,
                           ease: "easeInOut",
                         }}
                       />
