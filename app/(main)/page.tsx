@@ -360,7 +360,7 @@ export default function Home() {
         <div className="relative z-10 max-w-7xl xl:max-w-[87%] w-full px-6 lg:px-12 py-10 xl:py-4">
           <div className="space-y-16 xl:space-y-4">
             {/* Hero title */}
-            <div className="text-center space-y-8">
+            <div className="text-center space-y-8 mb-10">
               <div className="relative inline-block group">
                 {/* Electric Arc / Lightning Effect */}
                 <div className="absolute -inset-4 pointer-events-none z-0">
@@ -523,7 +523,7 @@ export default function Home() {
                 </motion.h1>
               </div>
 
-              <div className="max-w-4xl mx-auto">
+              <div className="max-w-7xl mx-auto">
                 <h2 className="text-xl md:text-2xl text-gray-600 leading-relaxed font-light">
                   Effective marketing solutions and versatile creative services
                   for
@@ -584,7 +584,7 @@ export default function Home() {
 
                       {/* Content */}
                       <div className="p-6 xl:p-3 space-y-4 xl:space-y-1 flex flex-col flex-grow">
-                        <h3 className="text-lg xl:text-base font-semibold text-gray-900 tracking-wide">
+                        <h3 className="text-xl xl:text-base font-semibold text-gray-900 tracking-wide mb-3">
                           {item.title}
                         </h3>
                         <p className="text-sm text-gray-600 leading-relaxed line-clamp-6 xl:line-clamp-4">
@@ -651,7 +651,7 @@ export default function Home() {
 
                       {/* Content */}
                       <div className="p-6 xl:p-3 space-y-4 xl:space-y-1">
-                        <h3 className="text-lg xl:text-base font-semibold text-gray-900 tracking-wide">
+                        <h3 className="text-xl xl:text-base font-semibold text-gray-900 tracking-wide mb-3">
                           {item.title}
                         </h3>
                         <p className="text-sm text-gray-600 leading-relaxed line-clamp-6 xl:line-clamp-4">
