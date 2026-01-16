@@ -51,7 +51,7 @@ export default function Navbar() {
     { name: "Video Editing", href: "/visuals/video-editing", icon: Briefcase },
     { name: "Photo Editing", href: "/visuals/photo-editing", icon: Briefcase },
     { name: "Animation", href: "/visuals/animation", icon: Briefcase },
-    { name: "Websites/Apps", href: "/marketing/website-apps", icon: Briefcase },
+    { name: "Websites/Apps", href: "/marketing/websites-apps", icon: Briefcase },
     { name: "Advertising", href: "/marketing/advertising", icon: Briefcase },
     { name: "Social Media", href: "/marketing/social-media", icon: Briefcase },
     {
