@@ -52,8 +52,8 @@ export default function Footer() {
                     href="tel:347 659 1708"
                     className="text-gray-600 hover:text-gray-900 hover:text-green-600 transition-colors duration-200"
                   >
-                    (347)<span className="[word-spacing:-0.35em]"> 659</span>
-                    <span className="[word-spacing:-0.2em]"> 1708</span>
+                    (347)<span> 659</span>
+                    <span> 1708</span>
                   </a>
                 </li>
                 <li className="flex items-start">

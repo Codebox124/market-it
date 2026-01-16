@@ -343,7 +343,7 @@ export default function Home() {
 
   return (
     <>
-      <section className="relative min-h-screen w-full pt-20 lg:pt-32 flex items-center justify-center overflow-hidden bg-gradient-to-br from-gray-50 via-white to-blue-50/30">
+      <section className="relative min-h-screen w-full pt-20 flex items-center justify-center overflow-hidden bg-gradient-to-br from-gray-50 via-white to-blue-50/30">
         {/* Animated background canvas */}
         <canvas ref={canvasRef} className="absolute inset-0 z-0 opacity-60" />
 
@@ -357,60 +357,171 @@ export default function Home() {
         <div className="absolute bottom-20 right-20 w-48 h-48 bg-gradient-to-br from-pink-200/30 to-orange-200/30 rounded-full blur-2xl" />
 
         {/* Main content */}
-        <div className="relative z-10 max-w-7xl w-full px-6 lg:px-12 py-10">
-          <div className="space-y-16">
+        <div className="relative z-10 max-w-7xl xl:max-w-[87%] w-full px-6 lg:px-12 py-10 xl:py-4">
+          <div className="space-y-16 xl:space-y-4">
             {/* Hero title */}
             <div className="text-center space-y-8">
-              <motion.h1
-                variants={fadeIn}
-                custom={0}
-                className="text-3xl md:text-7xl border-4 border-white/30 backdrop-blur-sm flex justify-center items-center py-4 px-6 font-extrabold leading-tight text-transparent bg-clip-text  bg-gradient-to-r from-emerald-300 to-emerald-500 "
-                style={{
-                  textShadow:
-                    "0 0 15px rgba(255,255,255,0.5), 0 0 30px rgba(59,130,246,0.5)",
-                  boxShadow:
-                    "0 0 30px rgba(59,130,246,0.3), inset 0 0 20px rgba(59,130,246,0.2)",
-                }}
-              >
-                MAKE <span className="px-5">IT</span>
-                <motion.span
-                  className=" bg-clip-text pr-6 bg-gradient-to-r text-white"
+              <div className="relative inline-block group">
+                {/* Electric Arc / Lightning Effect */}
+                <div className="absolute -inset-4 pointer-events-none z-0">
+                  <motion.div
+                    className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-100"
+                    animate={{
+                      opacity: [0, 1, 0, 0, 1, 0],
+                      filter: ["hue-rotate(0deg)", "hue-rotate(90deg)", "hue-rotate(0deg)"],
+                    }}
+                    transition={{
+                      duration: 0.5,
+                      repeat: Infinity,
+                      repeatDelay: 2,
+                      ease: "linear",
+                    }}
+                  >
+                    <svg
+                      viewBox="0 0 400 150"
+                      className="w-[120%] h-[150%] absolute -top-[25%] -left-[10%] drop-shadow-[0_0_10px_rgba(59,130,246,0.8)]"
+                    >
+                      <motion.path
+                        d="M20,75 L60,40 L90,90 L130,30 L160,80 L200,20 L240,90 L280,30 L320,80 L360,40"
+                        fill="none"
+                        stroke="cyan"
+                        strokeWidth="2"
+                        initial={{ pathLength: 0, opacity: 0 }}
+                        animate={{
+                          pathLength: [0, 1, 0],
+                          opacity: [0, 1, 0],
+                        }}
+                        transition={{
+                          duration: 0.3,
+                          repeat: Infinity,
+                          repeatDelay: 0.5,
+                          ease: "easeInOut",
+                        }}
+                      />
+                      <motion.path
+                        d="M40,110 L80,60 L120,100 L160,50 L200,90 L240,40 L280,100 L320,50"
+                        fill="none"
+                        stroke="#a855f7"
+                        strokeWidth="2"
+                        initial={{ pathLength: 0, opacity: 0 }}
+                        animate={{
+                          pathLength: [0, 1, 0],
+                          opacity: [0, 1, 0],
+                        }}
+                        transition={{
+                          duration: 0.4,
+                          repeat: Infinity,
+                          repeatDelay: 0.2,
+                          ease: "easeInOut",
+                        }}
+                      />
+                    </svg>
+                  </motion.div>
+                </div>
+
+                {/* Pulsing BG for Base Glow */}
+                <motion.div
+                  className="absolute inset-0 bg-gradient-to-r from-blue-500/20 via-cyan-400/20 to-emerald-400/20 blur-xl rounded-lg"
                   animate={{
-                    textShadow: [
-                      "0 0 10px rgba(16,185,129,0.5)",
-                      "0 0 20px rgba(16,185,129,0.8)",
-                      "0 0 10px rgba(16,185,129,0.5)",
-                    ],
+                    opacity: [0.2, 0.4, 0.2],
+                    scale: [1, 1.02, 1],
                   }}
                   transition={{
-                    duration: 4,
+                    duration: 3,
                     repeat: Infinity,
                     ease: "easeInOut",
                   }}
-                >
-                  {" "}
-                  &{" "}
-                </motion.span>
-                <motion.span
-                  className="text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-blue-600"
+                />
+
+                <motion.h1
+                  variants={fadeIn}
+                  custom={0}
+                  className="relative z-10 text-3xl md:text-7xl border-4 border-white/70 backdrop-blur-sm flex justify-center items-center py-4 px-6 font-extrabold leading-tight text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-emerald-600"
+                  style={{
+                    filter: "drop-shadow(0 2px 4px rgba(0,0,0,0.1))",
+                    textShadow:
+                      "0 0 10px rgba(255,255,255,0.4), 0 0 20px rgba(59,130,246,0.3)",
+                    boxShadow:
+                      "0 0 20px rgba(59,130,246,0.2), inset 0 0 10px rgba(255,255,255,0.5), 0 0 5px rgba(255,255,255,0.8)",
+                  }}
                   animate={{
-                    textShadow: [
-                      "0 0 10px rgba(59,130,246,0.5)",
-                      "0 0 20px rgba(59,130,246,0.8)",
-                      "0 0 10px rgba(59,130,246,0.5)",
-                    ],
+                     boxShadow: [
+                      "0 0 20px rgba(59,130,246,0.2), inset 0 0 10px rgba(255,255,255,0.5), 0 0 5px rgba(255,255,255,0.8)",
+                      "0 0 30px rgba(59,130,246,0.4), inset 0 0 15px rgba(255,255,255,0.6), 0 0 10px rgba(255,255,255,0.9)",
+                      "0 0 20px rgba(59,130,246,0.2), inset 0 0 10px rgba(255,255,255,0.5), 0 0 5px rgba(255,255,255,0.8)",
+                     ]
                   }}
                   transition={{
-                    duration: 4,
+                    // To adjust speed: Change 'duration' (higher = slower)
+                    duration: 5, // Slowed down from 2
                     repeat: Infinity,
-                    ease: "easeInOut",
-                    delay: 2,
+                    repeatDelay: 1, 
                   }}
                 >
-                  {" "}
-                  MARKET
-                </motion.span>
-              </motion.h1>
+
+                  <motion.span
+                    className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-300 to-emerald-400"
+                    animate={{
+                      textShadow: [
+                        "0 0 5px rgba(16,185,129,0.4)",
+                        "0 0 10px rgba(16,185,129,0.45)",
+                        "0 0 5px rgba(16,185,129,0.4)",
+                      ],
+                      opacity: [1, 0.95, 1] 
+                    }}
+                    transition={{
+                      // Speed for "MAKE IT"
+                      duration: 0.8, // Slowed down from 2
+                      repeat: Infinity,
+                      repeatType: "reverse",
+                      ease: "easeInOut"
+                    }}
+                  >
+                    MAKE <span className="px-5">IT</span>
+                  </motion.span>
+                  <motion.span
+                    className="bg-clip-text pr-6 bg-gradient-to-r text-white"
+                    animate={{
+                      textShadow: [
+                        "0 0 5px rgba(16,185,129,0.4)",
+                        "0 0 10px rgba(16,185,129,0.7)",
+                        "0 0 5px rgba(16,185,129,0.4)",
+                      ],
+                    }}
+                    transition={{
+                      // Speed for "&"
+                      duration: 0.8, // Slowed down from 2
+                      repeat: Infinity,
+                      repeatType: "reverse",
+                      ease: "easeInOut"
+                    }}
+                  >
+                    {" "}
+                    &{" "}
+                  </motion.span>
+                  <motion.span
+                    className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-500"
+                    animate={{
+                      textShadow: [
+                        "0 0 5px rgba(59,130,246,0.4)",
+                        "0 0 10px rgba(59,130,246,0.45)",
+                        "0 0 5px rgba(59,130,246,0.4)",
+                      ],
+                      opacity: [1, 0.9, 1]
+                    }}
+                    transition={{
+                      // Speed for "MARKET"
+                      duration: 0.8, // Slowed down from 2
+                      repeat: Infinity,
+                      repeatType: "reverse",
+                      ease: "easeInOut"
+                    }}
+                  >
+                    {" "}
+                    MARKET
+                  </motion.span>
+                </motion.h1>
+              </div>
 
               <div className="max-w-4xl mx-auto">
                 <h2 className="text-xl md:text-2xl text-gray-600 leading-relaxed font-light">
@@ -428,7 +539,7 @@ export default function Home() {
             </div>
 
             {/* Services grid */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 h-full">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 xl:gap-4 h-full">
               {visualsPortfolio.map((item, index) => (
                 <Link
                   href={`/visuals/${item.title
@@ -452,7 +563,7 @@ export default function Home() {
                   >
                     <div className="relative rounded-3xl overflow-hidden bg-white shadow-lg shadow-gray-200/50 border border-gray-100/80 hover:shadow-2xl hover:shadow-gray-300/30 transition-all duration-500">
                       {/* Image */}
-                      <div className="relative h-48 overflow-hidden">
+                      <div className="relative h-48 xl:h-36 overflow-hidden">
                         <img
                           src={item.image}
                           alt={item.title}
@@ -472,11 +583,11 @@ export default function Home() {
                       </div>
 
                       {/* Content */}
-                      <div className="p-6 space-y-4 flex flex-col flex-grow">
-                        <h3 className="text-lg font-semibold text-gray-900 tracking-wide">
+                      <div className="p-6 xl:p-3 space-y-4 xl:space-y-1 flex flex-col flex-grow">
+                        <h3 className="text-lg xl:text-base font-semibold text-gray-900 tracking-wide">
                           {item.title}
                         </h3>
-                        <p className="text-sm text-gray-600 leading-relaxed line-clamp-6">
+                        <p className="text-sm text-gray-600 leading-relaxed line-clamp-6 xl:line-clamp-4">
                           {item.descriptionservice}
                         </p>
 
@@ -519,7 +630,7 @@ export default function Home() {
                   >
                     <div className="relative rounded-3xl overflow-hidden bg-white shadow-lg shadow-gray-200/50 border border-gray-100/80 hover:shadow-2xl hover:shadow-gray-300/30 transition-all duration-500">
                       {/* Image */}
-                      <div className="relative h-48 overflow-hidden">
+                      <div className="relative h-48 xl:h-36 overflow-hidden">
                         <img
                           src={item.image}
                           alt={item.title}
@@ -539,11 +650,11 @@ export default function Home() {
                       </div>
 
                       {/* Content */}
-                      <div className="p-6 space-y-4">
-                        <h3 className="text-lg font-semibold text-gray-900 tracking-wide">
+                      <div className="p-6 xl:p-3 space-y-4 xl:space-y-1">
+                        <h3 className="text-lg xl:text-base font-semibold text-gray-900 tracking-wide">
                           {item.title}
                         </h3>
-                        <p className="text-sm text-gray-600 leading-relaxed line-clamp-6">
+                        <p className="text-sm text-gray-600 leading-relaxed line-clamp-6 xl:line-clamp-4">
                           {item.descriptionservice}
                         </p>
 
@@ -570,7 +681,7 @@ export default function Home() {
 
       {/* Client Showcase Section */}
       <section className="relative py-10 bg-gradient-to-b from-white via-blue-50/10 to-white">
-        <div className="max-w-7xl mx-auto px-6 lg:px-12">
+        <div className="max-w-7xl xl:max-w-[87%] mx-auto px-6 lg:px-12">
           <motion.h2
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}

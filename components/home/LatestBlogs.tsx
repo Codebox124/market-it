@@ -177,7 +177,7 @@ export default function LatestBlogs({ lang = "en" }: LatestBlogsProps) {
 
   return (
     <section className="relative py-20">
-      <div className="max-w-7xl mx-auto px-6 lg:px-12">
+      <div className="max-w-7xl xl:max-w-[87%] mx-auto px-6 lg:px-12">
         <div className="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
           <div className="space-y-4">
             <motion.h2

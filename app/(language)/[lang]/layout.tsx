@@ -1,6 +1,13 @@
 import type { Metadata } from "next";
 import { getDictionary } from "@/utils/get-dictionary";
 import "@/app/globals.css";
+import { Space_Grotesk } from "next/font/google";
+
+const spaceGrotesk = Space_Grotesk({
+  weight: ["300", "400", "500", "600", "700"],
+  variable: "--font-space-grotesk",
+  subsets: ["latin"],
+});
 
 // 1. UBAH TIPE PROPS MENJADI PROMISE
 type Props = {
@@ -92,7 +99,7 @@ export default async function LanguageLayout({ children, params }: Props) {
   return (
     // Gunakan variabel 'lang', bukan 'params.lang'
     <html lang={lang}>
-      <body>{children}</body>
+      <body className={spaceGrotesk.variable}>{children}</body>
     </html>
   );
 }

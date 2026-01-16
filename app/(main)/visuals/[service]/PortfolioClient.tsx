@@ -181,7 +181,7 @@ export default function PortfolioClient({
                                                                 src={project.image}
                                                                 alt={project.title}
                                                                 loading="lazy"
-                                                                className="rounded-xl w-full h-48 object-cover shadow-lg group-hover:scale-105 transition-transform duration-500"
+                                                                className="rounded-xl w-full h-48 object-contain shadow-lg group-hover:scale-105 transition-transform duration-500"
                                                             />
                                                             <div className="absolute inset-0 bg-white/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl flex items-center justify-center">
                                                                 <div className="w-14 h-14 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center shadow-lg">
@@ -236,12 +236,12 @@ export default function PortfolioClient({
                                                             </div>
                                                         </div>
                                                     ) : (
-                                                        <div className="relative">
+                                                        <div className="aspect-[16/9] w-full overflow-hidden rounded-xl bg-white flex items-center justify-center">
                                                             <img
                                                                 src={project.image}
                                                                 alt={project.title}
                                                                 loading="lazy"
-                                                                className="rounded-xl w-full h-36 object-cover shadow-lg group-hover:scale-105 transition-transform duration-500"
+                                                                className="w-full h-full object-contain shadow-lg group-hover:scale-105 transition-transform duration-500"
                                                             />
                                                             <div className="absolute inset-0 bg-white/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl flex items-center justify-center">
                                                                 <div className="w-12 h-12 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center shadow-lg">

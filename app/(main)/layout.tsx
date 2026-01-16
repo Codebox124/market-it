@@ -3,11 +3,18 @@ import {
   Geist,
   Azeret_Mono as Geist_Mono,
   IBM_Plex_Mono,
+  Space_Grotesk,
 } from "next/font/google";
 import Script from "next/script";
 import "../globals.css";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
+
+const spaceGrotesk = Space_Grotesk({
+  weight: ["300", "400", "500", "600", "700"],
+  variable: "--font-space-grotesk",
+  subsets: ["latin"],
+});
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -116,7 +123,7 @@ export default function RootLayout({
       </head>
 
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${ibmPlexMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${ibmPlexMono.variable} ${spaceGrotesk.variable} antialiased`}
       >
         {/* Google Tag Manager (noscript) */}
         <noscript>
