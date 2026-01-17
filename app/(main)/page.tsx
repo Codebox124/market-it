@@ -421,7 +421,7 @@ export default function Home() {
 
                 {/* Pulsing BG for Base Glow */}
                 <motion.div
-                  className="absolute inset-0 bg-gradient-to-r from-blue-500/20 via-cyan-400/20 to-emerald-400/20 blur-xl rounded-lg"
+                  className="absolute inset-0 bg-gradient-to-r from-blue-300/20 via-cyan-200/20 to-emerald-200/20 blur-xl rounded-lg"
                   animate={{
                     opacity: [0.2, 0.4, 0.2],
                     scale: [1, 1.02, 1],
@@ -438,17 +438,17 @@ export default function Home() {
                   custom={0}
                   className="relative z-10 text-3xl md:text-7xl border-4 border-white/70 backdrop-blur-sm flex justify-center items-center py-4 px-6 font-extrabold leading-tight text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-emerald-600"
                   style={{
-                    filter: "drop-shadow(0 2px 4px rgba(0,0,0,0.1))",
+                    filter: "drop-shadow(0 2px 4px rgba(0,0,0,0.05))",
                     textShadow:
-                      "0 0 10px rgba(255,255,255,0.4), 0 0 20px rgba(59,130,246,0.3)",
+                      "0 0 10px rgba(255,255,255,0.6), 0 0 20px rgba(147,197,253,0.3)",
                     boxShadow:
-                      "0 0 20px rgba(59,130,246,0.2), inset 0 0 10px rgba(255,255,255,0.5), 0 0 5px rgba(255,255,255,0.8)",
+                      "0 0 20px rgba(147,197,253,0.2), inset 0 0 10px rgba(255,255,255,0.6), 0 0 5px rgba(255,255,255,0.9)",
                   }}
                   animate={{
                      boxShadow: [
-                      "0 0 20px rgba(59,130,246,0.2), inset 0 0 10px rgba(255,255,255,0.5), 0 0 5px rgba(255,255,255,0.8)",
-                      "0 0 30px rgba(59,130,246,0.4), inset 0 0 15px rgba(255,255,255,0.6), 0 0 10px rgba(255,255,255,0.9)",
-                      "0 0 20px rgba(59,130,246,0.2), inset 0 0 10px rgba(255,255,255,0.5), 0 0 5px rgba(255,255,255,0.8)",
+                      "0 0 20px rgba(147,197,253,0.2), inset 0 0 10px rgba(255,255,255,0.6), 0 0 5px rgba(255,255,255,0.9)",
+                      "0 0 30px rgba(147,197,253,0.3), inset 0 0 15px rgba(255,255,255,0.7), 0 0 10px rgba(255,255,255,0.95)",
+                      "0 0 20px rgba(147,197,253,0.2), inset 0 0 10px rgba(255,255,255,0.6), 0 0 5px rgba(255,255,255,0.9)",
                      ]
                   }}
                   transition={{
@@ -463,9 +463,9 @@ export default function Home() {
                     className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-300 to-emerald-400"
                     animate={{
                       textShadow: [
-                        "0 0 5px rgba(16,185,129,0.4)",
-                        "0 0 10px rgba(16,185,129,0.45)",
-                        "0 0 5px rgba(16,185,129,0.4)",
+                        "0 0 5px rgba(110,231,183,0.4)",
+                        "0 0 10px rgba(110,231,183,0.5)",
+                        "0 0 5px rgba(110,231,183,0.4)",
                       ],
                       opacity: [1, 0.95, 1] 
                     }}
@@ -483,9 +483,9 @@ export default function Home() {
                     className="bg-clip-text pr-6 bg-gradient-to-r text-white"
                     animate={{
                       textShadow: [
-                        "0 0 5px rgba(16,185,129,0.4)",
-                        "0 0 10px rgba(16,185,129,0.7)",
-                        "0 0 5px rgba(16,185,129,0.4)",
+                        "0 0 5px rgba(110,231,183,0.4)",
+                        "0 0 10px rgba(110,231,183,0.6)",
+                        "0 0 5px rgba(110,231,183,0.4)",
                       ],
                     }}
                     transition={{
@@ -503,9 +503,9 @@ export default function Home() {
                     className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-500"
                     animate={{
                       textShadow: [
-                        "0 0 5px rgba(59,130,246,0.4)",
-                        "0 0 10px rgba(59,130,246,0.45)",
-                        "0 0 5px rgba(59,130,246,0.4)",
+                        "0 0 5px rgba(147,197,253,0.4)",
+                        "0 0 10px rgba(147,197,253,0.5)",
+                        "0 0 5px rgba(147,197,253,0.4)",
                       ],
                       opacity: [1, 0.9, 1]
                     }}
@@ -567,7 +567,7 @@ export default function Home() {
                         <img
                           src={item.image}
                           alt={item.title}
-                          className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                          className="w-full h-full object-contain transition-transform duration-700 group-hover:scale-110"
                           loading="lazy"
                         />
                         <div
@@ -584,7 +584,7 @@ export default function Home() {
 
                       {/* Content */}
                       <div className="p-6 xl:p-3 space-y-4 xl:space-y-1 flex flex-col flex-grow">
-                        <h3 className="text-xl xl:text-base font-semibold text-gray-900 tracking-wide mb-3">
+                        <h3 className="text-xl xl:text-base font-semibold text-gray-900 tracking-wide uppercase mb-3">
                           {item.title}
                         </h3>
                         <p className="text-sm text-gray-600 leading-relaxed line-clamp-6 xl:line-clamp-4">
@@ -634,7 +634,7 @@ export default function Home() {
                         <img
                           src={item.image}
                           alt={item.title}
-                          className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                          className="w-full h-full object-contain transition-transform duration-700 group-hover:scale-110"
                           loading="lazy"
                         />
                         <div
@@ -651,7 +651,7 @@ export default function Home() {
 
                       {/* Content */}
                       <div className="p-6 xl:p-3 space-y-4 xl:space-y-1">
-                        <h3 className="text-xl xl:text-base font-semibold text-gray-900 tracking-wide mb-3">
+                        <h3 className="text-xl xl:text-base font-semibold text-gray-900 tracking-wide uppercase mb-3">
                           {item.title}
                         </h3>
                         <p className="text-sm text-gray-600 leading-relaxed line-clamp-6 xl:line-clamp-4">
