@@ -945,7 +945,7 @@ export const portfolioVisualProjects: Record<
         {
             title: "Yunix On 3 Girl + Guy Square I Dot",
             description: "Creative graphic design and illustration.",
-            image: "/graphic/YUNIX on 3 girl + guy square i dot.png",
+            image: "/graphic/yunix-on-3-girl-guy-square-i-dot.png",
         },
         {
             title: "General",
