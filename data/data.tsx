@@ -1650,7 +1650,12 @@ export const portfolioVisualProjects: Record<
             title: "Storyboard",
             description: "Original storyboard scene for animation sequence.",
             image: "/animation/storyboard.png",
-        }
+        },
+        {
+            title: "Cinematic Montage",
+            description: "A high-quality cinematic edit.",
+            video: "https://www.youtube.com/embed/WaEnkV6gY0o"
+        },
     ],
 }
 
