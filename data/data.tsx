@@ -500,11 +500,6 @@ export const portfolioVisualProjects: Record<
         {
             title: "Flyer Sump",
             description: "Creative graphic design and illustration.",
-            image: "/graphic/flyer sump copy.png",
-        },
-        {
-            title: "Flyer Sump",
-            description: "Creative graphic design and illustration.",
             image: "/graphic/flyer sump.png",
         },
         {
@@ -908,11 +903,6 @@ export const portfolioVisualProjects: Record<
             image: "/graphic/shirt (Go ahead) 3 DENISE option 2.png",
         },
         {
-            title: "Shirt (go Ahead) 3 Denise Option 4",
-            description: "Creative graphic design and illustration.",
-            image: "/graphic/shirt (Go ahead) 3 DENISE option 4.png",
-        },
-        {
             title: "Smnj3539",
             description: "Creative graphic design and illustration.",
             image: "/graphic/SMNJ3539.jpg",
@@ -941,11 +931,6 @@ export const portfolioVisualProjects: Record<
             title: "Ticket Sample",
             description: "Creative graphic design and illustration.",
             image: "/graphic/ticket SAMPLE.png",
-        },
-        {
-            title: "Whatsapp Image 2025 03 14 At 3.53.46 Pm",
-            description: "Creative graphic design and illustration.",
-            image: "/graphic/WhatsApp Image 2025-03-14 at 3.53.46 PM (1).jpeg",
         },
         {
             title: "Whatsapp",

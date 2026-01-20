@@ -132,11 +132,11 @@ export default function Navbar() {
             whileTap={{ scale: 0.95 }}
             className="flex items-center space-x-3"
           >
-            <Link href="/" className="flex items-center space-x-3 group">
+            {/* <Link href="/" className="flex items-center space-x-3 group">
               <div className="relative">
                 <img width={150} height={50} alt="logo" src="/logo.png" />
               </div>
-            </Link>
+            </Link> */}
           </motion.div>
 
           {/* Desktop Navigation */}
@@ -233,7 +233,7 @@ export default function Navbar() {
               whileTap={{ scale: 0.95 }}
               className="hidden sm:block"
             >
-              <div className="w-32"></div>
+              {/* <div className="w-32"></div> */}
               {/* <Link
                 href="/contact"
 

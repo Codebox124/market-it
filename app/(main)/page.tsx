@@ -551,7 +551,7 @@ export default function Home() {
                 >
                   <div
                     key={index}
-                    className="group cursor-pointer"
+                    className="group cursor-pointer h-full flex flex-col"
                     onMouseLeave={() => setHoveredIndex(null)}
                     style={{
                       transform:
@@ -561,9 +561,9 @@ export default function Home() {
                       transition: "transform 0.3s ease-out",
                     }}
                   >
-                    <div className="relative rounded-3xl overflow-hidden bg-white shadow-lg shadow-gray-200/50 border border-gray-100/80 hover:shadow-2xl hover:shadow-gray-300/30 transition-all duration-500">
+                    <div className="relative rounded-3xl overflow-hidden bg-white shadow-lg shadow-gray-200/50 border border-gray-100/80 hover:shadow-2xl hover:shadow-gray-300/30 transition-all duration-500 h-full flex flex-col">
                       {/* Image */}
-                      <div className="relative h-48 xl:h-36 overflow-hidden">
+                      <div className="relative h-48 xl:h-36 overflow-hidden flex-shrink-0">
                         <img
                           src={item.image}
                           alt={item.title}
@@ -587,12 +587,12 @@ export default function Home() {
                         <h3 className="text-xl xl:text-base font-semibold text-gray-900 tracking-wide uppercase mb-3">
                           {item.title}
                         </h3>
-                        <p className="text-sm text-gray-600 leading-relaxed line-clamp-6 xl:line-clamp-4">
+                        <p className="text-[13px] text-gray-600 leading-relaxed line-clamp-6 xl:line-clamp-4">
                           {item.descriptionservice}
                         </p>
 
                         <div
-                          className={`flex mt-auto items-center text-sm font-semibold pt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300`}
+                          className={`flex mt-auto items-center text-[13px] font-semibold pt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300`}
                         >
                           <span>Explore Services</span>
                           <ArrowRight className="ml-2 h-4 w-4 transform group-hover:translate-x-1 transition-transform" />
@@ -618,7 +618,7 @@ export default function Home() {
                 >
                   <div
                     key={index}
-                    className="group cursor-pointer"
+                    className="group cursor-pointer h-full flex flex-col"
                     onMouseLeave={() => setHoveredIndex(null)}
                     style={{
                       transform:
@@ -628,9 +628,9 @@ export default function Home() {
                       transition: "transform 0.3s ease-out",
                     }}
                   >
-                    <div className="relative rounded-3xl overflow-hidden bg-white shadow-lg shadow-gray-200/50 border border-gray-100/80 hover:shadow-2xl hover:shadow-gray-300/30 transition-all duration-500">
+                    <div className="relative rounded-3xl overflow-hidden bg-white shadow-lg shadow-gray-200/50 border border-gray-100/80 hover:shadow-2xl hover:shadow-gray-300/30 transition-all duration-500 h-full flex flex-col">
                       {/* Image */}
-                      <div className="relative h-48 xl:h-36 overflow-hidden">
+                      <div className="relative h-48 xl:h-36 overflow-hidden flex-shrink-0">
                         <img
                           src={item.image}
                           alt={item.title}
@@ -650,16 +650,16 @@ export default function Home() {
                       </div>
 
                       {/* Content */}
-                      <div className="p-6 xl:p-3 space-y-4 xl:space-y-1">
+                      <div className="p-6 xl:p-3 space-y-4 xl:space-y-1 flex flex-col flex-grow">
                         <h3 className="text-xl xl:text-base font-semibold text-gray-900 tracking-wide uppercase mb-3">
                           {item.title}
                         </h3>
-                        <p className="text-sm text-gray-600 leading-relaxed line-clamp-6 xl:line-clamp-4">
+                        <p className="text-[13px] text-gray-600 leading-relaxed line-clamp-6 xl:line-clamp-4">
                           {item.descriptionservice}
                         </p>
 
                         <div
-                          className={`flex items-center text-sm font-semibold pt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300`}
+                          className={`flex mt-auto items-center text-[13px] font-semibold pt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300`}
                         >
                           <span>Explore Services</span>
                           <ArrowRight className="ml-2 h-4 w-4 transform group-hover:translate-x-1 transition-transform" />
