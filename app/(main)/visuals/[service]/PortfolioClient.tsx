@@ -236,7 +236,7 @@ export default function PortfolioClient({
                                                             </div>
                                                         </div>
                                                     ) : (
-                                                        <div className="aspect-[16/9] w-full overflow-hidden rounded-xl bg-white flex items-center justify-center">
+                                                        <div className="aspect-[16/9] w-full overflow-hidden rounded-xl flex items-center justify-center">
                                                             <img
                                                                 src={project.image}
                                                                 alt={project.title}
