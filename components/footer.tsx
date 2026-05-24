@@ -1,36 +1,15 @@
 import Link from "next/link";
 
-const visualLinks = [
-  { name: "Graphic Design", href: "/visuals/graphic-design" },
-  { name: "Video Editing", href: "/visuals/video-editing" },
-  { name: "Photo Editing", href: "/visuals/photo-editing" },
-  { name: "Animation", href: "/visuals/animation" },
-];
-
-const marketingLinks = [
-  { name: "Advertising", href: "/marketing/advertising" },
-  { name: "Social Media", href: "/marketing/social-media" },
-  { name: "Flyer Distribution", href: "/marketing/flyer-distribution" },
+const serviceLinks = [
+  { name: "Marketing", href: "/marketing/advertising" },
+  { name: "Content Creation", href: "/visuals/graphic-design" },
   { name: "Websites & Apps", href: "/marketing/websites-apps" },
 ];
 
-const languages = [
-  { code: "en", label: "English" },
-  { code: "ar", label: "Arabic" },
-  { code: "bn", label: "Bengali" },
-  { code: "hk", label: "Cantonese" },
-  { code: "fr", label: "French" },
-  { code: "gu", label: "Gujarati" },
-  { code: "hi", label: "Hindi" },
-  { code: "id", label: "Indonesian" },
-  { code: "zh", label: "Mandarin" },
-  { code: "ja", label: "Japanese" },
-  { code: "ko", label: "Korean" },
-  { code: "pt", label: "Portuguese" },
-  { code: "es", label: "Spanish" },
-  { code: "tl", label: "Tagalog" },
-  { code: "ur", label: "Urdu" },
-  { code: "ru", label: "Russian" },
+const siteLinks = [
+  { name: "Home", href: "/" },
+  { name: "Pay", href: "/booking" },
+  { name: "Contact", href: "/contact" },
 ];
 
 function FooterLink({ href, children }: { href: string; children: React.ReactNode }) {
@@ -55,22 +34,24 @@ export default function Footer() {
         {/* Closing statement */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 pb-20 border-b border-[color:var(--color-line)]">
           <div className="lg:col-span-7">
-            <p className="eyebrow mb-8">Studio</p>
+            <p className="eyebrow mb-8">Agency</p>
             <Link href="/" className="inline-block">
-              <span className="display-md text-[color:var(--color-ink)]">
-                Make It &amp; Market.
-              </span>
+              <img
+                src="/logo.png"
+                alt="Make It & Market"
+                className="h-14 md:h-20 w-auto object-contain"
+              />
             </Link>
             <p className="mt-8 max-w-xl text-base leading-relaxed text-[color:var(--color-ink-soft)]">
-              A full-service creative studio building identity, marketing, and
-              motion for brands that intend to outlast the cycle.
+              A marketing agency helping brands, businesses, and causes reach their audience
+              through advertising, outreach, content, and the web.
             </p>
 
             <Link
               href="/contact"
               className="mt-10 inline-flex items-center px-7 py-4 text-xs tracking-[0.22em] uppercase font-medium text-[color:var(--color-accent-ink)] bg-[color:var(--color-ink)] hover:bg-[color:var(--color-accent-hover)] transition-colors duration-300"
             >
-              Let&apos;s talk
+              Start a campaign
             </Link>
           </div>
 
@@ -96,19 +77,19 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <p className="eyebrow mb-1">Studio</p>
-                <span className="text-[color:var(--color-ink-soft)]">NYC · Worldwide</span>
+                <p className="eyebrow mb-1">Location</p>
+                <span className="text-[color:var(--color-ink-soft)]">New York · Worldwide</span>
               </li>
             </ul>
           </div>
         </div>
 
         {/* Link columns */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-10 lg:gap-16 py-16">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-10 lg:gap-16 py-16">
           <div>
-            <ColumnHeading>Visuals</ColumnHeading>
+            <ColumnHeading>Services</ColumnHeading>
             <ul className="space-y-3 text-sm">
-              {visualLinks.map((l) => (
+              {serviceLinks.map((l) => (
                 <li key={l.href}>
                   <FooterLink href={l.href}>{l.name}</FooterLink>
                 </li>
@@ -117,22 +98,11 @@ export default function Footer() {
           </div>
 
           <div>
-            <ColumnHeading>Marketing</ColumnHeading>
+            <ColumnHeading>Site</ColumnHeading>
             <ul className="space-y-3 text-sm">
-              {marketingLinks.map((l) => (
+              {siteLinks.map((l) => (
                 <li key={l.href}>
                   <FooterLink href={l.href}>{l.name}</FooterLink>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          <div className="col-span-2">
-            <ColumnHeading>Languages</ColumnHeading>
-            <ul className="grid grid-cols-2 md:grid-cols-3 gap-x-6 gap-y-3 text-sm">
-              {languages.map((lang) => (
-                <li key={lang.code}>
-                  <FooterLink href={`/${lang.code}`}>{lang.label}</FooterLink>
                 </li>
               ))}
             </ul>

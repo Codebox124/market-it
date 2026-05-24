@@ -43,16 +43,15 @@ export default function ContactClient() {
             className="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-12"
           >
             <div className="md:col-span-3">
-              <p className="eyebrow">Contact</p>
+              <p className="eyebrow">Contact us</p>
             </div>
             <div className="md:col-span-9">
               <h1 className="display-xl text-[color:var(--color-ink)]">
-                Let&apos;s make<br />
-                something lasting.
+                Let&apos;s build<br />
+                your campaign.
               </h1>
               <p className="mt-10 max-w-xl text-lg md:text-xl leading-relaxed text-[color:var(--color-ink-soft)] font-light">
-                Have a project in mind? Tell us about it — we&apos;ll respond
-                within one business day.
+                Tell us about your campaign and we&apos;ll respond within one business day.
               </p>
             </div>
           </motion.div>
@@ -62,7 +61,7 @@ export default function ContactClient() {
       {/* FORM */}
       <section className="border-t border-[color:var(--color-line)] bg-[color:var(--color-surface)]">
         <div className="max-w-[1600px] mx-auto px-6 lg:px-10 py-24 md:py-32">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
             {/* Direct lines */}
             <motion.div
               initial={{ opacity: 0, y: 16 }}
@@ -104,7 +103,7 @@ export default function ContactClient() {
               </div>
             </motion.div>
 
-            {/* Form */}
+            {/* Form — boxed for legibility */}
             <motion.div
               initial={{ opacity: 0, y: 24 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -112,10 +111,14 @@ export default function ContactClient() {
               transition={{ duration: 1, ease: [0.22, 1, 0.36, 1], delay: 0.1 }}
               className="lg:col-span-7"
             >
-              <form ref={form} onSubmit={handleSubmit} className="space-y-10">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-10">
+              <form
+                ref={form}
+                onSubmit={handleSubmit}
+                className="border border-[color:var(--color-line-strong)] bg-[color:var(--color-canvas)] p-8 md:p-12 space-y-8"
+              >
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
-                    <label className="block eyebrow mb-3">Name</label>
+                    <label className="block eyebrow mb-3 text-[color:var(--color-ink)]">Name</label>
                     <input
                       type="text"
                       name="user_name"
@@ -125,11 +128,11 @@ export default function ContactClient() {
                       }
                       required
                       placeholder="Your name"
-                      className="w-full bg-transparent border-b border-[color:var(--color-line-strong)] focus:border-[color:var(--color-ink)] outline-none py-3 text-base text-[color:var(--color-ink)] placeholder:text-[color:var(--color-ink-muted)] transition-colors duration-300"
+                      className="w-full bg-transparent border border-[color:var(--color-line-strong)] focus:border-[color:var(--color-ink)] outline-none px-4 py-3 text-base text-[color:var(--color-ink)] placeholder:text-[color:var(--color-ink-muted)] transition-colors duration-300"
                     />
                   </div>
                   <div>
-                    <label className="block eyebrow mb-3">Email</label>
+                    <label className="block eyebrow mb-3 text-[color:var(--color-ink)]">Email</label>
                     <input
                       type="email"
                       name="user_email"
@@ -139,12 +142,12 @@ export default function ContactClient() {
                       }
                       required
                       placeholder="email@example.com"
-                      className="w-full bg-transparent border-b border-[color:var(--color-line-strong)] focus:border-[color:var(--color-ink)] outline-none py-3 text-base text-[color:var(--color-ink)] placeholder:text-[color:var(--color-ink-muted)] transition-colors duration-300"
+                      className="w-full bg-transparent border border-[color:var(--color-line-strong)] focus:border-[color:var(--color-ink)] outline-none px-4 py-3 text-base text-[color:var(--color-ink)] placeholder:text-[color:var(--color-ink-muted)] transition-colors duration-300"
                     />
                   </div>
                 </div>
                 <div>
-                  <label className="block eyebrow mb-3">Project Details</label>
+                  <label className="block eyebrow mb-3 text-[color:var(--color-ink)]">Campaign details</label>
                   <textarea
                     name="message"
                     rows={6}
@@ -153,8 +156,8 @@ export default function ContactClient() {
                       setFormData({ ...formData, message: e.target.value })
                     }
                     required
-                    placeholder="Tell us about your project, timeline, and goals…"
-                    className="w-full bg-transparent border-b border-[color:var(--color-line-strong)] focus:border-[color:var(--color-ink)] outline-none py-3 text-base text-[color:var(--color-ink)] placeholder:text-[color:var(--color-ink-muted)] transition-colors duration-300 resize-none"
+                    placeholder="Tell us about your campaign, timeline, and goals…"
+                    className="w-full bg-transparent border border-[color:var(--color-line-strong)] focus:border-[color:var(--color-ink)] outline-none px-4 py-3 text-base text-[color:var(--color-ink)] placeholder:text-[color:var(--color-ink-muted)] transition-colors duration-300 resize-none"
                   />
                 </div>
 

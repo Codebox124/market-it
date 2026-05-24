@@ -97,7 +97,7 @@ export default async function BlogPage({ params }: Props) {
                 <span className="numeral">[ {t.eyebrow} ]</span>
               </p>
               <p className="mt-6 text-sm leading-relaxed text-[color:var(--color-ink-muted)] max-w-[14rem]">
-                Notes from the studio · Writing · Field reports
+                Notes from the agency · Writing · Field reports
               </p>
             </div>
             <div className="md:col-span-9">

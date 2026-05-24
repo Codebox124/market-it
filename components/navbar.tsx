@@ -7,22 +7,16 @@ import { motion, AnimatePresence } from "framer-motion";
 import { usePathname } from "next/navigation";
 
 const navItems = [
-  { name: "Work", href: "/marketing" },
+  { name: "Home", href: "/" },
   { name: "Services", href: "#" },
-  { name: "Journal", href: "/en/blog" },
   { name: "Pay", href: "/booking" },
   { name: "Contact", href: "/contact" },
 ];
 
 const serviceItems = [
-  { name: "Graphic Design", href: "/visuals/graphic-design" },
-  { name: "Video Editing", href: "/visuals/video-editing" },
-  { name: "Photo Editing", href: "/visuals/photo-editing" },
-  { name: "Animation", href: "/visuals/animation" },
+  { name: "Marketing", href: "/marketing/advertising" },
+  { name: "Content Creation", href: "/visuals/graphic-design" },
   { name: "Websites & Apps", href: "/marketing/websites-apps" },
-  { name: "Advertising", href: "/marketing/advertising" },
-  { name: "Social Media", href: "/marketing/social-media" },
-  { name: "Flyer Distribution", href: "/marketing/flyer-distribution" },
 ];
 
 export default function Navbar() {
@@ -61,15 +55,17 @@ export default function Navbar() {
     >
       <div className="max-w-[1600px] mx-auto px-6 lg:px-10">
         <div className="flex justify-between items-center">
-          {/* Wordmark — bold all-caps, single weight */}
+          {/* Wordmark — logo image */}
           <Link
             href="/"
-            className="group select-none"
+            className="group select-none flex items-center"
             aria-label="Make It & Market — home"
           >
-            <span className="text-[0.72rem] tracking-[0.32em] uppercase font-semibold text-[color:var(--color-ink)]">
-              Make It &amp; Market
-            </span>
+            <img
+              src="/logo.png"
+              alt="Make It & Market"
+              className="h-8 md:h-10 w-auto object-contain"
+            />
           </Link>
 
           {/* Desktop nav */}

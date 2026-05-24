@@ -75,7 +75,7 @@ export default function PortfolioClient({
               <span className="numeral">[ Visuals ]</span>
             </p>
             <p className="mt-6 text-sm leading-relaxed text-[color:var(--color-ink-muted)] max-w-[14rem]">
-              Selected work · Studio archive
+              Selected work · Campaign archive
             </p>
           </div>
           <div className="md:col-span-9">
