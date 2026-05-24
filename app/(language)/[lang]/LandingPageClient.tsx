@@ -1,7 +1,7 @@
 "use client";
 
 import { Loader2 } from "lucide-react";
-import { motion } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef, useState } from "react";
 import Link from "next/link";
 import emailjs from "@emailjs/browser";
@@ -54,6 +54,18 @@ export default function LandingPageClient({ dict, lang }: LandingPageProps) {
     user_email: "",
     message: "",
   });
+
+  // Horizontal pin-scroll for the WORK section (desktop only).
+  // Section is tall (500vh); inside, a sticky 100vh viewport holds the
+  // header on top + horizontal cards track. As you scroll vertically,
+  // the track translates X from 0 → -194vw, panning all 6 cards into view.
+  // After the section ends, normal scroll resumes into the manifesto.
+  const workSectionRef = useRef<HTMLElement>(null);
+  const { scrollYProgress: workProgress } = useScroll({
+    target: workSectionRef,
+    offset: ["start start", "end end"],
+  });
+  const workTrackX = useTransform(workProgress, [0, 1], ["0vw", "-194vw"]);
 
   const sendEmail = (e: React.FormEvent) => {
     e.preventDefault();
@@ -163,16 +175,93 @@ export default function LandingPageClient({ dict, lang }: LandingPageProps) {
         </div>
       </section>
 
-      {/* ============================ WORK ============================ */}
-      <section className="relative">
-        <div className="max-w-[1600px] mx-auto px-6 lg:px-10 py-28 md:py-40">
-          {/* Section header */}
+      {/* ============================ WORK — DESKTOP PINNED HORIZONTAL ============================ */}
+      <section
+        ref={workSectionRef}
+        className="hidden lg:block relative h-[500vh]"
+      >
+        <div className="sticky top-0 h-screen flex flex-col overflow-hidden bg-[color:var(--color-canvas)]">
+          {/* Pinned header */}
+          <div className="max-w-[1600px] mx-auto w-full px-6 lg:px-10 pt-32 pb-10 flex-shrink-0">
+            <div className="grid grid-cols-12 gap-12 items-end">
+              <div className="col-span-3">
+                <p className="eyebrow">001 — Practice</p>
+              </div>
+              <h2 className="col-span-7 display-lg text-[color:var(--color-ink)]">
+                Six disciplines.<br />
+                One studio.
+              </h2>
+              <p className="col-span-2 numeral self-end text-right">
+                Scroll →
+              </p>
+            </div>
+          </div>
+
+          {/* Horizontal track */}
+          <div className="flex-1 flex items-center overflow-hidden">
+            <motion.div
+              style={{ x: workTrackX }}
+              className="flex gap-[4vw] pl-[4vw] pr-[8vw] will-change-transform"
+            >
+              {allServices.map((item, index) => (
+                <Link
+                  key={item.key}
+                  href={item.href}
+                  className="group flex-shrink-0 w-[45vw] block"
+                >
+                  <div className="relative overflow-hidden bg-[color:var(--color-surface)] aspect-[4/3]">
+                    {item.image && (
+                      <img
+                        src={item.image}
+                        alt={item.title}
+                        loading="lazy"
+                        className="absolute inset-0 w-full h-full object-cover grayscale-[0.15] transition-all duration-[1800ms] ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-[1.04] group-hover:grayscale-0"
+                      />
+                    )}
+                    {/* Legibility scrim — top + bottom, transparent middle */}
+                    <div className="absolute inset-0 bg-gradient-to-b from-[color:var(--color-canvas)]/55 via-transparent to-[color:var(--color-canvas)]/85 transition-opacity duration-700 group-hover:opacity-70" />
+
+                    {/* Top row: numeral + category */}
+                    <div className="absolute top-5 left-6 right-6 flex items-baseline justify-between">
+                      <span className="font-display text-2xl font-light text-[color:var(--color-ink)] tracking-tight">
+                        0{index + 1}
+                      </span>
+                      <span className="text-[0.7rem] tracking-[0.22em] uppercase text-[color:var(--color-ink-soft)]">
+                        {item.category_label}
+                      </span>
+                    </div>
+
+                    {/* Bottom row: title + arrow */}
+                    <div className="absolute bottom-6 left-6 right-6 flex items-end justify-between gap-4">
+                      <h3 className="font-display text-3xl xl:text-5xl font-medium leading-[1] tracking-[-0.03em] text-[color:var(--color-ink)]">
+                        {item.title}
+                      </h3>
+                      <span className="pb-1 text-2xl text-[color:var(--color-ink)] flex-shrink-0 transition-transform duration-500 group-hover:translate-x-1 group-hover:-translate-y-1">
+                        →
+                      </span>
+                    </div>
+                  </div>
+
+                  {/* Caption below image */}
+                  <p className="mt-5 text-sm leading-relaxed text-[color:var(--color-ink-soft)] line-clamp-2 max-w-md">
+                    {item.description}
+                  </p>
+                </Link>
+              ))}
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* ============================ WORK — MOBILE/TABLET GRID ============================ */}
+      <section className="lg:hidden relative">
+        <div className="max-w-[1600px] mx-auto px-6 lg:px-10 py-24 md:py-32">
           <motion.div
             initial={{ opacity: 0, y: 16 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
-            className="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-12 mb-24 md:mb-32"
+            className="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-12 mb-20 md:mb-28"
           >
             <div className="md:col-span-3">
               <p className="eyebrow">001 — Practice</p>
@@ -183,66 +272,51 @@ export default function LandingPageClient({ dict, lang }: LandingPageProps) {
             </h2>
           </motion.div>
 
-          {/* Numbered grid — alternating asymmetry */}
-          <div className="grid grid-cols-1 md:grid-cols-12 gap-x-8 gap-y-24 md:gap-y-32">
-            {allServices.map((item, index) => {
-              const layouts = [
-                { col: "md:col-span-7", offset: "" },
-                { col: "md:col-span-5", offset: "md:col-start-8 md:mt-32" },
-                { col: "md:col-span-6", offset: "md:mt-12" },
-                { col: "md:col-span-6", offset: "md:col-start-7" },
-                { col: "md:col-span-5", offset: "md:mt-16" },
-                { col: "md:col-span-7", offset: "md:col-start-6" },
-              ];
-              const layout = layouts[index % layouts.length];
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-20">
+            {allServices.map((item, index) => (
+              <motion.div
+                key={item.key}
+                initial={{ opacity: 0, y: 24 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-80px" }}
+                transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
+              >
+                <Link href={item.href} className="group block">
+                  <div className="relative overflow-hidden bg-[color:var(--color-surface)] aspect-[4/5]">
+                    {item.image && (
+                      <img
+                        src={item.image}
+                        alt={item.title}
+                        loading="lazy"
+                        className="absolute inset-0 w-full h-full object-cover grayscale-[0.15] transition-all duration-[1800ms] ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-[1.04] group-hover:grayscale-0"
+                      />
+                    )}
+                    <div className="absolute inset-0 bg-gradient-to-b from-[color:var(--color-canvas)]/55 via-transparent to-[color:var(--color-canvas)]/85 transition-opacity duration-700 group-hover:opacity-70" />
 
-              return (
-                <motion.div
-                  key={item.key}
-                  initial={{ opacity: 0, y: 24 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true, margin: "-80px" }}
-                  transition={{
-                    duration: 1,
-                    ease: [0.22, 1, 0.36, 1],
-                  }}
-                  className={`${layout.col} ${layout.offset}`}
-                >
-                  <Link href={item.href} className="group block">
-                    <div className="flex items-baseline justify-between mb-5 pb-4 border-b border-[color:var(--color-line)]">
-                      <span className="numeral-lg">
+                    {/* Top row: numeral + category */}
+                    <div className="absolute top-5 left-5 right-5 flex items-baseline justify-between">
+                      <span className="font-display text-2xl font-light text-[color:var(--color-ink)] tracking-tight">
                         0{index + 1}
                       </span>
-                      <span className="numeral hidden md:inline">{item.category_label}</span>
-                    </div>
-                    <div className="relative overflow-hidden bg-[color:var(--color-surface)] aspect-[4/5]">
-                      {item.image && (
-                        <img
-                          src={item.image}
-                          alt={item.title}
-                          loading="lazy"
-                          className="absolute inset-0 w-full h-full object-cover grayscale-[0.15] transition-all duration-[1800ms] ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-[1.04] group-hover:grayscale-0"
-                        />
-                      )}
-                      <div className="absolute inset-0 bg-gradient-to-t from-[color:var(--color-canvas)]/60 via-transparent to-transparent transition-opacity duration-700 opacity-70 group-hover:opacity-30" />
-                    </div>
-                    <div className="pt-6 flex items-start justify-between gap-6">
-                      <div className="flex-1">
-                        <h3 className="font-display text-3xl md:text-4xl font-medium leading-[1.05] tracking-[-0.025em] text-[color:var(--color-ink)]">
-                          {item.title}
-                        </h3>
-                        <p className="mt-3 text-sm leading-relaxed text-[color:var(--color-ink-soft)] line-clamp-3 max-w-md">
-                          {item.description}
-                        </p>
-                      </div>
-                      <span className="mt-2 text-2xl text-[color:var(--color-ink-muted)] flex-shrink-0 transition-all duration-500 group-hover:text-[color:var(--color-ink)] group-hover:translate-x-1 group-hover:-translate-y-1">
-                        →
+                      <span className="hidden md:inline text-[0.7rem] tracking-[0.22em] uppercase text-[color:var(--color-ink-soft)]">
+                        {item.category_label}
                       </span>
                     </div>
-                  </Link>
-                </motion.div>
-              );
-            })}
+
+                    {/* Bottom row: title */}
+                    <div className="absolute bottom-5 left-5 right-5">
+                      <h3 className="font-display text-3xl md:text-4xl font-medium leading-[1] tracking-[-0.03em] text-[color:var(--color-ink)]">
+                        {item.title}
+                      </h3>
+                    </div>
+                  </div>
+
+                  <p className="mt-5 text-sm leading-relaxed text-[color:var(--color-ink-soft)] line-clamp-3 max-w-md">
+                    {item.description}
+                  </p>
+                </Link>
+              </motion.div>
+            ))}
           </div>
         </div>
       </section>
