@@ -1,313 +1,151 @@
 import Link from "next/link";
-import {
-  Instagram,
-  Twitter,
-  Facebook,
-  Mail,
-  Phone,
-  MapPin,
-} from "lucide-react";
+
+const visualLinks = [
+  { name: "Graphic Design", href: "/visuals/graphic-design" },
+  { name: "Video Editing", href: "/visuals/video-editing" },
+  { name: "Photo Editing", href: "/visuals/photo-editing" },
+  { name: "Animation", href: "/visuals/animation" },
+];
+
+const marketingLinks = [
+  { name: "Advertising", href: "/marketing/advertising" },
+  { name: "Social Media", href: "/marketing/social-media" },
+  { name: "Flyer Distribution", href: "/marketing/flyer-distribution" },
+  { name: "Websites & Apps", href: "/marketing/websites-apps" },
+];
+
+const languages = [
+  { code: "en", label: "English" },
+  { code: "ar", label: "Arabic" },
+  { code: "bn", label: "Bengali" },
+  { code: "hk", label: "Cantonese" },
+  { code: "fr", label: "French" },
+  { code: "gu", label: "Gujarati" },
+  { code: "hi", label: "Hindi" },
+  { code: "id", label: "Indonesian" },
+  { code: "zh", label: "Mandarin" },
+  { code: "ja", label: "Japanese" },
+  { code: "ko", label: "Korean" },
+  { code: "pt", label: "Portuguese" },
+  { code: "es", label: "Spanish" },
+  { code: "tl", label: "Tagalog" },
+  { code: "ur", label: "Urdu" },
+  { code: "ru", label: "Russian" },
+];
+
+function FooterLink({ href, children }: { href: string; children: React.ReactNode }) {
+  return (
+    <Link
+      href={href}
+      className="text-[color:var(--color-ink-soft)] hover:text-[color:var(--color-ink)] transition-colors duration-300"
+    >
+      {children}
+    </Link>
+  );
+}
+
+function ColumnHeading({ children }: { children: React.ReactNode }) {
+  return <h3 className="eyebrow mb-6">{children}</h3>;
+}
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-50 text-gray-800 py-16 border-t border-gray-200">
-      <div className="container mx-auto px-6">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-          <div>
-            <Link href="/" className="text-gray-900 font-bold text-2xl">
-              <span className="text-green-600">
-                Make <span className="">It </span>
+    <footer className="bg-[color:var(--color-canvas)] text-[color:var(--color-ink)] border-t border-[color:var(--color-line)]">
+      <div className="max-w-[1600px] mx-auto px-6 lg:px-10 pt-24 pb-10">
+        {/* Closing statement */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 pb-20 border-b border-[color:var(--color-line)]">
+          <div className="lg:col-span-7">
+            <p className="eyebrow mb-8">Studio</p>
+            <Link href="/" className="inline-block">
+              <span className="display-md text-[color:var(--color-ink)]">
+                Make It &amp; Market.
               </span>
-              <span className="text-gray-800">&</span>
-              <span className="text-blue-600"> Market</span>
             </Link>
-
-            <p className="mt-4 text-gray-600 leading-relaxed">
-              We provide full-service visuals and marketing solutions to help
-              you achieve your goals.
+            <p className="mt-8 max-w-xl text-base leading-relaxed text-[color:var(--color-ink-soft)]">
+              A full-service creative studio building identity, marketing, and
+              motion for brands that intend to outlast the cycle.
             </p>
-            <div className="mt-6">
-              <h3 className="text-xl font-semibold mb-4 text-gray-900">
-                Contact Us
-              </h3>
-              <ul className="space-y-2">
-                <li className="flex items-center">
-                  <Mail
-                    size={18}
-                    className="mr-2 text-blue-500 flex-shrink-0"
-                  />
-                  <a
-                    href="mailto:makeitmarketit@gmail.com"
-                    className="text-gray-600 hover:text-gray-900 hover:text-blue-600 transition-colors duration-200"
-                  >
-                    info@makeitandmarket.com
-                  </a>
-                </li>
-                <li className="flex items-center">
-                  <Phone
-                    size={18}
-                    className="mr-2 text-green-500 flex-shrink-0"
-                  />
-                  <a
-                    href="tel:347 659 1708"
-                    className="text-gray-600 hover:text-gray-900 hover:text-green-600 transition-colors duration-200"
-                  >
-                    (347)<span> 659</span>
-                    <span> 1708</span>
-                  </a>
-                </li>
-                <li className="flex items-start">
-                  <MapPin
-                    size={18}
-                    className="mr-2 mt-1 text-blue-500 flex-shrink-0"
-                  />
-                  <span className="text-gray-600">Worldwide</span>
-                </li>
-              </ul>
-            </div>
+
+            <Link
+              href="/contact"
+              className="mt-10 inline-flex items-center px-7 py-4 text-xs tracking-[0.22em] uppercase font-medium text-[color:var(--color-accent-ink)] bg-[color:var(--color-ink)] hover:bg-[color:var(--color-accent-hover)] transition-colors duration-300"
+            >
+              Let&apos;s talk
+            </Link>
           </div>
 
-          <div className="">
-            <h3 className="text-xl font-semibold mb-4 text-gray-900">
-              Our Services
-            </h3>
-            <div className="grid grid-cols-1 md:grid-cols-2">
-              <div>
-                <Link
-                  href="/visuals"
-                  className="text-gray-600 hover:text-gray-900 hover:text-emerald-600 transition-colors duration-200 font-bold mb-0.5"
+          <div className="lg:col-span-5 lg:pl-8 lg:border-l lg:border-[color:var(--color-line)]">
+            <ColumnHeading>Get in touch</ColumnHeading>
+            <ul className="space-y-4 text-base">
+              <li>
+                <p className="eyebrow mb-1">Email</p>
+                <a
+                  href="mailto:info@makeitandmarket.com"
+                  className="text-[color:var(--color-ink)] hover:text-[color:var(--color-ink-soft)] transition-colors"
                 >
-                  Visual:
-                </Link>
-                <ul className="space-y-0 grid grid-cols-1 gap-2 py-2">
-                  <li>
-                    <Link
-                      href="/visuals/graphic-design"
-                      className="text-gray-600 hover:text-gray-900 hover:text-emerald-600 transition-colors duration-200"
-                    >
-                      Graphic Design
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/visuals/video-editing"
-                      className="text-gray-600 hover:text-gray-900 hover:text-emerald-600 transition-colors duration-200"
-                    >
-                      Video Editing
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/visuals/photo-editing"
-                      className="text-gray-600 hover:text-gray-900 hover:text-emerald-600 transition-colors duration-200"
-                    >
-                      Photo Editing
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/visuals/animation"
-                      className="text-gray-600 hover:text-gray-900 hover:text-emerald-600 transition-colors duration-200"
-                    >
-                      Animation
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-              <div className="mt-5 md:mt-0">
-                <Link
-                  href="/marketing"
-                  className="text-gray-600 hover:text-gray-900 hover:text-emerald-600 transition-colors duration-200 font-bold mb-0.5 pt-2"
+                  info@makeitandmarket.com
+                </a>
+              </li>
+              <li>
+                <p className="eyebrow mb-1">Phone</p>
+                <a
+                  href="tel:3476591708"
+                  className="text-[color:var(--color-ink)] hover:text-[color:var(--color-ink-soft)] transition-colors"
                 >
-                  Marketing:
-                </Link>
-                <ul className="space-y-0 grid grid-cols-1 gap-2 py-2">
-                  <li>
-                    <Link
-                      href="/marketing/advertising"
-                      className="text-gray-600 hover:text-gray-900 hover:text-emerald-600 transition-colors duration-200"
-                    >
-                      Advertising
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/marketing/social-media"
-                      className="text-gray-600 hover:text-gray-900 hover:text-emerald-600 transition-colors duration-200"
-                    >
-                      Social Media
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/marketing/flyer-distribution"
-                      className="text-gray-600 hover:text-gray-900 hover:text-emerald-600 transition-colors duration-200"
-                    >
-                      Flyer Distribution
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/marketing/websites-apps"
-                      className="text-gray-600 hover:text-gray-900 hover:text-emerald-600 transition-colors duration-200"
-                    >
-                      Websites/Apps
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div id="contact">
-            <h3 className="text-xl font-semibold mb-4 text-gray-900">
-              Language
-            </h3>
-            <div className="grid grid-cols-1 md:grid-cols-2">
-              <div>
-                <ul className="space-y-0 grid grid-cols-1 gap-2 py-2">
-                  <li>
-                    <Link
-                      href="/en"
-                      className="text-gray-600 hover:text-gray-900 hover:text-emerald-600 transition-colors duration-200"
-                    >
-                      English
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/ar"
-                      className="text-gray-600 hover:text-gray-900 hover:text-emerald-600 transition-colors duration-200"
-                    >
-                      Arabic
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/bn"
-                      className="text-gray-600 hover:text-gray-900 hover:text-emerald-600 transition-colors duration-200"
-                    >
-                      Bengali
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="hk"
-                      className="text-gray-600 hover:text-gray-900 hover:text-emerald-600 transition-colors duration-200"
-                    >
-                      Cantonese
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/fr"
-                      className="text-gray-600 hover:text-gray-900 hover:text-emerald-600 transition-colors duration-200"
-                    >
-                      French
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/gu"
-                      className="text-gray-600 hover:text-gray-900 hover:text-emerald-600 transition-colors duration-200"
-                    >
-                      Gujarati
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/hi"
-                      className="text-gray-600 hover:text-gray-900 hover:text-emerald-600 transition-colors duration-200"
-                    >
-                      Hindi
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/id"
-                      className="text-gray-600 hover:text-gray-900 hover:text-emerald-600 transition-colors duration-200"
-                    >
-                      Indonesian
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-              <div>
-                <ul className="space-y-0 grid grid-cols-1 gap-2 py-2">
-                  <li>
-                    <Link
-                      href="/zh"
-                      className="text-gray-600 hover:text-gray-900 hover:text-emerald-600 transition-colors duration-200"
-                    >
-                      Mandarin
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/ja"
-                      className="text-gray-600 hover:text-gray-900 hover:text-emerald-600 transition-colors duration-200"
-                    >
-                      Japanese
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/ko"
-                      className="text-gray-600 hover:text-gray-900 hover:text-emerald-600 transition-colors duration-200"
-                    >
-                      Korean
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/pt"
-                      className="text-gray-600 hover:text-gray-900 hover:text-emerald-600 transition-colors duration-200"
-                    >
-                      Portuguese
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/es"
-                      className="text-gray-600 hover:text-gray-900 hover:text-emerald-600 transition-colors duration-200"
-                    >
-                      Spanish
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/tl"
-                      className="text-gray-600 hover:text-gray-900 hover:text-emerald-600 transition-colors duration-200"
-                    >
-                      Tagalog
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/ur"
-                      className="text-gray-600 hover:text-gray-900 hover:text-emerald-600 transition-colors duration-200"
-                    >
-                      Urdu
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/ru"
-                      className="text-gray-600 hover:text-gray-900 hover:text-emerald-600 transition-colors duration-200"
-                    >
-                      Russian
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-            </div>
+                  (347) 659 1708
+                </a>
+              </li>
+              <li>
+                <p className="eyebrow mb-1">Studio</p>
+                <span className="text-[color:var(--color-ink-soft)]">NYC · Worldwide</span>
+              </li>
+            </ul>
           </div>
         </div>
 
-        <div className="border-t border-gray-200 mt-12 pt-8 text-center text-gray-500">
-          <p>
-            &copy; {new Date().getFullYear()} Make It & Market. All rights
-            reserved.
+        {/* Link columns */}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-10 lg:gap-16 py-16">
+          <div>
+            <ColumnHeading>Visuals</ColumnHeading>
+            <ul className="space-y-3 text-sm">
+              {visualLinks.map((l) => (
+                <li key={l.href}>
+                  <FooterLink href={l.href}>{l.name}</FooterLink>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div>
+            <ColumnHeading>Marketing</ColumnHeading>
+            <ul className="space-y-3 text-sm">
+              {marketingLinks.map((l) => (
+                <li key={l.href}>
+                  <FooterLink href={l.href}>{l.name}</FooterLink>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div className="col-span-2">
+            <ColumnHeading>Languages</ColumnHeading>
+            <ul className="grid grid-cols-2 md:grid-cols-3 gap-x-6 gap-y-3 text-sm">
+              {languages.map((lang) => (
+                <li key={lang.code}>
+                  <FooterLink href={`/${lang.code}`}>{lang.label}</FooterLink>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+
+        {/* Bottom */}
+        <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 pt-8 border-t border-[color:var(--color-line)]">
+          <p className="text-xs tracking-[0.28em] uppercase text-[color:var(--color-ink-muted)]">
+            &copy; {new Date().getFullYear()} Make It &amp; Market
+          </p>
+          <p className="text-xs tracking-[0.28em] uppercase text-[color:var(--color-ink-muted)]">
+            All rights reserved
           </p>
         </div>
       </div>

@@ -1,27 +1,21 @@
 "use client";
 
 import Link from "next/link";
-import { ArrowLeft } from "lucide-react";
 import { motion } from "framer-motion";
 
 export default function BackButton({ href = "/" }) {
   return (
     <motion.div
-      initial={{ opacity: 0, x: -20 }}
-      animate={{ opacity: 1, x: 0 }}
-      transition={{ duration: 0.5 }}
+      initial={{ opacity: 0, y: -4 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
     >
       <Link
         href={href}
-        className="fixed top-24 left-6 z-50 bg-gray-800/80 backdrop-blur-sm shadow-lg rounded-full p-3 group flex items-center justify-center hover:bg-gray-700 transition-all duration-300"
+        className="fixed top-24 left-6 lg:left-10 z-40 group inline-flex items-center gap-2 px-4 py-2.5 border border-[color:var(--color-line-strong)] text-[color:var(--color-ink-soft)] hover:text-[color:var(--color-accent)] hover:border-[color:var(--color-accent)] transition-colors duration-300 backdrop-blur-md bg-[color:var(--color-canvas)]/40"
       >
-        <ArrowLeft
-          className="text-white group-hover:-translate-x-0.5 transition-transform"
-          size={20}
-        />
-        <span className="max-w-0 overflow-hidden group-hover:max-w-xs group-hover:ml-2 transition-all duration-300 text-white whitespace-nowrap">
-          Back to Home
-        </span>
+        <span className="transition-transform duration-300 group-hover:-translate-x-1">←</span>
+        <span className="text-xs tracking-[0.22em] uppercase">Back</span>
       </Link>
     </motion.div>
   );

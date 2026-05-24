@@ -1,10 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { useParams } from "next/navigation";
-import { portfolioVisualProjects, serviceDescriptions } from "@/data/data";
-
-
+import { X, Play, Search } from "lucide-react";
 
 interface Project {
   title?: string;
@@ -12,6 +9,7 @@ interface Project {
   image?: string;
   video?: string;
 }
+
 interface PortfolioClientProps {
   service: string;
   formattedService: string;
@@ -33,11 +31,10 @@ export default function PortfolioClient({
     const timer = setTimeout(() => {
       projects.forEach((_, index) => {
         setTimeout(() => {
-          setVisibleProjects(prev => [...prev, index]);
-        }, index * 100);
+          setVisibleProjects((prev) => [...prev, index]);
+        }, index * 90);
       });
-    }, 500);
-
+    }, 400);
     return () => clearTimeout(timer);
   }, [projects]);
 
@@ -69,286 +66,226 @@ export default function PortfolioClient({
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-blue-50/30 text-gray-900 relative overflow-hidden mt-10">
-      <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-blue-50/30 text-gray-900 relative overflow-hidden">
-            {/* Animated background elements */}
-            <div className="absolute inset-0 opacity-60">
-                <div className="absolute top-20 left-20 w-72 h-72 bg-blue-200/30 rounded-full blur-3xl animate-pulse"></div>
-                <div className="absolute bottom-20 right-20 w-96 h-96 bg-purple-200/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
-                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-cyan-200/20 rounded-full blur-3xl animate-pulse delay-500"></div>
-            </div>
-
-            {/* Decorative floating elements */}
-            <div className="absolute top-32 right-32 w-24 h-24 bg-gradient-to-br from-blue-300/20 to-purple-300/20 rounded-full blur-xl"></div>
-            <div className="absolute bottom-32 left-32 w-32 h-32 bg-gradient-to-br from-pink-300/20 to-orange-300/20 rounded-full blur-xl"></div>
-
-            <div className="relative z-10 px-6 py-24">
-                <div className="flex flex-col items-center max-w-7xl mx-auto justify-center">
-                    {/* Enhanced Header */}
-                    <div className="text-center mb-16">
-                        <h1 className="text-5xl md:text-7xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-purple-600 to-cyan-600 uppercase tracking-wider relative mb-6">
-                            {formattedService}
-                            <div className="absolute -inset-2 bg-gradient-to-r from-blue-100/30 to-purple-100/30 blur-2xl -z-10 rounded-2xl"></div>
-                        </h1>
-                        <div className="max-w-4xl mx-auto">
-                            <h2 className="text-gray-600 text-lg md:text-xl leading-relaxed font-light tracking-wide">
-                                {descriptionservice}
-                            </h2>
-                            <div className="mt-6 w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto rounded-full"></div>
-                        </div>
-                    </div>
-
-                    {projects && projects.length > 0 ? (
-                        service === "animation" ? (
-                            /* Animation projects with special layout */
-                            <div className="w-full space-y-12">
-                                {/* Featured large video */}
-                                {projects.some((p) => p.video) && (
-                                    <div className="w-full max-w-4xl mx-auto mb-16">
-                                        <div
-                                            className="relative group cursor-pointer"
-                                            onClick={() => openModal(projects.find((p) => p.video)!)}
-                                            style={{
-                                                opacity: visibleProjects.includes(0) ? 1 : 0,
-                                                transform: visibleProjects.includes(0) ? 'translateY(0px)' : 'translateY(50px)',
-                                                transition: 'all 0.8s ease-out'
-                                            }}
-                                        >
-                                            <div className="absolute -inset-1 bg-gradient-to-r from-blue-200/30 via-purple-200/30 to-cyan-200/30 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition duration-700"></div>
-                                            <div className="relative overflow-hidden rounded-3xl bg-white/80 backdrop-blur-sm border border-gray-200/80 shadow-lg shadow-gray-300/30 hover:shadow-2xl hover:shadow-gray-400/30 transition-all duration-700">
-                                                <div className="p-6">
-                                                    <div className="relative">
-                                                        <iframe
-                                                            className="rounded-2xl w-full h-[400px] shadow-xl pointer-events-none"
-                                                            src={getVideoUrl(projects.find((p) => p.video)?.video)}
-                                                            title="Featured Animation"
-                                                            frameBorder="0"
-                                                            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                                            allowFullScreen
-                                                        ></iframe>
-                                                        <div className="absolute inset-0 bg-white/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl flex items-center justify-center">
-                                                            <div className="w-20 h-20 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center shadow-lg">
-                                                                <svg className="w-8 h-8 text-blue-600 ml-1" fill="currentColor" viewBox="0 0 24 24">
-                                                                    <path d="M8 5v14l11-7z" />
-                                                                </svg>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                )}
-
-                                {/* Grid of remaining projects */}
-                                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-                                    {projects.slice(1).map((project, index) => (
-                                        <div
-                                            key={index}
-                                            className="group relative cursor-pointer"
-                                            onClick={() => openModal(project)}
-                                            style={{
-                                                opacity: visibleProjects.includes(index + 1) ? 1 : 0,
-                                                transform: visibleProjects.includes(index + 1) ? 'translateY(0px)' : 'translateY(30px)',
-                                                transition: `all 0.8s ease-out ${(index + 1) * 0.1}s`
-                                            }}
-                                        >
-                                            <div className="absolute -inset-0.5 bg-gradient-to-r from-blue-200/20 via-purple-200/20 to-cyan-200/20 rounded-2xl blur opacity-0 group-hover:opacity-100 transition duration-500"></div>
-                                            <div className="relative overflow-hidden rounded-2xl bg-white/90 backdrop-blur-sm border border-gray-200/60 hover:border-blue-300/60 transition-all duration-500 hover:transform hover:scale-[1.02] shadow-lg shadow-gray-200/50 hover:shadow-xl hover:shadow-gray-300/50">
-                                                <div className="relative p-4">
-                                                    {project.video ? (
-                                                        <div className="relative">
-                                                            <iframe
-                                                                className="rounded-xl w-full h-48 shadow-lg pointer-events-none"
-                                                                src={getVideoUrl(project.video)}
-                                                                title={project.title}
-                                                                frameBorder="0"
-                                                                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                                                allowFullScreen
-                                                            ></iframe>
-                                                            <div className="absolute inset-0 bg-white/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl flex items-center justify-center">
-                                                                <div className="w-14 h-14 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center shadow-lg">
-                                                                    <svg className="w-6 h-6 text-blue-600 ml-0.5" fill="currentColor" viewBox="0 0 24 24">
-                                                                        <path d="M8 5v14l11-7z" />
-                                                                    </svg>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    ) : (
-                                                        <div className="relative">
-                                                            <img
-                                                                src={project.image}
-                                                                alt={project.title}
-                                                                loading="lazy"
-                                                                className="rounded-xl w-full h-48 object-contain shadow-lg group-hover:scale-105 transition-transform duration-500"
-                                                            />
-                                                            <div className="absolute inset-0 bg-white/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl flex items-center justify-center">
-                                                                <div className="w-14 h-14 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center shadow-lg">
-                                                                    <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
-                                                                    </svg>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    )}
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                    ))}
-                                </div>
-                            </div>
-                        ) : (
-                            /* Regular projects grid */
-                            <div className="w-full">
-                                <div className={`${projects.length === 1 ? "flex justify-center" : "grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6"}`}>
-                                    {projects.map((project, index) => (
-                                        <div
-                                            key={index}
-                                            className={`group relative cursor-pointer ${projects.length === 1 ? "max-w-md" : ""}`}
-                                            onClick={() => openModal(project)}
-                                            style={{
-                                                opacity: visibleProjects.includes(index) ? 1 : 0,
-                                                transform: visibleProjects.includes(index) ? 'translateY(0px) scale(1)' : 'translateY(30px) scale(0.95)',
-                                                transition: `all 0.6s ease-out ${index * 0.1}s`
-                                            }}
-                                        >
-                                            <div className="absolute -inset-0.5 bg-gradient-to-r from-blue-200/20 via-purple-200/20 to-cyan-200/20 rounded-2xl blur opacity-0 group-hover:opacity-100 transition duration-500"></div>
-                                            <div className="relative overflow-hidden rounded-2xl bg-white/90 backdrop-blur-sm border border-gray-200/60 hover:border-blue-300/60 transition-all duration-500 hover:transform hover:scale-105 shadow-lg shadow-gray-200/50 hover:shadow-xl hover:shadow-gray-300/50">
-                                                <div className="relative">
-                                                    {project.video ? (
-                                                        <div className="relative">
-                                                            <iframe
-                                                                className="rounded-xl w-full h-36 shadow-lg pointer-events-none"
-                                                                src={getVideoUrl(project.video)}
-                                                                title={project.title}
-                                                                frameBorder="0"
-                                                                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                                                allowFullScreen
-                                                            ></iframe>
-                                                            <div className="absolute inset-0 bg-white/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl flex items-center justify-center">
-                                                                <div className="w-12 h-12 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center shadow-lg">
-                                                                    <svg className="w-5 h-5 text-blue-600 ml-0.5" fill="currentColor" viewBox="0 0 24 24">
-                                                                        <path d="M8 5v14l11-7z" />
-                                                                    </svg>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    ) : (
-                                                        <div className="aspect-[16/9] w-full overflow-hidden rounded-xl flex items-center justify-center">
-                                                            <img
-                                                                src={project.image}
-                                                                alt={project.title}
-                                                                loading="lazy"
-                                                                className="w-full h-full object-contain shadow-lg group-hover:scale-105 transition-transform duration-500"
-                                                            />
-                                                            <div className="absolute inset-0 bg-white/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl flex items-center justify-center">
-                                                                <div className="w-12 h-12 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center shadow-lg">
-                                                                    <svg className="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
-                                                                    </svg>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    )}
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                    ))}
-                                </div>
-                            </div>
-                        )
-                    ) : (
-                        /* Enhanced Empty State */
-                        <div className="text-center py-24">
-                            <div className="relative">
-                                <div className="absolute inset-0 flex items-center justify-center">
-                                    <div className="w-32 h-32 bg-gradient-to-r from-blue-200/30 to-purple-200/30 rounded-full blur-3xl"></div>
-                                </div>
-                                <div className="relative z-10">
-                                    <div className="w-24 h-24 mx-auto mb-6 rounded-full bg-gradient-to-r from-gray-100 to-gray-200 flex items-center justify-center shadow-lg">
-                                        <svg className="w-12 h-12 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path>
-                                        </svg>
-                                    </div>
-                                    <h2 className="text-2xl text-gray-700 font-semibold mb-2">No Projects Yet</h2>
-                                    <p className="text-lg text-gray-500 mb-1">
-                                        No projects found for <span className="text-gray-700 font-medium">{formattedService}</span>
-                                    </p>
-                                    <p className="text-gray-400">Check back soon for new additions</p>
-                                </div>
-                            </div>
-                        </div>
-                    )}
-                </div>
-            </div>
-
-            {/* Modal for Full View */}
-            {isModalOpen && selectedProject && (
-                <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm p-4" onClick={closeModal}>
-                    <div className="relative max-w-6xl w-full max-h-[90vh] overflow-auto">
-                        <button
-                            onClick={closeModal}
-                            className="absolute top-4 right-4 z-60 w-12 h-12 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center text-gray-700 hover:bg-white hover:text-gray-900 transition-colors shadow-lg"
-                        >
-                            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path>
-                            </svg>
-                        </button>
-
-                        <div className="relative overflow-hidden rounded-3xl bg-white/95 backdrop-blur-sm border border-gray-200/80 shadow-2xl" onClick={(e) => e.stopPropagation()}>
-                            <div className="p-6">
-                                {selectedProject.video ? (
-                                    <iframe
-                                        className="rounded-2xl w-full h-[70vh] shadow-2xl"
-                                        src={getVideoUrl(selectedProject.video)}
-                                        title={selectedProject.title}
-                                        frameBorder="0"
-                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                        allowFullScreen
-                                    ></iframe>
-                                ) : (
-                                    <img
-                                        src={selectedProject.image}
-                                        alt={selectedProject.title}
-                                        loading="lazy"
-                                        className="rounded-2xl w-full max-h-[70vh] object-contain shadow-2xl mx-auto"
-                                    />
-                                )}
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            )}
-
-            <style jsx global>{`
-                .line-clamp-1 {
-                    display: -webkit-box;
-                    -webkit-line-clamp: 1;
-                    -webkit-box-orient: vertical;
-                    overflow: hidden;
-                }
-                
-                .line-clamp-2 {
-                    display: -webkit-box;
-                    -webkit-line-clamp: 2;
-                    -webkit-box-orient: vertical;
-                    overflow: hidden;
-                }
-
-                /* Hide scrollbar but allow scrolling */
-                .overflow-auto::-webkit-scrollbar {
-                    display: none;
-                }
-                .overflow-auto {
-                    -ms-overflow-style: none;
-                    scrollbar-width: none;
-                }
-            `}</style>
+    <div className="bg-[color:var(--color-canvas)] text-[color:var(--color-ink)] min-h-screen relative">
+      <div className="noir-grain relative max-w-[1600px] mx-auto px-6 lg:px-10 pt-36 md:pt-44 pb-28 md:pb-40">
+        {/* Editorial header */}
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-12 mb-24 md:mb-32">
+          <div className="md:col-span-3">
+            <p className="eyebrow">
+              <span className="numeral">[ Visuals ]</span>
+            </p>
+            <p className="mt-6 text-sm leading-relaxed text-[color:var(--color-ink-muted)] max-w-[14rem]">
+              Selected work · Studio archive
+            </p>
+          </div>
+          <div className="md:col-span-9">
+            <h1 className="display-xl text-[color:var(--color-ink)]">
+              {formattedService}<span className="text-[color:var(--color-accent)]">.</span>
+            </h1>
+            <p className="mt-10 max-w-2xl text-lg md:text-xl leading-relaxed text-[color:var(--color-ink-soft)] font-light">
+              {descriptionservice}
+            </p>
+          </div>
         </div>
+
+        {/* Project body */}
+        {projects && projects.length > 0 ? (
+          service === "animation" ? (
+            <div className="space-y-16">
+              {projects.some((p) => p.video) && (
+                <div
+                  className="relative group cursor-pointer"
+                  onClick={() => openModal(projects.find((p) => p.video)!)}
+                  style={{
+                    opacity: visibleProjects.includes(0) ? 1 : 0,
+                    transform: visibleProjects.includes(0)
+                      ? "translateY(0)"
+                      : "translateY(24px)",
+                    transition:
+                      "opacity 1s cubic-bezier(0.22,1,0.36,1), transform 1s cubic-bezier(0.22,1,0.36,1)",
+                  }}
+                >
+                  <div className="relative aspect-video w-full overflow-hidden bg-[color:var(--color-noir-surface)]">
+                    <iframe
+                      className="w-full h-full pointer-events-none"
+                      src={getVideoUrl(projects.find((p) => p.video)?.video)}
+                      title="Featured"
+                      frameBorder="0"
+                      allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                    />
+                    <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-[color:var(--color-noir)]/40">
+                      <div className="w-16 h-16 rounded-full bg-[color:var(--color-noir-ink)] flex items-center justify-center">
+                        <Play
+                          size={18}
+                          strokeWidth={1.5}
+                          className="text-[color:var(--color-noir)] ml-0.5"
+                          fill="currentColor"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              )}
+
+              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-8">
+                {projects.slice(1).map((project, index) => (
+                  <ProjectTile
+                    key={index}
+                    project={project}
+                    visible={visibleProjects.includes(index + 1)}
+                    index={index + 1}
+                    onClick={() => openModal(project)}
+                    getVideoUrl={getVideoUrl}
+                  />
+                ))}
+              </div>
+            </div>
+          ) : (
+            <div
+              className={
+                projects.length === 1
+                  ? "flex justify-center"
+                  : "grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-8"
+              }
+            >
+              {projects.map((project, index) => (
+                <ProjectTile
+                  key={index}
+                  project={project}
+                  visible={visibleProjects.includes(index)}
+                  index={index}
+                  onClick={() => openModal(project)}
+                  getVideoUrl={getVideoUrl}
+                  fullWidth={projects.length === 1}
+                />
+              ))}
+            </div>
+          )
+        ) : (
+          <div className="border-t border-[color:var(--color-noir-line)] pt-20 text-center">
+            <div className="mx-auto w-12 h-12 mb-6 flex items-center justify-center border border-[color:var(--color-noir-line-strong)]">
+              <Search size={20} strokeWidth={1.25} className="text-[color:var(--color-noir-ink-muted)]" />
+            </div>
+            <h2 className="font-display text-2xl md:text-3xl text-[color:var(--color-noir-ink)] mb-2">
+              No projects yet
+            </h2>
+            <p className="text-[color:var(--color-noir-ink-muted)] text-sm tracking-wide">
+              New work for{" "}
+              <span className="text-[color:var(--color-noir-ink-soft)]">
+                {formattedService}
+              </span>{" "}
+              is in production.
+            </p>
+          </div>
+        )}
+      </div>
+
+      {/* Modal */}
+      {isModalOpen && selectedProject && (
+        <div
+          className="fixed inset-0 z-[60] flex items-center justify-center bg-[color:var(--color-noir)]/90 backdrop-blur-sm p-4 md:p-8"
+          onClick={closeModal}
+        >
+          <button
+            onClick={closeModal}
+            className="absolute top-6 right-6 z-[70] w-10 h-10 flex items-center justify-center text-[color:var(--color-noir-ink)] hover:bg-[color:var(--color-noir-ink)]/10 transition-colors duration-200"
+            aria-label="Close"
+          >
+            <X size={20} strokeWidth={1.5} />
+          </button>
+          <div
+            className="relative max-w-6xl w-full max-h-[90vh] overflow-auto bg-[color:var(--color-noir)]"
+            onClick={(e) => e.stopPropagation()}
+          >
+            {selectedProject.video ? (
+              <iframe
+                className="w-full aspect-video"
+                src={getVideoUrl(selectedProject.video)}
+                title={selectedProject.title}
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+            ) : (
+              <img
+                src={selectedProject.image}
+                alt={selectedProject.title}
+                loading="lazy"
+                className="w-full max-h-[90vh] object-contain mx-auto"
+              />
+            )}
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}
+
+// --- TILE ---
+function ProjectTile({
+  project,
+  visible,
+  index,
+  onClick,
+  getVideoUrl,
+  fullWidth = false,
+}: {
+  project: Project;
+  visible: boolean;
+  index: number;
+  onClick: () => void;
+  getVideoUrl: (url: string | undefined) => string | undefined;
+  fullWidth?: boolean;
+}) {
+  return (
+    <div
+      onClick={onClick}
+      className={`group relative cursor-pointer ${fullWidth ? "max-w-2xl w-full" : ""}`}
+      style={{
+        opacity: visible ? 1 : 0,
+        transform: visible ? "translateY(0)" : "translateY(20px)",
+        transition: `opacity 0.8s cubic-bezier(0.22,1,0.36,1) ${index * 0.05}s, transform 0.8s cubic-bezier(0.22,1,0.36,1) ${index * 0.05}s`,
+      }}
+    >
+      <div className="relative aspect-[4/5] overflow-hidden bg-[color:var(--color-noir-surface)]">
+        {project.video ? (
+          <>
+            <iframe
+              className="w-full h-full pointer-events-none object-cover"
+              src={getVideoUrl(project.video)}
+              title={project.title}
+              frameBorder="0"
+              allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            />
+            <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-[color:var(--color-noir)]/50">
+              <div className="w-12 h-12 rounded-full bg-[color:var(--color-noir-ink)] flex items-center justify-center">
+                <Play
+                  size={14}
+                  strokeWidth={1.5}
+                  className="text-[color:var(--color-noir)] ml-0.5"
+                  fill="currentColor"
+                />
+              </div>
+            </div>
+          </>
+        ) : (
+          <>
+            <img
+              src={project.image}
+              alt={project.title}
+              loading="lazy"
+              className="w-full h-full object-cover transition-transform duration-[1400ms] ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-[1.04]"
+            />
+            <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-[color:var(--color-noir)]/40">
+              <div className="w-12 h-12 rounded-full bg-[color:var(--color-noir-ink)] flex items-center justify-center">
+                <Search size={14} strokeWidth={1.5} className="text-[color:var(--color-noir)]" />
+              </div>
+            </div>
+          </>
+        )}
+      </div>
     </div>
   );
 }

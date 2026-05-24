@@ -1,11 +1,25 @@
 import type { Metadata } from "next";
 import { getDictionary } from "@/utils/get-dictionary";
 import "@/app/globals.css";
-import { Space_Grotesk } from "next/font/google";
+import { Space_Grotesk, Geist, Fraunces } from "next/font/google";
+import Navbar from "@/components/navbar";
+import Footer from "@/components/footer";
 
 const spaceGrotesk = Space_Grotesk({
   weight: ["300", "400", "500", "600", "700"],
   variable: "--font-space-grotesk",
+  subsets: ["latin"],
+});
+
+const geistSans = Geist({
+  variable: "--font-geist-sans",
+  subsets: ["latin"],
+});
+
+const fraunces = Fraunces({
+  weight: ["300", "400", "500", "600", "700"],
+  style: ["normal", "italic"],
+  variable: "--font-fraunces",
   subsets: ["latin"],
 });
 
@@ -99,7 +113,13 @@ export default async function LanguageLayout({ children, params }: Props) {
   return (
     // Gunakan variabel 'lang', bukan 'params.lang'
     <html lang={lang}>
-      <body className={spaceGrotesk.variable}>{children}</body>
+      <body
+        className={`${spaceGrotesk.variable} ${geistSans.variable} ${fraunces.variable} antialiased bg-[color:var(--color-canvas)] text-[color:var(--color-ink)]`}
+      >
+        <Navbar />
+        <main className="flex-grow w-full">{children}</main>
+        <Footer />
+      </body>
     </html>
   );
 }

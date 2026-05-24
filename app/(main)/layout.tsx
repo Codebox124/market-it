@@ -4,6 +4,7 @@ import {
   Azeret_Mono as Geist_Mono,
   IBM_Plex_Mono,
   Space_Grotesk,
+  Fraunces,
 } from "next/font/google";
 import Script from "next/script";
 import "../globals.css";
@@ -29,6 +30,13 @@ const ibmPlexMono = IBM_Plex_Mono({
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
+
+const fraunces = Fraunces({
+  weight: ["300", "400", "500", "600", "700"],
+  style: ["normal", "italic"],
+  variable: "--font-fraunces",
   subsets: ["latin"],
 });
 
@@ -123,7 +131,7 @@ export default function RootLayout({
       </head>
 
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${ibmPlexMono.variable} ${spaceGrotesk.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${ibmPlexMono.variable} ${spaceGrotesk.variable} ${fraunces.variable} antialiased bg-[color:var(--color-canvas)] text-[color:var(--color-ink)]`}
       >
         {/* Google Tag Manager (noscript) */}
         <noscript>

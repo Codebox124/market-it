@@ -1,143 +1,149 @@
 "use client";
 
 import BackButton from "@/components/Button";
-import { Eye, ArrowRight } from "lucide-react";
-import Image from "next/image";
 import { motion } from "framer-motion";
 import Link from "next/link";
 
 const visualsPortfolio = [
   {
     title: "Graphic Design",
+    slug: "graphic-design",
     image: "/graphic-design.png",
-    descriptionservice: "Visual production covering an assortment of media, whether personal or business.",
+    description:
+      "Visual production covering an assortment of media, whether personal or business.",
+    discipline: "Identity · Print · Layout",
   },
   {
     title: "Video Editing",
+    slug: "video-editing",
     image: "/video-editing.png",
-    descriptionservice: "Post-production, including motion graphics, animation, VFX, sound, and color correction.",
+    description:
+      "Post-production including motion graphics, animation, VFX, sound, and color correction.",
+    discipline: "Motion · Color · Edit",
   },
   {
     title: "Photo Editing",
+    slug: "photo-editing",
     image: "/photo-editing.png",
-    descriptionservice: "High-end image manipulation, creative effects, and quality improvement.",
+    description:
+      "High-end image manipulation, creative effects, and quality improvement.",
+    discipline: "Retouch · Composite · Tone",
   },
   {
     title: "Animation",
+    slug: "animation",
     image: "/1.png",
-    descriptionservice: "Illustrating custom art, characters, environments, and motion for your project.",
+    description:
+      "Illustrating custom art, characters, environments, and motion for your project.",
+    discipline: "Art · Character · Motion",
   },
 ];
 
-const container = {
-  hidden: { opacity: 0 },
-  show: {
-    opacity: 1,
-    transition: { staggerChildren: 0.15 },
-  },
-};
-
 export default function VisualsClient() {
   return (
-    <div className="min-h-screen bg-[#090e19] text-white pt-24 overflow-hidden">
-      <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
-        <div className="absolute -top-40 -left-40 w-96 h-96 bg-purple-900/20 rounded-full blur-3xl"></div>
-        <div className="absolute top-1/3 -right-40 w-80 h-80 bg-amber-700/20 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-20 left-1/4 w-64 h-64 bg-indigo-900/20 rounded-full blur-3xl"></div>
-      </div>
-
+    <div className="bg-[color:var(--color-canvas)] text-[color:var(--color-ink)] min-h-screen">
       <BackButton />
 
-      <div className="max-w-7xl mx-auto px-6 py-16 relative z-10">
-        <motion.header
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7 }}
-          className="text-center mb-20"
-        >
-          <div className="flex justify-center mb-4">
-            <div className="w-24 h-px bg-gradient-to-r from-transparent via-amber-500 to-transparent"></div>
-          </div>
-          <h1 className="md:text-6xl text-4xl font-thin tracking-wider leading-tight mb-6">
-            <span className="bg-gradient-to-r text-transparent bg-clip-text from-emerald-300 to-emerald-500">
-              VISUALS
-            </span>{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-blue-600">
-              Portfolio
-            </span>
-          </h1>
+      {/* HERO */}
+      <section className="noir-grain relative">
+        <div className="relative max-w-[1600px] mx-auto px-6 lg:px-10 pt-36 md:pt-44 pb-24 md:pb-32">
+          <motion.div
+            initial={{ opacity: 0, y: 16 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
+            className="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-12 mb-16"
+          >
+            <div className="md:col-span-3">
+              <p className="eyebrow">Portfolio</p>
+            </div>
+            <div className="md:col-span-9">
+              <h1 className="display-xl text-[color:var(--color-ink)]">
+                Visual<br />
+                craft.
+              </h1>
+              <p className="mt-10 max-w-2xl text-lg md:text-xl leading-relaxed text-[color:var(--color-ink-soft)] font-light">
+                Our artistic skills transform ideas into fully realized content
+                for your marketing plans or creative projects.
+              </p>
+            </div>
+          </motion.div>
+        </div>
+      </section>
 
-          <div className="flex justify-center mt-6">
-            <div className="w-24 h-px bg-gradient-to-r from-transparent via-amber-500 to-transparent"></div>
-          </div>
-          <h2 className="mt-8 text-lg text-gray-300 max-w-2xl mx-auto italic font-light">
-            Our artistic skills transform ideas into fully realized content for your marketing plans or creative projects.
-          </h2>
-        </motion.header>
-
-        <motion.div
-          variants={container}
-          initial="hidden"
-          animate="show"
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8"
-        >
-          {visualsPortfolio.map((item, index) => (
-            <motion.div
-              key={index}
-              whileHover={{
-                rotateY: 5,
-                rotateX: 5,
-                scale: 1.02,
-                boxShadow: "0 25px 50px -12px rgba(0, 0, 0, 0.5)",
-              }}
-              className="group backdrop-blur-sm overflow-hidden transition-all duration-500 bg-[#090e19]"
-            >
-              <Link href={`/visuals/${item.title.toLowerCase().replace(/\s+/g, "-").replace(/\//g, "-").replace(/[^a-z0-9-]/g, "")}`} className="block h-full">
-                <div className="relative h-64 w-full overflow-hidden">
-                  <Image
-                    src={item.image}
-                    alt={item.title}
-                    fill
-                    className="object-cover transition-transform duration-700"
-                    quality={80}
-                    priority
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent opacity-80 group-hover:opacity-60 transition-opacity duration-300"></div>
-                  <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                    <div className="bg-blue-600 backdrop-blur-md p-3 transform rotate-45 scale-0 group-hover:scale-100 transition-transform duration-500">
-                      <Eye className="text-black transform -rotate-45" size={24} />
+      {/* GALLERY */}
+      <section className="border-t border-[color:var(--color-line)]">
+        <div className="max-w-[1600px] mx-auto px-6 lg:px-10 py-24 md:py-32">
+          <div className="space-y-32 md:space-y-44">
+            {visualsPortfolio.map((item, index) => {
+              const reverse = index % 2 === 1;
+              return (
+                <motion.div
+                  key={item.slug}
+                  initial={{ opacity: 0, y: 28 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, margin: "-100px" }}
+                  transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
+                  className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-16 items-end"
+                >
+                  <div
+                    className={`md:col-span-7 ${reverse ? "md:col-start-6 md:order-2" : ""}`}
+                  >
+                    <Link href={`/visuals/${item.slug}`} className="group block">
+                      <div className="relative overflow-hidden bg-[color:var(--color-surface)] aspect-[4/3]">
+                        <img
+                          src={item.image}
+                          alt={item.title}
+                          loading="lazy"
+                          className="absolute inset-0 w-full h-full object-cover grayscale-[0.15] transition-all duration-[1800ms] ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-[1.05] group-hover:grayscale-0"
+                        />
+                      </div>
+                    </Link>
+                  </div>
+                  <div
+                    className={`md:col-span-5 ${reverse ? "md:col-start-1 md:row-start-1 md:order-1" : ""}`}
+                  >
+                    <div className="flex items-baseline justify-between mb-8 pb-6 border-b border-[color:var(--color-line)]">
+                      <span className="numeral-lg">0{index + 1}</span>
+                      <span className="numeral">{item.discipline}</span>
                     </div>
+                    <Link href={`/visuals/${item.slug}`} className="group block">
+                      <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-medium leading-[1] tracking-[-0.03em] text-[color:var(--color-ink)] group-hover:text-[color:var(--color-ink-soft)] transition-colors duration-500">
+                        {item.title}
+                      </h2>
+                      <p className="mt-6 text-base leading-relaxed text-[color:var(--color-ink-soft)] max-w-md">
+                        {item.description}
+                      </p>
+                      <span className="mt-8 inline-flex items-center gap-2 text-xs tracking-[0.22em] uppercase text-[color:var(--color-ink-muted)] group-hover:text-[color:var(--color-ink)] transition-colors duration-300">
+                        View practice
+                        <span className="transition-transform duration-500 group-hover:translate-x-1">→</span>
+                      </span>
+                    </Link>
                   </div>
-                </div>
+                </motion.div>
+              );
+            })}
+          </div>
 
-                <div className="p-8 relative flex flex-col h-[170px] justify-between">
-                  <h2 className="text-lg tracking-wider uppercase font-light">{item.title}</h2>
-                  <p className="text-gray-400 text-sm font-light">{item.descriptionservice}</p>
-
-                  <div className="inline-flex items-center text-blue-400 hover:text-blue-300 transition-colors uppercase text-xs tracking-widest absolute bottom-0">
-                    Explore <ArrowRight className="ml-2 h-3 w-3" />
-                  </div>
-                </div>
-              </Link>
-            </motion.div>
-          ))}
-        </motion.div>
-
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.6, duration: 0.7 }}
-          className="mt-24 text-center"
-        >
-          <a href="/contact" className="relative inline-block px-12 py-5 overflow-hidden group">
-            <span className="absolute top-0 left-0 w-full h-full bg-transparent border border-amber-700/50 group-hover:translate-x-1 group-hover:translate-y-1 transition-transform duration-300"></span>
-            <span className="absolute top-0 left-0 w-full h-full bg-transparent border border-blue-700/50 group-hover:-translate-x-1 group-hover:-translate-y-1 transition-transform duration-300"></span>
-            <span className="relative block text-green-500 uppercase tracking-widest text-sm font-light">
-              Contact
-            </span>
-          </a>
-        </motion.div>
-      </div>
+          {/* CTA */}
+          <motion.div
+            initial={{ opacity: 0, y: 16 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
+            className="mt-32 md:mt-44 pt-16 border-t border-[color:var(--color-line)] flex flex-col md:flex-row items-start md:items-end justify-between gap-8"
+          >
+            <h3 className="display-md text-[color:var(--color-ink)] max-w-2xl">
+              Ready to bring your<br />vision to life?
+            </h3>
+            <Link
+              href="/contact"
+              className="inline-flex items-center px-8 py-4 text-xs tracking-[0.22em] uppercase font-medium text-[color:var(--color-accent-ink)] bg-[color:var(--color-ink)] hover:bg-[color:var(--color-accent-hover)] transition-colors duration-300"
+            >
+              Start a conversation
+            </Link>
+          </motion.div>
+        </div>
+      </section>
     </div>
   );
 }

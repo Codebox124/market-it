@@ -1,179 +1,149 @@
 "use client";
 
-import Image from "next/image";
-import { ArrowRight, Eye } from "lucide-react";
 import BackButton from "@/components/Button";
 import { motion } from "framer-motion";
 import Link from "next/link";
 
 const marketingPortfolio = [
   {
-    title: "Websites/Apps",
+    title: "Websites & Apps",
+    slug: "websites-apps",
     image: "/website-design.jpg",
     description:
       "User-friendly, custom websites and apps for portfolios, awareness, commerce, or blogging.",
+    discipline: "Product · Web · Build",
   },
   {
     title: "Advertising",
+    slug: "advertising",
     image: "/advertising.webp",
     description:
       "Implementing campaigns that locate and attract your prospective customers or supporters.",
+    discipline: "Strategy · Campaign · Media",
   },
   {
     title: "Social Media",
+    slug: "social-media",
     image: "/social-media.jpg",
     description:
       "Providing all-encompassing account management, outreach, content creation, and growth.",
+    discipline: "Content · Community · Growth",
   },
   {
     title: "Flyer Distribution",
+    slug: "flyer-distribution",
     image: "/flyer.jpg",
     description:
       "Focused offline marketing to reach people in the real world, both locally and globally.",
+    discipline: "Print · Field · Outreach",
   },
 ];
 
-const fadeInUp = {
-  hidden: { opacity: 0, y: 20 },
-  visible: (i: number) => ({
-    opacity: 1,
-    y: 0,
-    transition: {
-      delay: i * 0.15,
-      duration: 0.6,
-      ease: "easeOut" as const,
-    },
-  }),
-};
-
 export default function MarketingClient() {
   return (
-    <div className="min-h-screen bg-[#090e19] text-white pt-24 overflow-hidden">
-      <div className="absolute inset-0 opacity-5 pointer-events-none"></div>
-      <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
-        <div className="absolute -top-40 -right-40 w-96 h-96 bg-amber-900/10 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-1/3 -left-40 w-80 h-80 bg-rose-900/10 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-20 right-1/4 w-64 h-64 bg-purple-900/10 rounded-full blur-3xl"></div>
-      </div>
-
+    <div className="bg-[color:var(--color-canvas)] text-[color:var(--color-ink)] min-h-screen">
       <BackButton />
 
-      <motion.div
-        initial="hidden"
-        animate="visible"
-        variants={{
-          hidden: { opacity: 0 },
-          visible: {
-            opacity: 1,
-            transition: { staggerChildren: 0.15 },
-          },
-        }}
-        className="max-w-7xl mx-auto px-6 py-16 relative z-10"
-      >
-        <motion.div
-          variants={fadeInUp}
-          custom={0}
-          className="text-center mb-20"
-        >
-          <div className="flex justify-center mb-4">
-            <div className="w-24 h-px bg-gradient-to-r from-transparent via-amber-500 to-transparent"></div>
-          </div>
-
-          <h1 className="md:text-6xl text-4xl font-thin tracking-wider leading-tight mb-6">
-            <span className="bg-gradient-to-r text-transparent bg-clip-text from-blue-300 to-blue-600">
-              MARKETING
-            </span>{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-300 to-emerald-500">
-              Portfolio
-            </span>
-          </h1>
-
-          <div className="flex justify-center mt-6">
-            <div className="w-24 h-px bg-gradient-to-r from-transparent via-amber-500 to-transparent"></div>
-          </div>
-
-          <h2 className="mt-8 text-lg text-gray-300 max-w-3xl mx-auto italic font-light">
-            Our custom marketing services help businesses, brands, and people
-            build credibility, attention, and engagement.
-          </h2>
-        </motion.div>
-
-        <div className="grid grid-cols-1 relative md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {marketingPortfolio.map((item, index) => (
-            <Link
-              key={index}
-              href={`/marketing/${item.title
-                .toLowerCase()
-                .replace(/\s+/g, "-")
-                .replace(/\//g, "-")
-                .replace(/[^a-z0-9-]/g, "")}`}
-            >
-              <motion.div
-                whileHover={{
-                  rotateY: 5,
-                  rotateX: 5,
-                  scale: 1.02,
-                  boxShadow: "0 25px 50px -12px rgba(0, 0, 0, 0.5)",
-                }}
-                className="group backdrop-blur-sm overflow-hidden transition-all duration-500 bg-[#090e19]"
-              >
-                {/* Image Section */}
-                <div className="relative h-64 w-full overflow-hidden">
-                  <Image
-                    src={item.image}
-                    alt={item.title}
-                    fill
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                    className="object-cover transition-transform duration-700"
-                    quality={80}
-                    priority
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent opacity-80 group-hover:opacity-60 transition-opacity duration-300"></div>
-                  <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                    <div className="bg-amber-500 backdrop-blur-md p-3 transform rotate-45 scale-0 group-hover:scale-100 transition-transform duration-500">
-                      <Eye
-                        className="text-black transform -rotate-45"
-                        size={24}
-                      />
-                    </div>
-                  </div>
-                </div>
-
-                {/* Text Section */}
-                <div className="p-8 relative flex flex-col h-[200px] justify-between">
-                  <h2 className="text-lg tracking-wider uppercase font-light">
-                    {item.title}
-                  </h2>
-                  <p className="text-gray-400 text-sm font-light">
-                    {item.description}
-                  </p>
-
-                  <span className="inline-flex items-center text-blue-400 hover:text-blue-300 transition-colors uppercase text-xs tracking-widest absolute bottom-0">
-                    Explore <ArrowRight className="ml-2 h-3 w-3" />
-                  </span>
-                </div>
-              </motion.div>
-            </Link>
-          ))}
-        </div>
-
-        <motion.div
-          variants={fadeInUp}
-          custom={6}
-          className="mt-24 text-center"
-        >
-          <a
-            href="/contact"
-            className="relative inline-block px-12 py-5 overflow-hidden group"
+      {/* HERO */}
+      <section className="noir-grain relative">
+        <div className="relative max-w-[1600px] mx-auto px-6 lg:px-10 pt-36 md:pt-44 pb-24 md:pb-32">
+          <motion.div
+            initial={{ opacity: 0, y: 16 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
+            className="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-12 mb-16"
           >
-            <span className="absolute top-0 left-0 w-full h-full bg-transparent border border-amber-700/50 group-hover:translate-x-1 group-hover:translate-y-1 transition-transform duration-300"></span>
-            <span className="absolute top-0 left-0 w-full h-full bg-transparent border border-blue-700/50 group-hover:-translate-x-1 group-hover:-translate-y-1 transition-transform duration-300"></span>
-            <span className="relative block text-green-500 uppercase tracking-widest text-sm font-light">
-              Contact
-            </span>
-          </a>
-        </motion.div>
-      </motion.div>
+            <div className="md:col-span-3">
+              <p className="eyebrow">Portfolio</p>
+            </div>
+            <div className="md:col-span-9">
+              <h1 className="display-xl text-[color:var(--color-ink)]">
+                Marketing<br />
+                practice.
+              </h1>
+              <p className="mt-10 max-w-2xl text-lg md:text-xl leading-relaxed text-[color:var(--color-ink-soft)] font-light">
+                Custom marketing services that help businesses, brands, and people
+                build credibility, attention, and engagement.
+              </p>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* GALLERY */}
+      <section className="border-t border-[color:var(--color-line)]">
+        <div className="max-w-[1600px] mx-auto px-6 lg:px-10 py-24 md:py-32">
+          <div className="space-y-32 md:space-y-44">
+            {marketingPortfolio.map((item, index) => {
+              const reverse = index % 2 === 1;
+              return (
+                <motion.div
+                  key={item.slug}
+                  initial={{ opacity: 0, y: 28 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, margin: "-100px" }}
+                  transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
+                  className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-16 items-end"
+                >
+                  <div
+                    className={`md:col-span-7 ${reverse ? "md:col-start-6 md:order-2" : ""}`}
+                  >
+                    <Link href={`/marketing/${item.slug}`} className="group block">
+                      <div className="relative overflow-hidden bg-[color:var(--color-surface)] aspect-[4/3]">
+                        <img
+                          src={item.image}
+                          alt={item.title}
+                          loading="lazy"
+                          className="absolute inset-0 w-full h-full object-cover grayscale-[0.15] transition-all duration-[1800ms] ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-[1.05] group-hover:grayscale-0"
+                        />
+                      </div>
+                    </Link>
+                  </div>
+                  <div
+                    className={`md:col-span-5 ${reverse ? "md:col-start-1 md:row-start-1 md:order-1" : ""}`}
+                  >
+                    <div className="flex items-baseline justify-between mb-8 pb-6 border-b border-[color:var(--color-line)]">
+                      <span className="numeral-lg">0{index + 1}</span>
+                      <span className="numeral">{item.discipline}</span>
+                    </div>
+                    <Link href={`/marketing/${item.slug}`} className="group block">
+                      <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-medium leading-[1] tracking-[-0.03em] text-[color:var(--color-ink)] group-hover:text-[color:var(--color-ink-soft)] transition-colors duration-500">
+                        {item.title}
+                      </h2>
+                      <p className="mt-6 text-base leading-relaxed text-[color:var(--color-ink-soft)] max-w-md">
+                        {item.description}
+                      </p>
+                      <span className="mt-8 inline-flex items-center gap-2 text-xs tracking-[0.22em] uppercase text-[color:var(--color-ink-muted)] group-hover:text-[color:var(--color-ink)] transition-colors duration-300">
+                        View practice
+                        <span className="transition-transform duration-500 group-hover:translate-x-1">→</span>
+                      </span>
+                    </Link>
+                  </div>
+                </motion.div>
+              );
+            })}
+          </div>
+
+          {/* CTA */}
+          <motion.div
+            initial={{ opacity: 0, y: 16 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
+            className="mt-32 md:mt-44 pt-16 border-t border-[color:var(--color-line)] flex flex-col md:flex-row items-start md:items-end justify-between gap-8"
+          >
+            <h3 className="display-md text-[color:var(--color-ink)] max-w-2xl">
+              Have a vision<br />in mind?
+            </h3>
+            <Link
+              href="/contact"
+              className="inline-flex items-center px-8 py-4 text-xs tracking-[0.22em] uppercase font-medium text-[color:var(--color-accent-ink)] bg-[color:var(--color-ink)] hover:bg-[color:var(--color-accent-hover)] transition-colors duration-300"
+            >
+              Start a conversation
+            </Link>
+          </motion.div>
+        </div>
+      </section>
     </div>
   );
 }
