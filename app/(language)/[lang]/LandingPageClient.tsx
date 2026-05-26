@@ -1,7 +1,7 @@
 "use client";
 
 import { Loader2 } from "lucide-react";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion } from "framer-motion";
 import { useRef, useState } from "react";
 import Link from "next/link";
 import emailjs from "@emailjs/browser";
@@ -84,22 +84,29 @@ export default function LandingPageClient({ dict, lang }: LandingPageProps) {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  // Horizontal pin-scroll for the CLIENTS section (desktop only).
-  // Container is tall; inside, a sticky 100vh viewport holds a header
-  // on top and a horizontally panning row of client logo tiles.
-  const clientsSectionRef = useRef<HTMLElement>(null);
-  const { scrollYProgress: clientsProgress } = useScroll({
-    target: clientsSectionRef,
-    offset: ["start start", "end end"],
-  });
-  // 8 tiles × 28vw + 7 gaps × 3vw + 4vw left pad = 249vw track. Translate ~-149vw.
-  const clientsTrackX = useTransform(clientsProgress, [0, 1], ["0vw", "-152vw"]);
-
   return (
     <div className="bg-[color:var(--color-canvas)] text-[color:var(--color-ink)] min-h-screen">
       {/* ============================ HERO ============================ */}
-      <section className="noir-grain relative min-h-screen flex flex-col">
-        <div className="relative flex-1 flex items-center max-w-[1600px] mx-auto w-full px-6 lg:px-10 pt-40 pb-24">
+      <section className="noir-grain relative min-h-screen flex flex-col overflow-hidden">
+        {/* Background video — drop /public/logo.mp4 in. Until then this is invisible. */}
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="metadata"
+          poster="/upscaledLogo.png"
+          className="absolute inset-0 w-full h-full object-cover opacity-30 pointer-events-none"
+          aria-hidden
+        >
+          <source src="/logo.webm" type="video/webm" />
+          <source src="/logo.mp4" type="video/mp4" />
+        </video>
+
+        {/* Legibility scrim — darkens top + bottom edges, lets midtones breathe */}
+        <div className="absolute inset-0 pointer-events-none bg-gradient-to-b from-[color:var(--color-canvas)]/60 via-[color:var(--color-canvas)]/20 to-[color:var(--color-canvas)]/90" />
+
+        <div className="relative z-10 flex-1 flex items-center max-w-[1600px] mx-auto w-full px-6 lg:px-10 pt-40 pb-24">
           <div className="w-full">
             <motion.div
               variants={editorial}
@@ -109,9 +116,9 @@ export default function LandingPageClient({ dict, lang }: LandingPageProps) {
               className="w-full"
             >
               <img
-                src="/logo.png"
+                src="/upscaledLogo.png"
                 alt="Make It & Market"
-                className="w-full max-w-[1100px] h-auto object-contain"
+                className="w-full max-w-[640px] md:max-w-[760px] h-auto object-contain"
               />
             </motion.div>
 
@@ -138,7 +145,7 @@ export default function LandingPageClient({ dict, lang }: LandingPageProps) {
         </div>
 
         {/* Bottom locale strip */}
-        <div className="relative max-w-[1600px] mx-auto w-full px-6 lg:px-10 pb-10">
+        <div className="relative z-10 max-w-[1600px] mx-auto w-full px-6 lg:px-10 pb-10">
           <div className="flex items-end justify-between gap-8 pt-8 border-t border-[color:var(--color-line)]">
             <p className="text-xs tracking-[0.28em] uppercase text-[color:var(--color-ink-muted)]">
               New York · Worldwide
@@ -191,78 +198,95 @@ export default function LandingPageClient({ dict, lang }: LandingPageProps) {
         </div>
       </section>
 
-      {/* ============================ OUR CLIENTS & AFFILIATES — DESKTOP PIN SCROLL ============================ */}
-      <section
-        ref={clientsSectionRef}
-        className="hidden lg:block relative h-[450vh] border-t border-[color:var(--color-line)]"
-      >
-        <div className="sticky top-0 h-screen flex flex-col overflow-hidden bg-[color:var(--color-canvas)]">
-          <div className="max-w-[1600px] mx-auto w-full px-6 lg:px-10 pt-32 pb-10 flex-shrink-0">
-            <div className="grid grid-cols-12 gap-12 items-end">
-              <div className="col-span-3">
-                <p className="eyebrow">002 — Trusted by</p>
-              </div>
-              <h2 className="col-span-7 display-lg text-[color:var(--color-ink)]">
-                Our clients<br />&amp; affiliates.
-              </h2>
-              <p className="col-span-2 numeral self-end text-right">Scroll →</p>
-            </div>
-          </div>
-
-          <div className="flex-1 flex items-center overflow-hidden">
-            <motion.div
-              style={{ x: clientsTrackX }}
-              className="flex gap-[3vw] pl-[4vw] pr-[8vw] will-change-transform"
-            >
-              {clientPlaceholders.map((name, index) => (
-                <div
-                  key={index}
-                  className="flex-shrink-0 w-[28vw] aspect-[5/4] border border-[color:var(--color-line-strong)] flex flex-col items-center justify-center p-8 transition-colors duration-500 hover:border-[color:var(--color-ink)]"
-                >
-                  <span className="numeral mb-6">[{String(index + 1).padStart(2, "0")}]</span>
-                  <span className="font-display text-3xl xl:text-4xl font-medium tracking-[-0.025em] text-[color:var(--color-ink)] text-center">
-                    {name}
-                  </span>
-                </div>
-              ))}
-            </motion.div>
-          </div>
-        </div>
-      </section>
-
-      {/* ============================ OUR CLIENTS & AFFILIATES — MOBILE/TABLET ============================ */}
-      <section className="lg:hidden relative border-t border-[color:var(--color-line)]">
-        <div className="max-w-[1600px] mx-auto px-6 lg:px-10 py-24 md:py-32">
+      {/* ============================ OUR AFFILIATES & CLIENTS ============================ */}
+      {/* No pin-scroll — clients render as a continuous marquee so the page
+          flows without sticking. Replace placeholders with real CLIENT logos
+          when Carl supplies the folder. */}
+      <section className="relative border-t border-[color:var(--color-line)]">
+        <div className="max-w-[1600px] mx-auto px-6 lg:px-10 pt-24 md:pt-32 pb-14 md:pb-20">
           <motion.div
             initial={{ opacity: 0, y: 16 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
-            className="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-12 mb-16 md:mb-20"
+            className="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-10 items-end"
           >
             <div className="md:col-span-3">
               <p className="eyebrow">002 — Trusted by</p>
             </div>
-            <h2 className="md:col-span-9 display-lg text-[color:var(--color-ink)]">
-              Our clients<br />&amp; affiliates.
+            <h2 className="md:col-span-9 font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium leading-[1] tracking-[-0.03em] text-[color:var(--color-ink)] md:whitespace-nowrap">
+              Our affiliates &amp; clients.
             </h2>
           </motion.div>
+        </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            {clientPlaceholders.map((name, index) => (
-              <div
-                key={index}
-                className="aspect-[5/4] border border-[color:var(--color-line-strong)] flex flex-col items-center justify-center p-4 md:p-6"
-              >
-                <span className="numeral mb-3 text-[0.65rem]">
-                  [{String(index + 1).padStart(2, "0")}]
-                </span>
-                <span className="font-display text-base md:text-xl font-medium tracking-[-0.02em] text-[color:var(--color-ink)] text-center">
-                  {name}
-                </span>
-              </div>
-            ))}
+        {/* Logo marquee — continuous horizontal scroll, never pins */}
+        <div className="overflow-hidden border-y border-[color:var(--color-line)] py-10 md:py-14 bg-[color:var(--color-surface)]">
+          <div className="marquee">
+            <div className="marquee-track">
+              {[...clientPlaceholders, ...clientPlaceholders, ...clientPlaceholders, ...clientPlaceholders].map((name, i) => (
+                <div
+                  key={i}
+                  className="flex items-center justify-center min-w-[16rem] md:min-w-[20rem] px-6"
+                >
+                  <span className="font-display text-2xl md:text-4xl font-medium tracking-[-0.025em] text-[color:var(--color-ink-soft)] hover:text-[color:var(--color-ink)] transition-colors duration-300 whitespace-nowrap">
+                    {name}
+                  </span>
+                </div>
+              ))}
+            </div>
           </div>
+        </div>
+
+        {/* Second row marching opposite direction */}
+        <div className="overflow-hidden border-b border-[color:var(--color-line)] py-10 md:py-14">
+          <div className="marquee">
+            <div
+              className="marquee-track"
+              style={{ animationDirection: "reverse", animationDuration: "70s" }}
+            >
+              {[...clientPlaceholders.slice().reverse(), ...clientPlaceholders.slice().reverse(), ...clientPlaceholders.slice().reverse(), ...clientPlaceholders.slice().reverse()].map((name, i) => (
+                <div
+                  key={i}
+                  className="flex items-center justify-center min-w-[16rem] md:min-w-[20rem] px-6"
+                >
+                  <span className="font-display text-2xl md:text-4xl font-medium tracking-[-0.025em] text-[color:var(--color-ink-soft)] hover:text-[color:var(--color-ink)] transition-colors duration-300 whitespace-nowrap">
+                    {name}
+                  </span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ============================ FEATURE REEL ============================ */}
+      {/* Full-bleed second video — drops into /public/reel.mp4 (optional /public/reel.webm).
+          Falls back to /hero.jpg poster while file is missing. */}
+      <section className="relative border-t border-[color:var(--color-line)]">
+        <div className="max-w-[1600px] mx-auto px-6 lg:px-10 pt-28 md:pt-36 pb-8 md:pb-12">
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-12 mb-10 md:mb-14">
+            <div className="md:col-span-3">
+              <p className="eyebrow">003 — In motion</p>
+            </div>
+            <h2 className="md:col-span-9 display-lg text-[color:var(--color-ink)]">
+              The agency,<br />in motion.
+            </h2>
+          </div>
+        </div>
+        <div className="relative w-full aspect-video bg-[color:var(--color-surface)] overflow-hidden">
+          <video
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="metadata"
+            poster="/hero.jpg"
+            className="absolute inset-0 w-full h-full object-cover"
+          >
+            <source src="/reel.webm" type="video/webm" />
+            <source src="/reel.mp4" type="video/mp4" />
+          </video>
         </div>
       </section>
 
@@ -277,7 +301,7 @@ export default function LandingPageClient({ dict, lang }: LandingPageProps) {
             className="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-12 mb-16 md:mb-20"
           >
             <div className="md:col-span-3">
-              <p className="eyebrow">003 — Contact us</p>
+              <p className="eyebrow">004 — Contact us</p>
             </div>
             <h2 className="md:col-span-9 display-lg text-[color:var(--color-ink)]">
               Contact us.
@@ -361,7 +385,7 @@ export default function LandingPageClient({ dict, lang }: LandingPageProps) {
                     onChange={handleInputChange}
                     required
                     placeholder="Tell us about your campaign…"
-                    className="w-full bg-transparent border border-[color:var(--color-line-strong)] focus:border-[color:var(--color-ink)] outline-none px-4 py-3 text-base text-[color:var(--color-ink)] placeholder:text-[color:var(--color-ink-muted)] transition-colors duration-300 resize-none"
+                    className="w-full bg-transparent border border-[color:var(--color-line-strong)] focus:border-[color:var(--color-ink)] outline-none px-4 py-3 text-base text-white placeholder:text-neutral-400 transition-colors duration-300 resize-none"
                   />
                 </div>
 
@@ -414,7 +438,7 @@ function FormField({
         onChange={onChange}
         required
         placeholder={placeholder}
-        className="w-full bg-transparent border border-[color:var(--color-line-strong)] focus:border-[color:var(--color-ink)] outline-none px-4 py-3 text-base text-[color:var(--color-ink)] placeholder:text-[color:var(--color-ink-muted)] transition-colors duration-300"
+        className="w-full bg-transparent border border-[color:var(--color-line-strong)] focus:border-[color:var(--color-ink)] outline-none px-4 py-3 text-base text-white placeholder:text-neutral-400 transition-colors duration-300"
       />
     </div>
   );

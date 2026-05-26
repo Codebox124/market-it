@@ -79,10 +79,10 @@ export default function PortfolioClient({
             </p>
           </div>
           <div className="md:col-span-9">
-            <h1 className="display-xl text-[color:var(--color-ink)]">
+            <h1 className="font-display text-4xl md:text-6xl lg:text-7xl font-medium leading-[1] tracking-[-0.035em] text-[color:var(--color-ink)] capitalize">
               {formattedService}<span className="text-[color:var(--color-accent)]">.</span>
             </h1>
-            <p className="mt-10 max-w-2xl text-lg md:text-xl leading-relaxed text-[color:var(--color-ink-soft)] font-light">
+            <p className="mt-8 max-w-2xl text-base md:text-lg leading-relaxed text-[color:var(--color-ink-soft)] font-light">
               {descriptionservice}
             </p>
           </div>
@@ -248,23 +248,23 @@ function ProjectTile({
         transition: `opacity 0.8s cubic-bezier(0.22,1,0.36,1) ${index * 0.05}s, transform 0.8s cubic-bezier(0.22,1,0.36,1) ${index * 0.05}s`,
       }}
     >
-      <div className="relative aspect-[4/5] overflow-hidden bg-[color:var(--color-noir-surface)]">
+      <div className="relative aspect-square overflow-hidden bg-[color:var(--color-surface)] border border-[color:var(--color-line)]">
         {project.video ? (
           <>
             <iframe
-              className="w-full h-full pointer-events-none object-cover"
+              className="absolute inset-0 w-full h-full pointer-events-none"
               src={getVideoUrl(project.video)}
               title={project.title}
               frameBorder="0"
               allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
             />
-            <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-[color:var(--color-noir)]/50">
-              <div className="w-12 h-12 rounded-full bg-[color:var(--color-noir-ink)] flex items-center justify-center">
+            <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-[color:var(--color-canvas)]/60">
+              <div className="w-12 h-12 rounded-full bg-[color:var(--color-ink)] flex items-center justify-center">
                 <Play
                   size={14}
                   strokeWidth={1.5}
-                  className="text-[color:var(--color-noir)] ml-0.5"
+                  className="text-[color:var(--color-canvas)] ml-0.5"
                   fill="currentColor"
                 />
               </div>
@@ -276,11 +276,11 @@ function ProjectTile({
               src={project.image}
               alt={project.title}
               loading="lazy"
-              className="w-full h-full object-cover transition-transform duration-[1400ms] ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-[1.04]"
+              className="absolute inset-0 w-full h-full object-contain p-4 transition-transform duration-[1400ms] ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-[1.03]"
             />
-            <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-[color:var(--color-noir)]/40">
-              <div className="w-12 h-12 rounded-full bg-[color:var(--color-noir-ink)] flex items-center justify-center">
-                <Search size={14} strokeWidth={1.5} className="text-[color:var(--color-noir)]" />
+            <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-[color:var(--color-canvas)]/50">
+              <div className="w-12 h-12 rounded-full bg-[color:var(--color-ink)] flex items-center justify-center">
+                <Search size={14} strokeWidth={1.5} className="text-[color:var(--color-canvas)]" />
               </div>
             </div>
           </>

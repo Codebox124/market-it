@@ -31,13 +31,21 @@ const validServices = [
   "animation",
 ];
 
+// Display-label overrides per client direction: graphic-design slug → "Content Creation"
+const displayLabelOverrides: Record<string, string> = {
+  "graphic-design": "Content Creation",
+};
+
 export default async function Page({ params }: { params: Promise<{ service: string }> }) {
   const resolvedParams = await params;
   const service = Array.isArray(resolvedParams.service)? resolvedParams.service.join("-"): resolvedParams.service ?? "";
 
-  const formattedService = service.replace(/-/g, " ");
+  let formattedService = service.replace(/-/g, " ");
   const descriptionservice = serviceDescriptions[service] || "Discover our work in this category.";
   const projects = portfolioVisualProjects[service] || [];
+  if (displayLabelOverrides[service]) {
+    formattedService = displayLabelOverrides[service];
+  }
   if (!validServices.includes(resolvedParams.service)) {
     notFound();
   }

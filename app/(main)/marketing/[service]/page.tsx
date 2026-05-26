@@ -31,6 +31,11 @@ const validServices = [
   "flyer-distribution",
 ];
 
+// Display-label overrides per client direction: advertising slug → "Marketing"
+const displayLabelOverrides: Record<string, string> = {
+  advertising: "Marketing",
+};
+
 export default async function Page({ params }: { params: Promise<{ service: string }> }) {
   const resolvedParams = await params;
   const service = Array.isArray(resolvedParams.service)? resolvedParams.service.join("-"): resolvedParams.service ?? "";
@@ -40,6 +45,9 @@ export default async function Page({ params }: { params: Promise<{ service: stri
   const projects = portfolioMarketingProjects[service] || [];
   if (formattedService === "websites apps"){
     formattedService = formattedService.replace(/ /g, "/");
+  }
+  if (displayLabelOverrides[service]) {
+    formattedService = displayLabelOverrides[service];
   }
   if (!validServices.includes(resolvedParams.service)) {
     notFound();
