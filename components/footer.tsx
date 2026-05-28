@@ -37,9 +37,9 @@ export default function Footer() {
             <p className="eyebrow mb-8">Agency</p>
             <Link href="/" className="inline-block">
               <img
-                src="/upscaledLogo.png"
+                src="/logo.png"
                 alt="Make It & Market"
-                className="h-14 md:h-20 w-auto object-contain"
+                className="h-24 md:h-36 w-auto object-contain"
               />
             </Link>
             <p className="mt-8 max-w-xl text-base leading-relaxed text-[color:var(--color-ink-soft)]">

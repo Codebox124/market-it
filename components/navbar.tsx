@@ -62,9 +62,9 @@ export default function Navbar() {
             aria-label="Make It & Market — home"
           >
             <img
-              src="/upscaledLogo.png"
+              src="/logo.png"
               alt="Make It & Market"
-              className="h-8 md:h-10 w-auto object-contain"
+              className="h-14 md:h-20 w-auto object-contain"
             />
           </Link>
 

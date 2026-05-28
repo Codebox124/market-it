@@ -20,26 +20,26 @@ const editorial = {
   }),
 };
 
-// Marquee — neutral wordmark loop (no "Studio")
+// Marquee — services loop (3-category IA)
 const marqueePhrases = [
-  "Make It & Market",
-  "New York",
-  "Make It & Market",
-  "Marketing Agency",
-  "Make It & Market",
-  "Worldwide",
+  "Marketing",
+  "Content Creation",
+  "Websites & Apps",
+  "Marketing",
+  "Content Creation",
+  "Websites & Apps",
 ];
 
-// Placeholder client/affiliate names — REPLACE WITH REAL LOGO ASSETS WHEN CLIENT SUPPLIES
-const clientPlaceholders = [
-  "Alpha & Co.",
-  "Brighton",
-  "Form Group",
-  "Meridian",
-  "Northgate",
-  "Solace",
-  "Trace",
-  "Vega Group",
+// Client / affiliate logo assets (files supplied in /public, prefixed cl*)
+const clientLogos = [
+  "/cl.png",
+  "/cl2.png",
+  "/cl3.png",
+  "/cl4.jfif",
+  "/cl5.png",
+  "/cl6.jpeg",
+  "/cl7.jfif",
+  "/cl8.png",
 ];
 
 interface LandingPageProps {
@@ -95,7 +95,7 @@ export default function LandingPageClient({ dict, lang }: LandingPageProps) {
           loop
           playsInline
           preload="metadata"
-          poster="/upscaledLogo.png"
+          poster="/logo.png"
           className="absolute inset-0 w-full h-full object-cover opacity-30 pointer-events-none"
           aria-hidden
         >
@@ -116,9 +116,9 @@ export default function LandingPageClient({ dict, lang }: LandingPageProps) {
               className="w-full"
             >
               <img
-                src="/upscaledLogo.png"
+                src="/logo.png"
                 alt="Make It & Market"
-                className="w-full max-w-[640px] md:max-w-[760px] h-auto object-contain"
+                className="w-full max-w-[880px] md:max-w-[1100px] lg:max-w-[1280px] xl:max-w-[1440px] h-auto object-contain"
               />
             </motion.div>
 
@@ -127,12 +127,12 @@ export default function LandingPageClient({ dict, lang }: LandingPageProps) {
               custom={1}
               initial="hidden"
               animate="visible"
-              className="mt-16 md:mt-20 grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 max-w-6xl"
+              className="mt-16 md:mt-20 space-y-10 md:space-y-12"
             >
-              <p className="md:col-span-7 text-lg md:text-2xl leading-relaxed text-[color:var(--color-ink-soft)] font-light">
+              <p className="leading-relaxed text-[color:var(--color-ink-soft)] font-light whitespace-nowrap text-[clamp(0.5rem,2.1vw,1.5rem)]">
                 Versatile marketing solutions for entrepreneurs, companies and causes.
               </p>
-              <div className="md:col-span-5 flex flex-wrap items-start md:items-end gap-4 md:justify-end">
+              <div className="flex">
                 <Link
                   href="/contact"
                   className="inline-flex items-center px-7 py-4 text-xs tracking-[0.22em] uppercase font-medium text-[color:var(--color-accent-ink)] bg-[color:var(--color-ink)] hover:bg-[color:var(--color-accent-hover)] transition-colors duration-300"
@@ -184,7 +184,7 @@ export default function LandingPageClient({ dict, lang }: LandingPageProps) {
             className="grid grid-cols-1 md:grid-cols-12 gap-12"
           >
             <div className="md:col-span-3">
-              <p className="eyebrow">001 — About</p>
+              <p className="eyebrow">About</p>
             </div>
             <div className="md:col-span-9 max-w-4xl">
               <p className="font-display text-2xl md:text-4xl lg:text-5xl font-medium leading-[1.15] tracking-[-0.025em] text-[color:var(--color-ink)]">
@@ -199,9 +199,6 @@ export default function LandingPageClient({ dict, lang }: LandingPageProps) {
       </section>
 
       {/* ============================ OUR AFFILIATES & CLIENTS ============================ */}
-      {/* No pin-scroll — clients render as a continuous marquee so the page
-          flows without sticking. Replace placeholders with real CLIENT logos
-          when Carl supplies the folder. */}
       <section className="relative border-t border-[color:var(--color-line)]">
         <div className="max-w-[1600px] mx-auto px-6 lg:px-10 pt-24 md:pt-32 pb-14 md:pb-20">
           <motion.div
@@ -212,47 +209,29 @@ export default function LandingPageClient({ dict, lang }: LandingPageProps) {
             className="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-10 items-end"
           >
             <div className="md:col-span-3">
-              <p className="eyebrow">002 — Trusted by</p>
+              <p className="eyebrow">Trusted by</p>
             </div>
-            <h2 className="md:col-span-9 font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium leading-[1] tracking-[-0.03em] text-[color:var(--color-ink)] md:whitespace-nowrap">
+            <h2 className="md:col-span-9 font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium leading-[1] tracking-[-0.03em] text-[color:var(--color-ink)] whitespace-nowrap">
               Our affiliates &amp; clients.
             </h2>
           </motion.div>
         </div>
 
-        {/* Logo marquee — continuous horizontal scroll, never pins */}
+        {/* Logo marquee — single continuous horizontal scroll */}
         <div className="overflow-hidden border-y border-[color:var(--color-line)] py-10 md:py-14 bg-[color:var(--color-surface)]">
           <div className="marquee">
             <div className="marquee-track">
-              {[...clientPlaceholders, ...clientPlaceholders, ...clientPlaceholders, ...clientPlaceholders].map((name, i) => (
+              {[...clientLogos, ...clientLogos, ...clientLogos, ...clientLogos].map((logo, i) => (
                 <div
                   key={i}
-                  className="flex items-center justify-center min-w-[16rem] md:min-w-[20rem] px-6"
+                  className="flex items-center justify-center min-w-[12rem] md:min-w-[16rem] px-8"
                 >
-                  <span className="font-display text-2xl md:text-4xl font-medium tracking-[-0.025em] text-[color:var(--color-ink-soft)] hover:text-[color:var(--color-ink)] transition-colors duration-300 whitespace-nowrap">
-                    {name}
-                  </span>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-
-        {/* Second row marching opposite direction */}
-        <div className="overflow-hidden border-b border-[color:var(--color-line)] py-10 md:py-14">
-          <div className="marquee">
-            <div
-              className="marquee-track"
-              style={{ animationDirection: "reverse", animationDuration: "70s" }}
-            >
-              {[...clientPlaceholders.slice().reverse(), ...clientPlaceholders.slice().reverse(), ...clientPlaceholders.slice().reverse(), ...clientPlaceholders.slice().reverse()].map((name, i) => (
-                <div
-                  key={i}
-                  className="flex items-center justify-center min-w-[16rem] md:min-w-[20rem] px-6"
-                >
-                  <span className="font-display text-2xl md:text-4xl font-medium tracking-[-0.025em] text-[color:var(--color-ink-soft)] hover:text-[color:var(--color-ink)] transition-colors duration-300 whitespace-nowrap">
-                    {name}
-                  </span>
+                  <img
+                    src={logo}
+                    alt="Client logo"
+                    loading="lazy"
+                    className="h-12 md:h-16 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity duration-300"
+                  />
                 </div>
               ))}
             </div>
@@ -267,10 +246,10 @@ export default function LandingPageClient({ dict, lang }: LandingPageProps) {
         <div className="max-w-[1600px] mx-auto px-6 lg:px-10 pt-28 md:pt-36 pb-8 md:pb-12">
           <div className="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-12 mb-10 md:mb-14">
             <div className="md:col-span-3">
-              <p className="eyebrow">003 — In motion</p>
+              <p className="eyebrow">In motion</p>
             </div>
-            <h2 className="md:col-span-9 display-lg text-[color:var(--color-ink)]">
-              The agency,<br />in motion.
+            <h2 className="md:col-span-9 display-lg text-[color:var(--color-ink)] whitespace-nowrap">
+              The agency, in motion.
             </h2>
           </div>
         </div>
@@ -301,7 +280,7 @@ export default function LandingPageClient({ dict, lang }: LandingPageProps) {
             className="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-12 mb-16 md:mb-20"
           >
             <div className="md:col-span-3">
-              <p className="eyebrow">004 — Contact us</p>
+              <p className="eyebrow">Contact us</p>
             </div>
             <h2 className="md:col-span-9 display-lg text-[color:var(--color-ink)]">
               Contact us.
