@@ -2,7 +2,13 @@
   "permissions": {
     "allow": [
       "WebFetch(domain:www.forgedbyraji.com)",
-      "WebFetch(domain:vmgroupe.com)"
+      "WebFetch(domain:vmgroupe.com)",
+      "Bash(ls \"C:/Users/adewa/Desktop\" \"C:/Users/adewa/Desktop/projects\" 2>&1 | head -40)",
+      "Read(//c/Users/adewa/Desktop/**)"
+    ],
+    "additionalDirectories": [
+      "C:\\Users\\adewa\\Desktop\\projects\\breaker\\components",
+      "C:\\Users\\adewa\\Desktop\\projects\\breaker\\app"
     ]
   }
 }
