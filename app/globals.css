@@ -175,6 +175,25 @@ body {
   to   { transform: translateX(-50%); }
 }
 
+/* Edge fade so partial words/logos at the viewport edges look intentional
+   instead of being clipped mid-letter by the section's overflow:hidden. */
+.marquee-fade {
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0,
+    black 6rem,
+    black calc(100% - 6rem),
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    to right,
+    transparent 0,
+    black 6rem,
+    black calc(100% - 6rem),
+    transparent 100%
+  );
+}
+
 /* =========================================================
    GRAIN — extremely subtle film texture
    ========================================================= */

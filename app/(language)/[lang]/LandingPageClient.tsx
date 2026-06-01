@@ -158,7 +158,9 @@ export default function LandingPageClient({ dict, lang }: LandingPageProps) {
       </section>
 
       {/* ============================ MARQUEE ============================ */}
-      <section className="border-y border-[color:var(--color-line)] py-10 md:py-14 overflow-hidden">
+      <section
+        className="border-y border-[color:var(--color-line)] py-10 md:py-14 overflow-hidden marquee-fade"
+      >
         <div className="marquee">
           <div className="marquee-track">
             {[...marqueePhrases, ...marqueePhrases, ...marqueePhrases, ...marqueePhrases].map((phrase, i) => (
@@ -218,54 +220,24 @@ export default function LandingPageClient({ dict, lang }: LandingPageProps) {
         </div>
 
         {/* Logo marquee — single continuous horizontal scroll */}
-        <div className="overflow-hidden border-y border-[color:var(--color-line)] py-10 md:py-14 bg-[color:var(--color-surface)]">
+        <div className="overflow-hidden border-y border-[color:var(--color-line)] py-10 md:py-14 bg-[color:var(--color-surface)] marquee-fade">
           <div className="marquee">
             <div className="marquee-track">
               {[...clientLogos, ...clientLogos, ...clientLogos, ...clientLogos].map((logo, i) => (
                 <div
                   key={i}
-                  className="flex items-center justify-center min-w-[12rem] md:min-w-[16rem] px-8"
+                  className="flex items-center justify-center min-w-[16rem] md:min-w-[22rem] px-10"
                 >
                   <img
                     src={logo}
                     alt="Client logo"
                     loading="lazy"
-                    className="h-12 md:h-16 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity duration-300"
+                    className="h-24 md:h-36 lg:h-40 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity duration-300"
                   />
                 </div>
               ))}
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* ============================ FEATURE REEL ============================ */}
-      {/* Full-bleed second video — drops into /public/reel.mp4 (optional /public/reel.webm).
-          Falls back to /hero.jpg poster while file is missing. */}
-      <section className="relative border-t border-[color:var(--color-line)]">
-        <div className="max-w-[1600px] mx-auto px-6 lg:px-10 pt-28 md:pt-36 pb-8 md:pb-12">
-          <div className="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-12 mb-10 md:mb-14">
-            <div className="md:col-span-3">
-              <p className="eyebrow">In motion</p>
-            </div>
-            <h2 className="md:col-span-9 display-lg text-[color:var(--color-ink)] whitespace-nowrap">
-              The agency, in motion.
-            </h2>
-          </div>
-        </div>
-        <div className="relative w-full aspect-video bg-[color:var(--color-surface)] overflow-hidden">
-          <video
-            autoPlay
-            muted
-            loop
-            playsInline
-            preload="metadata"
-            poster="/hero.jpg"
-            className="absolute inset-0 w-full h-full object-cover"
-          >
-            <source src="/reel.webm" type="video/webm" />
-            <source src="/reel.mp4" type="video/mp4" />
-          </video>
         </div>
       </section>
 
