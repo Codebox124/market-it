@@ -177,23 +177,34 @@ body {
 
 /* Edge fade so partial words/logos at the viewport edges look intentional
    instead of being clipped mid-letter by the section's overflow:hidden.
-   Fade zones cover ~14% of viewport, wide enough to swallow any half-letter. */
+   Uses solid-color gradient overlays painted on top of the marquee — more
+   reliable than mask-image across browsers and behind cache layers.
+   The fade color defaults to canvas (page bg). For marquees that sit on a
+   different bg (e.g. logo strip on surface), add `--fade-to: var(--color-surface)`. */
 .marquee-fade {
-  -webkit-mask-image: linear-gradient(
-    to right,
-    transparent 0,
-    black 14%,
-    black 86%,
-    transparent 100%
-  );
-  mask-image: linear-gradient(
-    to right,
-    transparent 0,
-    black 14%,
-    black 86%,
-    transparent 100%
-  );
+  position: relative;
+  --fade-to: var(--color-canvas);
+  --fade-width: 18%;
 }
+.marquee-fade::before,
+.marquee-fade::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: var(--fade-width);
+  pointer-events: none;
+  z-index: 5;
+}
+.marquee-fade::before {
+  left: 0;
+  background: linear-gradient(to right, var(--fade-to) 0%, var(--fade-to) 15%, transparent 100%);
+}
+.marquee-fade::after {
+  right: 0;
+  background: linear-gradient(to left, var(--fade-to) 0%, var(--fade-to) 15%, transparent 100%);
+}
+.marquee-fade--surface { --fade-to: var(--color-surface); }
 
 /* =========================================================
    GRAIN — extremely subtle film texture

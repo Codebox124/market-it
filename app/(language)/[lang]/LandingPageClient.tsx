@@ -159,14 +159,14 @@ export default function LandingPageClient({ dict, lang }: LandingPageProps) {
 
       {/* ============================ MARQUEE ============================ */}
       <section
-        className="border-y border-[color:var(--color-line)] py-10 md:py-14 overflow-hidden marquee-fade"
+        className="border-y border-[color:var(--color-line)] py-16 md:py-24 overflow-hidden marquee-fade"
       >
         <div className="marquee">
           <div className="marquee-track">
             {[...marqueePhrases, ...marqueePhrases, ...marqueePhrases, ...marqueePhrases].map((phrase, i) => (
               <span
                 key={i}
-                className="font-display text-3xl md:text-5xl font-medium tracking-[-0.03em] text-[color:var(--color-ink)]"
+                className="font-display text-3xl md:text-5xl font-medium tracking-[-0.03em] text-[color:var(--color-ink)] leading-[1.3] pb-1"
               >
                 {phrase}
               </span>
@@ -245,7 +245,7 @@ export default function LandingPageClient({ dict, lang }: LandingPageProps) {
         </div>
 
         {/* Logo marquee — single continuous horizontal scroll */}
-        <div className="overflow-hidden border-y border-[color:var(--color-line)] py-10 md:py-14 bg-[color:var(--color-surface)] marquee-fade">
+        <div className="overflow-hidden border-y border-[color:var(--color-line)] py-10 md:py-14 bg-[color:var(--color-surface)] marquee-fade marquee-fade--surface">
           <div className="marquee">
             <div className="marquee-track">
               {[...clientLogos, ...clientLogos, ...clientLogos, ...clientLogos].map((logo, i) => (
