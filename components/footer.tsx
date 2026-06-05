@@ -1,9 +1,9 @@
 import Link from "next/link";
 
 const serviceLinks = [
-  { name: "Marketing", href: "/marketing/advertising" },
-  { name: "Content Creation", href: "/visuals/graphic-design" },
-  { name: "Websites & Apps", href: "/marketing/websites-apps" },
+  { name: "Marketing", href: "/marketing" },
+  { name: "Content Creation", href: "/content-creation" },
+  { name: "Websites & Apps", href: "/websites-apps" },
 ];
 
 const siteLinks = [
@@ -37,7 +37,7 @@ export default function Footer() {
             <p className="eyebrow mb-8">Agency</p>
             <Link href="/" className="inline-block">
               <img
-                src="/logo.png"
+                src="/logo.webp"
                 alt="Make It & Market"
                 className="h-24 md:h-36 w-auto object-contain"
               />

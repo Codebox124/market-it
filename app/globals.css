@@ -176,20 +176,21 @@ body {
 }
 
 /* Edge fade so partial words/logos at the viewport edges look intentional
-   instead of being clipped mid-letter by the section's overflow:hidden. */
+   instead of being clipped mid-letter by the section's overflow:hidden.
+   Fade zones cover ~14% of viewport, wide enough to swallow any half-letter. */
 .marquee-fade {
   -webkit-mask-image: linear-gradient(
     to right,
     transparent 0,
-    black 6rem,
-    black calc(100% - 6rem),
+    black 14%,
+    black 86%,
     transparent 100%
   );
   mask-image: linear-gradient(
     to right,
     transparent 0,
-    black 6rem,
-    black calc(100% - 6rem),
+    black 14%,
+    black 86%,
     transparent 100%
   );
 }

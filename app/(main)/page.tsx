@@ -30,7 +30,7 @@ interface Project {
 const visualsPortfolio = [
   {
     title: "Graphic Design",
-    image: "/graphic-design.png",
+    image: "/graphic-design.webp",
     descriptionservice:
       "Creative graphic design services spanning logos, flyers, books, film, PowerPoint, business cards, products, menus and artwork",
     gradient: "from-violet-500/20 to-purple-500/20",
@@ -44,14 +44,14 @@ const visualsPortfolio = [
   },
   {
     title: "Photo Editing",
-    image: "/photo-editing.png",
+    image: "/photo-editing.webp",
     descriptionservice:
       "Profesional photo editing and retouching services to enhance quality, adjust color, add text, replace unwanted items or combine multiple images.",
     gradient: "from-emerald-500/20 to-teal-500/20",
   },
   {
     title: "Animation",
-    image: "/1.png",
+    image: "/1.webp",
     descriptionservice:
       "Creating 2D and 3D animation revolved around characters, environments, modeling, motion and conceptualizing to give life to your vision.",
     gradient: "from-orange-500/20 to-red-500/20",
@@ -60,7 +60,7 @@ const visualsPortfolio = [
 const marketingPortfolio = [
   {
     title: "Websites/Apps",
-    image: "/website-design.jpg",
+    image: "/website-design.webp",
     descriptionservice:
       "Responsive web and app development to claim your place within the digital space, whether it's for business, pleasure or a cause.",
     gradient: "from-indigo-500/20 to-blue-500/20",
@@ -74,14 +74,14 @@ const marketingPortfolio = [
   },
   {
     title: "Social Media",
-    image: "/social-media.jpg",
+    image: "/social-media.webp",
     descriptionservice:
       "All-around social media consulting, management and content creation to assist with growing your audience engagement across all popular platforms.",
     gradient: "from-purple-500/20 to-pink-500/20",
   },
   {
     title: "Flyer Distribution",
-    image: "/flyer.jpg",
+    image: "/flyer.webp",
     descriptionservice:
       "Targeted flyer distribution campaigns to reach local and global audiences with high-impact printed marketing materials.",
     icon: "feather",
@@ -91,99 +91,99 @@ const marketingPortfolio = [
 
 const ClientPortfolio = [
   {
-    image: "/clientShowcase/client (1).png",
+    image: "/clientShowcase/client (1).webp",
     title: "client1",
   },
   {
-    image: "/clientShowcase/client (2).png",
+    image: "/clientShowcase/client (2).webp",
     title: "client2",
   },
   {
-    image: "/clientShowcase/client (3).png",
+    image: "/clientShowcase/client (3).webp",
     title: "client3",
   },
   {
-    image: "/clientShowcase/client (4).png",
+    image: "/clientShowcase/client (4).webp",
     title: "client4",
   },
   {
-    image: "/clientShowcase/client (5).png",
+    image: "/clientShowcase/client (5).webp",
     title: "client5",
   },
   {
-    image: "/clientShowcase/client (6).png",
+    image: "/clientShowcase/client (6).webp",
     title: "client6",
   },
   {
-    image: "/clientShowcase/client (7).png",
+    image: "/clientShowcase/client (7).webp",
     title: "client7",
   },
   {
-    image: "/clientShowcase/client (8).png",
+    image: "/clientShowcase/client (8).webp",
     title: "client8",
   },
   {
-    image: "/clientShowcase/client (9).png",
+    image: "/clientShowcase/client (9).webp",
     title: "client9",
   },
   {
-    image: "/clientShowcase/client (10).png",
+    image: "/clientShowcase/client (10).webp",
     title: "client10",
   },
   {
-    image: "/clientShowcase/client (11).png",
+    image: "/clientShowcase/client (11).webp",
     title: "client11",
   },
   {
-    image: "/clientShowcase/client (12).png",
+    image: "/clientShowcase/client (12).webp",
     title: "client12",
   },
   {
-    image: "/clientShowcase/client (13).png",
+    image: "/clientShowcase/client (13).webp",
     title: "client13",
   },
   {
-    image: "/clientShowcase/client (14).png",
+    image: "/clientShowcase/client (14).webp",
     title: "client14",
   },
   {
-    image: "/clientShowcase/client (15).png",
+    image: "/clientShowcase/client (15).webp",
     title: "client15",
   },
   {
-    image: "/clientShowcase/client (16).png",
+    image: "/clientShowcase/client (16).webp",
     title: "client16",
   },
   {
-    image: "/clientShowcase/client (17).png",
+    image: "/clientShowcase/client (17).webp",
     title: "client17",
   },
   {
-    image: "/clientShowcase/client (18).png",
+    image: "/clientShowcase/client (18).webp",
     title: "client18",
   },
   {
-    image: "/clientShowcase/client (19).png",
+    image: "/clientShowcase/client (19).webp",
     title: "client19",
   },
   {
-    image: "/clientShowcase/client (20).png",
+    image: "/clientShowcase/client (20).webp",
     title: "client20",
   },
   {
-    image: "/clientShowcase/client (21).png",
+    image: "/clientShowcase/client (21).webp",
     title: "client21",
   },
   {
-    image: "/clientShowcase/client (22).png",
+    image: "/clientShowcase/client (22).webp",
     title: "client22",
   },
   {
-    image: "/clientShowcase/client (23).png",
+    image: "/clientShowcase/client (23).webp",
     title: "client23",
   },
   {
-    image: "/clientShowcase/client (24).png",
+    image: "/clientShowcase/client (24).webp",
     title: "client24",
   },
 ];

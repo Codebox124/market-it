@@ -4,11 +4,17 @@
       "WebFetch(domain:www.forgedbyraji.com)",
       "WebFetch(domain:vmgroupe.com)",
       "Bash(ls \"C:/Users/adewa/Desktop\" \"C:/Users/adewa/Desktop/projects\" 2>&1 | head -40)",
-      "Read(//c/Users/adewa/Desktop/**)"
+      "Read(//c/Users/adewa/Desktop/**)",
+      "Bash(rm -rf \"c:/Users/adewa/Desktop/market-it/app/\\(main\\)/marketing/[service]\" \"c:/Users/adewa/Desktop/market-it/app/\\(main\\)/visuals\" && echo \"deleted\" && ls \"c:/Users/adewa/Desktop/market-it/app/\\(main\\)/marketing/\" \"c:/Users/adewa/Desktop/market-it/app/\\(main\\)/\" 2>&1)",
+      "Bash(curl -sI \"https://res.cloudinary.com/dhflw3yu0/video/upload/q_auto,vc_h264/v1780644354/reel_vlurwc.mp4\")",
+      "Bash(curl -sI \"https://res.cloudinary.com/dhflw3yu0/video/upload/q_auto,vc_vp9/v1780644354/reel_vlurwc.webm\")",
+      "Bash(node scripts/convert-to-webp.js)",
+      "Bash(node scripts/rewrite-image-refs.js)"
     ],
     "additionalDirectories": [
       "C:\\Users\\adewa\\Desktop\\projects\\breaker\\components",
-      "C:\\Users\\adewa\\Desktop\\projects\\breaker\\app"
+      "C:\\Users\\adewa\\Desktop\\projects\\breaker\\app",
+      "c:\\Users\\adewa\\Desktop\\market-it\\app\\(main)\\marketing\\[service]"
     ]
   }
 }

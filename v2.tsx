@@ -22,42 +22,42 @@ const fadeIn = {
 const visualsPortfolio = [
   {
     title: "Graphic Design",
-    image: "/graphic-design.png",
+    image: "/graphic-design.webp",
     description:
       "Visual production covering an assortment of media, whether personal or business.",
     icon: "diamond",
   },
   {
     title: "Video Editing",
-    image: "/video-editing.png",
+    image: "/video-editing.webp",
     description:
       "Post-production, including motion graphics, animation, VFX, sound, and color correction.",
     icon: "diamond",
   },
   {
     title: "Photo Editing",
-    image: "/photo-editing.png",
+    image: "/photo-editing.webp",
     description:
       "High-end image manipulation, creative effects, and quality improvement.",
     icon: "star",
   },
   {
     title: "Animation",
-    image: "/1.png",
+    image: "/1.webp",
     description:
       "Illustrating custom art, characters, environments, and motion for your project.",
     icon: "star",
   },
   {
     title: "Website Design",
-    image: "/website-design.jpg",
+    image: "/website-design.webp",
     description:
       "User-friendly, custom websites and apps for portfolios, awareness, commerce, or blogging.",
     icon: "star",
   },
   {
     title: "Advertising",
-    image: "/advertising.jpg",
+    image: "/advertising.webp",
     description:
       "Implementing campaigns that locate and attract your prospective customers or supporters.",
     icon: "diamond",
@@ -65,14 +65,14 @@ const visualsPortfolio = [
   },
   {
     title: "Social Media",
-    image: "/social-media.jpg",
+    image: "/social-media.webp",
     description:
       "Providing all-encompassing account management, outreach, content creation, and growth.",
     icon: "star",
   },
   {
     title: "Flyer Distribution",
-    image: "/flyer.jpg",
+    image: "/flyer.webp",
     description:
       "Focused offline marketing to reach people in the real world, both locally and globally.",
     icon: "feather",

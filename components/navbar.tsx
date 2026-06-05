@@ -14,9 +14,9 @@ const navItems = [
 ];
 
 const serviceItems = [
-  { name: "Marketing", href: "/marketing/advertising" },
-  { name: "Content Creation", href: "/visuals/graphic-design" },
-  { name: "Websites & Apps", href: "/marketing/websites-apps" },
+  { name: "Marketing", href: "/marketing" },
+  { name: "Content Creation", href: "/content-creation" },
+  { name: "Websites & Apps", href: "/websites-apps" },
 ];
 
 export default function Navbar() {
@@ -62,7 +62,7 @@ export default function Navbar() {
             aria-label="Make It & Market — home"
           >
             <img
-              src="/logo.png"
+              src="/logo.webp"
               alt="Make It & Market"
               className="h-14 md:h-20 w-auto object-contain"
             />

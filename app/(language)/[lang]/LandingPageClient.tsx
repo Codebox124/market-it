@@ -32,14 +32,14 @@ const marqueePhrases = [
 
 // Client / affiliate logo assets (files supplied in /public, prefixed cl*)
 const clientLogos = [
-  "/cl.png",
-  "/cl2.png",
-  "/cl3.png",
-  "/cl4.jfif",
-  "/cl5.png",
-  "/cl6.jpeg",
-  "/cl7.jfif",
-  "/cl8.png",
+  "/cl.webp",
+  "/cl2.webp",
+  "/cl3.webp",
+  "/cl4.webp",
+  "/cl5.webp",
+  "/cl6.webp",
+  "/cl7.webp",
+  "/cl8.webp",
 ];
 
 interface LandingPageProps {
@@ -95,7 +95,7 @@ export default function LandingPageClient({ dict, lang }: LandingPageProps) {
           loop
           playsInline
           preload="metadata"
-          poster="/logo.png"
+          poster="/logo.webp"
           className="absolute inset-0 w-full h-full object-cover opacity-30 pointer-events-none"
           aria-hidden
         >
@@ -116,7 +116,7 @@ export default function LandingPageClient({ dict, lang }: LandingPageProps) {
               className="w-full"
             >
               <img
-                src="/logo.png"
+                src="/logo.webp"
                 alt="Make It & Market"
                 className="w-full max-w-[880px] md:max-w-[1100px] lg:max-w-[1280px] xl:max-w-[1440px] h-auto object-contain"
               />
@@ -197,6 +197,31 @@ export default function LandingPageClient({ dict, lang }: LandingPageProps) {
               </p>
             </div>
           </motion.div>
+        </div>
+      </section>
+
+      {/* ============================ REEL ============================ */}
+      <section className="relative border-t border-[color:var(--color-line)]">
+        <div className="max-w-[1600px] mx-auto px-6 lg:px-10 py-20 md:py-28">
+          <div className="relative w-full max-w-5xl mx-auto aspect-video bg-[color:var(--color-canvas)] overflow-hidden border border-[color:var(--color-line-strong)]">
+            <video
+              autoPlay
+              muted
+              loop
+              playsInline
+              preload="auto"
+              className="absolute inset-0 w-full h-full object-cover"
+            >
+              <source
+                src="https://res.cloudinary.com/dhflw3yu0/video/upload/q_auto,vc_vp9/v1780644354/reel_vlurwc.webm"
+                type="video/webm"
+              />
+              <source
+                src="https://res.cloudinary.com/dhflw3yu0/video/upload/q_auto,vc_h264/v1780644354/reel_vlurwc.mp4"
+                type="video/mp4"
+              />
+            </video>
+          </div>
         </div>
       </section>
 
