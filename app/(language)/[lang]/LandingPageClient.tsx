@@ -30,6 +30,39 @@ const marqueePhrases = [
   "Websites & Apps",
 ];
 
+// Client testimonials
+const testimonials = [
+  {
+    quote:
+      "First of all, thank you very much for your outstanding services provided to me and within a timely manner.",
+    name: "Joseph A.",
+  },
+  {
+    quote:
+      "Thank you for your patience and for being meticulous with my campaign.",
+    name: "Sherri S.",
+  },
+  {
+    quote:
+      "Thank you for correcting that; we're not just selling perfume. You are sharp with marketing!",
+    name: "Joanne A.",
+  },
+  {
+    quote:
+      "What you put together was amazing. I still get a kick out of that video and so does my wife.",
+    name: "Murray B.",
+  },
+  {
+    quote:
+      "I am so excited for the launch. I feel like I am about to be a millionaire! You know I will always come to you first. Thank you so much for your help.",
+    name: "Darcia J.",
+  },
+  {
+    quote: "Great results. Literally had me like wow over here!",
+    name: "Kajuan R.",
+  },
+];
+
 // Client / affiliate logo assets (files supplied in /public, prefixed cl*)
 const clientLogos = [
   "/cl.webp",
@@ -262,6 +295,50 @@ export default function LandingPageClient({ dict, lang }: LandingPageProps) {
                 </div>
               ))}
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ============================ TESTIMONIALS ============================ */}
+      <section className="relative border-t border-[color:var(--color-line)]">
+        <div className="max-w-[1600px] mx-auto px-6 lg:px-10 py-28 md:py-40">
+          <motion.div
+            initial={{ opacity: 0, y: 16 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
+            className="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-12 mb-16 md:mb-24"
+          >
+            <div className="md:col-span-3">
+              <p className="eyebrow">In their words</p>
+            </div>
+            <h2 className="md:col-span-9 display-lg text-[color:var(--color-ink)]">
+              What clients say.
+            </h2>
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-14 md:gap-y-20">
+            {testimonials.map((testimonial, i) => (
+              <motion.figure
+                key={i}
+                initial={{ opacity: 0, y: 18 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{
+                  duration: 0.9,
+                  delay: (i % 3) * 0.1,
+                  ease: [0.22, 1, 0.36, 1],
+                }}
+                className="flex flex-col"
+              >
+                <blockquote className="font-display text-xl md:text-2xl font-medium leading-[1.3] tracking-[-0.02em] text-[color:var(--color-ink)]">
+                  &ldquo;{testimonial.quote}&rdquo;
+                </blockquote>
+                <figcaption className="mt-8 pt-6 border-t border-[color:var(--color-line)] text-xs tracking-[0.28em] uppercase text-[color:var(--color-ink-muted)]">
+                  {testimonial.name}
+                </figcaption>
+              </motion.figure>
+            ))}
           </div>
         </div>
       </section>
