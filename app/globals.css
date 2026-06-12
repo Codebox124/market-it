@@ -167,7 +167,7 @@ body {
   flex-shrink: 0;
   gap: 4rem;
   align-items: center;
-  animation: marquee-scroll 60s linear infinite;
+  animation: marquee-scroll 180s linear infinite;
   white-space: nowrap;
 }
 @keyframes marquee-scroll {
