@@ -111,7 +111,7 @@ export default function WebsitesAppsPage() {
                 href="/contact"
                 className="self-start inline-flex items-center px-7 py-4 text-xs tracking-[0.22em] uppercase font-medium text-[color:var(--color-accent-ink)] bg-[color:var(--color-ink)] hover:bg-[color:var(--color-accent-hover)] transition-colors duration-300 whitespace-nowrap"
               >
-                Contact the agency
+                Contact
               </Link>
             </div>
           </div>
