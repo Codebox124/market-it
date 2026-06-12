@@ -63,7 +63,7 @@ const testimonials = [
   },
 ];
 
-// Client / affiliate logo assets (files supplied in /public, prefixed cl*)
+// Client / affiliate logo assets
 const clientLogos = [
   "/cl.webp",
   "/cl2.webp",
@@ -73,6 +73,43 @@ const clientLogos = [
   "/cl6.webp",
   "/cl7.webp",
   "/cl8.webp",
+  "/clientScroll/a.webp",
+  "/clientScroll/ark4nyc.webp",
+  "/clientScroll/builditect-logo.webp",
+  "/clientScroll/client-13.webp",
+  "/clientScroll/client-14.webp",
+  "/clientScroll/client-16.webp",
+  "/clientScroll/client-19.webp",
+  "/clientScroll/client-20.webp",
+  "/clientScroll/elite-med.webp",
+  "/clientScroll/evan-the-biz-clubhouse-logo.webp",
+  "/clientScroll/flamingo.webp",
+  "/clientScroll/gm-logo-04.webp",
+  "/clientScroll/hot-or-not-logo.webp",
+  "/clientScroll/image-exopest-michael-perez-before.webp",
+  "/clientScroll/joker-life-text-emblem.webp",
+  "/clientScroll/laara.webp",
+  "/clientScroll/logo-3-option-4-flow-bj.webp",
+  "/clientScroll/logo-arc-4.webp",
+  "/clientScroll/logo-barry-option-4-edit.webp",
+  "/clientScroll/logo-bj-split-pink-l-blue-r.webp",
+  "/clientScroll/logo-dle-1-desmond.webp",
+  "/clientScroll/logo-dolo-bj-stroke-1.webp",
+  "/clientScroll/logo-kids-dynasty-daycare-arlene.webp",
+  "/clientScroll/logo-marty-2.webp",
+  "/clientScroll/logo-mojo-logo.webp",
+  "/clientScroll/logo-olivers-edit.webp",
+  "/clientScroll/logo-ox-movers-edit.webp",
+  "/clientScroll/logo-reefnreem.webp",
+  "/clientScroll/logo-united-for-the-people-s-plan-18.webp",
+  "/clientScroll/logo-ybda.webp",
+  "/clientScroll/ne-hydraulics.webp",
+  "/clientScroll/popcorn-tv-logo-3.webp",
+  "/clientScroll/radmila.webp",
+  "/clientScroll/sanipro.webp",
+  "/clientScroll/spoiled-bananas-edit.webp",
+  "/clientScroll/ss-tiger.webp",
+  "/clientScroll/wisconsin-foundation.webp",
 ];
 
 interface LandingPageProps {
