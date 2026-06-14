@@ -1,6 +1,7 @@
 import fs from "fs";
 import path from "path";
 import MarketingClient from "./MarketingClient";
+import { interleaveByCategory } from "@/utils/portfolio";
 
 type Work = { src: string; category: string; type?: "image" | "video" };
 
@@ -51,6 +52,6 @@ function readMarketingFolder(): Work[] {
 }
 
 export default function MarketingPage() {
-  const works = [...curated, ...readMarketingFolder()];
+  const works = interleaveByCategory([...curated, ...readMarketingFolder()]);
   return <MarketingClient works={works} />;
 }

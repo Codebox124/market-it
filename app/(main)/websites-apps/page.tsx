@@ -1,6 +1,7 @@
 import fs from "fs";
 import path from "path";
 import WebsitesAppsClient from "./WebsitesAppsClient";
+import { interleaveByCategory } from "@/utils/portfolio";
 
 type Work = { src: string; category: string };
 
@@ -28,6 +29,6 @@ function getWorks(): Work[] {
 }
 
 export default function WebsitesAppsPage() {
-  const works = getWorks();
+  const works = interleaveByCategory(getWorks());
   return <WebsitesAppsClient works={works} />;
 }

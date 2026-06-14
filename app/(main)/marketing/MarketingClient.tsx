@@ -50,7 +50,7 @@ export default function MarketingClient({ works }: { works: Work[] }) {
       {/* ============================ PORTFOLIO GRID ============================ */}
       <section className="relative border-t border-[color:var(--color-line)]">
         <div className="max-w-[1600px] mx-auto px-6 lg:px-10 py-16 md:py-24">
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4">
+          <div className="grid grid-cols-3 md:grid-cols-5 lg:grid-cols-6 gap-2 md:gap-3">
             {works.map((work, i) => (
               <motion.div
                 key={work.src}
@@ -69,14 +69,14 @@ export default function MarketingClient({ works }: { works: Work[] }) {
                     loop
                     playsInline
                     preload="metadata"
-                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.04]"
+                    className="absolute inset-0 w-full h-full object-contain transition-transform duration-700 group-hover:scale-[1.04]"
                   />
                 ) : (
                   <img
                     src={work.src}
                     alt={work.category}
                     loading="lazy"
-                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.04]"
+                    className="absolute inset-0 w-full h-full object-contain transition-transform duration-700 group-hover:scale-[1.04]"
                   />
                 )}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />

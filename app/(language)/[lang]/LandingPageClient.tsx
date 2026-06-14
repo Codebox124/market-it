@@ -317,7 +317,7 @@ export default function LandingPageClient({ dict, lang }: LandingPageProps) {
         {/* Logo marquee — single continuous horizontal scroll */}
         <div className="overflow-hidden border-y border-[color:var(--color-line)] py-10 md:py-14 bg-[color:var(--color-surface)] marquee-fade marquee-fade--surface">
           <div className="marquee">
-            <div className="marquee-track">
+            <div className="marquee-track marquee-track--slow">
               {[...clientLogos, ...clientLogos, ...clientLogos, ...clientLogos].map((logo, i) => (
                 <div
                   key={i}

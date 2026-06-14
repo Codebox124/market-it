@@ -1,6 +1,7 @@
 import fs from "fs";
 import path from "path";
 import ContentCreationClient from "./ContentCreationClient";
+import { interleaveByCategory } from "@/utils/portfolio";
 
 type Work = { src: string; category: string };
 
@@ -66,6 +67,6 @@ function readContentFolder(): Work[] {
 }
 
 export default function ContentCreationPage() {
-  const works = [...curated, ...readContentFolder()];
+  const works = interleaveByCategory([...curated, ...readContentFolder()]);
   return <ContentCreationClient works={works} />;
 }

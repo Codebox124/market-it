@@ -23,7 +23,10 @@
       "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:3000/marketing)",
       "Bash(curl -s http://localhost:3000/marketing)",
       "Bash(grep -o '/marketingSection/[^\"\\\\\\\\]*\\\\.webp')",
-      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" \"http://localhost:3000/marketingSection/2025-reflection.mp4\")"
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" \"http://localhost:3000/marketingSection/2025-reflection.mp4\")",
+      "Bash(curl -s \"http://localhost:3000/websites-apps\")",
+      "Bash(curl -s -o /dev/null -w '%{http_code}' http://localhost:3000/websites-apps)",
+      "Bash(echo \"status: $\\(curl -s -o /dev/null -w '%{http_code}' http://localhost:3000/websites-apps\\)\")"
     ],
     "additionalDirectories": [
       "C:\\Users\\adewa\\Desktop\\projects\\breaker\\components",

@@ -170,6 +170,11 @@ body {
   animation: marquee-scroll 180s linear infinite;
   white-space: nowrap;
 }
+/* Logo marquee carries far more items, so it needs a much longer duration
+   to scroll at a calm, readable pace. */
+.marquee-track--slow {
+  animation-duration: 320s;
+}
 @keyframes marquee-scroll {
   from { transform: translateX(0); }
   to   { transform: translateX(-50%); }
