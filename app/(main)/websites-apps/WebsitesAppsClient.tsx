@@ -50,7 +50,7 @@ export default function WebsitesAppsClient({ works }: { works: Work[] }) {
       {/* ============================ PORTFOLIO GRID ============================ */}
       <section className="relative border-t border-[color:var(--color-line)]">
         <div className="max-w-[1600px] mx-auto px-6 lg:px-10 py-16 md:py-24">
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-2 md:gap-3">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-6">
             {works.map((work, i) => (
               <motion.div
                 key={work.src}
