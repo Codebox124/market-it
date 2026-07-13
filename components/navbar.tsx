@@ -55,17 +55,12 @@ export default function Navbar() {
     >
       <div className="max-w-[1600px] mx-auto px-6 lg:px-10">
         <div className="flex justify-between items-center">
-          {/* Wordmark — logo image */}
-          <Link
-            href="/"
-            className="group select-none flex items-center"
-            aria-label="Make It & Market — home"
-          >
-            <img
-              src="/logo.webp"
-              alt="Make It & Market"
-              className="h-14 md:h-20 w-auto object-contain"
-            />
+          {/* Spacer — keeps the nav centered now that the logo is removed */}
+          <div className="w-10 md:w-24" aria-hidden />
+
+          {/* Accessible home link (visually hidden) */}
+          <Link href="/" className="sr-only">
+            Make It &amp; Market — home
           </Link>
 
           {/* Desktop nav */}

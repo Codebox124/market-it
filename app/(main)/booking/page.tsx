@@ -39,11 +39,10 @@ export default function BookingPage() {
               <p className="eyebrow">Payment</p>
             </div>
             <div className="md:col-span-9">
-              <h1 className="display-xl text-[color:var(--color-ink)]">
-                Complete your<br />
-                payment.
+              <h1 className="display-lg text-[color:var(--color-ink)]">
+                Complete your payment.
               </h1>
-              <p className="mt-10 max-w-2xl text-lg md:text-xl leading-relaxed text-[color:var(--color-ink-soft)] font-light">
+              <p className="mt-14 md:mt-16 max-w-2xl text-lg md:text-xl leading-relaxed text-[color:var(--color-ink-soft)] font-light">
                 Settle for your agreed-upon service with PayPal, Apple Pay,
                 Venmo, or any major credit or debit card.
               </p>
@@ -83,14 +82,14 @@ export default function BookingPage() {
                     major credit or debit card.
                   </p>
                   <p>
-                    For Zelle or Cashapp, please call{" "}
+                    For Zelle or Cashapp, send to{" "}
                     <a
                       href="tel:3476591708"
                       className="text-[color:var(--color-ink)] underline underline-offset-4 decoration-[color:var(--color-line-strong)] hover:decoration-[color:var(--color-accent)] transition-colors"
                     >
                       (347) 659 1708
-                    </a>{" "}
-                    to pay directly.
+                    </a>
+                    .
                   </p>
                 </div>
 
@@ -130,10 +129,10 @@ export default function BookingPage() {
               <p className="mt-14 text-center text-xs tracking-[0.22em] uppercase text-[color:var(--color-ink-muted)]">
                 Questions?{" "}
                 <a
-                  href="mailto:support@makeitandmarket.com"
+                  href="mailto:info@makeitandmarket.com"
                   className="text-[color:var(--color-ink)] hover:text-[color:var(--color-ink)] transition-colors underline underline-offset-4 decoration-[color:var(--color-line-strong)]"
                 >
-                  support@makeitandmarket.com
+                  info@makeitandmarket.com
                 </a>
               </p>
             </div>

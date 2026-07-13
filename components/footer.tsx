@@ -34,12 +34,12 @@ export default function Footer() {
         {/* Closing statement */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 pb-20 border-b border-[color:var(--color-line)]">
           <div className="lg:col-span-7">
-            <p className="eyebrow mb-8">Agency</p>
-            <Link href="/" className="inline-block">
+            <p className="eyebrow mb-8">Make It &amp; Market</p>
+            <Link href="/" className="block">
               <img
-                src="/logo.webp"
+                src="/logo-trimmed.webp"
                 alt="Make It & Market"
-                className="h-24 md:h-36 w-auto object-contain"
+                className="block h-16 md:h-20 w-auto object-contain"
               />
             </Link>
             <p className="mt-8 max-w-xl text-base leading-relaxed text-[color:var(--color-ink-soft)]">
@@ -56,7 +56,9 @@ export default function Footer() {
           </div>
 
           <div className="lg:col-span-5 lg:pl-8 lg:border-l lg:border-[color:var(--color-line)]">
-            <ColumnHeading>Get in touch</ColumnHeading>
+            <h3 className="eyebrow mb-6 inline-block border-b border-[color:var(--color-line-strong)] pb-2">
+              Get in touch
+            </h3>
             <ul className="space-y-4 text-base">
               <li>
                 <p className="eyebrow mb-1">Email</p>
@@ -75,10 +77,6 @@ export default function Footer() {
                 >
                   (347) 659 1708
                 </a>
-              </li>
-              <li>
-                <p className="eyebrow mb-1">Location</p>
-                <span className="text-[color:var(--color-ink-soft)]">New York · Worldwide</span>
               </li>
             </ul>
           </div>

@@ -218,10 +218,7 @@ export default function LandingPageClient({ dict, lang }: LandingPageProps) {
         <div className="relative z-10 max-w-[1600px] mx-auto w-full px-6 lg:px-10 pb-10">
           <div className="flex items-end justify-between gap-8 pt-8 border-t border-[color:var(--color-line)]">
             <p className="text-xs tracking-[0.28em] uppercase text-[color:var(--color-ink-muted)]">
-              New York · Worldwide
-            </p>
-            <p className="text-xs tracking-[0.28em] uppercase text-[color:var(--color-ink-muted)]">
-              MMXXVI
+              USA · Worldwide
             </p>
           </div>
         </div>
@@ -303,12 +300,10 @@ export default function LandingPageClient({ dict, lang }: LandingPageProps) {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
-            className="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-10 items-end"
+            className="text-center"
           >
-            <div className="md:col-span-3">
-              <p className="eyebrow">Trusted by</p>
-            </div>
-            <h2 className="md:col-span-9 font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium leading-[1] tracking-[-0.03em] text-[color:var(--color-ink)] whitespace-nowrap">
+            <p className="eyebrow mb-5">Trusted by</p>
+            <h2 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium leading-[1] tracking-[-0.03em] text-[color:var(--color-ink)] whitespace-nowrap">
               Our affiliates &amp; clients.
             </h2>
           </motion.div>
@@ -344,12 +339,10 @@ export default function LandingPageClient({ dict, lang }: LandingPageProps) {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
-            className="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-12 mb-16 md:mb-24"
+            className="text-center mb-16 md:mb-24"
           >
-            <div className="md:col-span-3">
-              <p className="eyebrow">In their words</p>
-            </div>
-            <h2 className="md:col-span-9 display-lg text-[color:var(--color-ink)]">
+            <p className="eyebrow mb-5">In their words</p>
+            <h2 className="display-lg text-[color:var(--color-ink)]">
               What clients say.
             </h2>
           </motion.div>
@@ -388,12 +381,9 @@ export default function LandingPageClient({ dict, lang }: LandingPageProps) {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
-            className="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-12 mb-16 md:mb-20"
+            className="text-center mb-16 md:mb-20"
           >
-            <div className="md:col-span-3">
-              <p className="eyebrow">Contact us</p>
-            </div>
-            <h2 className="md:col-span-9 display-lg text-[color:var(--color-ink)]">
+            <h2 className="display-lg text-[color:var(--color-ink)]">
               Contact us.
             </h2>
           </motion.div>
@@ -408,7 +398,7 @@ export default function LandingPageClient({ dict, lang }: LandingPageProps) {
               className="lg:col-span-5"
             >
               <p className="text-lg leading-relaxed text-[color:var(--color-ink-soft)] max-w-md font-light">
-                Tell us about your campaign, and we&apos;ll respond within one business day.
+                Tell us your campaign goals, and we&apos;ll respond within one business day.
               </p>
 
               <div className="mt-12 pt-8 border-t border-[color:var(--color-line)] space-y-6 text-sm">

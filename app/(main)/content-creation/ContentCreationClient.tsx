@@ -82,21 +82,16 @@ export default function ContentCreationClient({ works }: { works: Work[] }) {
       {/* ============================ CTA ============================ */}
       <section className="relative border-t border-[color:var(--color-line)]">
         <div className="max-w-[1600px] mx-auto px-6 lg:px-10 py-28 md:py-40">
-          <div className="grid grid-cols-1 md:grid-cols-12 gap-12 items-end">
-            <div className="md:col-span-3">
-              <p className="eyebrow">Next</p>
-            </div>
-            <div className="md:col-span-9 max-w-4xl flex flex-col md:flex-row md:items-end md:justify-between gap-10">
-              <h2 className="display-md text-[color:var(--color-ink)]">
-                Have a creative project? Let&apos;s make it.
-              </h2>
-              <Link
-                href="/contact"
-                className="self-start inline-flex items-center px-7 py-4 text-xs tracking-[0.22em] uppercase font-medium text-[color:var(--color-accent-ink)] bg-[color:var(--color-ink)] hover:bg-[color:var(--color-accent-hover)] transition-colors duration-300 whitespace-nowrap"
-              >
-                Contact
-              </Link>
-            </div>
+          <div className="max-w-4xl">
+            <h2 className="display-md text-[color:var(--color-ink)]">
+              Have a creative project? Let&apos;s make it.
+            </h2>
+            <Link
+              href="/contact"
+              className="mt-10 inline-flex items-center px-7 py-4 text-xs tracking-[0.22em] uppercase font-medium text-[color:var(--color-accent-ink)] bg-[color:var(--color-ink)] hover:bg-[color:var(--color-accent-hover)] transition-colors duration-300 whitespace-nowrap"
+            >
+              Contact
+            </Link>
           </div>
         </div>
       </section>
