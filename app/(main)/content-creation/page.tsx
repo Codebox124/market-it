@@ -1,46 +1,32 @@
 import fs from "fs";
 import path from "path";
+import crypto from "crypto";
 import ContentCreationClient from "./ContentCreationClient";
 import { interleaveByCategory } from "@/utils/portfolio";
 
-type Work = { src: string; category: string };
+type Work = { src: string; category: string; type?: "image" | "video" };
 
-// Existing curated portfolio (lives in /graphic, /animation, /photo)
-const curated: Work[] = [
-  { src: "/graphic/3.webp", category: "Graphic" },
-  { src: "/animation/1.webp", category: "Animation" },
-  { src: "/photo/pic.webp", category: "Photo" },
-  { src: "/graphic/4.webp", category: "Graphic" },
-  { src: "/animation/4.webp", category: "Animation" },
-  { src: "/photo/pic2.webp", category: "Photo" },
-  { src: "/graphic/20.webp", category: "Graphic" },
-  { src: "/animation/7.webp", category: "Animation" },
-  { src: "/photo/pic3.webp", category: "Photo" },
-  { src: "/graphic/biz card.webp", category: "Graphic" },
-  { src: "/animation/10.webp", category: "Animation" },
-  { src: "/photo/pic4.webp", category: "Photo" },
-  { src: "/graphic/elon poster.webp", category: "Graphic" },
-  { src: "/animation/13.webp", category: "Animation" },
-  { src: "/photo/pic5.webp", category: "Photo" },
-  { src: "/graphic/banner MICHAEL P.webp", category: "Graphic" },
-  { src: "/animation/16.webp", category: "Animation" },
-  { src: "/photo/pic6.webp", category: "Photo" },
-  { src: "/graphic/Highball-RON_2.webp", category: "Graphic" },
-  { src: "/animation/19.webp", category: "Animation" },
-  { src: "/photo/pic7.webp", category: "Photo" },
-];
+const VIDEO_RE = /\.(mp4|webm)$/i;
+const MEDIA_RE = /\.(webp|mp4|webm)$/i;
 
+// Category is used only to spread the grid for visual variety — it is no
+// longer shown as a label on the tiles.
 function categorize(relPath: string): string {
   const n = relPath.toLowerCase();
+  if (VIDEO_RE.test(n)) return "Video";
   if (/\/animation\//.test(n)) return "Animation";
   if (/photo|colorgrade|retouch|fx\d/.test(n)) return "Photo";
   return "Graphic";
 }
 
-// Recursively collect every .webp under /public/content
+// Read every image/video under /public/content, skipping byte-identical
+// duplicates. Drop any video folder in here and it appears automatically.
 function readContentFolder(): Work[] {
-  const root = path.join(process.cwd(), "public", "content");
+  const publicDir = path.join(process.cwd(), "public");
+  const root = path.join(publicDir, "content");
+  const seen = new Set<string>();
   const out: Work[] = [];
+
   const walk = (dir: string) => {
     let entries: fs.Dirent[] = [];
     try {
@@ -52,21 +38,35 @@ function readContentFolder(): Work[] {
       const full = path.join(dir, e.name);
       if (e.isDirectory()) {
         walk(full);
-      } else if (/\.webp$/i.test(e.name)) {
-        const rel = full
-          .slice(path.join(process.cwd(), "public").length)
-          .split(path.sep)
-          .join("/");
-        out.push({ src: rel, category: categorize(rel) });
+        continue;
       }
+      if (!MEDIA_RE.test(e.name)) continue;
+      // Drop exact-duplicate files (same bytes under a different name).
+      try {
+        const hash = crypto
+          .createHash("sha1")
+          .update(fs.readFileSync(full))
+          .digest("hex");
+        if (seen.has(hash)) continue;
+        seen.add(hash);
+      } catch {
+        /* if hashing fails, still include the file */
+      }
+      const rel = full.slice(publicDir.length).split(path.sep).join("/");
+      out.push({
+        src: rel,
+        category: categorize(rel),
+        type: VIDEO_RE.test(e.name) ? "video" : "image",
+      });
     }
   };
+
   walk(root);
   out.sort((a, b) => a.src.localeCompare(b.src));
   return out;
 }
 
 export default function ContentCreationPage() {
-  const works = interleaveByCategory([...curated, ...readContentFolder()]);
+  const works = interleaveByCategory(readContentFolder());
   return <ContentCreationClient works={works} />;
 }

@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 
-type Work = { src: string; category: string };
+type Work = { src: string; category: string; type?: "image" | "video" };
 
 const fade = {
   hidden: { opacity: 0, y: 16 },
@@ -61,18 +61,24 @@ export default function ContentCreationClient({ works }: { works: Work[] }) {
                 variants={fade}
                 className="group relative aspect-square overflow-hidden bg-[color:var(--color-surface)]"
               >
-                <img
-                  src={work.src}
-                  alt={work.category}
-                  loading="lazy"
-                  className="absolute inset-0 w-full h-full object-contain transition-transform duration-700 group-hover:scale-[1.04]"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
-                <div className="absolute bottom-3 left-3 right-3 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none">
-                  <p className="text-[10px] tracking-[0.28em] uppercase text-white/90">
-                    {work.category}
-                  </p>
-                </div>
+                {work.type === "video" ? (
+                  <video
+                    src={work.src}
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                    preload="metadata"
+                    className="absolute inset-0 w-full h-full object-contain transition-transform duration-700 group-hover:scale-[1.04]"
+                  />
+                ) : (
+                  <img
+                    src={work.src}
+                    alt=""
+                    loading="lazy"
+                    className="absolute inset-0 w-full h-full object-contain transition-transform duration-700 group-hover:scale-[1.04]"
+                  />
+                )}
               </motion.div>
             ))}
           </div>
