@@ -78,6 +78,15 @@ body {
   color: var(--color-ink);
 }
 
+/* Present the whole site at 90% on desktop — matches the zoomed-out view
+   so pages like the home hero fit within a single screen. Mobile keeps its
+   native scale. */
+@media (min-width: 1024px) {
+  body {
+    zoom: 0.9;
+  }
+}
+
 /* =========================================================
    TYPE — single family, varying scale + weight only
    ========================================================= */

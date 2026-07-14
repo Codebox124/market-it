@@ -89,8 +89,8 @@ export default function ContentCreationClient({ works }: { works: Work[] }) {
       <section className="relative border-t border-[color:var(--color-line)]">
         <div className="max-w-[1600px] mx-auto px-6 lg:px-10 py-28 md:py-40">
           <div className="max-w-4xl">
-            <h2 className="display-md text-[color:var(--color-ink)]">
-              Have a creative project? Let&apos;s make it.
+            <h2 className="font-display font-medium leading-none tracking-[-0.025em] text-[clamp(1.5rem,3vw,2.5rem)] md:whitespace-nowrap text-[color:var(--color-ink)]">
+              Let&apos;s make your creative project.
             </h2>
             <Link
               href="/contact"

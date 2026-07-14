@@ -39,7 +39,7 @@ export default function BookingPage() {
               <p className="eyebrow">Payment</p>
             </div>
             <div className="md:col-span-9">
-              <h1 className="display-lg text-[color:var(--color-ink)]">
+              <h1 className="font-display font-medium leading-[0.95] tracking-[-0.04em] text-[clamp(2rem,4.5vw,3.5rem)] md:whitespace-nowrap text-[color:var(--color-ink)]">
                 Complete your payment.
               </h1>
               <p className="mt-14 md:mt-16 max-w-2xl text-lg md:text-xl leading-relaxed text-[color:var(--color-ink-soft)] font-light">

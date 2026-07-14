@@ -46,9 +46,8 @@ export default function ContactClient() {
               <p className="eyebrow">Contact us</p>
             </div>
             <div className="md:col-span-9">
-              <h1 className="display-xl text-[color:var(--color-ink)]">
-                Let&apos;s build<br />
-                your campaign.
+              <h1 className="font-display font-medium leading-[0.95] tracking-[-0.04em] text-[clamp(2rem,4.5vw,3.5rem)] md:whitespace-nowrap text-[color:var(--color-ink)]">
+                Let&apos;s build your campaign.
               </h1>
               <p className="mt-10 max-w-xl text-lg md:text-xl leading-relaxed text-[color:var(--color-ink-soft)] font-light">
                 Tell us about your campaign and we&apos;ll respond within one business day.
