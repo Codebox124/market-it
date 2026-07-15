@@ -49,7 +49,7 @@ export default function ContactClient() {
               <h1 className="font-display font-medium leading-[0.95] tracking-[-0.04em] text-[clamp(2rem,4.5vw,3.5rem)] md:whitespace-nowrap text-[color:var(--color-ink)]">
                 Let&apos;s build your campaign.
               </h1>
-              <p className="mt-10 max-w-xl text-lg md:text-xl leading-relaxed text-[color:var(--color-ink-soft)] font-light">
+              <p className="mt-10 text-base md:text-lg leading-relaxed lg:whitespace-nowrap text-[color:var(--color-ink-soft)] font-light">
                 Tell us about your campaign and we&apos;ll respond within one business day.
               </p>
             </div>
@@ -155,7 +155,7 @@ export default function ContactClient() {
                       setFormData({ ...formData, message: e.target.value })
                     }
                     required
-                    placeholder="Tell us about your campaign, timeline, and goals…"
+                    placeholder="Tell us your situation, goals, or questions"
                     className="w-full bg-transparent border border-[color:var(--color-line-strong)] focus:border-[color:var(--color-ink)] outline-none px-4 py-3 text-base text-[color:var(--color-ink)] placeholder:text-[color:var(--color-ink-muted)] transition-colors duration-300 resize-none"
                   />
                 </div>

@@ -464,7 +464,7 @@ export default function LandingPageClient({ dict, lang }: LandingPageProps) {
                     value={formData.message}
                     onChange={handleInputChange}
                     required
-                    placeholder="Tell us about your campaign…"
+                    placeholder="Tell us your situation, goals, or questions"
                     className="w-full bg-transparent border border-[color:var(--color-line-strong)] focus:border-[color:var(--color-ink)] outline-none px-4 py-3 text-base text-white placeholder:text-neutral-400 transition-colors duration-300 resize-none"
                   />
                 </div>
