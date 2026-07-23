@@ -1,8 +1,30 @@
+import type { Metadata } from "next";
 import fs from "fs";
 import path from "path";
 import crypto from "crypto";
 import ContentCreationClient from "./ContentCreationClient";
 import { interleaveByCategory } from "@/utils/portfolio";
+
+export const metadata: Metadata = {
+  title: "Content Creation & Video Editing - Make It & Market",
+  description:
+    "Professional content creation agency for social media. Make It & Market offers video editing, content creation services & marketing strategies for brands.",
+  openGraph: {
+    title: "Content Creation & Video Editing - Make It & Market",
+    description:
+      "Professional content creation agency for social media. Make It & Market offers video editing, content creation services & marketing strategies for brands.",
+    url: "https://www.makeitandmarket.com/content-creation",
+    type: "website",
+    siteName: "Make It & Market",
+  },
+  twitter: {
+    title: "Content Creation & Video Editing - Make It & Market",
+    description:
+      "Professional content creation agency for social media. Make It & Market offers video editing, content creation services & marketing strategies for brands.",
+    card: "summary_large_image",
+    images: ["https://www.makeitandmarket.com/logo.png"],
+  },
+};
 
 type Work = { src: string; category: string; type?: "image" | "video" };
 

@@ -2,21 +2,21 @@ import type { Metadata } from "next";
 import { Lock, Zap, ShieldCheck, CreditCard } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Book a Service | Make It & Market",
+  title: "Full Service Digital Marketing Agency - Make It & Market",
   description:
-    "Schedule your marketing or visual design consultation with Make It & Market. Choose your preferred time and let's bring your ideas to life.",
+    "Make It & Market is a full-service digital marketing agency for entrepreneurs and startups. We help growing businesses build brands, attract customers & succeed.",
   openGraph: {
-    title: "Book a Service | Make It & Market",
+    title: "Full Service Digital Marketing Agency - Make It & Market",
     description:
-      "Book your consultation for marketing, SEO, or visual design with Make It & Market.",
+      "Make It & Market is a full-service digital marketing agency for entrepreneurs and startups. We help growing businesses build brands, attract customers & succeed.",
     url: "https://www.makeitandmarket.com/booking",
     type: "website",
     siteName: "Make It & Market",
   },
   twitter: {
-    title: "Book a Service | Make It & Market",
+    title: "Full Service Digital Marketing Agency - Make It & Market",
     description:
-      "Book your consultation for marketing, SEO, or visual design with Make It & Market.",
+      "Make It & Market is a full-service digital marketing agency for entrepreneurs and startups. We help growing businesses build brands, attract customers & succeed.",
     card: "summary_large_image",
     images: ["https://www.makeitandmarket.com/logo.png"],
   },

@@ -1,8 +1,30 @@
+import type { Metadata } from "next";
 import fs from "fs";
 import path from "path";
 import crypto from "crypto";
 import MarketingClient from "./MarketingClient";
 import { interleaveByCategory } from "@/utils/portfolio";
+
+export const metadata: Metadata = {
+  title: "Digital Marketing Agency for Small Business - Make It & Market",
+  description:
+    "Small business digital marketing agency. Make It & Market offers social media marketing, content creation & online growth strategies for SMBs and startups.",
+  openGraph: {
+    title: "Digital Marketing Agency for Small Business - Make It & Market",
+    description:
+      "Small business digital marketing agency. Make It & Market offers social media marketing, content creation & online growth strategies for SMBs and startups.",
+    url: "https://www.makeitandmarket.com/marketing",
+    type: "website",
+    siteName: "Make It & Market",
+  },
+  twitter: {
+    title: "Digital Marketing Agency for Small Business - Make It & Market",
+    description:
+      "Small business digital marketing agency. Make It & Market offers social media marketing, content creation & online growth strategies for SMBs and startups.",
+    card: "summary_large_image",
+    images: ["https://www.makeitandmarket.com/logo.png"],
+  },
+};
 
 type Work = { src: string; category: string; type?: "image" | "video" };
 

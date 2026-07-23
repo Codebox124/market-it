@@ -1,8 +1,30 @@
+import type { Metadata } from "next";
 import fs from "fs";
 import path from "path";
 import crypto from "crypto";
 import WebsitesAppsClient from "./WebsitesAppsClient";
 import { interleaveByCategory } from "@/utils/portfolio";
+
+export const metadata: Metadata = {
+  title: "Web, App & Content Creation Agency - Make It & Market",
+  description:
+    "Make It & Market is a full-service digital agency offering website & app development, content creation & marketing services. Transform your business today.",
+  openGraph: {
+    title: "Web, App & Content Creation Agency - Make It & Market",
+    description:
+      "Make It & Market is a full-service digital agency offering website & app development, content creation & marketing services. Transform your business today.",
+    url: "https://www.makeitandmarket.com/websites-apps",
+    type: "website",
+    siteName: "Make It & Market",
+  },
+  twitter: {
+    title: "Web, App & Content Creation Agency - Make It & Market",
+    description:
+      "Make It & Market is a full-service digital agency offering website & app development, content creation & marketing services. Transform your business today.",
+    card: "summary_large_image",
+    images: ["https://www.makeitandmarket.com/logo.png"],
+  },
+};
 
 type Work = { src: string; category: string };
 
