@@ -62,7 +62,10 @@ export const metadata: Metadata = {
   },
   other: {
     // "google-site-verification": "hepa8iNMg0RjaI7FiuzVLWwwwWCQ26z5ofrZFxldzNA",
-    "google-site-verification": "XG86AIpvITfGs4ETfyPyfFXlzifaOKEMhY38WjJTpb4",
+    "google-site-verification": [
+      "XG86AIpvITfGs4ETfyPyfFXlzifaOKEMhY38WjJTpb4",
+      "6bLchd784mAl7rBGkgBZEiQhlpTfq9kW3JywH7powGM",
+    ],
     "ahrefs-site-verification": "eU2DaMSVvJ6i1oMhXpI7jQ",
   },
 };
@@ -90,6 +93,9 @@ export default function RootLayout({
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
               gtag('config', 'G-C4EPTMEWQJ', {
+                page_path: window.location.pathname,
+              });
+              gtag('config', 'G-2WEYQ37430', {
                 page_path: window.location.pathname,
               });
             `,
