@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { useRef, useState } from "react";
 import Link from "next/link";
 import emailjs from "@emailjs/browser";
+import LatestBlogs from "@/components/home/LatestBlogs";
 
 // --- MOTION ---
 const editorial = {
@@ -370,6 +371,13 @@ export default function LandingPageClient({ dict, lang }: LandingPageProps) {
               </motion.figure>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* ============================ JOURNAL ============================ */}
+      <section className="relative border-t border-[color:var(--color-line)]">
+        <div className="max-w-[1600px] mx-auto px-6 lg:px-10 py-28 md:py-40">
+          <LatestBlogs lang={lang} />
         </div>
       </section>
 
