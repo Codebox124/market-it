@@ -25,7 +25,7 @@ const jsonLd = {
   ],
 };
 
-const clientLogos: { src: string; alt: string; invert?: boolean }[] = [
+const clientLogos: { src: string; alt: string; invert?: boolean; boost?: boolean }[] = [
   {
     src: "/clientScroll/exopest-tile.webp",
     alt: "EXOPEST Pest Control — brand identity designed by Make It & Market",
@@ -73,8 +73,9 @@ const clientLogos: { src: string; alt: string; invert?: boolean }[] = [
     alt: "Oliver's Tacos al Carbon — logo designed by Make It & Market",
   },
   {
-    src: "/clientScroll/ox-tile.webp",
-    alt: "Ox Movers — logo designed by Make It & Market",
+    src: "/clientScroll/forever-tile.webp",
+    alt: "The Forever Runway — logo designed by Make It & Market",
+    boost: true,
   },
   {
     src: "/clientScroll/moses-tile.webp",
@@ -334,7 +335,7 @@ export default function HomePage() {
                   alt={logo.alt}
                   fill
                   sizes="(max-width: 1024px) 33vw, 20vw"
-                  className={`object-contain p-3 md:p-4${logo.invert ? " invert" : ""}`}
+                  className={`object-contain ${logo.boost ? "p-1 md:p-1" : "p-3 md:p-4"}${logo.invert ? " invert" : ""}`}
                 />
               </div>
             ))}
