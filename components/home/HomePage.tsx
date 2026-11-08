@@ -319,7 +319,7 @@ export default function HomePage() {
       </section>
 
       {/* CLIENT LOGOS */}
-      <section aria-label="Selected clients" className="py-14 md:py-20 border-t border-[color:var(--color-line)]">
+      <section aria-label="Selected clients" className="py-16 md:py-24 border-t border-[color:var(--color-line)]">
         <div className="max-w-[1600px] mx-auto px-6 lg:px-10">
           <h2 className="text-center text-[0.7rem] font-medium tracking-[0.32em] uppercase text-[color:var(--color-ink-muted)]">
             Trusted by ambitious brands
@@ -344,7 +344,7 @@ export default function HomePage() {
       </section>
 
       {/* SELECTED WORK */}
-      <section id="work" className="py-20 md:py-28 border-t border-[color:var(--color-line)] scroll-mt-24">
+      <section id="work" className="py-24 md:py-36 border-t border-[color:var(--color-line)] scroll-mt-24">
         <div className="max-w-[1600px] mx-auto px-6 lg:px-10">
           <h2 className="font-fraunces font-medium text-[color:var(--color-paper)] text-[clamp(2.2rem,5vw,4.2rem)] leading-none">
             Selected Work
@@ -355,7 +355,7 @@ export default function HomePage() {
             across healthcare, hospitality, publishing, fashion and the arts.
           </p>
 
-          <div className="mt-14 grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8">
+          <div className="mt-16 grid grid-cols-1 md:grid-cols-12 gap-x-6 gap-y-16 md:gap-x-8 md:gap-y-24">
             {work.map((piece) => (
               <article key={piece.title} className={`${piece.span} group`}>
                 <div
@@ -382,7 +382,7 @@ export default function HomePage() {
                     />
                   )}
                 </div>
-                <h3 className="mt-5 font-fraunces text-2xl md:text-[1.7rem] font-medium text-[color:var(--color-paper)]">
+                <h3 className="mt-6 font-fraunces text-2xl md:text-[1.7rem] font-medium text-[color:var(--color-paper)]">
                   {piece.title}
                 </h3>
                 <p className="mt-2 max-w-xl leading-relaxed text-[color:var(--color-ink-soft)]">
@@ -395,7 +395,7 @@ export default function HomePage() {
       </section>
 
       {/* SERVICES */}
-      <section id="services" className="py-20 md:py-28 border-t border-[color:var(--color-line)] scroll-mt-24">
+      <section id="services" className="py-24 md:py-36 border-t border-[color:var(--color-line)] scroll-mt-24">
         <div className="max-w-[1600px] mx-auto px-6 lg:px-10">
           <h2 className="font-fraunces font-medium text-[color:var(--color-paper)] text-[clamp(2.2rem,5vw,4.2rem)] leading-none">
             What We Do
@@ -421,7 +421,7 @@ export default function HomePage() {
             {services.map((service) => (
               <article
                 key={service.title}
-                className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12 py-10 border-t border-[color:var(--color-line)]"
+                className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12 py-12 border-t border-[color:var(--color-line)]"
               >
                 <h3 className="lg:col-span-4 font-fraunces text-3xl md:text-4xl font-medium text-[color:var(--color-paper)]">
                   {service.title}
@@ -449,7 +449,7 @@ export default function HomePage() {
       </section>
 
       {/* ABOUT */}
-      <section id="about" className="py-20 md:py-28 border-t border-[color:var(--color-line)] scroll-mt-24">
+      <section id="about" className="py-24 md:py-36 border-t border-[color:var(--color-line)] scroll-mt-24">
         <div className="max-w-[1600px] mx-auto px-6 lg:px-10">
           <h2 className="font-fraunces font-medium text-[color:var(--color-paper)] text-[clamp(2.2rem,5vw,4.2rem)] leading-none">
             About
@@ -491,7 +491,7 @@ export default function HomePage() {
       </section>
 
       {/* CLIENT VOICES */}
-      <section aria-label="Client testimonials" className="py-20 md:py-28 border-t border-[color:var(--color-line)]">
+      <section aria-label="Client testimonials" className="py-24 md:py-36 border-t border-[color:var(--color-line)]">
         <div className="max-w-[1600px] mx-auto px-6 lg:px-10">
           <h2 className="font-fraunces font-medium text-[color:var(--color-paper)] text-[clamp(2.2rem,5vw,4.2rem)] leading-none">
             Client Voices
@@ -513,7 +513,7 @@ export default function HomePage() {
       </section>
 
       {/* CONTACT */}
-      <section id="contact" className="py-20 md:py-28 border-t border-[color:var(--color-line)] scroll-mt-24">
+      <section id="contact" className="py-24 md:py-36 border-t border-[color:var(--color-line)] scroll-mt-24">
         <div className="max-w-[1600px] mx-auto px-6 lg:px-10">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
             <div className="lg:col-span-5">
