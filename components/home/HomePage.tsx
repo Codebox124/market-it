@@ -25,7 +25,7 @@ const jsonLd = {
   ],
 };
 
-const clientLogos: { src: string; alt: string; invert?: boolean; boost?: boolean }[] = [
+const clientLogos: { src: string; alt: string; invert?: boolean; disc?: boolean }[] = [
   {
     src: "/clientScroll/exopest-tile.webp",
     alt: "EXOPEST Pest Control — brand identity designed by Make It & Market",
@@ -42,6 +42,7 @@ const clientLogos: { src: string; alt: string; invert?: boolean; boost?: boolean
   {
     src: "/clientScroll/terra-tile.webp",
     alt: "Terra Design Group — logo designed by Make It & Market",
+    disc: true,
   },
   {
     src: "/clientScroll/popcorn-tile.webp",
@@ -75,7 +76,7 @@ const clientLogos: { src: string; alt: string; invert?: boolean; boost?: boolean
   {
     src: "/clientScroll/forever-tile.webp",
     alt: "The Forever Runway — logo designed by Make It & Market",
-    boost: true,
+    disc: true,
   },
   {
     src: "/clientScroll/moses-tile.webp",
@@ -84,6 +85,7 @@ const clientLogos: { src: string; alt: string; invert?: boolean; boost?: boolean
   {
     src: "/clientScroll/kids-dynasty-tile.webp",
     alt: "Kids Dynasty Daycare — logo designed by Make It & Market",
+    disc: true,
   },
   {
     src: "/clientScroll/laara-tile.webp",
@@ -328,15 +330,27 @@ export default function HomePage() {
             {clientLogos.map((logo) => (
               <div
                 key={logo.src}
-                className="relative h-24 md:h-32 bg-[color:var(--color-surface)]"
+                className="relative h-24 md:h-32 bg-[color:var(--color-surface)] flex items-center justify-center"
               >
-                <Image
-                  src={logo.src}
-                  alt={logo.alt}
-                  fill
-                  sizes="(max-width: 1024px) 33vw, 20vw"
-                  className={`object-contain ${logo.boost ? "p-1 md:p-1" : "p-3 md:p-4"}${logo.invert ? " invert" : ""}`}
-                />
+                {logo.disc ? (
+                  <div className="relative h-[88%] aspect-square rounded-full bg-white overflow-hidden">
+                    <Image
+                      src={logo.src}
+                      alt={logo.alt}
+                      fill
+                      sizes="(max-width: 1024px) 33vw, 20vw"
+                      className="object-contain p-2"
+                    />
+                  </div>
+                ) : (
+                  <Image
+                    src={logo.src}
+                    alt={logo.alt}
+                    fill
+                    sizes="(max-width: 1024px) 33vw, 20vw"
+                    className={`object-contain p-3 md:p-4${logo.invert ? " invert" : ""}`}
+                  />
+                )}
               </div>
             ))}
           </div>
