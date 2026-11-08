@@ -5,29 +5,36 @@ import Image from "next/image";
 
 /**
  * Click-to-play video facade: the page loads only a poster image.
- * The YouTube player (and its scripts) loads solely after a visitor
- * clicks play, so the tile costs the page nothing in load performance.
+ * The self-hosted video files (WebM with an MP4 fallback) load
+ * solely after a visitor clicks play, so the tile costs the page
+ * nothing in load performance.
  */
 export default function VideoTile({
   poster,
   alt,
-  videoId,
+  webm,
+  mp4,
 }: {
   poster: string;
   alt: string;
-  videoId: string;
+  webm: string;
+  mp4: string;
 }) {
   const [playing, setPlaying] = useState(false);
 
   if (playing) {
     return (
-      <iframe
-        className="absolute inset-0 h-full w-full"
-        src={`https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1&rel=0`}
-        title={alt}
-        allow="accelerometer; autoplay; encrypted-media; picture-in-picture"
-        allowFullScreen
-      />
+      <video
+        className="absolute inset-0 h-full w-full object-cover"
+        poster={poster}
+        autoPlay
+        controls
+        playsInline
+        preload="metadata"
+      >
+        <source src={webm} type="video/webm" />
+        <source src={mp4} type="video/mp4" />
+      </video>
     );
   }
 

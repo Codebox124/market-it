@@ -25,22 +25,69 @@ const jsonLd = {
   ],
 };
 
-const clientLogos = [
+const clientLogos: { src: string; alt: string; invert?: boolean }[] = [
   {
-    src: "/clientScroll/image-exopest-michael-perez-before.webp",
+    src: "/clientScroll/exopest-tile.webp",
     alt: "EXOPEST Pest Control — brand identity designed by Make It & Market",
   },
   {
-    src: "/clientScroll/de-zavala-elementary.webp",
+    src: "/clientScroll/de-zavala-tile.webp",
     alt: "De Zavala Elementary — logo designed by Make It & Market",
   },
   {
-    src: "/clientScroll/a.webp",
+    src: "/clientScroll/builditect-tile.webp",
+    alt: "Builditect Roofing — logo designed by Make It & Market",
+    invert: true,
+  },
+  {
+    src: "/clientScroll/terra-tile.webp",
     alt: "Terra Design Group — logo designed by Make It & Market",
   },
   {
-    src: "/clientScroll/gm-logo-04.webp",
+    src: "/clientScroll/popcorn-tile.webp",
+    alt: "Popcorn TV — logo designed by Make It & Market",
+  },
+  {
+    src: "/clientScroll/gm-tile.webp",
     alt: "Glow Minds Agency — logo designed by Make It & Market",
+  },
+  {
+    src: "/clientScroll/hot-or-not-tile.webp",
+    alt: "Hot or Not — logo designed by Make It & Market",
+  },
+  {
+    src: "/clientScroll/reefnreem-tile.webp",
+    alt: "ReefNReem Films — logo designed by Make It & Market",
+    invert: true,
+  },
+  {
+    src: "/clientScroll/arc-tile.webp",
+    alt: "ARC — logo designed by Make It & Market",
+  },
+  {
+    src: "/clientScroll/northeast-tile.webp",
+    alt: "Northeast Hydraulics & Machine — logo designed by Make It & Market",
+  },
+  {
+    src: "/clientScroll/olivers-tile.webp",
+    alt: "Oliver's Tacos al Carbon — logo designed by Make It & Market",
+  },
+  {
+    src: "/clientScroll/ox-tile.webp",
+    alt: "Ox Movers — logo designed by Make It & Market",
+  },
+  {
+    src: "/clientScroll/moses-tile.webp",
+    alt: "Moses Villani — logo designed by Make It & Market",
+  },
+  {
+    src: "/clientScroll/kids-dynasty-tile.webp",
+    alt: "Kids Dynasty Daycare — logo designed by Make It & Market",
+  },
+  {
+    src: "/clientScroll/laara-tile.webp",
+    alt: "Laara Raynier Mastercutter Academy — logo designed by Make It & Market",
+    invert: true,
   },
 ];
 
@@ -52,7 +99,7 @@ const work: {
   span: string;
   aspect: string;
   fit?: "cover" | "contain";
-  video?: string;
+  video?: { webm: string; mp4: string };
 }[] = [
   {
     title: "Brand Identity & 3D",
@@ -130,7 +177,7 @@ const work: {
       "Commercials, brand films and social video — shot, edited and finished in-house.",
     span: "md:col-span-7",
     aspect: "aspect-[16/10]",
-    video: "OmK2CvqtP5w",
+    video: { webm: "/video/showcase.webm", mp4: "/video/showcase.mp4" },
   },
 ];
 
@@ -276,18 +323,18 @@ export default function HomePage() {
           <h2 className="text-center text-[0.7rem] font-medium tracking-[0.32em] uppercase text-[color:var(--color-ink-muted)]">
             Trusted by ambitious brands
           </h2>
-          <div className="mt-10 grid grid-cols-2 lg:grid-cols-4 gap-px bg-[color:var(--color-line)] border border-[color:var(--color-line)]">
+          <div className="mt-10 grid grid-cols-3 lg:grid-cols-5 gap-px bg-[color:var(--color-line)] border border-[color:var(--color-line)]">
             {clientLogos.map((logo) => (
               <div
                 key={logo.src}
-                className="relative h-44 md:h-56 bg-[color:var(--color-surface)]"
+                className="relative h-24 md:h-32 bg-[color:var(--color-surface)]"
               >
                 <Image
                   src={logo.src}
                   alt={logo.alt}
                   fill
-                  sizes="(max-width: 1024px) 50vw, 25vw"
-                  className="object-contain p-8 md:p-10"
+                  sizes="(max-width: 1024px) 33vw, 20vw"
+                  className={`object-contain p-3 md:p-4${logo.invert ? " invert" : ""}`}
                 />
               </div>
             ))}
@@ -317,7 +364,8 @@ export default function HomePage() {
                     <VideoTile
                       poster={piece.image}
                       alt={piece.alt}
-                      videoId={piece.video}
+                      webm={piece.video.webm}
+                      mp4={piece.video.mp4}
                     />
                   ) : (
                     <Image
