@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import EnquiryForm from "@/components/home/EnquiryForm";
+import VideoTile from "@/components/home/VideoTile";
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -8,7 +9,7 @@ const jsonLd = {
   name: "Make It & Market",
   url: "https://www.makeitandmarket.com/",
   description:
-    "Branding, design and content creation firm for mid-size and enterprise clients. Brand identity, graphic design, photography, video, animation and websites.",
+    "Branding, design and content creation studio for mid-size and enterprise clients. Brand identity, graphic design, photography, video, animation and websites.",
   email: "info@makeitandmarket.com",
   telephone: "+1-347-659-1708",
   areaServed: "New York",
@@ -30,8 +31,8 @@ const clientLogos = [
     alt: "EXOPEST Pest Control — brand identity designed by Make It & Market",
   },
   {
-    src: "/clientScroll/logo-mojo-logo.webp",
-    alt: "Logo Mojo — logo designed by Make It & Market",
+    src: "/clientScroll/de-zavala-elementary.webp",
+    alt: "De Zavala Elementary — logo designed by Make It & Market",
   },
   {
     src: "/clientScroll/a.webp",
@@ -43,66 +44,93 @@ const clientLogos = [
   },
 ];
 
-const work = [
+const work: {
+  title: string;
+  image: string;
+  alt: string;
+  blurb: string;
+  span: string;
+  aspect: string;
+  fit?: "cover" | "contain";
+  video?: string;
+}[] = [
   {
-    title: "Brand Identity in Three Dimensions",
-    category: "Brand Identity & 3D",
+    title: "Brand Identity & 3D",
     image: "/content/logo CS Paris 7.webp",
-    alt: "Sculptural 3D brand identity render — a letterform staircase in teal and green resin",
+    alt: "Brand identity and 3D design by Make It & Market",
     blurb:
-      "A sculptural identity study — the brand mark treated as architecture, built and lit in 3D.",
+      "Logos, identity systems and 3D brand work — marks built to be recognised anywhere.",
     span: "md:col-span-7",
     aspect: "aspect-[16/10]",
   },
   {
-    title: "Studio Portraiture",
-    category: "Photography & Retouching",
-    image: "/photo/DSC00327 edit.webp",
-    alt: "Black and white studio portrait, professionally retouched by Make It & Market",
+    title: "Photography & Retouching",
+    image: "/photo/photography-showcase.webp",
+    alt: "Photography and retouching by Make It & Market",
     blurb:
-      "Editorial portrait work — shot, retouched and finished to a gallery standard.",
+      "Photography and retouching, finished to an editorial standard.",
     span: "md:col-span-5",
     aspect: "aspect-[4/3]",
   },
   {
-    title: "How to Pick a Lock",
-    category: "Editorial & Cover Design",
+    title: "Editorial & Cover Design",
     image: "/content/book cover 3 KING.webp",
-    alt: "Book cover design for How to Pick a Lock — bold typography over a cinematic still",
+    alt: "Book cover and editorial design by Make It & Market",
     blurb:
-      "Cover design for a published title — bold typography against a cinematic still.",
+      "Book covers and editorial design with typography that earns a second look.",
+    fit: "contain",
     span: "md:col-span-5",
     aspect: "aspect-[4/3]",
   },
   {
-    title: "Radmila Lolly — Artist Website",
-    category: "Website Design",
-    image: "/clientShowcase/client (6).webp",
-    alt: "Website design for recording artist Radmila Lolly — editorial, image-led layout with desert photography",
+    title: "Website Design",
+    image: "/clientShowcase/website-showcase.webp",
+    alt: "Website design by Make It & Market",
     blurb:
-      "A cinematic, image-led website for a recording artist — desert light, couture red, and nothing ordinary.",
+      "Custom websites and landing pages — designed and built in-house to convert.",
+    fit: "contain",
     span: "md:col-span-7",
     aspect: "aspect-[16/10]",
   },
   {
-    title: "Storybook Worlds",
-    category: "Animation & Motion",
-    image: "/animation/20.webp",
-    alt: "Hand-illustrated storybook animation still — a tea party on a mushroom table, produced by Make It & Market",
+    title: "Animation & Motion",
+    image: "/animation/animation-showcase.webp",
+    alt: "Animation and motion design by Make It & Market",
     blurb:
-      "Storybook animation with a hand-illustrated finish — every frame a small painting.",
+      "2D and 3D animation — characters, stories and brand films produced in-house.",
+    fit: "contain",
     span: "md:col-span-7",
     aspect: "aspect-[16/10]",
   },
   {
-    title: "Campaign Design",
-    category: "Campaign & Advertising Design",
+    title: "Campaign & Advertising Design",
     image: "/graphic/4 color sheet joel edit 2.webp",
-    alt: "Advertising campaign flyer design for Spector Advertising, designed by Make It & Market",
+    alt: "Campaign and advertising design by Make It & Market",
     blurb:
-      "Direct-response campaign creative — dense with offer, built to be read at a glance.",
+      "Campaign creative for print and digital — built to be read at a glance.",
+    fit: "contain",
     span: "md:col-span-5",
     aspect: "aspect-[4/3]",
+  },
+  {
+    title: "Social Media",
+    image: "/social/social-showcase.webp",
+    alt: "Social media content by Make It & Market",
+    blurb:
+      "Content and campaigns that keep a brand present, consistent and worth following.",
+    span: "md:col-span-5",
+    aspect: "aspect-[4/3]",
+    fit: "contain",
+  },
+  {
+    title: "Video Production",
+    image: "/video/video-showcase.webp",
+    alt: "Video production by Make It & Market",
+    blurb:
+      "Commercials, brand films and social video — shot, edited and finished in-house.",
+    span: "md:col-span-7",
+    aspect: "aspect-[16/10]",
+    video: "OmK2CvqtP5w",
   },
 ];
 
@@ -210,7 +238,7 @@ export default function HomePage() {
             <em className="italic text-[color:var(--color-gold)]">remembers.</em>
           </h1>
           <p className="mt-8 max-w-2xl text-lg leading-relaxed text-[color:var(--color-ink-soft)]">
-            Make It &amp; Market is a branding, design and content creation firm
+            Make It &amp; Market is a branding, design and content creation studio
             for companies that refuse to blend in. Identity, design, film and
             digital — conceived and produced under one roof, to an enterprise
             standard.
@@ -228,7 +256,7 @@ export default function HomePage() {
             <div className="relative w-full aspect-[16/9] md:aspect-[21/9] overflow-hidden bg-[color:var(--color-surface)]">
               <Image
                 src="/content/logo CS Paris 7.webp"
-                alt="3D brand identity sculpture — a letterform staircase in teal and green resin, created by Make It & Market"
+                alt="Brand identity design by Make It & Market"
                 fill
                 priority
                 sizes="(max-width: 1600px) 100vw, 1600px"
@@ -236,7 +264,7 @@ export default function HomePage() {
               />
             </div>
             <figcaption className="mt-4 text-sm text-[color:var(--color-ink-muted)]">
-              Brand identity, rendered in three dimensions.
+              Branding, design and content creation — under one roof.
             </figcaption>
           </figure>
         </div>
@@ -285,18 +313,27 @@ export default function HomePage() {
                 <div
                   className={`relative w-full ${piece.aspect} overflow-hidden bg-[color:var(--color-surface)]`}
                 >
-                  <Image
-                    src={piece.image}
+                  {piece.video ? (
+                    <VideoTile
+                      poster={piece.image}
+                      alt={piece.alt}
+                      videoId={piece.video}
+                    />
+                  ) : (
+                    <Image
+                      src={piece.image}
                     alt={piece.alt}
                     fill
                     sizes="(max-width: 768px) 100vw, 60vw"
-                    className="object-cover transition-transform duration-700 ease-out group-hover:scale-[1.03]"
-                  />
+                      className={
+                        piece.fit === "contain"
+                          ? "object-contain p-4"
+                          : "object-cover transition-transform duration-700 ease-out group-hover:scale-[1.03]"
+                      }
+                    />
+                  )}
                 </div>
-                <p className="mt-5 text-[0.7rem] font-medium tracking-[0.24em] uppercase text-[color:var(--color-gold)]">
-                  {piece.category}
-                </p>
-                <h3 className="mt-2 font-fraunces text-2xl md:text-[1.7rem] font-medium text-[color:var(--color-paper)]">
+                <h3 className="mt-5 font-fraunces text-2xl md:text-[1.7rem] font-medium text-[color:var(--color-paper)]">
                   {piece.title}
                 </h3>
                 <p className="mt-2 max-w-xl leading-relaxed text-[color:var(--color-ink-soft)]">
@@ -369,7 +406,7 @@ export default function HomePage() {
             About
           </h2>
           <p className="mt-8 max-w-3xl font-fraunces text-2xl md:text-[2rem] leading-snug text-[color:var(--color-paper)]">
-            Make It &amp; Market is a branding, design and content creation firm
+            Make It &amp; Market is a branding, design and content creation studio
             based in New York. We partner with mid-size and enterprise clients
             who need senior-level creative without agency bloat — direct access
             to the people doing the work, and a standard of finish that survives
