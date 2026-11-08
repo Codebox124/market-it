@@ -39,7 +39,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const dict = await getDictionary(lang);
 
   // Setup Base URL
-  const baseUrl = "https://makeitandmarket.com";
+  const baseUrl = "https://www.makeitandmarket.com";
 
   // Mapping untuk format locale SEO (misal id -> id_ID)
   const localeMap: Record<string, string> = {
