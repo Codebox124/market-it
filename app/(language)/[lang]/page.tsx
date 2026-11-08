@@ -6,21 +6,10 @@ import HomePage from "@/components/home/HomePage";
 // Definisikan bahasa yang diizinkan
 const locales = [
   "en",
-  "id",
   "fr",
-  "bn",
-  "hk",
-  "gu",
-  "hi",
   "zh",
-  "ja",
-  "ko",
-  "ar",
   "pt",
   "es",
-  "tl",
-  "ur",
-  "ru",
 ];
 
 // Generate Static Params untuk build time (Ini tetap sama)
