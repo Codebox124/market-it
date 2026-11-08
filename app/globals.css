@@ -29,6 +29,11 @@
   --color-noir-line: #1f1f1f;
   --color-noir-line-strong: #2e2e2e;
 
+  /* BRAND WARMTH — redesign palette (homepage-led, usable site-wide) */
+  --color-paper: #f4f1ea;           /* warm off-white for display type */
+  --color-gold: #c6a15b;            /* the one brand accent */
+  --color-gold-strong: #d9b878;
+
   /* "ACCENT" is just pure white — high-contrast inversion */
   --color-accent: #ffffff;
   --color-accent-hover: #e5e5e5;
@@ -94,6 +99,12 @@ body {
 .font-display {
   font-family: var(--font-display);
   letter-spacing: -0.03em;
+}
+
+/* Serif display — Fraunces, loaded in the root layout (redesign headlines) */
+.font-fraunces {
+  font-family: var(--font-fraunces), Georgia, 'Times New Roman', serif;
+  letter-spacing: -0.01em;
 }
 
 /* Massive headline — vmgroupe / forgedbyraji scale */
@@ -266,8 +277,8 @@ body {
    ========================================================= */
 
 ::selection {
-  background: var(--color-ink);
-  color: var(--color-canvas);
+  background: var(--color-gold);
+  color: #0b0b0d;
 }
 
 /* =========================================================
