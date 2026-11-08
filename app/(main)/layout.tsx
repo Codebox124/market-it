@@ -41,23 +41,22 @@ const fraunces = Fraunces({
 });
 
 export const metadata: Metadata = {
-  title: "Make It & Market | Creative Marketing & Visual Design",
+  title: "Make It & Market — Branding, Design & Content Creation",
   description:
-    "A creative marketing agency offering advertising, web design, and visual content to help brands grow visibility, engagement, and impact.",
+    "Make It & Market is a branding, design and content creation firm for mid-size and enterprise clients. Brand identity, graphic design, photography, video, animation and websites — produced to an enterprise standard.",
   openGraph: {
-    title: "Make It & Market | Creative Marketing & Visual Design",
+    title: "Make It & Market — Branding, Design & Content Creation",
     description:
-      "We craft custom content and marketing campaigns to help brands grow.",
+      "We build brands the market remembers. Identity, design, film and digital — conceived and produced under one roof.",
     url: "https://www.makeitandmarket.com",
     siteName: "Make It & Market",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Make It & Market",
+    title: "Make It & Market — Branding, Design & Content Creation",
     description:
-      "Visuals & Marketing solutions to help brands scale effectively.",
-    creator: "@yourtwitterhandle",
+      "Branding, design and content creation for companies that refuse to blend in.",
     images: ["https://www.makeitandmarket.com/logo.png"],
   },
   other: {
