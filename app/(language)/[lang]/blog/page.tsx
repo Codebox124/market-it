@@ -8,21 +8,10 @@ type Props = {
 
 const ALLOWED_BLOG_LANGS = [
   "en",
-  "id",
   "fr",
-  "bn",
-  "hk",
-  "gu",
-  "hi",
   "zh",
-  "ja",
-  "ko",
-  "ar",
   "pt",
   "es",
-  "tl",
-  "ur",
-  "ru",
 ];
 
 const DICTIONARY: Record<
