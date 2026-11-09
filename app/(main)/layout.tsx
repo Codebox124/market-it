@@ -43,7 +43,7 @@ const fraunces = Libre_Caslon_Text({
 export const metadata: Metadata = {
   title: "Make It & Market — Branding, Design & Content Creation",
   description:
-    "Make It & Market is a branding, design and content creation studio for mid-size and enterprise clients. Brand identity, graphic design, photography, video, animation and websites — produced to an enterprise standard.",
+    "Make It & Market is a branding, design and content creation studio for a wide array of businesses and entrepreneurs. Brand identity, graphic design, photography, video, animation and websites — produced to an enterprise standard.",
   openGraph: {
     title: "Make It & Market — Branding, Design & Content Creation",
     description:
