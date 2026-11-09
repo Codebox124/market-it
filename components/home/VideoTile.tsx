@@ -25,7 +25,7 @@ export default function VideoTile({
   if (playing) {
     return (
       <video
-        className="absolute inset-0 h-full w-full object-cover"
+        className="absolute inset-0 h-full w-full object-contain bg-[color:var(--color-surface)]"
         poster={poster}
         autoPlay
         controls
@@ -50,7 +50,7 @@ export default function VideoTile({
         alt={alt}
         fill
         sizes="(min-width: 768px) 58vw, 100vw"
-        className="object-cover"
+        className="object-contain"
       />
       <span className="absolute inset-0 flex items-center justify-center">
         <span className="flex h-16 w-16 items-center justify-center rounded-full bg-[color:var(--color-gold)] text-[#0B0B0D] shadow-xl transition-transform duration-300 group-hover/video:scale-110">
