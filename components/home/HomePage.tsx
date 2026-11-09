@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import EnquiryForm from "@/components/home/EnquiryForm";
 import VideoTile from "@/components/home/VideoTile";
+import ReelVideo from "@/components/home/ReelVideo";
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -123,11 +124,11 @@ const work: {
     aspect: "aspect-[4/3]",
   },
   {
-    title: "Editorial & Cover Design",
+    title: "Cover Art & Book Design",
     image: "/content/book cover 3 KING.webp",
-    alt: "Book cover and editorial design by Make It & Market",
+    alt: "Cover art and book design by Make It & Market",
     blurb:
-      "Book covers and editorial design with typography that earns a second look.",
+      "Cover art and book design with typography that earns a second look.",
     fit: "contain",
     span: "md:col-span-5",
     aspect: "aspect-[4/3]",
@@ -153,9 +154,9 @@ const work: {
     aspect: "aspect-[16/10]",
   },
   {
-    title: "Campaign & Advertising Design",
+    title: "Advertising & Campaign Design",
     image: "/graphic/4 color sheet joel edit 2.webp",
-    alt: "Campaign and advertising design by Make It & Market",
+    alt: "Advertising and campaign design by Make It & Market",
     blurb:
       "Campaign creative for print and digital — built to be read at a glance.",
     fit: "contain",
@@ -277,8 +278,13 @@ export default function HomePage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
+      {/* MAIN REEL — leads the page; the fixed nav floats over it */}
+      <section aria-label="Make It & Market showreel">
+        <ReelVideo />
+      </section>
+
       {/* HERO */}
-      <section className="relative pt-36 md:pt-44 pb-16 md:pb-20 overflow-hidden">
+      <section className="relative pt-20 md:pt-24 pb-16 md:pb-20 overflow-hidden">
         <div className="max-w-[1600px] mx-auto px-6 lg:px-10">
           <p className="eyebrow !text-[color:var(--color-gold)] mb-8">
             Branding · Design · Content Creation
@@ -318,22 +324,6 @@ export default function HomePage() {
             </figcaption>
           </figure>
         </div>
-      </section>
-
-      {/* MAIN REEL — the studio showreel that headlined the previous homepage */}
-      <section aria-label="Make It & Market showreel">
-        <video
-          className="block w-full aspect-video object-cover"
-          poster="/video/main-reel-poster.webp"
-          autoPlay
-          muted
-          loop
-          playsInline
-          preload="metadata"
-        >
-          <source src="/video/main-reel.webm" type="video/webm" />
-          <source src="/video/main-reel.mp4" type="video/mp4" />
-        </video>
       </section>
 
       {/* CLIENT LOGOS */}
