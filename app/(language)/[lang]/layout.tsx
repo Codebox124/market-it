@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { getDictionary } from "@/utils/get-dictionary";
 import "@/app/globals.css";
-import { Space_Grotesk, Geist, Fraunces } from "next/font/google";
+import { Space_Grotesk, Geist, Libre_Caslon_Text } from "next/font/google";
 import Script from "next/script";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
@@ -17,8 +17,8 @@ const geistSans = Geist({
   subsets: ["latin"],
 });
 
-const fraunces = Fraunces({
-  weight: ["300", "400", "500", "600", "700"],
+const fraunces = Libre_Caslon_Text({
+  weight: ["400", "700"],
   style: ["normal", "italic"],
   variable: "--font-fraunces",
   subsets: ["latin"],
