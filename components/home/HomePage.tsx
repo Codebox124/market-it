@@ -146,7 +146,7 @@ const work: {
   },
   {
     title: "Video Production",
-    image: "/video/video-showcase-v4.webp",
+    image: "/video/video-showcase-v5.webp",
     alt: "Video production by Make It & Market",
     blurb:
       "Commercials, brand films and social video — shot, edited and finished in-house.",
@@ -166,7 +166,7 @@ const work: {
   },
   {
     title: "Presentations",
-    image: "/content/presentations-showcase-v5.webp",
+    image: "/content/presentations-showcase-v8.webp",
     alt: "Presentation design by Make It & Market",
     blurb:
       "Pitch decks and presentations — designed to hold a room and land the point.",
@@ -176,7 +176,7 @@ const work: {
   },
   {
     title: "Documents",
-    image: "/content/documents-showcase.webp",
+    image: "/content/documents-showcase-v2.webp",
     alt: "Document design by Make It & Market",
     blurb:
       "Brochures, reports and documents — designed, typeset and print-ready.",
@@ -195,7 +195,7 @@ const work: {
   },
   {
     title: "Drawing & Sketch Artwork",
-    image: "/content/drawing-sketch-showcase-v2.webp",
+    image: "/content/drawing-sketch-showcase-v3.webp",
     alt: "Drawing and sketch artwork by Make It & Market",
     blurb:
       "Hand-drawn artwork and sketches — concepts developed in pencil and ink.",
