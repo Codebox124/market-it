@@ -4,7 +4,7 @@ import {
   Azeret_Mono as Geist_Mono,
   IBM_Plex_Mono,
   Space_Grotesk,
-  Fraunces,
+  Libre_Caslon_Text,
 } from "next/font/google";
 import Script from "next/script";
 import "../globals.css";
@@ -33,8 +33,8 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const fraunces = Fraunces({
-  weight: ["300", "400", "500", "600", "700"],
+const fraunces = Libre_Caslon_Text({
+  weight: ["400", "700"],
   style: ["normal", "italic"],
   variable: "--font-fraunces",
   subsets: ["latin"],
