@@ -50,7 +50,7 @@ const clientLogos: { src: string; alt: string; invert?: boolean; disc?: boolean 
     alt: "Popcorn TV — logo designed by Make It & Market",
   },
   {
-    src: "/clientScroll/gm-tile.webp",
+    src: "/clientScroll/gm-tile-v2.webp",
     alt: "Glow Minds Agency — logo designed by Make It & Market",
   },
   {
@@ -111,8 +111,8 @@ const work: {
     alt: "Branding and identity design by Make It & Market",
     blurb:
       "Logos and identity systems — marks built to be recognised anywhere.",
-    span: "md:col-span-7",
-    aspect: "aspect-[16/10]",
+    span: "md:col-span-6",
+    aspect: "aspect-[4/3]",
   },
   {
     title: "App & Website Design",
@@ -121,7 +121,7 @@ const work: {
     blurb:
       "Custom websites, apps and landing pages — designed and built in-house to convert.",
     fit: "contain",
-    span: "md:col-span-5",
+    span: "md:col-span-6",
     aspect: "aspect-[4/3]",
   },
   {
@@ -131,7 +131,7 @@ const work: {
     blurb:
       "Campaign creative for print and digital — built to be read at a glance.",
     fit: "contain",
-    span: "md:col-span-5",
+    span: "md:col-span-6",
     aspect: "aspect-[4/3]",
   },
   {
@@ -140,18 +140,18 @@ const work: {
     alt: "Social media content by Make It & Market",
     blurb:
       "Content and campaigns that keep a brand present, consistent and worth following.",
-    span: "md:col-span-7",
+    span: "md:col-span-6",
     aspect: "aspect-[4/3]",
     fit: "contain",
   },
   {
     title: "Video Production",
-    image: "/video/video-showcase.webp",
+    image: "/video/video-showcase-v2.webp",
     alt: "Video production by Make It & Market",
     blurb:
       "Commercials, brand films and social video — shot, edited and finished in-house.",
-    span: "md:col-span-7",
-    aspect: "aspect-[16/10]",
+    span: "md:col-span-6",
+    aspect: "aspect-[4/3]",
     video: { webm: "/video/showcase.webm", mp4: "/video/showcase.mp4" },
   },
   {
@@ -161,7 +161,7 @@ const work: {
     blurb:
       "2D and 3D animation — characters, stories and brand films produced in-house.",
     fit: "contain",
-    span: "md:col-span-5",
+    span: "md:col-span-6",
     aspect: "aspect-[4/3]",
   },
   {
@@ -170,7 +170,7 @@ const work: {
     alt: "3D modeling by Make It & Market",
     blurb:
       "Objects, products and brand worlds — modelled and rendered in 3D.",
-    span: "md:col-span-5",
+    span: "md:col-span-6",
     aspect: "aspect-[4/3]",
   },
   {
@@ -180,17 +180,17 @@ const work: {
     blurb:
       "Hand-drawn artwork and sketches — concepts developed in pencil and ink.",
     fit: "contain",
-    span: "md:col-span-7",
-    aspect: "aspect-[16/10]",
+    span: "md:col-span-6",
+    aspect: "aspect-[4/3]",
   },
   {
     title: "Photo Retouching",
-    image: "/photo/photography-showcase.webp",
+    image: "/photo/photography-showcase-v2.webp",
     alt: "Photo retouching by Make It & Market",
     blurb:
       "Photographs retouched and finished to an editorial standard.",
-    span: "md:col-span-7",
-    aspect: "aspect-[16/10]",
+    span: "md:col-span-6",
+    aspect: "aspect-[4/3]",
   },
   {
     title: "Cover Art & Book Design",
@@ -199,7 +199,7 @@ const work: {
     blurb:
       "Cover art and book design with typography that earns a second look.",
     fit: "contain",
-    span: "md:col-span-5",
+    span: "md:col-span-6",
     aspect: "aspect-[4/3]",
   },
 ];
@@ -210,9 +210,10 @@ const services = [
     body: "Logos, identity systems and brand guidelines that give a company a face worth remembering — and the rules to keep it consistent everywhere it appears.",
     deliverables: [
       "Logo & identity systems",
-      "Brand guidelines",
+      "Brand consistency & consulting",
       "Naming & messaging",
-      "Art direction",
+      "Websites & apps",
+      "SEO & ranking help",
     ],
   },
   {
@@ -233,16 +234,6 @@ const services = [
       "Video production & editing",
       "2D & 3D animation",
       "Social content",
-    ],
-  },
-  {
-    title: "Websites",
-    body: "Websites and digital experiences designed and built to convert — fast, elegant, and unmistakably yours.",
-    deliverables: [
-      "Website design & build",
-      "Landing pages",
-      "E-commerce",
-      "Care & optimisation",
     ],
   },
 ];
@@ -269,7 +260,7 @@ const processSteps = [
 const stats = [
   { value: "500+", label: "Portfolio pieces produced" },
   { value: "40+", label: "Brands & organisations served" },
-  { value: "4", label: "Disciplines under one roof" },
+  { value: "3", label: "Disciplines under one roof" },
 ];
 
 const testimonials = [
@@ -355,16 +346,16 @@ export default function HomePage() {
             {clientLogos.map((logo) => (
               <div
                 key={logo.src}
-                className="relative h-24 md:h-32 bg-[color:var(--color-surface)] flex items-center justify-center"
+                className="relative h-24 md:h-36 bg-[color:var(--color-surface)] flex items-center justify-center"
               >
                 {logo.disc ? (
-                  <div className="relative h-[88%] aspect-square rounded-full bg-white overflow-hidden">
+                  <div className="relative h-[94%] aspect-square rounded-full bg-white overflow-hidden">
                     <Image
                       src={logo.src}
                       alt={logo.alt}
                       fill
                       sizes="(max-width: 1024px) 33vw, 20vw"
-                      className="object-contain p-2"
+                      className="object-contain p-1.5"
                     />
                   </div>
                 ) : (
@@ -373,7 +364,7 @@ export default function HomePage() {
                     alt={logo.alt}
                     fill
                     sizes="(max-width: 1024px) 33vw, 20vw"
-                    className={`object-contain p-3 md:p-4${logo.invert ? " invert" : ""}`}
+                    className={`object-contain p-2 md:p-2${logo.invert ? " invert" : ""}`}
                   />
                 )}
               </div>
@@ -415,13 +406,13 @@ export default function HomePage() {
                     sizes="(max-width: 768px) 100vw, 60vw"
                       className={
                         piece.fit === "contain"
-                          ? "object-contain p-4"
+                          ? "object-contain p-2"
                           : "object-cover transition-transform duration-700 ease-out group-hover:scale-[1.03]"
                       }
                     />
                   )}
                 </div>
-                <h3 className="mt-6 font-fraunces text-2xl md:text-[1.7rem] font-medium text-[color:var(--color-paper)]">
+                <h3 className="mt-6 font-fraunces font-medium text-[color:var(--color-paper)] text-[1.3rem] md:text-[1.5rem] lg:text-[1.65rem] whitespace-nowrap">
                   {piece.title}
                 </h3>
                 <p className="mt-2 max-w-xl leading-relaxed text-[color:var(--color-ink-soft)]">
@@ -440,7 +431,7 @@ export default function HomePage() {
             What We Do
           </h2>
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-[color:var(--color-ink-soft)]">
-            Four disciplines, one standard: work that holds its own in any
+            Three disciplines, one standard: work that holds its own in any
             boardroom, on any screen. Explore each in depth —{" "}
             <Link href="/marketing" className="underline decoration-[color:var(--color-gold)] underline-offset-4 hover:text-[color:var(--color-ink)]">
               marketing
@@ -488,7 +479,7 @@ export default function HomePage() {
       </section>
 
       {/* ABOUT */}
-      <section id="about" className="py-24 md:py-36 border-t border-[color:var(--color-line)] scroll-mt-24">
+      <section id="about" className="pt-14 pb-24 md:pt-20 md:pb-36 border-t border-[color:var(--color-line)] scroll-mt-24">
         <div className="max-w-[1600px] mx-auto px-6 lg:px-10">
           <h2 className="font-fraunces font-medium text-[color:var(--color-paper)] text-[clamp(2.2rem,5vw,4.2rem)] leading-none">
             About
