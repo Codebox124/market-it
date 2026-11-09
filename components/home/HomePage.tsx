@@ -116,7 +116,7 @@ const work: {
   },
   {
     title: "App & Website Design",
-    image: "/clientShowcase/website-showcase.webp",
+    image: "/clientShowcase/website-showcase-v2.webp",
     alt: "App and website design by Make It & Market",
     blurb:
       "Custom websites, apps and landing pages — designed and built to convert.",
@@ -136,7 +136,7 @@ const work: {
   },
   {
     title: "Social Media",
-    image: "/social/social-showcase-v2.webp",
+    image: "/social/social-showcase-v3.webp",
     alt: "Social media content by Make It & Market",
     blurb:
       "Content and campaigns that keep a brand present, consistent, worth following.",
@@ -166,7 +166,7 @@ const work: {
   },
   {
     title: "Presentations",
-    image: "/content/presentations-showcase.webp",
+    image: "/content/presentations-showcase-v5.webp",
     alt: "Presentation design by Make It & Market",
     blurb:
       "Pitch decks and presentations — designed to hold a room and land the point.",
