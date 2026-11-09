@@ -320,6 +320,22 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* MAIN REEL — the studio showreel that headlined the previous homepage */}
+      <section aria-label="Make It & Market showreel">
+        <video
+          className="block w-full aspect-video object-cover"
+          poster="/video/main-reel-poster.webp"
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="metadata"
+        >
+          <source src="/video/main-reel.webm" type="video/webm" />
+          <source src="/video/main-reel.mp4" type="video/mp4" />
+        </video>
+      </section>
+
       {/* CLIENT LOGOS */}
       <section aria-label="Selected clients" className="py-16 md:py-24 border-t border-[color:var(--color-line)]">
         <div className="max-w-[1600px] mx-auto px-6 lg:px-10">
@@ -536,7 +552,7 @@ export default function HomePage() {
               </h2>
               <p className="mt-6 text-lg leading-relaxed text-[color:var(--color-ink-soft)]">
                 Tell us about the brand you&apos;re building. We respond to every
-                serious enquiry within one business day.
+                serious inquiry within one business day.
               </p>
               <div className="mt-10 space-y-5 text-lg">
                 <p>

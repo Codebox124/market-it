@@ -17,7 +17,7 @@ export default function EnquiryForm() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     const subject = encodeURIComponent(
-      `New enquiry — ${name}${company ? ` (${company})` : ""}`
+      `New inquiry — ${name}${company ? ` (${company})` : ""}`
     );
     const body = encodeURIComponent(
       `Name: ${name}\nEmail: ${email}\nCompany: ${company}\n\nProject details:\n${details}`
@@ -91,7 +91,7 @@ export default function EnquiryForm() {
         type="submit"
         className="inline-flex items-center px-8 py-4 text-xs tracking-[0.22em] uppercase font-medium text-[#0b0b0d] bg-[color:var(--color-gold)] hover:bg-[color:var(--color-gold-strong)] transition-colors duration-300"
       >
-        Send Enquiry
+        Send Inquiry
       </button>
       <p className="text-sm text-[color:var(--color-ink-muted)]">
         This opens your email app with the message addressed to us — nothing is
