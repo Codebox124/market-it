@@ -34,7 +34,7 @@ export default function ReelVideo() {
     <video
       ref={ref}
       className="block w-full aspect-video object-cover"
-      poster="/video/main-reel-poster.webp"
+      poster="/video/main-reel-poster-v2.webp"
       autoPlay
       muted
       loop
@@ -42,8 +42,8 @@ export default function ReelVideo() {
       preload="auto"
       aria-label="Make It & Market showreel"
     >
-      <source src="/video/main-reel.webm" type="video/webm" />
-      <source src="/video/main-reel.mp4" type="video/mp4" />
+      <source src="/video/main-reel-v2.webm" type="video/webm" />
+      <source src="/video/main-reel-v2.mp4" type="video/mp4" />
     </video>
   );
 }

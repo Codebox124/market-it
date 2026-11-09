@@ -50,7 +50,7 @@ const clientLogos: { src: string; alt: string; invert?: boolean; disc?: boolean 
     alt: "Popcorn TV — logo designed by Make It & Market",
   },
   {
-    src: "/clientScroll/gm-tile-v2.webp",
+    src: "/clientScroll/gm-tile-v3.webp",
     alt: "Glow Minds Agency — logo designed by Make It & Market",
   },
   {
@@ -119,7 +119,7 @@ const work: {
     image: "/clientShowcase/website-showcase.webp",
     alt: "App and website design by Make It & Market",
     blurb:
-      "Custom websites, apps and landing pages — designed and built in-house to convert.",
+      "Custom websites, apps and landing pages — designed and built to convert.",
     fit: "contain",
     span: "md:col-span-6",
     aspect: "aspect-[4/3]",
@@ -136,23 +136,23 @@ const work: {
   },
   {
     title: "Social Media",
-    image: "/social/social-showcase.webp",
+    image: "/social/social-showcase-v2.webp",
     alt: "Social media content by Make It & Market",
     blurb:
-      "Content and campaigns that keep a brand present, consistent and worth following.",
+      "Content and campaigns that keep a brand present, consistent, worth following.",
     span: "md:col-span-6",
     aspect: "aspect-[4/3]",
     fit: "contain",
   },
   {
     title: "Video Production",
-    image: "/video/video-showcase-v2.webp",
+    image: "/video/video-showcase-v3.webp",
     alt: "Video production by Make It & Market",
     blurb:
       "Commercials, brand films and social video — shot, edited and finished in-house.",
     span: "md:col-span-6",
     aspect: "aspect-[4/3]",
-    video: { webm: "/video/showcase.webm", mp4: "/video/showcase.mp4" },
+    video: { webm: "/video/showcase-v2.webm", mp4: "/video/showcase-v2.mp4" },
   },
   {
     title: "Animation & Motion",
@@ -160,6 +160,26 @@ const work: {
     alt: "Animation and motion design by Make It & Market",
     blurb:
       "2D and 3D animation — characters, stories and brand films produced in-house.",
+    fit: "contain",
+    span: "md:col-span-6",
+    aspect: "aspect-[4/3]",
+  },
+  {
+    title: "Presentations",
+    image: "/content/presentations-showcase.webp",
+    alt: "Presentation design by Make It & Market",
+    blurb:
+      "Pitch decks and presentations — designed to hold a room and land the point.",
+    fit: "contain",
+    span: "md:col-span-6",
+    aspect: "aspect-[4/3]",
+  },
+  {
+    title: "Documents",
+    image: "/content/documents-showcase.webp",
+    alt: "Document design by Make It & Market",
+    blurb:
+      "Brochures, reports and documents — designed, typeset and print-ready.",
     fit: "contain",
     span: "md:col-span-6",
     aspect: "aspect-[4/3]",
@@ -175,7 +195,7 @@ const work: {
   },
   {
     title: "Drawing & Sketch Artwork",
-    image: "/content/drawing-sketch-showcase.webp",
+    image: "/content/drawing-sketch-showcase-v2.webp",
     alt: "Drawing and sketch artwork by Make It & Market",
     blurb:
       "Hand-drawn artwork and sketches — concepts developed in pencil and ink.",
@@ -194,7 +214,7 @@ const work: {
   },
   {
     title: "Cover Art & Book Design",
-    image: "/content/book cover 3 KING.webp",
+    image: "/content/cover-art-lock.webp",
     alt: "Cover art and book design by Make It & Market",
     blurb:
       "Cover art and book design with typography that earns a second look.",
@@ -209,9 +229,8 @@ const services = [
     title: "Brand Identity",
     body: "Logos, identity systems and brand guidelines that give a company a face worth remembering — and the rules to keep it consistent everywhere it appears.",
     deliverables: [
-      "Logo & identity systems",
+      "Logo & messaging",
       "Brand consistency & consulting",
-      "Naming & messaging",
       "Websites & apps",
       "SEO & ranking help",
     ],
@@ -230,10 +249,11 @@ const services = [
     title: "Content Creation",
     body: "Photography, video and animation produced in-house — the content engines that keep a brand visible, current and credible.",
     deliverables: [
-      "Photography & retouching",
       "Video production & editing",
-      "2D & 3D animation",
-      "Social content",
+      "2D/3D animation & motion graphics",
+      "Social media content",
+      "Artwork creation",
+      "Photography & retouching",
     ],
   },
 ];
@@ -415,7 +435,7 @@ export default function HomePage() {
                 <h3 className="mt-6 font-fraunces font-medium text-[color:var(--color-paper)] text-[1.3rem] md:text-[1.5rem] lg:text-[1.65rem] whitespace-nowrap">
                   {piece.title}
                 </h3>
-                <p className="mt-2 max-w-xl leading-relaxed text-[color:var(--color-ink-soft)]">
+                <p className="mt-2 leading-relaxed text-[color:var(--color-ink-soft)] text-[clamp(0.82rem,1.02vw,1rem)] lg:whitespace-nowrap">
                   {piece.blurb}
                 </p>
               </article>
@@ -440,9 +460,9 @@ export default function HomePage() {
             <Link href="/content-creation" className="underline decoration-[color:var(--color-gold)] underline-offset-4 hover:text-[color:var(--color-ink)]">
               content creation
             </Link>
-            , and{" "}
+            ,{" "}
             <Link href="/websites-apps" className="underline decoration-[color:var(--color-gold)] underline-offset-4 hover:text-[color:var(--color-ink)]">
-              websites &amp; apps
+              websites and apps
             </Link>
             .
           </p>
@@ -549,7 +569,7 @@ export default function HomePage() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
             <div className="lg:col-span-5">
               <h2 className="font-fraunces font-medium text-[color:var(--color-paper)] text-[clamp(2.2rem,5vw,4.2rem)] leading-none">
-                Start a Conversation
+                Contact
               </h2>
               <p className="mt-6 text-lg leading-relaxed text-[color:var(--color-ink-soft)]">
                 Tell us about the brand you&apos;re building. We respond to every
