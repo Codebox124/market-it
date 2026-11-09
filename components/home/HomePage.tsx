@@ -146,7 +146,7 @@ const work: {
   },
   {
     title: "Video Production",
-    image: "/video/video-showcase-v3.webp",
+    image: "/video/video-showcase-v4.webp",
     alt: "Video production by Make It & Market",
     blurb:
       "Commercials, brand films and social video — shot, edited and finished in-house.",
