@@ -106,56 +106,27 @@ const work: {
   video?: { webm: string; mp4: string };
 }[] = [
   {
-    title: "Brand Identity & 3D",
-    image: "/content/logo CS Paris 7.webp",
-    alt: "Brand identity and 3D design by Make It & Market",
+    title: "Branding & Identity",
+    image: "/content/portfolio - photo colorGRADE17.webp",
+    alt: "Branding and identity design by Make It & Market",
     blurb:
-      "Logos, identity systems and 3D brand work — marks built to be recognised anywhere.",
+      "Logos and identity systems — marks built to be recognised anywhere.",
     span: "md:col-span-7",
     aspect: "aspect-[16/10]",
   },
   {
-    title: "Photography & Retouching",
-    image: "/photo/photography-showcase.webp",
-    alt: "Photography and retouching by Make It & Market",
-    blurb:
-      "Photography and retouching, finished to an editorial standard.",
-    span: "md:col-span-5",
-    aspect: "aspect-[4/3]",
-  },
-  {
-    title: "Cover Art & Book Design",
-    image: "/content/book cover 3 KING.webp",
-    alt: "Cover art and book design by Make It & Market",
-    blurb:
-      "Cover art and book design with typography that earns a second look.",
-    fit: "contain",
-    span: "md:col-span-5",
-    aspect: "aspect-[4/3]",
-  },
-  {
-    title: "Website Design",
+    title: "App & Website Design",
     image: "/clientShowcase/website-showcase.webp",
-    alt: "Website design by Make It & Market",
+    alt: "App and website design by Make It & Market",
     blurb:
-      "Custom websites and landing pages — designed and built in-house to convert.",
+      "Custom websites, apps and landing pages — designed and built in-house to convert.",
     fit: "contain",
-    span: "md:col-span-7",
-    aspect: "aspect-[16/10]",
-  },
-  {
-    title: "Animation & Motion",
-    image: "/animation/animation-showcase.webp",
-    alt: "Animation and motion design by Make It & Market",
-    blurb:
-      "2D and 3D animation — characters, stories and brand films produced in-house.",
-    fit: "contain",
-    span: "md:col-span-7",
-    aspect: "aspect-[16/10]",
+    span: "md:col-span-5",
+    aspect: "aspect-[4/3]",
   },
   {
     title: "Advertising & Campaign Design",
-    image: "/graphic/4 color sheet joel edit 2.webp",
+    image: "/graphic/strategy-showcase.webp",
     alt: "Advertising and campaign design by Make It & Market",
     blurb:
       "Campaign creative for print and digital — built to be read at a glance.",
@@ -169,7 +140,7 @@ const work: {
     alt: "Social media content by Make It & Market",
     blurb:
       "Content and campaigns that keep a brand present, consistent and worth following.",
-    span: "md:col-span-5",
+    span: "md:col-span-7",
     aspect: "aspect-[4/3]",
     fit: "contain",
   },
@@ -182,6 +153,54 @@ const work: {
     span: "md:col-span-7",
     aspect: "aspect-[16/10]",
     video: { webm: "/video/showcase.webm", mp4: "/video/showcase.mp4" },
+  },
+  {
+    title: "Animation & Motion",
+    image: "/animation/animation-showcase.webp",
+    alt: "Animation and motion design by Make It & Market",
+    blurb:
+      "2D and 3D animation — characters, stories and brand films produced in-house.",
+    fit: "contain",
+    span: "md:col-span-5",
+    aspect: "aspect-[4/3]",
+  },
+  {
+    title: "3D Modeling",
+    image: "/content/logo CS Paris 7.webp",
+    alt: "3D modeling by Make It & Market",
+    blurb:
+      "Objects, products and brand worlds — modelled and rendered in 3D.",
+    span: "md:col-span-5",
+    aspect: "aspect-[4/3]",
+  },
+  {
+    title: "Drawing & Sketch Artwork",
+    image: "/content/drawing-sketch-showcase.webp",
+    alt: "Drawing and sketch artwork by Make It & Market",
+    blurb:
+      "Hand-drawn artwork and sketches — concepts developed in pencil and ink.",
+    fit: "contain",
+    span: "md:col-span-7",
+    aspect: "aspect-[16/10]",
+  },
+  {
+    title: "Photo Retouching",
+    image: "/photo/photography-showcase.webp",
+    alt: "Photo retouching by Make It & Market",
+    blurb:
+      "Photographs retouched and finished to an editorial standard.",
+    span: "md:col-span-7",
+    aspect: "aspect-[16/10]",
+  },
+  {
+    title: "Cover Art & Book Design",
+    image: "/content/book cover 3 KING.webp",
+    alt: "Cover art and book design by Make It & Market",
+    blurb:
+      "Cover art and book design with typography that earns a second look.",
+    fit: "contain",
+    span: "md:col-span-5",
+    aspect: "aspect-[4/3]",
   },
 ];
 
@@ -311,8 +330,8 @@ export default function HomePage() {
           <figure className="mt-16 md:mt-20">
             <div className="relative w-full aspect-[16/9] md:aspect-[21/9] overflow-hidden bg-[color:var(--color-surface)]">
               <Image
-                src="/content/logo CS Paris 7.webp"
-                alt="Brand identity design by Make It & Market"
+                src="/content/pic2.webp"
+                alt="Rainy New York City street"
                 fill
                 priority
                 sizes="(max-width: 1600px) 100vw, 1600px"
