@@ -101,10 +101,15 @@ body {
   letter-spacing: -0.03em;
 }
 
-/* Serif display — Fraunces, loaded in the root layout (redesign headlines) */
+/* Serif display — Libre Caslon Text, loaded in the root layout (redesign headlines).
+   The --font-fraunces variable / .font-fraunces class names are kept from the
+   original Fraunces setup so no component references change. Common ligatures
+   are disabled at the client's request (the "fi" in "Define" must not join). */
 .font-fraunces {
   font-family: var(--font-fraunces), Georgia, 'Times New Roman', serif;
   letter-spacing: -0.01em;
+  font-variant-ligatures: no-common-ligatures;
+  font-feature-settings: "liga" 0, "clig" 0;
 }
 
 /* Massive headline — vmgroupe / forgedbyraji scale */
