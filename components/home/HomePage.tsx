@@ -10,7 +10,7 @@ const jsonLd = {
   name: "Make It & Market",
   url: "https://www.makeitandmarket.com/",
   description:
-    "Branding, design and content creation studio for mid-size and enterprise clients. Brand identity, graphic design, photography, video, animation and websites.",
+    "Branding, design and content creation studio for a wide array of businesses and entrepreneurs. Brand identity, graphic design, photography, video, animation and websites.",
   email: "info@makeitandmarket.com",
   telephone: "+1-347-659-1708",
   areaServed: "New York",
@@ -495,10 +495,11 @@ export default function HomePage() {
           </h2>
           <p className="mt-8 max-w-3xl font-fraunces text-2xl md:text-[2rem] leading-snug text-[color:var(--color-paper)]">
             Make It &amp; Market is a branding, design and content creation studio
-            based in New York. We partner with mid-size and enterprise clients
-            who need senior-level creative without agency bloat — direct access
-            to the people doing the work, and a standard of finish that survives
-            scrutiny.
+            based in New York. We partner with a wide array of businesses and
+            entrepreneurs, giving them senior-level creative assistance
+            without agency bloat: direct access to the people doing the work,
+            and a standard of
+            finish that survives scrutiny.
           </p>
 
           <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-px bg-[color:var(--color-line)] border border-[color:var(--color-line)]">
