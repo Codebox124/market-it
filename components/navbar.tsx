@@ -57,7 +57,7 @@ export default function Navbar() {
               href="/contact"
               className="ml-4 inline-flex items-center px-5 py-2.5 text-sm tracking-[0.18em] uppercase font-medium text-[#0b0b0d] bg-[color:var(--color-gold)] hover:bg-[color:var(--color-gold-strong)] transition-colors duration-300"
             >
-              Start a Conversation
+              Contact
             </Link>
           </div>
 
@@ -123,7 +123,7 @@ export default function Navbar() {
                   onClick={() => setIsMobileOpen(false)}
                   className="mt-6 inline-flex w-full items-center justify-center px-5 py-3.5 text-xs tracking-[0.18em] uppercase font-medium text-[#0b0b0d] bg-[color:var(--color-gold)] hover:bg-[color:var(--color-gold-strong)] transition-colors duration-300"
                 >
-                  Start a Conversation
+                  Contact
                 </Link>
               </div>
             </motion.div>
