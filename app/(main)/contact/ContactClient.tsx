@@ -35,7 +35,7 @@ export default function ContactClient() {
     <div className="bg-[color:var(--color-canvas)] text-[color:var(--color-ink)] min-h-screen">
       {/* HERO */}
       <section className="noir-grain relative">
-        <div className="relative max-w-[1600px] mx-auto px-6 lg:px-10 pt-36 md:pt-44 pb-20 md:pb-28">
+        <div className="relative max-w-[1600px] mx-auto px-6 lg:px-10 pt-36 md:pt-44 pb-10 md:pb-12">
           <motion.div
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
@@ -59,7 +59,7 @@ export default function ContactClient() {
 
       {/* FORM */}
       <section className="border-t border-[color:var(--color-line)] bg-[color:var(--color-surface)]">
-        <div className="max-w-[1600px] mx-auto px-6 lg:px-10 py-24 md:py-32">
+        <div className="max-w-[1600px] mx-auto px-6 lg:px-10 pt-14 md:pt-20 pb-24 md:pb-32">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
             {/* Direct lines */}
             <motion.div
