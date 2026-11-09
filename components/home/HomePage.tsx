@@ -107,16 +107,17 @@ const work: {
 }[] = [
   {
     title: "Branding & Identity",
-    image: "/content/portfolio - photo colorGRADE17.webp",
+    image: "/content/branding-showcase-v2.webp",
     alt: "Branding and identity design by Make It & Market",
     blurb:
       "Logos and identity systems — marks built to be recognised anywhere.",
+    fit: "contain",
     span: "md:col-span-6",
     aspect: "aspect-[4/3]",
   },
   {
     title: "App & Website Design",
-    image: "/clientShowcase/website-showcase-v2.webp",
+    image: "/clientShowcase/website-showcase-v3.webp",
     alt: "App and website design by Make It & Market",
     blurb:
       "Custom websites, apps and landing pages — designed and built to convert.",
@@ -126,7 +127,7 @@ const work: {
   },
   {
     title: "Advertising & Campaign Design",
-    image: "/graphic/strategy-showcase.webp",
+    image: "/graphic/strategy-showcase-v2.webp",
     alt: "Advertising and campaign design by Make It & Market",
     blurb:
       "Campaign creative for print and digital — built to be read at a glance.",
@@ -136,7 +137,7 @@ const work: {
   },
   {
     title: "Social Media",
-    image: "/social/social-showcase-v3.webp",
+    image: "/social/social-showcase-v4.webp",
     alt: "Social media content by Make It & Market",
     blurb:
       "Content and campaigns that keep a brand present, consistent, worth following.",
@@ -146,7 +147,7 @@ const work: {
   },
   {
     title: "Video Production",
-    image: "/video/video-showcase-v5.webp",
+    image: "/video/video-showcase-v6.webp",
     alt: "Video production by Make It & Market",
     blurb:
       "Commercials, brand films and social video — shot, edited and finished in-house.",
@@ -156,7 +157,7 @@ const work: {
   },
   {
     title: "Animation & Motion",
-    image: "/animation/animation-showcase.webp",
+    image: "/animation/animation-showcase-v2.webp",
     alt: "Animation and motion design by Make It & Market",
     blurb:
       "2D and 3D animation — characters, stories and brand films produced in-house.",
@@ -166,7 +167,7 @@ const work: {
   },
   {
     title: "Presentations",
-    image: "/content/presentations-showcase-v8.webp",
+    image: "/content/presentations-showcase-v9.webp",
     alt: "Presentation design by Make It & Market",
     blurb:
       "Pitch decks and presentations — designed to hold a room and land the point.",
@@ -176,7 +177,7 @@ const work: {
   },
   {
     title: "Documents",
-    image: "/content/documents-showcase-v2.webp",
+    image: "/content/documents-showcase-v3.webp",
     alt: "Document design by Make It & Market",
     blurb:
       "Brochures, reports and documents — designed, typeset and print-ready.",
@@ -186,16 +187,17 @@ const work: {
   },
   {
     title: "3D Modeling",
-    image: "/content/logo CS Paris 7.webp",
+    image: "/content/3d-showcase-v2.webp",
     alt: "3D modeling by Make It & Market",
     blurb:
       "Objects, products and brand worlds — modelled and rendered in 3D.",
+    fit: "contain",
     span: "md:col-span-6",
     aspect: "aspect-[4/3]",
   },
   {
     title: "Drawing & Sketch Artwork",
-    image: "/content/drawing-sketch-showcase-v3.webp",
+    image: "/content/drawing-sketch-showcase-v4.webp",
     alt: "Drawing and sketch artwork by Make It & Market",
     blurb:
       "Hand-drawn artwork and sketches — concepts developed in pencil and ink.",
@@ -205,17 +207,18 @@ const work: {
   },
   {
     title: "Photo Retouching",
-    image: "/photo/photography-showcase-v2.webp",
-    alt: "Photo retouching by Make It & Market",
+    image: "/photo/photography-showcase-v3.webp",
+    alt: "Before and after photo retouching by Make It & Market",
     blurb:
       "Photographs retouched and finished to an editorial standard.",
+    fit: "contain",
     span: "md:col-span-6",
     aspect: "aspect-[4/3]",
   },
   {
     title: "Cover Art & Book Design",
-    image: "/content/cover-art-lock.webp",
-    alt: "Cover art and book design by Make It & Market",
+    image: "/content/cover-art-spread.webp",
+    alt: "Book cover design, front and back, by Make It & Market",
     blurb:
       "Cover art and book design with typography that earns a second look.",
     fit: "contain",
