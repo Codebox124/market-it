@@ -37,7 +37,7 @@ export default function Navbar() {
           {/* Wordmark */}
           <Link
             href="/"
-            className="font-fraunces text-lg md:text-xl font-medium tracking-tight text-[color:var(--color-paper)]"
+            className="font-fraunces text-lg md:text-xl font-medium tracking-tight text-[color:var(--color-paper)] [text-shadow:0_1px_12px_rgba(0,0,0,0.65)]"
           >
             Make It <span className="text-[color:var(--color-gold)]">&amp;</span> Market
           </Link>
@@ -48,14 +48,14 @@ export default function Navbar() {
               <Link
                 key={item.name}
                 href={item.href}
-                className="px-4 py-2 text-xs tracking-[0.18em] uppercase text-[color:var(--color-ink-soft)] hover:text-[color:var(--color-ink)] transition-colors duration-300"
+                className="px-4 py-2 text-sm tracking-[0.18em] uppercase font-medium text-[color:var(--color-paper)] [text-shadow:0_1px_12px_rgba(0,0,0,0.65)] hover:text-[color:var(--color-gold-strong)] transition-colors duration-300"
               >
                 {item.name}
               </Link>
             ))}
             <Link
               href="/contact"
-              className="ml-4 inline-flex items-center px-5 py-2.5 text-xs tracking-[0.18em] uppercase font-medium text-[#0b0b0d] bg-[color:var(--color-gold)] hover:bg-[color:var(--color-gold-strong)] transition-colors duration-300"
+              className="ml-4 inline-flex items-center px-5 py-2.5 text-sm tracking-[0.18em] uppercase font-medium text-[#0b0b0d] bg-[color:var(--color-gold)] hover:bg-[color:var(--color-gold-strong)] transition-colors duration-300"
             >
               Start a Conversation
             </Link>
