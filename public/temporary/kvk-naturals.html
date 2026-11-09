@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KVK Naturals — Storefront (sample)</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family: Georgia, 'Times New Roman', serif; background:#f7f5ee; color:#37402f; }
+  .hero { text-align:center; padding:66px 20px 48px; background:linear-gradient(180deg,#e7ecdc,#f7f5ee); }
+  .hero .brand { letter-spacing:.4em; font-size:12.5px; text-transform:uppercase; color:#70814f; font-family:Arial, sans-serif; }
+  .hero h1 { font-size:40px; font-weight:normal; line-height:1.25; margin:18px auto 14px; max-width:620px; }
+  .hero p { font-size:17px; color:#68705c; max-width:520px; margin:0 auto; line-height:1.6; font-style:italic; }
+  .badges { margin-top:24px; font-family:Arial, sans-serif; font-size:12.5px; letter-spacing:.1em; color:#70814f; text-transform:uppercase; }
+  .cta { display:inline-block; margin-top:26px; background:#37402f; color:#f7f5ee; font-family:Arial, sans-serif; text-decoration:none; padding:14px 34px; border-radius:999px; font-size:15px; }
+  .wrap { max-width:860px; margin:0 auto; padding:44px 20px 8px; }
+  h2 { font-weight:normal; font-size:26px; text-align:center; margin-bottom:8px; }
+  .section-intro { text-align:center; color:#68705c; font-size:15.5px; line-height:1.65; max-width:560px; margin:0 auto 26px; font-style:italic; }
+  .cats { display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:14px; }
+  .cat { border-radius:12px; aspect-ratio:1/1; display:flex; flex-direction:column; justify-content:flex-end; padding:16px; color:#f7f5ee; }
+  .c1 { background:linear-gradient(160deg,#8a9a66,#70814f); }
+  .c2 { background:linear-gradient(160deg,#b3906d,#96754f); }
+  .c3 { background:linear-gradient(160deg,#7d94a0,#5d7683); }
+  .c4 { background:linear-gradient(160deg,#a98ba6,#876e84); }
+  .cat .cat-name { font-size:18px; line-height:1.3; }
+  .cat .cat-sub { font-family:Arial, sans-serif; font-size:12px; margin-top:5px; opacity:.85; line-height:1.5; }
+  .story { background:#fff; border:1px solid #dde2cf; border-radius:14px; padding:30px; box-shadow:0 2px 12px rgba(80,95,55,.06); display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:24px; }
+  .story h4 { font-family:Arial, sans-serif; font-size:12px; letter-spacing:.2em; text-transform:uppercase; color:#70814f; margin-bottom:10px; }
+  .story p { font-size:15.5px; line-height:1.7; color:#4c5540; }
+  .posts { display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:18px; }
+  .post { background:#fff; border:1px solid #dde2cf; border-radius:14px; padding:12px; box-shadow:0 2px 12px rgba(80,95,55,.06); }
+  .post-art { aspect-ratio:1/1; border-radius:9px; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; padding:22px 18px; }
+  .pa-1 { background:#37402f; color:#f7f5ee; }
+  .pa-2 { background:linear-gradient(160deg,#e7ecdc,#cfd9b8); color:#37402f; }
+  .pa-3 { background:#70814f; color:#f7f5ee; }
+  .post-brand { font-family:Arial, sans-serif; letter-spacing:.32em; font-size:10px; text-transform:uppercase; color:#70814f; margin-bottom:14px; }
+  .pa-1 .post-brand, .pa-3 .post-brand { color:#c3d2a2; }
+  .post-headline { font-size:23px; line-height:1.25; font-weight:normal; }
+  .post-sub { margin-top:12px; font-size:13.5px; font-style:italic; line-height:1.5; opacity:.85; }
+  .post-label { font-family:Arial, sans-serif; font-size:11.5px; letter-spacing:.12em; text-transform:uppercase; color:#939b84; text-align:center; padding:11px 0 3px; }
+  .note { max-width:860px; margin:24px auto 0; padding:14px 20px 34px; font-family:Arial, sans-serif; font-size:12.5px; color:#939b84; text-align:center; line-height:1.6; }
+</style>
+</head>
+<body>
+  <div class="hero">
+    <div class="brand">KVK Naturals · Handmade in New Jersey</div>
+    <h1>Hand-crafted skincare: simple ingredients for a natural lifestyle.</h1>
+    <p>Handmade artisan soap and natural bath &amp; body care — made fresh, in small batches.</p>
+    <div class="badges">Star Seller on Etsy · On Etsy since 2021</div>
+    <br>
+    <a class="cta" href="#">Shop the Collection</a>
+  </div>
+  <div class="wrap">
+    <h2>Shop by Ritual</h2>
+    <p class="section-intro">Your Etsy shelves, given a front door of their own — the same products, in a store that carries your name.</p>
+    <div class="cats">
+      <div class="cat c1"><div class="cat-name">Handmade Soap</div><div class="cat-sub">Hand-cut, naturally cured artisan bars</div></div>
+      <div class="cat c2"><div class="cat-name">Body Scrubs &amp; Powders</div><div class="cat-sub">Talc-free dusting powders and sugar scrubs</div></div>
+      <div class="cat c3"><div class="cat-name">Bath &amp; Soaks</div><div class="cat-sub">Soaks, salts, and bath accessories</div></div>
+      <div class="cat c4"><div class="cat-name">Beard &amp; Daily Care</div><div class="cat-sub">Everyday body care, made the natural way</div></div>
+    </div>
+  </div>
+  <div class="wrap">
+    <h2>The Hands Behind It</h2>
+    <div class="story">
+      <div>
+        <h4>Kristin Klein · Founder</h4>
+        <p>Passionate about clean living and hand-crafting natural skincare with intentional ingredients — backed by a 26-year legacy in small business, and five years perfecting KVK's botanical bath &amp; body blends.</p>
+      </div>
+      <div>
+        <h4>Made With Care</h4>
+        <p>Every order is checked and packed with care before it leaves the studio — and the shop's sisal soap bags are hand-sewn by a local circle of senior women, then inspected piece by piece.</p>
+      </div>
+    </div>
+  </div>
+  <div class="wrap">
+    <h2>A Feed as Fresh as the Soap</h2>
+    <p class="section-intro">Three ready-to-post designs in your style — so the customers who love you on Etsy can find you everywhere else, too.</p>
+    <div class="posts">
+      <div class="post">
+        <div class="post-art pa-1">
+          <div class="post-brand">KVK Naturals</div>
+          <div class="post-headline">Made fresh.<br>Made by hand.</div>
+          <div class="post-sub">Small batches, simple ingredients.</div>
+        </div>
+        <div class="post-label">Sample post · The Making</div>
+      </div>
+      <div class="post">
+        <div class="post-art pa-2">
+          <div class="post-brand">KVK Naturals</div>
+          <div class="post-headline">Your skin, the natural way.</div>
+          <div class="post-sub">Talc-free powders, scrubs, and soaks.</div>
+        </div>
+        <div class="post-label">Sample post · The Ritual</div>
+      </div>
+      <div class="post">
+        <div class="post-art pa-3">
+          <div class="post-brand">KVK Naturals</div>
+          <div class="post-headline">From our studio to your shelf.</div>
+          <div class="post-sub">Shop the collection — link in bio.</div>
+        </div>
+        <div class="post-label">Sample post · The Invitation</div>
+      </div>
+    </div>
+  </div>
+  <p class="note">Sample storefront mock-up prepared by Make It &amp; Market for KVK Naturals.<br>
+  On the finished site, your real product photography fills these shelves, your story leads, and your customers reach you at your own address — not only through a marketplace.</p>
+</body>
+</html>
