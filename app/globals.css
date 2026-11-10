@@ -33,6 +33,11 @@
   --color-paper: #f4f1ea;           /* warm off-white for display type */
   --color-gold: #c6a15b;            /* the one brand accent */
   --color-gold-strong: #d9b878;
+  --color-paper-ink: #171713;        /* primary text on paper */
+  --color-paper-soft: #45423a;       /* body / secondary on paper */
+  --color-paper-muted: #7d7767;      /* labels / tertiary on paper */
+  --color-paper-line: #ddd5c1;       /* hairline on paper */
+  --color-gold-deep: #8a6d2f;        /* brand gold, darkened for light backgrounds */
 
   /* "ACCENT" is just pure white — high-contrast inversion */
   --color-accent: #ffffff;
@@ -307,4 +312,53 @@ body {
   --tw-prose-pre-bg: var(--color-surface);
   --tw-prose-th-borders: var(--color-line-strong);
   --tw-prose-td-borders: var(--color-line);
+}
+
+/* =========================================================
+   PROSE ON PAPER — light reading surface (blog)
+   ========================================================= */
+
+.prose-on-paper {
+  --tw-prose-body: var(--color-paper-soft);
+  --tw-prose-headings: var(--color-paper-ink);
+  --tw-prose-lead: var(--color-paper-soft);
+  --tw-prose-links: var(--color-gold-deep);
+  --tw-prose-bold: var(--color-paper-ink);
+  --tw-prose-counters: var(--color-paper-muted);
+  --tw-prose-bullets: var(--color-gold-deep);
+  --tw-prose-hr: var(--color-paper-line);
+  --tw-prose-quotes: var(--color-paper-ink);
+  --tw-prose-quote-borders: var(--color-gold);
+  --tw-prose-captions: var(--color-paper-muted);
+  --tw-prose-code: var(--color-paper-ink);
+  --tw-prose-pre-code: var(--color-paper-soft);
+  --tw-prose-pre-bg: #ece7da;
+  --tw-prose-th-borders: var(--color-paper-line);
+  --tw-prose-td-borders: var(--color-paper-line);
+}
+
+/* Label/numeral colors when they sit on the paper surface */
+.on-paper .eyebrow,
+.on-paper .numeral {
+  color: var(--color-paper-muted);
+}
+.on-paper .numeral-lg {
+  color: var(--color-gold-deep);
+}
+
+/* On paper pages the fixed nav becomes a light glass bar with dark text,
+   so it stays readable over the bright surface (both scroll states). */
+body:has(.on-paper) nav.fixed {
+  background-color: rgb(244 241 234 / 0.88);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--color-paper-line);
+}
+body:has(.on-paper) nav.fixed a,
+body:has(.on-paper) nav.fixed button {
+  color: var(--color-paper-ink);
+  text-shadow: none;
+}
+body:has(.on-paper) nav.fixed a span {
+  color: var(--color-gold-deep);
 }
