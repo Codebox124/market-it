@@ -548,7 +548,7 @@ export default function HomePage() {
       <section aria-label="Client testimonials" className="py-24 md:py-36 border-t border-[color:var(--color-line)]">
         <div className="max-w-[1600px] mx-auto px-6 lg:px-10">
           <h2 className="font-fraunces font-medium text-[color:var(--color-paper)] text-[clamp(2.2rem,5vw,4.2rem)] leading-none">
-            Client Voices
+            Client Testimonials
           </h2>
 
           <div className="mt-14 grid grid-cols-1 md:grid-cols-3 gap-px bg-[color:var(--color-line)] border border-[color:var(--color-line)]">
