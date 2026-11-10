@@ -349,7 +349,7 @@ export default function LandingPageClient({ dict, lang }: LandingPageProps) {
         </div>
 
         {/* Logo marquee — single continuous horizontal scroll */}
-        <div className="overflow-hidden border-y border-[color:var(--color-line)] py-10 md:py-14 bg-[color:var(--color-surface)] marquee-fade marquee-fade--surface">
+        <div className="overflow-hidden border-y border-[color:var(--color-line)] py-10 md:py-14 dark-band bg-[color:var(--color-surface)] marquee-fade marquee-fade--surface">
           <div className="marquee">
             <div className="marquee-track marquee-track--slow">
               {[...clientLogos, ...clientLogos, ...clientLogos, ...clientLogos].map((logo, i) => (
@@ -420,7 +420,7 @@ export default function LandingPageClient({ dict, lang }: LandingPageProps) {
       </section>
 
       {/* ============================ CONTACT ============================ */}
-      <section className="relative border-t border-[color:var(--color-line)] bg-[color:var(--color-surface)]">
+      <section className="dark-band relative border-t border-[color:var(--color-line)] bg-[color:var(--color-surface)]">
         <div className="max-w-[1600px] mx-auto px-6 lg:px-10 py-28 md:py-40">
           <motion.div
             initial={{ opacity: 0, y: 16 }}
