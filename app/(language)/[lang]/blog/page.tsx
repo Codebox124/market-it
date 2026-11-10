@@ -70,14 +70,11 @@ export default async function BlogPage({ params }: Props) {
 
   return (
     <div
-      className="bg-[color:var(--color-canvas)] text-[color:var(--color-ink)] min-h-screen"
+      className="bg-[color:var(--color-paper)] text-[color:var(--color-paper-ink)] on-paper min-h-screen"
       dir={isRTL ? "rtl" : "ltr"}
     >
       {/* HERO */}
-      <section className="noir-grain relative overflow-hidden">
-        <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute -top-32 -left-32 w-[40rem] h-[40rem] rounded-full bg-[color:var(--color-accent)] blur-[200px] opacity-[0.06]" />
-        </div>
+      <section className="relative overflow-hidden">
 
         <div className="relative max-w-[1600px] mx-auto px-6 lg:px-10 pt-36 md:pt-44 pb-20 md:pb-28">
           <div className="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-12">
@@ -85,13 +82,13 @@ export default async function BlogPage({ params }: Props) {
               <p className="eyebrow">
                 <span className="numeral">[ {t.eyebrow} ]</span>
               </p>
-              <p className="mt-6 text-sm leading-relaxed text-[color:var(--color-ink-muted)] max-w-[14rem]">
+              <p className="mt-6 text-sm leading-relaxed text-[color:var(--color-paper-muted)] max-w-[14rem]">
                 Notes from the agency · Writing · Field reports
               </p>
             </div>
             <div className="md:col-span-9">
-              <h1 className="display-xl text-[color:var(--color-ink)]">
-                {t.title}<span className="text-[color:var(--color-accent)]">.</span>
+              <h1 className="display-xl text-[color:var(--color-paper-ink)]">
+                {t.title}<span className="text-[color:var(--color-gold-deep)]">.</span>
               </h1>
             </div>
           </div>
@@ -99,14 +96,14 @@ export default async function BlogPage({ params }: Props) {
       </section>
 
       {/* LIST */}
-      <section className="border-t border-[color:var(--color-line)]">
+      <section className="border-t border-[color:var(--color-paper-line)]">
         <div className="max-w-[1600px] mx-auto px-6 lg:px-10 py-20 md:py-32">
           {posts.length > 0 ? (
             <div>
               {posts.map((post: any, index: number) => (
                 <article
                   key={post._id}
-                  className="border-b border-[color:var(--color-line)]"
+                  className="border-b border-[color:var(--color-paper-line)]"
                 >
                   <Link
                     href={`/${lang}/blog/${post.slug.current}`}
@@ -125,10 +122,10 @@ export default async function BlogPage({ params }: Props) {
                         </p>
                       </div>
                       <div className="md:col-span-7">
-                        <h2 className="font-display text-3xl md:text-5xl leading-[1.05] tracking-tight text-[color:var(--color-ink)] group-hover:text-[color:var(--color-accent)] transition-colors duration-500">
+                        <h2 className="font-display text-3xl md:text-5xl leading-[1.05] tracking-tight text-[color:var(--color-paper-ink)] group-hover:text-[color:var(--color-gold-deep)] transition-colors duration-500">
                           {post.title}
                         </h2>
-                        <p className="mt-5 text-base leading-relaxed text-[color:var(--color-ink-soft)] line-clamp-2 max-w-2xl">
+                        <p className="mt-5 text-base leading-relaxed text-[color:var(--color-paper-soft)] line-clamp-2 max-w-2xl">
                           {post.excerpt ||
                             post.plainText ||
                             post.metaDescription ||
@@ -136,7 +133,7 @@ export default async function BlogPage({ params }: Props) {
                             ""}
                         </p>
                       </div>
-                      <div className="md:col-span-3 md:justify-self-end flex items-center gap-2 text-xs tracking-[0.22em] uppercase text-[color:var(--color-ink-muted)] group-hover:text-[color:var(--color-accent)] transition-colors duration-500">
+                      <div className="md:col-span-3 md:justify-self-end flex items-center gap-2 text-xs tracking-[0.22em] uppercase text-[color:var(--color-paper-muted)] group-hover:text-[color:var(--color-gold-deep)] transition-colors duration-500">
                         {t.readMore}
                         <span className="transition-transform duration-500 group-hover:translate-x-1">→</span>
                       </div>
@@ -146,8 +143,8 @@ export default async function BlogPage({ params }: Props) {
               ))}
             </div>
           ) : (
-            <div className="border-t border-[color:var(--color-line)] pt-20 text-center">
-              <p className="text-[color:var(--color-ink-muted)] text-sm tracking-[0.22em] uppercase">
+            <div className="border-t border-[color:var(--color-paper-line)] pt-20 text-center">
+              <p className="text-[color:var(--color-paper-muted)] text-sm tracking-[0.22em] uppercase">
                 {t.empty}
               </p>
             </div>
