@@ -8,7 +8,7 @@ import type { HomeStrings } from "@/components/home/homeStrings";
 // Localized homepage — mirrors components/home/HomePage.tsx section for
 // section, with all copy coming from dictionaries/<lang>.json ("home" key).
 
-const clientLogoMedia: { src: string; invert?: boolean; disc?: boolean; lightSrc?: string; darkPanel?: boolean }[] = [
+const clientLogoMedia: { src: string; invert?: boolean; disc?: boolean; lightSrc?: string; blackDisc?: boolean }[] = [
   { src: "/clientScroll/exopest-tile.webp" },
   { src: "/clientScroll/de-zavala-tile.webp" },
   { src: "/clientScroll/builditect-tile.webp", invert: true },
@@ -19,7 +19,7 @@ const clientLogoMedia: { src: string; invert?: boolean; disc?: boolean; lightSrc
   { src: "/clientScroll/reefnreem-tile.webp", invert: true },
   { src: "/clientScroll/arc-tile.webp" },
   { src: "/clientScroll/northeast-tile.webp" },
-  { src: "/clientScroll/olivers-tile.webp", darkPanel: true },
+  { src: "/clientScroll/olivers-tile.webp", blackDisc: true },
   { src: "/clientScroll/forever-tile.webp", disc: true },
   { src: "/clientScroll/moses-tile.webp" },
   { src: "/clientScroll/kids-dynasty-tile.webp", disc: true },
@@ -149,8 +149,8 @@ export default function HomePageI18n({
                 key={logo.src}
                 className="relative h-24 md:h-36 bg-[color:var(--color-surface)] flex items-center justify-center"
               >
-                {logo.disc ? (
-                  <div className="relative h-[84%] aspect-square rounded-full bg-white overflow-hidden">
+                {logo.disc || logo.blackDisc ? (
+                  <div className={`relative h-[84%] aspect-square rounded-full overflow-hidden ${logo.blackDisc ? "bg-black" : "bg-white"}`}>
                     <Image
                       src={logo.src}
                       alt={home.logos.alts[i] ?? ""}
@@ -161,9 +161,6 @@ export default function HomePageI18n({
                   </div>
                 ) : (
                   <>
-                    {logo.darkPanel && (
-                      <span aria-hidden="true" className="logo-dark-panel" />
-                    )}
                     <Image
                       src={logo.src}
                       alt={home.logos.alts[i] ?? ""}
