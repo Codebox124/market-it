@@ -1,14 +1,5 @@
 User-agent: *
 Allow: /
-Disallow: /marketing/graphic-design/
-Disallow: /marketing/photo-editing/
-Disallow: /marketing/video-editing/
-Disallow: /marketing/animation/
-Disallow: /visuals/website-and-apps-design/
-Disallow: /visuals/advertising/
-Disallow: /visuals/social-media/
-Disallow: /visuals/flyer-distribution/
 Disallow: /studio
-
 
 Sitemap: https://makeitandmarket.com/sitemap.xml
