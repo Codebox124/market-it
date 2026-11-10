@@ -41,7 +41,7 @@ type TestimonialSet = {
 const TESTIMONIALS_I18N: Record<string, TestimonialSet> = {
   en: {
     eyebrow: "In their words",
-    heading: "{testimonialSet.heading}",
+    heading: "What clients say.",
     items: [
       { quote: "First of all, thank you very much for your outstanding services provided to me and within a timely manner.", name: "Joseph A." },
       { quote: "Thank you for your patience and for being meticulous with my campaign.", name: "Sherri S." },
@@ -382,7 +382,7 @@ export default function LandingPageClient({ dict, lang }: LandingPageProps) {
           >
             <p className="eyebrow mb-5">{testimonialSet.eyebrow}</p>
             <h2 className="display-lg text-[color:var(--color-ink)]">
-              What clients say.
+              {testimonialSet.heading}
             </h2>
           </motion.div>
 
