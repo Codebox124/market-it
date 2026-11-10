@@ -76,7 +76,7 @@ export default async function SingleBlogPage({ params }: Props) {
       {/* HERO */}
       <section className="relative overflow-hidden">
 
-        <div className="relative max-w-[1600px] mx-auto px-6 lg:px-10 pt-32 md:pt-40 pb-20 md:pb-28">
+        <div className="relative max-w-[1600px] mx-auto px-6 lg:px-10 pt-32 md:pt-40 pb-10 md:pb-14">
           <Link
             href={`/${lang}/blog`}
             className="group inline-flex items-center gap-2 text-xs tracking-[0.22em] uppercase text-[color:var(--color-paper-muted)] hover:text-[color:var(--color-gold-deep)] transition-colors duration-300 mb-14"
@@ -128,7 +128,7 @@ export default async function SingleBlogPage({ params }: Props) {
       )}
 
       {/* ARTICLE BODY */}
-      <article className="max-w-[1600px] mx-auto px-6 lg:px-10 py-20 md:py-28">
+      <article className="max-w-[1600px] mx-auto px-6 lg:px-10 pt-10 md:pt-14 pb-20 md:pb-28">
         <div className="max-w-2xl mx-auto prose prose-lg prose-on-paper prose-headings:font-display prose-headings:tracking-tight prose-a:no-underline hover:prose-a:underline prose-blockquote:font-display prose-blockquote:italic prose-img:my-12">
           <PortableText value={post.content} />
         </div>
