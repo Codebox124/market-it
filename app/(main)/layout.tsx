@@ -10,6 +10,7 @@ import Script from "next/script";
 import "../globals.css";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
+import ThemeToggle from "@/components/ThemeToggle";
 
 const spaceGrotesk = Space_Grotesk({
   weight: ["300", "400", "500", "600", "700"],
@@ -86,6 +87,12 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html:
+              "try{if(localStorage.getItem('mim-theme')==='light'){document.documentElement.dataset.theme='light'}}catch(e){}",
+          }}
+        />
         <meta name="msvalidate.01" content="009C8AEC151B258FD1F908FA76572D41" />
         {/* Google Analytics */}
         <Script
@@ -160,6 +167,7 @@ export default function RootLayout({
         <Navbar />
         <main className="flex-grow w-full">{children}</main>
         <Footer />
+        <ThemeToggle />
       </body>
     </html>
   );
