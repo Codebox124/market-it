@@ -60,7 +60,7 @@ export default function ContentCreationClient({ works }: { works: Work[] }) {
                 viewport={{ once: true, amount: 0.15 }}
                 custom={i}
                 variants={fade}
-                className="group relative aspect-square overflow-hidden bg-[color:var(--color-surface)]"
+                className="group relative aspect-square overflow-hidden bg-[#111111]"
               >
                 {work.type === "video" ? (
                   <video
