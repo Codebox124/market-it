@@ -5,6 +5,7 @@ import { Space_Grotesk, Geist, Libre_Caslon_Text } from "next/font/google";
 import Script from "next/script";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
+import ThemeToggle from "@/components/ThemeToggle";
 
 const spaceGrotesk = Space_Grotesk({
   weight: ["300", "400", "500", "600", "700"],
@@ -129,6 +130,12 @@ export default async function LanguageLayout({ children, params }: Props) {
     // Gunakan variabel 'lang', bukan 'params.lang'
     <html lang={lang}>
       <head>
+        <script
+          dangerouslySetInnerHTML={{
+      __html:
+          "try{if(localStorage.getItem('mim-theme')==='light'){document.documentElement.dataset.theme='light'}}catch(e){}",
+          }}
+      />
         {/* Google Analytics */}
         <Script
           strategy="afterInteractive"
@@ -202,6 +209,7 @@ export default async function LanguageLayout({ children, params }: Props) {
         <Navbar />
         <main className="flex-grow w-full">{children}</main>
         <Footer />
+        <ThemeToggle />
       </body>
     </html>
   );
