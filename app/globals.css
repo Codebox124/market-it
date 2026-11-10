@@ -466,17 +466,3 @@ body:has(.on-paper) nav.fixed a span {
 [data-theme="light"] .logo-dark-img {
   display: none;
 }
-
-/* Logos designed to sit on black (Oliver's brush mark) keep a black
-   panel inside their cell in light mode — the inverse of the white
-   logo discs. In dark mode the black cell already does the job. */
-.logo-dark-panel {
-  display: none;
-}
-[data-theme="light"] .logo-dark-panel {
-  display: block;
-  position: absolute;
-  inset: 6% 5%;
-  background-color: #0a0a0a;
-  border-radius: 1rem;
-}
