@@ -107,7 +107,7 @@ const work: {
 }[] = [
   {
     title: "Branding & Identity",
-    image: "/content/branding-showcase-v2.webp",
+    image: "/content/branding-showcase-v3.webp",
     alt: "Branding and identity design by Make It & Market",
     blurb:
       "Logos and identity systems — marks built to be recognised anywhere.",
