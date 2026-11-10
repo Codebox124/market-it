@@ -344,8 +344,8 @@ export default function HomePage() {
           <figure className="mt-16 md:mt-20">
             <div className="relative w-full aspect-[16/9] md:aspect-[21/9] overflow-hidden bg-[color:var(--color-surface)]">
               <Image
-                src="/content/pic2.webp"
-                alt="Rainy New York City street"
+                src="/content/hero-timessquare.webp"
+                alt="Times Square at night, New York City"
                 fill
                 priority
                 sizes="(max-width: 1600px) 100vw, 1600px"
