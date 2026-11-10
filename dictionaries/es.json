@@ -63,5 +63,247 @@
       "success": "¡Mensaje enviado con éxito! Nos pondremos en contacto contigo pronto.",
       "error": "No se pudo enviar el mensaje. Por favor, inténtalo de nuevo más tarde."
     }
+  },
+  "home": {
+    "about": {
+      "heading": "Nosotros",
+      "statement": "Make It & Market es un estudio de branding, diseño y creación de contenido con sede en Nueva York. Trabajamos con una amplia variedad de empresas y emprendedores, brindándoles asistencia creativa de alto nivel sin la carga innecesaria de una agencia tradicional: acceso directo a las personas que hacen el trabajo y un estándar de acabado que resiste cualquier escrutinio.",
+      "stats": [
+        {
+          "label": "Piezas de portafolio producidas",
+          "value": "500+"
+        },
+        {
+          "label": "Marcas y organizaciones atendidas",
+          "value": "40+"
+        },
+        {
+          "label": "Disciplinas bajo un mismo techo",
+          "value": "3"
+        }
+      ],
+      "steps": [
+        {
+          "body": "Conocemos el negocio, la audiencia y el panorama competitivo antes de mover un solo píxel.",
+          "title": "Descubrir"
+        },
+        {
+          "body": "Estrategia y dirección creativa, acordadas desde el inicio, para que el trabajo que sigue tenga una columna vertebral.",
+          "title": "Definir"
+        },
+        {
+          "body": "Identidad, diseño y contenido producidos paso a paso, con revisión experta en cada entregable.",
+          "title": "Diseñar"
+        },
+        {
+          "body": "Lanzamiento, documentación y acompañamiento: recursos, lineamientos y archivos listos para que su equipo trabaje con ellos.",
+          "title": "Entregar"
+        }
+      ]
+    },
+    "contact": {
+      "body": "Cuéntenos sobre la marca que está construyendo. Respondemos a toda consulta seria en el plazo de un día hábil.",
+      "form": {
+        "bodyCompany": "Empresa",
+        "bodyDetails": "Detalles del proyecto",
+        "bodyEmail": "Correo electrónico",
+        "bodyName": "Nombre",
+        "company": "Empresa",
+        "companyPh": "Empresa u organización",
+        "details": "Detalles del proyecto",
+        "detailsPh": "¿Qué está construyendo y qué necesita lograr?",
+        "email": "Correo laboral",
+        "emailPh": "correo@empresa.com",
+        "name": "Su nombre",
+        "namePh": "Nombre completo",
+        "note": "Esto abre su aplicación de correo con el mensaje ya dirigido a nosotros; nada se envía hasta que usted presione enviar.",
+        "subjectPrefix": "Nueva consulta",
+        "submit": "Enviar consulta"
+      },
+      "heading": "Contacto"
+    },
+    "footer": {
+      "languagesLabel": "Idiomas",
+      "rights": "Todos los derechos reservados",
+      "tagline": "Branding, diseño y creación de contenido.",
+      "translationNote": "Disculpe cualquier error de traducción."
+    },
+    "hero": {
+      "body": "Make It & Market es un estudio de branding, diseño y creación de contenido para empresas que se niegan a pasar desapercibidas. Identidad, diseño, video y medios digitales, concebidos y producidos bajo un mismo techo, con un estándar de nivel empresarial.",
+      "caption": "Branding, diseño y creación de contenido, bajo un mismo techo.",
+      "cta": "Ver el trabajo",
+      "eyebrow": "Branding · Diseño · Creación de contenido",
+      "h1a": "Creamos marcas que el mercado",
+      "h1b": "recuerda.",
+      "heroAlt": "Times Square de noche, ciudad de Nueva York",
+      "reelLabel": "Reel de presentación de Make It & Market"
+    },
+    "jsonLdDescription": "Estudio de branding, diseño y creación de contenido para una amplia variedad de empresas y emprendedores. Identidad de marca, diseño gráfico, fotografía, video, animación y sitios web.",
+    "logos": {
+      "alts": [
+        "EXOPEST Pest Control — identidad de marca diseñada por Make It & Market",
+        "De Zavala Elementary — logotipo diseñado por Make It & Market",
+        "Builditect Roofing — logotipo diseñado por Make It & Market",
+        "Terra Design Group — logotipo diseñado por Make It & Market",
+        "Popcorn TV — logotipo diseñado por Make It & Market",
+        "Glow Minds Agency — logotipo diseñado por Make It & Market",
+        "Hot or Not — logotipo diseñado por Make It & Market",
+        "ReefNReem Films — logotipo diseñado por Make It & Market",
+        "ARC — logotipo diseñado por Make It & Market",
+        "Northeast Hydraulics & Machine — logotipo diseñado por Make It & Market",
+        "Oliver's Tacos al Carbon — logotipo diseñado por Make It & Market",
+        "The Forever Runway — logotipo diseñado por Make It & Market",
+        "Moses Villani — logotipo diseñado por Make It & Market",
+        "Kids Dynasty Daycare — logotipo diseñado por Make It & Market",
+        "Laara Raynier Mastercutter Academy — logotipo diseñado por Make It & Market"
+      ],
+      "ariaLabel": "Clientes seleccionados",
+      "heading": "Con la confianza de marcas ambiciosas"
+    },
+    "nav": {
+      "about": "Nosotros",
+      "contact": "Contacto",
+      "services": "Servicios",
+      "toggleMenu": "Alternar menú",
+      "work": "Trabajos"
+    },
+    "services": {
+      "blocks": [
+        {
+          "body": "Diseño de logotipos, mensajes de marca y sistemas de identidad que le dan a un negocio un rostro que vale la pena recordar, llevados a campañas publicitarias, sitios web y aplicaciones, con ayuda en SEO y posicionamiento para que la marca sea encontrada.",
+          "deliverables": [
+            "Logotipo y mensajes",
+            "Diseño de campañas y publicidad",
+            "Sitios web y aplicaciones",
+            "Ayuda en SEO y posicionamiento"
+          ],
+          "title": "Branding"
+        },
+        {
+          "body": "Diseño gráfico para impresión y producto: volantes, tarjetas de presentación y menús; ropa, productos y empaques; folletos, presentaciones y documentos; pósters, libros y portadas, diseñados para ser tomados en serio.",
+          "deliverables": [
+            "Volantes, tarjetas de presentación y menús",
+            "Ropa, productos y empaques",
+            "Folletos, presentaciones y documentos",
+            "Pósters, libros y portadas"
+          ],
+          "title": "Diseño"
+        },
+        {
+          "body": "Producción y edición de video, animación 2D/3D y gráficos en movimiento, dibujos y arte digital, fotografía y retoque, producidos por nuestro propio equipo para mantener una marca visible, actual y creíble.",
+          "deliverables": [
+            "Producción y edición de video",
+            "Animación 2D/3D y gráficos en movimiento",
+            "Dibujos y arte digital",
+            "Fotografía y retoque"
+          ],
+          "title": "Creación de contenido"
+        }
+      ],
+      "heading": "Lo que hacemos",
+      "introBefore": "Tres disciplinas, un mismo estándar: trabajo que se sostiene en cualquier sala de juntas, en cualquier pantalla. Explore cada una en profundidad — ",
+      "introLinks": [
+        "branding",
+        "diseño",
+        "creación de contenido"
+      ],
+      "portfolioLink": "Ver el portafolio completo →"
+    },
+    "testimonials": {
+      "ariaLabel": "Testimonios de clientes",
+      "heading": "Testimonios de clientes",
+      "items": [
+        {
+          "name": "Sherri S.",
+          "quote": "Gracias por su paciencia y por ser tan meticuloso con mi campaña."
+        },
+        {
+          "name": "Joseph A.",
+          "quote": "En primer lugar, muchas gracias por sus excelentes servicios y por la puntualidad con la que me atendieron."
+        },
+        {
+          "name": "Joanne A.",
+          "quote": "Gracias por corregir eso; no solo vendemos perfume. ¡Es muy agudo con el marketing!"
+        },
+        {
+          "name": "Murray B.",
+          "quote": "Lo que preparó fue increíble. Todavía me encanta ese video, y a mi esposa también."
+        },
+        {
+          "name": "Darcia J.",
+          "quote": "Estoy muy emocionada por el lanzamiento. ¡Siento que estoy a punto de ser millonaria! Usted sabe que siempre acudiré a usted primero. Muchas gracias por su ayuda."
+        },
+        {
+          "name": "Kajuan R.",
+          "quote": "Resultados excelentes. ¡Literalmente me dejó boquiabierto!"
+        }
+      ]
+    },
+    "work": {
+      "heading": "Trabajo seleccionado",
+      "intro": "Una selección del portafolio: sistemas de identidad, diseño editorial, fotografía, video y experiencias digitales, producidos para clientes de los sectores de la salud, la hotelería, el editorial, la moda y las artes.",
+      "tiles": [
+        {
+          "alt": "Producción de video por Make It & Market",
+          "blurb": "Comerciales, videos de marca y video para redes sociales, grabados, editados y terminados por nuestro propio equipo.",
+          "title": "Producción de video"
+        },
+        {
+          "alt": "Diseño de aplicaciones y sitios web por Make It & Market",
+          "blurb": "Sitios web, aplicaciones y páginas de destino personalizados, diseñados y desarrollados para convertir.",
+          "title": "Diseño de aplicaciones y sitios web"
+        },
+        {
+          "alt": "Diseño publicitario y de campañas por Make It & Market",
+          "blurb": "Creatividad para campañas impresas y digitales, creada para entenderse de un vistazo.",
+          "title": "Diseño publicitario y de campañas"
+        },
+        {
+          "alt": "Contenido para redes sociales por Make It & Market",
+          "blurb": "Contenido y campañas que mantienen a una marca presente, constante y digna de seguir.",
+          "title": "Redes sociales"
+        },
+        {
+          "alt": "Diseño de branding e identidad por Make It & Market",
+          "blurb": "Logotipos y sistemas de identidad: marcas creadas para ser reconocidas en cualquier lugar.",
+          "title": "Branding e identidad"
+        },
+        {
+          "alt": "Diseño de animación y movimiento por Make It & Market",
+          "blurb": "Animación 2D y 3D: personajes, historias y videos de marca producidos por nuestro propio equipo.",
+          "title": "Animación y movimiento"
+        },
+        {
+          "alt": "Diseño de presentaciones por Make It & Market",
+          "blurb": "Presentaciones y propuestas comerciales diseñadas para mantener la atención de la sala y dejar claro el mensaje.",
+          "title": "Presentaciones"
+        },
+        {
+          "alt": "Diseño de documentos por Make It & Market",
+          "blurb": "Folletos, informes y documentos, diseñados, diagramados y listos para imprimir.",
+          "title": "Documentos"
+        },
+        {
+          "alt": "Modelado 3D por Make It & Market",
+          "blurb": "Objetos, productos y mundos de marca, modelados y renderizados en 3D.",
+          "title": "Modelado 3D"
+        },
+        {
+          "alt": "Diseño de portada y contraportada de libro por Make It & Market",
+          "blurb": "Portadas y diseño de libros con una tipografía que merece una segunda mirada.",
+          "title": "Portadas y diseño de libros"
+        },
+        {
+          "alt": "Fotografía por Make It & Market",
+          "blurb": "Fotografía tomada, retocada y terminada con un estándar editorial.",
+          "title": "Fotografía y retoque"
+        },
+        {
+          "alt": "Dibujos y bocetos por Make It & Market",
+          "blurb": "Arte y bocetos dibujados a mano: conceptos desarrollados a lápiz y tinta.",
+          "title": "Dibujo y bocetos"
+        }
+      ]
+    }
   }
 }
