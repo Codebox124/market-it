@@ -58,7 +58,7 @@ export default function ContactClient() {
       </section>
 
       {/* FORM */}
-      <section className="border-t border-[color:var(--color-line)] bg-[color:var(--color-surface)]">
+      <section className="dark-band border-t border-[color:var(--color-line)] bg-[color:var(--color-surface)]">
         <div className="max-w-[1600px] mx-auto px-6 lg:px-10 pt-14 md:pt-20 pb-24 md:pb-32">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
             {/* Direct lines */}
