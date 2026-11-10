@@ -51,13 +51,21 @@ export const metadata: Metadata = {
     url: "https://www.makeitandmarket.com",
     siteName: "Make It & Market",
     type: "website",
+    images: [
+      {
+        url: "https://www.makeitandmarket.com/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Make It & Market",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Make It & Market — Branding, Design & Content Creation",
     description:
       "Branding, design and content creation for companies that refuse to blend in.",
-    images: ["https://www.makeitandmarket.com/logo.png"],
+    images: ["https://www.makeitandmarket.com/og-image.jpg"],
   },
   other: {
     // "google-site-verification": "hepa8iNMg0RjaI7FiuzVLWwwwWCQ26z5ofrZFxldzNA",
