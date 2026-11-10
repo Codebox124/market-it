@@ -38,7 +38,7 @@ export default function BrandingClient({ works }: { works: Work[] }) {
                 Branding.
               </h1>
               <p className="mt-10 md:mt-12 text-lg md:text-xl leading-relaxed text-[color:var(--color-ink-soft)] font-light max-w-3xl">
-                Logo design, brand messaging and identity systems that give a business a face worth remembering — carried through advertising campaigns, websites and apps, with SEO and ranking help so the brand gets found, not just seen.
+                Logo design, brand messaging and identity systems that give a business a face worth remembering — carried through advertising campaigns, websites and apps, with SEO and ranking help so the brand gets found.
               </p>
             </div>
           </motion.div>
