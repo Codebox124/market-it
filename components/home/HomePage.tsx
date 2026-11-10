@@ -230,7 +230,7 @@ const work: {
 const services = [
   {
     title: "Branding",
-    href: "/marketing",
+    href: "/branding",
     body: "Logo design, brand messaging and identity systems that give a business a face worth remembering — carried through advertising campaigns, websites and apps, with SEO and ranking help so the brand gets found, not just seen.",
     deliverables: [
       "Logo & messaging",
@@ -241,7 +241,7 @@ const services = [
   },
   {
     title: "Design",
-    href: "/marketing",
+    href: "/design",
     body: "Graphic design across print and product: flyers, business cards and menus; clothing, products and packaging; brochures, presentations and documents; posters, books and cover art — designed to be taken seriously.",
     deliverables: [
       "Flyers, business cards & menus",
@@ -404,7 +404,7 @@ export default function HomePage() {
           <h2 className="font-fraunces font-medium text-[color:var(--color-paper)] text-[clamp(2.2rem,5vw,4.2rem)] leading-none">
             Selected Work
           </h2>
-          <p className="mt-6 max-w-2xl text-lg leading-relaxed text-[color:var(--color-ink-soft)]">
+          <p className="mt-5 max-w-2xl text-lg leading-relaxed text-[color:var(--color-ink-soft)]">
             A selection from the portfolio — identity systems, editorial design,
             photography, film and digital experiences, produced for clients
             across healthcare, hospitality, publishing, fashion and the arts.
@@ -450,7 +450,7 @@ export default function HomePage() {
       </section>
 
       {/* SERVICES */}
-      <section id="services" className="py-24 md:py-36 border-t border-[color:var(--color-line)] scroll-mt-24">
+      <section id="services" className="py-24 md:py-16 border-t border-[color:var(--color-line)] scroll-mt-24">
         <div className="max-w-[1600px] mx-auto px-6 lg:px-10">
           <h2 className="font-fraunces font-medium text-[color:var(--color-paper)] text-[clamp(2.2rem,5vw,4.2rem)] leading-none">
             What We Do
@@ -458,25 +458,25 @@ export default function HomePage() {
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-[color:var(--color-ink-soft)]">
             Three disciplines, one standard: work that holds its own in any
             boardroom, on any screen. Explore each in depth —{" "}
-            <Link href="/marketing" className="underline decoration-[color:var(--color-gold)] underline-offset-4 hover:text-[color:var(--color-ink)]">
-              marketing
+            <Link href="/branding" className="underline decoration-[color:var(--color-gold)] underline-offset-4 hover:text-[color:var(--color-ink)]">
+              branding
+            </Link>
+            ,{" "}
+            <Link href="/design" className="underline decoration-[color:var(--color-gold)] underline-offset-4 hover:text-[color:var(--color-ink)]">
+              design
             </Link>
             ,{" "}
             <Link href="/content-creation" className="underline decoration-[color:var(--color-gold)] underline-offset-4 hover:text-[color:var(--color-ink)]">
               content creation
             </Link>
-            ,{" "}
-            <Link href="/websites-apps" className="underline decoration-[color:var(--color-gold)] underline-offset-4 hover:text-[color:var(--color-ink)]">
-              websites and apps
-            </Link>
             .
           </p>
 
-          <div className="mt-14">
+          <div className="mt-10">
             {services.map((service) => (
               <article
                 key={service.title}
-                className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12 py-12 border-t border-[color:var(--color-line)]"
+                className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-x-12 lg:gap-y-4 py-10 lg:py-7 border-t border-[color:var(--color-line)]"
               >
                 <h3 className="lg:col-span-4 font-fraunces text-3xl md:text-4xl font-medium text-[color:var(--color-paper)]">
                   <Link
@@ -486,10 +486,10 @@ export default function HomePage() {
                     {service.title}
                   </Link>
                 </h3>
-                <p className="lg:col-span-4 text-lg leading-relaxed text-[color:var(--color-ink-soft)]">
+                <p className="lg:col-span-4 text-lg leading-[1.55] text-[color:var(--color-ink-soft)]">
                   {service.body}
                 </p>
-                <ul className="lg:col-span-4 space-y-2.5">
+                <ul className="lg:col-span-4 space-y-2">
                   {service.deliverables.map((item) => (
                     <li
                       key={item}
