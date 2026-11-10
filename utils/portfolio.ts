@@ -53,3 +53,23 @@ export function interleaveByCategory<T extends { category: string }>(
   }
   return result;
 }
+
+// Group portfolio items so the same category sits together (flyers with
+// flyers, websites with websites). Categories follow the given order;
+// unknown categories come after, alphabetically. Items within a group are
+// sorted by src. Deterministic — no shuffle — so the order is stable
+// between builds.
+export function groupByCategory<T extends { category: string; src: string }>(
+  items: T[],
+  order: string[]
+): T[] {
+  const rank = new Map(order.map((c, i) => [c, i] as const));
+  return [...items].sort((a, b) => {
+    const ra = rank.get(a.category) ?? order.length + 1;
+    const rb = rank.get(b.category) ?? order.length + 1;
+    if (ra !== rb) return ra - rb;
+    if (a.category !== b.category)
+      return a.category.localeCompare(b.category);
+    return a.src.localeCompare(b.src);
+  });
+}
