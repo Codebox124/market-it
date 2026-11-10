@@ -26,7 +26,7 @@ const jsonLd = {
   ],
 };
 
-const clientLogos: { src: string; alt: string; invert?: boolean; disc?: boolean }[] = [
+const clientLogos: { src: string; alt: string; invert?: boolean; disc?: boolean; lightSrc?: string; darkPanel?: boolean }[] = [
   {
     src: "/clientScroll/exopest-tile.webp",
     alt: "EXOPEST Pest Control — brand identity designed by Make It & Market",
@@ -51,6 +51,7 @@ const clientLogos: { src: string; alt: string; invert?: boolean; disc?: boolean 
   },
   {
     src: "/clientScroll/gm-tile-v3.webp",
+    lightSrc: "/clientScroll/gm-tile-light.webp",
     alt: "Glow Minds Agency — logo designed by Make It & Market",
   },
   {
@@ -72,6 +73,7 @@ const clientLogos: { src: string; alt: string; invert?: boolean; disc?: boolean 
   },
   {
     src: "/clientScroll/olivers-tile.webp",
+    darkPanel: true,
     alt: "Oliver's Tacos al Carbon — logo designed by Make It & Market",
   },
   {
@@ -359,7 +361,7 @@ export default function HomePage() {
           </div>
 
           <figure className="mt-16 md:mt-20">
-            <div className="relative w-full aspect-[16/9] md:aspect-[21/9] overflow-hidden bg-[#111111]">
+            <div className="relative w-full aspect-[16/9] md:aspect-[21/9] overflow-hidden media-frame">
               <Image
                 src="/content/hero-timessquare.webp"
                 alt="Times Square at night, New York City"
@@ -389,7 +391,7 @@ export default function HomePage() {
                 className="relative h-24 md:h-36 bg-[color:var(--color-surface)] flex items-center justify-center"
               >
                 {logo.disc ? (
-                  <div className="relative h-[94%] aspect-square rounded-full bg-white overflow-hidden">
+                  <div className="relative h-[84%] aspect-square rounded-full bg-white overflow-hidden">
                     <Image
                       src={logo.src}
                       alt={logo.alt}
@@ -399,13 +401,27 @@ export default function HomePage() {
                     />
                   </div>
                 ) : (
-                  <Image
-                    src={logo.src}
-                    alt={logo.alt}
-                    fill
-                    sizes="(max-width: 1024px) 33vw, 20vw"
-                    className={`object-contain p-2 md:p-2${logo.invert ? " invert" : ""}`}
-                  />
+                  <>
+                    {logo.darkPanel && (
+                      <span aria-hidden="true" className="logo-dark-panel" />
+                    )}
+                    <Image
+                      src={logo.src}
+                      alt={logo.alt}
+                      fill
+                      sizes="(max-width: 1024px) 33vw, 20vw"
+                      className={`object-contain p-3 md:p-4${logo.invert ? " invert" : ""}${logo.lightSrc ? " logo-dark-img" : ""}`}
+                    />
+                    {logo.lightSrc && (
+                      <Image
+                        src={logo.lightSrc}
+                        alt={logo.alt}
+                        fill
+                        sizes="(max-width: 1024px) 33vw, 20vw"
+                        className="object-contain p-3 md:p-4 logo-light-img"
+                      />
+                    )}
+                  </>
                 )}
               </div>
             ))}
@@ -429,7 +445,7 @@ export default function HomePage() {
             {work.map((piece) => (
               <article key={piece.title} className={`${piece.span} group`}>
                 <div
-                  className={`relative w-full ${piece.aspect} overflow-hidden bg-[#111111]`}
+                  className={`relative w-full ${piece.aspect} overflow-hidden media-frame`}
                 >
                   {piece.video ? (
                     <VideoTile
