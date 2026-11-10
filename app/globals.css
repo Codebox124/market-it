@@ -362,3 +362,44 @@ body:has(.on-paper) nav.fixed button {
 body:has(.on-paper) nav.fixed a span {
   color: var(--color-gold-deep);
 }
+
+/* =========================================================
+   LIGHT THEME — flipped via [data-theme="light"] on <html>
+   (toggle in the corner; choice persists in localStorage)
+   ========================================================= */
+
+[data-theme="light"] {
+  --color-canvas: #f4f1ea;
+  --color-surface: #ffffff;
+  --color-surface-muted: #ece7da;
+  --color-ink: #171713;
+  --color-ink-soft: #45423a;
+  --color-ink-muted: #7d7767;
+  --color-line: #ddd5c1;
+  --color-line-strong: #c9c0aa;
+  --color-noir: #f4f1ea;
+  --color-noir-surface: #ffffff;
+  --color-noir-surface-muted: #ece7da;
+  --color-noir-ink: #171713;
+  --color-noir-ink-soft: #45423a;
+  --color-noir-ink-muted: #7d7767;
+  --color-noir-line: #ddd5c1;
+  --color-noir-line-strong: #c9c0aa;
+  --color-paper: #171713;
+  --color-accent: #171713;
+  --color-accent-hover: #000000;
+  --color-accent-ink: #f4f1ea;
+  --color-secondary: #171713;
+  --color-secondary-hover: #000000;
+  color-scheme: light;
+}
+
+/* The blog's paper surface keeps its own background in both themes */
+[data-theme="light"] .on-paper {
+  --color-paper: #f4f1ea;
+}
+
+/* Logos inverted for the dark theme read correctly again on light */
+[data-theme="light"] img.invert {
+  filter: none !important;
+}
