@@ -406,8 +406,9 @@ body:has(.on-paper) nav.fixed a span {
 
 /* =========================================================
    DARK BANDS — areas that are black in the dark theme stay
-   black in the light theme (logo strip, card grids, footer,
-   dark sections). Pinning the dark token values on the band
+   black in the light theme (card grids, footer, dark
+   sections; the logo strip is the one exception — see below).
+   Pinning the dark token values on the band
    makes every var()-based class inside it resolve dark in
    both themes. (Carl, 2026-11-10: logos/cards were getting
    lost on white.)
@@ -424,7 +425,58 @@ body:has(.on-paper) nav.fixed a span {
   --color-line-strong: #2e2e2e;
 }
 
-/* The logo strip stays black, so its inverted logos keep their inversion in light mode */
+/* =========================================================
+   MEDIA FRAMES — containers that letterbox an image/video
+   (object-contain tiles, the hero frame, the VideoTile
+   letterbox). Dark mode keeps the black frame; in light mode
+   the frame becomes a warm gallery mat, one step darker than
+   the paper page, with a hairline border. (Carl, 2026-11-10:
+   the black behind everything on the light version had to go.)
+   ========================================================= */
+.media-frame {
+  background-color: #111111;
+  border: 1px solid #111111;
+}
+[data-theme="light"] .media-frame {
+  background-color: #ede8dd;
+  border-color: #c9c0a8;
+}
+
+/* The logo strip takes the same gallery mat in light mode — an exception
+   to its .dark-band pinning, for this section only: cells become the mat,
+   the grid hairlines become the frame hairline, and its inverted logos
+   show their normal dark/color artwork again so they read on the mat.
+   (Other .dark-band sections stay black in light mode.) */
+[data-theme="light"] .logo-strip {
+  --color-surface: #ede8dd;
+  --color-line: #c9c0a8;
+}
 [data-theme="light"] .logo-strip img.invert {
-  filter: invert(100%) !important;
+  filter: none !important;
+}
+
+/* Logo theme variants — a logo with a light-mode version renders the
+   original in dark mode and the variant on the light mat. */
+.logo-light-img {
+  display: none;
+}
+[data-theme="light"] .logo-light-img {
+  display: block;
+}
+[data-theme="light"] .logo-dark-img {
+  display: none;
+}
+
+/* Logos designed to sit on black (Oliver's brush mark) keep a black
+   panel inside their cell in light mode — the inverse of the white
+   logo discs. In dark mode the black cell already does the job. */
+.logo-dark-panel {
+  display: none;
+}
+[data-theme="light"] .logo-dark-panel {
+  display: block;
+  position: absolute;
+  inset: 6% 5%;
+  background-color: #0a0a0a;
+  border-radius: 1rem;
 }
