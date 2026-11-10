@@ -63,5 +63,247 @@
       "success": "Message sent successfully! We will contact you soon.",
       "error": "Failed to send message. Please try again later."
     }
+  },
+  "home": {
+    "about": {
+      "heading": "About",
+      "statement": "Make It & Market is a branding, design and content creation studio based in New York. We partner with a wide array of businesses and entrepreneurs, giving them senior-level creative assistance without agency bloat: direct access to the people doing the work, and a standard of finish that survives scrutiny.",
+      "stats": [
+        {
+          "label": "Portfolio pieces produced",
+          "value": "500+"
+        },
+        {
+          "label": "Brands & organisations served",
+          "value": "40+"
+        },
+        {
+          "label": "Disciplines under one roof",
+          "value": "3"
+        }
+      ],
+      "steps": [
+        {
+          "body": "We learn the business, the audience and the competitive field before a single pixel moves.",
+          "title": "Discover"
+        },
+        {
+          "body": "Strategy and creative direction, agreed up front — so the work that follows has a spine.",
+          "title": "Define"
+        },
+        {
+          "body": "Identity, design and content produced iteratively, with senior eyes on every deliverable.",
+          "title": "Design"
+        },
+        {
+          "body": "Launched, documented and supported — assets, guidelines and files your team can run with.",
+          "title": "Deliver"
+        }
+      ]
+    },
+    "contact": {
+      "body": "Tell us about the brand you're building. We respond to every serious inquiry within one business day.",
+      "form": {
+        "bodyCompany": "Company",
+        "bodyDetails": "Project details",
+        "bodyEmail": "Email",
+        "bodyName": "Name",
+        "company": "Company",
+        "companyPh": "Company or organisation",
+        "details": "Project details",
+        "detailsPh": "What are you building, and what does it need to achieve?",
+        "email": "Work email",
+        "emailPh": "you@company.com",
+        "name": "Your name",
+        "namePh": "Full name",
+        "note": "This opens your email app with the message addressed to us — nothing is sent until you press send.",
+        "subjectPrefix": "New inquiry",
+        "submit": "Send Inquiry"
+      },
+      "heading": "Contact"
+    },
+    "footer": {
+      "languagesLabel": "Languages",
+      "rights": "All rights reserved",
+      "tagline": "Branding, design and content creation.",
+      "translationNote": ""
+    },
+    "hero": {
+      "body": "Make It & Market is a branding, design and content creation studio for companies that refuse to blend in. Identity, design, film and digital — conceived and produced under one roof, to an enterprise standard.",
+      "caption": "Branding, design and content creation — under one roof.",
+      "cta": "See the Work",
+      "eyebrow": "Branding · Design · Content Creation",
+      "h1a": "We build brands the market",
+      "h1b": "remembers.",
+      "heroAlt": "Times Square at night, New York City",
+      "reelLabel": "Make It & Market showreel"
+    },
+    "jsonLdDescription": "Branding, design and content creation studio for a wide array of businesses and entrepreneurs. Brand identity, graphic design, photography, video, animation and websites.",
+    "logos": {
+      "alts": [
+        "EXOPEST Pest Control — brand identity designed by Make It & Market",
+        "De Zavala Elementary — logo designed by Make It & Market",
+        "Builditect Roofing — logo designed by Make It & Market",
+        "Terra Design Group — logo designed by Make It & Market",
+        "Popcorn TV — logo designed by Make It & Market",
+        "Glow Minds Agency — logo designed by Make It & Market",
+        "Hot or Not — logo designed by Make It & Market",
+        "ReefNReem Films — logo designed by Make It & Market",
+        "ARC — logo designed by Make It & Market",
+        "Northeast Hydraulics & Machine — logo designed by Make It & Market",
+        "Oliver's Tacos al Carbon — logo designed by Make It & Market",
+        "The Forever Runway — logo designed by Make It & Market",
+        "Moses Villani — logo designed by Make It & Market",
+        "Kids Dynasty Daycare — logo designed by Make It & Market",
+        "Laara Raynier Mastercutter Academy — logo designed by Make It & Market"
+      ],
+      "ariaLabel": "Selected clients",
+      "heading": "Trusted by ambitious brands"
+    },
+    "nav": {
+      "about": "About",
+      "contact": "Contact",
+      "services": "Services",
+      "toggleMenu": "Toggle menu",
+      "work": "Work"
+    },
+    "services": {
+      "blocks": [
+        {
+          "body": "Logo design, brand messaging and identity systems that give a business a face worth remembering — carried through advertising campaigns, websites and apps, with SEO and ranking help so the brand gets found.",
+          "deliverables": [
+            "Logo & messaging",
+            "Campaign & advertising design",
+            "Websites & apps",
+            "SEO & ranking help"
+          ],
+          "title": "Branding"
+        },
+        {
+          "body": "Graphic design across print and product: flyers, business cards and menus; clothing, products and packaging; brochures, presentations and documents; posters, books and cover art — designed to be taken seriously.",
+          "deliverables": [
+            "Flyers, business cards & menus",
+            "Clothing, products & packaging",
+            "Brochures, presentations & documents",
+            "Posters, books & cover art"
+          ],
+          "title": "Design"
+        },
+        {
+          "body": "Video production and editing, 2D/3D animation and motion graphics, drawings and digital artwork, photography and retouching — produced in-house to keep a brand visible, current and credible.",
+          "deliverables": [
+            "Video production & editing",
+            "2D/3D animation & motion graphics",
+            "Drawings & digital artwork",
+            "Photography & retouching"
+          ],
+          "title": "Content Creation"
+        }
+      ],
+      "heading": "What We Do",
+      "introBefore": "Three disciplines, one standard: work that holds its own in any boardroom, on any screen. Explore each in depth — ",
+      "introLinks": [
+        "branding",
+        "design",
+        "content creation"
+      ],
+      "portfolioLink": "See the full portfolio →"
+    },
+    "testimonials": {
+      "ariaLabel": "Client testimonials",
+      "heading": "Client Testimonials",
+      "items": [
+        {
+          "name": "Sherri S.",
+          "quote": "Thank you for your patience and for being meticulous with my campaign."
+        },
+        {
+          "name": "Joseph A.",
+          "quote": "First of all, thank you very much for your outstanding services provided to me and within a timely manner."
+        },
+        {
+          "name": "Joanne A.",
+          "quote": "Thank you for correcting that; we're not just selling perfume. You are sharp with marketing!"
+        },
+        {
+          "name": "Murray B.",
+          "quote": "What you put together was amazing. I still get a kick out of that video and so does my wife."
+        },
+        {
+          "name": "Darcia J.",
+          "quote": "I am so excited for the launch. I feel like I am about to be a millionaire! You know I will always come to you first. Thank you so much for your help."
+        },
+        {
+          "name": "Kajuan R.",
+          "quote": "Great results. Literally had me like wow over here!"
+        }
+      ]
+    },
+    "work": {
+      "heading": "Selected Work",
+      "intro": "A selection from the portfolio — identity systems, editorial design, photography, film and digital experiences, produced for clients across healthcare, hospitality, publishing, fashion and the arts.",
+      "tiles": [
+        {
+          "alt": "Video production by Make It & Market",
+          "blurb": "Commercials, brand films and social video — shot, edited and finished in-house.",
+          "title": "Video Production"
+        },
+        {
+          "alt": "App and website design by Make It & Market",
+          "blurb": "Custom websites, apps and landing pages — designed and built to convert.",
+          "title": "App & Website Design"
+        },
+        {
+          "alt": "Advertising and campaign design by Make It & Market",
+          "blurb": "Campaign creative for print and digital — built to be read at a glance.",
+          "title": "Advertising & Campaign Design"
+        },
+        {
+          "alt": "Social media content by Make It & Market",
+          "blurb": "Content and campaigns that keep a brand present, consistent, worth following.",
+          "title": "Social Media"
+        },
+        {
+          "alt": "Branding and identity design by Make It & Market",
+          "blurb": "Logos and identity systems — marks built to be recognised anywhere.",
+          "title": "Branding & Identity"
+        },
+        {
+          "alt": "Animation and motion design by Make It & Market",
+          "blurb": "2D and 3D animation — characters, stories and brand films produced in-house.",
+          "title": "Animation & Motion"
+        },
+        {
+          "alt": "Presentation design by Make It & Market",
+          "blurb": "Pitch decks and presentations — designed to hold a room and land the point.",
+          "title": "Presentations"
+        },
+        {
+          "alt": "Document design by Make It & Market",
+          "blurb": "Brochures, reports and documents — designed, typeset and print-ready.",
+          "title": "Documents"
+        },
+        {
+          "alt": "3D modeling by Make It & Market",
+          "blurb": "Objects, products and brand worlds — modelled and rendered in 3D.",
+          "title": "3D Modeling"
+        },
+        {
+          "alt": "Book cover design, front and back, by Make It & Market",
+          "blurb": "Cover art and book design with typography that earns a second look.",
+          "title": "Cover Art & Book Design"
+        },
+        {
+          "alt": "Photography by Make It & Market",
+          "blurb": "Photography shot, retouched and finished to an editorial standard.",
+          "title": "Photography & Retouching"
+        },
+        {
+          "alt": "Drawing and sketch artwork by Make It & Market",
+          "blurb": "Hand-drawn artwork and sketches — concepts developed in pencil and ink.",
+          "title": "Drawing & Sketch Artwork"
+        }
+      ]
+    }
   }
 }
