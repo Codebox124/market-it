@@ -359,7 +359,7 @@ export default function HomePage() {
           </div>
 
           <figure className="mt-16 md:mt-20">
-            <div className="relative w-full aspect-[16/9] md:aspect-[21/9] overflow-hidden bg-[color:var(--color-surface)]">
+            <div className="relative w-full aspect-[16/9] md:aspect-[21/9] overflow-hidden bg-[#111111]">
               <Image
                 src="/content/hero-timessquare.webp"
                 alt="Times Square at night, New York City"
@@ -382,7 +382,7 @@ export default function HomePage() {
           <h2 className="text-center text-[0.7rem] font-medium tracking-[0.32em] uppercase text-[color:var(--color-ink-muted)]">
             Trusted by ambitious brands
           </h2>
-          <div className="mt-10 grid grid-cols-3 lg:grid-cols-5 gap-px bg-[color:var(--color-line)] border border-[color:var(--color-line)]">
+          <div className="logo-strip dark-band mt-10 grid grid-cols-3 lg:grid-cols-5 gap-px bg-[color:var(--color-line)] border border-[color:var(--color-line)]">
             {clientLogos.map((logo) => (
               <div
                 key={logo.src}
@@ -429,7 +429,7 @@ export default function HomePage() {
             {work.map((piece) => (
               <article key={piece.title} className={`${piece.span} group`}>
                 <div
-                  className={`relative w-full ${piece.aspect} overflow-hidden bg-[color:var(--color-surface)]`}
+                  className={`relative w-full ${piece.aspect} overflow-hidden bg-[#111111]`}
                 >
                   {piece.video ? (
                     <VideoTile
@@ -546,7 +546,7 @@ export default function HomePage() {
             finish that survives scrutiny.
           </p>
 
-          <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-px bg-[color:var(--color-line)] border border-[color:var(--color-line)]">
+          <div className="dark-band mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-px bg-[color:var(--color-line)] border border-[color:var(--color-line)]">
             {processSteps.map((step) => (
               <article key={step.title} className="bg-[color:var(--color-surface)] p-8">
                 <h3 className="font-fraunces text-xl font-medium text-[color:var(--color-paper)]">
@@ -581,7 +581,7 @@ export default function HomePage() {
             Client Testimonials
           </h2>
 
-          <div className="mt-14 grid grid-cols-1 md:grid-cols-3 gap-px bg-[color:var(--color-line)] border border-[color:var(--color-line)]">
+          <div className="dark-band mt-14 grid grid-cols-1 md:grid-cols-3 gap-px bg-[color:var(--color-line)] border border-[color:var(--color-line)]">
             {testimonials.map((t) => (
               <figure key={t.name} className="bg-[color:var(--color-surface)] p-8 md:p-10 flex flex-col">
                 <blockquote className="font-fraunces text-xl leading-relaxed text-[color:var(--color-paper)] flex-grow">
