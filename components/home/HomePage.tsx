@@ -300,6 +300,21 @@ const testimonials = [
     name: "Joseph A.",
   },
   {
+    quote:
+      "Thank you for correcting that; we're not just selling perfume. You are sharp with marketing!",
+    name: "Joanne A.",
+  },
+  {
+    quote:
+      "What you put together was amazing. I still get a kick out of that video and so does my wife.",
+    name: "Murray B.",
+  },
+  {
+    quote:
+      "I am so excited for the launch. I feel like I am about to be a millionaire! You know I will always come to you first. Thank you so much for your help.",
+    name: "Darcia J.",
+  },
+  {
     quote: "Great results. Literally had me like wow over here!",
     name: "Kajuan R.",
   },
