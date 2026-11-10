@@ -242,10 +242,10 @@ const services = [
     title: "Design",
     body: "Graphic design across print and digital: campaigns, catalogs, packaging, presentations and editorial — designed to be taken seriously.",
     deliverables: [
-      "Print, catalogs & packaging",
-      "Stationery & literature",
-      "Presentations & documents",
-      "Editorial & covers",
+      "Clothing, merch & packaging",
+      "Stationery, business cards & menus",
+      "Flyers, posters & book covers",
+      "Brochures, presentations & documents",
     ],
   },
   {
