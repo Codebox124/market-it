@@ -229,11 +229,11 @@ const work: {
 
 const services = [
   {
-    title: "Brand Identity",
+    title: "Branding",
     body: "Logos, identity systems and brand guidelines that give a company a face worth remembering — and the rules to keep it consistent everywhere it appears.",
     deliverables: [
       "Logo & messaging",
-      "Brand consistency & consulting",
+      "Campaign & advertising design",
       "Websites & apps",
       "SEO & ranking help",
     ],
@@ -242,7 +242,6 @@ const services = [
     title: "Design",
     body: "Graphic design across print and digital: campaigns, catalogs, packaging, presentations and editorial — designed to be taken seriously.",
     deliverables: [
-      "Campaign & advertising design",
       "Print, catalogs & packaging",
       "Presentations & documents",
       "Editorial & covers",
