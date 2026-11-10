@@ -146,6 +146,16 @@ const work: {
     fit: "contain",
   },
   {
+    title: "Branding & Identity",
+    image: "/content/branding-showcase-v3.webp",
+    alt: "Branding and identity design by Make It & Market",
+    blurb:
+      "Logos and identity systems — marks built to be recognised anywhere.",
+    fit: "contain",
+    span: "md:col-span-6",
+    aspect: "aspect-[4/3]",
+  },
+  {
     title: "Animation & Motion",
     image: "/animation/animation-showcase-v2.webp",
     alt: "Animation and motion design by Make It & Market",
@@ -211,16 +221,6 @@ const work: {
     alt: "Drawing and sketch artwork by Make It & Market",
     blurb:
       "Hand-drawn artwork and sketches — concepts developed in pencil and ink.",
-    fit: "contain",
-    span: "md:col-span-6",
-    aspect: "aspect-[4/3]",
-  },
-  {
-    title: "Branding & Identity",
-    image: "/content/branding-showcase-v3.webp",
-    alt: "Branding and identity design by Make It & Market",
-    blurb:
-      "Logos and identity systems — marks built to be recognised anywhere.",
     fit: "contain",
     span: "md:col-span-6",
     aspect: "aspect-[4/3]",
