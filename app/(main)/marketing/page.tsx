@@ -43,18 +43,21 @@ function categorize(name: string): string {
   if (/brochure|report|itinerary|writing|sheet/.test(n))
     return "Documents & Brochures";
   if (/biz-card|business-card/.test(n)) return "Business Cards";
+  if (/logo/.test(n)) return "Logos";
+  if (/poster|cover|book/.test(n)) return "Posters, Books & Cover Art";
   return "Advertising";
 }
 
 const CATEGORY_ORDER = [
-  "Flyers",
+  "Logos",
   "Advertising",
-  "Clothing & Products",
   "Social Media",
+  "Flyers",
+  "Business Cards",
+  "Clothing & Products",
   "Presentations & Pitches",
   "Documents & Brochures",
-  "Business Cards",
-  "Video",
+  "Posters, Books & Cover Art",
 ];
 
 // Auto-read every image/video in /public/marketingSection, skipping
