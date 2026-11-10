@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { SITE_LANGUAGES } from "@/components/home/homeStrings";
 
 export default function Footer() {
   return (
@@ -23,6 +24,25 @@ export default function Footer() {
             <p>(347) 659 1708</p>
           </div>
         </div>
+
+        <nav aria-label="Languages" className="flex flex-wrap items-center gap-x-6 gap-y-2 pt-8">
+          <span className="text-xs tracking-[0.28em] uppercase text-[color:var(--color-ink-muted)]">
+            Languages
+          </span>
+          {SITE_LANGUAGES.map((l) => (
+            <Link
+              key={l.code}
+              href={l.path}
+              className={
+                l.code === "en"
+                  ? "text-sm text-[color:var(--color-gold)]"
+                  : "text-sm text-[color:var(--color-ink-soft)] hover:text-[color:var(--color-gold)] transition-colors"
+              }
+            >
+              {l.name}
+            </Link>
+          ))}
+        </nav>
 
         <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 pt-8">
           <p className="text-xs tracking-[0.28em] uppercase text-[color:var(--color-ink-muted)]">
