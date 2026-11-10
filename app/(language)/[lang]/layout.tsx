@@ -3,8 +3,8 @@ import { getDictionary } from "@/utils/get-dictionary";
 import "@/app/globals.css";
 import { Space_Grotesk, Geist, Libre_Caslon_Text } from "next/font/google";
 import Script from "next/script";
-import Navbar from "@/components/navbar";
-import Footer from "@/components/footer";
+import NavbarI18n from "@/components/navbar-i18n";
+import FooterI18n from "@/components/footer-i18n";
 import ThemeToggle from "@/components/ThemeToggle";
 
 const spaceGrotesk = Space_Grotesk({
@@ -56,7 +56,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     ko: "ko_KR",
     ar: "ar_SA",
     pt: "pt_BR",
-    es: "es_ES",
+    es: "es_MX",
     tl: "tl_PH",
     ur: "ur_PK",
     ru: "ru_RU",
@@ -83,10 +83,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       canonical: `${baseUrl}/${lang}`, // Gunakan 'lang'
       languages: {
         "en-US": `${baseUrl}/en`,
-        "es-ES": `${baseUrl}/es`,
+        "es-419": `${baseUrl}/es`,
         "fr-FR": `${baseUrl}/fr`,
-        "pt-PT": `${baseUrl}/pt`,
+        "pt-BR": `${baseUrl}/pt`,
         "zh-CN": `${baseUrl}/zh`,
+        "ar-SA": `${baseUrl}/ar`,
+        "hi-IN": `${baseUrl}/hi`,
       },
     },
 
@@ -126,16 +128,19 @@ export default async function LanguageLayout({ children, params }: Props) {
   // 4. LAKUKAN AWAIT JUGA DI SINI
   const { lang } = await params;
 
+  const dict = await getDictionary(lang);
+  const home = (dict as any)?.home;
+
   return (
     // Gunakan variabel 'lang', bukan 'params.lang'
-    <html lang={lang}>
+    <html lang={lang} dir={lang === "ar" ? "rtl" : "ltr"}>
       <head>
         <script
           dangerouslySetInnerHTML={{
-      __html:
-          "try{if(localStorage.getItem('mim-theme')==='light'){document.documentElement.dataset.theme='light'}}catch(e){}",
+            __html:
+              "try{if(localStorage.getItem('mim-theme')==='light'){document.documentElement.dataset.theme='light'}}catch(e){}",
           }}
-      />
+        />
         {/* Google Analytics */}
         <Script
           strategy="afterInteractive"
@@ -206,9 +211,9 @@ export default async function LanguageLayout({ children, params }: Props) {
           ></iframe>
         </noscript>
 
-        <Navbar />
+        {home ? <NavbarI18n lang={lang} strings={home.nav} /> : null}
         <main className="flex-grow w-full">{children}</main>
-        <Footer />
+        {home ? <FooterI18n lang={lang} strings={home.footer} /> : null}
         <ThemeToggle />
       </body>
     </html>
