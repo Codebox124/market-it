@@ -3,7 +3,7 @@ import fs from "fs";
 import path from "path";
 import crypto from "crypto";
 import ContentCreationClient from "./ContentCreationClient";
-import { interleaveByCategory } from "@/utils/portfolio";
+import { groupByCategory } from "@/utils/portfolio";
 
 export const metadata: Metadata = {
   title: "Content Creation & Video Editing - Make It & Market",
@@ -31,15 +31,33 @@ type Work = { src: string; category: string; type?: "image" | "video" };
 const VIDEO_RE = /\.(mp4|webm)$/i;
 const MEDIA_RE = /\.(webp|mp4|webm)$/i;
 
-// Category is used only to spread the grid for visual variety — it is no
-// longer shown as a label on the tiles.
+// Category groups like work together on the page (animation with
+// animation, photography with photography). It is not shown as a label
+// on the tiles.
 function categorize(relPath: string): string {
   const n = relPath.toLowerCase();
   if (VIDEO_RE.test(n)) return "Video";
   if (/\/animation\//.test(n)) return "Animation";
-  if (/photo|colorgrade|retouch|fx\d/.test(n)) return "Photo";
-  return "Graphic";
+  if (/photo|colorgrade|retouch/.test(n)) return "Photography & Retouching";
+  if (/cover|poster/.test(n)) return "Covers & Posters";
+  if (/presentation|document/.test(n)) return "Presentations & Documents";
+  if (/logo|branding/.test(n)) return "Logos & Branding";
+  if (/3d/.test(n)) return "3D";
+  if (/drawing|sketch/.test(n)) return "Drawing & Artwork";
+  return "Graphic Design";
 }
+
+const CATEGORY_ORDER = [
+  "Video",
+  "Animation",
+  "Photography & Retouching",
+  "Covers & Posters",
+  "Presentations & Documents",
+  "Logos & Branding",
+  "3D",
+  "Drawing & Artwork",
+  "Graphic Design",
+];
 
 // Read every image/video under /public/content, skipping byte-identical
 // duplicates. Drop any video folder in here and it appears automatically.
@@ -89,6 +107,6 @@ function readContentFolder(): Work[] {
 }
 
 export default function ContentCreationPage() {
-  const works = interleaveByCategory(readContentFolder());
+  const works = groupByCategory(readContentFolder(), CATEGORY_ORDER);
   return <ContentCreationClient works={works} />;
 }
