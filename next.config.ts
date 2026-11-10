@@ -9,6 +9,13 @@ const nextConfig: NextConfig = {
   },
   async redirects() {
     return [
+      // Portfolio split (2026-11-09): the old combined /marketing page is now
+      // separate /branding and /design pages that follow the homepage sections.
+      {
+        source: "/marketing",
+        destination: "/branding",
+        permanent: true,
+      },
       // Pruned locales (2026-11-08): the site now publishes in EN/ES/FR/PT/ZH only.
       {
         source: "/:lang(id|bn|hk|gu|hi|ja|ko|ar|tl|ur|ru)/blog/:slug*",
