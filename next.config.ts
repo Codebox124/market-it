@@ -17,12 +17,13 @@ const nextConfig: NextConfig = {
       },
       {
         source: "/:lang(id|bn|hk|gu|hi|ja|ko|ar|tl|ur|ru)/:path*",
-        destination: "/en",
+        destination: "/",
         permanent: true,
       },
       {
-        source: "/",
-        destination: "/en",
+        // The English homepage lives at the bare domain (2026-11-09).
+        source: "/en",
+        destination: "/",
         permanent: true,
       },
     ];
