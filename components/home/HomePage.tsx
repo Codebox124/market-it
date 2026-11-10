@@ -231,7 +231,7 @@ const services = [
   {
     title: "Branding",
     href: "/branding",
-    body: "Logo design, brand messaging and identity systems that give a business a face worth remembering — carried through advertising campaigns, websites and apps, with SEO and ranking help so the brand gets found, not just seen.",
+    body: "Logo design, brand messaging and identity systems that give a business a face worth remembering — carried through advertising campaigns, websites and apps, with SEO and ranking help so the brand gets found.",
     deliverables: [
       "Logo & messaging",
       "Campaign & advertising design",
