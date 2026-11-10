@@ -196,21 +196,21 @@ const work: {
     aspect: "aspect-[4/3]",
   },
   {
-    title: "Drawing & Sketch Artwork",
-    image: "/content/drawing-sketch-showcase-v4.webp",
-    alt: "Drawing and sketch artwork by Make It & Market",
-    blurb:
-      "Hand-drawn artwork and sketches — concepts developed in pencil and ink.",
-    fit: "contain",
-    span: "md:col-span-6",
-    aspect: "aspect-[4/3]",
-  },
-  {
     title: "Photography & Retouching",
     image: "/photo/photography-showcase-v4.webp",
     alt: "Photography by Make It & Market",
     blurb:
       "Photography shot, retouched and finished to an editorial standard.",
+    fit: "contain",
+    span: "md:col-span-6",
+    aspect: "aspect-[4/3]",
+  },
+  {
+    title: "Drawing & Sketch Artwork",
+    image: "/content/drawing-sketch-showcase-v4.webp",
+    alt: "Drawing and sketch artwork by Make It & Market",
+    blurb:
+      "Hand-drawn artwork and sketches — concepts developed in pencil and ink.",
     fit: "contain",
     span: "md:col-span-6",
     aspect: "aspect-[4/3]",
