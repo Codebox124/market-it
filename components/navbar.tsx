@@ -29,7 +29,7 @@ export default function Navbar() {
       className={`fixed top-0 left-0 right-0 z-50 transition-[background,border,padding] duration-500 ${
         scrolled || isMobileOpen
           ? "bg-[color:var(--color-canvas)]/85 backdrop-blur-xl border-b border-[color:var(--color-line)] py-3"
-          : "bg-transparent py-5"
+          : "bg-gradient-to-b from-black/55 via-black/25 to-transparent py-5"
       }`}
     >
       <div className="max-w-[1600px] mx-auto px-6 lg:px-10">
@@ -37,7 +37,7 @@ export default function Navbar() {
           {/* Wordmark */}
           <Link
             href="/"
-            className="font-fraunces text-lg md:text-xl font-medium tracking-tight text-[color:var(--color-paper)] [text-shadow:0_1px_12px_rgba(0,0,0,0.65)]"
+            className={`font-fraunces text-lg md:text-xl font-medium tracking-tight [text-shadow:0_1px_12px_rgba(0,0,0,0.65)] ${scrolled || isMobileOpen ? "text-[color:var(--color-paper)]" : "text-[#f4f1ea]"}`}
           >
             Make It <span className="text-[color:var(--color-gold)]">&amp;</span> Market
           </Link>
@@ -48,7 +48,7 @@ export default function Navbar() {
               <Link
                 key={item.name}
                 href={item.href}
-                className="px-4 py-2 text-sm tracking-[0.18em] uppercase font-medium text-[color:var(--color-paper)] [text-shadow:0_1px_12px_rgba(0,0,0,0.65)] hover:text-[color:var(--color-gold-strong)] transition-colors duration-300"
+                className={`px-4 py-2 text-sm tracking-[0.18em] uppercase font-medium [text-shadow:0_1px_12px_rgba(0,0,0,0.65)] hover:text-[color:var(--color-gold-strong)] transition-colors duration-300 ${scrolled || isMobileOpen ? "text-[color:var(--color-paper)]" : "text-[#f4f1ea]"}`}
               >
                 {item.name}
               </Link>
@@ -64,7 +64,7 @@ export default function Navbar() {
           {/* Mobile toggle */}
           <button
             onClick={() => setIsMobileOpen(!isMobileOpen)}
-            className="lg:hidden p-2 text-[color:var(--color-ink)] transition-colors duration-200"
+            className={`lg:hidden p-2 transition-colors duration-200 ${scrolled || isMobileOpen ? "text-[color:var(--color-ink)]" : "text-[#f4f1ea]"}`}
             aria-label="Toggle menu"
           >
             <AnimatePresence mode="wait">
