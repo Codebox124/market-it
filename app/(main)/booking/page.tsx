@@ -52,7 +52,7 @@ export default function BookingPage() {
       </section>
 
       {/* PAYMENT CARD */}
-      <section className="border-t border-[color:var(--color-line)] bg-[color:var(--color-surface)]">
+      <section className="dark-band border-t border-[color:var(--color-line)] bg-[color:var(--color-surface)]">
         <div className="max-w-[1600px] mx-auto px-6 lg:px-10 py-24 md:py-32">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
             <div className="lg:col-span-8 lg:col-start-3">
