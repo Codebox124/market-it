@@ -403,3 +403,28 @@ body:has(.on-paper) nav.fixed a span {
 [data-theme="light"] img.invert {
   filter: none !important;
 }
+
+/* =========================================================
+   DARK BANDS — areas that are black in the dark theme stay
+   black in the light theme (logo strip, card grids, footer,
+   dark sections). Pinning the dark token values on the band
+   makes every var()-based class inside it resolve dark in
+   both themes. (Carl, 2026-11-10: logos/cards were getting
+   lost on white.)
+   ========================================================= */
+.dark-band {
+  --color-canvas: #0a0a0a;
+  --color-surface: #111111;
+  --color-surface-muted: #1a1a1a;
+  --color-paper: #f4f1ea;
+  --color-ink: #ffffff;
+  --color-ink-soft: #a8a8a8;
+  --color-ink-muted: #5e5e5e;
+  --color-line: #1f1f1f;
+  --color-line-strong: #2e2e2e;
+}
+
+/* The logo strip stays black, so its inverted logos keep their inversion in light mode */
+[data-theme="light"] .logo-strip img.invert {
+  filter: invert(100%) !important;
+}
