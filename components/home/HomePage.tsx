@@ -254,8 +254,7 @@ const services = [
     deliverables: [
       "Video production & editing",
       "2D/3D animation & motion graphics",
-      "Social media content",
-      "Artwork creation",
+      "Drawings & digital artwork",
       "Photography & retouching",
     ],
   },
