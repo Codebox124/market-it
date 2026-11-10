@@ -35,12 +35,13 @@ export default function MarketingClient({ works }: { works: Work[] }) {
             </div>
             <div className="md:col-span-9 max-w-5xl">
               <h1 className="display-lg text-[color:var(--color-ink)]">
-                Marketing.
+                Branding & Design.
               </h1>
               <p className="mt-10 md:mt-12 text-lg md:text-xl leading-relaxed text-[color:var(--color-ink-soft)] font-light max-w-3xl">
-                Advertising campaigns, flyer distribution, and social media outreach
-                that move the needle for entrepreneurs, companies, and causes — from
-                local print to digital reach, online to on the ground.
+                Logo design, brand messaging and advertising campaigns, alongside
+                graphic design across print and product — flyers, business cards and
+                menus; clothing, products and packaging; brochures, presentations
+                and documents; posters, books and cover art.
               </p>
             </div>
           </motion.div>
