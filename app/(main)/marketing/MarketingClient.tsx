@@ -60,7 +60,7 @@ export default function MarketingClient({ works }: { works: Work[] }) {
                 viewport={{ once: true, amount: 0.15 }}
                 custom={i}
                 variants={fade}
-                className="group relative aspect-square overflow-hidden bg-[#111111]"
+                className="group relative aspect-square overflow-hidden media-frame"
               >
                 {work.type === "video" ? (
                   <video
