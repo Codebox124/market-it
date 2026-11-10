@@ -1,6 +1,25 @@
 "use client";
 
 import { useState } from "react";
+import type { HomeFormStrings } from "@/components/home/homeStrings";
+
+const DEFAULT_STRINGS: HomeFormStrings = {
+  name: "Your name",
+  namePh: "Full name",
+  email: "Work email",
+  emailPh: "you@company.com",
+  company: "Company",
+  companyPh: "Company or organisation",
+  details: "Project details",
+  detailsPh: "What are you building, and what does it need to achieve?",
+  submit: "Send Inquiry",
+  note: "This opens your email app with the message addressed to us — nothing is sent until you press send.",
+  subjectPrefix: "New inquiry",
+  bodyName: "Name",
+  bodyEmail: "Email",
+  bodyCompany: "Company",
+  bodyDetails: "Project details",
+};
 
 const inputClass =
   "w-full bg-[color:var(--color-surface)] border border-[color:var(--color-line-strong)] px-4 py-3.5 text-base text-[color:var(--color-ink)] placeholder:text-[color:var(--color-ink-muted)] focus:outline-none focus:border-[color:var(--color-gold)] transition-colors duration-300";
@@ -8,7 +27,7 @@ const inputClass =
 const labelClass =
   "block text-[0.7rem] font-medium tracking-[0.24em] uppercase text-[color:var(--color-ink-soft)] mb-2.5";
 
-export default function EnquiryForm() {
+export default function EnquiryForm({ strings = DEFAULT_STRINGS }: { strings?: HomeFormStrings }) {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [company, setCompany] = useState("");
@@ -17,10 +36,10 @@ export default function EnquiryForm() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     const subject = encodeURIComponent(
-      `New inquiry — ${name}${company ? ` (${company})` : ""}`
+      `${strings.subjectPrefix} — ${name}${company ? ` (${company})` : ""}`
     );
     const body = encodeURIComponent(
-      `Name: ${name}\nEmail: ${email}\nCompany: ${company}\n\nProject details:\n${details}`
+      `${strings.bodyName}: ${name}\n${strings.bodyEmail}: ${email}\n${strings.bodyCompany}: ${company}\n\n${strings.bodyDetails}:\n${details}`
     );
     window.location.href = `mailto:info@makeitandmarket.com?subject=${subject}&body=${body}`;
   };
@@ -30,7 +49,7 @@ export default function EnquiryForm() {
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
         <div>
           <label htmlFor="enquiry-name" className={labelClass}>
-            Your name
+            {strings.name}
           </label>
           <input
             id="enquiry-name"
@@ -38,13 +57,13 @@ export default function EnquiryForm() {
             required
             value={name}
             onChange={(e) => setName(e.target.value)}
-            placeholder="Full name"
+            placeholder={strings.namePh}
             className={inputClass}
           />
         </div>
         <div>
           <label htmlFor="enquiry-email" className={labelClass}>
-            Work email
+            {strings.email}
           </label>
           <input
             id="enquiry-email"
@@ -52,7 +71,7 @@ export default function EnquiryForm() {
             required
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            placeholder="you@company.com"
+            placeholder={strings.emailPh}
             className={inputClass}
           />
         </div>
@@ -60,21 +79,21 @@ export default function EnquiryForm() {
 
       <div>
         <label htmlFor="enquiry-company" className={labelClass}>
-          Company
+          {strings.company}
         </label>
         <input
           id="enquiry-company"
           type="text"
           value={company}
           onChange={(e) => setCompany(e.target.value)}
-          placeholder="Company or organisation"
+          placeholder={strings.companyPh}
           className={inputClass}
         />
       </div>
 
       <div>
         <label htmlFor="enquiry-details" className={labelClass}>
-          Project details
+          {strings.details}
         </label>
         <textarea
           id="enquiry-details"
@@ -82,7 +101,7 @@ export default function EnquiryForm() {
           rows={5}
           value={details}
           onChange={(e) => setDetails(e.target.value)}
-          placeholder="What are you building, and what does it need to achieve?"
+          placeholder={strings.detailsPh}
           className={`${inputClass} resize-y`}
         />
       </div>
@@ -91,11 +110,10 @@ export default function EnquiryForm() {
         type="submit"
         className="inline-flex items-center px-8 py-4 text-xs tracking-[0.22em] uppercase font-medium text-[#0b0b0d] bg-[color:var(--color-gold)] hover:bg-[color:var(--color-gold-strong)] transition-colors duration-300"
       >
-        Send Inquiry
+        {strings.submit}
       </button>
       <p className="text-sm text-[color:var(--color-ink-muted)]">
-        This opens your email app with the message addressed to us — nothing is
-        sent until you press send.
+        {strings.note}
       </p>
     </form>
   );
