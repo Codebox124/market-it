@@ -9,7 +9,7 @@ export default function FooterI18n({
   strings: HomeStrings["footer"];
 }) {
   return (
-    <footer className="bg-[color:var(--color-canvas)] text-[color:var(--color-ink)] border-t border-[color:var(--color-line)]">
+    <footer className="dark-band bg-[color:var(--color-canvas)] text-[color:var(--color-ink)] border-t border-[color:var(--color-line)]">
       <div className="max-w-[1600px] mx-auto px-6 lg:px-10 pt-20 pb-10">
         <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-10 pb-14 border-b border-[color:var(--color-line)]">
           <div>
