@@ -38,9 +38,10 @@ export default function ContentCreationClient({ works }: { works: Work[] }) {
                 Content Creation.
               </h1>
               <p className="mt-10 md:mt-12 text-lg md:text-xl leading-relaxed text-[color:var(--color-ink-soft)] font-light max-w-3xl">
-                Looking for creative help? Graphic design, video production, animation,
-                and photography — original work shaped around your brand, your story,
-                and the audience you want to reach.
+                Video production and editing, 2D/3D animation and motion graphics,
+                drawings and digital artwork, photography and retouching — original
+                work shaped around your brand, your story, and the audience you
+                want to reach.
               </p>
             </div>
           </motion.div>
