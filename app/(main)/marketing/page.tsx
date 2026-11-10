@@ -6,21 +6,21 @@ import MarketingClient from "./MarketingClient";
 import { groupByCategory } from "@/utils/portfolio";
 
 export const metadata: Metadata = {
-  title: "Digital Marketing Agency for Small Business - Make It & Market",
+  title: "Branding & Graphic Design Portfolio - Make It & Market",
   description:
-    "Small business digital marketing agency. Make It & Market offers social media marketing, content creation & online growth strategies for SMBs and startups.",
+    "Branding and graphic design by Make It & Market: logo design, brand messaging, advertising campaigns, flyers, business cards, menus, clothing, packaging, brochures, posters, books and cover art.",
   openGraph: {
-    title: "Digital Marketing Agency for Small Business - Make It & Market",
+    title: "Branding & Graphic Design Portfolio - Make It & Market",
     description:
-      "Small business digital marketing agency. Make It & Market offers social media marketing, content creation & online growth strategies for SMBs and startups.",
+      "Branding and graphic design by Make It & Market: logo design, brand messaging, advertising campaigns, flyers, business cards, menus, clothing, packaging, brochures, posters, books and cover art.",
     url: "https://www.makeitandmarket.com/marketing",
     type: "website",
     siteName: "Make It & Market",
   },
   twitter: {
-    title: "Digital Marketing Agency for Small Business - Make It & Market",
+    title: "Branding & Graphic Design Portfolio - Make It & Market",
     description:
-      "Small business digital marketing agency. Make It & Market offers social media marketing, content creation & online growth strategies for SMBs and startups.",
+      "Branding and graphic design by Make It & Market: logo design, brand messaging, advertising campaigns, flyers, business cards, menus, clothing, packaging, brochures, posters, books and cover art.",
     card: "summary_large_image",
     images: ["https://www.makeitandmarket.com/logo.png"],
   },
