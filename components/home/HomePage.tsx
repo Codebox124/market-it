@@ -230,6 +230,7 @@ const work: {
 const services = [
   {
     title: "Branding",
+    href: "/marketing",
     body: "Logo design, brand messaging and identity systems that give a business a face worth remembering — carried through advertising campaigns, websites and apps, with SEO and ranking help so the brand gets found, not just seen.",
     deliverables: [
       "Logo & messaging",
@@ -240,6 +241,7 @@ const services = [
   },
   {
     title: "Design",
+    href: "/marketing",
     body: "Graphic design across print and product: flyers, business cards and menus; clothing, products and packaging; brochures, presentations and documents; posters, books and cover art — designed to be taken seriously.",
     deliverables: [
       "Flyers, business cards & menus",
@@ -250,6 +252,7 @@ const services = [
   },
   {
     title: "Content Creation",
+    href: "/content-creation",
     body: "Video production and editing, 2D/3D animation and motion graphics, drawings and digital artwork, photography and retouching — produced in-house to keep a brand visible, current and credible.",
     deliverables: [
       "Video production & editing",
@@ -476,7 +479,12 @@ export default function HomePage() {
                 className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12 py-12 border-t border-[color:var(--color-line)]"
               >
                 <h3 className="lg:col-span-4 font-fraunces text-3xl md:text-4xl font-medium text-[color:var(--color-paper)]">
-                  {service.title}
+                  <Link
+                    href={service.href}
+                    className="transition-colors hover:text-[color:var(--color-gold)]"
+                  >
+                    {service.title}
+                  </Link>
                 </h3>
                 <p className="lg:col-span-4 text-lg leading-relaxed text-[color:var(--color-ink-soft)]">
                   {service.body}
@@ -490,10 +498,27 @@ export default function HomePage() {
                       <span aria-hidden className="text-[color:var(--color-gold)]">
                         —
                       </span>
-                      {item}
+                      {item === "Websites & apps" ? (
+                        <Link
+                          href="/websites-apps"
+                          className="underline decoration-[color:var(--color-gold)] underline-offset-4 hover:text-[color:var(--color-ink)]"
+                        >
+                          {item}
+                        </Link>
+                      ) : (
+                        item
+                      )}
                     </li>
                   ))}
                 </ul>
+                <div className="lg:col-span-12">
+                  <Link
+                    href={service.href}
+                    className="text-[color:var(--color-gold)] underline decoration-[color:var(--color-gold)] underline-offset-4 hover:text-[color:var(--color-ink)]"
+                  >
+                    See the full portfolio →
+                  </Link>
+                </div>
               </article>
             ))}
           </div>
