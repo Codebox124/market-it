@@ -230,7 +230,7 @@ const work: {
 const services = [
   {
     title: "Branding",
-    body: "Logos, identity systems and brand guidelines that give a company a face worth remembering — and the rules to keep it consistent everywhere it appears.",
+    body: "Logo design, brand messaging and identity systems that give a business a face worth remembering — carried through advertising campaigns, websites and apps, with SEO and ranking help so the brand gets found, not just seen.",
     deliverables: [
       "Logo & messaging",
       "Campaign & advertising design",
@@ -240,7 +240,7 @@ const services = [
   },
   {
     title: "Design",
-    body: "Graphic design across print and digital: campaigns, catalogs, packaging, presentations and editorial — designed to be taken seriously.",
+    body: "Graphic design across print and product: flyers, business cards and menus; clothing, products and packaging; brochures, presentations and documents; posters, books and cover art — designed to be taken seriously.",
     deliverables: [
       "Flyers, business cards & menus",
       "Clothing, products & packaging",
@@ -250,7 +250,7 @@ const services = [
   },
   {
     title: "Content Creation",
-    body: "Photography, video and animation produced in-house — the content engines that keep a brand visible, current and credible.",
+    body: "Video production and editing, 2D/3D animation and motion graphics, drawings and digital artwork, photography and retouching — produced in-house to keep a brand visible, current and credible.",
     deliverables: [
       "Video production & editing",
       "2D/3D animation & motion graphics",
