@@ -59,7 +59,7 @@ export default function WebsitesAppsClient({ works }: { works: Work[] }) {
                 viewport={{ once: true, amount: 0.15 }}
                 custom={i}
                 variants={fade}
-                className="group relative aspect-[4/3] overflow-hidden bg-[color:var(--color-surface)]"
+                className="group relative aspect-[4/3] overflow-hidden bg-[#111111]"
               >
                 <img
                   src={work.src}
