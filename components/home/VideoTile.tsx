@@ -25,7 +25,7 @@ export default function VideoTile({
   if (playing) {
     return (
       <video
-        className="absolute inset-0 h-full w-full object-contain bg-[color:var(--color-surface)]"
+        className="absolute inset-0 h-full w-full object-contain bg-[#111111]"
         poster={poster}
         autoPlay
         controls
