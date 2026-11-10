@@ -106,14 +106,14 @@ const work: {
   video?: { webm: string; mp4: string };
 }[] = [
   {
-    title: "Branding & Identity",
-    image: "/content/branding-showcase-v3.webp",
-    alt: "Branding and identity design by Make It & Market",
+    title: "Video Production",
+    image: "/video/video-showcase-v6.webp",
+    alt: "Video production by Make It & Market",
     blurb:
-      "Logos and identity systems — marks built to be recognised anywhere.",
-    fit: "contain",
+      "Commercials, brand films and social video — shot, edited and finished in-house.",
     span: "md:col-span-6",
     aspect: "aspect-[4/3]",
+    video: { webm: "/video/showcase-v2.webm", mp4: "/video/showcase-v2.mp4" },
   },
   {
     title: "App & Website Design",
@@ -144,16 +144,6 @@ const work: {
     span: "md:col-span-6",
     aspect: "aspect-[4/3]",
     fit: "contain",
-  },
-  {
-    title: "Video Production",
-    image: "/video/video-showcase-v6.webp",
-    alt: "Video production by Make It & Market",
-    blurb:
-      "Commercials, brand films and social video — shot, edited and finished in-house.",
-    span: "md:col-span-6",
-    aspect: "aspect-[4/3]",
-    video: { webm: "/video/showcase-v2.webm", mp4: "/video/showcase-v2.mp4" },
   },
   {
     title: "Animation & Motion",
@@ -206,11 +196,11 @@ const work: {
     aspect: "aspect-[4/3]",
   },
   {
-    title: "Photo Retouching",
-    image: "/photo/photography-showcase-v3.webp",
-    alt: "Before and after photo retouching by Make It & Market",
+    title: "Photography & Retouching",
+    image: "/photo/photography-showcase-v4.webp",
+    alt: "Photography by Make It & Market",
     blurb:
-      "Photographs retouched and finished to an editorial standard.",
+      "Photography shot, retouched and finished to an editorial standard.",
     fit: "contain",
     span: "md:col-span-6",
     aspect: "aspect-[4/3]",
@@ -221,6 +211,16 @@ const work: {
     alt: "Book cover design, front and back, by Make It & Market",
     blurb:
       "Cover art and book design with typography that earns a second look.",
+    fit: "contain",
+    span: "md:col-span-6",
+    aspect: "aspect-[4/3]",
+  },
+  {
+    title: "Branding & Identity",
+    image: "/content/branding-showcase-v3.webp",
+    alt: "Branding and identity design by Make It & Market",
+    blurb:
+      "Logos and identity systems — marks built to be recognised anywhere.",
     fit: "contain",
     span: "md:col-span-6",
     aspect: "aspect-[4/3]",
