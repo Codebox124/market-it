@@ -31,38 +31,75 @@ const marqueePhrases = [
   "Websites & Apps",
 ];
 
-// Client testimonials
-const testimonials = [
-  {
-    quote:
-      "First of all, thank you very much for your outstanding services provided to me and within a timely manner.",
-    name: "Joseph A.",
+// Client testimonials — localized per page language
+type TestimonialSet = {
+  eyebrow: string;
+  heading: string;
+  items: { quote: string; name: string }[];
+};
+
+const TESTIMONIALS_I18N: Record<string, TestimonialSet> = {
+  en: {
+    eyebrow: "In their words",
+    heading: "{testimonialSet.heading}",
+    items: [
+      { quote: "First of all, thank you very much for your outstanding services provided to me and within a timely manner.", name: "Joseph A." },
+      { quote: "Thank you for your patience and for being meticulous with my campaign.", name: "Sherri S." },
+      { quote: "Thank you for correcting that; we're not just selling perfume. You are sharp with marketing!", name: "Joanne A." },
+      { quote: "What you put together was amazing. I still get a kick out of that video and so does my wife.", name: "Murray B." },
+      { quote: "I am so excited for the launch. I feel like I am about to be a millionaire! You know I will always come to you first. Thank you so much for your help.", name: "Darcia J." },
+      { quote: "Great results. Literally had me like wow over here!", name: "Kajuan R." },
+    ],
   },
-  {
-    quote:
-      "Thank you for your patience and for being meticulous with my campaign.",
-    name: "Sherri S.",
+  es: {
+    eyebrow: "Con sus palabras",
+    heading: "Lo que dicen los clientes.",
+    items: [
+      { quote: "En primer lugar, muchas gracias por sus excelentes servicios y por la puntualidad con la que me atendieron.", name: "Joseph A." },
+      { quote: "Gracias por su paciencia y por ser tan meticuloso con mi campaña.", name: "Sherri S." },
+      { quote: "Gracias por corregir eso; no solo vendemos perfume. ¡Es muy agudo con el marketing!", name: "Joanne A." },
+      { quote: "Lo que preparó fue increíble. Todavía me encanta ese video, y a mi esposa también.", name: "Murray B." },
+      { quote: "Estoy muy emocionada por el lanzamiento. ¡Siento que estoy a punto de ser millonaria! Sabes que siempre acudiré a ti primero. Muchas gracias por tu ayuda.", name: "Darcia J." },
+      { quote: "Resultados excelentes. ¡Literalmente me dejó boquiabierto!", name: "Kajuan R." },
+    ],
   },
-  {
-    quote:
-      "Thank you for correcting that; we're not just selling perfume. You are sharp with marketing!",
-    name: "Joanne A.",
+  fr: {
+    eyebrow: "Avec leurs mots",
+    heading: "Ce que disent les clients.",
+    items: [
+      { quote: "Tout d'abord, merci beaucoup pour vos services exceptionnels et votre rapidité.", name: "Joseph A." },
+      { quote: "Merci pour votre patience et pour le soin méticuleux apporté à ma campagne.", name: "Sherri S." },
+      { quote: "Merci d'avoir corrigé cela ; nous ne vendons pas que du parfum. Vous êtes redoutable en marketing !", name: "Joanne A." },
+      { quote: "Ce que vous avez créé était incroyable. Je prends toujours autant de plaisir à regarder cette vidéo, et ma femme aussi.", name: "Murray B." },
+      { quote: "Je suis tellement excitée pour le lancement. J'ai l'impression que je vais devenir millionnaire ! Tu sais que je viendrai toujours vers toi en premier. Merci infiniment pour ton aide.", name: "Darcia J." },
+      { quote: "Des résultats formidables. J'étais littéralement bluffé !", name: "Kajuan R." },
+    ],
   },
-  {
-    quote:
-      "What you put together was amazing. I still get a kick out of that video and so does my wife.",
-    name: "Murray B.",
+  pt: {
+    eyebrow: "Nas palavras deles",
+    heading: "O que dizem os clientes.",
+    items: [
+      { quote: "Em primeiro lugar, muito obrigado pelos serviços excepcionais prestados e pela pontualidade.", name: "Joseph A." },
+      { quote: "Obrigado pela paciência e por ser tão meticuloso com a minha campanha.", name: "Sherri S." },
+      { quote: "Obrigado por corrigir isso; não vendemos apenas perfume. Você é afiado no marketing!", name: "Joanne A." },
+      { quote: "O que você preparou foi incrível. Ainda me divirto com aquele vídeo, e minha esposa também.", name: "Murray B." },
+      { quote: "Estou muito animada para o lançamento. Sinto que estou prestes a ficar milionária! Você sabe que sempre procurarei você primeiro. Muito obrigada pela ajuda.", name: "Darcia J." },
+      { quote: "Ótimos resultados. Fiquei literalmente de boca aberta!", name: "Kajuan R." },
+    ],
   },
-  {
-    quote:
-      "I am so excited for the launch. I feel like I am about to be a millionaire! You know I will always come to you first. Thank you so much for your help.",
-    name: "Darcia J.",
+  zh: {
+    eyebrow: "客户心声",
+    heading: "客户评价。",
+    items: [
+      { quote: "首先，非常感谢您为我提供的出色服务，而且非常及时。", name: "Joseph A." },
+      { quote: "感谢您的耐心，以及对我的营销活动一丝不苟的用心。", name: "Sherri S." },
+      { quote: "谢谢你纠正这一点；我们卖的不只是香水。你的营销眼光真敏锐！", name: "Joanne A." },
+      { quote: "你做出来的东西太棒了。我到现在看那个视频还是很过瘾，我妻子也是。", name: "Murray B." },
+      { quote: "我对这次发布非常兴奋。感觉自己马上就要成为百万富翁了！你知道我永远会第一个来找你。非常感谢你的帮助。", name: "Darcia J." },
+      { quote: "效果非常棒。真的让我惊叹不已！", name: "Kajuan R." },
+    ],
   },
-  {
-    quote: "Great results. Literally had me like wow over here!",
-    name: "Kajuan R.",
-  },
-];
+};
 
 // Client / affiliate logo assets
 const clientLogos = [
@@ -119,6 +156,7 @@ interface LandingPageProps {
 }
 
 export default function LandingPageClient({ dict, lang }: LandingPageProps) {
+  const testimonialSet = TESTIMONIALS_I18N[lang] ?? TESTIMONIALS_I18N.en;
   const form = useRef<any>(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState({
@@ -342,14 +380,14 @@ export default function LandingPageClient({ dict, lang }: LandingPageProps) {
             transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
             className="text-center mb-16 md:mb-24"
           >
-            <p className="eyebrow mb-5">In their words</p>
+            <p className="eyebrow mb-5">{testimonialSet.eyebrow}</p>
             <h2 className="display-lg text-[color:var(--color-ink)]">
               What clients say.
             </h2>
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-14 md:gap-y-20">
-            {testimonials.map((testimonial, i) => (
+            {testimonialSet.items.map((testimonial, i) => (
               <motion.figure
                 key={i}
                 initial={{ opacity: 0, y: 18 }}
