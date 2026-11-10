@@ -90,7 +90,7 @@ export default function RootLayout({
         <script
           dangerouslySetInnerHTML={{
             __html:
-              "try{if(localStorage.getItem('mim-theme')==='light'){document.documentElement.dataset.theme='light'}}catch(e){}",
+              "try{if(localStorage.getItem('mim-theme')!=='dark'){document.documentElement.dataset.theme='light'}}catch(e){}",
           }}
         />
         <meta name="msvalidate.01" content="009C8AEC151B258FD1F908FA76572D41" />
