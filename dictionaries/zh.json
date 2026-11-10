@@ -63,5 +63,247 @@
       "success": "信息已成功发送！我们将尽快与您联系。",
       "error": "消息发送失败，请稍后再试。"
     }
+  },
+  "home": {
+    "about": {
+      "heading": "关于",
+      "statement": "Make It & Market 是一家位于纽约的品牌、设计与内容创作工作室。我们与各行各业的企业和创业者合作，为他们提供资深水准的创意支持，没有大型代理公司的臃肿架构：您可以直接对接实际执行工作的人，成品品质经得起细细审视。",
+      "stats": [
+        {
+          "label": "已完成的作品数量",
+          "value": "500+"
+        },
+        {
+          "label": "服务过的品牌与机构",
+          "value": "40+"
+        },
+        {
+          "label": "一站式的专业领域",
+          "value": "3"
+        }
+      ],
+      "steps": [
+        {
+          "body": "在动手设计任何一个像素之前，我们先深入了解企业本身、目标受众和竞争格局。",
+          "title": "洞察"
+        },
+        {
+          "body": "策略与创意方向在开始前就共同确定——让后续的每一项工作都有坚实的主心骨。",
+          "title": "定义"
+        },
+        {
+          "body": "品牌形象、设计与内容反复打磨、逐步完善，每一份交付物都有资深人员亲自把关。",
+          "title": "设计"
+        },
+        {
+          "body": "从上线到归档再到后续支持——交付的素材、规范和文件，您的团队拿来即可使用。",
+          "title": "交付"
+        }
+      ]
+    },
+    "contact": {
+      "body": "和我们聊聊您正在打造的品牌。对于每一份认真的咨询，我们都会在一个工作日内回复。",
+      "form": {
+        "bodyCompany": "公司",
+        "bodyDetails": "项目详情",
+        "bodyEmail": "电子邮箱",
+        "bodyName": "姓名",
+        "company": "公司",
+        "companyPh": "公司或机构名称",
+        "details": "项目详情",
+        "detailsPh": "您正在打造什么？希望它实现什么目标？",
+        "email": "工作邮箱",
+        "emailPh": "you@company.com",
+        "name": "您的姓名",
+        "namePh": "全名",
+        "note": "点击后将打开您的电子邮件应用，并自动填好收件人——在您按下发送之前，邮件不会发出。",
+        "subjectPrefix": "新咨询",
+        "submit": "发送咨询"
+      },
+      "heading": "联系"
+    },
+    "footer": {
+      "languagesLabel": "语言",
+      "rights": "版权所有",
+      "tagline": "品牌、设计与内容创作。",
+      "translationNote": "如有翻译不当之处，敬请谅解。"
+    },
+    "hero": {
+      "body": "Make It & Market 是一家品牌、设计与内容创作工作室，服务于拒绝平庸、拒绝淹没于众的企业。品牌形象、设计、影像与数字产品——全部在同一屋檐下构思与制作，达到企业级标准。",
+      "caption": "品牌、设计与内容创作——一站式完成。",
+      "cta": "查看作品",
+      "eyebrow": "品牌 · 设计 · 内容创作",
+      "h1a": "我们打造让市场",
+      "h1b": "铭记的品牌。",
+      "heroAlt": "纽约市时代广场的夜景",
+      "reelLabel": "Make It & Market 作品集锦视频"
+    },
+    "jsonLdDescription": "面向各行各业企业与创业者的品牌、设计与内容创作工作室。服务涵盖品牌形象、平面设计、摄影、视频、动画与网站。",
+    "logos": {
+      "alts": [
+        "EXOPEST Pest Control — 品牌形象由 Make It & Market 设计",
+        "De Zavala Elementary — 标志由 Make It & Market 设计",
+        "Builditect Roofing — 标志由 Make It & Market 设计",
+        "Terra Design Group — 标志由 Make It & Market 设计",
+        "Popcorn TV — 标志由 Make It & Market 设计",
+        "Glow Minds Agency — 标志由 Make It & Market 设计",
+        "Hot or Not — 标志由 Make It & Market 设计",
+        "ReefNReem Films — 标志由 Make It & Market 设计",
+        "ARC — 标志由 Make It & Market 设计",
+        "Northeast Hydraulics & Machine — 标志由 Make It & Market 设计",
+        "Oliver's Tacos al Carbon — 标志由 Make It & Market 设计",
+        "The Forever Runway — 标志由 Make It & Market 设计",
+        "Moses Villani — 标志由 Make It & Market 设计",
+        "Kids Dynasty Daycare — 标志由 Make It & Market 设计",
+        "Laara Raynier Mastercutter Academy — 标志由 Make It & Market 设计"
+      ],
+      "ariaLabel": "精选客户",
+      "heading": "深受雄心品牌的信赖"
+    },
+    "nav": {
+      "about": "关于",
+      "contact": "联系",
+      "services": "服务",
+      "toggleMenu": "切换菜单",
+      "work": "作品"
+    },
+    "services": {
+      "blocks": [
+        {
+          "body": "标志设计、品牌信息与形象体系，为企业塑造一张值得铭记的面孔——并贯穿于广告活动、网站和应用之中，同时提供 SEO 与搜索排名支持，让品牌被更多人发现。",
+          "deliverables": [
+            "标志与品牌信息",
+            "活动与广告设计",
+            "网站与应用",
+            "SEO 与排名支持"
+          ],
+          "title": "品牌"
+        },
+        {
+          "body": "涵盖印刷与产品的平面设计：传单、名片与菜单；服装、产品与包装；宣传册、演示文稿与文档；海报、书籍与封面艺术——设计水准令人信服。",
+          "deliverables": [
+            "传单、名片与菜单",
+            "服装、产品与包装",
+            "宣传册、演示文稿与文档",
+            "海报、书籍与封面艺术"
+          ],
+          "title": "设计"
+        },
+        {
+          "body": "视频制作与剪辑、2D/3D 动画与动态图形、绘画与数字艺术、摄影与修图——全部由内部团队完成，让品牌始终醒目、与时俱进、值得信赖。",
+          "deliverables": [
+            "视频制作与剪辑",
+            "2D/3D 动画与动态图形",
+            "绘画与数字艺术",
+            "摄影与修图"
+          ],
+          "title": "内容创作"
+        }
+      ],
+      "heading": "我们的服务",
+      "introBefore": "三大领域，一个标准：无论在任何会议室、任何屏幕上都站得住脚的作品。深入了解每个领域——",
+      "introLinks": [
+        "品牌",
+        "设计",
+        "内容创作"
+      ],
+      "portfolioLink": "查看完整作品集 →"
+    },
+    "testimonials": {
+      "ariaLabel": "客户评价",
+      "heading": "客户评价",
+      "items": [
+        {
+          "name": "Sherri S.",
+          "quote": "感谢您的耐心，以及对我的营销活动一丝不苟的用心。"
+        },
+        {
+          "name": "Joseph A.",
+          "quote": "首先，非常感谢您为我提供的出色服务，而且非常及时。"
+        },
+        {
+          "name": "Joanne A.",
+          "quote": "谢谢你纠正这一点；我们卖的不只是香水。你的营销眼光真敏锐！"
+        },
+        {
+          "name": "Murray B.",
+          "quote": "你做出来的东西太棒了。我到现在看那个视频还是很过瘾，我妻子也是。"
+        },
+        {
+          "name": "Darcia J.",
+          "quote": "我对这次发布非常兴奋。感觉自己马上就要成为百万富翁了！你知道我永远会第一个来找你。非常感谢你的帮助。"
+        },
+        {
+          "name": "Kajuan R.",
+          "quote": "效果非常棒。真的让我惊叹不已！"
+        }
+      ]
+    },
+    "work": {
+      "heading": "精选作品",
+      "intro": "作品集精选——品牌形象体系、编辑设计、摄影、影像与数字体验，客户遍及医疗健康、酒店餐饮、出版、时尚与艺术领域。",
+      "tiles": [
+        {
+          "alt": "由 Make It & Market 制作的视频",
+          "blurb": "广告片、品牌影片与社交视频——拍摄、剪辑与后期全部由内部团队完成。",
+          "title": "视频制作"
+        },
+        {
+          "alt": "由 Make It & Market 设计的应用与网站",
+          "blurb": "定制网站、应用与落地页——以转化为目标进行设计与开发。",
+          "title": "应用与网站设计"
+        },
+        {
+          "alt": "由 Make It & Market 设计的广告与活动",
+          "blurb": "面向印刷与数字媒介的活动创意——一眼就能看懂。",
+          "title": "广告与活动设计"
+        },
+        {
+          "alt": "由 Make It & Market 制作的社交媒体内容",
+          "blurb": "内容与活动让品牌始终在线、风格统一、值得关注。",
+          "title": "社交媒体"
+        },
+        {
+          "alt": "由 Make It & Market 设计的品牌与形象",
+          "blurb": "标志与形象体系——无论在哪里都能被一眼认出的标识。",
+          "title": "品牌与形象"
+        },
+        {
+          "alt": "由 Make It & Market 制作的动画与动态设计",
+          "blurb": "2D 与 3D 动画——角色、故事与品牌影片均由内部团队制作。",
+          "title": "动画与动态设计"
+        },
+        {
+          "alt": "由 Make It & Market 设计的演示文稿",
+          "blurb": "提案稿与演示文稿——设计得能镇住全场、准确传达要点。",
+          "title": "演示文稿"
+        },
+        {
+          "alt": "由 Make It & Market 设计的文档",
+          "blurb": "宣传册、报告与文档——设计、排版一气呵成，可直接交付印刷。",
+          "title": "文档"
+        },
+        {
+          "alt": "由 Make It & Market 制作的 3D 建模",
+          "blurb": "物件、产品与品牌世界——以 3D 建模与渲染呈现。",
+          "title": "3D 建模"
+        },
+        {
+          "alt": "由 Make It & Market 设计的书籍封面（含封底）",
+          "blurb": "封面艺术与书籍设计，字体排印让人忍不住多看一眼。",
+          "title": "封面艺术与书籍设计"
+        },
+        {
+          "alt": "由 Make It & Market 拍摄的摄影作品",
+          "blurb": "摄影作品从拍摄、修图到成品，达到杂志编辑级标准。",
+          "title": "摄影与修图"
+        },
+        {
+          "alt": "由 Make It & Market 创作的绘画与素描作品",
+          "blurb": "手绘艺术与素描——以铅笔和墨水展开的创意构思。",
+          "title": "绘画与素描艺术"
+        }
+      ]
+    }
   }
 }
