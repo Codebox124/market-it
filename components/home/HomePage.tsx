@@ -26,7 +26,7 @@ const jsonLd = {
   ],
 };
 
-const clientLogos: { src: string; alt: string; invert?: boolean; disc?: boolean; lightSrc?: string; darkPanel?: boolean }[] = [
+const clientLogos: { src: string; alt: string; invert?: boolean; disc?: boolean; lightSrc?: string; blackDisc?: boolean }[] = [
   {
     src: "/clientScroll/exopest-tile.webp",
     alt: "EXOPEST Pest Control — brand identity designed by Make It & Market",
@@ -73,7 +73,7 @@ const clientLogos: { src: string; alt: string; invert?: boolean; disc?: boolean;
   },
   {
     src: "/clientScroll/olivers-tile.webp",
-    darkPanel: true,
+    blackDisc: true,
     alt: "Oliver's Tacos al Carbon — logo designed by Make It & Market",
   },
   {
@@ -390,8 +390,8 @@ export default function HomePage() {
                 key={logo.src}
                 className="relative h-24 md:h-36 bg-[color:var(--color-surface)] flex items-center justify-center"
               >
-                {logo.disc ? (
-                  <div className="relative h-[84%] aspect-square rounded-full bg-white overflow-hidden">
+                {logo.disc || logo.blackDisc ? (
+                  <div className={`relative h-[84%] aspect-square rounded-full overflow-hidden ${logo.blackDisc ? "bg-black" : "bg-white"}`}>
                     <Image
                       src={logo.src}
                       alt={logo.alt}
@@ -402,9 +402,6 @@ export default function HomePage() {
                   </div>
                 ) : (
                   <>
-                    {logo.darkPanel && (
-                      <span aria-hidden="true" className="logo-dark-panel" />
-                    )}
                     <Image
                       src={logo.src}
                       alt={logo.alt}
