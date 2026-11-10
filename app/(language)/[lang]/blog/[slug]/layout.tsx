@@ -70,19 +70,16 @@ export default async function SingleBlogPage({ params }: Props) {
 
   return (
     <div
-      className="bg-[color:var(--color-canvas)] text-[color:var(--color-ink)] min-h-screen"
+      className="bg-[color:var(--color-paper)] text-[color:var(--color-paper-ink)] on-paper min-h-screen"
       dir={isRTL ? "rtl" : "ltr"}
     >
       {/* HERO */}
-      <section className="noir-grain relative overflow-hidden">
-        <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute top-1/3 -right-40 w-[40rem] h-[40rem] rounded-full bg-[color:var(--color-accent)] blur-[200px] opacity-[0.06]" />
-        </div>
+      <section className="relative overflow-hidden">
 
         <div className="relative max-w-[1600px] mx-auto px-6 lg:px-10 pt-32 md:pt-40 pb-20 md:pb-28">
           <Link
             href={`/${lang}/blog`}
-            className="group inline-flex items-center gap-2 text-xs tracking-[0.22em] uppercase text-[color:var(--color-ink-muted)] hover:text-[color:var(--color-accent)] transition-colors duration-300 mb-14"
+            className="group inline-flex items-center gap-2 text-xs tracking-[0.22em] uppercase text-[color:var(--color-paper-muted)] hover:text-[color:var(--color-gold-deep)] transition-colors duration-300 mb-14"
           >
             <span className="transition-transform duration-300 group-hover:-translate-x-1">←</span>
             Back to journal
@@ -102,11 +99,11 @@ export default async function SingleBlogPage({ params }: Props) {
               </p>
             </div>
             <div className="md:col-span-9">
-              <h1 className="font-display text-4xl md:text-6xl lg:text-7xl leading-[1.02] tracking-[-0.025em] text-[color:var(--color-ink)]">
+              <h1 className="font-display text-4xl md:text-6xl lg:text-7xl leading-[1.02] tracking-[-0.025em] text-[color:var(--color-paper-ink)]">
                 {post.title}
               </h1>
               {post.overview && (
-                <p className="mt-10 text-lg md:text-xl leading-relaxed text-[color:var(--color-ink-soft)] font-light max-w-2xl">
+                <p className="mt-10 text-lg md:text-xl leading-relaxed text-[color:var(--color-paper-soft)] font-light max-w-2xl">
                   {post.overview}
                 </p>
               )}
@@ -118,7 +115,7 @@ export default async function SingleBlogPage({ params }: Props) {
       {/* COVER */}
       {post.mainImage && (
         <div className="relative w-full max-w-[1600px] mx-auto px-6 lg:px-10">
-          <div className="relative w-full aspect-[16/9] overflow-hidden bg-[color:var(--color-surface)]">
+          <div className="relative w-full aspect-[16/9] overflow-hidden bg-[color:var(--color-paper-line)]">
             <Image
               src={urlFor(post.mainImage).url()}
               alt={post.title}
@@ -132,7 +129,7 @@ export default async function SingleBlogPage({ params }: Props) {
 
       {/* ARTICLE BODY */}
       <article className="max-w-[1600px] mx-auto px-6 lg:px-10 py-20 md:py-28">
-        <div className="max-w-2xl mx-auto prose prose-lg prose-invert-dark prose-headings:font-display prose-headings:tracking-tight prose-a:no-underline hover:prose-a:underline prose-blockquote:font-display prose-blockquote:italic prose-img:my-12">
+        <div className="max-w-2xl mx-auto prose prose-lg prose-on-paper prose-headings:font-display prose-headings:tracking-tight prose-a:no-underline hover:prose-a:underline prose-blockquote:font-display prose-blockquote:italic prose-img:my-12">
           <PortableText value={post.content} />
         </div>
       </article>
