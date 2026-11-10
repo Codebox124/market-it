@@ -72,6 +72,7 @@ export const metadata: Metadata = {
     "google-site-verification": [
       "XG86AIpvITfGs4ETfyPyfFXlzifaOKEMhY38WjJTpb4",
       "6bLchd784mAl7rBGkgBZEiQhlpTfq9kW3JywH7powGM",
+      "W6pIeCWud5Du8B-9PtXUEZ89hkazp_j_R8KdmiTiJA0",
     ],
     "ahrefs-site-verification": "eU2DaMSVvJ6i1oMhXpI7jQ",
   },
