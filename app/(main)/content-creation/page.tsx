@@ -6,21 +6,21 @@ import ContentCreationClient from "./ContentCreationClient";
 import { groupByCategory } from "@/utils/portfolio";
 
 export const metadata: Metadata = {
-  title: "Content Creation & Video Editing - Make It & Market",
+  title: "Content Creation Portfolio - Make It & Market",
   description:
-    "Professional content creation agency for social media. Make It & Market offers video editing, content creation services & marketing strategies for brands.",
+    "Content creation by Make It & Market: video production and editing, 2D/3D animation and motion graphics, drawings and digital artwork, photography and retouching.",
   openGraph: {
-    title: "Content Creation & Video Editing - Make It & Market",
+    title: "Content Creation Portfolio - Make It & Market",
     description:
-      "Professional content creation agency for social media. Make It & Market offers video editing, content creation services & marketing strategies for brands.",
+      "Content creation by Make It & Market: video production and editing, 2D/3D animation and motion graphics, drawings and digital artwork, photography and retouching.",
     url: "https://www.makeitandmarket.com/content-creation",
     type: "website",
     siteName: "Make It & Market",
   },
   twitter: {
-    title: "Content Creation & Video Editing - Make It & Market",
+    title: "Content Creation Portfolio - Make It & Market",
     description:
-      "Professional content creation agency for social media. Make It & Market offers video editing, content creation services & marketing strategies for brands.",
+      "Content creation by Make It & Market: video production and editing, 2D/3D animation and motion graphics, drawings and digital artwork, photography and retouching.",
     card: "summary_large_image",
     images: ["https://www.makeitandmarket.com/logo.png"],
   },
