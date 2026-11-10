@@ -76,7 +76,7 @@ export default async function BlogPage({ params }: Props) {
       {/* HERO */}
       <section className="relative overflow-hidden">
 
-        <div className="relative max-w-[1600px] mx-auto px-6 lg:px-10 pt-36 md:pt-44 pb-20 md:pb-28">
+        <div className="relative max-w-[1600px] mx-auto px-6 lg:px-10 pt-36 md:pt-44 pb-10 md:pb-14">
           <div className="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-12">
             <div className="md:col-span-3">
               <p className="eyebrow">
@@ -97,7 +97,7 @@ export default async function BlogPage({ params }: Props) {
 
       {/* LIST */}
       <section className="border-t border-[color:var(--color-paper-line)]">
-        <div className="max-w-[1600px] mx-auto px-6 lg:px-10 py-20 md:py-32">
+        <div className="max-w-[1600px] mx-auto px-6 lg:px-10 pt-12 md:pt-16 pb-20 md:pb-32">
           {posts.length > 0 ? (
             <div>
               {posts.map((post: any, index: number) => (
