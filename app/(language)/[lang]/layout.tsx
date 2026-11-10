@@ -138,7 +138,7 @@ export default async function LanguageLayout({ children, params }: Props) {
         <script
           dangerouslySetInnerHTML={{
             __html:
-              "try{if(localStorage.getItem('mim-theme')==='light'){document.documentElement.dataset.theme='light'}}catch(e){}",
+              "try{if(localStorage.getItem('mim-theme')!=='dark'){document.documentElement.dataset.theme='light'}}catch(e){}",
           }}
         />
         {/* Google Analytics */}
