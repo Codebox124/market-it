@@ -3,7 +3,7 @@ import fs from "fs";
 import path from "path";
 import crypto from "crypto";
 import MarketingClient from "./MarketingClient";
-import { interleaveByCategory } from "@/utils/portfolio";
+import { groupByCategory } from "@/utils/portfolio";
 
 export const metadata: Metadata = {
   title: "Digital Marketing Agency for Small Business - Make It & Market",
@@ -31,15 +31,31 @@ type Work = { src: string; category: string; type?: "image" | "video" };
 const VIDEO_RE = /\.(mp4|webm)$/i;
 const MEDIA_RE = /\.(webp|mp4|webm)$/i;
 
-// Category is used only to spread the grid for visual variety — it is not
-// shown as a label on the tiles.
+// Category groups like work together on the page (flyers with flyers,
+// documents with documents). It is not shown as a label on the tiles.
 function categorize(name: string): string {
   const n = name.toLowerCase();
   if (VIDEO_RE.test(n)) return "Video";
-  if (/flyer/.test(n)) return "Flyer";
-  if (/ig-|social|investor|report|pitch/.test(n)) return "Social";
+  if (/flyer/.test(n)) return "Flyers";
+  if (/hoodie|winning/.test(n)) return "Clothing & Products";
+  if (/ig-|instagram|social/.test(n)) return "Social Media";
+  if (/investor|pitch/.test(n)) return "Presentations & Pitches";
+  if (/brochure|report|itinerary|writing|sheet/.test(n))
+    return "Documents & Brochures";
+  if (/biz-card|business-card/.test(n)) return "Business Cards";
   return "Advertising";
 }
+
+const CATEGORY_ORDER = [
+  "Flyers",
+  "Advertising",
+  "Clothing & Products",
+  "Social Media",
+  "Presentations & Pitches",
+  "Documents & Brochures",
+  "Business Cards",
+  "Video",
+];
 
 // Auto-read every image/video in /public/marketingSection, skipping
 // byte-identical duplicates.
@@ -77,6 +93,6 @@ function readMarketingFolder(): Work[] {
 }
 
 export default function MarketingPage() {
-  const works = interleaveByCategory(readMarketingFolder());
+  const works = groupByCategory(readMarketingFolder(), CATEGORY_ORDER);
   return <MarketingClient works={works} />;
 }
