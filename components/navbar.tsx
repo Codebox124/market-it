@@ -6,9 +6,9 @@ import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const navItems = [
-  { name: "Work", href: "/en#work" },
-  { name: "Services", href: "/en#services" },
-  { name: "About", href: "/en#about" },
+  { name: "Work", href: "/#work" },
+  { name: "Services", href: "/#services" },
+  { name: "About", href: "/#about" },
 ];
 
 export default function Navbar() {
