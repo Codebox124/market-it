@@ -498,16 +498,7 @@ export default function HomePage() {
                       <span aria-hidden className="text-[color:var(--color-gold)]">
                         —
                       </span>
-                      {item === "Websites & apps" ? (
-                        <Link
-                          href="/websites-apps"
-                          className="underline decoration-[color:var(--color-gold)] underline-offset-4 hover:text-[color:var(--color-ink)]"
-                        >
-                          {item}
-                        </Link>
-                      ) : (
-                        item
-                      )}
+                      {item}
                     </li>
                   ))}
                 </ul>
