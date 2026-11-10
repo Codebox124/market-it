@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import { getDictionary } from "@/utils/get-dictionary";
-import LandingPageClient from "@/app/(language)/[lang]/LandingPageClient";
 import HomePage from "@/components/home/HomePage";
+import HomePageI18n from "@/components/home/HomePageI18n";
 
 // Definisikan bahasa yang diizinkan
 const locales = [
@@ -10,6 +10,8 @@ const locales = [
   "zh",
   "pt",
   "es",
+  "ar",
+  "hi",
 ];
 
 // Generate Static Params untuk build time (Ini tetap sama)
@@ -34,16 +36,15 @@ export default async function Page({ params }: Props) {
   }
 
   // The English homepage is the redesigned Make It & Market homepage.
-  // All other locales keep the dictionary-driven landing page.
   if (lang === "en") {
     return <HomePage />;
   }
 
   const dict = await getDictionary(lang);
 
-  // Cek jada-jaga jika dictionary null (seperti diskusi kita sebelumnya)
-  if (!dict) return notFound();
+  if (!dict || !(dict as any).home) return notFound();
 
-  // Lempar data ke Client Component
-  return <LandingPageClient dict={dict} lang={lang} />;
+  // Every other locale renders the same redesigned homepage, fully
+  // translated from its dictionary "home" strings.
+  return <HomePageI18n lang={lang} home={(dict as any).home} />;
 }
