@@ -8,18 +8,18 @@ import type { HomeStrings } from "@/components/home/homeStrings";
 // Localized homepage — mirrors components/home/HomePage.tsx section for
 // section, with all copy coming from dictionaries/<lang>.json ("home" key).
 
-const clientLogoMedia: { src: string; invert?: boolean; disc?: boolean }[] = [
+const clientLogoMedia: { src: string; invert?: boolean; disc?: boolean; lightSrc?: string; darkPanel?: boolean }[] = [
   { src: "/clientScroll/exopest-tile.webp" },
   { src: "/clientScroll/de-zavala-tile.webp" },
   { src: "/clientScroll/builditect-tile.webp", invert: true },
   { src: "/clientScroll/terra-tile.webp", disc: true },
   { src: "/clientScroll/popcorn-tile.webp" },
-  { src: "/clientScroll/gm-tile-v3.webp" },
+  { src: "/clientScroll/gm-tile-v3.webp", lightSrc: "/clientScroll/gm-tile-light.webp" },
   { src: "/clientScroll/hot-or-not-tile.webp" },
   { src: "/clientScroll/reefnreem-tile.webp", invert: true },
   { src: "/clientScroll/arc-tile.webp" },
   { src: "/clientScroll/northeast-tile.webp" },
-  { src: "/clientScroll/olivers-tile.webp" },
+  { src: "/clientScroll/olivers-tile.webp", darkPanel: true },
   { src: "/clientScroll/forever-tile.webp", disc: true },
   { src: "/clientScroll/moses-tile.webp" },
   { src: "/clientScroll/kids-dynasty-tile.webp", disc: true },
@@ -120,7 +120,7 @@ export default function HomePageI18n({
           </div>
 
           <figure className="mt-16 md:mt-20">
-            <div className="relative w-full aspect-[16/9] md:aspect-[21/9] overflow-hidden bg-[#111111]">
+            <div className="relative w-full aspect-[16/9] md:aspect-[21/9] overflow-hidden media-frame">
               <Image
                 src="/content/hero-timessquare.webp"
                 alt={home.hero.heroAlt}
@@ -150,7 +150,7 @@ export default function HomePageI18n({
                 className="relative h-24 md:h-36 bg-[color:var(--color-surface)] flex items-center justify-center"
               >
                 {logo.disc ? (
-                  <div className="relative h-[94%] aspect-square rounded-full bg-white overflow-hidden">
+                  <div className="relative h-[84%] aspect-square rounded-full bg-white overflow-hidden">
                     <Image
                       src={logo.src}
                       alt={home.logos.alts[i] ?? ""}
@@ -160,13 +160,27 @@ export default function HomePageI18n({
                     />
                   </div>
                 ) : (
-                  <Image
-                    src={logo.src}
-                    alt={home.logos.alts[i] ?? ""}
-                    fill
-                    sizes="(max-width: 1024px) 33vw, 20vw"
-                    className={`object-contain p-2 md:p-2${logo.invert ? " invert" : ""}`}
-                  />
+                  <>
+                    {logo.darkPanel && (
+                      <span aria-hidden="true" className="logo-dark-panel" />
+                    )}
+                    <Image
+                      src={logo.src}
+                      alt={home.logos.alts[i] ?? ""}
+                      fill
+                      sizes="(max-width: 1024px) 33vw, 20vw"
+                      className={`object-contain p-3 md:p-4${logo.invert ? " invert" : ""}${logo.lightSrc ? " logo-dark-img" : ""}`}
+                    />
+                    {logo.lightSrc && (
+                      <Image
+                        src={logo.lightSrc}
+                        alt={home.logos.alts[i] ?? ""}
+                        fill
+                        sizes="(max-width: 1024px) 33vw, 20vw"
+                        className="object-contain p-3 md:p-4 logo-light-img"
+                      />
+                    )}
+                  </>
                 )}
               </div>
             ))}
@@ -191,7 +205,7 @@ export default function HomePageI18n({
               return (
                 <article key={piece.image} className={`${piece.span} group`}>
                   <div
-                    className={`relative w-full ${piece.aspect} overflow-hidden bg-[#111111]`}
+                    className={`relative w-full ${piece.aspect} overflow-hidden media-frame`}
                   >
                     {piece.video ? (
                       <VideoTile
